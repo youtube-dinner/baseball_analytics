@@ -35,4 +35,7 @@ if ! git remote get-url origin >/dev/null 2>&1; then
   exit 0
 fi
 
-git push origin HEAD
+if ! git push origin HEAD; then
+  echo "Git push failed; local refresh and commit completed."
+  exit 0
+fi
