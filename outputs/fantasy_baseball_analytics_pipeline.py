@@ -25,6 +25,8 @@ RECENT_WINDOWS = [7, 14, 30]
 MIN_PITCHES_THROWN_BY_WINDOW = {7: 25, 14: 50, 30: 75}
 MIN_PITCHES_FACED_BY_WINDOW = {7: 25, 14: 50, 30: 75}
 MIN_BATTED_BALLS_BY_WINDOW = {7: 3, 14: 6, 30: 10}
+HITTER_AB_MATCH_TOLERANCE = int(os.environ.get("HITTER_AB_MATCH_TOLERANCE", "10"))
+PITCHER_GAME_MATCH_TOLERANCE = int(os.environ.get("PITCHER_GAME_MATCH_TOLERANCE", "2"))
 TEAM_ABBREV_BY_NAME = {
     "Arizona Diamondbacks": "ARI",
     "Athletics": "ATH",
@@ -649,6 +651,7 @@ def add_calculated_fantasy_points(all_players, league_info):
             hitting["calculated_fpts"] / float_series(hitting, "gamesPlayed").replace(0, np.nan)
         ).round(2)
         hitting["GP"] = float_series(hitting, "gamesPlayed").round(0)
+        hitting["MLB_AB"] = float_series(hitting, "atBats").round(0)
         hitting["Runs"] = float_series(hitting, "runs").round(0)
         hitting["R_per_Game"] = (
             hitting["Runs"] / hitting["GP"].replace(0, np.nan)
@@ -683,11 +686,11 @@ def add_calculated_fantasy_points(all_players, league_info):
     stats = pd.concat([
         hitting[[
             "mlb_player_id", "Player_standard", "mlb_team",
-            "calculated_fpts", "calculated_fp_per_game", "GP", "Runs", "R_per_Game"
+            "calculated_fpts", "calculated_fp_per_game", "GP", "MLB_AB", "Runs", "R_per_Game"
         ]]
         if not hitting.empty else pd.DataFrame(columns=[
             "mlb_player_id", "Player_standard", "mlb_team",
-            "calculated_fpts", "calculated_fp_per_game", "GP", "Runs", "R_per_Game"
+            "calculated_fpts", "calculated_fp_per_game", "GP", "MLB_AB", "Runs", "R_per_Game"
         ]),
         pitching[[
             "mlb_player_id", "Player_standard", "mlb_team",
@@ -814,6 +817,25 @@ def merge_by_id_team_name(left, right, right_id_col, right_name_col="Player_stan
     unmatched = left.copy()
     matched_frames = []
 
+    def stat_compatible(matches):
+        if matches.empty:
+            return matches
+        out = matches.copy()
+        compatible = pd.Series(True, index=out.index)
+        right_game_col = "p_game_matched" if "p_game_matched" in out.columns else "p_game"
+        if "Pitching_G" in out.columns and right_game_col in out.columns:
+            left_games = pd.to_numeric(out["Pitching_G"], errors="coerce")
+            right_games = pd.to_numeric(out[right_game_col], errors="coerce")
+            has_both = left_games.notna() & right_games.notna()
+            compatible &= ~has_both | ((left_games - right_games).abs() <= PITCHER_GAME_MATCH_TOLERANCE)
+        right_ab_col = "ab_matched" if "ab_matched" in out.columns else "ab"
+        if "MLB_AB" in out.columns and right_ab_col in out.columns:
+            left_ab = pd.to_numeric(out["MLB_AB"], errors="coerce")
+            right_ab = pd.to_numeric(out[right_ab_col], errors="coerce")
+            has_both = left_ab.notna() & right_ab.notna()
+            compatible &= ~has_both | ((left_ab - right_ab).abs() <= HITTER_AB_MATCH_TOLERANCE)
+        return out[compatible].copy()
+
     if "mlb_player_id" in left.columns and right_id_col in right.columns:
         left_id = unmatched.copy()
         left_id["mlb_player_id"] = pd.to_numeric(left_id["mlb_player_id"], errors="coerce")
@@ -838,6 +860,7 @@ def merge_by_id_team_name(left, right, right_id_col, right_name_col="Player_stan
             how="inner",
             suffixes=("", "_matched"),
         )
+        team_matches = stat_compatible(team_matches)
         if not team_matches.empty:
             matched_frames.append(team_matches)
             unmatched = unmatched[~unmatched["_row_id"].isin(team_matches["_row_id"])]
@@ -852,6 +875,7 @@ def merge_by_id_team_name(left, right, right_id_col, right_name_col="Player_stan
         how="left",
         suffixes=("", "_matched"),
     )
+    name_matches = stat_compatible(name_matches)
     matched_frames.append(name_matches)
     leftover = unmatched[~unmatched["_row_id"].isin(name_matches["_row_id"])]
     if not leftover.empty:
@@ -876,6 +900,7 @@ def run_pipeline():
         "FP/G",
         "fantasy_points_source",
         "GP",
+        "MLB_AB",
         "Runs",
         "R_per_Game",
         "Pitching_G",
@@ -888,6 +913,7 @@ def run_pipeline():
             "Fantasy Points",
             "Average Fantasy Points per Game",
             "GP",
+            "MLB_AB",
             "Runs",
             "R_per_Game",
             "Pitching_G",
@@ -914,6 +940,7 @@ def run_pipeline():
     pitcher_previous_subset = pitcher_previous[[
         "player_id",
         "player_name_standard",
+        "p_game",
         "pitching_score",
         "command_score",
         "whiff_percent",
@@ -929,6 +956,7 @@ def run_pipeline():
     hitter_previous_subset = hitter_previous[[
         "player_id",
         "player_name_standard",
+        "ab",
         "hitter_score",
         "batters_eye_score",
         "barrel_batted_rate",

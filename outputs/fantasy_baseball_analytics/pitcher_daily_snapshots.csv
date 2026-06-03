@@ -5121,8 +5121,8 @@ snapshot_date,Player,Player_standard,pitching_score,command_score,whiff_percent,
 2026-06-03,Jesus Luzardo,jesus luzardo,1.46,1.0,31.4,12.0,5.6
 2026-06-03,Jacob deGrom,jacob degrom,2.07,1.37,34.2,12.0,5.4
 2026-06-03,Michael Soroka,michael soroka,0.54,1.23,22.8,12.0,5.6
-2026-06-03,George Kirby,george kirby,-0.11,0.69,20.7,12.0,6.2
 2026-06-03,Freddy Peralta,freddy peralta,-0.05,-0.36,27.0,12.0,5.5
+2026-06-03,George Kirby,george kirby,-0.11,0.69,20.7,12.0,6.2
 2026-06-03,Eduardo Rodriguez,eduardo rodriguez,-0.19,0.91,18.8,12.0,6.0
 2026-06-03,Nolan McLean,nolan mclean,0.15,0.35,24.6,12.0,5.5
 2026-06-03,Foster Griffin,foster griffin,0.68,1.14,24.4,12.0,5.6
@@ -5525,12 +5525,12 @@ snapshot_date,Player,Player_standard,pitching_score,command_score,whiff_percent,
 2026-06-03,Luis Mey,luis mey,,,,,
 2026-06-03,Blas Castano,blas castano,-0.98,-0.97,23.0,6.0,2.2
 2026-06-03,Andrew Kittredge,andrew kittredge,0.07,0.26,24.5,14.0,0.8
+2026-06-03,Alex Hoppe,alex hoppe,0.06,0.12,25.2,11.0,1.1
 2026-06-03,Max Scherzer,max scherzer,-1.41,0.07,13.8,5.0,3.6
 2026-06-03,Chris Murphy,chris murphy,,,,,
 2026-06-03,Tejay Antone,tejay antone,,,,,
 2026-06-03,Lucas Sims,lucas sims,-2.37,-2.71,21.6,9.0,1.1
 2026-06-03,Coleman Crow,coleman crow,-0.56,0.85,16.2,3.0,4.7
-2026-06-03,Alex Hoppe,alex hoppe,0.06,0.12,25.2,11.0,1.1
 2026-06-03,Andrew Hoffmann,andrew hoffmann,-1.03,-0.35,19.1,8.0,1.4
 2026-06-03,Lucas Giolito,lucas giolito,-1.76,-1.83,21.5,3.0,4.1
 2026-06-03,Danny Coulombe,danny coulombe,-0.36,0.54,19.5,16.0,0.7
@@ -5600,6 +5600,7 @@ snapshot_date,Player,Player_standard,pitching_score,command_score,whiff_percent,
 2026-06-03,Logan VanWey,logan vanwey,,,,,
 2026-06-03,Brian Fitzpatrick,brian fitzpatrick,,,,,
 2026-06-03,Eric Cerantola,eric cerantola,,,,,
+2026-06-03,Joey Gerber,joey gerber,,,,,
 2026-06-03,Jared Shuster,jared shuster,,,,,
 2026-06-03,Taylor Rashi,taylor rashi,,,,,
 2026-06-03,Luis Curvelo,luis curvelo,,,,,
@@ -5611,7 +5612,6 @@ snapshot_date,Player,Player_standard,pitching_score,command_score,whiff_percent,
 2026-06-03,Brock Stewart,brock stewart,,,,,
 2026-06-03,Chase Petty,chase petty,-1.87,-0.64,14.1,2.0,5.1
 2026-06-03,Lazaro Estrada,lazaro estrada,,,,,
-2026-06-03,Joey Gerber,joey gerber,,,,,
 2026-06-03,Jake Eder,jake eder,,,,,
 2026-06-03,Jonathan Pintaro,jonathan pintaro,,,,,
 2026-06-03,Ryan Gusto,ryan gusto,,,,,
