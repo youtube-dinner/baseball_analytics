@@ -1,0 +1,16 @@
+.DS_Store
+__pycache__/
+*.py[cod]
+node_modules/
+work/spreadsheet_build/node_modules
+
+# Runtime caches and bulky historical exports are regenerated locally.
+outputs/__pycache__/
+outputs/fantasy_baseball_analytics/statcast_cache/
+outputs/fantrax_export/raw_*/
+
+# Old exploratory notebooks contain local absolute paths from the original Codex workspace.
+outputs/*.ipynb
+
+# Local logs are useful during a run but noisy in git history.
+work/spreadsheet_build/build.log

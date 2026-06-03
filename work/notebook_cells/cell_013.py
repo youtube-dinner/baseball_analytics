@@ -1,0 +1,3 @@
+current_roster_hitters_joined['AB_per_Game'] = pd.to_numeric(current_roster_hitters_joined['AB'], errors='coerce') / pd.to_numeric(current_roster_hitters_joined['GP'], errors='coerce')
+all_players_hitters_joined['GP'] = pd.to_numeric(all_players_hitters_joined['FPts'], errors='coerce') / pd.to_numeric(all_players_hitters_joined['FP/G'], errors='coerce')
+all_players_hitters_joined['AB_per_Game'] = pd.to_numeric(all_players_hitters_joined['ab'], errors='coerce') / pd.to_numeric(all_players_hitters_joined['GP'], errors='coerce')
