@@ -488,12 +488,21 @@ def probable_starters(probable_date):
                     continue
                 team = teams.get(side, {}).get("team", {})
                 opponent = teams.get(other_side, {}).get("team", {})
+                team_name = team.get("name") or team.get("teamName")
+                opponent_name = opponent.get("name") or opponent.get("teamName")
+                team_abbrev = team.get("abbreviation") or TEAM_ABBREV_BY_NAME.get(team_name) or team.get("teamName")
+                opponent_abbrev = (
+                    opponent.get("abbreviation")
+                    or TEAM_ABBREV_BY_NAME.get(opponent_name)
+                    or opponent.get("teamName")
+                )
                 rows.append({
                     "probable_date": probable_date,
                     "game_time_utc": game.get("gameDate"),
                     "home_away": side,
-                    "Team": team.get("abbreviation") or team.get("teamName") or team.get("name"),
-                    "Opponent": opponent.get("abbreviation") or opponent.get("teamName") or opponent.get("name"),
+                    "Team": team_abbrev,
+                    "Opponent": opponent_abbrev,
+                    "mlb_team": team_abbrev,
                     "mlb_player_id": pitcher.get("id"),
                     "probable_name": pitcher.get("fullName"),
                     "Player_standard": standardize_string(pitcher.get("fullName")),
@@ -554,14 +563,14 @@ def build_fantrax_frames():
     current_roster["Player_standard"] = current_roster["Player"].apply(standardize_string)
 
     probable = probable_starters(tomorrow_iso())
-    streaming_pitchers = probable.merge(
-        all_players,
-        on="Player_standard",
-        how="left",
-        suffixes=("", "_fantrax"),
+    pitcher_players = all_players[all_players["Position"].isin(["SP", "RP"])].copy()
+    streaming_pitchers = merge_by_id_team_name(
+        probable,
+        pitcher_players.drop(columns=["mlb_player_id"], errors="ignore"),
+        "mlb_player_id",
     )
     streaming_pitchers = streaming_pitchers[streaming_pitchers["is_rostered"].fillna(False) == False].copy()
-    streaming_pitchers["Player"] = streaming_pitchers["Player"].fillna(streaming_pitchers["probable_name"])
+    streaming_pitchers["Player"] = streaming_pitchers["probable_name"]
     streaming_pitchers["Position"] = streaming_pitchers["Position"].fillna("SP")
     streaming_pitchers["Status"] = streaming_pitchers["Status"].fillna("FA")
     return all_players, current_roster, streaming_pitchers, league_info
@@ -1162,8 +1171,11 @@ def run_pipeline():
         trend_path = OUT_DIR / filename
         trend_df = df.copy()
         trend_df["current_date"] = trend_day
-        write_header = not trend_path.exists()
-        clean_for_csv(trend_df).to_csv(trend_path, mode="a", index=False, header=write_header)
+        history = load_csv_if_exists(trend_path)
+        if not history.empty and "current_date" in history.columns:
+            history = history[history["current_date"].astype(str) != trend_day]
+        trend_df = pd.concat([history, trend_df], ignore_index=True)
+        clean_for_csv(trend_df).to_csv(trend_path, index=False)
         written[filename] = str(trend_path)
 
     summary = pd.DataFrame([

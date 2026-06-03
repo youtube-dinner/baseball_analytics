@@ -5298,6 +5298,7 @@ snapshot_date,Player,Player_standard,pitching_score,command_score,whiff_percent,
 2026-06-03,Garrett Crochet,garrett crochet,0.18,0.5,24.0,6.0,5.0
 2026-06-03,Reynaldo Lopez,reynaldo lopez,-0.97,-0.33,19.5,13.0,2.7
 2026-06-03,Jesse Scholtens,jesse scholtens,0.15,1.32,19.3,9.0,4.1
+2026-06-03,Luke Weaver,luke weaver,0.79,1.02,26.0,24.0,1.1
 2026-06-03,Matt Festa,matt festa,0.53,0.12,28.9,26.0,1.0
 2026-06-03,Eric Orze,eric orze,0.01,0.17,24.5,23.0,1.2
 2026-06-03,Garrett Whitlock,garrett whitlock,0.51,0.11,28.8,20.0,1.0
@@ -5313,7 +5314,6 @@ snapshot_date,Player,Player_standard,pitching_score,command_score,whiff_percent,
 2026-06-03,Tyler Alexander,tyler alexander,-1.06,-0.0,17.0,27.0,1.0
 2026-06-03,Gus Varland,gus varland,-0.04,-0.11,25.7,23.0,1.0
 2026-06-03,Mason Montgomery,mason montgomery,-0.32,-1.8,32.8,23.0,1.0
-2026-06-03,Luke Weaver,luke weaver,0.79,1.02,26.0,24.0,1.1
 2026-06-03,Huascar Brazoban,huascar brazoban,1.06,1.39,26.1,26.0,1.2
 2026-06-03,Didier Fuentes,didier fuentes,-0.63,-1.27,27.4,15.0,1.5
 2026-06-03,Gordon Graceffo,gordon graceffo,-1.67,-0.37,14.2,26.0,1.2
@@ -5530,9 +5530,9 @@ snapshot_date,Player,Player_standard,pitching_score,command_score,whiff_percent,
 2026-06-03,Tejay Antone,tejay antone,,,,,
 2026-06-03,Lucas Sims,lucas sims,-2.37,-2.71,21.6,9.0,1.1
 2026-06-03,Coleman Crow,coleman crow,-0.56,0.85,16.2,3.0,4.7
+2026-06-03,Alex Hoppe,alex hoppe,0.06,0.12,25.2,11.0,1.1
 2026-06-03,Andrew Hoffmann,andrew hoffmann,-1.03,-0.35,19.1,8.0,1.4
 2026-06-03,Lucas Giolito,lucas giolito,-1.76,-1.83,21.5,3.0,4.1
-2026-06-03,Alex Hoppe,alex hoppe,0.06,0.12,25.2,11.0,1.1
 2026-06-03,Danny Coulombe,danny coulombe,-0.36,0.54,19.5,16.0,0.7
 2026-06-03,Kirby Yates,kirby yates,,,,,
 2026-06-03,Sam Hentges,sam hentges,,,,,
