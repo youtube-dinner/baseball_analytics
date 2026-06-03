@@ -255,12 +255,21 @@ def aggregate_recent_pitching(statcast_df, mlb_pitching, days, end_day):
     if not mlb_pitching.empty:
         mlb = mlb_pitching.copy()
         mlb[f"p_game_{days}d"] = float_series(mlb, "gamesPitched")
+        mlb[f"p_save_{days}d"] = float_series(mlb, "saves")
+        mlb[f"p_hold_{days}d"] = float_series(mlb, "holds")
         mlb[f"IP_{days}d"] = innings_to_float(mlb["inningsPitched"]) if "inningsPitched" in mlb.columns else np.nan
         mlb[f"IP_per_Game_{days}d"] = (
             mlb[f"IP_{days}d"] / mlb[f"p_game_{days}d"].replace(0, np.nan)
         )
         out = out.merge(
-            mlb[["Player_standard", f"p_game_{days}d", f"IP_{days}d", f"IP_per_Game_{days}d"]],
+            mlb[[
+                "Player_standard",
+                f"p_game_{days}d",
+                f"p_save_{days}d",
+                f"p_hold_{days}d",
+                f"IP_{days}d",
+                f"IP_per_Game_{days}d",
+            ]],
             on="Player_standard",
             how="left",
         )
@@ -1021,6 +1030,7 @@ def run_pipeline():
     )
 
     pitcher_window_cols = []
+    pitcher_window_cols_with_sv_hld = []
     for days in [7, 14, 30]:
         pitcher_window_cols.extend([
             f"pitching_score_{days}d",
@@ -1028,14 +1038,22 @@ def run_pipeline():
             f"whiff_percent_{days}d",
             f"bb_percent_{days}d",
             f"meatball_percent_{days}d",
-            f"pitches_thrown_{days}d",
-            f"plate_appearances_{days}d",
             f"p_game_{days}d",
-            f"IP_{days}d",
+            f"IP_per_Game_{days}d",
+        ])
+        pitcher_window_cols_with_sv_hld.extend([
+            f"pitching_score_{days}d",
+            f"command_score_{days}d",
+            f"whiff_percent_{days}d",
+            f"bb_percent_{days}d",
+            f"meatball_percent_{days}d",
+            f"p_game_{days}d",
+            f"p_save_{days}d",
+            f"p_hold_{days}d",
             f"IP_per_Game_{days}d",
         ])
     pitcher_snapshot_cols = []
-    pitcher_trend_cols = pitcher_window_cols + pitcher_snapshot_cols
+    pitcher_trend_cols = pitcher_window_cols_with_sv_hld + pitcher_snapshot_cols
 
     hitter_window_cols = []
     for days in [7, 14, 30]:
@@ -1046,13 +1064,9 @@ def run_pipeline():
             f"barrels_{days}d",
             f"oz_swing_percent_{days}d",
             f"meatball_swing_percent_{days}d",
-            f"pitches_faced_{days}d",
-            f"batted_balls_{days}d",
             f"GP_{days}d",
-            f"AB_{days}d",
             f"AB_per_Game_{days}d",
             f"Runs_{days}d",
-            f"R_per_Game_{days}d",
         ])
     hitter_snapshot_cols = []
     hitter_trend_cols = hitter_window_cols + hitter_snapshot_cols
@@ -1061,16 +1075,16 @@ def run_pipeline():
         "Player", "Eligible", "Status", "Fantasy Points", "Average Fantasy Points per Game",
         "p_formatted_ip", "p_save", "p_hold", "IP_per_Game", "p_era",
         "pitching_score", "command_score", "whiff_percent", "bb_percent", "meatball_percent",
-        *pitcher_window_cols,
+        *pitcher_window_cols_with_sv_hld,
         f"pitching_score_{PREVIOUS_YEAR}", f"command_score_{PREVIOUS_YEAR}",
         f"whiff_percent_{PREVIOUS_YEAR}", f"bb_percent_{PREVIOUS_YEAR}", f"meatball_percent_{PREVIOUS_YEAR}",
         *pitcher_snapshot_cols,
     ]
     pitcher_analytics_cols = [
         "Player", "Position", "Status", "FPts", "FP/G",
-        "p_game", "IP_per_Game", "p_era", "pitching_score", "command_score",
+        "p_game", "p_save", "p_hold", "IP_per_Game", "p_era", "pitching_score", "command_score",
         "whiff_percent", "bb_percent", "meatball_percent",
-        *pitcher_window_cols,
+        *pitcher_window_cols_with_sv_hld,
         f"pitching_score_{PREVIOUS_YEAR}", f"command_score_{PREVIOUS_YEAR}",
         f"whiff_percent_{PREVIOUS_YEAR}", f"bb_percent_{PREVIOUS_YEAR}", f"meatball_percent_{PREVIOUS_YEAR}",
         *pitcher_snapshot_cols,
@@ -1086,7 +1100,7 @@ def run_pipeline():
     ]
     hitter_cols = [
         "Player", "Eligible", "Status", "Fantasy Points", "Average Fantasy Points per Game",
-        "GP", "AB_per_Game", "R_per_Game", "hitter_score", "batters_eye_score",
+        "GP", "AB_per_Game", "hitter_score", "batters_eye_score",
         "barrel_batted_rate", "oz_swing_percent", "meatball_swing_percent",
         *hitter_window_cols,
         f"hitter_score_{PREVIOUS_YEAR}", f"batters_eye_score_{PREVIOUS_YEAR}",
@@ -1094,7 +1108,7 @@ def run_pipeline():
         *hitter_snapshot_cols,
     ]
     hitter_analytics_cols = [
-        "Player", "Position", "Status", "FPts", "FP/G", "GP", "AB_per_Game", "R_per_Game",
+        "Player", "Position", "Status", "FPts", "FP/G", "GP", "AB_per_Game",
         "hitter_score", "batters_eye_score", "barrel_batted_rate", "oz_swing_percent", "meatball_swing_percent",
         *hitter_window_cols,
         f"hitter_score_{PREVIOUS_YEAR}", f"batters_eye_score_{PREVIOUS_YEAR}",
