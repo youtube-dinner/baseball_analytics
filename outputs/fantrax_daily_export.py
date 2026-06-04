@@ -13,8 +13,13 @@ from zoneinfo import ZoneInfo
 LEAGUE_ID = "qqll39pvmj90wrl1"
 SPORT = "MLB"
 BASE_URL = "https://www.fantrax.com/fxea/general"
+UI_BASE_URL = "https://www.fantrax.com/fxpa"
 MLB_SCHEDULE_URL = "https://statsapi.mlb.com/api/v1/schedule"
 OUT_DIR = Path(__file__).resolve().parent / "fantrax_export"
+FANTRAX_AUTH_COOKIE = os.environ.get("FANTRAX_AUTH_COOKIE", "")
+FANTRAX_OLD_UI_TOKEN = os.environ.get("FANTRAX_OLD_UI_TOKEN", "")
+FANTRAX_PROBABLE_MISC_DISPLAY_TYPE = os.environ.get("FANTRAX_PROBABLE_MISC_DISPLAY_TYPE", "7")
+FANTRAX_PROBABLE_DATE_PLAYING = os.environ.get("FANTRAX_PROBABLE_DATE_PLAYING", "")
 
 
 def fetch_json(endpoint, **params):
@@ -32,6 +37,28 @@ def fetch_url_json(url, **params):
     req = Request(url, headers={"User-Agent": "Mozilla/5.0", "Accept": "application/json"})
     with urlopen(req, timeout=60) as response:
         return json.loads(response.read().decode("utf-8"))
+
+
+def fetch_ui_bytes(endpoint, **params):
+    if FANTRAX_OLD_UI_TOKEN:
+        params["olduitk"] = FANTRAX_OLD_UI_TOKEN
+    url = f"{UI_BASE_URL}/{endpoint}"
+    if params:
+        url = f"{url}?{urlencode(params)}"
+    headers = {"User-Agent": "Mozilla/5.0", "Accept": "*/*"}
+    if FANTRAX_AUTH_COOKIE:
+        headers["Cookie"] = FANTRAX_AUTH_COOKIE
+    req = Request(url, headers=headers)
+    with urlopen(req, timeout=60) as response:
+        raw = response.read()
+    if raw.strip().startswith(b"{"):
+        data = json.loads(raw.decode("utf-8"))
+        page_error = data.get("pageError") or data.get("error")
+        if page_error:
+            code = page_error.get("code") or "Fantrax UI error"
+            text = page_error.get("text") or page_error.get("message") or ""
+            raise RuntimeError(f"{code}: {text}".strip())
+    return raw
 
 
 def write_json(path, data):
@@ -94,6 +121,16 @@ def sortable_name(name):
     return " ".join(name.split())
 
 
+def display_name(fantrax_name):
+    if not fantrax_name:
+        return ""
+    name = str(fantrax_name)
+    if "," in name:
+        last, first = [part.strip() for part in name.split(",", 1)]
+        return f"{first} {last}".strip()
+    return name.strip()
+
+
 def tomorrow_date():
     override = os.environ.get("FANTRAX_PROBABLE_DATE")
     if override:
@@ -135,6 +172,109 @@ def probable_starters(date):
                     "opponent": opponent.get("abbreviation") or opponent.get("teamName") or opponent.get("name"),
                 }
     return starters
+
+
+def first_present(row, names):
+    for name in names:
+        if name in row and str(row[name]).strip():
+            return row[name]
+    return ""
+
+
+def probable_candidate_params():
+    base = {
+        "leagueId": LEAGUE_ID,
+        "positionOrGroup": "BASEBALL_PITCHING",
+        "miscDisplayType": FANTRAX_PROBABLE_MISC_DISPLAY_TYPE,
+        "maxResultsPerPage": 500,
+        "pageNumber": 1,
+    }
+    if FANTRAX_PROBABLE_DATE_PLAYING:
+        return [{**base, "datePlaying": FANTRAX_PROBABLE_DATE_PLAYING}]
+    candidates = [base]
+    for misc_display_type in ["7", "8"]:
+        candidates.append({**base, "miscDisplayType": misc_display_type})
+        candidates.append({**base, "miscDisplayType": misc_display_type, "datePlaying": "TOMORROW"})
+    unique = []
+    seen = set()
+    for params in candidates:
+        key = tuple(sorted(params.items()))
+        if key not in seen:
+            seen.add(key)
+            unique.append(params)
+    return unique
+
+
+def fantrax_ui_probable_starter_rows(probable_date, player_ids, league_players, rostered_ids):
+    if not FANTRAX_AUTH_COOKIE and not FANTRAX_OLD_UI_TOKEN:
+        raise RuntimeError("Fantrax UI probable-starter feed requires FANTRAX_AUTH_COOKIE or FANTRAX_OLD_UI_TOKEN")
+
+    import pandas as pd
+    from io import BytesIO
+
+    best_df = pd.DataFrame()
+    best_params = None
+    last_error = None
+    for params in probable_candidate_params():
+        try:
+            raw = fetch_ui_bytes("downloadPlayerStats", **params)
+            candidate = pd.read_csv(BytesIO(raw), encoding="utf-8-sig")
+            candidate = candidate.dropna(how="all").drop(
+                columns=[col for col in candidate.columns if str(col).startswith("Unnamed")],
+                errors="ignore",
+            )
+            if candidate.shape[0] > best_df.shape[0]:
+                best_df = candidate
+                best_params = params
+        except Exception as exc:
+            last_error = exc
+    if best_df.empty:
+        raise RuntimeError(f"No Fantrax UI probable starters returned: {last_error}")
+
+    pitchers = {}
+    for fantrax_id, player in player_ids.items():
+        if player.get("position") not in {"SP", "RP"}:
+            continue
+        name = display_name(player.get("name"))
+        pitchers.setdefault(sortable_name(name), []).append((fantrax_id, player))
+
+    rows = []
+    for raw_row in best_df.to_dict("records"):
+        raw_name = first_present(raw_row, ["Player", "Name", "Scorer", "player", "name"])
+        if not raw_name:
+            continue
+        name = display_name(raw_name)
+        team = first_present(raw_row, ["Team", "MLB Team", "Pro Team", "team", "mlb_team"])
+        matches = pitchers.get(sortable_name(name), [])
+        if team:
+            team_matches = [(fantrax_id, player) for fantrax_id, player in matches if player.get("team") == team]
+            if team_matches:
+                matches = team_matches
+        fantrax_id, player = matches[0] if matches else ("", {})
+        league_player = league_players.get(fantrax_id, {})
+        rows.append({
+            "probable_date": probable_date,
+            "game_time_utc": first_present(raw_row, ["Game Time", "Game", "Start Time"]),
+            "home_away": first_present(raw_row, ["Home/Away", "H/A"]),
+            "probable_team": player.get("team") or team,
+            "opponent": first_present(raw_row, ["Opponent", "Opp", "OPP"]),
+            "mlb_player_id": "",
+            "probable_name": display_name(player.get("name")) or name,
+            "fantrax_id": fantrax_id,
+            "name": player.get("name") or name,
+            "mlb_team": player.get("team") or team,
+            "primary_position": player.get("position"),
+            "eligible_positions": league_player.get("eligiblePos"),
+            "league_status": league_player.get("status"),
+            "is_rostered": fantrax_id in rostered_ids if fantrax_id else False,
+            "stats_inc_id": player.get("statsIncId"),
+            "rotowire_id": player.get("rotowireId"),
+            "sport_radar_id": player.get("sportRadarId"),
+            "game_pk": "",
+            "fantrax_probable_source": "fantrax_ui_downloadPlayerStats",
+            "fantrax_probable_params": json.dumps(best_params, sort_keys=True),
+        })
+    return rows
 
 
 def probable_starter_rows(starters, player_ids, league_players, rostered_ids):
@@ -191,14 +331,23 @@ def main():
     roster_items = roster_rows(rosters, player_ids)
     roster_items.sort(key=lambda row: (row.get("team_name") or "", row.get("name") or ""))
     probable_date = tomorrow_date()
-    starters = probable_starters(probable_date)
     rostered_ids = {row.get("fantrax_id") for row in roster_items if row.get("fantrax_id")}
-    all_probable_starters = probable_starter_rows(
-        starters,
-        player_ids,
-        league_info.get("playerInfo", {}),
-        rostered_ids,
-    )
+    try:
+        all_probable_starters = fantrax_ui_probable_starter_rows(
+            probable_date,
+            player_ids,
+            league_info.get("playerInfo", {}),
+            rostered_ids,
+        )
+        starters = {sortable_name(row.get("probable_name")): row for row in all_probable_starters}
+    except Exception:
+        starters = probable_starters(probable_date)
+        all_probable_starters = probable_starter_rows(
+            starters,
+            player_ids,
+            league_info.get("playerInfo", {}),
+            rostered_ids,
+        )
     unrostered_probable_starters = [
         row for row in all_probable_starters if not row.get("is_rostered")
     ]

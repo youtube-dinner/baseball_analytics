@@ -19,6 +19,11 @@ CURRENT_YEAR = int(os.environ.get("FANTASY_BASEBALL_YEAR", "2026"))
 PREVIOUS_YEAR = int(os.environ.get("FANTASY_BASEBALL_PREVIOUS_YEAR", str(CURRENT_YEAR - 1)))
 OUT_DIR = Path(os.environ.get("FANTASY_BASEBALL_OUTPUT_DIR", Path(__file__).resolve().parent / "fantasy_baseball_analytics"))
 FANTRAX_BASE_URL = "https://www.fantrax.com/fxea/general"
+FANTRAX_UI_BASE_URL = "https://www.fantrax.com/fxpa"
+FANTRAX_AUTH_COOKIE = os.environ.get("FANTRAX_AUTH_COOKIE", "")
+FANTRAX_OLD_UI_TOKEN = os.environ.get("FANTRAX_OLD_UI_TOKEN", "")
+FANTRAX_PROBABLE_MISC_DISPLAY_TYPE = os.environ.get("FANTRAX_PROBABLE_MISC_DISPLAY_TYPE", "7")
+FANTRAX_PROBABLE_DATE_PLAYING = os.environ.get("FANTRAX_PROBABLE_DATE_PLAYING", "")
 MLB_SCHEDULE_URL = "https://statsapi.mlb.com/api/v1/schedule"
 STATCAST_SEARCH_URL = "https://baseballsavant.mlb.com/statcast_search/csv"
 RECENT_WINDOWS = [7, 14, 30]
@@ -63,6 +68,17 @@ TEAM_ABBREV_BY_NAME = {
 
 def fetch_bytes(url):
     req = Request(url, headers={"User-Agent": "Mozilla/5.0", "Accept": "*/*"})
+    with urlopen(req, timeout=60) as response:
+        return response.read()
+
+
+def fetch_url_bytes(url, params=None, headers=None):
+    if params:
+        url = f"{url}?{urlencode(params)}"
+    req_headers = {"User-Agent": "Mozilla/5.0", "Accept": "*/*"}
+    if headers:
+        req_headers.update(headers)
+    req = Request(url, headers=req_headers)
     with urlopen(req, timeout=60) as response:
         return response.read()
 
@@ -536,13 +552,162 @@ def probable_starters(probable_date):
     return pd.DataFrame(rows)
 
 
+def fantrax_ui_headers(accept="*/*"):
+    headers = {"Accept": accept}
+    if FANTRAX_AUTH_COOKIE:
+        headers["Cookie"] = FANTRAX_AUTH_COOKIE
+    return headers
+
+
+def fetch_fantrax_ui_bytes(endpoint, **params):
+    if FANTRAX_OLD_UI_TOKEN:
+        params["olduitk"] = FANTRAX_OLD_UI_TOKEN
+    raw = fetch_url_bytes(
+        f"{FANTRAX_UI_BASE_URL}/{endpoint}",
+        params=params,
+        headers=fantrax_ui_headers(),
+    )
+    stripped = raw.strip()
+    if stripped.startswith(b"{"):
+        try:
+            data = json.loads(stripped.decode("utf-8"))
+        except json.JSONDecodeError:
+            data = {}
+        page_error = data.get("pageError") or data.get("error")
+        if page_error:
+            code = page_error.get("code") or "Fantrax UI error"
+            text = page_error.get("text") or page_error.get("message") or ""
+            raise RuntimeError(f"{code}: {text}".strip())
+    return raw
+
+
+def fantrax_probable_candidate_params():
+    base = {
+        "leagueId": LEAGUE_ID,
+        "positionOrGroup": "BASEBALL_PITCHING",
+        "miscDisplayType": FANTRAX_PROBABLE_MISC_DISPLAY_TYPE,
+        "maxResultsPerPage": 500,
+        "pageNumber": 1,
+    }
+    if FANTRAX_PROBABLE_DATE_PLAYING:
+        return [{**base, "datePlaying": FANTRAX_PROBABLE_DATE_PLAYING}]
+
+    candidates = [base]
+    for misc_display_type in ["7", "8"]:
+        candidates.append({**base, "miscDisplayType": misc_display_type})
+        candidates.append({**base, "miscDisplayType": misc_display_type, "datePlaying": "TOMORROW"})
+    unique = []
+    seen = set()
+    for params in candidates:
+        key = tuple(sorted(params.items()))
+        if key not in seen:
+            seen.add(key)
+            unique.append(params)
+    return unique
+
+
+def first_present(row, names):
+    for name in names:
+        if name in row and not pd.isna(row[name]) and str(row[name]).strip():
+            return row[name]
+    return np.nan
+
+
+def fantrax_probable_starters_from_ui(probable_date, player_ids, league_players, rostered_ids):
+    if not FANTRAX_AUTH_COOKIE and not FANTRAX_OLD_UI_TOKEN:
+        raise RuntimeError("Fantrax UI probable-starter feed requires FANTRAX_AUTH_COOKIE or FANTRAX_OLD_UI_TOKEN")
+
+    last_error = None
+    best_df = pd.DataFrame()
+    best_params = None
+    for params in fantrax_probable_candidate_params():
+        try:
+            raw = fetch_fantrax_ui_bytes("downloadPlayerStats", **params)
+            from io import BytesIO
+
+            candidate = pd.read_csv(BytesIO(raw), encoding="utf-8-sig")
+            candidate = candidate.dropna(how="all").drop(columns=[c for c in candidate.columns if str(c).startswith("Unnamed")], errors="ignore")
+            if candidate.empty:
+                continue
+            if candidate.shape[0] > best_df.shape[0]:
+                best_df = candidate
+                best_params = params
+        except Exception as exc:
+            last_error = exc
+
+    if best_df.empty:
+        raise RuntimeError(f"No Fantrax UI probable starters returned: {last_error}")
+
+    pitcher_lookup = []
+    for fantrax_id, player in player_ids.items():
+        position = player.get("position")
+        if position not in {"SP", "RP"}:
+            continue
+        league_player = league_players.get(fantrax_id, {})
+        name = display_name(player.get("name"))
+        pitcher_lookup.append({
+            "fantrax_id": fantrax_id,
+            "probable_name": name,
+            "Player_standard": standardize_string(name),
+            "mlb_team": player.get("team"),
+            "primary_position": position,
+            "eligible_positions": league_player.get("eligiblePos"),
+            "league_status": league_player.get("status"),
+            "is_rostered": fantrax_id in rostered_ids,
+            "stats_inc_id": player.get("statsIncId"),
+            "rotowire_id": player.get("rotowireId"),
+            "sport_radar_id": player.get("sportRadarId"),
+        })
+    pitchers = pd.DataFrame(pitcher_lookup)
+
+    rows = []
+    for raw_row in best_df.to_dict("records"):
+        raw_name = first_present(raw_row, ["Player", "Name", "Scorer", "player", "name"])
+        if pd.isna(raw_name):
+            continue
+        name = display_name(raw_name)
+        team = first_present(raw_row, ["Team", "MLB Team", "Pro Team", "team", "mlb_team"])
+        player_standard = standardize_string(name)
+        matches = pitchers[pitchers["Player_standard"] == player_standard].copy()
+        if not pd.isna(team) and str(team).strip():
+            team_matches = matches[matches["mlb_team"].astype(str) == str(team).strip()]
+            if not team_matches.empty:
+                matches = team_matches
+        match = matches.iloc[0].to_dict() if not matches.empty else {}
+        rows.append({
+            "probable_date": probable_date,
+            "game_time_utc": first_present(raw_row, ["Game Time", "Game", "Start Time"]),
+            "home_away": first_present(raw_row, ["Home/Away", "H/A"]),
+            "Team": match.get("mlb_team") or team,
+            "Opponent": first_present(raw_row, ["Opponent", "Opp", "OPP"]),
+            "mlb_team": match.get("mlb_team") or team,
+            "mlb_player_id": np.nan,
+            "probable_name": match.get("probable_name") or name,
+            "Player_standard": match.get("Player_standard") or player_standard,
+            "fantrax_id": match.get("fantrax_id"),
+            "primary_position": match.get("primary_position"),
+            "eligible_positions": match.get("eligible_positions"),
+            "league_status": match.get("league_status"),
+            "is_rostered": bool(match.get("is_rostered", False)),
+            "stats_inc_id": match.get("stats_inc_id"),
+            "rotowire_id": match.get("rotowire_id"),
+            "sport_radar_id": match.get("sport_radar_id"),
+            "fantrax_probable_source": "fantrax_ui_downloadPlayerStats",
+            "fantrax_probable_params": json.dumps(best_params, sort_keys=True),
+        })
+
+    out = pd.DataFrame(rows)
+    if out.empty:
+        raise RuntimeError("Fantrax UI probable-starter CSV did not contain recognizable player rows")
+    return out
+
+
 def build_fantrax_frames():
     fantrax_dir = Path(__file__).resolve().parent / "fantrax_export"
     try:
         player_ids = fetch_fantrax("getPlayerIds", sport="MLB")
         league_info = fetch_fantrax("getLeagueInfo", leagueId=LEAGUE_ID)
         rosters = fetch_fantrax("getTeamRosters", leagueId=LEAGUE_ID)
-        probable = probable_starters(tomorrow_iso())
     except Exception:
         player_ids_df = pd.read_csv(fantrax_dir / "fantrax_players_latest.csv")
         rosters_df = pd.read_csv(fantrax_dir / "fantrax_rosters_latest.csv")
@@ -588,6 +753,17 @@ def build_fantrax_frames():
         for roster in rosters.get("rosters", {}).values()
         for item in roster.get("rosterItems", [])
     }
+    if "probable" not in locals():
+        probable_date = tomorrow_iso()
+        try:
+            probable = fantrax_probable_starters_from_ui(
+                probable_date,
+                player_ids,
+                league_info.get("playerInfo", {}),
+                rostered_ids,
+            )
+        except Exception:
+            probable = probable_starters(probable_date)
 
     all_rows = []
     for fantrax_id, info in league_info.get("playerInfo", {}).items():

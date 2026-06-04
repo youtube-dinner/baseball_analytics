@@ -12,6 +12,13 @@ fi
 
 cd "$ROOT"
 
+if [[ -f "$ROOT/.env" ]]; then
+  set -a
+  # shellcheck disable=SC1091
+  source "$ROOT/.env"
+  set +a
+fi
+
 "$PYTHON" outputs/fantasy_baseball_analytics_pipeline.py
 "$PYTHON" work/spreadsheet_build/build_workbook_data.py
 "$NODE" work/spreadsheet_build/build_fantasy_workbook.mjs
