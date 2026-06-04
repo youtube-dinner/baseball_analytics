@@ -203,4 +203,24 @@ scripts/run_minor_league_delayed_pull.sh
 
 That wrapper completes 2025 exports and analytics first, then starts 2026 with the same delay settings.
 
+For the current season, use the supervised 2026-only refresh job:
+
+```bash
+scripts/supervised_fangraphs_2026_refresh.sh
+```
+
+It opens a headful browser by default, overwrites the existing 2026 exports, waits a random 30-45 seconds between FanGraphs page loads, then rebuilds the 2026 analytics outputs and `Minor_League_Hitter_Analytics.html`. Logs are written to:
+
+```text
+outputs/refresh_logs/minor_league_2026_supervised_refresh_*.log
+```
+
+Useful overrides:
+
+```bash
+MIN_DELAY_SEC=45 MAX_DELAY_SEC=75 scripts/supervised_fangraphs_2026_refresh.sh
+OVERWRITE=0 scripts/supervised_fangraphs_2026_refresh.sh
+LEAGUES=11,14 scripts/supervised_fangraphs_2026_refresh.sh
+```
+
 It needs a local Playwright browser binary before it can run outside the Codex in-app browser. In this workspace, Playwright was available but its Chromium binary was not installed, and the browser install was blocked by the local approval/usage limit.

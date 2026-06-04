@@ -16,6 +16,7 @@ OUT = ROOT / "outputs" / "Minor_League_Hitter_Analytics.html"
 FANTRAX_PLAYERS = ROOT / "outputs" / "fantrax_export" / "fantrax_players_latest.csv"
 FANTRAX_ROSTERS = ROOT / "outputs" / "fantrax_export" / "fantrax_rosters_latest.csv"
 MY_FANTASY_TEAM = "Bobby and the NitWitts"
+LEVEL_ORDER = {"R": 0, "CPX": 1, "A": 2, "A+": 3, "AA": 4, "AAA": 5}
 
 BASE_COLUMN_MAP = {
     "Player Name": "Player",
@@ -107,6 +108,7 @@ HEAT_COLUMNS = [
     "wRC+",
     "5 Tool+",
     "Hitter+",
+    "Hitter+_Previous_League",
 ]
 RATE_COLUMNS = [
     "BA",
@@ -253,6 +255,40 @@ def existing_column_map(df, column_map):
     return {source: label for source, label in column_map.items() if source in df.columns}
 
 
+def promotion_player_key(row):
+    player_id = row.get("PlayerId")
+    if pd.notna(player_id) and str(player_id).strip():
+        return f"id:{player_id}"
+    return f"name:{normalize_name(row.get('Player Name'))}"
+
+
+def build_promotion_tracker(df):
+    out = df.copy()
+    out["Promotion Key"] = out.apply(promotion_player_key, axis=1)
+    out["Level Order"] = out["League Level"].map(LEVEL_ORDER)
+    out["Hitter+_Previous_League"] = math.nan
+    promoted_rows = []
+    for _, row in out.iterrows():
+        level_order = row.get("Level Order")
+        if pd.isna(level_order):
+            continue
+        lower_rows = out[
+            (out["Promotion Key"] == row["Promotion Key"])
+            & (pd.to_numeric(out["Level Order"], errors="coerce") < level_order)
+        ].copy()
+        if lower_rows.empty:
+            continue
+        lower_rows["Sort Level"] = pd.to_numeric(lower_rows["Level Order"], errors="coerce")
+        lower_rows["Sort AB"] = pd.to_numeric(lower_rows.get("AB"), errors="coerce")
+        previous = lower_rows.sort_values(["Sort Level", "Sort AB"], ascending=[False, False], kind="stable").iloc[0]
+        row = row.copy()
+        row["Hitter+_Previous_League"] = previous.get("Hitter+")
+        promoted_rows.append(row)
+    if not promoted_rows:
+        return out.iloc[0:0].drop(columns=["Promotion Key", "Level Order"], errors="ignore")
+    return pd.DataFrame(promoted_rows).drop(columns=["Promotion Key", "Level Order"], errors="ignore")
+
+
 def format_dashboard_frame(df, column_map, sort_cols):
     missing = [col for col in column_map if col not in df.columns]
     if missing:
@@ -283,6 +319,13 @@ def load_dashboard_data():
     df = pd.read_csv(SOURCE)
     df = add_fantasy_roster_column(df)
     overall = format_dashboard_frame(df, OVERALL_COLUMN_MAP, ["5 Tool+", "wRC+", "FG/G+"])
+    promotion_players = build_promotion_tracker(df)
+    promotion_column_map = {}
+    for source, label in OVERALL_COLUMN_MAP.items():
+        promotion_column_map[source] = label
+        if source == "Hitter+":
+            promotion_column_map["Hitter+_Previous_League"] = "Hitter+_Previous_League"
+    promotion_view = format_dashboard_frame(promotion_players, promotion_column_map, ["Level", "5 Tool+", "Hitter+"])
     my_players = df[df["Fantasy Roster"].astype(str).str.startswith(MY_FANTASY_TEAM)].copy()
     my_column_map = {
         **BASE_COLUMN_MAP,
@@ -291,6 +334,7 @@ def load_dashboard_data():
     }
     my_view = format_dashboard_frame(my_players, my_column_map, ["League", "FP/G"])
     overall.to_csv(DASHBOARD_CSV, index=False)
+    promotion_view.to_csv(DATA_DIR / "minor_league_hitter_analytics_promotion_tracker.csv", index=False)
     my_view.to_csv(DATA_DIR / "minor_league_hitter_analytics_my_players.csv", index=False)
     return {
         "views": {
@@ -299,6 +343,12 @@ def load_dashboard_data():
                 "rows": overall.to_dict(orient="records"),
                 "defaultSort": {"column": "5 Tool+", "dir": "desc"},
                 "defaultFilters": [{"column": "AB", "op": ">=", "value": "50"}],
+            },
+            "Promotion Tracker": {
+                "columns": list(promotion_view.columns),
+                "rows": promotion_view.to_dict(orient="records"),
+                "defaultSort": {"column": "5 Tool+", "dir": "desc"},
+                "defaultFilters": [],
             },
             MY_FANTASY_TEAM: {
                 "columns": list(my_view.columns),

@@ -5,6 +5,9 @@ __pycache__/
 *.py[cod]
 node_modules/
 work/spreadsheet_build/node_modules
+.fantrax-browser-profile/
+outputs/fantrax_export/fantrax_auth_cookie_latest.txt
+outputs/fantrax_export/fantrax_transactions_raw_*.json
 
 # Runtime caches and bulky historical exports are regenerated locally.
 outputs/__pycache__/
