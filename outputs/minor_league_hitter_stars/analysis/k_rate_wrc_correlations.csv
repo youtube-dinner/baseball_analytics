@@ -1,0 +1,11 @@
+Sample,Comparison,Correlation,N,Controls
+All player/league rows,Raw K% vs wRC+,-0.2982840820749199,8329,None
+All player/league rows,"K% vs wRC+, controlling LD%",-0.40564313855965767,8215,LD%
+All player/league rows,"K% vs wRC+, controlling LD% + Age",-0.4054354914690665,8215,LD% + Age
+All player/league rows,"K% vs wRC+, controlling LD% + Age + League",-0.40183032461878015,8215,LD% + Age + League Name
+All player/league rows,"K% vs wRC+, controlling LD% + Age + Level",-0.40134177022242923,8215,LD% + Age + League Level
+PA >= 50,Raw K% vs wRC+,-0.34081520516029407,5438,None
+PA >= 50,"K% vs wRC+, controlling LD%",-0.3426976398003981,5437,LD%
+PA >= 50,"K% vs wRC+, controlling LD% + Age",-0.3396932980128822,5437,LD% + Age
+PA >= 50,"K% vs wRC+, controlling LD% + Age + League",-0.3403161806551255,5437,LD% + Age + League Name
+PA >= 50,"K% vs wRC+, controlling LD% + Age + Level",-0.3388478137312529,5437,LD% + Age + League Level

@@ -24,8 +24,8 @@ function parseArgs(argv) {
     leagues: defaultLeagues,
     headful: false,
     pageItems: 1000,
-    minDelayMs: 60000,
-    maxDelayMs: 90000,
+    minDelayMs: 30000,
+    maxDelayMs: 45000,
     skipExisting: true,
   };
   for (let i = 0; i < argv.length; i += 1) {
@@ -64,8 +64,8 @@ Options:
   --out-dir PATH       Folder for CSV exports. Default: outputs/minor_league_hitter_stars/fangraphs_exports
   --headful            Show the browser while exporting
   --page-items N       Leaderboard page size. Default: 1000
-  --min-delay-sec N    Minimum random delay between FanGraphs page loads. Default: 60
-  --max-delay-sec N    Maximum random delay between FanGraphs page loads. Default: 90
+  --min-delay-sec N    Minimum random delay between FanGraphs page loads. Default: 30
+  --max-delay-sec N    Maximum random delay between FanGraphs page loads. Default: 45
   --delay-ms N         Fixed delay between FanGraphs page loads, mainly for tests
   --overwrite          Re-export files that already exist
 `);
@@ -124,7 +124,11 @@ async function waitForExportCsv(page, timeoutMs = 45000) {
     });
     if (href?.startsWith("data:application/csv")) {
       const encoded = href.slice(href.indexOf(",") + 1);
-      return decodeURIComponent(encoded);
+      try {
+        return decodeURIComponent(encoded);
+      } catch {
+        return decodeURIComponent(encoded.replace(/%(?![0-9A-Fa-f]{2})/g, "%25"));
+      }
     }
     await page.waitForTimeout(750);
   }

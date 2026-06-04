@@ -1,0 +1,891 @@
+<!doctype html><html><head><meta charset="utf-8"><title>Plus Metric Transform Options</title>
+<style>body{font-family:Arial,sans-serif;margin:24px;background:#f8fafc;color:#111827}p{max-width:1080px;color:#475569;line-height:1.45}table{border-collapse:collapse;background:#fff;font-size:13px;margin-bottom:18px}th,td{border:1px solid #e5e7eb;padding:6px 8px;text-align:right}th:first-child,td:first-child{text-align:left}th{background:#14532d;color:#fff}h2{margin-top:28px}.note{border-left:4px solid #14532d;background:#fff;padding:10px 14px}</style></head><body>
+<h1>Plus Metric Transform Options</h1>
+<p class="note">Training parameters use 2025 rows at each metric's stabilized AB threshold. Scores shown are experiments only; the dashboard has not been switched to these transforms.</p>
+<h2>Training Parameters</h2><table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Metric</th>
+      <th>Raw Column</th>
+      <th>Training AB Threshold</th>
+      <th>Training Rows</th>
+      <th>Mean</th>
+      <th>Std Dev</th>
+      <th>Median</th>
+      <th>Q25</th>
+      <th>Q75</th>
+      <th>IQR</th>
+      <th>Robust Scale IQR/1.349</th>
+      <th>Raw P99</th>
+      <th>Raw Max</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Age+</td>
+      <td>Age_Plus</td>
+      <td>25</td>
+      <td>4124</td>
+      <td>100.08</td>
+      <td>8.37</td>
+      <td>100.00</td>
+      <td>95.07</td>
+      <td>104.76</td>
+      <td>9.69</td>
+      <td>7.18</td>
+      <td>121.58</td>
+      <td>140.78</td>
+    </tr>
+    <tr>
+      <td>Approach+</td>
+      <td>Approach_score_Plus</td>
+      <td>125</td>
+      <td>2127</td>
+      <td>97.97</td>
+      <td>51.15</td>
+      <td>86.68</td>
+      <td>62.97</td>
+      <td>120.98</td>
+      <td>58.01</td>
+      <td>43.00</td>
+      <td>281.75</td>
+      <td>520.57</td>
+    </tr>
+    <tr>
+      <td>Speed+</td>
+      <td>Speed_score_Plus</td>
+      <td>75</td>
+      <td>3090</td>
+      <td>99.71</td>
+      <td>34.74</td>
+      <td>100.48</td>
+      <td>75.99</td>
+      <td>124.10</td>
+      <td>48.10</td>
+      <td>35.66</td>
+      <td>169.70</td>
+      <td>194.30</td>
+    </tr>
+    <tr>
+      <td>LD%+</td>
+      <td>LD%_Plus</td>
+      <td>200</td>
+      <td>1146</td>
+      <td>99.88</td>
+      <td>14.45</td>
+      <td>99.58</td>
+      <td>89.84</td>
+      <td>109.24</td>
+      <td>19.40</td>
+      <td>14.38</td>
+      <td>135.27</td>
+      <td>152.75</td>
+    </tr>
+    <tr>
+      <td>HR/FB+</td>
+      <td>HR_FB_pct_Plus</td>
+      <td>200</td>
+      <td>1146</td>
+      <td>93.02</td>
+      <td>52.96</td>
+      <td>88.61</td>
+      <td>53.93</td>
+      <td>124.57</td>
+      <td>70.64</td>
+      <td>52.37</td>
+      <td>237.25</td>
+      <td>318.08</td>
+    </tr>
+  </tbody>
+</table>
+<h2>Transform Distributions and 2025 P99 Caps</h2><table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Metric</th>
+      <th>Method</th>
+      <th>Sample</th>
+      <th>Count</th>
+      <th>Mean</th>
+      <th>Std Dev</th>
+      <th>P50</th>
+      <th>P75</th>
+      <th>P90</th>
+      <th>P95</th>
+      <th>P99 Cap</th>
+      <th>Max</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Age+</td>
+      <td>standard_z_15</td>
+      <td>2025 training</td>
+      <td>4124</td>
+      <td>100.00</td>
+      <td>15.00</td>
+      <td>99.86</td>
+      <td>108.40</td>
+      <td>117.94</td>
+      <td>125.22</td>
+      <td>138.56</td>
+      <td>172.98</td>
+    </tr>
+    <tr>
+      <td>Age+</td>
+      <td>standard_z_15</td>
+      <td>2026 AB&gt;=50 uncapped transform</td>
+      <td>1741</td>
+      <td>100.12</td>
+      <td>14.94</td>
+      <td>100.13</td>
+      <td>110.13</td>
+      <td>119.60</td>
+      <td>124.85</td>
+      <td>138.56</td>
+      <td>161.38</td>
+    </tr>
+    <tr>
+      <td>Age+</td>
+      <td>robust_z_15</td>
+      <td>2025 training</td>
+      <td>4124</td>
+      <td>100.16</td>
+      <td>17.47</td>
+      <td>100.00</td>
+      <td>109.94</td>
+      <td>121.06</td>
+      <td>129.53</td>
+      <td>145.07</td>
+      <td>185.16</td>
+    </tr>
+    <tr>
+      <td>Age+</td>
+      <td>robust_z_15</td>
+      <td>2026 AB&gt;=50 uncapped transform</td>
+      <td>1741</td>
+      <td>100.30</td>
+      <td>17.40</td>
+      <td>100.31</td>
+      <td>111.95</td>
+      <td>122.99</td>
+      <td>129.10</td>
+      <td>145.07</td>
+      <td>171.65</td>
+    </tr>
+    <tr>
+      <td>Age+</td>
+      <td>percentile_100_50</td>
+      <td>2025 training</td>
+      <td>4124</td>
+      <td>101.02</td>
+      <td>29.07</td>
+      <td>100.53</td>
+      <td>126.16</td>
+      <td>140.37</td>
+      <td>145.90</td>
+      <td>149.20</td>
+      <td>150.00</td>
+    </tr>
+    <tr>
+      <td>Age+</td>
+      <td>percentile_100_50</td>
+      <td>2026 AB&gt;=50 uncapped transform</td>
+      <td>1741</td>
+      <td>99.65</td>
+      <td>29.38</td>
+      <td>100.53</td>
+      <td>128.90</td>
+      <td>141.80</td>
+      <td>144.79</td>
+      <td>149.20</td>
+      <td>149.98</td>
+    </tr>
+    <tr>
+      <td>Age+</td>
+      <td>log_plus_50</td>
+      <td>2025 training</td>
+      <td>4124</td>
+      <td>99.86</td>
+      <td>4.22</td>
+      <td>100.00</td>
+      <td>102.33</td>
+      <td>104.80</td>
+      <td>106.61</td>
+      <td>109.77</td>
+      <td>117.10</td>
+    </tr>
+    <tr>
+      <td>Age+</td>
+      <td>log_plus_50</td>
+      <td>2026 AB&gt;=50 uncapped transform</td>
+      <td>1741</td>
+      <td>99.90</td>
+      <td>4.18</td>
+      <td>100.07</td>
+      <td>102.78</td>
+      <td>105.22</td>
+      <td>106.52</td>
+      <td>109.77</td>
+      <td>114.75</td>
+    </tr>
+    <tr>
+      <td>Approach+</td>
+      <td>standard_z_15</td>
+      <td>2025 training</td>
+      <td>2127</td>
+      <td>100.00</td>
+      <td>15.00</td>
+      <td>96.69</td>
+      <td>106.75</td>
+      <td>118.73</td>
+      <td>127.68</td>
+      <td>153.90</td>
+      <td>223.94</td>
+    </tr>
+    <tr>
+      <td>Approach+</td>
+      <td>standard_z_15</td>
+      <td>2026 AB&gt;=50 uncapped transform</td>
+      <td>1741</td>
+      <td>100.01</td>
+      <td>17.38</td>
+      <td>96.20</td>
+      <td>106.51</td>
+      <td>119.76</td>
+      <td>132.95</td>
+      <td>153.90</td>
+      <td>236.26</td>
+    </tr>
+    <tr>
+      <td>Approach+</td>
+      <td>robust_z_15</td>
+      <td>2025 training</td>
+      <td>2127</td>
+      <td>103.94</td>
+      <td>17.84</td>
+      <td>100.00</td>
+      <td>111.96</td>
+      <td>126.21</td>
+      <td>136.86</td>
+      <td>168.04</td>
+      <td>251.35</td>
+    </tr>
+    <tr>
+      <td>Approach+</td>
+      <td>robust_z_15</td>
+      <td>2026 AB&gt;=50 uncapped transform</td>
+      <td>1741</td>
+      <td>103.95</td>
+      <td>20.68</td>
+      <td>99.42</td>
+      <td>111.68</td>
+      <td>127.44</td>
+      <td>143.12</td>
+      <td>168.04</td>
+      <td>266.00</td>
+    </tr>
+    <tr>
+      <td>Approach+</td>
+      <td>percentile_100_50</td>
+      <td>2025 training</td>
+      <td>2127</td>
+      <td>100.03</td>
+      <td>28.88</td>
+      <td>100.02</td>
+      <td>125.01</td>
+      <td>140.00</td>
+      <td>145.00</td>
+      <td>149.00</td>
+      <td>150.00</td>
+    </tr>
+    <tr>
+      <td>Approach+</td>
+      <td>percentile_100_50</td>
+      <td>2026 AB&gt;=50 uncapped transform</td>
+      <td>1741</td>
+      <td>98.53</td>
+      <td>30.21</td>
+      <td>97.95</td>
+      <td>124.19</td>
+      <td>140.60</td>
+      <td>146.61</td>
+      <td>149.00</td>
+      <td>150.00</td>
+    </tr>
+    <tr>
+      <td>Approach+</td>
+      <td>log_plus_50</td>
+      <td>2025 training</td>
+      <td>2127</td>
+      <td>92.96</td>
+      <td>24.67</td>
+      <td>92.85</td>
+      <td>109.52</td>
+      <td>124.07</td>
+      <td>132.71</td>
+      <td>151.79</td>
+      <td>182.49</td>
+    </tr>
+    <tr>
+      <td>Approach+</td>
+      <td>log_plus_50</td>
+      <td>2026 AB&gt;=50 uncapped transform</td>
+      <td>1741</td>
+      <td>91.23</td>
+      <td>28.16</td>
+      <td>91.89</td>
+      <td>109.18</td>
+      <td>125.14</td>
+      <td>137.17</td>
+      <td>151.79</td>
+      <td>186.37</td>
+    </tr>
+    <tr>
+      <td>Speed+</td>
+      <td>standard_z_15</td>
+      <td>2025 training</td>
+      <td>3090</td>
+      <td>100.00</td>
+      <td>15.00</td>
+      <td>100.33</td>
+      <td>110.53</td>
+      <td>119.31</td>
+      <td>123.71</td>
+      <td>130.22</td>
+      <td>140.84</td>
+    </tr>
+    <tr>
+      <td>Speed+</td>
+      <td>standard_z_15</td>
+      <td>2026 AB&gt;=50 uncapped transform</td>
+      <td>1741</td>
+      <td>100.62</td>
+      <td>16.96</td>
+      <td>101.46</td>
+      <td>113.21</td>
+      <td>122.98</td>
+      <td>127.77</td>
+      <td>130.22</td>
+      <td>145.78</td>
+    </tr>
+    <tr>
+      <td>Speed+</td>
+      <td>robust_z_15</td>
+      <td>2025 training</td>
+      <td>3090</td>
+      <td>99.68</td>
+      <td>14.61</td>
+      <td>100.00</td>
+      <td>109.94</td>
+      <td>118.49</td>
+      <td>122.78</td>
+      <td>129.12</td>
+      <td>139.47</td>
+    </tr>
+    <tr>
+      <td>Speed+</td>
+      <td>robust_z_15</td>
+      <td>2026 AB&gt;=50 uncapped transform</td>
+      <td>1741</td>
+      <td>100.28</td>
+      <td>16.53</td>
+      <td>101.10</td>
+      <td>112.55</td>
+      <td>122.06</td>
+      <td>126.73</td>
+      <td>129.12</td>
+      <td>144.28</td>
+    </tr>
+    <tr>
+      <td>Speed+</td>
+      <td>percentile_100_50</td>
+      <td>2025 training</td>
+      <td>3090</td>
+      <td>100.07</td>
+      <td>28.87</td>
+      <td>100.02</td>
+      <td>125.01</td>
+      <td>140.00</td>
+      <td>145.00</td>
+      <td>149.00</td>
+      <td>150.00</td>
+    </tr>
+    <tr>
+      <td>Speed+</td>
+      <td>percentile_100_50</td>
+      <td>2026 AB&gt;=50 uncapped transform</td>
+      <td>1741</td>
+      <td>101.16</td>
+      <td>31.38</td>
+      <td>103.11</td>
+      <td>130.29</td>
+      <td>144.40</td>
+      <td>147.99</td>
+      <td>149.00</td>
+      <td>150.00</td>
+    </tr>
+    <tr>
+      <td>Speed+</td>
+      <td>log_plus_50</td>
+      <td>2025 training</td>
+      <td>3090</td>
+      <td>95.71</td>
+      <td>22.85</td>
+      <td>100.24</td>
+      <td>110.79</td>
+      <td>118.38</td>
+      <td>121.79</td>
+      <td>126.44</td>
+      <td>133.21</td>
+    </tr>
+    <tr>
+      <td>Speed+</td>
+      <td>log_plus_50</td>
+      <td>2026 AB&gt;=50 uncapped transform</td>
+      <td>1741</td>
+      <td>95.35</td>
+      <td>25.68</td>
+      <td>101.52</td>
+      <td>113.24</td>
+      <td>121.24</td>
+      <td>124.74</td>
+      <td>126.44</td>
+      <td>136.07</td>
+    </tr>
+    <tr>
+      <td>LD%+</td>
+      <td>standard_z_15</td>
+      <td>2025 training</td>
+      <td>1146</td>
+      <td>100.00</td>
+      <td>15.00</td>
+      <td>99.69</td>
+      <td>109.72</td>
+      <td>119.52</td>
+      <td>125.09</td>
+      <td>136.74</td>
+      <td>154.89</td>
+    </tr>
+    <tr>
+      <td>LD%+</td>
+      <td>standard_z_15</td>
+      <td>2026 AB&gt;=50 uncapped transform</td>
+      <td>1741</td>
+      <td>101.86</td>
+      <td>25.01</td>
+      <td>100.53</td>
+      <td>117.14</td>
+      <td>132.48</td>
+      <td>142.87</td>
+      <td>136.74</td>
+      <td>223.98</td>
+    </tr>
+    <tr>
+      <td>LD%+</td>
+      <td>robust_z_15</td>
+      <td>2025 training</td>
+      <td>1146</td>
+      <td>100.31</td>
+      <td>15.07</td>
+      <td>100.00</td>
+      <td>110.07</td>
+      <td>119.93</td>
+      <td>125.52</td>
+      <td>137.23</td>
+      <td>155.46</td>
+    </tr>
+    <tr>
+      <td>LD%+</td>
+      <td>robust_z_15</td>
+      <td>2026 AB&gt;=50 uncapped transform</td>
+      <td>1741</td>
+      <td>102.18</td>
+      <td>25.12</td>
+      <td>100.85</td>
+      <td>117.53</td>
+      <td>132.94</td>
+      <td>143.38</td>
+      <td>137.23</td>
+      <td>224.87</td>
+    </tr>
+    <tr>
+      <td>LD%+</td>
+      <td>percentile_100_50</td>
+      <td>2025 training</td>
+      <td>1146</td>
+      <td>100.05</td>
+      <td>28.88</td>
+      <td>100.04</td>
+      <td>125.02</td>
+      <td>140.01</td>
+      <td>145.00</td>
+      <td>149.00</td>
+      <td>150.00</td>
+    </tr>
+    <tr>
+      <td>LD%+</td>
+      <td>percentile_100_50</td>
+      <td>2026 AB&gt;=50 uncapped transform</td>
+      <td>1741</td>
+      <td>101.98</td>
+      <td>35.20</td>
+      <td>102.36</td>
+      <td>137.43</td>
+      <td>147.91</td>
+      <td>149.74</td>
+      <td>149.00</td>
+      <td>150.00</td>
+    </tr>
+    <tr>
+      <td>LD%+</td>
+      <td>log_plus_50</td>
+      <td>2025 training</td>
+      <td>1146</td>
+      <td>99.41</td>
+      <td>7.36</td>
+      <td>99.79</td>
+      <td>104.42</td>
+      <td>108.56</td>
+      <td>110.78</td>
+      <td>115.10</td>
+      <td>121.18</td>
+    </tr>
+    <tr>
+      <td>LD%+</td>
+      <td>log_plus_50</td>
+      <td>2026 AB&gt;=50 uncapped transform</td>
+      <td>1741</td>
+      <td>99.32</td>
+      <td>12.70</td>
+      <td>100.20</td>
+      <td>107.59</td>
+      <td>113.56</td>
+      <td>117.24</td>
+      <td>115.10</td>
+      <td>139.26</td>
+    </tr>
+    <tr>
+      <td>HR/FB+</td>
+      <td>standard_z_15</td>
+      <td>2025 training</td>
+      <td>1146</td>
+      <td>100.00</td>
+      <td>15.00</td>
+      <td>98.75</td>
+      <td>108.93</td>
+      <td>120.61</td>
+      <td>126.50</td>
+      <td>140.85</td>
+      <td>163.74</td>
+    </tr>
+    <tr>
+      <td>HR/FB+</td>
+      <td>standard_z_15</td>
+      <td>2026 AB&gt;=50 uncapped transform</td>
+      <td>1741</td>
+      <td>105.99</td>
+      <td>23.51</td>
+      <td>102.78</td>
+      <td>118.55</td>
+      <td>136.73</td>
+      <td>147.67</td>
+      <td>140.85</td>
+      <td>302.30</td>
+    </tr>
+    <tr>
+      <td>HR/FB+</td>
+      <td>robust_z_15</td>
+      <td>2025 training</td>
+      <td>1146</td>
+      <td>101.26</td>
+      <td>15.17</td>
+      <td>100.00</td>
+      <td>110.30</td>
+      <td>122.11</td>
+      <td>128.07</td>
+      <td>142.58</td>
+      <td>165.73</td>
+    </tr>
+    <tr>
+      <td>HR/FB+</td>
+      <td>robust_z_15</td>
+      <td>2026 AB&gt;=50 uncapped transform</td>
+      <td>1741</td>
+      <td>107.32</td>
+      <td>23.78</td>
+      <td>104.08</td>
+      <td>120.03</td>
+      <td>138.41</td>
+      <td>149.48</td>
+      <td>142.58</td>
+      <td>305.88</td>
+    </tr>
+    <tr>
+      <td>HR/FB+</td>
+      <td>percentile_100_50</td>
+      <td>2025 training</td>
+      <td>1146</td>
+      <td>100.09</td>
+      <td>28.83</td>
+      <td>100.04</td>
+      <td>125.02</td>
+      <td>140.01</td>
+      <td>145.00</td>
+      <td>149.00</td>
+      <td>150.00</td>
+    </tr>
+    <tr>
+      <td>HR/FB+</td>
+      <td>percentile_100_50</td>
+      <td>2026 AB&gt;=50 uncapped transform</td>
+      <td>1741</td>
+      <td>106.43</td>
+      <td>33.24</td>
+      <td>111.43</td>
+      <td>137.70</td>
+      <td>148.52</td>
+      <td>149.74</td>
+      <td>149.00</td>
+      <td>150.00</td>
+    </tr>
+    <tr>
+      <td>HR/FB+</td>
+      <td>log_plus_50</td>
+      <td>2025 training</td>
+      <td>1146</td>
+      <td>83.44</td>
+      <td>46.74</td>
+      <td>93.95</td>
+      <td>110.98</td>
+      <td>125.28</td>
+      <td>131.19</td>
+      <td>143.20</td>
+      <td>157.86</td>
+    </tr>
+    <tr>
+      <td>HR/FB+</td>
+      <td>log_plus_50</td>
+      <td>2026 AB&gt;=50 uncapped transform</td>
+      <td>1741</td>
+      <td>78.93</td>
+      <td>76.90</td>
+      <td>101.40</td>
+      <td>123.04</td>
+      <td>140.04</td>
+      <td>148.03</td>
+      <td>143.20</td>
+      <td>204.43</td>
+    </tr>
+  </tbody>
+</table>
+<h2>Composite Experiments</h2><table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Sample</th>
+      <th>Method</th>
+      <th>Score</th>
+      <th>Count</th>
+      <th>Mean</th>
+      <th>Std Dev</th>
+      <th>P95</th>
+      <th>P99</th>
+      <th>Max</th>
+      <th>wRC+ Corr</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>2025 training-ish AB&gt;=50</td>
+      <td>standard_z_15</td>
+      <td>5 Tool transformed</td>
+      <td>3579</td>
+      <td>98.87</td>
+      <td>7.87</td>
+      <td>111.80</td>
+      <td>117.18</td>
+      <td>129.28</td>
+      <td>0.62</td>
+    </tr>
+    <tr>
+      <td>2025 training-ish AB&gt;=50</td>
+      <td>standard_z_15</td>
+      <td>Hitter transformed</td>
+      <td>3579</td>
+      <td>98.22</td>
+      <td>10.54</td>
+      <td>115.53</td>
+      <td>123.00</td>
+      <td>141.34</td>
+      <td>0.66</td>
+    </tr>
+    <tr>
+      <td>2026 current AB&gt;=50</td>
+      <td>standard_z_15</td>
+      <td>5 Tool transformed</td>
+      <td>1741</td>
+      <td>101.09</td>
+      <td>8.33</td>
+      <td>114.23</td>
+      <td>119.94</td>
+      <td>125.27</td>
+      <td>0.60</td>
+    </tr>
+    <tr>
+      <td>2026 current AB&gt;=50</td>
+      <td>standard_z_15</td>
+      <td>Hitter transformed</td>
+      <td>1741</td>
+      <td>101.63</td>
+      <td>11.27</td>
+      <td>120.22</td>
+      <td>127.13</td>
+      <td>134.92</td>
+      <td>0.68</td>
+    </tr>
+    <tr>
+      <td>2025 training-ish AB&gt;=50</td>
+      <td>robust_z_15</td>
+      <td>5 Tool transformed</td>
+      <td>3579</td>
+      <td>99.93</td>
+      <td>8.30</td>
+      <td>113.60</td>
+      <td>119.50</td>
+      <td>133.18</td>
+      <td>0.62</td>
+    </tr>
+    <tr>
+      <td>2025 training-ish AB&gt;=50</td>
+      <td>robust_z_15</td>
+      <td>Hitter transformed</td>
+      <td>3579</td>
+      <td>100.01</td>
+      <td>11.03</td>
+      <td>118.13</td>
+      <td>126.18</td>
+      <td>146.77</td>
+      <td>0.67</td>
+    </tr>
+    <tr>
+      <td>2026 current AB&gt;=50</td>
+      <td>robust_z_15</td>
+      <td>5 Tool transformed</td>
+      <td>1741</td>
+      <td>102.15</td>
+      <td>8.75</td>
+      <td>116.09</td>
+      <td>122.45</td>
+      <td>129.39</td>
+      <td>0.60</td>
+    </tr>
+    <tr>
+      <td>2026 current AB&gt;=50</td>
+      <td>robust_z_15</td>
+      <td>Hitter transformed</td>
+      <td>1741</td>
+      <td>103.46</td>
+      <td>11.77</td>
+      <td>122.62</td>
+      <td>130.77</td>
+      <td>139.66</td>
+      <td>0.69</td>
+    </tr>
+    <tr>
+      <td>2025 training-ish AB&gt;=50</td>
+      <td>percentile_100_50</td>
+      <td>5 Tool transformed</td>
+      <td>3579</td>
+      <td>98.28</td>
+      <td>14.18</td>
+      <td>121.87</td>
+      <td>129.12</td>
+      <td>143.74</td>
+      <td>0.62</td>
+    </tr>
+    <tr>
+      <td>2025 training-ish AB&gt;=50</td>
+      <td>percentile_100_50</td>
+      <td>Hitter transformed</td>
+      <td>3579</td>
+      <td>96.86</td>
+      <td>18.34</td>
+      <td>126.83</td>
+      <td>137.39</td>
+      <td>148.52</td>
+      <td>0.67</td>
+    </tr>
+    <tr>
+      <td>2026 current AB&gt;=50</td>
+      <td>percentile_100_50</td>
+      <td>5 Tool transformed</td>
+      <td>1741</td>
+      <td>101.52</td>
+      <td>14.51</td>
+      <td>124.75</td>
+      <td>134.13</td>
+      <td>142.49</td>
+      <td>0.58</td>
+    </tr>
+    <tr>
+      <td>2026 current AB&gt;=50</td>
+      <td>percentile_100_50</td>
+      <td>Hitter transformed</td>
+      <td>1741</td>
+      <td>102.27</td>
+      <td>18.81</td>
+      <td>132.55</td>
+      <td>142.91</td>
+      <td>147.33</td>
+      <td>0.68</td>
+    </tr>
+    <tr>
+      <td>2025 training-ish AB&gt;=50</td>
+      <td>log_plus_50</td>
+      <td>5 Tool transformed</td>
+      <td>3579</td>
+      <td>86.67</td>
+      <td>19.68</td>
+      <td>108.35</td>
+      <td>113.22</td>
+      <td>124.41</td>
+      <td>0.52</td>
+    </tr>
+    <tr>
+      <td>2025 training-ish AB&gt;=50</td>
+      <td>log_plus_50</td>
+      <td>Hitter transformed</td>
+      <td>3579</td>
+      <td>79.70</td>
+      <td>31.17</td>
+      <td>112.51</td>
+      <td>119.37</td>
+      <td>134.74</td>
+      <td>0.50</td>
+    </tr>
+    <tr>
+      <td>2026 current AB&gt;=50</td>
+      <td>log_plus_50</td>
+      <td>5 Tool transformed</td>
+      <td>1741</td>
+      <td>92.65</td>
+      <td>16.84</td>
+      <td>110.52</td>
+      <td>116.23</td>
+      <td>119.75</td>
+      <td>0.56</td>
+    </tr>
+    <tr>
+      <td>2026 current AB&gt;=50</td>
+      <td>log_plus_50</td>
+      <td>Hitter transformed</td>
+      <td>1741</td>
+      <td>89.36</td>
+      <td>26.71</td>
+      <td>116.98</td>
+      <td>123.83</td>
+      <td>132.74</td>
+      <td>0.55</td>
+    </tr>
+  </tbody>
+</table>
+</body></html>

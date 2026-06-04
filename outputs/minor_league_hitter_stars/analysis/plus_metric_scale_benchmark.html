@@ -1,0 +1,882 @@
+<!doctype html><html><head><meta charset="utf-8"><title>Plus Metric Scale Benchmark</title>
+<style>body{font-family:Arial,sans-serif;margin:24px;background:#f8fafc;color:#111827}p{max-width:980px;color:#475569;line-height:1.45}table{border-collapse:collapse;background:#fff;font-size:13px;margin-bottom:18px}th,td{border:1px solid #e5e7eb;padding:6px 8px;text-align:right}th:first-child,td:first-child{text-align:left}th{background:#14532d;color:#fff}h2{margin-top:28px}</style></head><body>
+<h1>Plus Metric Scale Benchmark</h1>
+<p>Benchmarks use 2025 players compared only to 2025 league baselines with the current scoring formulas. This version shows unfiltered 2025 plus distributions plus the 2025 AB percentiles by league to guide any sample-size controls.</p>
+<h2>2025 AB Percentiles by League</h2><table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>League Name</th>
+      <th>Level</th>
+      <th>Players</th>
+      <th>AB P25</th>
+      <th>AB P50</th>
+      <th>AB P75</th>
+      <th>AB P90</th>
+      <th>PA P25</th>
+      <th>PA P50</th>
+      <th>Median G</th>
+      <th>Mean AB</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>California League</td>
+      <td>A</td>
+      <td>216</td>
+      <td>58.5</td>
+      <td>134.5</td>
+      <td>246.5</td>
+      <td>349.5</td>
+      <td>69.2</td>
+      <td>152.5</td>
+      <td>39.5</td>
+      <td>164.0</td>
+    </tr>
+    <tr>
+      <td>Carolina League</td>
+      <td>A</td>
+      <td>353</td>
+      <td>43.0</td>
+      <td>101.0</td>
+      <td>220.0</td>
+      <td>318.8</td>
+      <td>49.0</td>
+      <td>118.0</td>
+      <td>29.0</td>
+      <td>140.6</td>
+    </tr>
+    <tr>
+      <td>Florida State League</td>
+      <td>A</td>
+      <td>355</td>
+      <td>24.0</td>
+      <td>81.0</td>
+      <td>179.5</td>
+      <td>304.4</td>
+      <td>27.0</td>
+      <td>97.0</td>
+      <td>24.0</td>
+      <td>117.2</td>
+    </tr>
+    <tr>
+      <td>Midwest League</td>
+      <td>A+</td>
+      <td>303</td>
+      <td>58.5</td>
+      <td>135.0</td>
+      <td>274.5</td>
+      <td>357.0</td>
+      <td>67.5</td>
+      <td>166.0</td>
+      <td>40.0</td>
+      <td>167.8</td>
+    </tr>
+    <tr>
+      <td>Northwest League</td>
+      <td>A+</td>
+      <td>147</td>
+      <td>58.0</td>
+      <td>130.0</td>
+      <td>280.5</td>
+      <td>413.8</td>
+      <td>69.5</td>
+      <td>151.0</td>
+      <td>39.0</td>
+      <td>177.8</td>
+    </tr>
+    <tr>
+      <td>South Atlantic League</td>
+      <td>A+</td>
+      <td>350</td>
+      <td>44.2</td>
+      <td>101.5</td>
+      <td>231.8</td>
+      <td>338.1</td>
+      <td>53.2</td>
+      <td>118.5</td>
+      <td>31.5</td>
+      <td>142.0</td>
+    </tr>
+    <tr>
+      <td>Eastern League</td>
+      <td>AA</td>
+      <td>324</td>
+      <td>48.8</td>
+      <td>130.0</td>
+      <td>258.2</td>
+      <td>359.4</td>
+      <td>56.0</td>
+      <td>149.0</td>
+      <td>41.5</td>
+      <td>162.5</td>
+    </tr>
+    <tr>
+      <td>Southern League</td>
+      <td>AA</td>
+      <td>194</td>
+      <td>60.2</td>
+      <td>140.0</td>
+      <td>295.5</td>
+      <td>395.1</td>
+      <td>70.0</td>
+      <td>161.5</td>
+      <td>42.5</td>
+      <td>178.7</td>
+    </tr>
+    <tr>
+      <td>Texas League</td>
+      <td>AA</td>
+      <td>261</td>
+      <td>45.0</td>
+      <td>146.0</td>
+      <td>279.0</td>
+      <td>394.0</td>
+      <td>49.0</td>
+      <td>163.0</td>
+      <td>40.0</td>
+      <td>174.7</td>
+    </tr>
+    <tr>
+      <td>International League</td>
+      <td>AAA</td>
+      <td>639</td>
+      <td>33.0</td>
+      <td>113.0</td>
+      <td>254.0</td>
+      <td>370.0</td>
+      <td>37.5</td>
+      <td>132.0</td>
+      <td>34.0</td>
+      <td>152.3</td>
+    </tr>
+    <tr>
+      <td>Pacific Coast League</td>
+      <td>AAA</td>
+      <td>319</td>
+      <td>35.0</td>
+      <td>120.0</td>
+      <td>258.5</td>
+      <td>379.0</td>
+      <td>40.0</td>
+      <td>141.0</td>
+      <td>36.0</td>
+      <td>160.4</td>
+    </tr>
+    <tr>
+      <td>Arizona Complex League</td>
+      <td>CPX</td>
+      <td>378</td>
+      <td>18.0</td>
+      <td>54.0</td>
+      <td>127.0</td>
+      <td>166.9</td>
+      <td>22.0</td>
+      <td>63.0</td>
+      <td>19.0</td>
+      <td>74.8</td>
+    </tr>
+    <tr>
+      <td>Florida Complex League</td>
+      <td>CPX</td>
+      <td>383</td>
+      <td>14.0</td>
+      <td>51.0</td>
+      <td>107.5</td>
+      <td>145.0</td>
+      <td>18.5</td>
+      <td>63.0</td>
+      <td>19.0</td>
+      <td>64.7</td>
+    </tr>
+    <tr>
+      <td>Dominican Summer League</td>
+      <td>R</td>
+      <td>839</td>
+      <td>65.5</td>
+      <td>104.0</td>
+      <td>137.0</td>
+      <td>162.2</td>
+      <td>84.0</td>
+      <td>129.0</td>
+      <td>36.0</td>
+      <td>100.8</td>
+    </tr>
+  </tbody>
+</table>
+<h2>2025 Plus Distribution, No AB Filter</h2><table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Metric</th>
+      <th>Count</th>
+      <th>P50</th>
+      <th>P75</th>
+      <th>P90</th>
+      <th>P95</th>
+      <th>P99</th>
+      <th>Max</th>
+      <th>Max Player</th>
+      <th>Max League</th>
+      <th>Max AB</th>
+      <th>AB50 P95</th>
+      <th>AB50 P99</th>
+      <th>AB50 Max</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Age+</td>
+      <td>5061</td>
+      <td>99.5</td>
+      <td>104.6</td>
+      <td>110.1</td>
+      <td>114.1</td>
+      <td>122.2</td>
+      <td>140.8</td>
+      <td>Anthony Huezo</td>
+      <td>Pacific Coast League</td>
+      <td>1</td>
+      <td>114.1</td>
+      <td>121.6</td>
+      <td>140.8</td>
+    </tr>
+    <tr>
+      <td>FG/G+</td>
+      <td>5061</td>
+      <td>91.9</td>
+      <td>118.0</td>
+      <td>142.7</td>
+      <td>160.6</td>
+      <td>212.9</td>
+      <td>453.8</td>
+      <td>Devin Saltiban</td>
+      <td>Florida State League</td>
+      <td>5</td>
+      <td>152.3</td>
+      <td>181.1</td>
+      <td>246.0</td>
+    </tr>
+    <tr>
+      <td>Approach+</td>
+      <td>5061</td>
+      <td>86.7</td>
+      <td>118.4</td>
+      <td>174.7</td>
+      <td>221.2</td>
+      <td>376.4</td>
+      <td>1285.7</td>
+      <td>Trent Farquhar</td>
+      <td>Florida State League</td>
+      <td>29</td>
+      <td>196.5</td>
+      <td>291.5</td>
+      <td>869.0</td>
+    </tr>
+    <tr>
+      <td>Speed+</td>
+      <td>5061</td>
+      <td>92.7</td>
+      <td>118.0</td>
+      <td>139.6</td>
+      <td>151.9</td>
+      <td>169.7</td>
+      <td>206.1</td>
+      <td>David Hamilton</td>
+      <td>International League</td>
+      <td>39</td>
+      <td>154.8</td>
+      <td>171.3</td>
+      <td>197.5</td>
+    </tr>
+    <tr>
+      <td>LD%+</td>
+      <td>5061</td>
+      <td>98.6</td>
+      <td>114.3</td>
+      <td>134.7</td>
+      <td>155.8</td>
+      <td>229.3</td>
+      <td>538.1</td>
+      <td>Justin Lugo</td>
+      <td>Dominican Summer League</td>
+      <td>4</td>
+      <td>135.4</td>
+      <td>156.8</td>
+      <td>193.3</td>
+    </tr>
+    <tr>
+      <td>HR/FB+</td>
+      <td>5061</td>
+      <td>71.9</td>
+      <td>115.8</td>
+      <td>180.4</td>
+      <td>237.3</td>
+      <td>447.4</td>
+      <td>3986.2</td>
+      <td>Carlos Cauro</td>
+      <td>Carolina League</td>
+      <td>26</td>
+      <td>206.2</td>
+      <td>291.7</td>
+      <td>541.3</td>
+    </tr>
+    <tr>
+      <td>wRC+</td>
+      <td>4851</td>
+      <td>96.0</td>
+      <td>120.7</td>
+      <td>148.9</td>
+      <td>172.3</td>
+      <td>262.3</td>
+      <td>651.7</td>
+      <td>Myles Emmerson</td>
+      <td>Pacific Coast League</td>
+      <td>1</td>
+      <td>151.5</td>
+      <td>181.7</td>
+      <td>237.8</td>
+    </tr>
+    <tr>
+      <td>5 Tool+</td>
+      <td>5061</td>
+      <td>91.6</td>
+      <td>106.3</td>
+      <td>122.3</td>
+      <td>134.3</td>
+      <td>194.1</td>
+      <td>859.7</td>
+      <td>Carlos Cauro</td>
+      <td>Carolina League</td>
+      <td>26</td>
+      <td>127.3</td>
+      <td>147.2</td>
+      <td>242.8</td>
+    </tr>
+    <tr>
+      <td>Hitter+</td>
+      <td>5061</td>
+      <td>88.6</td>
+      <td>110.0</td>
+      <td>136.6</td>
+      <td>160.1</td>
+      <td>260.1</td>
+      <td>1391.0</td>
+      <td>Carlos Cauro</td>
+      <td>Carolina League</td>
+      <td>26</td>
+      <td>142.7</td>
+      <td>175.4</td>
+      <td>332.5</td>
+    </tr>
+  </tbody>
+</table>
+<h2>All 2025 Samples</h2><table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Sample</th>
+      <th>Metric</th>
+      <th>Count</th>
+      <th>Min</th>
+      <th>P50</th>
+      <th>P75</th>
+      <th>P90</th>
+      <th>P95</th>
+      <th>P99</th>
+      <th>Max</th>
+      <th>Max Player</th>
+      <th>Max Team</th>
+      <th>Max League</th>
+      <th>Max AB</th>
+      <th>Max PA</th>
+      <th>Max wRC+</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>All 2025 rows</td>
+      <td>Age+</td>
+      <td>5061</td>
+      <td>56.1</td>
+      <td>99.5</td>
+      <td>104.6</td>
+      <td>110.1</td>
+      <td>114.1</td>
+      <td>122.2</td>
+      <td>140.8</td>
+      <td>Anthony Huezo</td>
+      <td>HOU</td>
+      <td>Pacific Coast League</td>
+      <td>1</td>
+      <td>1</td>
+      <td>462.1</td>
+    </tr>
+    <tr>
+      <td>All 2025 rows</td>
+      <td>FG/G+</td>
+      <td>5061</td>
+      <td>-60.8</td>
+      <td>91.9</td>
+      <td>118.0</td>
+      <td>142.7</td>
+      <td>160.6</td>
+      <td>212.9</td>
+      <td>453.8</td>
+      <td>Devin Saltiban</td>
+      <td>PHI</td>
+      <td>Florida State League</td>
+      <td>5</td>
+      <td>5</td>
+      <td>386.3</td>
+    </tr>
+    <tr>
+      <td>All 2025 rows</td>
+      <td>Approach+</td>
+      <td>5061</td>
+      <td>0.0</td>
+      <td>86.7</td>
+      <td>118.4</td>
+      <td>174.7</td>
+      <td>221.2</td>
+      <td>376.4</td>
+      <td>1285.7</td>
+      <td>Trent Farquhar</td>
+      <td>PHI</td>
+      <td>Florida State League</td>
+      <td>29</td>
+      <td>36</td>
+      <td>102.4</td>
+    </tr>
+    <tr>
+      <td>All 2025 rows</td>
+      <td>Speed+</td>
+      <td>5061</td>
+      <td>0.0</td>
+      <td>92.7</td>
+      <td>118.0</td>
+      <td>139.6</td>
+      <td>151.9</td>
+      <td>169.7</td>
+      <td>206.1</td>
+      <td>David Hamilton</td>
+      <td>BOS</td>
+      <td>International League</td>
+      <td>39</td>
+      <td>45</td>
+      <td>128.7</td>
+    </tr>
+    <tr>
+      <td>All 2025 rows</td>
+      <td>LD%+</td>
+      <td>5061</td>
+      <td>0.0</td>
+      <td>98.6</td>
+      <td>114.3</td>
+      <td>134.7</td>
+      <td>155.8</td>
+      <td>229.3</td>
+      <td>538.1</td>
+      <td>Justin Lugo</td>
+      <td>MIL</td>
+      <td>Dominican Summer League</td>
+      <td>4</td>
+      <td>4</td>
+      <td>219.4</td>
+    </tr>
+    <tr>
+      <td>All 2025 rows</td>
+      <td>HR/FB+</td>
+      <td>5061</td>
+      <td>0.0</td>
+      <td>71.9</td>
+      <td>115.8</td>
+      <td>180.4</td>
+      <td>237.3</td>
+      <td>447.4</td>
+      <td>3986.2</td>
+      <td>Carlos Cauro</td>
+      <td>HOU</td>
+      <td>Carolina League</td>
+      <td>26</td>
+      <td>32</td>
+      <td>178.7</td>
+    </tr>
+    <tr>
+      <td>All 2025 rows</td>
+      <td>wRC+</td>
+      <td>4851</td>
+      <td>-100.0</td>
+      <td>96.0</td>
+      <td>120.7</td>
+      <td>148.9</td>
+      <td>172.3</td>
+      <td>262.3</td>
+      <td>651.7</td>
+      <td>Myles Emmerson</td>
+      <td>LAA</td>
+      <td>Pacific Coast League</td>
+      <td>1</td>
+      <td>1</td>
+      <td>651.7</td>
+    </tr>
+    <tr>
+      <td>All 2025 rows</td>
+      <td>5 Tool+</td>
+      <td>5061</td>
+      <td>14.1</td>
+      <td>91.6</td>
+      <td>106.3</td>
+      <td>122.3</td>
+      <td>134.3</td>
+      <td>194.1</td>
+      <td>859.7</td>
+      <td>Carlos Cauro</td>
+      <td>HOU</td>
+      <td>Carolina League</td>
+      <td>26</td>
+      <td>32</td>
+      <td>178.7</td>
+    </tr>
+    <tr>
+      <td>All 2025 rows</td>
+      <td>Hitter+</td>
+      <td>5061</td>
+      <td>0.0</td>
+      <td>88.6</td>
+      <td>110.0</td>
+      <td>136.6</td>
+      <td>160.1</td>
+      <td>260.1</td>
+      <td>1391.0</td>
+      <td>Carlos Cauro</td>
+      <td>HOU</td>
+      <td>Carolina League</td>
+      <td>26</td>
+      <td>32</td>
+      <td>178.7</td>
+    </tr>
+    <tr>
+      <td>2025 rows, AB &gt;= 50</td>
+      <td>Age+</td>
+      <td>3579</td>
+      <td>72.9</td>
+      <td>100.8</td>
+      <td>104.8</td>
+      <td>110.1</td>
+      <td>114.1</td>
+      <td>121.6</td>
+      <td>140.8</td>
+      <td>Nelson Rada</td>
+      <td>LAA</td>
+      <td>Pacific Coast League</td>
+      <td>161</td>
+      <td>201</td>
+      <td>119.0</td>
+    </tr>
+    <tr>
+      <td>2025 rows, AB &gt;= 50</td>
+      <td>FG/G+</td>
+      <td>3579</td>
+      <td>4.6</td>
+      <td>97.7</td>
+      <td>119.5</td>
+      <td>140.1</td>
+      <td>152.3</td>
+      <td>181.1</td>
+      <td>246.0</td>
+      <td>A.J. Ewing</td>
+      <td>NYM</td>
+      <td>Florida State League</td>
+      <td>65</td>
+      <td>81</td>
+      <td>204.1</td>
+    </tr>
+    <tr>
+      <td>2025 rows, AB &gt;= 50</td>
+      <td>Approach+</td>
+      <td>3579</td>
+      <td>3.6</td>
+      <td>87.1</td>
+      <td>119.1</td>
+      <td>161.6</td>
+      <td>196.5</td>
+      <td>291.5</td>
+      <td>869.0</td>
+      <td>Pablo Nunez</td>
+      <td>CIN</td>
+      <td>Dominican Summer League</td>
+      <td>104</td>
+      <td>157</td>
+      <td>168.8</td>
+    </tr>
+    <tr>
+      <td>2025 rows, AB &gt;= 50</td>
+      <td>Speed+</td>
+      <td>3579</td>
+      <td>2.6</td>
+      <td>100.0</td>
+      <td>123.1</td>
+      <td>143.8</td>
+      <td>154.8</td>
+      <td>171.3</td>
+      <td>197.5</td>
+      <td>Enrique Bradfield Jr.</td>
+      <td>BAL</td>
+      <td>International League</td>
+      <td>56</td>
+      <td>62</td>
+      <td>32.7</td>
+    </tr>
+    <tr>
+      <td>2025 rows, AB &gt;= 50</td>
+      <td>LD%+</td>
+      <td>3579</td>
+      <td>11.7</td>
+      <td>99.0</td>
+      <td>112.3</td>
+      <td>126.2</td>
+      <td>135.4</td>
+      <td>156.8</td>
+      <td>193.3</td>
+      <td>A.J. Ewing</td>
+      <td>NYM</td>
+      <td>Florida State League</td>
+      <td>65</td>
+      <td>81</td>
+      <td>204.1</td>
+    </tr>
+    <tr>
+      <td>2025 rows, AB &gt;= 50</td>
+      <td>HR/FB+</td>
+      <td>3579</td>
+      <td>0.0</td>
+      <td>72.4</td>
+      <td>120.5</td>
+      <td>172.4</td>
+      <td>206.2</td>
+      <td>291.7</td>
+      <td>541.3</td>
+      <td>Jared Jones</td>
+      <td>PIT</td>
+      <td>South Atlantic League</td>
+      <td>50</td>
+      <td>58</td>
+      <td>100.7</td>
+    </tr>
+    <tr>
+      <td>2025 rows, AB &gt;= 50</td>
+      <td>wRC+</td>
+      <td>3431</td>
+      <td>-22.0</td>
+      <td>98.3</td>
+      <td>118.5</td>
+      <td>138.6</td>
+      <td>151.5</td>
+      <td>181.7</td>
+      <td>237.8</td>
+      <td>Rainiel Rodriguez</td>
+      <td>STL</td>
+      <td>Florida Complex League</td>
+      <td>59</td>
+      <td>80</td>
+      <td>237.8</td>
+    </tr>
+    <tr>
+      <td>2025 rows, AB &gt;= 50</td>
+      <td>5 Tool+</td>
+      <td>3579</td>
+      <td>38.5</td>
+      <td>94.1</td>
+      <td>106.7</td>
+      <td>119.6</td>
+      <td>127.3</td>
+      <td>147.2</td>
+      <td>242.8</td>
+      <td>Pablo Nunez</td>
+      <td>CIN</td>
+      <td>Dominican Summer League</td>
+      <td>104</td>
+      <td>157</td>
+      <td>168.8</td>
+    </tr>
+    <tr>
+      <td>2025 rows, AB &gt;= 50</td>
+      <td>Hitter+</td>
+      <td>3579</td>
+      <td>16.5</td>
+      <td>90.2</td>
+      <td>108.7</td>
+      <td>128.5</td>
+      <td>142.7</td>
+      <td>175.4</td>
+      <td>332.5</td>
+      <td>Pablo Nunez</td>
+      <td>CIN</td>
+      <td>Dominican Summer League</td>
+      <td>104</td>
+      <td>157</td>
+      <td>168.8</td>
+    </tr>
+    <tr>
+      <td>2025 rows, AB &gt;= 100</td>
+      <td>Age+</td>
+      <td>2608</td>
+      <td>72.9</td>
+      <td>101.0</td>
+      <td>105.0</td>
+      <td>110.3</td>
+      <td>114.1</td>
+      <td>121.6</td>
+      <td>140.8</td>
+      <td>Nelson Rada</td>
+      <td>LAA</td>
+      <td>Pacific Coast League</td>
+      <td>161</td>
+      <td>201</td>
+      <td>119.0</td>
+    </tr>
+    <tr>
+      <td>2025 rows, AB &gt;= 100</td>
+      <td>FG/G+</td>
+      <td>2608</td>
+      <td>17.5</td>
+      <td>102.4</td>
+      <td>122.2</td>
+      <td>141.2</td>
+      <td>152.2</td>
+      <td>174.0</td>
+      <td>211.2</td>
+      <td>Konnor Griffin</td>
+      <td>PIT</td>
+      <td>South Atlantic League</td>
+      <td>194</td>
+      <td>234</td>
+      <td>170.3</td>
+    </tr>
+    <tr>
+      <td>2025 rows, AB &gt;= 100</td>
+      <td>Approach+</td>
+      <td>2608</td>
+      <td>8.4</td>
+      <td>87.3</td>
+      <td>120.5</td>
+      <td>161.3</td>
+      <td>193.2</td>
+      <td>282.3</td>
+      <td>869.0</td>
+      <td>Pablo Nunez</td>
+      <td>CIN</td>
+      <td>Dominican Summer League</td>
+      <td>104</td>
+      <td>157</td>
+      <td>168.8</td>
+    </tr>
+    <tr>
+      <td>2025 rows, AB &gt;= 100</td>
+      <td>Speed+</td>
+      <td>2608</td>
+      <td>2.6</td>
+      <td>102.6</td>
+      <td>125.2</td>
+      <td>144.9</td>
+      <td>155.0</td>
+      <td>170.4</td>
+      <td>194.3</td>
+      <td>Luis Valdez</td>
+      <td>BAL</td>
+      <td>Eastern League</td>
+      <td>127</td>
+      <td>138</td>
+      <td>22.4</td>
+    </tr>
+    <tr>
+      <td>2025 rows, AB &gt;= 100</td>
+      <td>LD%+</td>
+      <td>2608</td>
+      <td>32.7</td>
+      <td>99.4</td>
+      <td>111.7</td>
+      <td>124.0</td>
+      <td>131.7</td>
+      <td>146.7</td>
+      <td>179.0</td>
+      <td>Zach Ehrhard</td>
+      <td>BOS</td>
+      <td>South Atlantic League</td>
+      <td>111</td>
+      <td>140</td>
+      <td>175.2</td>
+    </tr>
+    <tr>
+      <td>2025 rows, AB &gt;= 100</td>
+      <td>HR/FB+</td>
+      <td>2608</td>
+      <td>0.0</td>
+      <td>78.5</td>
+      <td>123.4</td>
+      <td>172.6</td>
+      <td>203.0</td>
+      <td>266.5</td>
+      <td>518.0</td>
+      <td>Jostin Ogando</td>
+      <td>BOS</td>
+      <td>Dominican Summer League</td>
+      <td>103</td>
+      <td>134</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>2025 rows, AB &gt;= 100</td>
+      <td>wRC+</td>
+      <td>2553</td>
+      <td>3.5</td>
+      <td>100.1</td>
+      <td>119.2</td>
+      <td>137.9</td>
+      <td>150.0</td>
+      <td>169.1</td>
+      <td>214.4</td>
+      <td>Kevin McGonigle</td>
+      <td>DET</td>
+      <td>Midwest League</td>
+      <td>145</td>
+      <td>171</td>
+      <td>214.4</td>
+    </tr>
+    <tr>
+      <td>2025 rows, AB &gt;= 100</td>
+      <td>5 Tool+</td>
+      <td>2608</td>
+      <td>45.6</td>
+      <td>96.1</td>
+      <td>108.1</td>
+      <td>119.7</td>
+      <td>127.0</td>
+      <td>141.2</td>
+      <td>242.8</td>
+      <td>Pablo Nunez</td>
+      <td>CIN</td>
+      <td>Dominican Summer League</td>
+      <td>104</td>
+      <td>157</td>
+      <td>168.8</td>
+    </tr>
+    <tr>
+      <td>2025 rows, AB &gt;= 100</td>
+      <td>Hitter+</td>
+      <td>2608</td>
+      <td>28.1</td>
+      <td>92.4</td>
+      <td>109.9</td>
+      <td>127.8</td>
+      <td>141.6</td>
+      <td>163.4</td>
+      <td>332.5</td>
+      <td>Pablo Nunez</td>
+      <td>CIN</td>
+      <td>Dominican Summer League</td>
+      <td>104</td>
+      <td>157</td>
+      <td>168.8</td>
+    </tr>
+  </tbody>
+</table>
+</body></html>

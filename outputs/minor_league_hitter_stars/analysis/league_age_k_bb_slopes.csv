@@ -1,0 +1,29 @@
+League Name,League Level,Metric,Age Slope Per Year,Age Points,Total PA
+California League,A,Weighted BB%,0.001090435531414517,8,58592
+Carolina League,A,Weighted BB%,0.004356381373958627,9,82184
+Florida State League,A,Weighted BB%,-0.0016086756873024207,10,68932
+Midwest League,A+,Weighted BB%,0.0009017398901409048,10,83387
+Northwest League,A+,Weighted BB%,0.002005131639365932,8,42569
+South Atlantic League,A+,Weighted BB%,0.0007420143844746983,8,81165
+Eastern League,AA,Weighted BB%,0.00012806171905140488,10,83676
+Southern League,AA,Weighted BB%,-0.0016274743276462212,11,55237
+Texas League,AA,Weighted BB%,0.0009447586671891913,11,71826
+International League,AAA,Weighted BB%,-0.0009286582925049883,17,156649
+Pacific Coast League,AAA,Weighted BB%,-0.00047183299566076406,17,82720
+Arizona Complex League,CPX,Weighted BB%,-0.002309601063329225,10,45377
+Florida Complex League,CPX,Weighted BB%,0.005967768954567311,10,41038
+Dominican Summer League,R,Weighted BB%,0.0012160781804534076,6,89593
+California League,A,Weighted K%,-0.0010251726643715523,8,58592
+Carolina League,A,Weighted K%,0.004411595768082586,9,82184
+Florida State League,A,Weighted K%,0.0010924711290648357,10,68932
+Midwest League,A+,Weighted K%,-0.0011680720831264784,10,83387
+Northwest League,A+,Weighted K%,0.002915208555706996,8,42569
+South Atlantic League,A+,Weighted K%,0.008448451149477981,8,81165
+Eastern League,AA,Weighted K%,0.004745946734055928,10,83676
+Southern League,AA,Weighted K%,0.010617057822797453,11,55237
+Texas League,AA,Weighted K%,0.0011304514904343825,11,71826
+International League,AAA,Weighted K%,0.0007858545799926433,17,156649
+Pacific Coast League,AAA,Weighted K%,-0.0004853696684747391,17,82720
+Arizona Complex League,CPX,Weighted K%,0.0001352707132386536,10,45377
+Florida Complex League,CPX,Weighted K%,-0.007118848391823642,10,41038
+Dominican Summer League,R,Weighted K%,-0.0018222349249818644,6,89593

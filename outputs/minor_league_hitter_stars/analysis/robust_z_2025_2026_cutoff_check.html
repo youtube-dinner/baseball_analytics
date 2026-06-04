@@ -1,0 +1,2211 @@
+<!doctype html><html><head><meta charset="utf-8"><title>Robust Z 2025/2026 Cutoff Check</title>
+<style>body{font-family:Arial,sans-serif;margin:24px;background:#f8fafc;color:#111827}p{max-width:1080px;color:#475569;line-height:1.45}table{border-collapse:collapse;background:#fff;font-size:13px;margin-bottom:18px}th,td{border:1px solid #e5e7eb;padding:6px 8px;text-align:right}th:first-child,td:first-child{text-align:left}th{background:#14532d;color:#fff}h2{margin-top:28px}.note{border-left:4px solid #14532d;background:#fff;padding:10px 14px}</style></head><body>
+<h1>Robust Z 2025/2026 Cutoff Check</h1>
+<p class="note">Scores are transformed as 100 + 15 * ((raw plus - 2025 median) / (2025 IQR / 1.349)). No caps are applied in these tables.</p>
+<h2>Training Parameters From 2025</h2><table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Metric</th>
+      <th>Raw Column</th>
+      <th>Training Source</th>
+      <th>Training AB Threshold</th>
+      <th>Training Rows</th>
+      <th>Median</th>
+      <th>Q25</th>
+      <th>Q75</th>
+      <th>IQR</th>
+      <th>Robust Scale</th>
+      <th>Raw P95</th>
+      <th>Raw P99</th>
+      <th>Raw Max</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Age+</td>
+      <td>Age_Plus</td>
+      <td>2025 vs 2025</td>
+      <td>25</td>
+      <td>4124</td>
+      <td>100.00</td>
+      <td>95.07</td>
+      <td>104.76</td>
+      <td>9.69</td>
+      <td>7.18</td>
+      <td>114.14</td>
+      <td>121.58</td>
+      <td>140.78</td>
+    </tr>
+    <tr>
+      <td>Approach+</td>
+      <td>Approach_score_Plus</td>
+      <td>2025 vs 2025</td>
+      <td>125</td>
+      <td>2127</td>
+      <td>86.68</td>
+      <td>62.97</td>
+      <td>120.98</td>
+      <td>58.01</td>
+      <td>43.00</td>
+      <td>192.35</td>
+      <td>281.75</td>
+      <td>520.57</td>
+    </tr>
+    <tr>
+      <td>Speed+</td>
+      <td>Speed_score_Plus</td>
+      <td>2025 vs 2025</td>
+      <td>75</td>
+      <td>3090</td>
+      <td>100.48</td>
+      <td>75.99</td>
+      <td>124.10</td>
+      <td>48.10</td>
+      <td>35.66</td>
+      <td>154.63</td>
+      <td>169.70</td>
+      <td>194.30</td>
+    </tr>
+    <tr>
+      <td>LD%+</td>
+      <td>LD%_Plus</td>
+      <td>2025 vs 2025</td>
+      <td>200</td>
+      <td>1146</td>
+      <td>99.58</td>
+      <td>89.84</td>
+      <td>109.24</td>
+      <td>19.40</td>
+      <td>14.38</td>
+      <td>124.05</td>
+      <td>135.27</td>
+      <td>152.75</td>
+    </tr>
+    <tr>
+      <td>HR/FB+</td>
+      <td>HR_FB_pct_Plus</td>
+      <td>2025 vs 2025</td>
+      <td>200</td>
+      <td>1146</td>
+      <td>88.61</td>
+      <td>53.93</td>
+      <td>124.57</td>
+      <td>70.64</td>
+      <td>52.37</td>
+      <td>186.60</td>
+      <td>237.25</td>
+      <td>318.08</td>
+    </tr>
+  </tbody>
+</table>
+<h2>AB &gt;= 50 Summary</h2><table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Sample</th>
+      <th>Filter</th>
+      <th>Metric</th>
+      <th>Count</th>
+      <th>Mean</th>
+      <th>Std Dev</th>
+      <th>P50</th>
+      <th>P75</th>
+      <th>P90</th>
+      <th>P95</th>
+      <th>P99</th>
+      <th>Max</th>
+      <th>Max Player</th>
+      <th>Max Team</th>
+      <th>Max League</th>
+      <th>Max AB</th>
+      <th>Max Raw Metric+</th>
+      <th>Max wRC+</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>2025 vs 2025</td>
+      <td>AB &gt;= 50</td>
+      <td>5 Tool RobustZ+</td>
+      <td>3579</td>
+      <td>100.25</td>
+      <td>8.78</td>
+      <td>99.92</td>
+      <td>105.65</td>
+      <td>111.32</td>
+      <td>114.94</td>
+      <td>122.22</td>
+      <td>150.78</td>
+      <td>Pablo Nunez</td>
+      <td>CIN</td>
+      <td>Dominican Summer League</td>
+      <td>104</td>
+      <td></td>
+      <td>168.76</td>
+    </tr>
+    <tr>
+      <td>2026 vs 2025+2026</td>
+      <td>AB &gt;= 50</td>
+      <td>5 Tool RobustZ+</td>
+      <td>1741</td>
+      <td>102.80</td>
+      <td>9.51</td>
+      <td>102.42</td>
+      <td>108.78</td>
+      <td>115.00</td>
+      <td>118.79</td>
+      <td>124.57</td>
+      <td>144.07</td>
+      <td>Conor Essenburg</td>
+      <td>ATL</td>
+      <td>Carolina League</td>
+      <td>58</td>
+      <td></td>
+      <td>138.08</td>
+    </tr>
+    <tr>
+      <td>2025 vs 2025</td>
+      <td>AB &gt;= 50</td>
+      <td>Age+</td>
+      <td>3579</td>
+      <td>100.78</td>
+      <td>17.02</td>
+      <td>101.75</td>
+      <td>109.94</td>
+      <td>121.06</td>
+      <td>129.53</td>
+      <td>145.07</td>
+      <td>185.16</td>
+      <td>Nelson Rada</td>
+      <td>LAA</td>
+      <td>Pacific Coast League</td>
+      <td>161</td>
+      <td>140.78</td>
+      <td>119.00</td>
+    </tr>
+    <tr>
+      <td>2026 vs 2025+2026</td>
+      <td>AB &gt;= 50</td>
+      <td>Age+</td>
+      <td>1741</td>
+      <td>100.30</td>
+      <td>17.40</td>
+      <td>100.31</td>
+      <td>111.95</td>
+      <td>122.99</td>
+      <td>129.10</td>
+      <td>139.91</td>
+      <td>171.65</td>
+      <td>Colt Emerson</td>
+      <td>SEA</td>
+      <td>Pacific Coast League</td>
+      <td>145</td>
+      <td>134.31</td>
+      <td>103.63</td>
+    </tr>
+    <tr>
+      <td>2025 vs 2025</td>
+      <td>AB &gt;= 50</td>
+      <td>Approach+</td>
+      <td>3579</td>
+      <td>103.58</td>
+      <td>19.41</td>
+      <td>100.15</td>
+      <td>111.32</td>
+      <td>126.13</td>
+      <td>138.29</td>
+      <td>171.44</td>
+      <td>372.90</td>
+      <td>Pablo Nunez</td>
+      <td>CIN</td>
+      <td>Dominican Summer League</td>
+      <td>104</td>
+      <td>869.04</td>
+      <td>168.76</td>
+    </tr>
+    <tr>
+      <td>2026 vs 2025+2026</td>
+      <td>AB &gt;= 50</td>
+      <td>Approach+</td>
+      <td>1741</td>
+      <td>103.95</td>
+      <td>20.68</td>
+      <td>99.42</td>
+      <td>111.68</td>
+      <td>127.44</td>
+      <td>143.12</td>
+      <td>182.93</td>
+      <td>266.00</td>
+      <td>Caden Bodine</td>
+      <td>TBR</td>
+      <td>Carolina League</td>
+      <td>132</td>
+      <td>562.57</td>
+      <td>180.57</td>
+    </tr>
+    <tr>
+      <td>2025 vs 2025</td>
+      <td>AB &gt;= 50</td>
+      <td>HR/FB+</td>
+      <td>3579</td>
+      <td>98.14</td>
+      <td>19.65</td>
+      <td>95.35</td>
+      <td>109.14</td>
+      <td>124.00</td>
+      <td>133.69</td>
+      <td>158.19</td>
+      <td>229.67</td>
+      <td>Jared Jones</td>
+      <td>PIT</td>
+      <td>South Atlantic League</td>
+      <td>50</td>
+      <td>541.30</td>
+      <td>100.74</td>
+    </tr>
+    <tr>
+      <td>2026 vs 2025+2026</td>
+      <td>AB &gt;= 50</td>
+      <td>HR/FB+</td>
+      <td>1741</td>
+      <td>107.32</td>
+      <td>23.78</td>
+      <td>104.08</td>
+      <td>120.03</td>
+      <td>138.41</td>
+      <td>149.48</td>
+      <td>175.48</td>
+      <td>305.88</td>
+      <td>Conor Essenburg</td>
+      <td>ATL</td>
+      <td>Carolina League</td>
+      <td>58</td>
+      <td>807.34</td>
+      <td>138.08</td>
+    </tr>
+    <tr>
+      <td>2025 vs 2025</td>
+      <td>AB &gt;= 50</td>
+      <td>Hitter RobustZ+</td>
+      <td>3579</td>
+      <td>100.49</td>
+      <td>11.99</td>
+      <td>99.88</td>
+      <td>107.65</td>
+      <td>115.19</td>
+      <td>120.35</td>
+      <td>132.69</td>
+      <td>183.50</td>
+      <td>Pablo Nunez</td>
+      <td>CIN</td>
+      <td>Dominican Summer League</td>
+      <td>104</td>
+      <td></td>
+      <td>168.76</td>
+    </tr>
+    <tr>
+      <td>2026 vs 2025+2026</td>
+      <td>AB &gt;= 50</td>
+      <td>Hitter RobustZ+</td>
+      <td>1741</td>
+      <td>104.48</td>
+      <td>13.30</td>
+      <td>103.67</td>
+      <td>112.03</td>
+      <td>121.55</td>
+      <td>127.83</td>
+      <td>139.59</td>
+      <td>168.00</td>
+      <td>Conor Essenburg</td>
+      <td>ATL</td>
+      <td>Carolina League</td>
+      <td>58</td>
+      <td></td>
+      <td>138.08</td>
+    </tr>
+    <tr>
+      <td>2025 vs 2025</td>
+      <td>AB &gt;= 50</td>
+      <td>LD%+</td>
+      <td>3579</td>
+      <td>99.75</td>
+      <td>22.82</td>
+      <td>99.37</td>
+      <td>113.23</td>
+      <td>127.79</td>
+      <td>137.32</td>
+      <td>159.72</td>
+      <td>197.71</td>
+      <td>A.J. Ewing</td>
+      <td>NYM</td>
+      <td>Florida State League</td>
+      <td>65</td>
+      <td>193.25</td>
+      <td>204.09</td>
+    </tr>
+    <tr>
+      <td>2026 vs 2025+2026</td>
+      <td>AB &gt;= 50</td>
+      <td>LD%+</td>
+      <td>1741</td>
+      <td>102.18</td>
+      <td>25.12</td>
+      <td>100.85</td>
+      <td>117.53</td>
+      <td>132.94</td>
+      <td>143.38</td>
+      <td>169.01</td>
+      <td>224.87</td>
+      <td>Miguel Hernandez</td>
+      <td>STL</td>
+      <td>Florida Complex League</td>
+      <td>63</td>
+      <td>219.30</td>
+      <td>63.51</td>
+    </tr>
+    <tr>
+      <td>2025 vs 2025</td>
+      <td>AB &gt;= 50</td>
+      <td>Speed+</td>
+      <td>3579</td>
+      <td>98.98</td>
+      <td>15.09</td>
+      <td>99.80</td>
+      <td>109.52</td>
+      <td>118.22</td>
+      <td>122.86</td>
+      <td>129.79</td>
+      <td>140.83</td>
+      <td>Enrique Bradfield Jr.</td>
+      <td>BAL</td>
+      <td>International League</td>
+      <td>56</td>
+      <td>197.55</td>
+      <td>32.66</td>
+    </tr>
+    <tr>
+      <td>2026 vs 2025+2026</td>
+      <td>AB &gt;= 50</td>
+      <td>Speed+</td>
+      <td>1741</td>
+      <td>100.28</td>
+      <td>16.53</td>
+      <td>101.10</td>
+      <td>112.55</td>
+      <td>122.06</td>
+      <td>126.73</td>
+      <td>133.06</td>
+      <td>144.28</td>
+      <td>Duke Ellis</td>
+      <td>NYY</td>
+      <td>International League</td>
+      <td>94</td>
+      <td>205.73</td>
+      <td>82.17</td>
+    </tr>
+  </tbody>
+</table>
+<h2>All Summaries</h2><table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Sample</th>
+      <th>Filter</th>
+      <th>Metric</th>
+      <th>Count</th>
+      <th>Mean</th>
+      <th>Std Dev</th>
+      <th>P50</th>
+      <th>P75</th>
+      <th>P90</th>
+      <th>P95</th>
+      <th>P99</th>
+      <th>Max</th>
+      <th>Max Player</th>
+      <th>Max Team</th>
+      <th>Max League</th>
+      <th>Max AB</th>
+      <th>Max Raw Metric+</th>
+      <th>Max wRC+</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>2025 vs 2025</td>
+      <td>All rows</td>
+      <td>Age+</td>
+      <td>5061</td>
+      <td>98.04</td>
+      <td>20.33</td>
+      <td>98.94</td>
+      <td>109.56</td>
+      <td>121.06</td>
+      <td>129.53</td>
+      <td>146.40</td>
+      <td>185.16</td>
+      <td>Anthony Huezo</td>
+      <td>HOU</td>
+      <td>Pacific Coast League</td>
+      <td>1</td>
+      <td>140.78</td>
+      <td>462.14</td>
+    </tr>
+    <tr>
+      <td>2025 vs 2025</td>
+      <td>AB &gt;= 50</td>
+      <td>Age+</td>
+      <td>3579</td>
+      <td>100.78</td>
+      <td>17.02</td>
+      <td>101.75</td>
+      <td>109.94</td>
+      <td>121.06</td>
+      <td>129.53</td>
+      <td>145.07</td>
+      <td>185.16</td>
+      <td>Nelson Rada</td>
+      <td>LAA</td>
+      <td>Pacific Coast League</td>
+      <td>161</td>
+      <td>140.78</td>
+      <td>119.00</td>
+    </tr>
+    <tr>
+      <td>2025 vs 2025</td>
+      <td>All rows</td>
+      <td>Approach+</td>
+      <td>5061</td>
+      <td>104.03</td>
+      <td>26.97</td>
+      <td>99.99</td>
+      <td>111.05</td>
+      <td>130.71</td>
+      <td>146.92</td>
+      <td>201.06</td>
+      <td>518.26</td>
+      <td>Trent Farquhar</td>
+      <td>PHI</td>
+      <td>Florida State League</td>
+      <td>29</td>
+      <td>1285.75</td>
+      <td>102.38</td>
+    </tr>
+    <tr>
+      <td>2025 vs 2025</td>
+      <td>AB &gt;= 50</td>
+      <td>Approach+</td>
+      <td>3579</td>
+      <td>103.58</td>
+      <td>19.41</td>
+      <td>100.15</td>
+      <td>111.32</td>
+      <td>126.13</td>
+      <td>138.29</td>
+      <td>171.44</td>
+      <td>372.90</td>
+      <td>Pablo Nunez</td>
+      <td>CIN</td>
+      <td>Dominican Summer League</td>
+      <td>104</td>
+      <td>869.04</td>
+      <td>168.76</td>
+    </tr>
+    <tr>
+      <td>2025 vs 2025</td>
+      <td>All rows</td>
+      <td>Speed+</td>
+      <td>5061</td>
+      <td>94.02</td>
+      <td>18.05</td>
+      <td>96.75</td>
+      <td>107.37</td>
+      <td>116.46</td>
+      <td>121.63</td>
+      <td>129.14</td>
+      <td>144.43</td>
+      <td>David Hamilton</td>
+      <td>BOS</td>
+      <td>International League</td>
+      <td>39</td>
+      <td>206.10</td>
+      <td>128.66</td>
+    </tr>
+    <tr>
+      <td>2025 vs 2025</td>
+      <td>AB &gt;= 50</td>
+      <td>Speed+</td>
+      <td>3579</td>
+      <td>98.98</td>
+      <td>15.09</td>
+      <td>99.80</td>
+      <td>109.52</td>
+      <td>118.22</td>
+      <td>122.86</td>
+      <td>129.79</td>
+      <td>140.83</td>
+      <td>Enrique Bradfield Jr.</td>
+      <td>BAL</td>
+      <td>International League</td>
+      <td>56</td>
+      <td>197.55</td>
+      <td>32.66</td>
+    </tr>
+    <tr>
+      <td>2025 vs 2025</td>
+      <td>All rows</td>
+      <td>LD%+</td>
+      <td>5061</td>
+      <td>98.02</td>
+      <td>44.36</td>
+      <td>98.93</td>
+      <td>115.40</td>
+      <td>136.59</td>
+      <td>158.60</td>
+      <td>235.30</td>
+      <td>557.40</td>
+      <td>Justin Lugo</td>
+      <td>MIL</td>
+      <td>Dominican Summer League</td>
+      <td>4</td>
+      <td>538.09</td>
+      <td>219.41</td>
+    </tr>
+    <tr>
+      <td>2025 vs 2025</td>
+      <td>AB &gt;= 50</td>
+      <td>LD%+</td>
+      <td>3579</td>
+      <td>99.75</td>
+      <td>22.82</td>
+      <td>99.37</td>
+      <td>113.23</td>
+      <td>127.79</td>
+      <td>137.32</td>
+      <td>159.72</td>
+      <td>197.71</td>
+      <td>A.J. Ewing</td>
+      <td>NYM</td>
+      <td>Florida State League</td>
+      <td>65</td>
+      <td>193.25</td>
+      <td>204.09</td>
+    </tr>
+    <tr>
+      <td>2025 vs 2025</td>
+      <td>All rows</td>
+      <td>HR/FB+</td>
+      <td>5061</td>
+      <td>99.09</td>
+      <td>32.98</td>
+      <td>95.23</td>
+      <td>107.79</td>
+      <td>126.30</td>
+      <td>142.59</td>
+      <td>202.76</td>
+      <td>1216.44</td>
+      <td>Carlos Cauro</td>
+      <td>HOU</td>
+      <td>Carolina League</td>
+      <td>26</td>
+      <td>3986.17</td>
+      <td>178.66</td>
+    </tr>
+    <tr>
+      <td>2025 vs 2025</td>
+      <td>AB &gt;= 50</td>
+      <td>HR/FB+</td>
+      <td>3579</td>
+      <td>98.14</td>
+      <td>19.65</td>
+      <td>95.35</td>
+      <td>109.14</td>
+      <td>124.00</td>
+      <td>133.69</td>
+      <td>158.19</td>
+      <td>229.67</td>
+      <td>Jared Jones</td>
+      <td>PIT</td>
+      <td>South Atlantic League</td>
+      <td>50</td>
+      <td>541.30</td>
+      <td>100.74</td>
+    </tr>
+    <tr>
+      <td>2025 vs 2025</td>
+      <td>All rows</td>
+      <td>5 Tool RobustZ+</td>
+      <td>5061</td>
+      <td>98.64</td>
+      <td>13.80</td>
+      <td>98.74</td>
+      <td>105.52</td>
+      <td>112.39</td>
+      <td>118.05</td>
+      <td>138.10</td>
+      <td>321.35</td>
+      <td>Carlos Cauro</td>
+      <td>HOU</td>
+      <td>Carolina League</td>
+      <td>26</td>
+      <td></td>
+      <td>178.66</td>
+    </tr>
+    <tr>
+      <td>2025 vs 2025</td>
+      <td>AB &gt;= 50</td>
+      <td>5 Tool RobustZ+</td>
+      <td>3579</td>
+      <td>100.25</td>
+      <td>8.78</td>
+      <td>99.92</td>
+      <td>105.65</td>
+      <td>111.32</td>
+      <td>114.94</td>
+      <td>122.22</td>
+      <td>150.78</td>
+      <td>Pablo Nunez</td>
+      <td>CIN</td>
+      <td>Dominican Summer League</td>
+      <td>104</td>
+      <td></td>
+      <td>168.76</td>
+    </tr>
+    <tr>
+      <td>2025 vs 2025</td>
+      <td>All rows</td>
+      <td>Hitter RobustZ+</td>
+      <td>5061</td>
+      <td>100.38</td>
+      <td>20.80</td>
+      <td>99.73</td>
+      <td>108.60</td>
+      <td>119.36</td>
+      <td>129.49</td>
+      <td>171.37</td>
+      <td>478.41</td>
+      <td>Carlos Cauro</td>
+      <td>HOU</td>
+      <td>Carolina League</td>
+      <td>26</td>
+      <td></td>
+      <td>178.66</td>
+    </tr>
+    <tr>
+      <td>2025 vs 2025</td>
+      <td>AB &gt;= 50</td>
+      <td>Hitter RobustZ+</td>
+      <td>3579</td>
+      <td>100.49</td>
+      <td>11.99</td>
+      <td>99.88</td>
+      <td>107.65</td>
+      <td>115.19</td>
+      <td>120.35</td>
+      <td>132.69</td>
+      <td>183.50</td>
+      <td>Pablo Nunez</td>
+      <td>CIN</td>
+      <td>Dominican Summer League</td>
+      <td>104</td>
+      <td></td>
+      <td>168.76</td>
+    </tr>
+    <tr>
+      <td>2026 vs 2025+2026</td>
+      <td>All rows</td>
+      <td>Age+</td>
+      <td>3478</td>
+      <td>98.11</td>
+      <td>18.35</td>
+      <td>99.48</td>
+      <td>107.86</td>
+      <td>119.19</td>
+      <td>125.07</td>
+      <td>139.91</td>
+      <td>171.65</td>
+      <td>Colt Emerson</td>
+      <td>SEA</td>
+      <td>Pacific Coast League</td>
+      <td>145</td>
+      <td>134.31</td>
+      <td>103.63</td>
+    </tr>
+    <tr>
+      <td>2026 vs 2025+2026</td>
+      <td>AB &gt;= 50</td>
+      <td>Age+</td>
+      <td>1741</td>
+      <td>100.30</td>
+      <td>17.40</td>
+      <td>100.31</td>
+      <td>111.95</td>
+      <td>122.99</td>
+      <td>129.10</td>
+      <td>139.91</td>
+      <td>171.65</td>
+      <td>Colt Emerson</td>
+      <td>SEA</td>
+      <td>Pacific Coast League</td>
+      <td>145</td>
+      <td>134.31</td>
+      <td>103.63</td>
+    </tr>
+    <tr>
+      <td>2026 vs 2025+2026</td>
+      <td>All rows</td>
+      <td>Approach+</td>
+      <td>3478</td>
+      <td>102.89</td>
+      <td>29.88</td>
+      <td>98.91</td>
+      <td>109.90</td>
+      <td>131.37</td>
+      <td>150.69</td>
+      <td>216.85</td>
+      <td>613.26</td>
+      <td>Moises Polanco</td>
+      <td>MIL</td>
+      <td>Arizona Complex League</td>
+      <td>26</td>
+      <td>1558.10</td>
+      <td>208.40</td>
+    </tr>
+    <tr>
+      <td>2026 vs 2025+2026</td>
+      <td>AB &gt;= 50</td>
+      <td>Approach+</td>
+      <td>1741</td>
+      <td>103.95</td>
+      <td>20.68</td>
+      <td>99.42</td>
+      <td>111.68</td>
+      <td>127.44</td>
+      <td>143.12</td>
+      <td>182.93</td>
+      <td>266.00</td>
+      <td>Caden Bodine</td>
+      <td>TBR</td>
+      <td>Carolina League</td>
+      <td>132</td>
+      <td>562.57</td>
+      <td>180.57</td>
+    </tr>
+    <tr>
+      <td>2026 vs 2025+2026</td>
+      <td>All rows</td>
+      <td>Speed+</td>
+      <td>3478</td>
+      <td>91.78</td>
+      <td>20.38</td>
+      <td>93.50</td>
+      <td>108.14</td>
+      <td>118.08</td>
+      <td>124.23</td>
+      <td>132.32</td>
+      <td>144.28</td>
+      <td>Duke Ellis</td>
+      <td>NYY</td>
+      <td>International League</td>
+      <td>94</td>
+      <td>205.73</td>
+      <td>82.17</td>
+    </tr>
+    <tr>
+      <td>2026 vs 2025+2026</td>
+      <td>AB &gt;= 50</td>
+      <td>Speed+</td>
+      <td>1741</td>
+      <td>100.28</td>
+      <td>16.53</td>
+      <td>101.10</td>
+      <td>112.55</td>
+      <td>122.06</td>
+      <td>126.73</td>
+      <td>133.06</td>
+      <td>144.28</td>
+      <td>Duke Ellis</td>
+      <td>NYY</td>
+      <td>International League</td>
+      <td>94</td>
+      <td>205.73</td>
+      <td>82.17</td>
+    </tr>
+    <tr>
+      <td>2026 vs 2025+2026</td>
+      <td>All rows</td>
+      <td>LD%+</td>
+      <td>3478</td>
+      <td>99.76</td>
+      <td>71.81</td>
+      <td>99.04</td>
+      <td>122.94</td>
+      <td>163.83</td>
+      <td>216.96</td>
+      <td>364.18</td>
+      <td>548.21</td>
+      <td>Rayniel Lache</td>
+      <td>WSN</td>
+      <td>Dominican Summer League</td>
+      <td>1</td>
+      <td>529.27</td>
+      <td>427.36</td>
+    </tr>
+    <tr>
+      <td>2026 vs 2025+2026</td>
+      <td>AB &gt;= 50</td>
+      <td>LD%+</td>
+      <td>1741</td>
+      <td>102.18</td>
+      <td>25.12</td>
+      <td>100.85</td>
+      <td>117.53</td>
+      <td>132.94</td>
+      <td>143.38</td>
+      <td>169.01</td>
+      <td>224.87</td>
+      <td>Miguel Hernandez</td>
+      <td>STL</td>
+      <td>Florida Complex League</td>
+      <td>63</td>
+      <td>219.30</td>
+      <td>63.51</td>
+    </tr>
+    <tr>
+      <td>2026 vs 2025+2026</td>
+      <td>All rows</td>
+      <td>HR/FB+</td>
+      <td>3478</td>
+      <td>106.15</td>
+      <td>39.46</td>
+      <td>103.26</td>
+      <td>114.88</td>
+      <td>141.15</td>
+      <td>164.72</td>
+      <td>276.03</td>
+      <td>433.62</td>
+      <td>Leanders Matos</td>
+      <td>MIL</td>
+      <td>Dominican Summer League</td>
+      <td>4</td>
+      <td>1253.29</td>
+      <td>312.80</td>
+    </tr>
+    <tr>
+      <td>2026 vs 2025+2026</td>
+      <td>AB &gt;= 50</td>
+      <td>HR/FB+</td>
+      <td>1741</td>
+      <td>107.32</td>
+      <td>23.78</td>
+      <td>104.08</td>
+      <td>120.03</td>
+      <td>138.41</td>
+      <td>149.48</td>
+      <td>175.48</td>
+      <td>305.88</td>
+      <td>Conor Essenburg</td>
+      <td>ATL</td>
+      <td>Carolina League</td>
+      <td>58</td>
+      <td>807.34</td>
+      <td>138.08</td>
+    </tr>
+    <tr>
+      <td>2026 vs 2025+2026</td>
+      <td>All rows</td>
+      <td>5 Tool RobustZ+</td>
+      <td>3478</td>
+      <td>99.74</td>
+      <td>19.13</td>
+      <td>100.12</td>
+      <td>109.07</td>
+      <td>119.48</td>
+      <td>128.52</td>
+      <td>166.55</td>
+      <td>256.15</td>
+      <td>Carlos Martinez</td>
+      <td>MIA</td>
+      <td>Dominican Summer League</td>
+      <td>1</td>
+      <td></td>
+      <td>475.73</td>
+    </tr>
+    <tr>
+      <td>2026 vs 2025+2026</td>
+      <td>AB &gt;= 50</td>
+      <td>5 Tool RobustZ+</td>
+      <td>1741</td>
+      <td>102.80</td>
+      <td>9.51</td>
+      <td>102.42</td>
+      <td>108.78</td>
+      <td>115.00</td>
+      <td>118.79</td>
+      <td>124.57</td>
+      <td>144.07</td>
+      <td>Conor Essenburg</td>
+      <td>ATL</td>
+      <td>Carolina League</td>
+      <td>58</td>
+      <td></td>
+      <td>138.08</td>
+    </tr>
+    <tr>
+      <td>2026 vs 2025+2026</td>
+      <td>All rows</td>
+      <td>Hitter RobustZ+</td>
+      <td>3478</td>
+      <td>102.93</td>
+      <td>29.95</td>
+      <td>101.95</td>
+      <td>113.94</td>
+      <td>133.19</td>
+      <td>151.62</td>
+      <td>216.76</td>
+      <td>362.16</td>
+      <td>Carlos Martinez</td>
+      <td>MIA</td>
+      <td>Dominican Summer League</td>
+      <td>1</td>
+      <td></td>
+      <td>475.73</td>
+    </tr>
+    <tr>
+      <td>2026 vs 2025+2026</td>
+      <td>AB &gt;= 50</td>
+      <td>Hitter RobustZ+</td>
+      <td>1741</td>
+      <td>104.48</td>
+      <td>13.30</td>
+      <td>103.67</td>
+      <td>112.03</td>
+      <td>121.55</td>
+      <td>127.83</td>
+      <td>139.59</td>
+      <td>168.00</td>
+      <td>Conor Essenburg</td>
+      <td>ATL</td>
+      <td>Carolina League</td>
+      <td>58</td>
+      <td></td>
+      <td>138.08</td>
+    </tr>
+  </tbody>
+</table>
+<h2>Top 10 Leaders By Component</h2><table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Sample</th>
+      <th>Metric</th>
+      <th>Rank</th>
+      <th>RobustZ+</th>
+      <th>Raw Metric+</th>
+      <th>Player Name</th>
+      <th>Team</th>
+      <th>League Name</th>
+      <th>AB</th>
+      <th>wRC+</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>2025 vs 2025</td>
+      <td>Age+</td>
+      <td>1</td>
+      <td>185.16</td>
+      <td>140.78</td>
+      <td>Anthony Huezo</td>
+      <td>HOU</td>
+      <td>Pacific Coast League</td>
+      <td>1</td>
+      <td>462.14</td>
+    </tr>
+    <tr>
+      <td>2025 vs 2025</td>
+      <td>Age+</td>
+      <td>2</td>
+      <td>185.16</td>
+      <td>140.78</td>
+      <td>Colt Emerson</td>
+      <td>SEA</td>
+      <td>Pacific Coast League</td>
+      <td>22</td>
+      <td>173.72</td>
+    </tr>
+    <tr>
+      <td>2025 vs 2025</td>
+      <td>Age+</td>
+      <td>3</td>
+      <td>185.16</td>
+      <td>140.78</td>
+      <td>Nelson Rada</td>
+      <td>LAA</td>
+      <td>Pacific Coast League</td>
+      <td>161</td>
+      <td>119.00</td>
+    </tr>
+    <tr>
+      <td>2025 vs 2025</td>
+      <td>Age+</td>
+      <td>4</td>
+      <td>170.46</td>
+      <td>133.74</td>
+      <td>Bryce Eldridge</td>
+      <td>SFG</td>
+      <td>Pacific Coast League</td>
+      <td>253</td>
+      <td>105.02</td>
+    </tr>
+    <tr>
+      <td>2025 vs 2025</td>
+      <td>Age+</td>
+      <td>5</td>
+      <td>170.46</td>
+      <td>133.74</td>
+      <td>Emil Turbi</td>
+      <td>SDP</td>
+      <td>Pacific Coast League</td>
+      <td>4</td>
+      <td>155.76</td>
+    </tr>
+    <tr>
+      <td>2025 vs 2025</td>
+      <td>Age+</td>
+      <td>6</td>
+      <td>170.46</td>
+      <td>133.74</td>
+      <td>Reylin Perez</td>
+      <td>HOU</td>
+      <td>Pacific Coast League</td>
+      <td>12</td>
+      <td>-17.68</td>
+    </tr>
+    <tr>
+      <td>2025 vs 2025</td>
+      <td>Age+</td>
+      <td>7</td>
+      <td>170.46</td>
+      <td>133.74</td>
+      <td>Javier Herrera</td>
+      <td>LAD</td>
+      <td>Pacific Coast League</td>
+      <td>0</td>
+      <td>-100.00</td>
+    </tr>
+    <tr>
+      <td>2025 vs 2025</td>
+      <td>Age+</td>
+      <td>8</td>
+      <td>168.20</td>
+      <td>132.66</td>
+      <td>Leo De Vries</td>
+      <td>OAK</td>
+      <td>Texas League</td>
+      <td>89</td>
+      <td>144.31</td>
+    </tr>
+    <tr>
+      <td>2025 vs 2025</td>
+      <td>Age+</td>
+      <td>9</td>
+      <td>165.40</td>
+      <td>131.32</td>
+      <td>Jesus Made</td>
+      <td>MIL</td>
+      <td>Southern League</td>
+      <td>23</td>
+      <td>85.34</td>
+    </tr>
+    <tr>
+      <td>2025 vs 2025</td>
+      <td>Age+</td>
+      <td>10</td>
+      <td>165.28</td>
+      <td>131.27</td>
+      <td>Fernando Peguero</td>
+      <td>BAL</td>
+      <td>International League</td>
+      <td>74</td>
+      <td>38.21</td>
+    </tr>
+    <tr>
+      <td>2025 vs 2025</td>
+      <td>Approach+</td>
+      <td>1</td>
+      <td>518.26</td>
+      <td>1285.75</td>
+      <td>Trent Farquhar</td>
+      <td>PHI</td>
+      <td>Florida State League</td>
+      <td>29</td>
+      <td>102.38</td>
+    </tr>
+    <tr>
+      <td>2025 vs 2025</td>
+      <td>Approach+</td>
+      <td>2</td>
+      <td>510.39</td>
+      <td>1263.19</td>
+      <td>Noah Miller</td>
+      <td>LAD</td>
+      <td>Arizona Complex League</td>
+      <td>24</td>
+      <td>146.20</td>
+    </tr>
+    <tr>
+      <td>2025 vs 2025</td>
+      <td>Approach+</td>
+      <td>3</td>
+      <td>372.90</td>
+      <td>869.04</td>
+      <td>Pablo Nunez</td>
+      <td>CIN</td>
+      <td>Dominican Summer League</td>
+      <td>104</td>
+      <td>168.76</td>
+    </tr>
+    <tr>
+      <td>2025 vs 2025</td>
+      <td>Approach+</td>
+      <td>4</td>
+      <td>363.33</td>
+      <td>841.59</td>
+      <td>Josh Kasevich</td>
+      <td>TOR</td>
+      <td>Florida Complex League</td>
+      <td>14</td>
+      <td>171.88</td>
+    </tr>
+    <tr>
+      <td>2025 vs 2025</td>
+      <td>Approach+</td>
+      <td>5</td>
+      <td>354.69</td>
+      <td>816.82</td>
+      <td>Miguel Rivera</td>
+      <td>BOS</td>
+      <td>Dominican Summer League</td>
+      <td>43</td>
+      <td>111.01</td>
+    </tr>
+    <tr>
+      <td>2025 vs 2025</td>
+      <td>Approach+</td>
+      <td>6</td>
+      <td>344.36</td>
+      <td>787.21</td>
+      <td>Jose Devers</td>
+      <td>ATL</td>
+      <td>Florida Complex League</td>
+      <td>7</td>
+      <td>271.53</td>
+    </tr>
+    <tr>
+      <td>2025 vs 2025</td>
+      <td>Approach+</td>
+      <td>7</td>
+      <td>333.07</td>
+      <td>754.86</td>
+      <td>Robert Moore</td>
+      <td>PHI</td>
+      <td>International League</td>
+      <td>27</td>
+      <td>96.22</td>
+    </tr>
+    <tr>
+      <td>2025 vs 2025</td>
+      <td>Approach+</td>
+      <td>8</td>
+      <td>319.59</td>
+      <td>716.20</td>
+      <td>Yoiber Ruiz</td>
+      <td>BOS</td>
+      <td>Dominican Summer League</td>
+      <td>35</td>
+      <td>87.18</td>
+    </tr>
+    <tr>
+      <td>2025 vs 2025</td>
+      <td>Approach+</td>
+      <td>9</td>
+      <td>314.94</td>
+      <td>702.87</td>
+      <td>Will King</td>
+      <td>ATL</td>
+      <td>Florida Complex League</td>
+      <td>8</td>
+      <td>259.25</td>
+    </tr>
+    <tr>
+      <td>2025 vs 2025</td>
+      <td>Approach+</td>
+      <td>10</td>
+      <td>314.94</td>
+      <td>702.87</td>
+      <td>Yirer Garcia</td>
+      <td>TBR</td>
+      <td>Florida Complex League</td>
+      <td>23</td>
+      <td>224.06</td>
+    </tr>
+    <tr>
+      <td>2025 vs 2025</td>
+      <td>Speed+</td>
+      <td>1</td>
+      <td>144.43</td>
+      <td>206.10</td>
+      <td>David Hamilton</td>
+      <td>BOS</td>
+      <td>International League</td>
+      <td>39</td>
+      <td>128.66</td>
+    </tr>
+    <tr>
+      <td>2025 vs 2025</td>
+      <td>Speed+</td>
+      <td>2</td>
+      <td>142.25</td>
+      <td>200.91</td>
+      <td>Oneil Cruz</td>
+      <td>PIT</td>
+      <td>Eastern League</td>
+      <td>6</td>
+      <td>146.16</td>
+    </tr>
+    <tr>
+      <td>2025 vs 2025</td>
+      <td>Speed+</td>
+      <td>3</td>
+      <td>140.83</td>
+      <td>197.55</td>
+      <td>Enrique Bradfield Jr.</td>
+      <td>BAL</td>
+      <td>International League</td>
+      <td>56</td>
+      <td>32.66</td>
+    </tr>
+    <tr>
+      <td>2025 vs 2025</td>
+      <td>Speed+</td>
+      <td>4</td>
+      <td>140.63</td>
+      <td>197.07</td>
+      <td>Jesus Made</td>
+      <td>MIL</td>
+      <td>Southern League</td>
+      <td>23</td>
+      <td>85.34</td>
+    </tr>
+    <tr>
+      <td>2025 vs 2025</td>
+      <td>Speed+</td>
+      <td>5</td>
+      <td>139.47</td>
+      <td>194.30</td>
+      <td>Luis Valdez</td>
+      <td>BAL</td>
+      <td>Eastern League</td>
+      <td>127</td>
+      <td>22.37</td>
+    </tr>
+    <tr>
+      <td>2025 vs 2025</td>
+      <td>Speed+</td>
+      <td>6</td>
+      <td>139.38</td>
+      <td>194.09</td>
+      <td>Braiden Ward</td>
+      <td>COL</td>
+      <td>Pacific Coast League</td>
+      <td>133</td>
+      <td>127.86</td>
+    </tr>
+    <tr>
+      <td>2025 vs 2025</td>
+      <td>Speed+</td>
+      <td>7</td>
+      <td>138.92</td>
+      <td>192.99</td>
+      <td>Omar De Los Santos</td>
+      <td>NYM</td>
+      <td>Eastern League</td>
+      <td>118</td>
+      <td>82.38</td>
+    </tr>
+    <tr>
+      <td>2025 vs 2025</td>
+      <td>Speed+</td>
+      <td>8</td>
+      <td>138.24</td>
+      <td>191.39</td>
+      <td>John Rave</td>
+      <td>KCR</td>
+      <td>International League</td>
+      <td>235</td>
+      <td>129.52</td>
+    </tr>
+    <tr>
+      <td>2025 vs 2025</td>
+      <td>Speed+</td>
+      <td>9</td>
+      <td>137.35</td>
+      <td>189.27</td>
+      <td>Jordan Beck</td>
+      <td>COL</td>
+      <td>Pacific Coast League</td>
+      <td>35</td>
+      <td>-1.99</td>
+    </tr>
+    <tr>
+      <td>2025 vs 2025</td>
+      <td>Speed+</td>
+      <td>10</td>
+      <td>136.94</td>
+      <td>188.29</td>
+      <td>Bryce Teodosio</td>
+      <td>LAA</td>
+      <td>Pacific Coast League</td>
+      <td>53</td>
+      <td>107.72</td>
+    </tr>
+    <tr>
+      <td>2025 vs 2025</td>
+      <td>LD%+</td>
+      <td>1</td>
+      <td>557.40</td>
+      <td>538.09</td>
+      <td>Justin Lugo</td>
+      <td>MIL</td>
+      <td>Dominican Summer League</td>
+      <td>4</td>
+      <td>219.41</td>
+    </tr>
+    <tr>
+      <td>2025 vs 2025</td>
+      <td>LD%+</td>
+      <td>2</td>
+      <td>534.56</td>
+      <td>516.18</td>
+      <td>Mike Boeve</td>
+      <td>MIL</td>
+      <td>Arizona Complex League</td>
+      <td>2</td>
+      <td>415.23</td>
+    </tr>
+    <tr>
+      <td>2025 vs 2025</td>
+      <td>LD%+</td>
+      <td>3</td>
+      <td>532.96</td>
+      <td>514.65</td>
+      <td>Brailer Guerrero</td>
+      <td>TBR</td>
+      <td>Florida Complex League</td>
+      <td>2</td>
+      <td>-99.83</td>
+    </tr>
+    <tr>
+      <td>2025 vs 2025</td>
+      <td>LD%+</td>
+      <td>4</td>
+      <td>474.47</td>
+      <td>458.58</td>
+      <td>Chandler Pollard</td>
+      <td>TEX</td>
+      <td>South Atlantic League</td>
+      <td>3</td>
+      <td>-100.00</td>
+    </tr>
+    <tr>
+      <td>2025 vs 2025</td>
+      <td>LD%+</td>
+      <td>5</td>
+      <td>474.47</td>
+      <td>458.58</td>
+      <td>Karson Simas</td>
+      <td>BOS</td>
+      <td>South Atlantic League</td>
+      <td>5</td>
+      <td>175.77</td>
+    </tr>
+    <tr>
+      <td>2025 vs 2025</td>
+      <td>LD%+</td>
+      <td>6</td>
+      <td>462.80</td>
+      <td>447.39</td>
+      <td>Tyler Tolve</td>
+      <td>ATL</td>
+      <td>Southern League</td>
+      <td>6</td>
+      <td>-100.00</td>
+    </tr>
+    <tr>
+      <td>2025 vs 2025</td>
+      <td>LD%+</td>
+      <td>7</td>
+      <td>452.56</td>
+      <td>437.57</td>
+      <td>Hayden Gilliland</td>
+      <td>TOR</td>
+      <td>Eastern League</td>
+      <td>5</td>
+      <td>154.37</td>
+    </tr>
+    <tr>
+      <td>2025 vs 2025</td>
+      <td>LD%+</td>
+      <td>8</td>
+      <td>439.60</td>
+      <td>425.15</td>
+      <td>Logan Dawson</td>
+      <td>PHI</td>
+      <td>Florida State League</td>
+      <td>3</td>
+      <td>153.35</td>
+    </tr>
+    <tr>
+      <td>2025 vs 2025</td>
+      <td>LD%+</td>
+      <td>9</td>
+      <td>417.11</td>
+      <td>403.59</td>
+      <td>Nik McClaughry</td>
+      <td>SEA</td>
+      <td>Pacific Coast League</td>
+      <td>2</td>
+      <td>167.51</td>
+    </tr>
+    <tr>
+      <td>2025 vs 2025</td>
+      <td>LD%+</td>
+      <td>10</td>
+      <td>417.11</td>
+      <td>403.59</td>
+      <td>Ryan Johnson</td>
+      <td>HOU</td>
+      <td>Pacific Coast League</td>
+      <td>4</td>
+      <td>-16.20</td>
+    </tr>
+    <tr>
+      <td>2025 vs 2025</td>
+      <td>HR/FB+</td>
+      <td>1</td>
+      <td>1216.44</td>
+      <td>3986.17</td>
+      <td>Carlos Cauro</td>
+      <td>HOU</td>
+      <td>Carolina League</td>
+      <td>26</td>
+      <td>178.66</td>
+    </tr>
+    <tr>
+      <td>2025 vs 2025</td>
+      <td>HR/FB+</td>
+      <td>2</td>
+      <td>445.02</td>
+      <td>1293.10</td>
+      <td>Nick Kurtz</td>
+      <td>OAK</td>
+      <td>California League</td>
+      <td>3</td>
+      <td>464.84</td>
+    </tr>
+    <tr>
+      <td>2025 vs 2025</td>
+      <td>HR/FB+</td>
+      <td>3</td>
+      <td>445.02</td>
+      <td>1293.10</td>
+      <td>Jose D. Hernandez</td>
+      <td>LAD</td>
+      <td>California League</td>
+      <td>10</td>
+      <td>384.41</td>
+    </tr>
+    <tr>
+      <td>2025 vs 2025</td>
+      <td>HR/FB+</td>
+      <td>4</td>
+      <td>395.24</td>
+      <td>1119.30</td>
+      <td>Joendry Vargas</td>
+      <td>LAD</td>
+      <td>Arizona Complex League</td>
+      <td>11</td>
+      <td>101.76</td>
+    </tr>
+    <tr>
+      <td>2025 vs 2025</td>
+      <td>HR/FB+</td>
+      <td>5</td>
+      <td>385.66</td>
+      <td>1085.86</td>
+      <td>Jace Bohrofen</td>
+      <td>TOR</td>
+      <td>Florida State League</td>
+      <td>6</td>
+      <td>246.58</td>
+    </tr>
+    <tr>
+      <td>2025 vs 2025</td>
+      <td>HR/FB+</td>
+      <td>6</td>
+      <td>385.66</td>
+      <td>1085.86</td>
+      <td>Adonys Guzman</td>
+      <td>PIT</td>
+      <td>Florida State League</td>
+      <td>5</td>
+      <td>271.33</td>
+    </tr>
+    <tr>
+      <td>2025 vs 2025</td>
+      <td>HR/FB+</td>
+      <td>7</td>
+      <td>385.66</td>
+      <td>1085.86</td>
+      <td>Won-Bin Cho</td>
+      <td>STL</td>
+      <td>Florida State League</td>
+      <td>16</td>
+      <td>139.39</td>
+    </tr>
+    <tr>
+      <td>2025 vs 2025</td>
+      <td>HR/FB+</td>
+      <td>8</td>
+      <td>379.73</td>
+      <td>1065.16</td>
+      <td>Cole Turney</td>
+      <td>DET</td>
+      <td>Florida Complex League</td>
+      <td>9</td>
+      <td>73.76</td>
+    </tr>
+    <tr>
+      <td>2025 vs 2025</td>
+      <td>HR/FB+</td>
+      <td>9</td>
+      <td>379.73</td>
+      <td>1065.16</td>
+      <td>Roiber Niazoa</td>
+      <td>ATL</td>
+      <td>Florida Complex League</td>
+      <td>9</td>
+      <td>291.50</td>
+    </tr>
+    <tr>
+      <td>2025 vs 2025</td>
+      <td>HR/FB+</td>
+      <td>10</td>
+      <td>379.73</td>
+      <td>1065.16</td>
+      <td>Julio Henriquez</td>
+      <td>MIA</td>
+      <td>Florida Complex League</td>
+      <td>14</td>
+      <td>266.97</td>
+    </tr>
+    <tr>
+      <td>2026 vs 2025+2026</td>
+      <td>Age+</td>
+      <td>1</td>
+      <td>171.65</td>
+      <td>134.31</td>
+      <td>Colt Emerson</td>
+      <td>SEA</td>
+      <td>Pacific Coast League</td>
+      <td>145</td>
+      <td>103.63</td>
+    </tr>
+    <tr>
+      <td>2026 vs 2025+2026</td>
+      <td>Age+</td>
+      <td>2</td>
+      <td>171.65</td>
+      <td>134.31</td>
+      <td>Nelson Rada</td>
+      <td>LAA</td>
+      <td>Pacific Coast League</td>
+      <td>189</td>
+      <td>80.66</td>
+    </tr>
+    <tr>
+      <td>2026 vs 2025+2026</td>
+      <td>Age+</td>
+      <td>3</td>
+      <td>168.91</td>
+      <td>133.00</td>
+      <td>August Cuneo</td>
+      <td>HOU</td>
+      <td>Texas League</td>
+      <td>2</td>
+      <td>-100.00</td>
+    </tr>
+    <tr>
+      <td>2026 vs 2025+2026</td>
+      <td>Age+</td>
+      <td>4</td>
+      <td>164.79</td>
+      <td>131.03</td>
+      <td>Konnor Griffin</td>
+      <td>PIT</td>
+      <td>International League</td>
+      <td>16</td>
+      <td>221.53</td>
+    </tr>
+    <tr>
+      <td>2026 vs 2025+2026</td>
+      <td>Age+</td>
+      <td>5</td>
+      <td>158.29</td>
+      <td>127.92</td>
+      <td>Reylin Perez</td>
+      <td>HOU</td>
+      <td>Pacific Coast League</td>
+      <td>14</td>
+      <td>-43.53</td>
+    </tr>
+    <tr>
+      <td>2026 vs 2025+2026</td>
+      <td>Age+</td>
+      <td>6</td>
+      <td>158.29</td>
+      <td>127.92</td>
+      <td>Bryce Eldridge</td>
+      <td>SFG</td>
+      <td>Pacific Coast League</td>
+      <td>114</td>
+      <td>155.68</td>
+    </tr>
+    <tr>
+      <td>2026 vs 2025+2026</td>
+      <td>Age+</td>
+      <td>7</td>
+      <td>154.29</td>
+      <td>126.00</td>
+      <td>Rainiel Rodriguez</td>
+      <td>STL</td>
+      <td>Texas League</td>
+      <td>64</td>
+      <td>49.33</td>
+    </tr>
+    <tr>
+      <td>2026 vs 2025+2026</td>
+      <td>Age+</td>
+      <td>8</td>
+      <td>154.29</td>
+      <td>126.00</td>
+      <td>Leo De Vries</td>
+      <td>OAK</td>
+      <td>Texas League</td>
+      <td>183</td>
+      <td>109.25</td>
+    </tr>
+    <tr>
+      <td>2026 vs 2025+2026</td>
+      <td>Age+</td>
+      <td>9</td>
+      <td>152.35</td>
+      <td>125.07</td>
+      <td>Jesus Made</td>
+      <td>MIL</td>
+      <td>Southern League</td>
+      <td>193</td>
+      <td>111.18</td>
+    </tr>
+    <tr>
+      <td>2026 vs 2025+2026</td>
+      <td>Age+</td>
+      <td>10</td>
+      <td>151.76</td>
+      <td>124.79</td>
+      <td>Luis Lara</td>
+      <td>MIL</td>
+      <td>International League</td>
+      <td>204</td>
+      <td>153.94</td>
+    </tr>
+    <tr>
+      <td>2026 vs 2025+2026</td>
+      <td>Approach+</td>
+      <td>1</td>
+      <td>613.26</td>
+      <td>1558.10</td>
+      <td>Moises Polanco</td>
+      <td>MIL</td>
+      <td>Arizona Complex League</td>
+      <td>26</td>
+      <td>208.40</td>
+    </tr>
+    <tr>
+      <td>2026 vs 2025+2026</td>
+      <td>Approach+</td>
+      <td>2</td>
+      <td>393.48</td>
+      <td>928.04</td>
+      <td>Logan Driscoll</td>
+      <td>TBR</td>
+      <td>Florida Complex League</td>
+      <td>9</td>
+      <td>278.27</td>
+    </tr>
+    <tr>
+      <td>2026 vs 2025+2026</td>
+      <td>Approach+</td>
+      <td>3</td>
+      <td>389.54</td>
+      <td>916.72</td>
+      <td>Juan Alva</td>
+      <td>MIA</td>
+      <td>Florida Complex League</td>
+      <td>28</td>
+      <td>201.73</td>
+    </tr>
+    <tr>
+      <td>2026 vs 2025+2026</td>
+      <td>Approach+</td>
+      <td>4</td>
+      <td>350.90</td>
+      <td>805.96</td>
+      <td>Caden Bodine</td>
+      <td>TBR</td>
+      <td>South Atlantic League</td>
+      <td>46</td>
+      <td>99.92</td>
+    </tr>
+    <tr>
+      <td>2026 vs 2025+2026</td>
+      <td>Approach+</td>
+      <td>5</td>
+      <td>346.08</td>
+      <td>792.13</td>
+      <td>Davis Schneider</td>
+      <td>TOR</td>
+      <td>International League</td>
+      <td>18</td>
+      <td>189.92</td>
+    </tr>
+    <tr>
+      <td>2026 vs 2025+2026</td>
+      <td>Approach+</td>
+      <td>6</td>
+      <td>339.53</td>
+      <td>773.37</td>
+      <td>Cam Lee</td>
+      <td>BAL</td>
+      <td>Florida Complex League</td>
+      <td>25</td>
+      <td>86.48</td>
+    </tr>
+    <tr>
+      <td>2026 vs 2025+2026</td>
+      <td>Approach+</td>
+      <td>7</td>
+      <td>321.21</td>
+      <td>720.84</td>
+      <td>Heriberto Hernandez</td>
+      <td>MIA</td>
+      <td>International League</td>
+      <td>22</td>
+      <td>100.92</td>
+    </tr>
+    <tr>
+      <td>2026 vs 2025+2026</td>
+      <td>Approach+</td>
+      <td>8</td>
+      <td>305.44</td>
+      <td>675.63</td>
+      <td>Yohendry Sanchez</td>
+      <td>SFG</td>
+      <td>Arizona Complex League</td>
+      <td>34</td>
+      <td>180.44</td>
+    </tr>
+    <tr>
+      <td>2026 vs 2025+2026</td>
+      <td>Approach+</td>
+      <td>9</td>
+      <td>286.32</td>
+      <td>620.81</td>
+      <td>Bruin Agbayani</td>
+      <td>MIN</td>
+      <td>Florida State League</td>
+      <td>41</td>
+      <td>121.23</td>
+    </tr>
+    <tr>
+      <td>2026 vs 2025+2026</td>
+      <td>Approach+</td>
+      <td>10</td>
+      <td>285.12</td>
+      <td>617.40</td>
+      <td>Ronny Hernandez</td>
+      <td>BOS</td>
+      <td>South Atlantic League</td>
+      <td>33</td>
+      <td>193.31</td>
+    </tr>
+    <tr>
+      <td>2026 vs 2025+2026</td>
+      <td>Speed+</td>
+      <td>1</td>
+      <td>144.28</td>
+      <td>205.73</td>
+      <td>Duke Ellis</td>
+      <td>NYY</td>
+      <td>International League</td>
+      <td>94</td>
+      <td>82.17</td>
+    </tr>
+    <tr>
+      <td>2026 vs 2025+2026</td>
+      <td>Speed+</td>
+      <td>2</td>
+      <td>142.19</td>
+      <td>200.77</td>
+      <td>Jordyn Adams</td>
+      <td>MIL</td>
+      <td>International League</td>
+      <td>49</td>
+      <td>50.74</td>
+    </tr>
+    <tr>
+      <td>2026 vs 2025+2026</td>
+      <td>Speed+</td>
+      <td>3</td>
+      <td>141.82</td>
+      <td>199.90</td>
+      <td>Pedro Leon</td>
+      <td>PHI</td>
+      <td>International League</td>
+      <td>46</td>
+      <td>86.65</td>
+    </tr>
+    <tr>
+      <td>2026 vs 2025+2026</td>
+      <td>Speed+</td>
+      <td>4</td>
+      <td>141.27</td>
+      <td>198.59</td>
+      <td>Jacob Melton</td>
+      <td>TBR</td>
+      <td>International League</td>
+      <td>65</td>
+      <td>98.42</td>
+    </tr>
+    <tr>
+      <td>2026 vs 2025+2026</td>
+      <td>Speed+</td>
+      <td>5</td>
+      <td>140.54</td>
+      <td>196.85</td>
+      <td>Bryce Teodosio</td>
+      <td>LAA</td>
+      <td>Pacific Coast League</td>
+      <td>34</td>
+      <td>82.98</td>
+    </tr>
+    <tr>
+      <td>2026 vs 2025+2026</td>
+      <td>Speed+</td>
+      <td>6</td>
+      <td>139.97</td>
+      <td>195.49</td>
+      <td>Miguel Villarroel</td>
+      <td>STL</td>
+      <td>Texas League</td>
+      <td>16</td>
+      <td>123.42</td>
+    </tr>
+    <tr>
+      <td>2026 vs 2025+2026</td>
+      <td>Speed+</td>
+      <td>7</td>
+      <td>138.38</td>
+      <td>191.72</td>
+      <td>Brock Jones</td>
+      <td>TBR</td>
+      <td>International League</td>
+      <td>111</td>
+      <td>75.58</td>
+    </tr>
+    <tr>
+      <td>2026 vs 2025+2026</td>
+      <td>Speed+</td>
+      <td>8</td>
+      <td>137.75</td>
+      <td>190.22</td>
+      <td>Karson Simas</td>
+      <td>CHC</td>
+      <td>Southern League</td>
+      <td>144</td>
+      <td>107.59</td>
+    </tr>
+    <tr>
+      <td>2026 vs 2025+2026</td>
+      <td>Speed+</td>
+      <td>9</td>
+      <td>137.53</td>
+      <td>189.70</td>
+      <td>Jacob Burke</td>
+      <td>CHW</td>
+      <td>Southern League</td>
+      <td>124</td>
+      <td>109.49</td>
+    </tr>
+    <tr>
+      <td>2026 vs 2025+2026</td>
+      <td>Speed+</td>
+      <td>10</td>
+      <td>137.50</td>
+      <td>189.63</td>
+      <td>Lizandro Espinoza</td>
+      <td>ATL</td>
+      <td>Southern League</td>
+      <td>126</td>
+      <td>141.38</td>
+    </tr>
+    <tr>
+      <td>2026 vs 2025+2026</td>
+      <td>LD%+</td>
+      <td>1</td>
+      <td>548.21</td>
+      <td>529.27</td>
+      <td>Elisandro Ramirez</td>
+      <td>ATL</td>
+      <td>Dominican Summer League</td>
+      <td>5</td>
+      <td>-40.72</td>
+    </tr>
+    <tr>
+      <td>2026 vs 2025+2026</td>
+      <td>LD%+</td>
+      <td>2</td>
+      <td>548.21</td>
+      <td>529.27</td>
+      <td>Kevin Robledo</td>
+      <td>MIA</td>
+      <td>Dominican Summer League</td>
+      <td>2</td>
+      <td>399.71</td>
+    </tr>
+    <tr>
+      <td>2026 vs 2025+2026</td>
+      <td>LD%+</td>
+      <td>3</td>
+      <td>548.21</td>
+      <td>529.27</td>
+      <td>Yadier Crespo</td>
+      <td>PIT</td>
+      <td>Dominican Summer League</td>
+      <td>3</td>
+      <td>137.97</td>
+    </tr>
+    <tr>
+      <td>2026 vs 2025+2026</td>
+      <td>LD%+</td>
+      <td>4</td>
+      <td>548.21</td>
+      <td>529.27</td>
+      <td>Jose Sabino</td>
+      <td>CIN</td>
+      <td>Dominican Summer League</td>
+      <td>4</td>
+      <td>10.15</td>
+    </tr>
+    <tr>
+      <td>2026 vs 2025+2026</td>
+      <td>LD%+</td>
+      <td>5</td>
+      <td>548.21</td>
+      <td>529.27</td>
+      <td>Jesus Guerrero</td>
+      <td>NYY</td>
+      <td>Dominican Summer League</td>
+      <td>3</td>
+      <td>53.79</td>
+    </tr>
+    <tr>
+      <td>2026 vs 2025+2026</td>
+      <td>LD%+</td>
+      <td>6</td>
+      <td>548.21</td>
+      <td>529.27</td>
+      <td>Renso Tenas</td>
+      <td>KCR</td>
+      <td>Dominican Summer League</td>
+      <td>2</td>
+      <td>247.53</td>
+    </tr>
+    <tr>
+      <td>2026 vs 2025+2026</td>
+      <td>LD%+</td>
+      <td>7</td>
+      <td>548.21</td>
+      <td>529.27</td>
+      <td>Ronald Rodriguez</td>
+      <td>MIA</td>
+      <td>Dominican Summer League</td>
+      <td>3</td>
+      <td>-100.00</td>
+    </tr>
+    <tr>
+      <td>2026 vs 2025+2026</td>
+      <td>LD%+</td>
+      <td>8</td>
+      <td>548.21</td>
+      <td>529.27</td>
+      <td>Carlos Martinez</td>
+      <td>MIA</td>
+      <td>Dominican Summer League</td>
+      <td>1</td>
+      <td>475.73</td>
+    </tr>
+    <tr>
+      <td>2026 vs 2025+2026</td>
+      <td>LD%+</td>
+      <td>9</td>
+      <td>548.21</td>
+      <td>529.27</td>
+      <td>Jefer Lista</td>
+      <td>MIL</td>
+      <td>Dominican Summer League</td>
+      <td>1</td>
+      <td>402.96</td>
+    </tr>
+    <tr>
+      <td>2026 vs 2025+2026</td>
+      <td>LD%+</td>
+      <td>10</td>
+      <td>548.21</td>
+      <td>529.27</td>
+      <td>Enyerberth Guevara</td>
+      <td>PIT</td>
+      <td>Dominican Summer League</td>
+      <td>3</td>
+      <td>284.62</td>
+    </tr>
+    <tr>
+      <td>2026 vs 2025+2026</td>
+      <td>HR/FB+</td>
+      <td>1</td>
+      <td>433.62</td>
+      <td>1253.29</td>
+      <td>Junior Castillo</td>
+      <td>WSN</td>
+      <td>Dominican Summer League</td>
+      <td>3</td>
+      <td>212.20</td>
+    </tr>
+    <tr>
+      <td>2026 vs 2025+2026</td>
+      <td>HR/FB+</td>
+      <td>2</td>
+      <td>433.62</td>
+      <td>1253.29</td>
+      <td>Frandy Guillen</td>
+      <td>BAL</td>
+      <td>Dominican Summer League</td>
+      <td>5</td>
+      <td>179.98</td>
+    </tr>
+    <tr>
+      <td>2026 vs 2025+2026</td>
+      <td>HR/FB+</td>
+      <td>3</td>
+      <td>433.62</td>
+      <td>1253.29</td>
+      <td>Carlos Martinez</td>
+      <td>MIA</td>
+      <td>Dominican Summer League</td>
+      <td>1</td>
+      <td>475.73</td>
+    </tr>
+    <tr>
+      <td>2026 vs 2025+2026</td>
+      <td>HR/FB+</td>
+      <td>4</td>
+      <td>433.62</td>
+      <td>1253.29</td>
+      <td>Ronny Munoz</td>
+      <td>MIA</td>
+      <td>Dominican Summer League</td>
+      <td>6</td>
+      <td>84.80</td>
+    </tr>
+    <tr>
+      <td>2026 vs 2025+2026</td>
+      <td>HR/FB+</td>
+      <td>5</td>
+      <td>433.62</td>
+      <td>1253.29</td>
+      <td>Hector Paulino</td>
+      <td>CHW</td>
+      <td>Dominican Summer League</td>
+      <td>10</td>
+      <td>138.90</td>
+    </tr>
+    <tr>
+      <td>2026 vs 2025+2026</td>
+      <td>HR/FB+</td>
+      <td>6</td>
+      <td>433.62</td>
+      <td>1253.29</td>
+      <td>Robert Alvarez</td>
+      <td>CLE</td>
+      <td>Dominican Summer League</td>
+      <td>7</td>
+      <td>123.43</td>
+    </tr>
+    <tr>
+      <td>2026 vs 2025+2026</td>
+      <td>HR/FB+</td>
+      <td>7</td>
+      <td>433.62</td>
+      <td>1253.29</td>
+      <td>Angel Nunez</td>
+      <td>CIN</td>
+      <td>Dominican Summer League</td>
+      <td>8</td>
+      <td>243.23</td>
+    </tr>
+    <tr>
+      <td>2026 vs 2025+2026</td>
+      <td>HR/FB+</td>
+      <td>8</td>
+      <td>433.62</td>
+      <td>1253.29</td>
+      <td>Leanders Matos</td>
+      <td>MIL</td>
+      <td>Dominican Summer League</td>
+      <td>4</td>
+      <td>312.80</td>
+    </tr>
+    <tr>
+      <td>2026 vs 2025+2026</td>
+      <td>HR/FB+</td>
+      <td>9</td>
+      <td>433.62</td>
+      <td>1253.29</td>
+      <td>Edgardo Gutierrez</td>
+      <td>BOS</td>
+      <td>Dominican Summer League</td>
+      <td>5</td>
+      <td>79.03</td>
+    </tr>
+    <tr>
+      <td>2026 vs 2025+2026</td>
+      <td>HR/FB+</td>
+      <td>10</td>
+      <td>433.62</td>
+      <td>1253.29</td>
+      <td>Emill Olivo</td>
+      <td>CHC</td>
+      <td>Dominican Summer League</td>
+      <td>3</td>
+      <td>246.51</td>
+    </tr>
+  </tbody>
+</table>
+</body></html>

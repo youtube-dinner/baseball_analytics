@@ -85,20 +85,36 @@ PLAYER_KEY_CANDIDATES = [
 ]
 MERGE_CONTEXT_COLUMNS = ["Player Name", "Team", "League", "Source League ID", "Age", "Season"]
 REQUESTED_ADVANCED_COLUMNS = ["BB/K", "Spd", "wRC+"]
-REQUESTED_BATTED_COLUMNS = ["HR/FB%", "IFFB%", "LD%", "FB%"]
+REQUESTED_BATTED_COLUMNS = ["HR/FB%", "IFFB%", "LD%", "GB%", "FB%"]
 FANGRAPHS_POINTS_INPUTS = ["AB", "H", "2B", "3B", "HR", "BB", "HBP", "SB", "CS"]
 ANALYTIC_COLUMNS = [
     "FGPts_per_game",
-    "BB_K_ratio",
+    "Approach_score",
     "Speed_score",
-    "HR_IFFB_ratio",
     "LD%",
-    "2B_3B_pct",
+    "HR_FB_pct",
 ]
 WRC_CORRELATION_METRICS = ANALYTIC_COLUMNS[:]
-PAIR_CORRELATIONS = [
-    ("LD%", "2B_3B_pct"),
+PAIR_CORRELATIONS = []
+PLUS_SCORE_METRICS = [
+    "FGPts_per_game",
+    "Approach_score",
+    "Speed_score",
+    "LD%",
+    "HR_FB_pct",
 ]
+ROBUST_Z_TRANSFORM_PARAMS = {
+    "Age_Plus": {"median": 100.001659, "scale": 7.183389},
+    "Approach_score_Plus": {"median": 86.680762, "scale": 43.002009},
+    "Speed_score_Plus": {"median": 100.475905, "scale": 35.658575},
+    "LD%_Plus": {"median": 99.581673, "scale": 14.380218},
+    "HR_FB_pct_Plus": {"median": 88.611564, "scale": 52.365805},
+}
+ROBUST_Z_COMPOSITE_CAPS = {
+    "Approach_score_Plus_RobustZ": 170,
+    "LD%_Plus_RobustZ": 160,
+    "HR_FB_pct_Plus_RobustZ": 160,
+}
 CSV_FILE_PATTERNS = [
     "{league}_{report}.csv",
     "{report}_{league}.csv",
@@ -219,6 +235,12 @@ def parse_leagues(value):
     return [int(part) for part in str(value).split(",") if part.strip()]
 
 
+def parse_paths(value):
+    if not value:
+        return []
+    return [Path(part).expanduser() for part in str(value).split(",") if part.strip()]
+
+
 def find_league_report_csv(csv_dir, league_id, report_name):
     if not csv_dir:
         return None
@@ -232,6 +254,14 @@ def find_league_report_csv(csv_dir, league_id, report_name):
         if candidate.exists():
             return candidate
     return None
+
+
+def complete_csv_leagues(csv_dir, leagues):
+    return [
+        league_id
+        for league_id in leagues
+        if all(find_league_report_csv(csv_dir, league_id, report_name) for report_name in REPORTS)
+    ]
 
 
 def read_league_report_csv(csv_dir, league_id, report_name):
@@ -267,6 +297,33 @@ def fetch_or_read_report(year, report_name, leagues, split_team, csv_dir=None, s
     if not frames:
         return pd.DataFrame()
     return pd.concat(frames, ignore_index=True)
+
+
+def infer_year_from_path(path, fallback_year):
+    match = re.search(r"(20\d{2})", str(path))
+    return int(match.group(1)) if match else fallback_year
+
+
+def build_players_from_csv_dir(csv_dir, year, leagues, hitting_weights=None, require_all=True):
+    csv_dir = Path(csv_dir)
+    usable_leagues = leagues if require_all else complete_csv_leagues(csv_dir, leagues)
+    if not usable_leagues:
+        raise FileNotFoundError(f"No complete per-league Standard/Advanced/Batted CSV sets found in {csv_dir}")
+    reports = {
+        report_name: fetch_or_read_report(
+            year,
+            report_name,
+            usable_leagues,
+            split_team=True,
+            csv_dir=csv_dir,
+        )
+        for report_name in REPORTS
+    }
+    players = merge_reports(reports["standard"], reports["advanced"], reports["batted"])
+    players = add_league_reference_columns(players)
+    players = add_standard_analytics(players, hitting_weights=hitting_weights)
+    players["Baseline Source Year"] = year
+    return players
 
 
 def print_export_urls(year, leagues):
@@ -360,14 +417,24 @@ def normalize_numeric_columns(df):
     return df
 
 
-def normalize_rate_scales(df):
-    df = df.copy()
+def percent_string_columns(df):
+    cols = set()
     for col in df.columns:
-        if not col.endswith("%") or not pd.api.types.is_numeric_dtype(df[col]):
+        if not str(col).endswith("%"):
             continue
-        max_abs = df[col].abs().max(skipna=True)
-        if pd.notna(max_abs) and max_abs > 1:
-            df[col] = df[col] / 100
+        values = df[col].dropna().astype(str)
+        if values.str.contains("%", regex=False).any():
+            cols.add(col)
+    return cols
+
+
+def normalize_rate_scales(df, literal_percent_cols=None):
+    df = df.copy()
+    literal_percent_cols = literal_percent_cols or set()
+    for col in literal_percent_cols:
+        if col not in df.columns or not pd.api.types.is_numeric_dtype(df[col]):
+            continue
+        df[col] = df[col] / 100
     return df
 
 
@@ -399,8 +466,9 @@ def dedupe_columns(df):
 def prepare_report(df):
     df = normalize_columns(df)
     df = normalize_player_name(df)
+    literal_percent_cols = percent_string_columns(df)
     df = normalize_numeric_columns(df)
-    df = normalize_rate_scales(df)
+    df = normalize_rate_scales(df, literal_percent_cols)
     return dedupe_columns(df)
 
 
@@ -421,13 +489,7 @@ def add_league_reference_columns(df):
 def columns_for_report(df, report_name):
     if report_name == "standard":
         return list(df.columns)
-    wanted = MERGE_CONTEXT_COLUMNS[:]
-    if report_name == "advanced":
-        wanted += REQUESTED_ADVANCED_COLUMNS
-    if report_name == "batted":
-        wanted += REQUESTED_BATTED_COLUMNS
-    wanted += PLAYER_KEY_CANDIDATES
-    return [col for col in wanted if col in df.columns]
+    return list(df.columns)
 
 
 def merge_reports(standard, advanced, batted):
@@ -443,6 +505,20 @@ def merge_reports(standard, advanced, batted):
         if not report_key:
             report_key = merge_key_columns(usable)
         duplicate_context = [col for col in MERGE_CONTEXT_COLUMNS if col in usable.columns and col not in report_key]
+        if report_name == "advanced":
+            rename_cols = {
+                col: f"{col}_advanced"
+                for col in ["PA", "AVG", "OBP", "OPS"]
+                if col in usable.columns and col not in report_key
+            }
+            usable = usable.rename(columns=rename_cols)
+        if report_name == "batted":
+            rename_cols = {
+                col: f"{col}_batted"
+                for col in ["PA", "BABIP"]
+                if col in usable.columns and col not in report_key
+            }
+            usable = usable.rename(columns=rename_cols)
         stat_cols = [col for col in usable.columns if col not in report_key + duplicate_context]
         usable = usable[report_key + stat_cols].drop_duplicates(report_key)
         out = out.merge(usable, on=report_key, how="left", suffixes=("", f"_{report_name}"))
@@ -492,14 +568,39 @@ def add_standard_analytics(df, hitting_weights=None):
     out = add_fantasy_points_estimate(df, hitting_weights=hitting_weights)
     if "FGPts_est" in out.columns and "G" in out.columns:
         out["FGPts_per_game"] = safe_divide(out["FGPts_est"], out["G"])
+    if {"AB", "G"}.issubset(out.columns):
+        out["AB_per_game"] = safe_divide(out["AB"], out["G"])
+    if {"H", "AB"}.issubset(out.columns):
+        out["BA"] = safe_divide(out["H"], out["AB"])
+    if {"H", "BB", "HBP", "AB", "SF"}.issubset(out.columns):
+        out["OBP"] = safe_divide(out["H"] + out["BB"] + out["HBP"], out["AB"] + out["BB"] + out["HBP"] + out["SF"])
+    if {"1B", "2B", "3B", "HR", "AB"}.issubset(out.columns):
+        total_bases = out["1B"] + 2 * out["2B"] + 3 * out["3B"] + 4 * out["HR"]
+        out["SLP"] = safe_divide(total_bases, out["AB"])
+    if {"OBP", "SLP"}.issubset(out.columns):
+        out["OPS"] = out["OBP"] + out["SLP"]
     if {"BB", "SO"}.issubset(out.columns):
         out["BB_K_ratio"] = safe_divide(out["BB"], out["SO"])
+    if "BB%" in out.columns:
+        out["BB_pct"] = pd.to_numeric(out["BB%"], errors="coerce")
+    elif {"BB", "PA"}.issubset(out.columns):
+        out["BB_pct"] = safe_divide(out["BB"], out["PA"])
+    if "K%" in out.columns:
+        out["K_pct"] = pd.to_numeric(out["K%"], errors="coerce")
+    elif {"SO", "PA"}.issubset(out.columns):
+        out["K_pct"] = safe_divide(out["SO"], out["PA"])
+    if {"BB_K_ratio", "BB_pct", "K_pct"}.issubset(out.columns):
+        in_play_share = 1 - out["BB_pct"] - out["K_pct"]
+        out["Approach_score"] = out["BB_K_ratio"] * in_play_share
+        out["Approach_score"] = out["Approach_score"].replace([math.inf, -math.inf], math.nan)
     if "Spd" in out.columns:
         out["Speed_score"] = pd.to_numeric(out["Spd"], errors="coerce")
-    if {"HR/FB%", "IFFB%"}.issubset(out.columns):
-        out["HR_IFFB_ratio"] = safe_divide(out["HR/FB%"], out["IFFB%"])
-    if {"2B", "3B", "AB"}.issubset(out.columns):
-        out["2B_3B_pct"] = safe_divide(out["2B"] + out["3B"], out["AB"])
+    if "HR/FB%" in out.columns:
+        out["HR_FB_pct"] = pd.to_numeric(out["HR/FB%"], errors="coerce")
+    if {"AB", "SO", "HR", "SF", "FB%"}.issubset(out.columns):
+        estimated_bip = out["AB"] - out["SO"] - out["HR"] + out["SF"]
+        out["Estimated BIP"] = estimated_bip.where(estimated_bip > 0)
+        out["Estimated FB"] = out["Estimated BIP"] * pd.to_numeric(out["FB%"], errors="coerce")
     return out
 
 
@@ -507,6 +608,15 @@ def weighted_average(group, value_col, weight_col):
     values = pd.to_numeric(group[value_col], errors="coerce")
     weights = pd.to_numeric(group[weight_col], errors="coerce")
     valid = values.notna() & weights.notna() & (weights > 0)
+    if not valid.any():
+        return math.nan
+    return (values[valid] * weights[valid]).sum() / weights[valid].sum()
+
+
+def weighted_average_nonzero(group, value_col, weight_col):
+    values = pd.to_numeric(group[value_col], errors="coerce")
+    weights = pd.to_numeric(group[weight_col], errors="coerce")
+    valid = values.notna() & (values != 0) & weights.notna() & (weights > 0)
     if not valid.any():
         return math.nan
     return (values[valid] * weights[valid]).sum() / weights[valid].sum()
@@ -527,20 +637,33 @@ def build_weighted_baseline_row(group):
     }
     if "Age" in group.columns and "PA" in group.columns:
         row["Average Age"] = weighted_average(group, "Age", "PA")
-    if {"FGPts_est", "G"}.issubset(group.columns):
+    if {"FGPts_per_game", "G"}.issubset(group.columns):
+        row["FGPts_per_game"] = weighted_average_nonzero(group, "FGPts_per_game", "G")
+    elif {"FGPts_est", "G"}.issubset(group.columns):
         row["FGPts_per_game"] = sum_if_present(group, "FGPts_est") / row["Total G"] if row["Total G"] else math.nan
-    if {"BB", "SO"}.issubset(group.columns):
+    if {"BB_K_ratio", "PA"}.issubset(group.columns):
+        row["BB_K_ratio"] = weighted_average_nonzero(group, "BB_K_ratio", "PA")
+    elif {"BB", "SO"}.issubset(group.columns):
         total_so = sum_if_present(group, "SO")
         row["BB_K_ratio"] = sum_if_present(group, "BB") / total_so if total_so else math.nan
+    if "BB_pct" in group.columns and "PA" in group.columns:
+        row["BB_pct"] = weighted_average_nonzero(group, "BB_pct", "PA")
+    elif "BB%" in group.columns and "PA" in group.columns:
+        row["BB_pct"] = weighted_average_nonzero(group, "BB%", "PA")
+    if "K_pct" in group.columns and "PA" in group.columns:
+        row["K_pct"] = weighted_average_nonzero(group, "K_pct", "PA")
+    elif "K%" in group.columns and "PA" in group.columns:
+        row["K_pct"] = weighted_average_nonzero(group, "K%", "PA")
+    if "Approach_score" in group.columns and "PA" in group.columns:
+        row["Approach_score"] = weighted_average_nonzero(group, "Approach_score", "PA")
     if "Spd" in group.columns and "PA" in group.columns:
-        row["Speed_score"] = weighted_average(group, "Spd", "PA")
-    if {"HR/FB%", "IFFB%", "PA"}.issubset(group.columns):
-        row["HR_IFFB_ratio"] = weighted_average(group, "HR_IFFB_ratio", "PA")
+        row["Speed_score"] = weighted_average_nonzero(group, "Spd", "PA")
     if "LD%" in group.columns and "PA" in group.columns:
-        row["LD%"] = weighted_average(group, "LD%", "PA")
-    if {"2B", "3B", "AB"}.issubset(group.columns):
-        total_ab = row["Total AB"]
-        row["2B_3B_pct"] = (sum_if_present(group, "2B") + sum_if_present(group, "3B")) / total_ab if total_ab else math.nan
+        row["LD%"] = weighted_average_nonzero(group, "LD%", "PA")
+    if "HR_FB_pct" in group.columns and "PA" in group.columns:
+        row["HR_FB_pct"] = weighted_average_nonzero(group, "HR_FB_pct", "PA")
+    elif "HR/FB%" in group.columns and "PA" in group.columns:
+        row["HR_FB_pct"] = weighted_average_nonzero(group, "HR/FB%", "PA")
     if "wRC+" in group.columns and "PA" in group.columns:
         row["wRC+"] = weighted_average(group, "wRC+", "PA")
     return pd.Series(row)
@@ -768,17 +891,193 @@ def build_league_age_baselines(players):
     group_cols = league_group_columns(players) + (["Age"] if "Age" in players.columns else [])
     if "Age" not in group_cols:
         raise ValueError("Need League or Source League ID plus Age to build league-age baselines.")
-    return build_weighted_baselines(players, group_cols)
+    baselines = build_weighted_baselines(players, group_cols)
+    if "Average Age" in baselines.columns:
+        baselines["Average Age"] = baselines["Average Age"].fillna(baselines["Age"])
+    else:
+        baselines["Average Age"] = baselines["Age"]
+    return baselines
 
 
 def build_league_baselines(players):
     return build_weighted_baselines(players, league_group_columns(players))
 
 
+def team_league_game_columns(players):
+    out = players.copy()
+    if "G" not in out.columns or "Team" not in out.columns:
+        return out
+    league_cols = league_group_columns(out)
+    group_cols = league_cols + ["Team"]
+    out["Team League Max G"] = out.groupby(group_cols, dropna=False)["G"].transform("max")
+    out["Player Team Game Share"] = safe_divide(out["G"], out["Team League Max G"])
+    return out
+
+
+def baseline_lookup_key(row, key_cols, include_age=False):
+    values = []
+    for col in key_cols:
+        values.append(row.get(col))
+    if include_age:
+        values.append(row.get("Age"))
+    return tuple(values)
+
+
+def baseline_metric_columns():
+    return ["Average Age"] + PLUS_SCORE_METRICS + ["wRC+"]
+
+
+def build_baseline_lookup(baselines, key_cols, include_age=False):
+    lookup = {}
+    needed = key_cols + (["Age"] if include_age else [])
+    value_cols = [col for col in baseline_metric_columns() if col in baselines.columns]
+    for _, row in baselines.iterrows():
+        key = baseline_lookup_key(row, needed, include_age=False)
+        lookup[key] = {col: row.get(col) for col in value_cols}
+    return lookup
+
+
+def plus_score(value, baseline, inverse=False):
+    value = pd.to_numeric(pd.Series([value]), errors="coerce").iloc[0]
+    baseline = pd.to_numeric(pd.Series([baseline]), errors="coerce").iloc[0]
+    if pd.isna(value) or pd.isna(baseline) or value == 0 and inverse or baseline == 0 and not inverse:
+        return math.nan
+    if inverse:
+        return baseline / value * 100 if value else math.nan
+    return value / baseline * 100
+
+
+def hr_fb_plus_score(value, baseline, home_runs, estimated_fb):
+    home_runs = pd.to_numeric(pd.Series([home_runs]), errors="coerce").iloc[0]
+    estimated_fb = pd.to_numeric(pd.Series([estimated_fb]), errors="coerce").iloc[0]
+    if pd.notna(home_runs) and home_runs == 0:
+        if pd.notna(estimated_fb) and estimated_fb > 1:
+            return 0
+        return 100
+    return plus_score(value, baseline)
+
+
+def robust_z_plus(series, median, scale):
+    values = pd.to_numeric(series, errors="coerce")
+    if not scale:
+        return pd.Series(100, index=values.index, dtype=float)
+    return 100 + 15 * ((values - median) / scale)
+
+
+def add_baseline_comparison_columns(players, league_age_baselines, league_baselines):
+    out = team_league_game_columns(players)
+    key_cols = ["Source League ID"] if "Source League ID" in out.columns else ["League"]
+    league_lookup = build_baseline_lookup(league_baselines, key_cols)
+
+    baseline_rows = []
+    for _, row in out.iterrows():
+        league_key = baseline_lookup_key(row, key_cols)
+        baseline = league_lookup.get(league_key, {})
+        scope = "league"
+        baseline_rows.append((baseline, scope))
+
+    out["Baseline Scope"] = [scope for _, scope in baseline_rows]
+    for metric in baseline_metric_columns():
+        out[f"Baseline {metric}"] = [baseline.get(metric, math.nan) for baseline, _ in baseline_rows]
+
+    out["Age_Plus"] = [
+        plus_score(player_age, baseline_age, inverse=True)
+        for player_age, baseline_age in zip(out.get("Age", pd.Series(index=out.index)), out["Baseline Average Age"])
+    ]
+    for metric in PLUS_SCORE_METRICS:
+        if metric in out.columns:
+            if metric == "HR_FB_pct":
+                out[f"{metric}_Plus"] = [
+                    hr_fb_plus_score(value, baseline, home_runs, estimated_fb)
+                    for value, baseline, home_runs, estimated_fb in zip(
+                        out[metric],
+                        out[f"Baseline {metric}"],
+                        out.get("HR", pd.Series(index=out.index)),
+                        out.get("Estimated FB", pd.Series(index=out.index)),
+                    )
+                ]
+            elif metric == "K_pct":
+                out[f"{metric}_Plus"] = [
+                    plus_score(value, baseline, inverse=True)
+                    for value, baseline in zip(out[metric], out[f"Baseline {metric}"])
+                ]
+            else:
+                out[f"{metric}_Plus"] = [
+                    plus_score(value, baseline)
+                    for value, baseline in zip(out[metric], out[f"Baseline {metric}"])
+                ]
+            out[f"{metric}_Plus"] = out[f"{metric}_Plus"].fillna(100)
+    if "wRC+" in out.columns:
+        out["wRC+_Score"] = pd.to_numeric(out["wRC+"], errors="coerce")
+    for col, params in ROBUST_Z_TRANSFORM_PARAMS.items():
+        if col in out.columns:
+            out[f"{col}_RobustZ"] = robust_z_plus(out[col], params["median"], params["scale"])
+    for col, cap in ROBUST_Z_COMPOSITE_CAPS.items():
+        if col in out.columns:
+            out[f"{col}_Capped"] = pd.to_numeric(out[col], errors="coerce").clip(upper=cap)
+    composite_groups = {
+        "5 Tool+": [
+            "Age_Plus_RobustZ",
+            "Approach_score_Plus_RobustZ_Capped",
+            "Speed_score_Plus_RobustZ",
+            "LD%_Plus_RobustZ_Capped",
+            "HR_FB_pct_Plus_RobustZ_Capped",
+        ],
+        "Hitter+": [
+            "Approach_score_Plus_RobustZ_Capped",
+            "LD%_Plus_RobustZ_Capped",
+            "HR_FB_pct_Plus_RobustZ_Capped",
+        ],
+    }
+    for score_col, component_cols in composite_groups.items():
+        if all(col in out.columns for col in component_cols):
+            components = out[component_cols].apply(pd.to_numeric, errors="coerce")
+            out[score_col] = components.sum(axis=1, min_count=len(component_cols)) / len(component_cols)
+    return out
+
+
+def write_combined_baseline_outputs(players, target_year, out_dir):
+    out_dir.mkdir(parents=True, exist_ok=True)
+    league_age_baselines = build_league_age_baselines(players)
+    league_baselines = build_league_baselines(players)
+    league_age_path = out_dir / f"combined_league_age_hitter_baselines_through_{target_year}.csv"
+    league_path = out_dir / f"combined_league_hitter_baselines_through_{target_year}.csv"
+    league_age_baselines.to_csv(league_age_path, index=False)
+    league_baselines.to_csv(league_path, index=False)
+    return league_age_path, league_path, league_age_baselines, league_baselines
+
+
+def write_player_comparison_output(players, league_age_baselines, league_baselines, year, out_dir):
+    compared = add_baseline_comparison_columns(players, league_age_baselines, league_baselines)
+    sort_cols = [
+        col
+        for col in [
+            "League Level",
+            "League Name",
+            "Source League ID",
+            "League",
+            "Age",
+            "wRC+_Score",
+            "Player Name",
+            "Team",
+        ]
+        if col in compared.columns
+    ]
+    if sort_cols:
+        ascending = [True] * len(sort_cols)
+        if "wRC+_Score" in sort_cols:
+            ascending[sort_cols.index("wRC+_Score")] = False
+        compared = compared.sort_values(sort_cols, ascending=ascending, kind="stable")
+    path = out_dir / f"minor_league_hitters_{year}_plus_vs_combined_baseline.csv"
+    compared.to_csv(path, index=False)
+    return path
+
+
 def write_outputs(players, year, out_dir, hitting_weights=None):
     out_dir.mkdir(parents=True, exist_ok=True)
     players = add_league_reference_columns(players)
     players = add_standard_analytics(players, hitting_weights=hitting_weights)
+    players = team_league_game_columns(players)
     sort_cols = [col for col in ["League Level", "League Name", "Source League ID", "League", "Age", "Player Name", "Team"] if col in players.columns]
     if sort_cols:
         players = players.sort_values(sort_cols, kind="stable")
@@ -818,6 +1117,14 @@ def parse_args():
     parser.add_argument("--standard-csv", type=Path, help="Use a downloaded FanGraphs Standard CSV instead of the API.")
     parser.add_argument("--advanced-csv", type=Path, help="Use a downloaded FanGraphs Advanced CSV instead of the API.")
     parser.add_argument("--batted-csv", type=Path, help="Use a downloaded FanGraphs Batted Ball CSV instead of the API.")
+    parser.add_argument(
+        "--combined-baseline-csv-dirs",
+        help=(
+            "Comma-separated per-year FanGraphs export folders to combine into current baselines, "
+            "for example fangraphs_exports/2025,fangraphs_exports/2026. Incomplete folders use only "
+            "leagues with all three report CSVs."
+        ),
+    )
     return parser.parse_args()
 
 
@@ -881,6 +1188,39 @@ def main():
     print(f"Wrote {scatter_path}")
     print(f"Wrote {pair_correlations_path}")
     print(f"Wrote {pair_scatter_path}")
+    baseline_csv_dirs = parse_paths(args.combined_baseline_csv_dirs)
+    if baseline_csv_dirs:
+        baseline_frames = []
+        for csv_dir in baseline_csv_dirs:
+            baseline_year = infer_year_from_path(csv_dir, args.year)
+            baseline_players = build_players_from_csv_dir(
+                csv_dir,
+                baseline_year,
+                leagues,
+                hitting_weights=hitting_weights,
+                require_all=False,
+            )
+            baseline_frames.append(baseline_players)
+        combined_players = pd.concat(baseline_frames, ignore_index=True)
+        (
+            combined_league_age_path,
+            combined_league_path,
+            combined_league_age_baselines,
+            combined_league_baselines,
+        ) = write_combined_baseline_outputs(combined_players, args.year, args.out_dir)
+        current_players = add_league_reference_columns(players)
+        current_players = add_standard_analytics(current_players, hitting_weights=hitting_weights)
+        current_players["Baseline Source Year"] = args.year
+        player_comparison_path = write_player_comparison_output(
+            current_players,
+            combined_league_age_baselines,
+            combined_league_baselines,
+            args.year,
+            args.out_dir,
+        )
+        print(f"Wrote {combined_league_age_path}")
+        print(f"Wrote {combined_league_path}")
+        print(f"Wrote {player_comparison_path}")
     return 0
 
 

@@ -1,0 +1,9 @@
+Sample,Comparison,Correlation,N,Controls
+All player/league rows,Age vs K%,-0.0555391278990695,8329,League
+All player/league rows,Age vs K%,-0.06985642721825407,8329,League + PA
+All player/league rows,Age vs BB%,0.047344782404122134,8329,League
+All player/league rows,Age vs BB%,0.05032884502036182,8329,League + PA
+PA >= 50,Age vs K%,0.028742665485623358,5438,League
+PA >= 50,Age vs K%,0.01174416538467801,5438,League + PA
+PA >= 50,Age vs BB%,0.029138919815646497,5438,League
+PA >= 50,Age vs BB%,0.025684672607342217,5438,League + PA

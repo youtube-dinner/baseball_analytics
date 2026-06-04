@@ -5,6 +5,7 @@ Daily fantasy baseball analytics for roster decisions, streaming pitchers, and f
 ## Main Outputs
 
 - [Sortable browser dashboard](outputs/Fantasy_Baseball_Analytics_Sortable.html)
+- [Minor League Hitter Analytics dashboard](outputs/Minor_League_Hitter_Analytics.html)
 - [Formatted Excel workbook](outputs/Fantasy_Baseball_Analytics_Formatted.xlsx)
 - [Stable CSV outputs](outputs/fantasy_baseball_analytics/)
 - [Minor-league hitter star baselines](outputs/minor_league_hitter_stars/)

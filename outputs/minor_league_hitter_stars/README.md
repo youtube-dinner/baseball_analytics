@@ -13,6 +13,11 @@ By default it treats each league as a separate pull/export unit. That matters be
 - `wrc_metric_scatterplots_2025.html`: league-agnostic scatterplot grid for each standard analytic vs `wRC+`.
 - `metric_pair_correlations_2025.csv`: league-agnostic player-row correlations for selected metric pairs, currently `LD%` vs `2B_3B_pct`.
 - `metric_pair_scatterplots_2025.html`: scatterplots for selected metric pairs.
+- `combined_league_hitter_baselines_through_2026.csv`: combined weighted league baselines from the complete 2025 exports plus the current 2026 exports.
+- `combined_league_age_hitter_baselines_through_2026.csv`: combined weighted league-age baselines from the complete 2025 exports plus the current 2026 exports.
+- `minor_league_hitters_2026_plus_vs_combined_baseline.csv`: 2026 player/league rows with plus-style scores against the combined league-age baseline.
+- `minor_league_hitter_analytics_dashboard.csv`: curated dashboard data for the sortable minor-league hitter table.
+- `../../Minor_League_Hitter_Analytics.html`: sortable and filterable browser dashboard.
 
 ## Run
 
@@ -51,6 +56,16 @@ Then run:
   --csv-dir /path/to/fangraphs-per-league-exports
 ```
 
+For a current 2026 refresh that compares against the complete 2025 data plus whatever 2026 exports are present, run:
+
+```bash
+/Users/emet_macbook_air/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/bin/python3 outputs/minor_league_hitter_stars.py \
+  --year 2026 \
+  --csv-dir outputs/minor_league_hitter_stars/fangraphs_exports/2026 \
+  --out-dir outputs/minor_league_hitter_stars/2026 \
+  --combined-baseline-csv-dirs outputs/minor_league_hitter_stars/fangraphs_exports/2025,outputs/minor_league_hitter_stars/fangraphs_exports/2026
+```
+
 If you really do want an all-leagues combined leaderboard, pass `--combined-leagues` with `--standard-csv`, `--advanced-csv`, and `--batted-csv`.
 
 The merged player output keeps all Standard report columns and adds `League Name`, `League Level`, `BB/K`, `Spd`, `wRC+`, `HR/FB%`, `IFFB%`, `LD%`, and `FB%` when present. If the Standard inputs include the Fantrax hitting scoring categories, the script also adds `1B`, `FGPts_est`, and `FGPts_per_game`.
@@ -62,7 +77,7 @@ The player output adds these derived analytics:
 - `FGPts_per_game`: estimated Fantrax fantasy points divided by games, using the same category-based hitter scoring logic as `fantasy_baseball_analytics_pipeline.py`.
 - `BB_K_ratio`: walks divided by strikeouts.
 - `Speed_score`: FanGraphs `Spd`.
-- `HR_IFFB_ratio`: `HR/FB%` divided by `IFFB%`, which estimates how many home runs a hitter produces per infield fly ball.
+- `HR_IFFB_ratio`: `HR/FB%` divided by `IFFB%`, which estimates how many home runs a hitter produces per infield fly ball. FanGraphs CSV exports already store these rate columns as decimal rates, so the tool only divides by 100 when the raw CSV value literally contains a `%` character.
 - `LD%`: FanGraphs line-drive rate, normalized as a decimal rate.
 - `2B_3B_pct`: doubles plus triples divided by at-bats.
 
@@ -71,7 +86,7 @@ The league-age and overall league baseline outputs are weighted instead of a str
 - `FGPts_per_game`: total estimated Fantrax fantasy points divided by total games.
 - `BB_K_ratio`: total walks divided by total strikeouts.
 - `Speed_score`: PA-weighted average.
-- `HR_IFFB_ratio`: PA-weighted average of each player row's `HR/FB% / IFFB%`.
+- `HR_IFFB_ratio`: PA-weighted `HR/FB%` divided by PA-weighted `IFFB%`, which keeps the two shared-denominator rate components on the same weighting basis.
 - `LD%`: PA-weighted average.
 - `2B_3B_pct`: total doubles plus triples divided by total at-bats.
 - `wRC+`: PA-weighted average.
@@ -80,6 +95,34 @@ The league-age and overall league baseline outputs are weighted instead of a str
 The `wRC+` correlation outputs are league agnostic: they use all finite player rows together instead of grouping by league.
 
 The metric-pair correlation outputs are also league agnostic.
+
+## Combined Baseline Comparisons
+
+When `--combined-baseline-csv-dirs` is supplied, the script rebuilds weighted baselines from every complete league/report set in those folders. This keeps the complete 2025 season as the larger baseline source while letting current 2026 data contribute in proportion to its current playing-time totals.
+
+The player comparison output uses the combined league baseline. Scores are plus-style indexes where `100` is the matching league average:
+
+- `Age_Plus`: inverse age index, so younger than the baseline age is above `100`.
+- `FGPts_per_game_Plus`, `BB_K_ratio_Plus`, `Speed_score_Plus`, `HR_IFFB_ratio_Plus`, `LD%_Plus`, `2B_3B_pct_Plus`: player metric divided by baseline metric, multiplied by `100`.
+- `wRC+_Score`: raw player `wRC+`, because `wRC+` is already indexed.
+- `5 Tool+`: average of `Age_Plus`, `BB_K_ratio_Plus`, `Speed_score_Plus`, `HR_IFFB_ratio_Plus`, and `LD%_Plus`.
+- `Slugger Plus`: average of `Age_Plus`, `BB_K_ratio_Plus`, and `HR_IFFB_ratio_Plus`.
+- `Contact+`: average of `Age_Plus`, `Speed_score_Plus`, and `LD%_Plus`.
+- `Team League Max G`: maximum games played by any player on that team in that league.
+- `Player Team Game Share`: player games divided by `Team League Max G`.
+
+Zero-valued player metrics are excluded when building the league-average denominator for plus scores. Players with a zero metric still receive a `0` plus score for that metric.
+
+The sortable dashboard has two views:
+
+- `All Players`: concise view for every 2026 player/league row.
+- `Bobby and the NitWitts`: roster-only view sorted by league, then `FP/G` descending, with every retained FanGraphs Advanced and Batted Ball export column appended after `OPS`.
+
+Build the dashboard after refreshing 2026:
+
+```bash
+/Users/emet_macbook_air/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/bin/python3 work/build_minor_league_hitter_dashboard.py
+```
 
 ## Fantasy Points Formula
 
@@ -142,14 +185,14 @@ A standalone Playwright exporter exists at:
 outputs/fangraphs_minor_league_browser_export.mjs
 ```
 
-It is resumable, skips existing files by default, and waits a random 60-90 seconds between FanGraphs page loads:
+It is resumable, skips existing files by default, and waits a random 30-45 seconds between FanGraphs page loads:
 
 ```bash
 /Users/emet_macbook_air/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/bin/node outputs/fangraphs_minor_league_browser_export.mjs \
   --years 2025,2026 \
   --out-dir outputs/minor_league_hitter_stars/fangraphs_exports \
-  --min-delay-sec 60 \
-  --max-delay-sec 90
+  --min-delay-sec 30 \
+  --max-delay-sec 45
 ```
 
 The full pull-and-process wrapper is:
