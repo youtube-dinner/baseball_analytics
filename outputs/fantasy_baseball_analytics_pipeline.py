@@ -89,7 +89,10 @@ def fetch_mlb_stats(group, stats="season", start_date=None, end_date=None):
     if start_date and end_date:
         params["startDate"] = start_date
         params["endDate"] = end_date
-    data = fetch_json("https://statsapi.mlb.com/api/v1/stats", **params)
+    try:
+        data = fetch_json("https://statsapi.mlb.com/api/v1/stats", **params)
+    except Exception:
+        return pd.DataFrame()
     rows = []
     for split in data.get("stats", [{}])[0].get("splits", []):
         stat = split.get("stat", {})
@@ -138,7 +141,19 @@ def fetch_savant_csv(year, player_type):
     url = "https://baseballsavant.mlb.com/leaderboard/custom?" + urlencode(params)
     from io import BytesIO
 
-    df = pd.read_csv(BytesIO(fetch_bytes(url)), encoding="utf-8-sig")
+    try:
+        raw = fetch_bytes(url)
+    except Exception:
+        candidates = sorted(
+            Path(__file__).resolve().parent.glob(f"baseball_savant_custom_{player_type}_leaderboard_*.csv")
+        )
+        fallback = next((path for path in candidates if path.stem.endswith(str(year))), None)
+        if fallback is None and candidates:
+            fallback = candidates[-1]
+        if fallback is None or not fallback.exists():
+            raise
+        raw = fallback.read_bytes()
+    df = pd.read_csv(BytesIO(raw), encoding="utf-8-sig")
     if "last_name, first_name" in df.columns:
         names = df["last_name, first_name"].astype(str).str.split(",", n=1, expand=True)
         df["last_name"] = names[0].str.strip()
@@ -175,7 +190,15 @@ def fetch_statcast_range(player_type, start_date, end_date):
         }
         from io import BytesIO
 
-        raw = fetch_bytes(STATCAST_SEARCH_URL + "?" + urlencode(params))
+        try:
+            raw = fetch_bytes(STATCAST_SEARCH_URL + "?" + urlencode(params))
+        except Exception:
+            if cache_path.exists():
+                daily = pd.read_csv(cache_path)
+                if not daily.empty:
+                    frames.append(daily)
+            day += timedelta(days=1)
+            continue
         if raw.strip():
             daily = pd.read_csv(BytesIO(raw), encoding="utf-8-sig")
             if not daily.empty:
@@ -514,9 +537,52 @@ def probable_starters(probable_date):
 
 
 def build_fantrax_frames():
-    player_ids = fetch_fantrax("getPlayerIds", sport="MLB")
-    league_info = fetch_fantrax("getLeagueInfo", leagueId=LEAGUE_ID)
-    rosters = fetch_fantrax("getTeamRosters", leagueId=LEAGUE_ID)
+    fantrax_dir = Path(__file__).resolve().parent / "fantrax_export"
+    try:
+        player_ids = fetch_fantrax("getPlayerIds", sport="MLB")
+        league_info = fetch_fantrax("getLeagueInfo", leagueId=LEAGUE_ID)
+        rosters = fetch_fantrax("getTeamRosters", leagueId=LEAGUE_ID)
+        probable = probable_starters(tomorrow_iso())
+    except Exception:
+        player_ids_df = pd.read_csv(fantrax_dir / "fantrax_players_latest.csv")
+        rosters_df = pd.read_csv(fantrax_dir / "fantrax_rosters_latest.csv")
+        probable = pd.read_csv(fantrax_dir / "fantrax_probable_starters_unrostered_tomorrow_latest.csv")
+        probable["Team"] = probable.get("probable_team", probable.get("mlb_team"))
+        probable["Opponent"] = probable.get("opponent")
+        probable["Player_standard"] = probable["probable_name"].apply(standardize_string)
+        player_ids = {
+            row.fantrax_id: {
+                "name": row.name,
+                "team": row.mlb_team,
+                "position": row.primary_position,
+                "statsIncId": row.stats_inc_id if not pd.isna(row.stats_inc_id) else None,
+                "rotowireId": row.rotowire_id if not pd.isna(row.rotowire_id) else None,
+                "sportRadarId": row.sport_radar_id if not pd.isna(row.sport_radar_id) else None,
+            }
+            for row in player_ids_df.itertuples(index=False)
+        }
+        league_info = {
+            "playerInfo": {
+                row.fantrax_id: {
+                    "eligiblePos": row.eligible_positions,
+                    "status": row.league_status,
+                }
+                for row in player_ids_df.itertuples(index=False)
+            }
+        }
+        rosters = {
+            "rosters": {
+                team_id: {
+                    "teamName": team_name,
+                    "rosterItems": [
+                        {"id": r.fantrax_id, "position": r.roster_position, "status": r.roster_status}
+                        for r in team_rows.itertuples(index=False)
+                    ],
+                }
+                for team_id, team_rows in rosters_df.groupby("team_id")
+                for team_name in [team_rows["team_name"].iloc[0]]
+            }
+        }
     rostered_ids = {
         item.get("id")
         for roster in rosters.get("rosters", {}).values()
@@ -564,7 +630,6 @@ def build_fantrax_frames():
     current_roster = pd.DataFrame(roster_rows)
     current_roster["Player_standard"] = current_roster["Player"].apply(standardize_string)
 
-    probable = probable_starters(tomorrow_iso())
     pitcher_players = all_players[all_players["Position"].isin(["SP", "RP"])].copy()
     streaming_pitchers = merge_by_id_team_name(
         probable,
@@ -706,6 +771,10 @@ def add_calculated_fantasy_points(all_players, league_info):
         stats.sort_values("calculated_fpts", ascending=False),
         "mlb_player_id",
     )
+    if "calculated_fpts" not in out.columns:
+        out["calculated_fpts"] = np.nan
+    if "calculated_fp_per_game" not in out.columns:
+        out["calculated_fp_per_game"] = np.nan
     out["FPts"] = out["calculated_fpts"]
     out["FP/G"] = out["calculated_fp_per_game"]
     out["fantasy_points_source"] = "calculated_from_mlb_stats"
