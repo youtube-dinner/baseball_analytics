@@ -31,6 +31,11 @@ The default refresh targets tomorrow's probable starters. For a same-day morning
 scripts/refresh_and_publish.sh --probable-date today --publish
 ```
 
+To check whether the latest refresh ran successfully, open:
+
+- `outputs/last_refresh_status.json` for status, timestamps, target probable date, and log path.
+- `outputs/refresh_logs/latest_refresh.log` for the full command output from the latest run.
+
 ## Fantrax Probable Starters
 
 The streaming-pitcher feed now tries Fantrax's authenticated player UI export first, then falls back to the MLB schedule feed if Fantrax auth is not available. To use the same probable-starter pool shown in Fantrax, set one of these local-only environment variables before the nightly job runs:
