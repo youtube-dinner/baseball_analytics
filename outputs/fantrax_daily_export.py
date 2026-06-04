@@ -181,7 +181,7 @@ def first_present(row, names):
     return ""
 
 
-def probable_candidate_params():
+def probable_candidate_params(probable_date):
     base = {
         "leagueId": LEAGUE_ID,
         "positionOrGroup": "BASEBALL_PITCHING",
@@ -191,10 +191,10 @@ def probable_candidate_params():
     }
     if FANTRAX_PROBABLE_DATE_PLAYING:
         return [{**base, "datePlaying": FANTRAX_PROBABLE_DATE_PLAYING}]
-    candidates = [base]
+    candidates = [{**base, "datePlaying": probable_date}]
     for misc_display_type in ["7", "8"]:
-        candidates.append({**base, "miscDisplayType": misc_display_type})
-        candidates.append({**base, "miscDisplayType": misc_display_type, "datePlaying": "TOMORROW"})
+        candidates.append({**base, "miscDisplayType": misc_display_type, "datePlaying": probable_date})
+    candidates.append(base)
     unique = []
     seen = set()
     for params in candidates:
@@ -215,7 +215,7 @@ def fantrax_ui_probable_starter_rows(probable_date, player_ids, league_players, 
     best_df = pd.DataFrame()
     best_params = None
     last_error = None
-    for params in probable_candidate_params():
+    for params in probable_candidate_params(probable_date):
         try:
             raw = fetch_ui_bytes("downloadPlayerStats", **params)
             candidate = pd.read_csv(BytesIO(raw), encoding="utf-8-sig")

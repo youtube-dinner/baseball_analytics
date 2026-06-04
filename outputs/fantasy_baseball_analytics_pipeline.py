@@ -8,6 +8,7 @@ from datetime import date, datetime, timedelta
 from pathlib import Path
 from urllib.parse import urlencode
 from urllib.request import Request, urlopen
+from zoneinfo import ZoneInfo
 
 import numpy as np
 import pandas as pd
@@ -514,7 +515,8 @@ def tomorrow_iso():
     override = os.environ.get("FANTRAX_PROBABLE_DATE")
     if override:
         return override
-    return (datetime.now().date() + timedelta(days=1)).isoformat()
+    local_today = datetime.now(ZoneInfo("America/Chicago")).date()
+    return (local_today + timedelta(days=1)).isoformat()
 
 
 def probable_starters(probable_date):
@@ -581,7 +583,7 @@ def fetch_fantrax_ui_bytes(endpoint, **params):
     return raw
 
 
-def fantrax_probable_candidate_params():
+def fantrax_probable_candidate_params(probable_date):
     base = {
         "leagueId": LEAGUE_ID,
         "positionOrGroup": "BASEBALL_PITCHING",
@@ -592,10 +594,10 @@ def fantrax_probable_candidate_params():
     if FANTRAX_PROBABLE_DATE_PLAYING:
         return [{**base, "datePlaying": FANTRAX_PROBABLE_DATE_PLAYING}]
 
-    candidates = [base]
+    candidates = [{**base, "datePlaying": probable_date}]
     for misc_display_type in ["7", "8"]:
-        candidates.append({**base, "miscDisplayType": misc_display_type})
-        candidates.append({**base, "miscDisplayType": misc_display_type, "datePlaying": "TOMORROW"})
+        candidates.append({**base, "miscDisplayType": misc_display_type, "datePlaying": probable_date})
+    candidates.append(base)
     unique = []
     seen = set()
     for params in candidates:
@@ -620,7 +622,7 @@ def fantrax_probable_starters_from_ui(probable_date, player_ids, league_players,
     last_error = None
     best_df = pd.DataFrame()
     best_params = None
-    for params in fantrax_probable_candidate_params():
+    for params in fantrax_probable_candidate_params(probable_date):
         try:
             raw = fetch_fantrax_ui_bytes("downloadPlayerStats", **params)
             from io import BytesIO

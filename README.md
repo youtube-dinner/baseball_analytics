@@ -38,10 +38,10 @@ Optional tuning:
 
 ```bash
 export FANTRAX_PROBABLE_MISC_DISPLAY_TYPE=7
-export FANTRAX_PROBABLE_DATE_PLAYING=TOMORROW
+export FANTRAX_PROBABLE_DATE_PLAYING=2026-06-04
 ```
 
-Keep these values in a local `.env` or automation environment only; `.env` files are ignored by git.
+By default, the nightly refresh computes `datePlaying` as the next Central Time date after the refresh date. For example, a June 3 refresh queries Fantrax with `datePlaying=2026-06-04`. Only set `FANTRAX_PROBABLE_DATE_PLAYING` if Fantrax requires a different internal value. Keep these values in a local `.env` or automation environment only; `.env` files are ignored by git.
 
 ## Minor-League Hitter Baselines
 
