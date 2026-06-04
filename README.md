@@ -25,6 +25,12 @@ scripts/refresh_and_publish.sh --publish
 
 The publish step commits only when tracked files actually changed. It pushes only when a git remote is configured.
 
+The default refresh targets tomorrow's probable starters. For a same-day morning refresh, run:
+
+```bash
+scripts/refresh_and_publish.sh --probable-date today --publish
+```
+
 ## Fantrax Probable Starters
 
 The streaming-pitcher feed now tries Fantrax's authenticated player UI export first, then falls back to the MLB schedule feed if Fantrax auth is not available. To use the same probable-starter pool shown in Fantrax, set one of these local-only environment variables before the nightly job runs:
@@ -41,7 +47,7 @@ export FANTRAX_PROBABLE_MISC_DISPLAY_TYPE=7
 export FANTRAX_PROBABLE_DATE_PLAYING=2026-06-04
 ```
 
-By default, the nightly refresh computes `datePlaying` as the next Central Time date after the refresh date. For example, a June 3 refresh queries Fantrax with `datePlaying=2026-06-04`. Only set `FANTRAX_PROBABLE_DATE_PLAYING` if Fantrax requires a different internal value. Keep these values in a local `.env` or automation environment only; `.env` files are ignored by git.
+By default, the nightly refresh computes `datePlaying` as the next Central Time date after the refresh date. For example, a June 3 nightly refresh queries Fantrax with `datePlaying=2026-06-04`. The morning refresh uses the current Central Time date instead. Only set `FANTRAX_PROBABLE_DATE_PLAYING` if Fantrax requires a different internal value. Keep these values in a local `.env` or automation environment only; `.env` files are ignored by git.
 
 ## Minor-League Hitter Baselines
 

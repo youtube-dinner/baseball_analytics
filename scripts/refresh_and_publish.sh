@@ -5,10 +5,24 @@ ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
 PYTHON="${PYTHON:-/Users/emet_macbook_air/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/bin/python3}"
 NODE="${NODE:-/Users/emet_macbook_air/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/bin/node}"
 PUBLISH=0
+PROBABLE_DATE_MODE=""
 
-if [[ "${1:-}" == "--publish" ]]; then
-  PUBLISH=1
-fi
+while [[ $# -gt 0 ]]; do
+  case "$1" in
+    --publish)
+      PUBLISH=1
+      shift
+      ;;
+    --probable-date)
+      PROBABLE_DATE_MODE="${2:?Missing value for --probable-date}"
+      shift 2
+      ;;
+    *)
+      echo "Unknown argument: $1" >&2
+      exit 2
+      ;;
+  esac
+done
 
 cd "$ROOT"
 
@@ -18,6 +32,20 @@ if [[ -f "$ROOT/.env" ]]; then
   source "$ROOT/.env"
   set +a
 fi
+
+PROBABLE_DATE_MODE="${PROBABLE_DATE_MODE:-${FANTRAX_PROBABLE_DATE:-tomorrow}}"
+
+case "$PROBABLE_DATE_MODE" in
+  today)
+    export FANTRAX_PROBABLE_DATE="$(TZ=America/Chicago date +%F)"
+    ;;
+  tomorrow)
+    export FANTRAX_PROBABLE_DATE="$(TZ=America/Chicago date -v+1d +%F)"
+    ;;
+  *)
+    export FANTRAX_PROBABLE_DATE="$PROBABLE_DATE_MODE"
+    ;;
+esac
 
 "$PYTHON" outputs/fantasy_baseball_analytics_pipeline.py
 "$PYTHON" work/spreadsheet_build/build_workbook_data.py
