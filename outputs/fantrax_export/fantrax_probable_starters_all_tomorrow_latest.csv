@@ -7,6 +7,7 @@ probable_date,game_time_utc,home_away,probable_team,opponent,mlb_player_id,proba
 2026-06-04,2026-06-04T17:35:00Z,away,Baltimore Orioles,Boston Red Sox,669432,Trevor Rogers,04ak5,"Rogers, Trevor",BAL,SP,P,FA,False,10909,14790,e910c734-7443-4f0d-9593-8c1cedfe90d0,824753
 2026-06-04,2026-06-04T18:10:00Z,home,Milwaukee Brewers,San Francisco Giants,689441,Coleman Crow,0569p,"Crow, Coleman",MIL,SP,P,T,True,,17870,d221ae26-6a7f-41bc-adc0-30a29fbe3ca9,823779
 2026-06-04,2026-06-04T18:10:00Z,away,San Francisco Giants,Milwaukee Brewers,605288,Adrian Houser,02brc,"Houser, Adrian",SF,SP,P,FA,False,10098,12199,8156bec7-9689-46d6-9b0f-eddf7240d9a3,823779
+2026-06-04,2026-06-04T23:15:00Z,away,Toronto Blue Jays,Atlanta Braves,689254,Mason Fluharty,0648y,"Fluharty, Mason",TOR,RP,P,FA,False,,18146,04c6998c-a48a-4683-8d75-f985ad89b491,824919
 2026-06-04,2026-06-04T23:15:00Z,home,Atlanta Braves,Toronto Blue Jays,519242,Chris Sale,01uca,"Sale, Chris",ATL,SP,P,T,True,8780,11438,66c43b7f-760a-446c-9f50-671915570227,824919
 2026-06-04,2026-06-04T23:40:00Z,away,Kansas City Royals,Minnesota Twins,607625,Seth Lugo,03sef,"Lugo, Seth",KC,SP,P,T,True,10326,14095,0600588b-39b2-49eb-9e77-208f8fdaca9b,823698
 2026-06-04,2026-06-04T23:40:00Z,home,Minnesota Twins,Kansas City Royals,702193,Andrew Morris,0648r,"Morris, Andrew",MIN,SP,P,FA,False,,18125,935a41f8-6267-4a0d-b9cf-623b56da86d6,823698

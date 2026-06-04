@@ -1,17 +1,25 @@
-Refresh run id: 20260604T022621Z
-Started local: 2026-06-03T21:26:21-0500
-Probable date mode: tomorrow
+Refresh run id: 20260604T232449Z
+Started local: 2026-06-04T18:24:49-0500
+Probable date mode: today
 Fantrax probable date: 2026-06-04
+Wrote Fantrax export to /Users/emet_macbook_air/Documents/Fantasy Baseball Analytics/outputs/fantrax_export
+Players: 9832
+Roster items: 583
+Roster probable starters for 2026-06-04: 12
+All probable starters for 2026-06-04: 18
+Unrostered probable starters for 2026-06-04: 7
+Teams: 10
+Standings rows: 10
                          output  rows                                                                                                                            path
     current_roster_pitchers.csv    23     /Users/emet_macbook_air/Documents/Fantasy Baseball Analytics/outputs/fantasy_baseball_analytics/current_roster_pitchers.csv
           pitcher_analytics.csv  5090           /Users/emet_macbook_air/Documents/Fantasy Baseball Analytics/outputs/fantasy_baseball_analytics/pitcher_analytics.csv
-streaming_pitcher_analytics.csv     5 /Users/emet_macbook_air/Documents/Fantasy Baseball Analytics/outputs/fantasy_baseball_analytics/streaming_pitcher_analytics.csv
+streaming_pitcher_analytics.csv     6 /Users/emet_macbook_air/Documents/Fantasy Baseball Analytics/outputs/fantasy_baseball_analytics/streaming_pitcher_analytics.csv
      current_roster_hitters.csv    39      /Users/emet_macbook_air/Documents/Fantasy Baseball Analytics/outputs/fantasy_baseball_analytics/current_roster_hitters.csv
            hitter_analytics.csv  4742            /Users/emet_macbook_air/Documents/Fantasy Baseball Analytics/outputs/fantasy_baseball_analytics/hitter_analytics.csv
-        free_agent_pitchers.csv   476         /Users/emet_macbook_air/Documents/Fantasy Baseball Analytics/outputs/fantasy_baseball_analytics/free_agent_pitchers.csv
-         free_agent_hitters.csv   306          /Users/emet_macbook_air/Documents/Fantasy Baseball Analytics/outputs/fantasy_baseball_analytics/free_agent_hitters.csv
-    pitcher_baseball_savant.csv   455     /Users/emet_macbook_air/Documents/Fantasy Baseball Analytics/outputs/fantasy_baseball_analytics/pitcher_baseball_savant.csv
-     hitter_baseball_savant.csv   433      /Users/emet_macbook_air/Documents/Fantasy Baseball Analytics/outputs/fantasy_baseball_analytics/hitter_baseball_savant.csv
+        free_agent_pitchers.csv   483         /Users/emet_macbook_air/Documents/Fantasy Baseball Analytics/outputs/fantasy_baseball_analytics/free_agent_pitchers.csv
+         free_agent_hitters.csv   307          /Users/emet_macbook_air/Documents/Fantasy Baseball Analytics/outputs/fantasy_baseball_analytics/free_agent_hitters.csv
+    pitcher_baseball_savant.csv   457     /Users/emet_macbook_air/Documents/Fantasy Baseball Analytics/outputs/fantasy_baseball_analytics/pitcher_baseball_savant.csv
+     hitter_baseball_savant.csv   436      /Users/emet_macbook_air/Documents/Fantasy Baseball Analytics/outputs/fantasy_baseball_analytics/hitter_baseball_savant.csv
 
 Output directory: /Users/emet_macbook_air/Documents/Fantasy Baseball Analytics/outputs/fantasy_baseball_analytics
 /Users/emet_macbook_air/Documents/Fantasy Baseball Analytics/work/spreadsheet_build/analytics_workbook_data.json

@@ -32,7 +32,7 @@ LOG_DIR="$ROOT/outputs/refresh_logs"
 LOG_FILE="$LOG_DIR/latest_refresh.log"
 STATUS_FILE="$ROOT/outputs/last_refresh_status.json"
 mkdir -p "$LOG_DIR"
-exec > >(tee "$LOG_FILE") 2>&1
+exec > "$LOG_FILE" 2>&1
 
 if [[ -f "$ROOT/.env" ]]; then
   set -a
@@ -99,6 +99,7 @@ echo "Started local: $RUN_STARTED_AT"
 echo "Probable date mode: $PROBABLE_DATE_MODE"
 echo "Fantrax probable date: $FANTRAX_PROBABLE_DATE"
 
+"$PYTHON" outputs/fantrax_daily_export.py
 "$PYTHON" outputs/fantasy_baseball_analytics_pipeline.py
 "$PYTHON" work/spreadsheet_build/build_workbook_data.py
 "$NODE" work/spreadsheet_build/build_fantasy_workbook.mjs
