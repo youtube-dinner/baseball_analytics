@@ -1,0 +1,62 @@
+name: Morning Fantasy Refresh
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "0 14 * * *"
+
+permissions:
+  contents: write
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Install Python dependencies
+        run: python -m pip install --upgrade pip pandas numpy
+
+      - name: Configure git author
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+      - name: Run daily refresh and publish
+        env:
+          PYTHON: python
+          NODE: node
+          REFRESH_BUILD_WORKBOOK: "0"
+          FANTRAX_AUTH_COOKIE: ${{ secrets.FANTRAX_AUTH_COOKIE }}
+          FANTRAX_LEAGUE_ID: ${{ secrets.FANTRAX_LEAGUE_ID }}
+          FANTRAX_OLD_UI_TOKEN: ${{ secrets.FANTRAX_OLD_UI_TOKEN }}
+          FANTRAX_PROBABLE_MISC_DISPLAY_TYPE: ${{ secrets.FANTRAX_PROBABLE_MISC_DISPLAY_TYPE }}
+          FANTRAX_PROBABLE_DATE_PLAYING: ${{ secrets.FANTRAX_PROBABLE_DATE_PLAYING }}
+          FANTRAX_TEAM_NAME: ${{ secrets.FANTRAX_TEAM_NAME }}
+          FANTASY_BASEBALL_YEAR: ${{ secrets.FANTASY_BASEBALL_YEAR }}
+          FANTASY_BASEBALL_PREVIOUS_YEAR: ${{ secrets.FANTASY_BASEBALL_PREVIOUS_YEAR }}
+        run: bash scripts/refresh_and_publish.sh --probable-date today --publish
+
+      - name: Upload refresh logs
+        uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: morning-fantasy-refresh-logs
+          path: |
+            outputs/last_refresh_status.json
+            outputs/refresh_logs/latest_refresh.log

@@ -9,6 +9,7 @@ PROBABLE_DATE_MODE=""
 RUN_STARTED_AT="$(TZ=America/Chicago date '+%Y-%m-%dT%H:%M:%S%z')"
 RUN_ID="$(TZ=UTC date '+%Y%m%dT%H%M%SZ')"
 NETWORK_WAIT_HOSTS_DEFAULT="www.fantrax.com statsapi.mlb.com"
+REFRESH_BUILD_WORKBOOK="${REFRESH_BUILD_WORKBOOK:-1}"
 
 while [[ $# -gt 0 ]]; do
   case "$1" in
@@ -47,12 +48,24 @@ NETWORK_WAIT_HOSTS="${NETWORK_WAIT_HOSTS:-$NETWORK_WAIT_HOSTS_DEFAULT}"
 NETWORK_WAIT_ATTEMPTS="${NETWORK_WAIT_ATTEMPTS:-12}"
 NETWORK_WAIT_SLEEP_SECONDS="${NETWORK_WAIT_SLEEP_SECONDS:-10}"
 
+python_local_date() {
+  "$PYTHON" -c 'from datetime import datetime, timedelta; from zoneinfo import ZoneInfo; import sys
+mode = sys.argv[1]
+today = datetime.now(ZoneInfo("America/Chicago")).date()
+if mode == "today":
+    print(today.isoformat())
+elif mode == "tomorrow":
+    print((today + timedelta(days=1)).isoformat())
+else:
+    raise SystemExit(f"Unsupported date mode: {mode}")' "$1"
+}
+
 case "$PROBABLE_DATE_MODE" in
   today)
-    export FANTRAX_PROBABLE_DATE="$(TZ=America/Chicago date +%F)"
+    export FANTRAX_PROBABLE_DATE="$(python_local_date today)"
     ;;
   tomorrow)
-    export FANTRAX_PROBABLE_DATE="$(TZ=America/Chicago date -v+1d +%F)"
+    export FANTRAX_PROBABLE_DATE="$(python_local_date tomorrow)"
     ;;
   *)
     export FANTRAX_PROBABLE_DATE="$PROBABLE_DATE_MODE"
@@ -137,8 +150,12 @@ wait_for_network_hosts "$NETWORK_WAIT_ATTEMPTS" "$NETWORK_WAIT_SLEEP_SECONDS" $N
 
 "$PYTHON" outputs/fantrax_daily_export.py
 "$PYTHON" outputs/fantasy_baseball_analytics_pipeline.py
-"$PYTHON" work/spreadsheet_build/build_workbook_data.py
-"$NODE" work/spreadsheet_build/build_fantasy_workbook.mjs
+if [[ "$REFRESH_BUILD_WORKBOOK" == "1" ]]; then
+  "$PYTHON" work/spreadsheet_build/build_workbook_data.py
+  "$NODE" work/spreadsheet_build/build_fantasy_workbook.mjs
+else
+  echo "Skipping workbook build because REFRESH_BUILD_WORKBOOK=$REFRESH_BUILD_WORKBOOK"
+fi
 "$PYTHON" work/build_sortable_dashboard.py
 
 write_refresh_status "success" 0 "Outputs rebuilt successfully. If publish is requested, commit/push happens after this status is written."

@@ -22,6 +22,7 @@ FANTRAX_AUTH_COOKIE_FILE = Path(os.environ.get(
 ))
 CENTRAL = ZoneInfo("America/Chicago")
 EASTERN = ZoneInfo("America/New_York")
+FANTRAX_DISPLAY_TIMEZONE = ZoneInfo(os.environ.get("FANTRAX_DISPLAY_TIMEZONE", "America/Chicago"))
 FANTRAX_DATE_FORMATS = [
     "%a %b %d, %Y, %I:%M%p",
     "%a %b %d, %Y %I:%M%p",
@@ -97,7 +98,7 @@ def parse_fantrax_datetime(value):
     value = re.sub(r"\s+", " ", str(value).strip())
     for fmt in FANTRAX_DATE_FORMATS:
         try:
-            return datetime.strptime(value, fmt).replace(tzinfo=EASTERN)
+            return datetime.strptime(value, fmt).replace(tzinfo=FANTRAX_DISPLAY_TIMEZONE)
         except ValueError:
             pass
     return None
@@ -431,6 +432,7 @@ def main():
     write_csv(args.out_dir / "fantrax_pickup_audit_summary_latest.csv", summaries, summary_fields)
     metadata = {
         "period_timezone": "America/New_York",
+        "fantrax_display_timezone": str(FANTRAX_DISPLAY_TIMEZONE),
         "period_start": start.isoformat(),
         "period_end_exclusive": end.isoformat(),
         "period_label": f"{start.strftime('%Y-%m-%d')} to {(end - timedelta(days=1)).strftime('%Y-%m-%d')} ET",
