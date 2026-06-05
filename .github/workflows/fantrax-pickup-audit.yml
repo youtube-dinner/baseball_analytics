@@ -1,0 +1,39 @@
+name: Fantrax Pickup Audit
+
+on:
+  workflow_dispatch:
+
+jobs:
+  pickup-audit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Run Fantrax pickup audit
+        env:
+          FANTRAX_AUTH_COOKIE: ${{ secrets.FANTRAX_AUTH_COOKIE }}
+          FANTRAX_LEAGUE_ID: ${{ secrets.FANTRAX_LEAGUE_ID }}
+        run: python outputs/fantrax_transaction_audit.py
+
+      - name: Post GroupMe report
+        env:
+          GROUPME_BOT_ID: ${{ secrets.GROUPME_BOT_ID }}
+        run: python outputs/send_fantrax_pickup_report.py --groupme
+
+      - name: Upload audit CSVs
+        uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: fantrax-pickup-audit
+          path: |
+            outputs/fantrax_export/fantrax_pickup_audit_summary_latest.csv
+            outputs/fantrax_export/fantrax_pickup_audit_details_latest.csv
+            outputs/fantrax_export/fantrax_pickup_audit_metadata_latest.json

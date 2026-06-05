@@ -12,7 +12,7 @@ from urllib.request import Request, urlopen
 from zoneinfo import ZoneInfo
 
 
-LEAGUE_ID = os.environ.get("FANTRAX_LEAGUE_ID", "qqll39pvmj90wrl1")
+LEAGUE_ID = os.environ.get("FANTRAX_LEAGUE_ID") or "qqll39pvmj90wrl1"
 FANTRAX_OLD_UI_TOKEN = os.environ.get("FANTRAX_OLD_UI_TOKEN", "")
 FANTRAX_REQ_URL = "https://www.fantrax.com/fxpa/req"
 OUT_DIR = Path(__file__).resolve().parent / "fantrax_export"
