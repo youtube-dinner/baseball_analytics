@@ -1,4 +1,4 @@
-#!/usr/bin/env node
+#!/Users/emet_macbook_air/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/bin/node
 import fs from "node:fs/promises";
 import path from "node:path";
 import readline from "node:readline/promises";

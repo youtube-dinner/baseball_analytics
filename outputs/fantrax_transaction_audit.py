@@ -27,7 +27,8 @@ FANTRAX_DATE_FORMATS = [
     "%b %d, %Y, %I:%M%p",
     "%b %d, %Y %I:%M%p",
 ]
-ADD_TYPES = {"ADD", "CLAIM", "WAIVER", "FREE_AGENT", "FREE AGENT"}
+ADD_TRANSACTION_CODES = {"ADD", "CLAIM"}
+ADD_CLAIM_TYPES = {"FA", "WAIVER", "FREE_AGENT", "FREE AGENT"}
 DROP_TYPES = {"DROP", "RELEASE", "REMOVE"}
 MINORS_MARKERS = {"MINORS", "MINOR", "MINOR_LEAGUE", "MINOR LEAGUE"}
 
@@ -112,6 +113,13 @@ def cell_content(row, index, key=None):
     return ""
 
 
+def cell_by_key(row, key):
+    for cell in row.get("cells") or []:
+        if isinstance(cell, dict) and cell.get("key") == key:
+            return cell
+    return {}
+
+
 def player_id_from_scorer(scorer):
     return (
         scorer.get("scorerId")
@@ -138,6 +146,14 @@ def transaction_player_type(row):
     if transaction_code == "CLAIM" and claim_type:
         return claim_type
     return claim_type or transaction_code
+
+
+def is_add_transaction(row):
+    transaction_code = str(row.get("transactionCode") or "").strip().upper()
+    claim_type = str(row.get("claimType") or "").strip().upper()
+    if transaction_code in ADD_TRANSACTION_CODES:
+        return True
+    return claim_type in ADD_CLAIM_TYPES and transaction_code not in DROP_TYPES
 
 
 def row_has_minors_marker(row):
@@ -200,25 +216,32 @@ def current_week_window(boundary_hour):
 
 def normalize_rows(rows, roster_statuses, players, teams):
     normalized = []
+    seen = set()
     for row in rows:
         tx_set_id = row.get("txSetId") or row.get("id") or ""
-        team_id = row.get("teamId") or cell_content(row, 0, "team") or ""
-        if not team_id:
-            cells = row.get("cells") or []
-            if cells and isinstance(cells[0], dict):
-                team_id = cells[0].get("teamId") or cells[0].get("id") or ""
-        team_name = row.get("teamName") or cell_content(row, 0) or teams.get(team_id, "")
-        date_text = row.get("date") or row.get("transactionDate") or cell_content(row, 1)
+        team_cell = cell_by_key(row, "team")
+        date_cell = cell_by_key(row, "date")
+        team_id = row.get("teamId") or team_cell.get("teamId") or team_cell.get("id") or ""
+        team_name = row.get("teamName") or team_cell.get("content") or teams.get(team_id, "")
+        date_text = row.get("date") or row.get("transactionDate") or date_cell.get("content") or ""
         date = parse_fantrax_datetime(date_text)
         scorer = row.get("scorer") or row.get("player") or {}
         fantrax_id = player_id_from_scorer(scorer)
+        unique_key = (tx_set_id, row.get("transactionCode", ""), fantrax_id)
+        if unique_key in seen:
+            continue
+        seen.add(unique_key)
         current_roster = roster_statuses.get(fantrax_id, {})
         player = players.get(fantrax_id, {})
         player_type = transaction_player_type(row)
         current_roster_status = current_roster.get("roster_status", "")
         tx_minors = row_has_minors_marker(row)
         current_minors = current_roster_status.upper() in MINORS_MARKERS
-        primary_position = player.get("primary_position") or current_roster.get("primary_position", "")
+        primary_position = (
+            player.get("primary_position")
+            or current_roster.get("primary_position", "")
+            or str(scorer.get("posShortNames") or "").split(",")[0].strip()
+        )
         is_minor_exempt = tx_minors or current_minors
         normalized.append({
             "tx_set_id": tx_set_id,
@@ -232,7 +255,7 @@ def normalize_rows(rows, roster_statuses, players, teams):
             "transaction_code": row.get("transactionCode", ""),
             "claim_type": row.get("claimType", ""),
             "player_transaction_type": player_type,
-            "is_add": player_type in ADD_TYPES and player_type not in DROP_TYPES,
+            "is_add": is_add_transaction(row),
             "transaction_row_mentions_minors": tx_minors,
             "current_roster_status": current_roster_status,
             "current_roster_position": current_roster.get("roster_position", ""),
@@ -247,7 +270,7 @@ def normalize_rows(rows, roster_statuses, players, teams):
     return normalized
 
 
-def summarize_adds(rows, pickup_limit):
+def summarize_adds(rows, pickup_limit, teams):
     summaries = {}
     details_by_team = defaultdict(list)
     for row in rows:
@@ -276,6 +299,25 @@ def summarize_adds(rows, pickup_limit):
             "total_adds": len(details),
             "remaining_of_limit": pickup_limit - counted,
         }
+    for team_id, team_name in teams.items():
+        key = (team_id, team_name)
+        if key not in summaries:
+            summaries[key] = {
+                "team_id": team_id,
+                "team_name": team_name,
+                "counted_adds": 0,
+                "major_leaguer_adds": 0,
+                "minor_exempt_adds": 0,
+                "minor_leaguer_adds": 0,
+                "sp_adds": 0,
+                "rp_adds": 0,
+                "major_sp_adds": 0,
+                "major_rp_adds": 0,
+                "minor_sp_adds": 0,
+                "minor_rp_adds": 0,
+                "total_adds": 0,
+                "remaining_of_limit": pickup_limit,
+            }
     return sorted(summaries.values(), key=lambda row: (-row["counted_adds"], row["team_name"]))
 
 
@@ -346,7 +388,7 @@ def main():
         and start <= datetime.fromisoformat(row["transaction_date"]) < end
     ]
     add_details = [row for row in in_window if row["is_add"]]
-    summaries = summarize_adds(in_window, args.pickup_limit)
+    summaries = summarize_adds(in_window, args.pickup_limit, teams)
 
     detail_fields = [
         "transaction_date",

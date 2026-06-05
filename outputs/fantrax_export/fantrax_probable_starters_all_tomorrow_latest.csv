@@ -1,19 +1,30 @@
 probable_date,game_time_utc,home_away,probable_team,opponent,mlb_player_id,probable_name,fantrax_id,name,mlb_team,primary_position,eligible_positions,league_status,is_rostered,stats_inc_id,rotowire_id,sport_radar_id,game_pk
-2026-06-04,2026-06-04T17:05:00Z,away,San Diego Padres,Philadelphia Phillies,608337,Lucas Giolito,02i37,"Giolito, Lucas",SD,SP,P,T,True,9640,12454,1a1311e0-465c-45de-9f94-78e52fc067c3,823457
-2026-06-04,2026-06-04T17:05:00Z,home,Philadelphia Phillies,San Diego Padres,554430,Zack Wheeler,01sb3,"Wheeler, Zack",PHI,SP,P,T,True,9124,10951,f2c07e82-71e8-4c76-962b-3a7739a11626,823457
-2026-06-04,2026-06-04T17:35:00Z,home,Boston Red Sox,Baltimore Orioles,678394,Brayan Bello,04t40,"Bello, Brayan",BOS,SP,P,T,True,,15839,3c5c48e4-cdc8-43e1-8239-a15e78677139,824753
-2026-06-04,2026-06-04T17:35:00Z,away,Cleveland Guardians,New York Yankees,677944,Slade Cecconi,04tk1,"Cecconi, Slade",CLE,SP,P,T,True,,15450,dbdd2193-a5ad-474a-afdd-5f9fd308a09e,823542
-2026-06-04,2026-06-04T17:35:00Z,home,New York Yankees,Cleveland Guardians,607074,Carlos Rodón,02c2r,"Rodon, Carlos",NYY,SP,P,T,True,9823,13347,b5fe445d-6ac4-4542-a73c-69afced32a97,823542
-2026-06-04,2026-06-04T17:35:00Z,away,Baltimore Orioles,Boston Red Sox,669432,Trevor Rogers,04ak5,"Rogers, Trevor",BAL,SP,P,FA,False,10909,14790,e910c734-7443-4f0d-9593-8c1cedfe90d0,824753
-2026-06-04,2026-06-04T18:10:00Z,home,Milwaukee Brewers,San Francisco Giants,689441,Coleman Crow,0569p,"Crow, Coleman",MIL,SP,P,T,True,,17870,d221ae26-6a7f-41bc-adc0-30a29fbe3ca9,823779
-2026-06-04,2026-06-04T18:10:00Z,away,San Francisco Giants,Milwaukee Brewers,605288,Adrian Houser,02brc,"Houser, Adrian",SF,SP,P,FA,False,10098,12199,8156bec7-9689-46d6-9b0f-eddf7240d9a3,823779
-2026-06-04,2026-06-04T23:15:00Z,away,Toronto Blue Jays,Atlanta Braves,689254,Mason Fluharty,0648y,"Fluharty, Mason",TOR,RP,P,FA,False,,18146,04c6998c-a48a-4683-8d75-f985ad89b491,824919
-2026-06-04,2026-06-04T23:15:00Z,home,Atlanta Braves,Toronto Blue Jays,519242,Chris Sale,01uca,"Sale, Chris",ATL,SP,P,T,True,8780,11438,66c43b7f-760a-446c-9f50-671915570227,824919
-2026-06-04,2026-06-04T23:40:00Z,away,Kansas City Royals,Minnesota Twins,607625,Seth Lugo,03sef,"Lugo, Seth",KC,SP,P,T,True,10326,14095,0600588b-39b2-49eb-9e77-208f8fdaca9b,823698
-2026-06-04,2026-06-04T23:40:00Z,home,Minnesota Twins,Kansas City Royals,702193,Andrew Morris,0648r,"Morris, Andrew",MIN,SP,P,FA,False,,18125,935a41f8-6267-4a0d-b9cf-623b56da86d6,823698
-2026-06-04,2026-06-05T00:05:00Z,away,Athletics,Chicago Cubs,669372,J.T. Ginn,04pkt,"Ginn, J.T.",ATH,SP,P,FA,False,,15428,6e1ac09d-8ca9-4a73-957d-c55ba6c4da5f,824672
-2026-06-04,2026-06-05T00:05:00Z,home,Chicago Cubs,Athletics,684007,Shota Imanaga,05ge9,"Imanaga, Shota",CHC,SP,P,T,True,,18478,a73d6b30-c0e5-4186-853f-b9b47e672884,824672
-2026-06-04,2026-06-05T00:10:00Z,away,Pittsburgh Pirates,Houston Astros,683003,Jared Jones,05u30,"Jones, Jared",PIT,1B,"1B,UT,CI",FA,False,,,,824185
-2026-06-04,2026-06-05T00:10:00Z,home,Houston Astros,Pittsburgh Pirates,678906,Kai-Wei Teng,04zay,"Teng, Kai-Wei",HOU,SP,P,T,True,,15291,7fb43f1f-32f2-4517-828b-bd50da934a2d,824185
-2026-06-04,2026-06-05T01:40:00Z,home,Arizona Diamondbacks,Los Angeles Dodgers,669194,Ryne Nelson,04yid,"Nelson, Ryne",ARI,SP,P,FA,False,,16118,28cbe19d-c84c-4894-9f34-8bd3d99ddb05,825076
-2026-06-04,2026-06-05T01:40:00Z,away,Los Angeles Dodgers,Arizona Diamondbacks,680736,Justin Wrobleski,05y9r,"Wrobleski, Justin",LAD,RP,P,T,True,,18714,703b2bb9-c66b-43c4-9003-f9156623dfe5,825076
+2026-06-05,2026-06-05T18:20:00Z,home,Chicago Cubs,San Francisco Giants,665795,Edward Cabrera,04ali,"Cabrera, Edward",CHC,SP,P,T,True,10903,14672,4749846b-ab83-43a9-a114-3fd701909b89,824673
+2026-06-05,2026-06-05T18:20:00Z,away,San Francisco Giants,Chicago Cubs,592662,Robbie Ray,025j1,"Ray, Robbie",SF,SP,P,T,True,9691,11599,9deda06b-1928-4c58-acf0-717538f576f4,824673
+2026-06-05,2026-06-05T22:40:00Z,away,Chicago White Sox,Philadelphia Phillies,641743,Anthony Kay,041mb,"Kay, Anthony",CHW,SP,P,FA,False,10538,14269,6de93a68-31cd-4278-b933-e43cbcee5d98,823455
+2026-06-05,2026-06-05T22:40:00Z,home,Philadelphia Phillies,Chicago White Sox,666200,Jesús Luzardo,041r1,"Luzardo, Jesus",PHI,SP,P,T,True,10627,14304,9df8c4a7-8b6b-4478-8fd2-310bbd5e9d0d,823455
+2026-06-05,2026-06-05T22:40:00Z,home,Detroit Tigers,Seattle Mariners,664285,Framber Valdez,04auj,"Valdez, Framber",DET,SP,P,T,True,11138,14900,00026bf9-dc12-4711-8443-45fbac448ea0,824271
+2026-06-05,2026-06-05T22:40:00Z,away,Seattle Mariners,Detroit Tigers,693433,Bryan Woo,05y62,"Woo, Bryan",SEA,SP,P,T,True,,18195,5f42fd84-97c3-4c95-bf35-ad67f4b08443,824271
+2026-06-05,2026-06-05T23:05:00Z,away,Boston Red Sox,New York Yankees,543243,Sonny Gray,0260v,"Gray, Sonny",BOS,SP,P,T,True,9459,12129,b004cc6c-f00c-4b5d-917a-ee1abf92179d,823538
+2026-06-05,2026-06-05T23:05:00Z,home,New York Yankees,Boston Red Sox,677960,Ryan Weathers,04mnw,"Weathers, Ryan",NYY,SP,P,T,True,11379,15409,29a89587-5c16-4166-a620-6ba2d48691fd,823538
+2026-06-05,2026-06-05T23:07:00Z,home,Toronto Blue Jays,Baltimore Orioles,702056,Trey Yesavage,06apx,"Yesavage, Trey",TOR,SP,P,T,True,,19503,9a9747c1-f45d-4999-896d-3979471f2ef5,822810
+2026-06-05,2026-06-05T23:07:00Z,away,Baltimore Orioles,Toronto Blue Jays,687064,Brandon Young,05r3a,"Young, Brandon",BAL,SP,P,T,True,,16949,623e9837-a580-43f3-a524-74342173fe67,822810
+2026-06-05,2026-06-05T23:10:00Z,home,Miami Marlins,Tampa Bay Rays,687473,Ryan Gusto,0518s,"Gusto, Ryan",MIA,SP,P,FA,False,,19907,2902501a-a817-4eae-b691-4e05dfc4ef34,823860
+2026-06-05,2026-06-05T23:10:00Z,away,Tampa Bay Rays,Miami Marlins,656876,Drew Rasmussen,04eee,"Rasmussen, Drew",TB,SP,P,T,True,11789,14877,373944de-5264-4bea-b863-ff24b7381a64,823860
+2026-06-05,2026-06-05T23:15:00Z,away,Pittsburgh Pirates,Atlanta Braves,656605,Mitch Keller,03d7h,"Keller, Mitch",PIT,SP,P,FA,False,10565,13426,ffb19157-28c7-41ee-bdec-9b62d22337e2,824914
+2026-06-05,2026-06-05T23:15:00Z,home,Atlanta Braves,Pittsburgh Pirates,527048,Martín Pérez,01fhm,"Perez, Martin",ATL,SP,P,FA,False,8652,10867,9012e198-9f53-4885-8b24-402e51524e82,824914
+2026-06-05,2026-06-06T00:10:00Z,home,Houston Astros,Athletics,663567,Peter Lambert,03poo,"Lambert, Peter",HOU,SP,P,T,True,10467,13852,5fac7e47-21bc-414e-a696-a1bc961333b0,824186
+2026-06-05,2026-06-06T00:10:00Z,away,Athletics,Houston Astros,678022,Jack Perkins,0657l,"Perkins, Jack",ATH,RP,P,FA,False,,18142,81387e90-584a-4397-8dff-4fc011e1921d,824186
+2026-06-05,2026-06-06T00:15:00Z,home,St. Louis Cardinals,Cincinnati Reds,681517,Kyle Leahy,04q08,"Leahy, Kyle",STL,RP,P,T,True,,18354,66ca1e33-1303-4354-9f94-edae0d332456,823049
+2026-06-05,2026-06-06T00:15:00Z,home,Minnesota Twins,Kansas City Royals,805673,Zebby Matthews,066cf,"Matthews, Zebby",MIN,SP,P,T,True,,18788,400ea9ba-f842-4381-b71c-cdcac03d8d00,823699
+2026-06-05,2026-06-06T00:15:00Z,away,Cleveland Guardians,Texas Rangers,800048,Parker Messick,05tzn,"Messick, Parker",CLE,SP,P,T,True,,17968,65aeecb6-0a79-43d2-b20c-7d6313951004,822892
+2026-06-05,2026-06-06T00:15:00Z,home,Texas Rangers,Cleveland Guardians,677958,Kumar Rocker,04azu,"Rocker, Kumar",TEX,SP,P,T,True,,15407,65ba9ca4-a4e7-4330-ad13-a65a3258315a,822892
+2026-06-05,2026-06-06T00:15:00Z,away,Cincinnati Reds,St. Louis Cardinals,663903,Brady Singer,03pov,"Singer, Brady",CIN,SP,P,T,True,11323,13874,18f3c854-6490-4e6b-8afe-bc562c5b20b4,823049
+2026-06-05,2026-06-06T00:15:00Z,away,Kansas City Royals,Minnesota Twins,608379,Michael Wacha,02iug,"Wacha, Michael",KC,SP,P,T,True,9329,12457,db6ced3d-7838-4a7c-92a5-50d0b63dac3b,823699
+2026-06-05,2026-06-06T00:40:00Z,home,Colorado Rockies,Milwaukee Brewers,663372,Ryan Feltner,03r06,"Feltner, Ryan",COL,SP,P,FA,False,,15541,87dfe721-2290-44ac-a106-0aa9e676bfbd,824350
+2026-06-05,2026-06-06T00:40:00Z,away,Milwaukee Brewers,Colorado Rockies,687075,Brandon Sproat,0515o,"Sproat, Brandon",MIL,SP,P,T,True,,18023,35ecf5a8-953e-4076-819b-b6cdc4500b21,824350
+2026-06-05,2026-06-06T01:40:00Z,away,Washington Nationals,Arizona Diamondbacks,656492,Foster Griffin,03caf,"Griffin, Foster",WSH,SP,P,T,True,10489,13391,084cc7a3-3cd1-493c-a030-4af52f1f6cdd,825073
+2026-06-05,2026-06-06T01:40:00Z,home,Arizona Diamondbacks,Washington Nationals,518876,Merrill Kelly,02hj7,"Kelly, Merrill",ARI,SP,P,T,True,11251,15800,871f04aa-367c-48fb-8ae5-a5bd9e27cb8b,825073
+2026-06-05,2026-06-06T01:40:00Z,home,San Diego Padres,New York Mets,650633,Michael King,041wv,"King, Michael",SD,SP,P,T,True,11661,15255,8adff54a-cb4b-4692-b18c-e9aaa9a8e076,823293
+2026-06-05,2026-06-06T01:40:00Z,away,New York Mets,San Diego Padres,681035,Christian Scott,05xpq,"Scott, Christian",NYM,SP,P,T,True,,17511,7945584c-94fe-49e4-9d85-ad3ccd6b8617,823293
+2026-06-05,2026-06-06T02:10:00Z,home,Los Angeles Dodgers,Los Angeles Angels,808963,Roki Sasaki,05gdz,"Sasaki, Roki",LAD,SP,P,T,True,,18363,1af59804-5b77-4d6f-98f7-23e97a400a1b,823943
