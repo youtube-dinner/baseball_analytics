@@ -60,12 +60,52 @@ else:
     raise SystemExit(f"Unsupported date mode: {mode}")' "$1"
 }
 
+python_auto_probable_date() {
+  "$PYTHON" -c 'from datetime import datetime, timedelta, timezone
+from urllib.parse import urlencode
+from urllib.request import urlopen
+from zoneinfo import ZoneInfo
+import json
+
+central = ZoneInfo("America/Chicago")
+now_local = datetime.now(central)
+today = now_local.date()
+tomorrow = today + timedelta(days=1)
+params = urlencode({
+    "sportId": 1,
+    "startDate": today.isoformat(),
+    "endDate": today.isoformat(),
+})
+url = f"https://statsapi.mlb.com/api/v1/schedule?{params}"
+with urlopen(url, timeout=20) as response:
+    schedule = json.load(response)
+
+game_started_or_scheduled_by_now = False
+now_utc = now_local.astimezone(timezone.utc)
+for date_group in schedule.get("dates", []):
+    for game in date_group.get("games", []):
+        game_date = game.get("gameDate")
+        if not game_date:
+            continue
+        game_time = datetime.fromisoformat(game_date.replace("Z", "+00:00"))
+        if game_time <= now_utc:
+            game_started_or_scheduled_by_now = True
+            break
+    if game_started_or_scheduled_by_now:
+        break
+
+print(tomorrow.isoformat() if game_started_or_scheduled_by_now else today.isoformat())'
+}
+
 case "$PROBABLE_DATE_MODE" in
   today)
     export FANTRAX_PROBABLE_DATE="$(python_local_date today)"
     ;;
   tomorrow)
     export FANTRAX_PROBABLE_DATE="$(python_local_date tomorrow)"
+    ;;
+  auto)
+    export FANTRAX_PROBABLE_DATE="$(python_auto_probable_date)"
     ;;
   *)
     export FANTRAX_PROBABLE_DATE="$PROBABLE_DATE_MODE"

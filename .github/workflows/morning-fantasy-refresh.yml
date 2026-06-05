@@ -6,7 +6,7 @@ on:
       probable_date_mode:
         description: "Probable starter date selection"
         required: true
-        default: "today"
+        default: "auto"
   schedule:
     # 14:00 UTC = 9:00 AM America/Chicago during daylight time, 8:00 AM during standard time.
     - cron: "0 14 * * *"
@@ -65,7 +65,7 @@ jobs:
           FANTASY_BASEBALL_PREVIOUS_YEAR: "2025"
         run: >
           bash scripts/refresh_and_publish.sh
-          --probable-date "${{ github.event.inputs.probable_date_mode || 'today' }}"
+          --probable-date "${{ github.event.inputs.probable_date_mode || 'auto' }}"
           --publish
 
       - name: Upload refresh logs
