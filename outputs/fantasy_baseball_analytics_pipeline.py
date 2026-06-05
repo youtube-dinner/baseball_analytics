@@ -1236,16 +1236,10 @@ def run_pipeline():
         out = merge_by_id_team_name(df, hitter_baseball_savant, "player_id", "player_name_standard")
         return merge_by_id_team_name(out, hitter_previous_subset, "player_id", "player_name_standard")
 
-    current_roster_pitchers_joined = join_pitchers(current_roster_pitchers)
     all_players_pitchers_joined = join_pitchers(all_players_pitchers)
     streaming_pitchers_joined = join_pitchers(streaming_pitchers)
-    current_roster_hitters_joined = join_hitters(current_roster_hitters)
     all_players_hitters_joined = join_hitters(all_players_hitters)
 
-    current_roster_hitters_joined["AB_per_Game"] = (
-        pd.to_numeric(current_roster_hitters_joined.get("ab"), errors="coerce")
-        / pd.to_numeric(current_roster_hitters_joined.get("GP"), errors="coerce")
-    )
     all_players_hitters_joined["GP"] = (
         pd.to_numeric(all_players_hitters_joined.get("FPts"), errors="coerce")
         / pd.to_numeric(all_players_hitters_joined.get("FP/G"), errors="coerce")
@@ -1253,9 +1247,6 @@ def run_pipeline():
     all_players_hitters_joined["AB_per_Game"] = (
         pd.to_numeric(all_players_hitters_joined.get("ab"), errors="coerce")
         / pd.to_numeric(all_players_hitters_joined.get("GP"), errors="coerce")
-    )
-    current_roster_hitters_joined["R_per_Game"] = pd.to_numeric(
-        current_roster_hitters_joined.get("R_per_Game"), errors="coerce"
     )
     all_players_hitters_joined["R_per_Game"] = pd.to_numeric(
         all_players_hitters_joined.get("R_per_Game"), errors="coerce"
@@ -1267,16 +1258,35 @@ def run_pipeline():
         return merge_by_id_team_name(df, trends, "mlb_player_id") if not trends.empty else df
 
     all_players_pitchers_joined = merge_recent(all_players_pitchers_joined, recent_pitcher_trends)
-    current_roster_pitchers_joined = merge_recent(current_roster_pitchers_joined, recent_pitcher_trends)
     streaming_pitchers_joined = merge_recent(streaming_pitchers_joined, recent_pitcher_trends)
     all_players_hitters_joined = merge_recent(all_players_hitters_joined, recent_hitter_trends)
-    current_roster_hitters_joined = merge_recent(current_roster_hitters_joined, recent_hitter_trends)
 
-    current_roster_pitchers_joined = dedupe_player_rows(current_roster_pitchers_joined)
     all_players_pitchers_joined = dedupe_player_rows(all_players_pitchers_joined)
     streaming_pitchers_joined = dedupe_player_rows(streaming_pitchers_joined)
-    current_roster_hitters_joined = dedupe_player_rows(current_roster_hitters_joined)
     all_players_hitters_joined = dedupe_player_rows(all_players_hitters_joined)
+
+    def attach_roster_analytics(roster_df, analytics_df):
+        roster = roster_df.copy()
+        analytics = analytics_df.copy()
+        analytics_cols = [
+            col for col in analytics.columns
+            if col == "fantrax_id" or col not in roster.columns
+        ]
+        return roster.merge(
+            analytics[analytics_cols],
+            on="fantrax_id",
+            how="left",
+        )
+
+    current_roster_pitchers_joined = dedupe_player_rows(
+        attach_roster_analytics(current_roster_pitchers, all_players_pitchers_joined)
+    )
+    current_roster_hitters_joined = dedupe_player_rows(
+        attach_roster_analytics(current_roster_hitters, all_players_hitters_joined)
+    )
+    current_roster_hitters_joined["R_per_Game"] = pd.to_numeric(
+        current_roster_hitters_joined.get("R_per_Game"), errors="coerce"
+    )
 
     pitcher_trend_metrics = ["pitching_score", "command_score", "whiff_percent"]
     hitter_trend_metrics = ["hitter_score", "batters_eye_score", "barrel_batted_rate"]

@@ -1,7 +1,10 @@
 probable_date,game_time_utc,home_away,probable_team,opponent,mlb_player_id,probable_name,fantrax_id,name,mlb_team,primary_position,eligible_positions,league_status,is_rostered,stats_inc_id,rotowire_id,sport_radar_id,game_pk
-2026-06-05,,,PIT,@ATL Fri 6:15PM,,Mitch Keller,03d7h,"Keller, Mitch",PIT,SP,P,FA,False,10565,13426,ffb19157-28c7-41ee-bdec-9b62d22337e2,
-2026-06-05,,,CHW,@PHI Fri 5:40PM,,Anthony Kay,041mb,"Kay, Anthony",CHW,SP,P,FA,False,10538,14269,6de93a68-31cd-4278-b933-e43cbcee5d98,
-2026-06-05,,,ATL,PIT Fri 6:15PM,,Martin Perez,01fhm,"Perez, Martin",ATL,SP,P,FA,False,8652,10867,9012e198-9f53-4885-8b24-402e51524e82,
-2026-06-05,,,ATH,@HOU Fri 7:10PM,,Jack Perkins,0657l,"Perkins, Jack",ATH,RP,P,FA,False,,18142,81387e90-584a-4397-8dff-4fc011e1921d,
-2026-06-05,,,COL,MIL Fri 7:40PM,,Ryan Feltner,03r06,"Feltner, Ryan",COL,SP,P,FA,False,,15541,87dfe721-2290-44ac-a106-0aa9e676bfbd,
-2026-06-05,,,MIA,TB Fri 6:10PM,,Ryan Gusto,0518s,"Gusto, Ryan",MIA,SP,P,FA,False,,19907,2902501a-a817-4eae-b691-4e05dfc4ef34,
+2026-06-06,2026-06-06T17:10:00Z,home,Detroit Tigers,Seattle Mariners,672456,Keider Montero,05a1v,"Montero, Keider",DET,SP,P,FA,False,,17863,73ecbb81-39b8-4064-95fd-d9fc6907b76c,824269
+2026-06-06,2026-06-06T18:10:00Z,away,Kansas City Royals,Minnesota Twins,679883,Luinder Avila,06am5,"Avila, Luinder",KC,RP,P,FA,False,,18728,3f90bd6e-fb37-43fa-b2f9-9dac98348a38,823697
+2026-06-06,2026-06-06T18:15:00Z,home,St. Louis Cardinals,Cincinnati Reds,669461,Matthew Liberatore,04mlx,"Liberatore, Matthew",STL,SP,P,FA,False,11397,15399,5522ef4b-d436-4738-94d6-78a2c1c5a3ae,823048
+2026-06-06,2026-06-06T20:05:00Z,away,Chicago White Sox,Philadelphia Phillies,680732,Sean Burke,05xod,"Burke, Sean",CHW,SP,P,FA,False,,17364,1111489e-7f14-47bb-98da-a0c736568892,823454
+2026-06-06,2026-06-06T20:10:00Z,away,Washington Nationals,Arizona Diamondbacks,641793,Zack Littell,031d4,"Littell, Zack",WSH,SP,P,FA,False,11035,14992,fe0fc487-45d3-4178-9fd7-6c00025aff7e,825075
+2026-06-06,2026-06-06T20:10:00Z,away,Athletics,Houston Astros,695034,Kade Morris,06dqg,"Morris, Kade",ATH,SP,P,FA,False,,18925,0496ae25-034c-4ef0-a562-3f7e2b1bebb3,824184
+2026-06-06,2026-06-06T20:10:00Z,home,Arizona Diamondbacks,Washington Nationals,593958,Eduardo Rodriguez,029si,"Rodriguez, Eduardo",ARI,SP,P,FA,False,9546,12783,93413a68-2c05-405a-a38c-9ee983b36913,825075
+2026-06-06,2026-06-07T01:10:00Z,home,Colorado Rockies,Milwaukee Brewers,685299,Tanner Gordon,05152,"Gordon, Tanner",COL,SP,P,FA,False,,18754,d5862f27-415f-47d9-84c2-9c3d3ee4b0ec,824351
+2026-06-06,2026-06-07T02:10:00Z,home,San Diego Padres,New York Mets,656288,Griffin Canning,04eek,"Canning, Griffin",SD,SP,P,FA,False,10894,14783,470b008b-639b-4f14-975b-1eb51d918358,823292
