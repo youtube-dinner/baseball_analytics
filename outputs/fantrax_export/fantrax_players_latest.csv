@@ -712,7 +712,7 @@ fantrax_id,name,mlb_team,primary_position,eligible_positions,league_status,stats
 03120,"Bellinger, Cody",NYY,LF,"OF,UT",T,10504,13791,bbe79e92-c56f-4e17-b5e4-6427c9fb7dce
 06rhe,"Bello, Adrian",MIA,C,"C,UT",FA,,,
 06uwb,"Bello, Angel",CHW,SP,P,FA,,,
-04t40,"Bello, Brayan",BOS,SP,P,WW,,15839,3c5c48e4-cdc8-43e1-8239-a15e78677139
+04t40,"Bello, Brayan",BOS,SP,P,FA,,15839,3c5c48e4-cdc8-43e1-8239-a15e78677139
 06vy9,"Bello, Carlos",NYY,2B,"2B,UT,MI",FA,,20409,
 06mmn,"Bello, Jose",BOS,RP,P,FA,,20142,d3b5e2a1-e8b6-48ba-b31c-8ab8b9059aeb
 06p4m,"Bello, Juan",HOU,SP,P,FA,,19970,
@@ -9092,7 +9092,7 @@ fantrax_id,name,mlb_team,primary_position,eligible_positions,league_status,stats
 03o43,"Urias, Luis",ARI,2B,"2B,UT,MI",FA,10570,14403,b158fb37-c794-4708-86fb-7cf18287dc97
 04t98,"Urias, Manuel",(N/A),SP,P,FA,,,
 04de0,"Urias, Ramon",STL,3B,"UT,2B,3B,CI,MI",FA,11239,15783,0672f3d5-5781-47bb-b111-abec96c38355
-05nso,"Uribe, Abner",MIL,RP,P,T,,17626,424fdb4f-bc6c-4f13-85af-e2482a92e059
+05nso,"Uribe, Abner",MIL,RP,P,FA,,17626,424fdb4f-bc6c-4f13-85af-e2482a92e059
 06r1d,"Uribe, Delni",CLE,SP,P,FA,,,
 06ak6,"Uribe, Isaias",PIT,RP,P,FA,,,
 06c3q,"Uribe, Juan",(N/A),2B,"2B,UT,MI",FA,,,

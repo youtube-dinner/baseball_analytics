@@ -1,7 +1,7 @@
 probable_date,game_time_utc,home_away,probable_team,opponent,mlb_player_id,probable_name,fantrax_id,name,mlb_team,primary_position,eligible_positions,league_status,is_rostered,stats_inc_id,rotowire_id,sport_radar_id,game_pk
-2026-06-05,2026-06-05T22:40:00Z,away,Chicago White Sox,Philadelphia Phillies,641743,Anthony Kay,041mb,"Kay, Anthony",CHW,SP,P,FA,False,10538,14269,6de93a68-31cd-4278-b933-e43cbcee5d98,823455
-2026-06-05,2026-06-05T23:10:00Z,home,Miami Marlins,Tampa Bay Rays,687473,Ryan Gusto,0518s,"Gusto, Ryan",MIA,SP,P,FA,False,,19907,2902501a-a817-4eae-b691-4e05dfc4ef34,823860
-2026-06-05,2026-06-05T23:15:00Z,away,Pittsburgh Pirates,Atlanta Braves,656605,Mitch Keller,03d7h,"Keller, Mitch",PIT,SP,P,FA,False,10565,13426,ffb19157-28c7-41ee-bdec-9b62d22337e2,824914
-2026-06-05,2026-06-05T23:15:00Z,home,Atlanta Braves,Pittsburgh Pirates,527048,Martín Pérez,01fhm,"Perez, Martin",ATL,SP,P,FA,False,8652,10867,9012e198-9f53-4885-8b24-402e51524e82,824914
-2026-06-05,2026-06-06T00:10:00Z,away,Athletics,Houston Astros,678022,Jack Perkins,0657l,"Perkins, Jack",ATH,RP,P,FA,False,,18142,81387e90-584a-4397-8dff-4fc011e1921d,824186
-2026-06-05,2026-06-06T00:40:00Z,home,Colorado Rockies,Milwaukee Brewers,663372,Ryan Feltner,03r06,"Feltner, Ryan",COL,SP,P,FA,False,,15541,87dfe721-2290-44ac-a106-0aa9e676bfbd,824350
+2026-06-05,,,PIT,@ATL Fri 6:15PM,,Mitch Keller,03d7h,"Keller, Mitch",PIT,SP,P,FA,False,10565,13426,ffb19157-28c7-41ee-bdec-9b62d22337e2,
+2026-06-05,,,CHW,@PHI Fri 5:40PM,,Anthony Kay,041mb,"Kay, Anthony",CHW,SP,P,FA,False,10538,14269,6de93a68-31cd-4278-b933-e43cbcee5d98,
+2026-06-05,,,ATL,PIT Fri 6:15PM,,Martin Perez,01fhm,"Perez, Martin",ATL,SP,P,FA,False,8652,10867,9012e198-9f53-4885-8b24-402e51524e82,
+2026-06-05,,,ATH,@HOU Fri 7:10PM,,Jack Perkins,0657l,"Perkins, Jack",ATH,RP,P,FA,False,,18142,81387e90-584a-4397-8dff-4fc011e1921d,
+2026-06-05,,,COL,MIL Fri 7:40PM,,Ryan Feltner,03r06,"Feltner, Ryan",COL,SP,P,FA,False,,15541,87dfe721-2290-44ac-a106-0aa9e676bfbd,
+2026-06-05,,,MIA,TB Fri 6:10PM,,Ryan Gusto,0518s,"Gusto, Ryan",MIA,SP,P,FA,False,,19907,2902501a-a817-4eae-b691-4e05dfc4ef34,
