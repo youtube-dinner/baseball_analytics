@@ -5,6 +5,9 @@ on:
   schedule:
     - cron: "0 14 * * *"
 
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: "true"
+
 permissions:
   contents: write
 
@@ -43,13 +46,11 @@ jobs:
           NODE: node
           REFRESH_BUILD_WORKBOOK: "0"
           FANTRAX_AUTH_COOKIE: ${{ secrets.FANTRAX_AUTH_COOKIE }}
-          FANTRAX_LEAGUE_ID: ${{ secrets.FANTRAX_LEAGUE_ID }}
-          FANTRAX_OLD_UI_TOKEN: ${{ secrets.FANTRAX_OLD_UI_TOKEN }}
-          FANTRAX_PROBABLE_MISC_DISPLAY_TYPE: ${{ secrets.FANTRAX_PROBABLE_MISC_DISPLAY_TYPE }}
-          FANTRAX_PROBABLE_DATE_PLAYING: ${{ secrets.FANTRAX_PROBABLE_DATE_PLAYING }}
-          FANTRAX_TEAM_NAME: ${{ secrets.FANTRAX_TEAM_NAME }}
-          FANTASY_BASEBALL_YEAR: ${{ secrets.FANTASY_BASEBALL_YEAR }}
-          FANTASY_BASEBALL_PREVIOUS_YEAR: ${{ secrets.FANTASY_BASEBALL_PREVIOUS_YEAR }}
+          FANTRAX_LEAGUE_ID: "qqll39pvmj90wrl1"
+          FANTRAX_PROBABLE_MISC_DISPLAY_TYPE: "7"
+          FANTRAX_TEAM_NAME: "Bobby and the NitWitts"
+          FANTASY_BASEBALL_YEAR: "2026"
+          FANTASY_BASEBALL_PREVIOUS_YEAR: "2025"
         run: bash scripts/refresh_and_publish.sh --probable-date today --publish
 
       - name: Upload refresh logs
