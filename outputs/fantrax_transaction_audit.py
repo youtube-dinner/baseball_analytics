@@ -21,6 +21,7 @@ FANTRAX_AUTH_COOKIE_FILE = Path(os.environ.get(
     OUT_DIR / "fantrax_auth_cookie_latest.txt",
 ))
 CENTRAL = ZoneInfo("America/Chicago")
+EASTERN = ZoneInfo("America/New_York")
 FANTRAX_DATE_FORMATS = [
     "%a %b %d, %Y, %I:%M%p",
     "%a %b %d, %Y %I:%M%p",
@@ -96,7 +97,7 @@ def parse_fantrax_datetime(value):
     value = re.sub(r"\s+", " ", str(value).strip())
     for fmt in FANTRAX_DATE_FORMATS:
         try:
-            return datetime.strptime(value, fmt).replace(tzinfo=CENTRAL)
+            return datetime.strptime(value, fmt).replace(tzinfo=EASTERN)
         except ValueError:
             pass
     return None
@@ -204,11 +205,9 @@ def load_teams(path):
     return teams
 
 
-def current_week_window(boundary_hour):
-    now = datetime.now(CENTRAL)
-    days_since_sunday = (now.weekday() + 1) % 7
-    most_recent_sunday = now.date() - timedelta(days=days_since_sunday)
-    start = datetime.combine(most_recent_sunday, time(boundary_hour), CENTRAL)
+def current_week_window():
+    now = datetime.now(EASTERN)
+    start = datetime.combine(now.date() - timedelta(days=now.weekday()), time(0), EASTERN)
     if now < start:
         start -= timedelta(days=7)
     return start, start + timedelta(days=7)
@@ -331,9 +330,8 @@ def write_csv(path, rows, fields):
 
 def main():
     parser = argparse.ArgumentParser(description="Audit Fantrax player adds by team for a weekly pickup limit.")
-    parser.add_argument("--start", help="Inclusive Central Time start, e.g. 2026-05-31T23:00")
-    parser.add_argument("--end", help="Exclusive Central Time end, e.g. 2026-06-07T23:00")
-    parser.add_argument("--boundary-hour", type=int, default=23, help="Sunday Central Time boundary hour. Default: 23.")
+    parser.add_argument("--start", help="Inclusive Eastern Time start, e.g. 2026-06-01T00:00")
+    parser.add_argument("--end", help="Exclusive Eastern Time end, e.g. 2026-06-08T00:00")
     parser.add_argument("--max-results", type=int, default=500, help="Rows per page to request from Fantrax.")
     parser.add_argument("--pages", type=int, default=5, help="Maximum Fantrax transaction pages to fetch.")
     parser.add_argument("--pickup-limit", type=int, default=10)
@@ -341,12 +339,12 @@ def main():
     args = parser.parse_args()
 
     if args.start:
-        start = datetime.fromisoformat(args.start).replace(tzinfo=CENTRAL)
+        start = datetime.fromisoformat(args.start).replace(tzinfo=EASTERN)
         if not args.end:
             raise SystemExit("--end is required when --start is provided")
-        end = datetime.fromisoformat(args.end).replace(tzinfo=CENTRAL)
+        end = datetime.fromisoformat(args.end).replace(tzinfo=EASTERN)
     else:
-        start, end = current_week_window(args.boundary_hour)
+        start, end = current_week_window()
 
     raw_pages = []
     rows = []
@@ -431,8 +429,22 @@ def main():
     ]
     write_csv(args.out_dir / "fantrax_pickup_audit_details_latest.csv", add_details, detail_fields)
     write_csv(args.out_dir / "fantrax_pickup_audit_summary_latest.csv", summaries, summary_fields)
+    metadata = {
+        "period_timezone": "America/New_York",
+        "period_start": start.isoformat(),
+        "period_end_exclusive": end.isoformat(),
+        "period_label": f"{start.strftime('%Y-%m-%d')} to {(end - timedelta(days=1)).strftime('%Y-%m-%d')} ET",
+        "generated_at": datetime.now(timezone.utc).isoformat(),
+        "fetched_transaction_player_rows": len(rows),
+        "rows_in_window": len(in_window),
+        "add_rows_in_window": len(add_details),
+    }
+    (args.out_dir / "fantrax_pickup_audit_metadata_latest.json").write_text(
+        json.dumps(metadata, indent=2, sort_keys=True),
+        encoding="utf-8",
+    )
 
-    print(f"Window Central: {start.isoformat()} to {end.isoformat()} (end exclusive)")
+    print(f"Window Eastern: {start.isoformat()} to {end.isoformat()} (end exclusive)")
     print(f"Raw Fantrax response: {raw_path}")
     print(f"Fetched transaction player rows: {len(rows)}")
     print(f"Rows in window: {len(in_window)}")

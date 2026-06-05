@@ -13,6 +13,14 @@ from urllib.request import Request, urlopen
 
 OUT_DIR = Path(__file__).resolve().parent / "fantrax_export"
 GROUPME_POST_URL = "https://api.groupme.com/v3/bots/post"
+BOLD_UPPER = {chr(ord("A") + index): chr(0x1D400 + index) for index in range(26)}
+BOLD_LOWER = {chr(ord("a") + index): chr(0x1D41A + index) for index in range(26)}
+BOLD_DIGIT = {chr(ord("0") + index): chr(0x1D7CE + index) for index in range(10)}
+BOLD_TRANSLATION = {**BOLD_UPPER, **BOLD_LOWER, **BOLD_DIGIT}
+
+
+def bold_text(value):
+    return "".join(BOLD_TRANSLATION.get(char, char) for char in value)
 
 
 def read_csv(path):
@@ -22,40 +30,32 @@ def read_csv(path):
         return list(csv.DictReader(f))
 
 
-def build_report(summary_rows, detail_rows):
-    total_adds = sum(int(row.get("total_adds") or 0) for row in summary_rows)
-    total_major = sum(int(row.get("major_leaguer_adds") or 0) for row in summary_rows)
-    total_minor = sum(int(row.get("minor_leaguer_adds") or 0) for row in summary_rows)
-    total_sp = sum(int(row.get("sp_adds") or 0) for row in summary_rows)
-    total_rp = sum(int(row.get("rp_adds") or 0) for row in summary_rows)
+def read_metadata(path):
+    if not path.exists():
+        return {}
+    return json.loads(path.read_text(encoding="utf-8"))
 
+
+def build_report(summary_rows, detail_rows):
+    ordered_rows = sorted(
+        summary_rows,
+        key=lambda row: (-(int(row.get("total_adds") or 0)), row.get("team_name", "")),
+    )
     lines = [
-        "Fantrax pickup audit",
+        "Fantrax Add Tracker",
         datetime.now().strftime("%Y-%m-%d %I:%M %p"),
         "",
-        f"Total adds: {total_adds} | Major: {total_major} | Minor: {total_minor} | SP: {total_sp} | RP: {total_rp}",
-        "",
-        "Team | Adds | Major | Minor | SP | RP | Remaining",
     ]
-    for row in summary_rows:
-        lines.append(
-            " | ".join([
-                row.get("team_name", ""),
-                row.get("total_adds", "0"),
-                row.get("major_leaguer_adds", "0"),
-                row.get("minor_leaguer_adds", "0"),
-                row.get("sp_adds", "0"),
-                row.get("rp_adds", "0"),
-                row.get("remaining_of_limit", ""),
-            ])
-        )
-    if detail_rows:
-        lines.extend(["", "Most recent adds:"])
-        for row in detail_rows[:10]:
-            lines.append(
-                f"{row.get('transaction_date', '')[:16]} - {row.get('team_name', '')}: "
-                f"{row.get('player_name', '')} ({row.get('primary_position', '')}, {row.get('major_minor_class', '')})"
-            )
+    for index, row in enumerate(ordered_rows):
+        if index:
+            lines.append("")
+        lines.extend([
+            bold_text(row.get("team_name", "")),
+            f"Total Adds: {row.get('total_adds', '0')}",
+            f"Major League SP Adds: {row.get('major_sp_adds', '0')}",
+            f"Major League RP Adds: {row.get('major_rp_adds', '0')}",
+            f"Minor League Adds: {row.get('minor_leaguer_adds', '0')}",
+        ])
     return "\n".join(lines)
 
 
@@ -95,10 +95,18 @@ def send_groupme(body):
     if not bot_id:
         raise RuntimeError("GroupMe requires GROUPME_BOT_ID")
     chunks = []
-    remaining = body
-    while remaining:
-        chunks.append(remaining[:950])
-        remaining = remaining[950:]
+    current = []
+    current_len = 0
+    for line in body.splitlines():
+        line_len = len(line) + 1
+        if current and current_len + line_len > 950:
+            chunks.append("\n".join(current))
+            current = []
+            current_len = 0
+        current.append(line)
+        current_len += line_len
+    if current:
+        chunks.append("\n".join(current))
     for chunk in chunks:
         req = Request(
             GROUPME_POST_URL,
@@ -114,13 +122,17 @@ def main():
     parser = argparse.ArgumentParser(description="Send Fantrax pickup audit report by email and/or GroupMe.")
     parser.add_argument("--summary", type=Path, default=OUT_DIR / "fantrax_pickup_audit_summary_latest.csv")
     parser.add_argument("--details", type=Path, default=OUT_DIR / "fantrax_pickup_audit_details_latest.csv")
+    parser.add_argument("--metadata", type=Path, default=OUT_DIR / "fantrax_pickup_audit_metadata_latest.json")
     parser.add_argument("--email", action="store_true")
     parser.add_argument("--groupme", action="store_true")
     args = parser.parse_args()
 
     summary_rows = read_csv(args.summary)
     detail_rows = read_csv(args.details)
+    metadata = read_metadata(args.metadata)
     body = build_report(summary_rows, detail_rows)
+    if metadata.get("period_label"):
+        body = body.replace("\n\n", f"\nPeriod: {metadata['period_label']}\n\n", 1)
     subject = "Fantrax pickup audit"
     if args.email:
         send_email(subject, body, [args.summary, args.details])
