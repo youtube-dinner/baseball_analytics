@@ -19,3 +19,5 @@ outputs/*.ipynb
 
 # Local logs are useful during a run but noisy in git history.
 work/spreadsheet_build/build.log
+
+outputs/refresh_logs/latest_refresh.log
