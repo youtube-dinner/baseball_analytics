@@ -2,14 +2,26 @@ name: Morning Fantasy Refresh
 
 on:
   workflow_dispatch:
+    inputs:
+      probable_date_mode:
+        description: "Probable starter date selection"
+        required: true
+        default: "today"
   schedule:
+    # 14:00 UTC = 9:00 AM America/Chicago during daylight time, 8:00 AM during standard time.
     - cron: "0 14 * * *"
+    # 01:00 UTC = 8:00 PM America/Chicago during daylight time, 7:00 PM during standard time.
+    - cron: "0 1 * * *"
 
 env:
   FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: "true"
 
 permissions:
   contents: write
+
+concurrency:
+  group: morning-fantasy-refresh
+  cancel-in-progress: false
 
 jobs:
   refresh:
@@ -51,7 +63,10 @@ jobs:
           FANTRAX_TEAM_NAME: "Bobby and the NitWitts"
           FANTASY_BASEBALL_YEAR: "2026"
           FANTASY_BASEBALL_PREVIOUS_YEAR: "2025"
-        run: bash scripts/refresh_and_publish.sh --probable-date today --publish
+        run: >
+          bash scripts/refresh_and_publish.sh
+          --probable-date "${{ github.event.inputs.probable_date_mode || 'today' }}"
+          --publish
 
       - name: Upload refresh logs
         uses: actions/upload-artifact@v4
