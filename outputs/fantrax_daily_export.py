@@ -2,9 +2,11 @@
 import csv
 import json
 import os
+import time
 import unicodedata
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
+from urllib.error import HTTPError, URLError
 from urllib.parse import urlencode
 from urllib.request import Request, urlopen
 from zoneinfo import ZoneInfo
@@ -20,6 +22,31 @@ FANTRAX_AUTH_COOKIE = os.environ.get("FANTRAX_AUTH_COOKIE", "")
 FANTRAX_OLD_UI_TOKEN = os.environ.get("FANTRAX_OLD_UI_TOKEN", "")
 FANTRAX_PROBABLE_MISC_DISPLAY_TYPE = os.environ.get("FANTRAX_PROBABLE_MISC_DISPLAY_TYPE", "7")
 FANTRAX_PROBABLE_DATE_PLAYING = os.environ.get("FANTRAX_PROBABLE_DATE_PLAYING", "")
+NETWORK_RETRIES = max(1, int(os.environ.get("FANTRAX_NETWORK_RETRIES", "4")))
+NETWORK_RETRY_DELAY_SECONDS = max(1.0, float(os.environ.get("FANTRAX_NETWORK_RETRY_DELAY_SECONDS", "5")))
+NETWORK_TIMEOUT_SECONDS = max(1, int(os.environ.get("FANTRAX_NETWORK_TIMEOUT_SECONDS", "60")))
+
+
+def fetch_bytes(req, url_label):
+    last_error = None
+    for attempt in range(1, NETWORK_RETRIES + 1):
+        try:
+            with urlopen(req, timeout=NETWORK_TIMEOUT_SECONDS) as response:
+                return response.read()
+        except HTTPError as exc:
+            if exc.code not in {429, 500, 502, 503, 504} or attempt == NETWORK_RETRIES:
+                raise
+            last_error = exc
+        except (URLError, OSError) as exc:
+            if attempt == NETWORK_RETRIES:
+                raise
+            last_error = exc
+        print(
+            f"Retrying {url_label} after attempt {attempt}/{NETWORK_RETRIES} failed: {last_error}",
+            flush=True,
+        )
+        time.sleep(NETWORK_RETRY_DELAY_SECONDS * attempt)
+    raise RuntimeError(f"Failed to fetch {url_label}: {last_error}")
 
 
 def fetch_json(endpoint, **params):
@@ -27,16 +54,14 @@ def fetch_json(endpoint, **params):
     if params:
         url = f"{url}?{urlencode(params)}"
     req = Request(url, headers={"User-Agent": "Mozilla/5.0", "Accept": "application/json"})
-    with urlopen(req, timeout=60) as response:
-        return json.loads(response.read().decode("utf-8"))
+    return json.loads(fetch_bytes(req, url).decode("utf-8"))
 
 
 def fetch_url_json(url, **params):
     if params:
         url = f"{url}?{urlencode(params)}"
     req = Request(url, headers={"User-Agent": "Mozilla/5.0", "Accept": "application/json"})
-    with urlopen(req, timeout=60) as response:
-        return json.loads(response.read().decode("utf-8"))
+    return json.loads(fetch_bytes(req, url).decode("utf-8"))
 
 
 def fetch_ui_bytes(endpoint, **params):
@@ -49,8 +74,7 @@ def fetch_ui_bytes(endpoint, **params):
     if FANTRAX_AUTH_COOKIE:
         headers["Cookie"] = FANTRAX_AUTH_COOKIE
     req = Request(url, headers=headers)
-    with urlopen(req, timeout=60) as response:
-        raw = response.read()
+    raw = fetch_bytes(req, url)
     if raw.strip().startswith(b"{"):
         data = json.loads(raw.decode("utf-8"))
         page_error = data.get("pageError") or data.get("error")

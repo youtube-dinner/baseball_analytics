@@ -8,6 +8,7 @@ PUBLISH=0
 PROBABLE_DATE_MODE=""
 RUN_STARTED_AT="$(TZ=America/Chicago date '+%Y-%m-%dT%H:%M:%S%z')"
 RUN_ID="$(TZ=UTC date '+%Y%m%dT%H%M%SZ')"
+NETWORK_WAIT_HOSTS_DEFAULT="www.fantrax.com statsapi.mlb.com"
 
 while [[ $# -gt 0 ]]; do
   case "$1" in
@@ -42,6 +43,9 @@ if [[ -f "$ROOT/.env" ]]; then
 fi
 
 PROBABLE_DATE_MODE="${PROBABLE_DATE_MODE:-${FANTRAX_PROBABLE_DATE:-tomorrow}}"
+NETWORK_WAIT_HOSTS="${NETWORK_WAIT_HOSTS:-$NETWORK_WAIT_HOSTS_DEFAULT}"
+NETWORK_WAIT_ATTEMPTS="${NETWORK_WAIT_ATTEMPTS:-12}"
+NETWORK_WAIT_SLEEP_SECONDS="${NETWORK_WAIT_SLEEP_SECONDS:-10}"
 
 case "$PROBABLE_DATE_MODE" in
   today)
@@ -56,6 +60,37 @@ case "$PROBABLE_DATE_MODE" in
 esac
 
 GIT_HEAD_START="$(git rev-parse --short HEAD 2>/dev/null || echo unknown)"
+
+wait_for_network_hosts() {
+  local attempts="$1"
+  local sleep_seconds="$2"
+  shift 2
+  local hosts=("$@")
+  local attempt host
+
+  if [[ "${#hosts[@]}" -eq 0 ]]; then
+    return 0
+  fi
+
+  for attempt in $(seq 1 "$attempts"); do
+    local missing=()
+    for host in "${hosts[@]}"; do
+      if ! "$PYTHON" -c 'import socket, sys; socket.getaddrinfo(sys.argv[1], 443)' "$host" >/dev/null 2>&1; then
+        missing+=("$host")
+      fi
+    done
+    if [[ "${#missing[@]}" -eq 0 ]]; then
+      echo "Network preflight succeeded on attempt $attempt/$attempts for hosts: ${hosts[*]}"
+      return 0
+    fi
+    echo "Network preflight attempt $attempt/$attempts failed for hosts: ${missing[*]}"
+    if [[ "$attempt" -lt "$attempts" ]]; then
+      sleep "$sleep_seconds"
+    fi
+  done
+
+  echo "Continuing after network preflight retries exhausted; downstream fetch retries will handle transient failures."
+}
 
 write_refresh_status() {
   local status="$1"
@@ -98,6 +133,7 @@ echo "Refresh run id: $RUN_ID"
 echo "Started local: $RUN_STARTED_AT"
 echo "Probable date mode: $PROBABLE_DATE_MODE"
 echo "Fantrax probable date: $FANTRAX_PROBABLE_DATE"
+wait_for_network_hosts "$NETWORK_WAIT_ATTEMPTS" "$NETWORK_WAIT_SLEEP_SECONDS" $NETWORK_WAIT_HOSTS
 
 "$PYTHON" outputs/fantrax_daily_export.py
 "$PYTHON" outputs/fantasy_baseball_analytics_pipeline.py
@@ -125,7 +161,7 @@ if ! git remote get-url origin >/dev/null 2>&1; then
   exit 0
 fi
 
-if ! git push origin HEAD; then
-  echo "Git push failed; local refresh and commit completed."
+if ! GIT_TERMINAL_PROMPT=0 git push origin HEAD; then
+  echo "Git push failed or credentials were unavailable; local refresh and commit completed."
   exit 0
 fi
