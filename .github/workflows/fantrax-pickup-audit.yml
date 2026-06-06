@@ -3,7 +3,7 @@ name: Fantrax Pickup Audit
 on:
   workflow_dispatch:
   schedule:
-    - cron: "0 14 * * *"
+    - cron: "38 15 * * *"
 
 jobs:
   pickup-audit:
