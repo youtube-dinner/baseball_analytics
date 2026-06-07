@@ -297,7 +297,8 @@ def summarize_adds(rows, pickup_limit, teams):
             "minor_sp_adds": sum(1 for row in minor_exempt if row["is_sp"]),
             "minor_rp_adds": sum(1 for row in minor_exempt if row["is_rp"]),
             "total_adds": len(details),
-            "remaining_of_limit": pickup_limit - counted,
+            "remaining_of_limit": max(0, pickup_limit - counted),
+            "over_limit_by": max(0, counted - pickup_limit),
         }
     for team_id, team_name in teams.items():
         key = (team_id, team_name)
@@ -317,6 +318,7 @@ def summarize_adds(rows, pickup_limit, teams):
                 "minor_rp_adds": 0,
                 "total_adds": 0,
                 "remaining_of_limit": pickup_limit,
+                "over_limit_by": 0,
             }
     return sorted(summaries.values(), key=lambda row: (-row["counted_adds"], row["team_name"]))
 
@@ -335,7 +337,7 @@ def main():
     parser.add_argument("--end", help="Exclusive Eastern Time end, e.g. 2026-06-08T00:00")
     parser.add_argument("--max-results", type=int, default=500, help="Rows per page to request from Fantrax.")
     parser.add_argument("--pages", type=int, default=5, help="Maximum Fantrax transaction pages to fetch.")
-    parser.add_argument("--pickup-limit", type=int, default=10)
+    parser.add_argument("--pickup-limit", type=int, default=int(os.environ.get("FANTRAX_MAJOR_ADD_LIMIT", "7")))
     parser.add_argument("--out-dir", type=Path, default=OUT_DIR)
     args = parser.parse_args()
 
@@ -426,6 +428,7 @@ def main():
         "minor_rp_adds",
         "total_adds",
         "remaining_of_limit",
+        "over_limit_by",
         "team_id",
     ]
     write_csv(args.out_dir / "fantrax_pickup_audit_details_latest.csv", add_details, detail_fields)

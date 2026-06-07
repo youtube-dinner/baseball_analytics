@@ -18,6 +18,7 @@ export FANTRAX_AUTH_COOKIE_FILE="${FANTRAX_AUTH_COOKIE_FILE:-$ROOT/outputs/fantr
 if [[ "${FANTRAX_SKIP_BROWSER_REFRESH:-0}" != "1" ]]; then
   "$NODE" "$ROOT/scripts/fantrax_refresh_cookie_from_session.mjs"
 fi
+"$PYTHON" "$ROOT/outputs/fantrax_daily_export.py"
 "$PYTHON" "$ROOT/outputs/fantrax_transaction_audit.py" "$@"
 
 notify_args=()
