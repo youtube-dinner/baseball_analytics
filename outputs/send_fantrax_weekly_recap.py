@@ -204,6 +204,7 @@ def roster_rows_for_team(team_id, team_name, params):
             games_played = float_value(cell_value(row, header_cells, short_name="GP"))
             fpts = float_value(cell_value(row, header_cells, key="fpts"))
             fpts_per_game = float_value(cell_value(row, header_cells, key="fptsPerGame"))
+            at_bats = float_value(cell_value(row, header_cells, short_name="AB"))
             rows.append({
                 "team_id": team_id,
                 "team_name": team_name,
@@ -217,6 +218,7 @@ def roster_rows_for_team(team_id, team_name, params):
                 "actual_points": fpts,
                 "actual_fpts_per_game": fpts_per_game,
                 "games_played": games_played,
+                "at_bats": at_bats,
             })
     return rows
 
@@ -274,7 +276,13 @@ def snapshot_projection_rows(projection_rows, baseline_rows):
             "fantrax_id": row["fantrax_id"],
             "player_name": row["player_name"],
             "projected_fpts_per_game": row["actual_points"],
+            "projected_at_bats": row.get("at_bats", 0.0),
             "pre_week_fpts_per_game": baseline.get("actual_fpts_per_game", 0.0),
+            "pre_week_ab_per_game": (
+                baseline.get("at_bats", 0.0) / baseline.get("games_played", 0.0)
+                if baseline.get("games_played", 0.0)
+                else 0.0
+            ),
         }
     return snapshot
 
@@ -311,15 +319,24 @@ def enrich_with_projections(actual_rows, snapshot):
     for row in actual_rows:
         key = f"{row['team_id']}:{row['fantrax_id']}"
         projection = players.get(key, {})
-        projected_per_game = float_value(projection.get("projected_fpts_per_game"))
+        raw_projected_per_game = float_value(projection.get("projected_fpts_per_game"))
+        projected_per_game = raw_projected_per_game
+        projected_at_bats = float_value(projection.get("projected_at_bats"))
+        pre_week_ab_per_game = float_value(projection.get("pre_week_ab_per_game"))
         projection_basis = "fantrax_projected_fpg"
+        if row["player_type"] == "Hitting" and projected_per_game > 0 and projected_at_bats > 0 and pre_week_ab_per_game > 0:
+            projected_per_game = projected_per_game * pre_week_ab_per_game / projected_at_bats
+            projection_basis = "fantrax_projected_fpg_ab_normalized"
         if projected_per_game <= 0:
             projected_per_game = float_value(projection.get("pre_week_fpts_per_game"))
             projection_basis = "pre_week_fpg"
         projected_total = projected_per_game * row["games_played"]
         enriched.append({
             **row,
+            "raw_projected_fpts_per_game": raw_projected_per_game,
             "projected_fpts_per_game": projected_per_game,
+            "projected_at_bats": projected_at_bats,
+            "pre_week_ab_per_game": pre_week_ab_per_game,
             "projected_points": projected_total,
             "points_over_projection": row["actual_points"] - projected_total,
             "projection_source": snapshot.get("projection_type", ""),
@@ -370,7 +387,7 @@ def build_report(rows, start, end, projection_source):
     if projection_source.endswith("_fallback"):
         lines.extend([
             "",
-            "Projection note: no stored pre-week snapshot was available, so this used current Fantrax projected per-game values with current FP/G fallback.",
+            "Projection note: no stored pre-week snapshot was available, so this used current Fantrax projected per-game values with AB/G normalization and current FP/G fallback.",
         ])
     return "\n".join(lines)
 
@@ -483,7 +500,10 @@ def main():
         "player_type",
         "actual_points",
         "games_played",
+        "raw_projected_fpts_per_game",
         "projected_fpts_per_game",
+        "projected_at_bats",
+        "pre_week_ab_per_game",
         "projected_points",
         "points_over_projection",
         "projection_source",
