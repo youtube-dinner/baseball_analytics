@@ -1,15 +1,20 @@
-name: Fantrax Pickup Audit
+name: Fantrax Weekly Recap
 
 on:
   workflow_dispatch:
   schedule:
-    - cron: "38 * * * *"
+    # Monday only. These two UTC slots cover 7:45 AM Central in both CDT and CST.
+    - cron: "45 12,13 * * 1"
 
 permissions:
   contents: write
 
+concurrency:
+  group: fantrax-weekly-recap
+  cancel-in-progress: false
+
 jobs:
-  pickup-audit:
+  weekly-recap:
     runs-on: ubuntu-latest
     timeout-minutes: 10
 
@@ -27,46 +32,38 @@ jobs:
           FANTRAX_AUTH_COOKIE: ${{ secrets.FANTRAX_AUTH_COOKIE }}
         run: python outputs/fantrax_daily_export.py
 
-      - name: Run Fantrax pickup audit
+      - name: Post weekly matchup recap
         env:
           FANTRAX_AUTH_COOKIE: ${{ secrets.FANTRAX_AUTH_COOKIE }}
           FANTRAX_LEAGUE_ID: ${{ secrets.FANTRAX_LEAGUE_ID }}
-        run: python outputs/fantrax_transaction_audit.py
-
-      - name: Post GroupMe report
-        env:
           GROUPME_BOT_ID: ${{ secrets.GROUPME_BOT_ID }}
-        run: python outputs/send_fantrax_pickup_report.py --groupme
+          FANTRAX_WEEKLY_RECAP_HOUR: "7"
+        run: python outputs/send_fantrax_weekly_recap.py --groupme
 
-      - name: Commit alert state
+      - name: Commit weekly recap state
         if: always()
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          state_files=()
-          if [ -f outputs/fantrax_export/fantrax_pickup_alert_state.json ]; then
-            state_files+=(outputs/fantrax_export/fantrax_pickup_alert_state.json)
-          fi
-          if [ ${#state_files[@]} -eq 0 ]; then
-            echo "No alert state files were written."
+          if [ ! -f outputs/fantrax_export/fantrax_weekly_recap_state.json ]; then
+            echo "No weekly recap state file was written."
             exit 0
           fi
-          git add "${state_files[@]}"
+          git add outputs/fantrax_export/fantrax_weekly_recap_state.json
           if git diff --cached --quiet; then
-            echo "No alert state changes to commit."
+            echo "No weekly recap state changes to commit."
           else
-            git commit -m "Update Fantrax alert state"
+            git commit -m "Update Fantrax weekly recap state"
             git pull --rebase --autostash
             git push
           fi
 
-      - name: Upload audit CSVs
+      - name: Upload weekly recap artifacts
         uses: actions/upload-artifact@v4
         if: always()
         with:
-          name: fantrax-pickup-audit
+          name: fantrax-weekly-recap
           path: |
-            outputs/fantrax_export/fantrax_pickup_audit_summary_latest.csv
-            outputs/fantrax_export/fantrax_pickup_audit_details_latest.csv
-            outputs/fantrax_export/fantrax_pickup_audit_metadata_latest.json
-            outputs/fantrax_export/fantrax_pickup_alert_state.json
+            outputs/fantrax_export/fantrax_weekly_recap_latest.csv
+            outputs/fantrax_export/fantrax_weekly_recap_metadata_latest.json
+            outputs/fantrax_export/fantrax_weekly_recap_state.json
