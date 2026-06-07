@@ -40,6 +40,12 @@ PROJECTION_PARAMS = {
     "seasonOrProjection": "PROJECTION_0_147_EVENT_PROJECTED_WEEKLY",
     "timeframeTypeCode": "PROJECTED_WEEKLY",
 }
+PRE_WEEK_BASELINE_PARAMS = {
+    "view": "STATS",
+    "statsType": "2",
+    "seasonOrProjection": "SEASON_147_YEAR_TO_DATE",
+    "timeframeTypeCode": "YEAR_TO_DATE",
+}
 
 
 def bold_text(value):
@@ -237,9 +243,30 @@ def fetch_projection_rows(teams):
     return rows
 
 
-def snapshot_projection_rows(rows):
+def fetch_pre_week_baseline_rows(teams):
+    rows = []
+    for team_id, team_name in teams:
+        rows.extend(roster_rows_for_team(team_id, team_name, PRE_WEEK_BASELINE_PARAMS))
+    return rows
+
+
+def snapshot_projection_rows(projection_rows, baseline_rows):
     snapshot = {}
-    for row in rows:
+    baseline_by_key = {
+        f"{row['team_id']}:{row['fantrax_id']}": row
+        for row in baseline_rows
+    }
+    all_keys = {
+        f"{row['team_id']}:{row['fantrax_id']}"
+        for row in projection_rows
+    } | set(baseline_by_key)
+    projection_by_key = {
+        f"{row['team_id']}:{row['fantrax_id']}": row
+        for row in projection_rows
+    }
+    for key in all_keys:
+        row = projection_by_key.get(key) or baseline_by_key[key]
+        baseline = baseline_by_key.get(key, {})
         key = f"{row['team_id']}:{row['fantrax_id']}"
         snapshot[key] = {
             "team_id": row["team_id"],
@@ -247,6 +274,7 @@ def snapshot_projection_rows(rows):
             "fantrax_id": row["fantrax_id"],
             "player_name": row["player_name"],
             "projected_fpts_per_game": row["actual_points"],
+            "pre_week_fpts_per_game": baseline.get("actual_fpts_per_game", 0.0),
         }
     return snapshot
 
@@ -256,22 +284,24 @@ def ensure_current_projection_snapshot(state, teams, today):
     key = week_key(start)
     if today.weekday() != 0 or state["projection_snapshots"].get(key):
         return False
-    rows = fetch_projection_rows(teams)
+    projection_rows = fetch_projection_rows(teams)
+    baseline_rows = fetch_pre_week_baseline_rows(teams)
     state["projection_snapshots"][key] = {
         "period_start": start.isoformat(),
         "period_end": end.isoformat(),
         "captured_at": datetime.now(CENTRAL).isoformat(),
-        "projection_type": "fantrax_projected_per_game",
-        "players": snapshot_projection_rows(rows),
+        "projection_type": "fantrax_projected_per_game_with_pre_week_fpg_fallback",
+        "players": snapshot_projection_rows(projection_rows, baseline_rows),
     }
     return True
 
 
 def maybe_live_projection_snapshot(teams):
-    rows = fetch_projection_rows(teams)
+    projection_rows = fetch_projection_rows(teams)
+    baseline_rows = fetch_pre_week_baseline_rows(teams)
     return {
-        "projection_type": "fantrax_current_projected_per_game_fallback",
-        "players": snapshot_projection_rows(rows),
+        "projection_type": "fantrax_current_projected_per_game_with_current_fpg_fallback",
+        "players": snapshot_projection_rows(projection_rows, baseline_rows),
     }
 
 
@@ -282,6 +312,10 @@ def enrich_with_projections(actual_rows, snapshot):
         key = f"{row['team_id']}:{row['fantrax_id']}"
         projection = players.get(key, {})
         projected_per_game = float_value(projection.get("projected_fpts_per_game"))
+        projection_basis = "fantrax_projected_fpg"
+        if projected_per_game <= 0:
+            projected_per_game = float_value(projection.get("pre_week_fpts_per_game"))
+            projection_basis = "pre_week_fpg"
         projected_total = projected_per_game * row["games_played"]
         enriched.append({
             **row,
@@ -289,6 +323,7 @@ def enrich_with_projections(actual_rows, snapshot):
             "projected_points": projected_total,
             "points_over_projection": row["actual_points"] - projected_total,
             "projection_source": snapshot.get("projection_type", ""),
+            "projection_basis": projection_basis,
         })
     return enriched
 
@@ -335,7 +370,7 @@ def build_report(rows, start, end, projection_source):
     if projection_source.endswith("_fallback"):
         lines.extend([
             "",
-            "Projection note: no stored pre-week snapshot was available, so this used current Fantrax projected per-game values.",
+            "Projection note: no stored pre-week snapshot was available, so this used current Fantrax projected per-game values with current FP/G fallback.",
         ])
     return "\n".join(lines)
 
@@ -452,6 +487,7 @@ def main():
         "projected_points",
         "points_over_projection",
         "projection_source",
+        "projection_basis",
     ]
     write_csv(args.out_dir / "fantrax_weekly_recap_latest.csv", latest_rows, fields)
     write_json(args.out_dir / "fantrax_weekly_recap_metadata_latest.json", {
