@@ -38,20 +38,34 @@ jobs:
           GROUPME_BOT_ID: ${{ secrets.GROUPME_BOT_ID }}
         run: python outputs/send_fantrax_pickup_report.py --groupme
 
+      - name: Post weekly matchup recap
+        env:
+          FANTRAX_AUTH_COOKIE: ${{ secrets.FANTRAX_AUTH_COOKIE }}
+          FANTRAX_LEAGUE_ID: ${{ secrets.FANTRAX_LEAGUE_ID }}
+          GROUPME_BOT_ID: ${{ secrets.GROUPME_BOT_ID }}
+        run: python outputs/send_fantrax_weekly_recap.py --groupme
+
       - name: Commit alert state
         if: always()
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          if [ ! -f outputs/fantrax_export/fantrax_pickup_alert_state.json ]; then
-            echo "No alert state file was written."
+          state_files=()
+          if [ -f outputs/fantrax_export/fantrax_pickup_alert_state.json ]; then
+            state_files+=(outputs/fantrax_export/fantrax_pickup_alert_state.json)
+          fi
+          if [ -f outputs/fantrax_export/fantrax_weekly_recap_state.json ]; then
+            state_files+=(outputs/fantrax_export/fantrax_weekly_recap_state.json)
+          fi
+          if [ ${#state_files[@]} -eq 0 ]; then
+            echo "No alert state files were written."
             exit 0
           fi
-          git add outputs/fantrax_export/fantrax_pickup_alert_state.json
+          git add "${state_files[@]}"
           if git diff --cached --quiet; then
             echo "No alert state changes to commit."
           else
-            git commit -m "Update Fantrax pickup alert state"
+            git commit -m "Update Fantrax alert state"
             git pull --rebase --autostash
             git push
           fi
@@ -66,3 +80,6 @@ jobs:
             outputs/fantrax_export/fantrax_pickup_audit_details_latest.csv
             outputs/fantrax_export/fantrax_pickup_audit_metadata_latest.json
             outputs/fantrax_export/fantrax_pickup_alert_state.json
+            outputs/fantrax_export/fantrax_weekly_recap_latest.csv
+            outputs/fantrax_export/fantrax_weekly_recap_metadata_latest.json
+            outputs/fantrax_export/fantrax_weekly_recap_state.json

@@ -30,4 +30,5 @@ if [[ "${FANTRAX_REPORT_GROUPME:-0}" == "1" ]]; then
 fi
 if [[ "${#notify_args[@]}" -gt 0 ]]; then
   "$PYTHON" "$ROOT/outputs/send_fantrax_pickup_report.py" "${notify_args[@]}"
+  "$PYTHON" "$ROOT/outputs/send_fantrax_weekly_recap.py" "${notify_args[@]}"
 fi
