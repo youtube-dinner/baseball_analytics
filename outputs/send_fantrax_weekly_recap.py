@@ -270,13 +270,27 @@ def snapshot_projection_rows(projection_rows, baseline_rows):
         row = projection_by_key.get(key) or baseline_by_key[key]
         baseline = baseline_by_key.get(key, {})
         key = f"{row['team_id']}:{row['fantrax_id']}"
+        projected_games = row.get("games_played", 0.0)
+        projected_at_bats = row.get("at_bats", 0.0)
+        projected_ab_per_game = (
+            projected_at_bats / projected_games
+            if projected_games
+            else projected_at_bats
+        )
+        projected_fpts_per_game = (
+            row.get("actual_fpts_per_game", 0.0)
+            or (row["actual_points"] / projected_games if projected_games else 0.0)
+            or row["actual_points"]
+        )
         snapshot[key] = {
             "team_id": row["team_id"],
             "team_name": row["team_name"],
             "fantrax_id": row["fantrax_id"],
             "player_name": row["player_name"],
-            "projected_fpts_per_game": row["actual_points"],
-            "projected_at_bats": row.get("at_bats", 0.0),
+            "projected_fpts_per_game": projected_fpts_per_game,
+            "projected_games": projected_games,
+            "projected_at_bats": projected_at_bats,
+            "projected_ab_per_game": projected_ab_per_game,
             "pre_week_fpts_per_game": baseline.get("actual_fpts_per_game", 0.0),
             "pre_week_ab_per_game": (
                 baseline.get("at_bats", 0.0) / baseline.get("games_played", 0.0)
@@ -298,7 +312,7 @@ def ensure_current_projection_snapshot(state, teams, today):
         "period_start": start.isoformat(),
         "period_end": end.isoformat(),
         "captured_at": datetime.now(CENTRAL).isoformat(),
-        "projection_type": "fantrax_projected_per_game_with_pre_week_fpg_fallback",
+        "projection_type": "fantrax_projected_per_game_ab_normalized_with_pre_week_fpg_fallback",
         "players": snapshot_projection_rows(projection_rows, baseline_rows),
     }
     return True
@@ -308,7 +322,7 @@ def maybe_live_projection_snapshot(teams):
     projection_rows = fetch_projection_rows(teams)
     baseline_rows = fetch_pre_week_baseline_rows(teams)
     return {
-        "projection_type": "fantrax_current_projected_per_game_with_current_fpg_fallback",
+        "projection_type": "fantrax_current_projected_per_game_ab_normalized_with_current_fpg_fallback",
         "players": snapshot_projection_rows(projection_rows, baseline_rows),
     }
 
@@ -321,11 +335,17 @@ def enrich_with_projections(actual_rows, snapshot):
         projection = players.get(key, {})
         raw_projected_per_game = float_value(projection.get("projected_fpts_per_game"))
         projected_per_game = raw_projected_per_game
+        projected_games = float_value(projection.get("projected_games"))
         projected_at_bats = float_value(projection.get("projected_at_bats"))
+        projected_ab_per_game = (
+            float_value(projection.get("projected_ab_per_game"))
+            or (projected_at_bats / projected_games if projected_games else 0.0)
+            or projected_at_bats
+        )
         pre_week_ab_per_game = float_value(projection.get("pre_week_ab_per_game"))
         projection_basis = "fantrax_projected_fpg"
-        if row["player_type"] == "Hitting" and projected_per_game > 0 and projected_at_bats > 0 and pre_week_ab_per_game > 0:
-            projected_per_game = projected_per_game * pre_week_ab_per_game / projected_at_bats
+        if row["player_type"] == "Hitting" and projected_per_game > 0 and projected_ab_per_game > 0 and pre_week_ab_per_game > 0:
+            projected_per_game = projected_per_game * pre_week_ab_per_game / projected_ab_per_game
             projection_basis = "fantrax_projected_fpg_ab_normalized"
         if projected_per_game <= 0:
             projected_per_game = float_value(projection.get("pre_week_fpts_per_game"))
@@ -335,7 +355,9 @@ def enrich_with_projections(actual_rows, snapshot):
             **row,
             "raw_projected_fpts_per_game": raw_projected_per_game,
             "projected_fpts_per_game": projected_per_game,
+            "projected_games": projected_games,
             "projected_at_bats": projected_at_bats,
+            "projected_ab_per_game": projected_ab_per_game,
             "pre_week_ab_per_game": pre_week_ab_per_game,
             "projected_points": projected_total,
             "points_over_projection": row["actual_points"] - projected_total,
@@ -502,7 +524,9 @@ def main():
         "games_played",
         "raw_projected_fpts_per_game",
         "projected_fpts_per_game",
+        "projected_games",
         "projected_at_bats",
+        "projected_ab_per_game",
         "pre_week_ab_per_game",
         "projected_points",
         "points_over_projection",
