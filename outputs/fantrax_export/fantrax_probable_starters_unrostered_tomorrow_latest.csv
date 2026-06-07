@@ -1,11 +1,8 @@
 probable_date,game_time_utc,home_away,probable_team,opponent,mlb_player_id,probable_name,fantrax_id,name,mlb_team,primary_position,eligible_positions,league_status,is_rostered,stats_inc_id,rotowire_id,sport_radar_id,game_pk
-2026-06-07,,,CLE,@TEX Sun 1:35PM,,Joey Cantillo,04eos,"Cantillo, Joey",CLE,RP,P,FA,False,11823,15683,92f6533c-49b0-4177-8f42-0f765e3d3c41,
 2026-06-07,,,CHC,SF Sun 7:30PM,,Jameson Taillon,01srb,"Taillon, Jameson",CHC,SP,P,FA,False,9123,11435,0b4c4345-7609-4ab1-9aaa-41d56d7f1fda,
 2026-06-07,,,HOU,ATH Sun 1:10PM,,Mike Burrows,04pvl,"Burrows, Mike",HOU,SP,P,FA,False,,17633,d2aa08d8-1e32-441b-886a-0d3372a4cc65,
 2026-06-07,,,SEA,@DET Sun 12:40PM,,Luis Castillo,03nuc,"Castillo, Luis",SEA,SP,P,FA,False,10514,14495,71791d18-9c59-4e2f-863d-007d3cdd7efd,
 2026-06-07,,,MIL,@COL Sun 2:10PM,,Shane Drohan,04eud,"Drohan, Shane",MIL,SP,P,FA,False,,14851,1ace87c5-9684-4575-9515-8cf7bb98bf45,
-2026-06-07,,,NYM,@SD Sun 3:10PM,,Sean Manaea,02x0f,"Manaea, Sean",NYM,SP,P,FA,False,9582,12948,f578d526-6d2e-4590-9665-ed42c72c883f,
-2026-06-07,,,SF,@CHC Sun 7:30PM,,Trevor McDonald,0518g,"McDonald, Trevor",SF,SP,P,FA,False,,16210,7cfd66e7-95dd-4362-a636-545dfef62be9,
+2026-06-07,,,NYM,@SD Sun 3:10PM,,Huascar Brazoban,060ml,"Brazoban, Huascar",NYM,RP,P,FA,False,,18181,7106024a-d7a7-4972-bcce-b2c04e37add3,
 2026-06-07,,,COL,MIL Sun 2:10PM,,Kyle Freeland,03ca3,"Freeland, Kyle",COL,SP,P,FA,False,9863,13369,e2081019-8ef0-471d-b6d6-1333a8a45897,
-2026-06-07,,,TB,@MIA Sun 12:40PM,,Griffin Jax,0317q,"Jax, Griffin",TB,RP,P,FA,False,,14343,0d43ccec-1f14-4abc-9914-54a699607f31,
-2026-06-07,,,CHW,@PHI Sun 12:35PM,,David Sandlin,062pn,"Sandlin, David",CHW,RP,P,FA,False,,18771,e95609ae-ffe8-4283-8608-635c90fc4908,
+2026-06-07,,,CHW,@PHI Sun 12:35PM,,Tyler Gilbert,03qm3,"Gilbert, Tyler",CHW,RP,P,FA,False,,16622,636933f1-b366-4561-a6a5-88bd0e04e461,
