@@ -1122,7 +1122,7 @@
       "fantrax_id": "01sy3",
       "player_name": "Nolan Arenado",
       "primary_position": "3B",
-      "roster_position": "UT",
+      "roster_position": "3B",
       "roster_status": "ACTIVE",
       "team_id": "bw696uo5mj90wrl7",
       "team_name": "Cant Park Here"
@@ -1352,15 +1352,6 @@
       "team_id": "bw696uo5mj90wrl7",
       "team_name": "Cant Park Here"
     },
-    "bw696uo5mj90wrl7:05jrh": {
-      "fantrax_id": "05jrh",
-      "player_name": "Colt Keith",
-      "primary_position": "DH",
-      "roster_position": "3B",
-      "roster_status": "ACTIVE",
-      "team_id": "bw696uo5mj90wrl7",
-      "team_name": "Cant Park Here"
-    },
     "bw696uo5mj90wrl7:05js3": {
       "fantrax_id": "05js3",
       "player_name": "Kyle Harrison",
@@ -1403,6 +1394,15 @@
       "primary_position": "LF",
       "roster_position": "OF",
       "roster_status": "MINORS",
+      "team_id": "bw696uo5mj90wrl7",
+      "team_name": "Cant Park Here"
+    },
+    "bw696uo5mj90wrl7:05rko": {
+      "fantrax_id": "05rko",
+      "player_name": "Brandon Valenzuela",
+      "primary_position": "C",
+      "roster_position": "UT",
+      "roster_status": "ACTIVE",
       "team_id": "bw696uo5mj90wrl7",
       "team_name": "Cant Park Here"
     },
@@ -2212,7 +2212,7 @@
       "player_name": "J.P. Crawford",
       "primary_position": "SS",
       "roster_position": "UT",
-      "roster_status": "ACTIVE",
+      "roster_status": "INJURED_RESERVE",
       "team_id": "hd9hwe4mmj90wrl7",
       "team_name": "Third Degree Burnes"
     },
@@ -2473,6 +2473,15 @@
       "player_name": "Michael McGreevy",
       "primary_position": "SP",
       "roster_position": "P",
+      "roster_status": "ACTIVE",
+      "team_id": "hd9hwe4mmj90wrl7",
+      "team_name": "Third Degree Burnes"
+    },
+    "hd9hwe4mmj90wrl7:05tce": {
+      "fantrax_id": "05tce",
+      "player_name": "Connor Norby",
+      "primary_position": "3B",
+      "roster_position": "UT",
       "roster_status": "ACTIVE",
       "team_id": "hd9hwe4mmj90wrl7",
       "team_name": "Third Degree Burnes"
@@ -4871,6 +4880,15 @@
       "team_id": "qatqhh61mj90wrl7",
       "team_name": "Je suis Charlie Morton"
     },
+    "qatqhh61mj90wrl7:04ew7": {
+      "fantrax_id": "04ew7",
+      "player_name": "Aaron Ashby",
+      "primary_position": "RP",
+      "roster_position": "P",
+      "roster_status": "ACTIVE",
+      "team_id": "qatqhh61mj90wrl7",
+      "team_name": "Je suis Charlie Morton"
+    },
     "qatqhh61mj90wrl7:04pr8": {
       "fantrax_id": "04pr8",
       "player_name": "Taj Bradley",
@@ -4949,15 +4967,6 @@
       "primary_position": "SP",
       "roster_position": "P",
       "roster_status": "INJURED_RESERVE",
-      "team_id": "qatqhh61mj90wrl7",
-      "team_name": "Je suis Charlie Morton"
-    },
-    "qatqhh61mj90wrl7:0518g": {
-      "fantrax_id": "0518g",
-      "player_name": "Trevor McDonald",
-      "primary_position": "SP",
-      "roster_position": "P",
-      "roster_status": "ACTIVE",
       "team_id": "qatqhh61mj90wrl7",
       "team_name": "Je suis Charlie Morton"
     },
