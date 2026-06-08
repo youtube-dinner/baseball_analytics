@@ -12,6 +12,9 @@ ROOT = Path(__file__).resolve().parents[1]
 DATA_DIR = ROOT / "outputs" / "minor_league_hitter_stars" / "2026"
 SOURCE = DATA_DIR / "minor_league_hitters_2026_plus_vs_combined_baseline.csv"
 DASHBOARD_CSV = DATA_DIR / "minor_league_hitter_analytics_dashboard.csv"
+PITCHER_DATA_DIR = ROOT / "outputs" / "minor_league_pitcher_stars" / "2026"
+PITCHER_SOURCE = PITCHER_DATA_DIR / "minor_league_pitchers_2026_plus_vs_combined_baseline.csv"
+PITCHER_DASHBOARD_CSV = PITCHER_DATA_DIR / "minor_league_pitcher_analytics_dashboard.csv"
 OUT = ROOT / "outputs" / "Minor_League_Hitter_Analytics.html"
 FANTRAX_PLAYERS = ROOT / "outputs" / "fantrax_export" / "fantrax_players_latest.csv"
 FANTRAX_ROSTERS = ROOT / "outputs" / "fantrax_export" / "fantrax_rosters_latest.csv"
@@ -110,6 +113,94 @@ HEAT_COLUMNS = [
     "Hitter+",
     "Hitter+_Previous_League",
 ]
+PITCHER_COLUMN_MAP = {
+    "Player Name": "Player",
+    "Fantasy Roster": "Fantasy Roster",
+    "Team": "Team",
+    "League Name": "League",
+    "League Level": "Level",
+    "Age": "Age",
+    "G": "G",
+    "FGPts_per_game": "FP/G",
+    "IP_per_game": "IP/G",
+    "Age_Plus": "Age+",
+    "FGPts_per_game_Plus": "FG/G+",
+    "K_BB_pct_Plus": "K-BB%+",
+    "Weak_Contact_Plus": "Weak Contact+",
+    "xFIP": "xFIP",
+    "Pitching Score": "Pitching Score",
+    "Pitcher Prospect Score": "Pitcher Prospect Score",
+    "Estimated FB": "Est FB",
+    "W": "W",
+    "L": "L",
+    "ERA": "ERA",
+    "GS": "GS",
+    "SV": "SV",
+    "IP_float": "IP",
+    "SO": "SO",
+    "WHIP": "WHIP",
+    "BABIP": "BABIP",
+    "BB%": "BB%",
+    "K%": "K%",
+    "K_BB_pct": "K-BB%",
+    "Weak_Contact": "Weak Contact",
+    "LD%": "LD%",
+    "GB%": "GB%",
+    "FB%": "FB%",
+    "IFFB%": "IFFB%",
+    "HR/FB%": "HR/FB%",
+}
+PITCHER_ADVANCED_COLUMN_MAP = {
+    "TBF": "TBF",
+    "K/9": "K/9",
+    "BB/9": "BB/9",
+    "K/BB": "K/BB",
+    "HR/9": "HR/9",
+    "K%": "K%",
+    "BB%": "BB%",
+    "K-BB%": "K-BB% (Adv)",
+    "AVG": "AVG",
+    "WHIP": "WHIP",
+    "BABIP": "BABIP (Adv)",
+    "LOB%": "LOB%",
+    "FIP": "FIP",
+    "xFIP": "xFIP (Adv)",
+}
+PITCHER_BATTED_COLUMN_MAP = {
+    "TBF_batted": "TBF (Batted)",
+    "BABIP_batted": "BABIP (Batted)",
+    "GB/FB": "GB/FB",
+    "LD%": "LD%",
+    "GB%": "GB%",
+    "FB%": "FB%",
+    "IFFB%": "IFFB%",
+    "HR/FB%": "HR/FB%",
+    "Pull%": "Pull%",
+    "Cent%": "Cent%",
+    "Oppo%": "Oppo%",
+    "SwStr%": "SwStr%",
+    "Balls": "Balls",
+    "Strikes": "Strikes",
+    "Pitches": "Pitches",
+}
+PITCHER_HEAT_COLUMNS = [
+    "Age+",
+    "FG/G+",
+    "K-BB%+",
+    "Weak Contact+",
+    "Pitching Score",
+    "Pitcher Prospect Score",
+]
+PITCHER_INVERSE_HEAT_COLUMNS = [
+    "xFIP",
+    "ERA",
+    "WHIP",
+    "BABIP",
+    "LD%",
+    "FB%",
+    "IFFB%",
+    "HR/FB%",
+]
 RATE_COLUMNS = [
     "BA",
     "OBP",
@@ -137,8 +228,22 @@ RATE_COLUMNS = [
     "Cent%",
     "Oppo%",
     "SwStr%",
+    "ERA",
+    "WHIP",
+    "K/9",
+    "BB/9",
+    "K/BB",
+    "HR/9",
+    "K-BB%",
+    "K-BB% (Adv)",
+    "LOB%",
+    "FIP",
+    "xFIP",
+    "xFIP (Adv)",
+    "K-BB%",
+    "Weak Contact",
 ]
-ONE_DECIMAL_COLUMNS = HEAT_COLUMNS + ["FP/G", "AB/G", "Est FB"]
+ONE_DECIMAL_COLUMNS = HEAT_COLUMNS + PITCHER_HEAT_COLUMNS + ["FP/G", "AB/G", "IP/G", "Est FB", "IP"]
 ZERO_DECIMAL_COLUMNS = [
     "Age",
     "G",
@@ -154,6 +259,13 @@ ZERO_DECIMAL_COLUMNS = [
     "Balls",
     "Strikes",
     "Pitches",
+    "W",
+    "L",
+    "GS",
+    "SV",
+    "SO",
+    "TBF",
+    "TBF (Batted)",
 ]
 
 
@@ -262,11 +374,11 @@ def promotion_player_key(row):
     return f"name:{normalize_name(row.get('Player Name'))}"
 
 
-def build_promotion_tracker(df):
+def build_promotion_tracker(df, score_col="Hitter+", previous_col="Hitter+_Previous_League", volume_col="AB"):
     out = df.copy()
     out["Promotion Key"] = out.apply(promotion_player_key, axis=1)
     out["Level Order"] = out["League Level"].map(LEVEL_ORDER)
-    out["Hitter+_Previous_League"] = math.nan
+    out[previous_col] = math.nan
     promoted_rows = []
     for _, row in out.iterrows():
         level_order = row.get("Level Order")
@@ -279,10 +391,10 @@ def build_promotion_tracker(df):
         if lower_rows.empty:
             continue
         lower_rows["Sort Level"] = pd.to_numeric(lower_rows["Level Order"], errors="coerce")
-        lower_rows["Sort AB"] = pd.to_numeric(lower_rows.get("AB"), errors="coerce")
-        previous = lower_rows.sort_values(["Sort Level", "Sort AB"], ascending=[False, False], kind="stable").iloc[0]
+        lower_rows["Sort Volume"] = pd.to_numeric(lower_rows.get(volume_col), errors="coerce")
+        previous = lower_rows.sort_values(["Sort Level", "Sort Volume"], ascending=[False, False], kind="stable").iloc[0]
         row = row.copy()
-        row["Hitter+_Previous_League"] = previous.get("Hitter+")
+        row[previous_col] = previous.get(score_col)
         promoted_rows.append(row)
     if not promoted_rows:
         return out.iloc[0:0].drop(columns=["Promotion Key", "Level Order"], errors="ignore")
@@ -306,7 +418,7 @@ def format_dashboard_frame(df, column_map, sort_cols):
     sort_cols = [col for col in sort_cols if col in out.columns]
     if sort_cols:
         ascending = [True] * len(sort_cols)
-        for metric in ["5 Tool+", "Hitter+", "wRC+", "FG/G+"]:
+        for metric in ["5 Tool+", "Hitter+", "wRC+", "FG/G+", "Pitching Score", "Pitcher Prospect Score"]:
             if metric in sort_cols:
                 ascending[sort_cols.index(metric)] = False
         if "FP/G" in sort_cols:
@@ -336,28 +448,113 @@ def load_dashboard_data():
     overall.to_csv(DASHBOARD_CSV, index=False)
     promotion_view.to_csv(DATA_DIR / "minor_league_hitter_analytics_promotion_tracker.csv", index=False)
     my_view.to_csv(DATA_DIR / "minor_league_hitter_analytics_my_players.csv", index=False)
-    return {
-        "views": {
-            "All Players": {
-                "columns": list(overall.columns),
-                "rows": overall.to_dict(orient="records"),
-                "defaultSort": {"column": "5 Tool+", "dir": "desc"},
-                "defaultFilters": [{"column": "AB", "op": ">=", "value": "50"}],
-            },
-            "Promotion Tracker": {
-                "columns": list(promotion_view.columns),
-                "rows": promotion_view.to_dict(orient="records"),
-                "defaultSort": {"column": "5 Tool+", "dir": "desc"},
-                "defaultFilters": [],
-            },
-            MY_FANTASY_TEAM: {
-                "columns": list(my_view.columns),
-                "rows": my_view.to_dict(orient="records"),
-                "defaultSort": {"column": "League", "dir": "asc", "secondary": "FP/G", "secondaryDir": "desc"},
-                "defaultFilters": [],
-            },
+    views = {
+        "Batter All Players": {
+            "columns": list(overall.columns),
+            "rows": overall.to_dict(orient="records"),
+            "defaultSort": {"column": "5 Tool+", "dir": "desc"},
+            "defaultFilters": [{"column": "AB", "op": ">=", "value": "50"}],
         },
+        "Batter Promotion Tracker": {
+            "columns": list(promotion_view.columns),
+            "rows": promotion_view.to_dict(orient="records"),
+            "defaultSort": {"column": "5 Tool+", "dir": "desc"},
+            "defaultFilters": [],
+        },
+        f"Batter {MY_FANTASY_TEAM}": {
+            "columns": list(my_view.columns),
+            "rows": my_view.to_dict(orient="records"),
+            "defaultSort": {"column": "League", "dir": "asc", "secondary": "FP/G", "secondaryDir": "desc"},
+            "defaultFilters": [],
+        },
+    }
+    view_heat_columns = {name: HEAT_COLUMNS + ["GB%"] for name in views}
+    view_inverse_heat_columns = {name: ["GB%"] for name in views}
+
+    if PITCHER_SOURCE.exists():
+        pitchers = pd.read_csv(PITCHER_SOURCE)
+        pitchers = add_fantasy_roster_column(pitchers)
+        pitcher_column_map = existing_column_map(pitchers, PITCHER_COLUMN_MAP)
+        pitcher_overall = format_dashboard_frame(
+            pitchers,
+            pitcher_column_map,
+            ["Pitcher Prospect Score", "Pitching Score", "FG/G+"],
+        )
+        pitcher_promoted = build_promotion_tracker(
+            pitchers,
+            score_col="Pitching Score",
+            previous_col="Pitching Score_Previous_League",
+            volume_col="IP_float",
+        )
+        pitcher_promotion_map = {}
+        for source, label in pitcher_column_map.items():
+            pitcher_promotion_map[source] = label
+            if source == "Pitching Score":
+                pitcher_promotion_map["Pitching Score_Previous_League"] = "Pitching Score_Previous_League"
+        pitcher_promotion = format_dashboard_frame(
+            pitcher_promoted,
+            pitcher_promotion_map,
+            ["Level", "Pitcher Prospect Score", "Pitching Score", "FG/G+"],
+        )
+        my_pitchers = pitchers[pitchers["Fantasy Roster"].astype(str).str.startswith(MY_FANTASY_TEAM)].copy()
+        pitcher_advanced_map = {
+            source: label
+            for source, label in existing_column_map(pitchers, PITCHER_ADVANCED_COLUMN_MAP).items()
+            if source not in pitcher_column_map
+        }
+        pitcher_batted_map = {
+            source: label
+            for source, label in existing_column_map(pitchers, PITCHER_BATTED_COLUMN_MAP).items()
+            if source not in pitcher_column_map and source not in pitcher_advanced_map
+        }
+        pitcher_my_map = {
+            **pitcher_column_map,
+            **pitcher_advanced_map,
+            **pitcher_batted_map,
+        }
+        pitcher_my_view = format_dashboard_frame(my_pitchers, pitcher_my_map, ["League", "FP/G"])
+        PITCHER_DATA_DIR.mkdir(parents=True, exist_ok=True)
+        pitcher_overall.to_csv(PITCHER_DASHBOARD_CSV, index=False)
+        pitcher_promotion.to_csv(PITCHER_DATA_DIR / "minor_league_pitcher_analytics_promotion_tracker.csv", index=False)
+        pitcher_my_view.to_csv(PITCHER_DATA_DIR / "minor_league_pitcher_analytics_my_players.csv", index=False)
+    else:
+        pitcher_overall = pd.DataFrame(columns=list(PITCHER_COLUMN_MAP.values()))
+        pitcher_promotion = pd.DataFrame(columns=list(PITCHER_COLUMN_MAP.values()) + ["Pitching Score_Previous_League"])
+        pitcher_my_view = pd.DataFrame(columns=list(PITCHER_COLUMN_MAP.values()))
+
+    pitcher_views = {
+        "Pitcher All Players": {
+            "columns": list(pitcher_overall.columns),
+            "rows": pitcher_overall.to_dict(orient="records"),
+            "defaultSort": {"column": "Pitcher Prospect Score", "dir": "desc"},
+            "defaultFilters": [
+                {"column": "IP", "op": ">=", "value": "20"},
+                {"column": "IP/G", "op": ">=", "value": "3"},
+            ],
+        },
+        "Pitcher Promotion Tracker": {
+            "columns": list(pitcher_promotion.columns),
+            "rows": pitcher_promotion.to_dict(orient="records"),
+            "defaultSort": {"column": "Pitcher Prospect Score", "dir": "desc"},
+            "defaultFilters": [],
+        },
+        f"Pitcher {MY_FANTASY_TEAM}": {
+            "columns": list(pitcher_my_view.columns),
+            "rows": pitcher_my_view.to_dict(orient="records"),
+            "defaultSort": {"column": "League", "dir": "asc", "secondary": "FP/G", "secondaryDir": "desc"},
+            "defaultFilters": [],
+        },
+    }
+    views.update(pitcher_views)
+    for name in pitcher_views:
+        view_heat_columns[name] = PITCHER_HEAT_COLUMNS + ["GB%"] + PITCHER_INVERSE_HEAT_COLUMNS
+        view_inverse_heat_columns[name] = PITCHER_INVERSE_HEAT_COLUMNS
+
+    return {
+        "views": views,
         "heatColumns": HEAT_COLUMNS,
+        "viewHeatColumns": view_heat_columns,
+        "viewInverseHeatColumns": view_inverse_heat_columns,
     }
 
 
@@ -368,7 +565,7 @@ def main():
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Minor League Hitter Analytics</title>
+  <title>Minor League Analytics</title>
   <style>
     :root {{
       color-scheme: light;
@@ -500,7 +697,7 @@ def main():
 </head>
 <body>
   <header>
-    <h1>Minor League Hitter Analytics</h1>
+    <h1>Minor League Analytics</h1>
     <nav class="tabs" id="tabs"></nav>
   </header>
   <main>
@@ -541,23 +738,60 @@ def main():
 
     function computeHeatStats() {{
       heatStats = {{}};
-      for (const col of data.heatColumns) {{
-        const vals = Object.values(data.views)
-          .flatMap(view => view.rows.map(row => Number(row[col])).filter(Number.isFinite))
+      for (const [viewName, view] of Object.entries(data.views)) {{
+        for (const col of heatColumnsForView(viewName)) {{
+          const vals = view.rows
+          .map(row => Number(row[col]))
+          .filter(Number.isFinite)
           .sort((a, b) => a - b);
-        if (!vals.length) continue;
-        heatStats[col] = {{
-          low: percentile(vals, 0.10),
-          high: percentile(vals, 0.90),
-        }};
+          if (!vals.length) continue;
+          heatStats[heatKey(viewName, col)] = {{
+            low: percentile(vals, 0.10),
+            high: percentile(vals, 0.90),
+          }};
+        }}
       }}
     }}
 
+    function heatKey(viewName, col) {{
+      return `${{viewName}}||${{col}}`;
+    }}
+
+    function heatColumnsForView(viewName) {{
+      return data.viewHeatColumns?.[viewName] || data.heatColumns || [];
+    }}
+
+    function inverseHeatColumnsForView(viewName) {{
+      return data.viewInverseHeatColumns?.[viewName] || [];
+    }}
+
+    function isCenteredScoreColumn(col) {{
+      return col.includes("+") || ["Pitching Score", "Pitcher Prospect Score"].includes(col);
+    }}
+
+    function blend(start, end, p) {{
+      return Math.round(start + (end - start) * p);
+    }}
+
+    function centeredHeatColor(num, stats) {{
+      if (num === 100) return "rgb(255, 255, 255)";
+      if (num < 100) {{
+        const span = Math.max(1, 100 - stats.low);
+        const p = Math.max(0, Math.min(1, (100 - num) / span));
+        return `rgb(${{blend(255, 254, p)}}, ${{blend(255, 202, p)}}, ${{blend(255, 202, p)}})`;
+      }}
+      const span = Math.max(1, stats.high - 100);
+      const p = Math.max(0, Math.min(1, (num - 100) / span));
+      return `rgb(${{blend(255, 134, p)}}, ${{blend(255, 239, p)}}, ${{blend(255, 172, p)}})`;
+    }}
+
     function heatColor(value, col) {{
-      const stats = heatStats[col];
+      const stats = heatStats[heatKey(active, col)];
       const num = Number(value);
       if (!stats || !Number.isFinite(num) || stats.low === stats.high) return "";
-      const t = Math.max(0, Math.min(1, (num - stats.low) / (stats.high - stats.low)));
+      if (isCenteredScoreColumn(col)) return centeredHeatColor(num, stats);
+      let t = Math.max(0, Math.min(1, (num - stats.low) / (stats.high - stats.low)));
+      if (inverseHeatColumnsForView(active).includes(col)) t = 1 - t;
       if (t < 0.5) {{
         const p = t / 0.5;
         const r = 254;
@@ -708,7 +942,7 @@ def main():
           const value = row[col];
           td.textContent = value;
           if (isNumeric(value)) td.className = "num";
-          if (data.heatColumns.includes(col) && isNumeric(value)) {{
+          if (heatColumnsForView(active).includes(col) && isNumeric(value)) {{
             td.className = `${{td.className}} heat`.trim();
             td.style.backgroundColor = heatColor(value, col);
           }}

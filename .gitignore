@@ -8,11 +8,16 @@ work/spreadsheet_build/node_modules
 .fantrax-browser-profile/
 outputs/fantrax_export/fantrax_auth_cookie_latest.txt
 outputs/fantrax_export/fantrax_transactions_raw_*.json
+outputs/fantrax_export/fantrax_pickup_audit_launchd.log
+outputs/fantrax_export/fantrax_pickup_audit_launchd.err
+outputs/fantrax_export/fantrax_weekly_recap_latest.csv
+outputs/fantrax_export/fantrax_weekly_recap_metadata_latest.json
 
 # Runtime caches and bulky historical exports are regenerated locally.
 outputs/__pycache__/
 outputs/fantasy_baseball_analytics/statcast_cache/
 outputs/fantrax_export/raw_*/
+outputs/fangraphs_browser_profile/
 
 # Old exploratory notebooks contain local absolute paths from the original Codex workspace.
 outputs/*.ipynb
@@ -21,3 +26,4 @@ outputs/*.ipynb
 work/spreadsheet_build/build.log
 
 outputs/refresh_logs/latest_refresh.log
+outputs/refresh_logs/*.log

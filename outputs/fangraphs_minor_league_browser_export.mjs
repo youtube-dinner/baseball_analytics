@@ -22,6 +22,7 @@ function parseArgs(argv) {
     years: defaultYears,
     outDir: defaultOutDir,
     leagues: defaultLeagues,
+    stats: "bat",
     headful: false,
     pageItems: 1000,
     minDelayMs: 30000,
@@ -34,6 +35,12 @@ function parseArgs(argv) {
     else if (arg === "--years") args.years = argv[++i].split(",").filter(Boolean).map(Number);
     else if (arg === "--out-dir") args.outDir = path.resolve(argv[++i]);
     else if (arg === "--leagues") args.leagues = argv[++i].split(",").filter(Boolean).map(Number);
+    else if (arg === "--stats") {
+      args.stats = argv[++i];
+      if (!["bat", "pit"].includes(args.stats)) {
+        throw new Error("--stats must be bat or pit");
+      }
+    }
     else if (arg === "--headful") args.headful = true;
     else if (arg === "--page-items") args.pageItems = Number(argv[++i]);
     else if (arg === "--min-delay-sec") args.minDelayMs = Number(argv[++i]) * 1000;
@@ -61,6 +68,7 @@ Options:
   --year YEAR          Season to export. Default: 2025
   --years YEARS        Comma-separated seasons to export, e.g. 2025,2026
   --leagues IDS        Comma-separated FanGraphs league ids. Default: affiliated minor leagues
+  --stats bat|pit      Leaderboard stat group. Default: bat
   --out-dir PATH       Folder for CSV exports. Default: outputs/minor_league_hitter_stars/fangraphs_exports
   --headful            Show the browser while exporting
   --page-items N       Leaderboard page size. Default: 1000
@@ -92,11 +100,11 @@ function formatDuration(ms) {
   return `${(ms / 1000).toFixed(1)}s`;
 }
 
-function leaderboardUrl({ year, leagueId, reportType, pageItems }) {
+function leaderboardUrl({ year, leagueId, reportType, pageItems, stats }) {
   const params = new URLSearchParams({
     pos: "all",
     lg: String(leagueId),
-    stats: "bat",
+    stats,
     qual: "0",
     type: String(reportType),
     team: "",
@@ -144,8 +152,8 @@ async function exportReport(page, args, year, leagueId, reportName, reportType) 
     return false;
   }
 
-  const url = leaderboardUrl({ year, leagueId, reportType, pageItems: args.pageItems });
-  console.log(`Fetch ${year} league ${leagueId} ${reportName}`);
+  const url = leaderboardUrl({ year, leagueId, reportType, pageItems: args.pageItems, stats: args.stats });
+  console.log(`Fetch ${year} league ${leagueId} ${args.stats} ${reportName}`);
   await page.goto(url, { waitUntil: "domcontentloaded", timeout: 45000 });
   const csv = await waitForExportCsv(page);
   await writeFile(outPath, csv, "utf8");

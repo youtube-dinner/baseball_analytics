@@ -13,7 +13,7 @@ launchctl bootstrap "gui/$(id -u)" "$PLIST_DEST"
 launchctl enable "gui/$(id -u)/$LABEL"
 
 echo "Installed $LABEL"
-echo "Scheduled daily at 9:00 AM in the Mac's local timezone."
+echo "Scheduled hourly from 5:38 AM through 11:38 PM in the Mac's local timezone."
 echo "Logs:"
 echo "$ROOT/outputs/fantrax_export/fantrax_pickup_audit_launchd.log"
 echo "$ROOT/outputs/fantrax_export/fantrax_pickup_audit_launchd.err"

@@ -3,6 +3,7 @@ name: Fantrax Pickup Audit
 on:
   workflow_dispatch:
   schedule:
+    # Hourly at :38, with a Central-time guard below to skip 12:00 AM-5:00 AM.
     - cron: "38 * * * *"
 
 permissions:
@@ -17,29 +18,44 @@ jobs:
       - name: Check out repository
         uses: actions/checkout@v4
 
+      - name: Check Central-time audit window
+        id: audit-window
+        run: |
+          hour="$(TZ=America/Chicago date +%H)"
+          if [ "$hour" -ge 5 ] && [ "$hour" -le 23 ]; then
+            echo "run_audit=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "run_audit=false" >> "$GITHUB_OUTPUT"
+            echo "Skipping Fantrax pickup audit during Central-time quiet hours."
+          fi
+
       - name: Set up Python
+        if: steps.audit-window.outputs.run_audit == 'true'
         uses: actions/setup-python@v5
         with:
           python-version: "3.12"
 
       - name: Refresh Fantrax rosters
+        if: steps.audit-window.outputs.run_audit == 'true'
         env:
           FANTRAX_AUTH_COOKIE: ${{ secrets.FANTRAX_AUTH_COOKIE }}
         run: python outputs/fantrax_daily_export.py
 
       - name: Run Fantrax pickup audit
+        if: steps.audit-window.outputs.run_audit == 'true'
         env:
           FANTRAX_AUTH_COOKIE: ${{ secrets.FANTRAX_AUTH_COOKIE }}
           FANTRAX_LEAGUE_ID: ${{ secrets.FANTRAX_LEAGUE_ID }}
         run: python outputs/fantrax_transaction_audit.py
 
       - name: Post GroupMe report
+        if: steps.audit-window.outputs.run_audit == 'true'
         env:
           GROUPME_BOT_ID: ${{ secrets.GROUPME_BOT_ID }}
         run: python outputs/send_fantrax_pickup_report.py --groupme
 
       - name: Commit alert state
-        if: always()
+        if: always() && steps.audit-window.outputs.run_audit == 'true'
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
@@ -62,7 +78,7 @@ jobs:
 
       - name: Upload audit CSVs
         uses: actions/upload-artifact@v4
-        if: always()
+        if: always() && steps.audit-window.outputs.run_audit == 'true'
         with:
           name: fantrax-pickup-audit
           path: |

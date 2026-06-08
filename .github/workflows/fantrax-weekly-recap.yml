@@ -3,8 +3,8 @@ name: Fantrax Weekly Recap
 on:
   workflow_dispatch:
   schedule:
-    # Monday only. These two UTC slots cover 7:45 AM Central in both CDT and CST.
-    - cron: "45 12,13 * * 1"
+    # Monday only. These two UTC slots cover 5:00 AM Central in both CDT and CST.
+    - cron: "0 10,11 * * 1"
 
 permissions:
   contents: write
@@ -37,7 +37,7 @@ jobs:
           FANTRAX_AUTH_COOKIE: ${{ secrets.FANTRAX_AUTH_COOKIE }}
           FANTRAX_LEAGUE_ID: ${{ secrets.FANTRAX_LEAGUE_ID }}
           GROUPME_BOT_ID: ${{ secrets.GROUPME_BOT_ID }}
-          FANTRAX_WEEKLY_RECAP_HOUR: "7"
+          FANTRAX_WEEKLY_RECAP_HOUR: "5"
         run: python outputs/send_fantrax_weekly_recap.py --groupme
 
       - name: Commit weekly recap state
