@@ -3100,7 +3100,7 @@ fantrax_id,name,mlb_team,primary_position,eligible_positions,league_status,stats
 06r49,"Galvan, Gilbel",BOS,RP,P,FA,,,
 070du,"Galvan, Rylan",CHW,C,"C,UT",FA,,20316,
 066qj,"Galvez, Jovi",STL,RP,P,FA,,,
-062cy,"Gamble, Sean",KC,SS,"UT,SS,MI",WW,,20161,
+062cy,"Gamble, Sean",KC,SS,"UT,SS,MI",FA,,20161,
 05173,"Gamboa, Alec",BOS,P,P,FA,,20564,1325e909-a349-4fce-a820-8c286212be49
 03ml3,"Gamboa, Arquimedes",(N/A),SS,"UT,SS,MI",FA,11225,13542,627fc84b-2651-4f4b-b8e4-07771694145f
 0512n,"Gambrell, Grant",(N/A),SP,P,FA,,16136,69005a88-7748-4f4b-ba23-4a7cac7fa1d6
@@ -3292,7 +3292,7 @@ fantrax_id,name,mlb_team,primary_position,eligible_positions,league_status,stats
 03pzn,"Gimenez, Andres",TOR,2B,"2B,UT,SS,MI",FA,10919,13959,0d84b0e6-869f-4b15-8eea-0d8444c49906
 06qgx,"Gimenez, Greyson",WSH,RP,P,FA,,,
 03dpg,"Ginkel, Kevin",ARI,RP,P,FA,11626,16424,016e7b25-5855-447a-aa10-10372bcc1fa3
-04pkt,"Ginn, J.T.",ATH,SP,P,FA,,15428,6e1ac09d-8ca9-4a73-957d-c55ba6c4da5f
+04pkt,"Ginn, J.T.",ATH,SP,P,T,,15428,6e1ac09d-8ca9-4a73-957d-c55ba6c4da5f
 06h1q,"Ginn, Landon",(N/A),RP,P,FA,,,
 02i37,"Giolito, Lucas",SD,SP,P,FA,9640,12454,1a1311e0-465c-45de-9f94-78e52fc067c3
 0514z,"Gipson-Long, Sawyer",DET,RP,P,FA,,18220,0a47ba20-bda0-4f94-a93a-6c07144f70ac
@@ -5098,7 +5098,7 @@ fantrax_id,name,mlb_team,primary_position,eligible_positions,league_status,stats
 06qev,"Lovich, Eli",CHC,RF,"OF,UT",FA,,19734,
 06zi2,"Lovich, Jackson",NYY,1B,"1B,UT,CI",FA,,20949,
 05y4o,"Low, Quinton",MIL,SP,P,FA,,17674,
-061bo,"Lowder, Rhett",CIN,SP,P,T,,18854,65e665b2-cd64-4bfe-a7c5-2afa492e7eff
+061bo,"Lowder, Rhett",CIN,SP,P,WW,,18854,65e665b2-cd64-4bfe-a7c5-2afa492e7eff
 03qjy,"Lowe, Brandon",PIT,2B,"2B,UT,MI",T,11125,13897,cafd29c0-91ac-4472-819c-c6dfb04bad71
 0665w,"Lowe, Collin",(N/A),RP,P,FA,,,
 06586,"Lowe, Isaiah",SD,SP,P,FA,,18742,
@@ -8505,7 +8505,7 @@ fantrax_id,name,mlb_team,primary_position,eligible_positions,league_status,stats
 075s3,"Spray, Jr., Jason",(N/A),LF,"OF,UT",FA,,,
 025he,"Springer, George",TOR,RF,"OF,UT",T,9339,12130,7f92278a-91c4-4c25-9e75-eaff3aed89b3
 06qn6,"Springer, Josh",TEX,C,"C,UT",FA,,,
-04mlr,"Springs, Jeffrey",ATH,SP,P,T,11121,15663,76375b42-68b1-42a1-94e6-81f152197c81
+04mlr,"Springs, Jeffrey",ATH,SP,P,WW,11121,15663,76375b42-68b1-42a1-94e6-81f152197c81
 05xu7,"Sprinkle, Jordan",CHW,LF,"OF,2B,UT,3B,CI,MI",FA,,18049,
 0515o,"Sproat, Brandon",MIL,SP,P,T,,18023,35ecf5a8-953e-4076-819b-b6cdc4500b21
 06zrh,"Sprock, Ryan",MIN,3B,"UT,3B,CI",FA,,,
@@ -8649,7 +8649,7 @@ fantrax_id,name,mlb_team,primary_position,eligible_positions,league_status,stats
 06hsq,"Suarez, Wilson",(N/A),1B,"1B,UT,CI",FA,,,
 0737r,"Suazo, Edward",ATH,SS,"UT,SS,MI",FA,,,
 05y3z,"Sublette, Ryan",LAD,RP,P,FA,,,
-06lfg,"Suero, Chris",NYM,C,"C,OF,UT",WW,,19468,
+06lfg,"Suero, Chris",NYM,C,"C,OF,UT",FA,,19468,
 064ow,"Suero, Estuar",PIT,LF,"OF,UT",FA,,18722,3922bab1-fae2-4322-ae9e-380f7e06176a
 06rks,"Suero, Larry",COL,3B,"UT,3B,CI",FA,,,
 03mp9,"Suero, Wander",ATH,RP,P,FA,11007,15240,99a4e02c-6349-4031-ac5e-88a64934c9dc
@@ -8661,7 +8661,7 @@ fantrax_id,name,mlb_team,primary_position,eligible_positions,league_status,stats
 05nmx,"Sullivan, Billy",WSH,RP,P,FA,,16990,53eeb4d7-d641-4075-8d15-d211b915fa95
 03qtv,"Sullivan, Brett",COL,C,"C,UT",FA,,14566,36a4bbda-4ef3-47e0-87cc-5162f4ad2bc0
 06pqm,"Sullivan, Cameron",CLE,SP,P,FA,,19594,
-06qgp,"Sullivan, Joseph",HOU,CF,"OF,UT",WW,,19951,
+06qgp,"Sullivan, Joseph",HOU,CF,"OF,UT",FA,,19951,
 068a4,"Sullivan, Liam",WSH,SP,P,FA,,,
 05y41,"Sullivan, Sean",PIT,RP,P,FA,,17496,
 06ahu,"Sullivan, Sean",COL,SP,P,FA,,18957,
@@ -9094,7 +9094,7 @@ fantrax_id,name,mlb_team,primary_position,eligible_positions,league_status,stats
 06uvw,"Urena, Antoni",LAD,SS,"UT,SS,MI",FA,,,
 066re,"Urena, Engelth",NYY,1B,"1B,UT,CI",FA,,18814,
 02j6w,"Urena, Jose",(N/A),RP,P,FA,9931,13194,6fd307e1-8322-4f8c-9e3f-f71cd1ac9698
-0629b,"Urena, Walbert",LAA,SP,P,FA,,18159,282509b9-bf1c-4278-8e00-7a52a75db6e0
+0629b,"Urena, Walbert",LAA,SP,P,T,,18159,282509b9-bf1c-4278-8e00-7a52a75db6e0
 03o43,"Urias, Luis",ARI,2B,"2B,UT,MI",FA,10570,14403,b158fb37-c794-4708-86fb-7cf18287dc97
 04t98,"Urias, Manuel",(N/A),SP,P,FA,,,
 04de0,"Urias, Ramon",STL,3B,"UT,2B,3B,CI,MI",FA,11239,15783,0672f3d5-5781-47bb-b111-abec96c38355
