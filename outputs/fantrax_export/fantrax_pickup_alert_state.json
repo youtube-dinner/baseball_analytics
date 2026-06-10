@@ -1,7 +1,8 @@
 {
   "daily_summaries": {
     "2026-06-08": true,
-    "2026-06-09": true
+    "2026-06-09": true,
+    "2026-06-10": true
   },
   "major_add_alerts": {
     "2026-06-08": {
@@ -55,7 +56,7 @@
       "player_name": "Xander Bogaerts",
       "team_id": "f3myl5ugmj90wrl7",
       "team_name": "The Hot and Steamy Boys",
-      "violation_alert_sent": false,
+      "violation_alert_sent": true,
       "window_start": "2026-06-09"
     }
   },
@@ -816,6 +817,15 @@
       "team_id": "aqfyadu2mj90wrl7",
       "team_name": "Ben the Hen"
     },
+    "aqfyadu2mj90wrl7:04yid": {
+      "fantrax_id": "04yid",
+      "player_name": "Ryne Nelson",
+      "primary_position": "SP",
+      "roster_position": "P",
+      "roster_status": "ACTIVE",
+      "team_id": "aqfyadu2mj90wrl7",
+      "team_name": "Ben the Hen"
+    },
     "aqfyadu2mj90wrl7:04ysv": {
       "fantrax_id": "04ysv",
       "player_name": "Adael Amador",
@@ -920,15 +930,6 @@
       "player_name": "Sal Stewart",
       "primary_position": "1B",
       "roster_position": "1B",
-      "roster_status": "ACTIVE",
-      "team_id": "aqfyadu2mj90wrl7",
-      "team_name": "Ben the Hen"
-    },
-    "aqfyadu2mj90wrl7:05uc4": {
-      "fantrax_id": "05uc4",
-      "player_name": "Troy Melton",
-      "primary_position": "RP",
-      "roster_position": "P",
       "roster_status": "ACTIVE",
       "team_id": "aqfyadu2mj90wrl7",
       "team_name": "Ben the Hen"
@@ -1703,7 +1704,7 @@
       "player_name": "Xander Bogaerts",
       "primary_position": "SS",
       "roster_position": "UT",
-      "roster_status": "MINORS",
+      "roster_status": "ACTIVE",
       "team_id": "f3myl5ugmj90wrl7",
       "team_name": "The Hot and Steamy Boys"
     },
@@ -1752,6 +1753,15 @@
       "team_id": "f3myl5ugmj90wrl7",
       "team_name": "The Hot and Steamy Boys"
     },
+    "f3myl5ugmj90wrl7:03poo": {
+      "fantrax_id": "03poo",
+      "player_name": "Peter Lambert",
+      "primary_position": "SP",
+      "roster_position": "P",
+      "roster_status": "ACTIVE",
+      "team_id": "f3myl5ugmj90wrl7",
+      "team_name": "The Hot and Steamy Boys"
+    },
     "f3myl5ugmj90wrl7:03ql5": {
       "fantrax_id": "03ql5",
       "player_name": "Ryan Helsley",
@@ -1765,15 +1775,6 @@
       "fantrax_id": "0403o",
       "player_name": "Andres Munoz",
       "primary_position": "RP",
-      "roster_position": "P",
-      "roster_status": "ACTIVE",
-      "team_id": "f3myl5ugmj90wrl7",
-      "team_name": "The Hot and Steamy Boys"
-    },
-    "f3myl5ugmj90wrl7:041r5": {
-      "fantrax_id": "041r5",
-      "player_name": "Dustin May",
-      "primary_position": "SP",
       "roster_position": "P",
       "roster_status": "ACTIVE",
       "team_id": "f3myl5ugmj90wrl7",
@@ -3741,15 +3742,6 @@
       "team_id": "mldxq5pemj90wrl7",
       "team_name": "L\u00e1szlar\u00f3 T\u00f3th"
     },
-    "mldxq5pemj90wrl7:03d6p": {
-      "fantrax_id": "03d6p",
-      "player_name": "Grant Holmes",
-      "primary_position": "SP",
-      "roster_position": "P",
-      "roster_status": "ACTIVE",
-      "team_id": "mldxq5pemj90wrl7",
-      "team_name": "L\u00e1szlar\u00f3 T\u00f3th"
-    },
     "mldxq5pemj90wrl7:03ynj": {
       "fantrax_id": "03ynj",
       "player_name": "Juan Soto",
@@ -3972,6 +3964,15 @@
       "primary_position": "RF",
       "roster_position": "UT",
       "roster_status": "MINORS",
+      "team_id": "mldxq5pemj90wrl7",
+      "team_name": "L\u00e1szlar\u00f3 T\u00f3th"
+    },
+    "mldxq5pemj90wrl7:05r3a": {
+      "fantrax_id": "05r3a",
+      "player_name": "Brandon Young",
+      "primary_position": "SP",
+      "roster_position": "P",
+      "roster_status": "ACTIVE",
       "team_id": "mldxq5pemj90wrl7",
       "team_name": "L\u00e1szlar\u00f3 T\u00f3th"
     },
