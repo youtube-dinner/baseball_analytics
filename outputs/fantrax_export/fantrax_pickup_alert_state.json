@@ -87,10 +87,10 @@
       "team_id": "6tnz8jgemj90wrl7",
       "team_name": "Bobby and the NitWitts"
     },
-    "6tnz8jgemj90wrl7:01xfr": {
-      "fantrax_id": "01xfr",
-      "player_name": "Patrick Corbin",
-      "primary_position": "SP",
+    "6tnz8jgemj90wrl7:025it": {
+      "fantrax_id": "025it",
+      "player_name": "Jason Adam",
+      "primary_position": "RP",
       "roster_position": "P",
       "roster_status": "ACTIVE",
       "team_id": "6tnz8jgemj90wrl7",
@@ -146,7 +146,7 @@
       "player_name": "Dylan Cease",
       "primary_position": "SP",
       "roster_position": "P",
-      "roster_status": "INJURED_RESERVE",
+      "roster_status": "ACTIVE",
       "team_id": "6tnz8jgemj90wrl7",
       "team_name": "Bobby and the NitWitts"
     },
@@ -519,15 +519,6 @@
       "team_id": "6tnz8jgemj90wrl7",
       "team_name": "Bobby and the NitWitts"
     },
-    "6tnz8jgemj90wrl7:06mi0": {
-      "fantrax_id": "06mi0",
-      "player_name": "Bryan King",
-      "primary_position": "RP",
-      "roster_position": "P",
-      "roster_status": "ACTIVE",
-      "team_id": "6tnz8jgemj90wrl7",
-      "team_name": "Bobby and the NitWitts"
-    },
     "6tnz8jgemj90wrl7:06n8y": {
       "fantrax_id": "06n8y",
       "player_name": "Eli Willits",
@@ -812,7 +803,7 @@
       "player_name": "Francisco Alvarez",
       "primary_position": "C",
       "roster_position": "UT",
-      "roster_status": "INJURED_RESERVE",
+      "roster_status": "ACTIVE",
       "team_id": "aqfyadu2mj90wrl7",
       "team_name": "Ben the Hen"
     },
@@ -848,15 +839,6 @@
       "player_name": "Louis Varland",
       "primary_position": "RP",
       "roster_position": "P",
-      "roster_status": "ACTIVE",
-      "team_id": "aqfyadu2mj90wrl7",
-      "team_name": "Ben the Hen"
-    },
-    "aqfyadu2mj90wrl7:051ia": {
-      "fantrax_id": "051ia",
-      "player_name": "Spencer Horwitz",
-      "primary_position": "1B",
-      "roster_position": "UT",
       "roster_status": "ACTIVE",
       "team_id": "aqfyadu2mj90wrl7",
       "team_name": "Ben the Hen"
@@ -2773,8 +2755,8 @@
       "fantrax_id": "025he",
       "player_name": "George Springer",
       "primary_position": "RF",
-      "roster_position": "OF",
-      "roster_status": "ACTIVE",
+      "roster_position": "UT",
+      "roster_status": "RESERVE",
       "team_id": "jk36oo1hmj90wrl7",
       "team_name": "Daddy Yankee"
     },
@@ -2872,8 +2854,8 @@
       "fantrax_id": "041xv",
       "player_name": "Nathaniel Lowe",
       "primary_position": "1B",
-      "roster_position": "CI",
-      "roster_status": "RESERVE",
+      "roster_position": "UT",
+      "roster_status": "ACTIVE",
       "team_id": "jk36oo1hmj90wrl7",
       "team_name": "Daddy Yankee"
     },
@@ -2908,7 +2890,7 @@
       "fantrax_id": "04nqx",
       "player_name": "Ezequiel Duran",
       "primary_position": "SS",
-      "roster_position": "UT",
+      "roster_position": "OF",
       "roster_status": "ACTIVE",
       "team_id": "jk36oo1hmj90wrl7",
       "team_name": "Daddy Yankee"
