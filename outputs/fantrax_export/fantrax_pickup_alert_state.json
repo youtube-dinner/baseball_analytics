@@ -58,6 +58,16 @@
       "team_name": "The Hot and Steamy Boys",
       "violation_alert_sent": true,
       "window_start": "2026-06-09"
+    },
+    "jk36oo1hmj90wrl7:06f1r": {
+      "demotion_alert_sent": true,
+      "eligible_date": "2026-07-02",
+      "fantrax_id": "06f1r",
+      "player_name": "Connelly Early",
+      "team_id": "jk36oo1hmj90wrl7",
+      "team_name": "Daddy Yankee",
+      "violation_alert_sent": false,
+      "window_start": "2026-06-10"
     }
   },
   "roster_snapshot": {
@@ -178,6 +188,15 @@
       "team_id": "6tnz8jgemj90wrl7",
       "team_name": "Bobby and the NitWitts"
     },
+    "6tnz8jgemj90wrl7:03pov": {
+      "fantrax_id": "03pov",
+      "player_name": "Brady Singer",
+      "primary_position": "SP",
+      "roster_position": "P",
+      "roster_status": "ACTIVE",
+      "team_id": "6tnz8jgemj90wrl7",
+      "team_name": "Bobby and the NitWitts"
+    },
     "6tnz8jgemj90wrl7:03qjy": {
       "fantrax_id": "03qjy",
       "player_name": "Brandon Lowe",
@@ -238,15 +257,6 @@
       "primary_position": "LF",
       "roster_position": "OF",
       "roster_status": "INJURED_RESERVE",
-      "team_id": "6tnz8jgemj90wrl7",
-      "team_name": "Bobby and the NitWitts"
-    },
-    "6tnz8jgemj90wrl7:04pkt": {
-      "fantrax_id": "04pkt",
-      "player_name": "J.T. Ginn",
-      "primary_position": "SP",
-      "roster_position": "P",
-      "roster_status": "ACTIVE",
       "team_id": "6tnz8jgemj90wrl7",
       "team_name": "Bobby and the NitWitts"
     },
@@ -1240,20 +1250,20 @@
       "team_id": "bw696uo5mj90wrl7",
       "team_name": "Cant Park Here"
     },
-    "bw696uo5mj90wrl7:0423c": {
-      "fantrax_id": "0423c",
-      "player_name": "Carlos Cortes",
-      "primary_position": "RF",
-      "roster_position": "OF",
-      "roster_status": "ACTIVE",
-      "team_id": "bw696uo5mj90wrl7",
-      "team_name": "Cant Park Here"
-    },
     "bw696uo5mj90wrl7:0433b": {
       "fantrax_id": "0433b",
       "player_name": "Ildemaro Vargas",
       "primary_position": "2B",
       "roster_position": "2B",
+      "roster_status": "ACTIVE",
+      "team_id": "bw696uo5mj90wrl7",
+      "team_name": "Cant Park Here"
+    },
+    "bw696uo5mj90wrl7:04en7": {
+      "fantrax_id": "04en7",
+      "player_name": "Garrett Mitchell",
+      "primary_position": "CF",
+      "roster_position": "OF",
       "roster_status": "ACTIVE",
       "team_id": "bw696uo5mj90wrl7",
       "team_name": "Cant Park Here"
@@ -1344,7 +1354,7 @@
       "player_name": "Brandon Sproat",
       "primary_position": "SP",
       "roster_position": "P",
-      "roster_status": "ACTIVE",
+      "roster_status": "RESERVE",
       "team_id": "bw696uo5mj90wrl7",
       "team_name": "Cant Park Here"
     },
@@ -2028,7 +2038,7 @@
       "player_name": "Emmet Sheehan",
       "primary_position": "SP",
       "roster_position": "P",
-      "roster_status": "RESERVE",
+      "roster_status": "ACTIVE",
       "team_id": "f3myl5ugmj90wrl7",
       "team_name": "The Hot and Steamy Boys"
     },
@@ -2136,7 +2146,7 @@
       "player_name": "Payton Tolle",
       "primary_position": "RP",
       "roster_position": "P",
-      "roster_status": "ACTIVE",
+      "roster_status": "RESERVE",
       "team_id": "f3myl5ugmj90wrl7",
       "team_name": "The Hot and Steamy Boys"
     },
@@ -2756,8 +2766,8 @@
       "fantrax_id": "025he",
       "player_name": "George Springer",
       "primary_position": "RF",
-      "roster_position": "UT",
-      "roster_status": "RESERVE",
+      "roster_position": "OF",
+      "roster_status": "ACTIVE",
       "team_id": "jk36oo1hmj90wrl7",
       "team_name": "Daddy Yankee"
     },
@@ -2792,8 +2802,8 @@
       "fantrax_id": "03atq",
       "player_name": "Willy Adames",
       "primary_position": "SS",
-      "roster_position": "SS",
-      "roster_status": "ACTIVE",
+      "roster_position": "UT",
+      "roster_status": "RESERVE",
       "team_id": "jk36oo1hmj90wrl7",
       "team_name": "Daddy Yankee"
     },
@@ -2829,7 +2839,7 @@
       "player_name": "Ronald Acuna Jr.",
       "primary_position": "RF",
       "roster_position": "OF",
-      "roster_status": "ACTIVE",
+      "roster_status": "RESERVE",
       "team_id": "jk36oo1hmj90wrl7",
       "team_name": "Daddy Yankee"
     },
@@ -2851,15 +2861,6 @@
       "team_id": "jk36oo1hmj90wrl7",
       "team_name": "Daddy Yankee"
     },
-    "jk36oo1hmj90wrl7:041xv": {
-      "fantrax_id": "041xv",
-      "player_name": "Nathaniel Lowe",
-      "primary_position": "1B",
-      "roster_position": "UT",
-      "roster_status": "ACTIVE",
-      "team_id": "jk36oo1hmj90wrl7",
-      "team_name": "Daddy Yankee"
-    },
     "jk36oo1hmj90wrl7:045qo": {
       "fantrax_id": "045qo",
       "player_name": "Jazz Chisholm Jr.",
@@ -2873,6 +2874,15 @@
       "fantrax_id": "04alp",
       "player_name": "Ernie Clement",
       "primary_position": "3B",
+      "roster_position": "2B",
+      "roster_status": "ACTIVE",
+      "team_id": "jk36oo1hmj90wrl7",
+      "team_name": "Daddy Yankee"
+    },
+    "jk36oo1hmj90wrl7:04eej": {
+      "fantrax_id": "04eej",
+      "player_name": "Gavin Sheets",
+      "primary_position": "LF",
       "roster_position": "UT",
       "roster_status": "ACTIVE",
       "team_id": "jk36oo1hmj90wrl7",
@@ -2900,7 +2910,7 @@
       "fantrax_id": "04pbq",
       "player_name": "Geraldo Perdomo",
       "primary_position": "SS",
-      "roster_position": "UT",
+      "roster_position": "SS",
       "roster_status": "ACTIVE",
       "team_id": "jk36oo1hmj90wrl7",
       "team_name": "Daddy Yankee"
@@ -2977,6 +2987,15 @@
       "team_id": "jk36oo1hmj90wrl7",
       "team_name": "Daddy Yankee"
     },
+    "jk36oo1hmj90wrl7:05rb1": {
+      "fantrax_id": "05rb1",
+      "player_name": "Sal Frelick",
+      "primary_position": "RF",
+      "roster_position": "UT",
+      "roster_status": "ACTIVE",
+      "team_id": "jk36oo1hmj90wrl7",
+      "team_name": "Daddy Yankee"
+    },
     "jk36oo1hmj90wrl7:05rcj": {
       "fantrax_id": "05rcj",
       "player_name": "Edwin Arroyo",
@@ -3044,7 +3063,7 @@
       "fantrax_id": "05ybv",
       "player_name": "Jackson Holliday",
       "primary_position": "2B",
-      "roster_position": "2B",
+      "roster_position": "UT",
       "roster_status": "ACTIVE",
       "team_id": "jk36oo1hmj90wrl7",
       "team_name": "Daddy Yankee"
@@ -3108,7 +3127,7 @@
       "player_name": "Connelly Early",
       "primary_position": "SP",
       "roster_position": "P",
-      "roster_status": "ACTIVE",
+      "roster_status": "MINORS",
       "team_id": "jk36oo1hmj90wrl7",
       "team_name": "Daddy Yankee"
     },
@@ -4831,15 +4850,6 @@
       "team_id": "qatqhh61mj90wrl7",
       "team_name": "Je suis Charlie Morton"
     },
-    "qatqhh61mj90wrl7:03yui": {
-      "fantrax_id": "03yui",
-      "player_name": "Alex Lange",
-      "primary_position": "RP",
-      "roster_position": "P",
-      "roster_status": "ACTIVE",
-      "team_id": "qatqhh61mj90wrl7",
-      "team_name": "Je suis Charlie Morton"
-    },
     "qatqhh61mj90wrl7:041ps": {
       "fantrax_id": "041ps",
       "player_name": "Nick Lodolo",
@@ -4854,6 +4864,15 @@
       "player_name": "Bo Bichette",
       "primary_position": "SS",
       "roster_position": "3B",
+      "roster_status": "ACTIVE",
+      "team_id": "qatqhh61mj90wrl7",
+      "team_name": "Je suis Charlie Morton"
+    },
+    "qatqhh61mj90wrl7:041vm": {
+      "fantrax_id": "041vm",
+      "player_name": "Dylan Lee",
+      "primary_position": "RP",
+      "roster_position": "P",
       "roster_status": "ACTIVE",
       "team_id": "qatqhh61mj90wrl7",
       "team_name": "Je suis Charlie Morton"
