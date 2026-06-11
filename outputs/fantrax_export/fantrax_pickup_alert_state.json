@@ -23,12 +23,14 @@
         "overage_alerted": 0
       },
       "jk36oo1hmj90wrl7": {
+        "none_remaining": true,
         "overage_alerted": 0
       },
       "k7c57nf4mj90wrl8": {
         "overage_alerted": 0
       },
       "mldxq5pemj90wrl7": {
+        "one_remaining": true,
         "overage_alerted": 0
       },
       "o4jvg6q3mj90wrl7": {
@@ -1355,7 +1357,7 @@
       "player_name": "Brandon Sproat",
       "primary_position": "SP",
       "roster_position": "P",
-      "roster_status": "RESERVE",
+      "roster_status": "ACTIVE",
       "team_id": "bw696uo5mj90wrl7",
       "team_name": "Cant Park Here"
     },
