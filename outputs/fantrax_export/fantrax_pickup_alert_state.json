@@ -3,11 +3,13 @@
     "2026-06-08": true,
     "2026-06-09": true,
     "2026-06-10": true,
-    "2026-06-11": true
+    "2026-06-11": true,
+    "2026-06-12": true
   },
   "major_add_alerts": {
     "2026-06-08": {
       "6tnz8jgemj90wrl7": {
+        "one_remaining": true,
         "overage_alerted": 0
       },
       "aqfyadu2mj90wrl7": {
@@ -30,6 +32,7 @@
         "overage_alerted": 0
       },
       "mldxq5pemj90wrl7": {
+        "none_remaining": true,
         "one_remaining": true,
         "overage_alerted": 0
       },
@@ -209,15 +212,6 @@
       "team_id": "6tnz8jgemj90wrl7",
       "team_name": "Bobby and the NitWitts"
     },
-    "6tnz8jgemj90wrl7:03qt6": {
-      "fantrax_id": "03qt6",
-      "player_name": "Tyler Phillips",
-      "primary_position": "RP",
-      "roster_position": "P",
-      "roster_status": "ACTIVE",
-      "team_id": "6tnz8jgemj90wrl7",
-      "team_name": "Bobby and the NitWitts"
-    },
     "6tnz8jgemj90wrl7:03yrz": {
       "fantrax_id": "03yrz",
       "player_name": "William Contreras",
@@ -241,6 +235,15 @@
       "player_name": "Seiya Suzuki",
       "primary_position": "DH",
       "roster_position": "OF",
+      "roster_status": "ACTIVE",
+      "team_id": "6tnz8jgemj90wrl7",
+      "team_name": "Bobby and the NitWitts"
+    },
+    "6tnz8jgemj90wrl7:04eek": {
+      "fantrax_id": "04eek",
+      "player_name": "Griffin Canning",
+      "primary_position": "SP",
+      "roster_position": "P",
       "roster_status": "ACTIVE",
       "team_id": "6tnz8jgemj90wrl7",
       "team_name": "Bobby and the NitWitts"
@@ -1136,15 +1139,6 @@
       "team_id": "aqfyadu2mj90wrl7",
       "team_name": "Ben the Hen"
     },
-    "bw696uo5mj90wrl7:01sy3": {
-      "fantrax_id": "01sy3",
-      "player_name": "Nolan Arenado",
-      "primary_position": "3B",
-      "roster_position": "3B",
-      "roster_status": "ACTIVE",
-      "team_id": "bw696uo5mj90wrl7",
-      "team_name": "Cant Park Here"
-    },
     "bw696uo5mj90wrl7:025dn": {
       "fantrax_id": "025dn",
       "player_name": "Christian Yelich",
@@ -1257,7 +1251,7 @@
       "fantrax_id": "0433b",
       "player_name": "Ildemaro Vargas",
       "primary_position": "2B",
-      "roster_position": "2B",
+      "roster_position": "CI",
       "roster_status": "ACTIVE",
       "team_id": "bw696uo5mj90wrl7",
       "team_name": "Cant Park Here"
@@ -1307,6 +1301,15 @@
       "team_id": "bw696uo5mj90wrl7",
       "team_name": "Cant Park Here"
     },
+    "bw696uo5mj90wrl7:04y9i": {
+      "fantrax_id": "04y9i",
+      "player_name": "Tyler Callihan",
+      "primary_position": "LF",
+      "roster_position": "OF",
+      "roster_status": "ACTIVE",
+      "team_id": "bw696uo5mj90wrl7",
+      "team_name": "Cant Park Here"
+    },
     "bw696uo5mj90wrl7:04y9p": {
       "fantrax_id": "04y9p",
       "player_name": "Anthony Volpe",
@@ -1316,11 +1319,20 @@
       "team_id": "bw696uo5mj90wrl7",
       "team_name": "Cant Park Here"
     },
+    "bw696uo5mj90wrl7:04ydd": {
+      "fantrax_id": "04ydd",
+      "player_name": "Angel Martinez",
+      "primary_position": "CF",
+      "roster_position": "2B",
+      "roster_status": "ACTIVE",
+      "team_id": "bw696uo5mj90wrl7",
+      "team_name": "Cant Park Here"
+    },
     "bw696uo5mj90wrl7:04yig": {
       "fantrax_id": "04yig",
       "player_name": "Brooks Lee",
       "primary_position": "SS",
-      "roster_position": "CI",
+      "roster_position": "3B",
       "roster_status": "ACTIVE",
       "team_id": "bw696uo5mj90wrl7",
       "team_name": "Cant Park Here"
@@ -3341,6 +3353,15 @@
       "team_id": "k7c57nf4mj90wrl8",
       "team_name": "Hand Foot Mouth Disease Guys"
     },
+    "k7c57nf4mj90wrl8:041mb": {
+      "fantrax_id": "041mb",
+      "player_name": "Anthony Kay",
+      "primary_position": "SP",
+      "roster_position": "P",
+      "roster_status": "ACTIVE",
+      "team_id": "k7c57nf4mj90wrl8",
+      "team_name": "Hand Foot Mouth Disease Guys"
+    },
     "k7c57nf4mj90wrl8:041w4": {
       "fantrax_id": "041w4",
       "player_name": "Bryan Baker",
@@ -3382,7 +3403,7 @@
       "player_name": "Daulton Varsho",
       "primary_position": "CF",
       "roster_position": "OF",
-      "roster_status": "ACTIVE",
+      "roster_status": "INJURED_RESERVE",
       "team_id": "k7c57nf4mj90wrl8",
       "team_name": "Hand Foot Mouth Disease Guys"
     },
@@ -3431,11 +3452,11 @@
       "team_id": "k7c57nf4mj90wrl8",
       "team_name": "Hand Foot Mouth Disease Guys"
     },
-    "k7c57nf4mj90wrl8:04zay": {
-      "fantrax_id": "04zay",
-      "player_name": "Kai-Wei Teng",
-      "primary_position": "SP",
-      "roster_position": "P",
+    "k7c57nf4mj90wrl8:05161": {
+      "fantrax_id": "05161",
+      "player_name": "Dominic Canzone",
+      "primary_position": "RF",
+      "roster_position": "OF",
       "roster_status": "ACTIVE",
       "team_id": "k7c57nf4mj90wrl8",
       "team_name": "Hand Foot Mouth Disease Guys"
@@ -3805,7 +3826,7 @@
       "player_name": "Will Smith",
       "primary_position": "C",
       "roster_position": "C",
-      "roster_status": "ACTIVE",
+      "roster_status": "INJURED_RESERVE",
       "team_id": "mldxq5pemj90wrl7",
       "team_name": "L\u00e1szlar\u00f3 T\u00f3th"
     },
@@ -3905,6 +3926,15 @@
       "primary_position": "RP",
       "roster_position": "P",
       "roster_status": "INJURED_RESERVE",
+      "team_id": "mldxq5pemj90wrl7",
+      "team_name": "L\u00e1szlar\u00f3 T\u00f3th"
+    },
+    "mldxq5pemj90wrl7:04s1g": {
+      "fantrax_id": "04s1g",
+      "player_name": "Gabriel Moreno",
+      "primary_position": "C",
+      "roster_position": "C",
+      "roster_status": "ACTIVE",
       "team_id": "mldxq5pemj90wrl7",
       "team_name": "L\u00e1szlar\u00f3 T\u00f3th"
     },
