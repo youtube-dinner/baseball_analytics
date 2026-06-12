@@ -1,7 +1,6 @@
 probable_date,game_time_utc,home_away,probable_team,opponent,mlb_player_id,probable_name,fantrax_id,name,mlb_team,primary_position,eligible_positions,league_status,is_rostered,stats_inc_id,rotowire_id,sport_radar_id,game_pk
-2026-06-12,,,PIT,LAD Thu 5:40PM,,Mitch Keller,03d7h,"Keller, Mitch",PIT,SP,P,FA,False,10565,13426,ffb19157-28c7-41ee-bdec-9b62d22337e2,
-2026-06-12,,,DET,MIN 0<br/>@DET 11 F,,Keider Montero,05a1v,"Montero, Keider",DET,SP,P,FA,False,,17863,73ecbb81-39b8-4064-95fd-d9fc6907b76c,
-2026-06-12,,,ATL,@CHW Thu 6:40PM,,Martin Perez,01fhm,"Perez, Martin",ATL,SP,P,T,True,8652,10867,9012e198-9f53-4885-8b24-402e51524e82,
-2026-06-12,,,CHW,ATL Thu 6:40PM,,Anthony Kay,041mb,"Kay, Anthony",CHW,SP,P,FA,False,10538,14269,6de93a68-31cd-4278-b933-e43cbcee5d98,
-2026-06-12,,,COL,CHC 9<br/>@COL 2,,Ryan Feltner,03r06,"Feltner, Ryan",COL,SP,P,FA,False,,15541,87dfe721-2290-44ac-a106-0aa9e676bfbd,
-2026-06-12,,,STL,STL 4<br/>@NYM 5 F,,Hunter Dobbins,05y6w,"Dobbins, Hunter",STL,SP,P,T,True,,19013,df569e68-70ff-479b-8839-554ebd6ea2fb,
+2026-06-12,,,CHW,LAD Fri 6:40PM,,Anthony Kay,041mb,"Kay, Anthony",CHW,SP,P,FA,False,10538,14269,6de93a68-31cd-4278-b933-e43cbcee5d98,
+2026-06-12,,,CHC,@SF Fri 9:15PM,,Javier Assad,04fq2,"Assad, Javier",CHC,SP,P,FA,False,,15233,564bb787-e788-4acf-9dab-1da0e14578e0,
+2026-06-12,,,SD,@BAL Fri 6:05PM,,Griffin Canning,04eek,"Canning, Griffin",SD,SP,P,FA,False,10894,14783,470b008b-639b-4f14-975b-1eb51d918358,
+2026-06-12,,,COL,@ATH Fri 9:05PM,,Tanner Gordon,05152,"Gordon, Tanner",COL,SP,P,FA,False,,18754,d5862f27-415f-47d9-84c2-9c3d3ee4b0ec,
+2026-06-12,,,LAA,TB Fri 8:38PM,,Samuel Aldegheri,06aw2,"Aldegheri, Samuel",LAA,SP,P,FA,False,,19357,25da44aa-825b-4787-9abf-730be10a114d,
