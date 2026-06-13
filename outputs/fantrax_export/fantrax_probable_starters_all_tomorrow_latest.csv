@@ -1,6 +1,5 @@
 probable_date,game_time_utc,home_away,probable_team,opponent,mlb_player_id,probable_name,fantrax_id,name,mlb_team,primary_position,eligible_positions,league_status,is_rostered,stats_inc_id,rotowire_id,sport_radar_id,game_pk
 2026-06-13,,,CLE,DET Sat 3:10PM,,Joey Cantillo,04eos,"Cantillo, Joey",CLE,RP,P,FA,False,11823,15683,92f6533c-49b0-4177-8f42-0f765e3d3c41,
-2026-06-13,,,ATH,COL Sat 9:05PM,,Jeffrey Springs,04mlr,"Springs, Jeffrey",ATH,SP,P,FA,False,11121,15663,76375b42-68b1-42a1-94e6-81f152197c81,
 2026-06-13,,,PHI,@MIL Sat 6:10PM,,Aaron Nola,02i3o,"Nola, Aaron",PHI,SP,P,FA,False,9882,13359,ded1b30d-52ca-4eec-bce6-251b15b085ac,
 2026-06-13,,,ATL,@NYM Sat 3:10PM,,Martin Perez,01fhm,"Perez, Martin",ATL,SP,P,FA,False,8652,10867,9012e198-9f53-4885-8b24-402e51524e82,
 2026-06-13,,,HOU,@KC Sat 6:10PM,,Mike Burrows,04pvl,"Burrows, Mike",HOU,SP,P,FA,False,,17633,d2aa08d8-1e32-441b-886a-0d3372a4cc65,
@@ -8,3 +7,4 @@ probable_date,game_time_utc,home_away,probable_team,opponent,mlb_player_id,proba
 2026-06-13,,,NYM,ATL Sat 3:10PM,,Sean Manaea,02x0f,"Manaea, Sean",NYM,SP,P,FA,False,9582,12948,f578d526-6d2e-4590-9665-ed42c72c883f,
 2026-06-13,,,CIN,ARI Sat 3:10PM,,Rhett Lowder,061bo,"Lowder, Rhett",CIN,SP,P,FA,False,,18854,65e665b2-cd64-4bfe-a7c5-2afa492e7eff,
 2026-06-13,,,MIA,@PIT Sat 3:05PM,,Lake Bachar,041s4,"Bachar, Lake",MIA,RP,P,FA,False,,14313,db566bcf-7a7f-4e17-ab85-d22d185f0e46,
+2026-06-13,,,ATH,COL Sat 9:05PM,,Joey Estes,051cl,"Estes, Joey",ATH,SP,P,FA,False,,16363,df8fb701-fc25-418d-80e7-b09b5accdcda,
