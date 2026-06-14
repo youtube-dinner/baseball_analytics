@@ -15,6 +15,7 @@
         "overage_alerted": 0
       },
       "aqfyadu2mj90wrl7": {
+        "none_remaining": true,
         "overage_alerted": 0
       },
       "bw696uo5mj90wrl7": {
@@ -2845,8 +2846,8 @@
       "fantrax_id": "03atq",
       "player_name": "Willy Adames",
       "primary_position": "SS",
-      "roster_position": "MI",
-      "roster_status": "RESERVE",
+      "roster_position": "UT",
+      "roster_status": "ACTIVE",
       "team_id": "jk36oo1hmj90wrl7",
       "team_name": "Daddy Yankee"
     },
@@ -2854,8 +2855,8 @@
       "fantrax_id": "03d6s",
       "player_name": "Matt Chapman",
       "primary_position": "3B",
-      "roster_position": "UT",
-      "roster_status": "RESERVE",
+      "roster_position": "3B",
+      "roster_status": "ACTIVE",
       "team_id": "jk36oo1hmj90wrl7",
       "team_name": "Daddy Yankee"
     },
@@ -2918,7 +2919,7 @@
       "player_name": "Jazz Chisholm Jr.",
       "primary_position": "2B",
       "roster_position": "3B",
-      "roster_status": "ACTIVE",
+      "roster_status": "RESERVE",
       "team_id": "jk36oo1hmj90wrl7",
       "team_name": "Daddy Yankee"
     },
@@ -3116,7 +3117,7 @@
       "player_name": "Jackson Holliday",
       "primary_position": "2B",
       "roster_position": "UT",
-      "roster_status": "ACTIVE",
+      "roster_status": "RESERVE",
       "team_id": "jk36oo1hmj90wrl7",
       "team_name": "Daddy Yankee"
     },
