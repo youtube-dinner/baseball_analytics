@@ -245,7 +245,8 @@ def fetch_actual_week_rows(teams, start, end):
         rows.extend(roster_rows_for_team(team_id, team_name, params))
     return [
         row for row in rows
-        if row["games_played"] > 0 or row["actual_points"] != 0
+        if row["roster_status_id"] == "1"
+        and (row["games_played"] > 0 or row["actual_points"] != 0)
     ]
 
 
