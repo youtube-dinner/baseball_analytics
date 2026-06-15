@@ -1,10 +1,8 @@
 probable_date,game_time_utc,home_away,probable_team,opponent,mlb_player_id,probable_name,fantrax_id,name,mlb_team,primary_position,eligible_positions,league_status,is_rostered,stats_inc_id,rotowire_id,sport_radar_id,game_pk
 2026-06-15,,,HOU,DET Mon 7:10PM,,Kai-Wei Teng,04zay,"Teng, Kai-Wei",HOU,SP,P,FA,False,,15291,7fb43f1f-32f2-4517-828b-bd50da934a2d,
 2026-06-15,,,COL,@CHC Mon 7:05PM,,Michael Lorenzen,02hir,"Lorenzen, Michael",COL,SP,P,FA,False,9949,11605,4150b3f7-beb3-4fbc-a947-933d45d20bfe,
-2026-06-15,,,LAD,TB Mon 9:10PM,,Eric Lauer,031ey,"Lauer, Eric",LAD,SP,P,FA,False,10576,14263,0631a6ce-c41b-4dec-8f68-db2bd61b54a0,
 2026-06-15,,,NYM,@CIN Mon 6:10PM,,Tobias Myers,041sz,"Myers, Tobias",NYM,RP,P,FA,False,11547,14720,ca6fc8d3-9e53-4140-aea1-04ae893c3a30,
 2026-06-15,,,WSH,KC Mon 5:45PM,,Andrew Alvarez,060u3,"Alvarez, Andrew",WSH,SP,P,FA,False,,19439,e6a98e62-8cf1-4b27-bfc7-19f4b094d845,
-2026-06-15,,,SD,@STL Mon 6:45PM,,Lucas Giolito,02i37,"Giolito, Lucas",SD,SP,P,FA,False,9640,12454,1a1311e0-465c-45de-9f94-78e52fc067c3,
 2026-06-15,,,MIA,@PHI Mon 5:40PM,,Ryan Gusto,0518s,"Gusto, Ryan",MIA,SP,P,FA,False,,19907,2902501a-a817-4eae-b691-4e05dfc4ef34,
 2026-06-15,,,MIN,@TEX Mon 7:05PM,,Mike Paredes,06rtp,"Paredes, Mike",MIN,RP,P,FA,False,,20953,ccca1667-d7cd-49d3-b8a0-d0ac19063f66,
 2026-06-15,,,KC,@WSH Mon 5:45PM,,Mitch Spence,0517z,"Spence, Mitch",KC,RP,P,FA,False,,19200,b6e390af-dfc4-4f41-8320-06e65b40e4e3,
