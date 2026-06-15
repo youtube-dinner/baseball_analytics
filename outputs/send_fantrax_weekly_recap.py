@@ -190,6 +190,14 @@ def cell_value(row, header_cells, key=None, short_name=None):
     return ""
 
 
+def component_key(row):
+    return f"{row['team_id']}:{row['fantrax_id']}:{row['player_type']}"
+
+
+def player_key(row):
+    return f"{row['team_id']}:{row['fantrax_id']}"
+
+
 def roster_rows_for_team(team_id, team_name, params):
     data = fetch_fantrax_req("getTeamRosterInfo", {"teamId": team_id, **params})
     rows = []
@@ -199,18 +207,20 @@ def roster_rows_for_team(team_id, team_name, params):
         for row in table.get("rows") or []:
             scorer = row.get("scorer") or {}
             fantrax_id = scorer.get("scorerId") or scorer.get("id") or ""
-            if row.get("secondary") or not fantrax_id:
+            if not fantrax_id:
                 continue
             games_played = float_value(cell_value(row, header_cells, short_name="GP"))
             fpts = float_value(cell_value(row, header_cells, key="fpts"))
             fpts_per_game = float_value(cell_value(row, header_cells, key="fptsPerGame"))
             at_bats = float_value(cell_value(row, header_cells, short_name="AB"))
+            innings_pitched = float_value(cell_value(row, header_cells, short_name="IP"))
             rows.append({
                 "team_id": team_id,
                 "team_name": team_name,
                 "fantrax_id": fantrax_id,
                 "player_name": scorer.get("name") or "",
                 "player_type": player_type,
+                "is_secondary": bool(row.get("secondary")),
                 "roster_status_id": row.get("statusId", ""),
                 "roster_pos_id": row.get("posId", ""),
                 "mlb_team": scorer.get("teamShortName", ""),
@@ -219,6 +229,7 @@ def roster_rows_for_team(team_id, team_name, params):
                 "actual_fpts_per_game": fpts_per_game,
                 "games_played": games_played,
                 "at_bats": at_bats,
+                "innings_pitched": innings_pitched,
             })
     return rows
 
@@ -255,21 +266,20 @@ def fetch_pre_week_baseline_rows(teams):
 def snapshot_projection_rows(projection_rows, baseline_rows):
     snapshot = {}
     baseline_by_key = {
-        f"{row['team_id']}:{row['fantrax_id']}": row
+        component_key(row): row
         for row in baseline_rows
     }
     all_keys = {
-        f"{row['team_id']}:{row['fantrax_id']}"
+        component_key(row)
         for row in projection_rows
     } | set(baseline_by_key)
     projection_by_key = {
-        f"{row['team_id']}:{row['fantrax_id']}": row
+        component_key(row): row
         for row in projection_rows
     }
     for key in all_keys:
         row = projection_by_key.get(key) or baseline_by_key[key]
         baseline = baseline_by_key.get(key, {})
-        key = f"{row['team_id']}:{row['fantrax_id']}"
         projected_games = row.get("games_played", 0.0)
         projected_at_bats = row.get("at_bats", 0.0)
         projected_ab_per_game = (
@@ -287,10 +297,13 @@ def snapshot_projection_rows(projection_rows, baseline_rows):
             "team_name": row["team_name"],
             "fantrax_id": row["fantrax_id"],
             "player_name": row["player_name"],
+            "player_type": row["player_type"],
+            "is_secondary": row.get("is_secondary", False),
             "projected_fpts_per_game": projected_fpts_per_game,
             "projected_games": projected_games,
             "projected_at_bats": projected_at_bats,
             "projected_ab_per_game": projected_ab_per_game,
+            "projected_innings_pitched": row.get("innings_pitched", 0.0),
             "pre_week_fpts_per_game": baseline.get("actual_fpts_per_game", 0.0),
             "pre_week_ab_per_game": (
                 baseline.get("at_bats", 0.0) / baseline.get("games_played", 0.0)
@@ -312,7 +325,7 @@ def ensure_current_projection_snapshot(state, teams, today):
         "period_start": start.isoformat(),
         "period_end": end.isoformat(),
         "captured_at": datetime.now(CENTRAL).isoformat(),
-        "projection_type": "fantrax_projected_per_game_ab_normalized_with_pre_week_fpg_fallback",
+        "projection_type": "fantrax_component_projected_per_game_ab_normalized_with_pre_week_fpg_fallback",
         "players": snapshot_projection_rows(projection_rows, baseline_rows),
     }
     return True
@@ -322,17 +335,24 @@ def maybe_live_projection_snapshot(teams):
     projection_rows = fetch_projection_rows(teams)
     baseline_rows = fetch_pre_week_baseline_rows(teams)
     return {
-        "projection_type": "fantrax_current_projected_per_game_ab_normalized_with_current_fpg_fallback",
+        "projection_type": "fantrax_current_component_projected_per_game_ab_normalized_with_current_fpg_fallback",
         "players": snapshot_projection_rows(projection_rows, baseline_rows),
     }
+
+
+def is_component_snapshot(snapshot):
+    projection_type = snapshot.get("projection_type", "")
+    if "component" in projection_type:
+        return True
+    players = snapshot.get("players") or {}
+    return all(len(str(key).split(":")) >= 3 for key in players)
 
 
 def enrich_with_projections(actual_rows, snapshot):
     players = snapshot.get("players") or {}
     enriched = []
     for row in actual_rows:
-        key = f"{row['team_id']}:{row['fantrax_id']}"
-        projection = players.get(key, {})
+        projection = players.get(component_key(row), {})
         raw_projected_per_game = float_value(projection.get("projected_fpts_per_game"))
         projected_per_game = raw_projected_per_game
         projected_games = float_value(projection.get("projected_games"))
@@ -350,7 +370,10 @@ def enrich_with_projections(actual_rows, snapshot):
         if projected_per_game <= 0:
             projected_per_game = float_value(projection.get("pre_week_fpts_per_game"))
             projection_basis = "pre_week_fpg"
-        projected_total = projected_per_game * row["games_played"]
+        projection_games_multiplier = row["games_played"]
+        if row["player_type"] == "Pitching" and row.get("is_secondary") and projected_games > 0:
+            projection_games_multiplier = projected_games
+        projected_total = projected_per_game * projection_games_multiplier
         enriched.append({
             **row,
             "raw_projected_fpts_per_game": raw_projected_per_game,
@@ -359,12 +382,61 @@ def enrich_with_projections(actual_rows, snapshot):
             "projected_at_bats": projected_at_bats,
             "projected_ab_per_game": projected_ab_per_game,
             "pre_week_ab_per_game": pre_week_ab_per_game,
+            "projection_games_multiplier": projection_games_multiplier,
             "projected_points": projected_total,
             "points_over_projection": row["actual_points"] - projected_total,
             "projection_source": snapshot.get("projection_type", ""),
             "projection_basis": projection_basis,
         })
     return enriched
+
+
+def aggregate_player_rows(rows):
+    grouped = {}
+    for row in rows:
+        key = player_key(row)
+        if key not in grouped:
+            grouped[key] = {
+                **row,
+                "player_type": row["player_type"],
+                "actual_points": 0.0,
+                "games_played": 0.0,
+                "raw_projected_fpts_per_game": 0.0,
+                "projected_fpts_per_game": 0.0,
+                "projected_games": 0.0,
+                "projected_at_bats": 0.0,
+                "projected_ab_per_game": 0.0,
+                "pre_week_ab_per_game": 0.0,
+                "projection_games_multiplier": 0.0,
+                "projected_points": 0.0,
+                "points_over_projection": 0.0,
+                "projection_basis": "",
+                "component_projection_basis": [],
+                "component_player_types": [],
+                "component_actual_points": [],
+                "component_projected_points": [],
+            }
+        aggregate = grouped[key]
+        aggregate["is_secondary"] = bool(aggregate.get("is_secondary") or row.get("is_secondary"))
+        aggregate["actual_points"] += row["actual_points"]
+        aggregate["projected_points"] += row["projected_points"]
+        aggregate["points_over_projection"] = aggregate["actual_points"] - aggregate["projected_points"]
+        aggregate["games_played"] = max(aggregate["games_played"], row["games_played"])
+        aggregate["projected_games"] += row["projected_games"]
+        aggregate["projected_at_bats"] += row["projected_at_bats"]
+        aggregate["projection_games_multiplier"] += row["projection_games_multiplier"]
+        aggregate["component_projection_basis"].append(row["projection_basis"])
+        aggregate["component_player_types"].append(row["player_type"])
+        aggregate["component_actual_points"].append(f"{row['player_type']} {rounded(row['actual_points'])}")
+        aggregate["component_projected_points"].append(f"{row['player_type']} {rounded(row['projected_points'])}")
+    for aggregate in grouped.values():
+        aggregate["player_type"] = " + ".join(aggregate["component_player_types"])
+        aggregate["projection_basis"] = " + ".join(dict.fromkeys(aggregate["component_projection_basis"]))
+        aggregate["component_projection_basis"] = ", ".join(aggregate["component_projection_basis"])
+        aggregate["component_player_types"] = " + ".join(aggregate["component_player_types"])
+        aggregate["component_actual_points"] = ", ".join(aggregate["component_actual_points"])
+        aggregate["component_projected_points"] = ", ".join(aggregate["component_projected_points"])
+    return list(grouped.values())
 
 
 def rounded(value):
@@ -380,6 +452,8 @@ def build_section(title, rows, diff=False):
             f"{index}. {bold_text(row['team_name'])}",
             row["player_name"],
         ])
+        if " + " in row.get("component_player_types", ""):
+            lines.append(f"Breakdown: {row['component_actual_points']}")
         if diff:
             lines.extend([
                 f"Total Projected Points: {rounded(row['projected_points'])}",
@@ -507,10 +581,10 @@ def main():
     if should_send_recap(state, now, start, args.force_report):
         actual_rows = fetch_actual_week_rows(teams, start, end)
         snapshot = state["projection_snapshots"].get(week_key(start))
-        if not snapshot:
+        if not snapshot or not is_component_snapshot(snapshot):
             snapshot = maybe_live_projection_snapshot(teams)
         projection_source = snapshot.get("projection_type", "")
-        latest_rows = enrich_with_projections(actual_rows, snapshot)
+        latest_rows = aggregate_player_rows(enrich_with_projections(actual_rows, snapshot))
         body = build_report(latest_rows, start, end, projection_source)
         messages.append(body)
         mark_recap_sent(state, start)
@@ -520,6 +594,11 @@ def main():
         "player_name",
         "fantrax_id",
         "player_type",
+        "component_player_types",
+        "component_actual_points",
+        "component_projected_points",
+        "component_projection_basis",
+        "is_secondary",
         "actual_points",
         "games_played",
         "raw_projected_fpts_per_game",
@@ -528,6 +607,7 @@ def main():
         "projected_at_bats",
         "projected_ab_per_game",
         "pre_week_ab_per_game",
+        "projection_games_multiplier",
         "projected_points",
         "points_over_projection",
         "projection_source",
