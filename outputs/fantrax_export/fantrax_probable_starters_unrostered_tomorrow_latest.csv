@@ -1,8 +1,6 @@
 probable_date,game_time_utc,home_away,probable_team,opponent,mlb_player_id,probable_name,fantrax_id,name,mlb_team,primary_position,eligible_positions,league_status,is_rostered,stats_inc_id,rotowire_id,sport_radar_id,game_pk
-2026-06-16,,,STL,SD Tue 6:45PM,,Andre Pallante,05133,"Pallante, Andre",STL,SP,P,FA,False,,16167,6b4748c0-1b93-4a58-9896-80a04af32c5b,
 2026-06-16,,,PIT,@ATH Tue 8:40PM,,Mitch Keller,03d7h,"Keller, Mitch",PIT,SP,P,FA,False,10565,13426,ffb19157-28c7-41ee-bdec-9b62d22337e2,
 2026-06-16,,,CLE,@MIL Tue 6:40PM,,Slade Cecconi,04tk1,"Cecconi, Slade",CLE,SP,P,FA,False,,15450,dbdd2193-a5ad-474a-afdd-5f9fd308a09e,
-2026-06-16,,,CIN,NYM Tue 6:10PM,,Brady Singer,03pov,"Singer, Brady",CIN,SP,P,FA,False,11323,13874,18f3c854-6490-4e6b-8afe-bc562c5b20b4,
 2026-06-16,,,MIA,@PHI Tue 5:40PM,,Tyler Phillips,03qt6,"Phillips, Tyler",MIA,RP,P,FA,False,11400,15681,45fc262f-bb5c-4491-b58b-e7eb585f9ec3,
 2026-06-16,,,SF,@ATL Tue 6:15PM,,Adrian Houser,02brc,"Houser, Adrian",SF,SP,P,FA,False,10098,12199,8156bec7-9689-46d6-9b0f-eddf7240d9a3,
 2026-06-16,,,ATH,PIT Tue 8:40PM,,Jack Perkins,0657l,"Perkins, Jack",ATH,RP,P,FA,False,,18142,81387e90-584a-4397-8dff-4fc011e1921d,
