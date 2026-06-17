@@ -902,6 +902,15 @@
       "team_id": "aqfyadu2mj90wrl7",
       "team_name": "Ben the Hen"
     },
+    "aqfyadu2mj90wrl7:04eig": {
+      "fantrax_id": "04eig",
+      "player_name": "Jose Caballero",
+      "primary_position": "SS",
+      "roster_position": "OF",
+      "roster_status": "ACTIVE",
+      "team_id": "aqfyadu2mj90wrl7",
+      "team_name": "Ben the Hen"
+    },
     "aqfyadu2mj90wrl7:04fhb": {
       "fantrax_id": "04fhb",
       "player_name": "Julio Rodriguez",
@@ -1343,6 +1352,15 @@
       "team_id": "bw696uo5mj90wrl7",
       "team_name": "Cant Park Here"
     },
+    "bw696uo5mj90wrl7:03btu": {
+      "fantrax_id": "03btu",
+      "player_name": "Willi Castro",
+      "primary_position": "2B",
+      "roster_position": "3B",
+      "roster_status": "ACTIVE",
+      "team_id": "bw696uo5mj90wrl7",
+      "team_name": "Cant Park Here"
+    },
     "bw696uo5mj90wrl7:03dau": {
       "fantrax_id": "03dau",
       "player_name": "Trevor Megill",
@@ -1376,15 +1394,6 @@
       "primary_position": "SP",
       "roster_position": "P",
       "roster_status": "ACTIVE",
-      "team_id": "bw696uo5mj90wrl7",
-      "team_name": "Cant Park Here"
-    },
-    "bw696uo5mj90wrl7:041vt": {
-      "fantrax_id": "041vt",
-      "player_name": "Samad Taylor",
-      "primary_position": "2B",
-      "roster_position": "OF",
-      "roster_status": "RESERVE",
       "team_id": "bw696uo5mj90wrl7",
       "team_name": "Cant Park Here"
     },
