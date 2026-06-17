@@ -2,9 +2,10 @@
 import csv
 import json
 import os
+import re
 import time
 import unicodedata
-from datetime import datetime, timedelta, timezone
+from datetime import date, datetime, timedelta, timezone
 from pathlib import Path
 from urllib.error import HTTPError, URLError
 from urllib.parse import urlencode
@@ -218,7 +219,6 @@ def probable_candidate_params(probable_date):
     candidates = [{**base, "datePlaying": probable_date}]
     for misc_display_type in ["7", "8"]:
         candidates.append({**base, "miscDisplayType": misc_display_type, "datePlaying": probable_date})
-    candidates.append(base)
     unique = []
     seen = set()
     for params in candidates:
@@ -227,6 +227,22 @@ def probable_candidate_params(probable_date):
             seen.add(key)
             unique.append(params)
     return unique
+
+
+def fantrax_row_matches_probable_date(row, probable_date):
+    target_date = date.fromisoformat(probable_date)
+    target_weekday = target_date.strftime("%a")
+    text = " ".join(
+        str(row.get(column, ""))
+        for column in ["Opponent", "Opp", "OPP", "Game Time", "Game", "Start Time"]
+    )
+    weekday_tokens = set(re.findall(r"\b(?:Mon|Tue|Wed|Thu|Fri|Sat|Sun)\b", text))
+    if weekday_tokens and target_weekday not in weekday_tokens:
+        return False
+    local_today = datetime.now(ZoneInfo("America/Chicago")).date()
+    if target_date > local_today and re.search(r"<br\s*/?>.*\bF\b", text, flags=re.IGNORECASE):
+        return False
+    return True
 
 
 def fantrax_ui_probable_starter_rows(probable_date, player_ids, league_players, rostered_ids):
@@ -247,6 +263,12 @@ def fantrax_ui_probable_starter_rows(probable_date, player_ids, league_players, 
                 columns=[col for col in candidate.columns if str(col).startswith("Unnamed")],
                 errors="ignore",
             )
+            candidate = candidate[
+                candidate.apply(
+                    lambda row: fantrax_row_matches_probable_date(row, probable_date),
+                    axis=1,
+                )
+            ].copy()
             if candidate.shape[0] > best_df.shape[0]:
                 best_df = candidate
                 best_params = params

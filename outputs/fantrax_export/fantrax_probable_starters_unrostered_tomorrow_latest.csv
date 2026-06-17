@@ -1,11 +1,9 @@
 probable_date,game_time_utc,home_away,probable_team,opponent,mlb_player_id,probable_name,fantrax_id,name,mlb_team,primary_position,eligible_positions,league_status,is_rostered,stats_inc_id,rotowire_id,sport_radar_id,game_pk
-2026-06-18,,,STL,SD 6<br/>@STL 1 F,,Kyle Leahy,04q08,"Leahy, Kyle",STL,RP,P,FA,False,,18354,66ca1e33-1303-4354-9f94-edae0d332456,
-2026-06-18,,,WSH,KC 6<br/>@WSH 2 F,,Zack Littell,031d4,"Littell, Zack",WSH,SP,P,FA,False,11035,14992,fe0fc487-45d3-4178-9fd7-6c00025aff7e,
-2026-06-18,,,ATH,PIT Wed 8:40PM,,Aaron Civale,041qr,"Civale, Aaron",ATH,SP,P,FA,False,10869,14366,1b65d697-deeb-4eec-8bc3-c704a21c7cda,
-2026-06-18,,,TOR,@BOS Wed 5:45PM,,Braydon Fisher,04pqo,"Fisher, Braydon",TOR,RP,P,FA,False,11479,15473,65065b12-776a-4930-98b6-637b0f36456f,
-2026-06-18,,,SD,SD 6<br/>@STL 1 F,,Bradgley Rodriguez,05y5d,"Rodriguez, Bradgley",SD,RP,P,FA,False,,19854,f9cf7c9d-f72a-4ab5-8e67-e65b275635d2,
-2026-06-18,,,KC,KC 6<br/>@WSH 2 F,,Luinder Avila,06am5,"Avila, Luinder",KC,RP,P,FA,False,,18728,3f90bd6e-fb37-43fa-b2f9-9dac98348a38,
-2026-06-18,,,LAA,LAA 1<br/>@ARI 8 F,,Samuel Aldegheri,06aw2,"Aldegheri, Samuel",LAA,SP,P,FA,False,,19357,25da44aa-825b-4787-9abf-730be10a114d,
-2026-06-18,,,BOS,TOR Wed 5:45PM,,Jake Bennett,060i2,"Bennett, Jake",BOS,SP,P,FA,False,,18002,34b7d3c9-7720-4c3e-a1eb-59572d798d26,
-2026-06-18,,,COL,@CHC Wed 7:05PM,,Sean Sullivan,06ahu,"Sullivan, Sean",COL,SP,P,FA,False,,18957,7fe0fc12-b751-46f2-88f0-583306497a78,
-2026-06-18,,,SF,@ATL Wed 6:15PM,,Carson Whisenhunt,05y7v,"Whisenhunt, Carson",SF,SP,P,FA,False,,17956,6212a28e-bfa1-43ce-a5f4-0da9346a94d4,
+2026-06-18,2026-06-18T18:10:00Z,home,Milwaukee Brewers,Cleveland Guardians,675660,Shane Drohan,04eud,"Drohan, Shane",MIL,SP,P,FA,False,,14851,1ace87c5-9684-4575-9515-8cf7bb98bf45,823772
+2026-06-18,2026-06-18T22:40:00Z,away,New York Mets,Philadelphia Phillies,640455,Sean Manaea,02x0f,"Manaea, Sean",NYM,SP,P,FA,False,9582,12948,f578d526-6d2e-4590-9665-ed42c72c883f,823448
+2026-06-18,2026-06-18T22:40:00Z,home,Philadelphia Phillies,New York Mets,605400,Aaron Nola,02i3o,"Nola, Aaron",PHI,SP,P,FA,False,9882,13359,ded1b30d-52ca-4eec-bce6-251b15b085ac,823448
+2026-06-18,2026-06-18T23:05:00Z,away,Chicago White Sox,New York Yankees,680732,Sean Burke,05xod,"Burke, Sean",CHW,SP,P,FA,False,,17364,1111489e-7f14-47bb-98da-a0c736568892,823533
+2026-06-18,2026-06-18T23:05:00Z,home,New York Yankees,Chicago White Sox,677960,Ryan Weathers,04mnw,"Weathers, Ryan",NYY,SP,P,FA,False,11379,15409,29a89587-5c16-4166-a620-6ba2d48691fd,823533
+2026-06-18,2026-06-18T23:15:00Z,home,Atlanta Braves,San Francisco Giants,527048,Martín Pérez,01fhm,"Perez, Martin",ATL,SP,P,FA,False,8652,10867,9012e198-9f53-4885-8b24-402e51524e82,824911
+2026-06-18,2026-06-18T23:40:00Z,home,Kansas City Royals,St. Louis Cardinals,702070,Noah Cameron,05ycf,"Cameron, Noah",KC,SP,P,FA,False,,18727,9f16b92f-5eb3-42b2-8b35-9967e608b9cb,824098
+2026-06-18,2026-06-18T23:40:00Z,away,St. Louis Cardinals,Kansas City Royals,669461,Matthew Liberatore,04mlx,"Liberatore, Matthew",STL,SP,P,FA,False,11397,15399,5522ef4b-d436-4738-94d6-78a2c1c5a3ae,824098
