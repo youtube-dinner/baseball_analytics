@@ -1,9 +1,8 @@
 probable_date,game_time_utc,home_away,probable_team,opponent,mlb_player_id,probable_name,fantrax_id,name,mlb_team,primary_position,eligible_positions,league_status,is_rostered,stats_inc_id,rotowire_id,sport_radar_id,game_pk
-2026-06-17,,,CHW,@NYY Wed 6:05PM,,Anthony Kay,041mb,"Kay, Anthony",CHW,SP,P,FA,False,10538,14269,6de93a68-31cd-4278-b933-e43cbcee5d98,
 2026-06-17,,,STL,SD Wed 1:15PM,,Kyle Leahy,04q08,"Leahy, Kyle",STL,RP,P,FA,False,,18354,66ca1e33-1303-4354-9f94-edae0d332456,
 2026-06-17,,,ATH,PIT Wed 8:40PM,,Aaron Civale,041qr,"Civale, Aaron",ATH,SP,P,FA,False,10869,14366,1b65d697-deeb-4eec-8bc3-c704a21c7cda,
 2026-06-17,,,WSH,KC Wed 12:05PM,,Zack Littell,031d4,"Littell, Zack",WSH,SP,P,FA,False,11035,14992,fe0fc487-45d3-4178-9fd7-6c00025aff7e,
-2026-06-17,,,SD,@STL Wed 1:15PM,,Griffin Canning,04eek,"Canning, Griffin",SD,SP,P,WW,False,10894,14783,470b008b-639b-4f14-975b-1eb51d918358,
+2026-06-17,,,SD,@STL Wed 1:15PM,,Griffin Canning,04eek,"Canning, Griffin",SD,SP,P,FA,False,10894,14783,470b008b-639b-4f14-975b-1eb51d918358,
 2026-06-17,,,KC,@WSH Wed 12:05PM,,Luinder Avila,06am5,"Avila, Luinder",KC,RP,P,FA,False,,18728,3f90bd6e-fb37-43fa-b2f9-9dac98348a38,
 2026-06-17,,,LAA,@ARI Wed 2:40PM,,Samuel Aldegheri,06aw2,"Aldegheri, Samuel",LAA,SP,P,FA,False,,19357,25da44aa-825b-4787-9abf-730be10a114d,
 2026-06-17,,,TOR,@BOS Wed 5:45PM,,Max Scherzer,004ee,"Scherzer, Max",TOR,SP,P,FA,False,8193,9278,2527770b-cf48-42b9-81fa-9323756fb311,
