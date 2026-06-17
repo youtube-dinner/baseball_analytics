@@ -43,7 +43,7 @@ if [[ -f "$ROOT/.env" ]]; then
   set +a
 fi
 
-PROBABLE_DATE_MODE="${PROBABLE_DATE_MODE:-${FANTRAX_PROBABLE_DATE:-tomorrow}}"
+PROBABLE_DATE_MODE="${PROBABLE_DATE_MODE:-${FANTRAX_PROBABLE_DATE:-auto}}"
 NETWORK_WAIT_HOSTS="${NETWORK_WAIT_HOSTS:-$NETWORK_WAIT_HOSTS_DEFAULT}"
 NETWORK_WAIT_ATTEMPTS="${NETWORK_WAIT_ATTEMPTS:-12}"
 NETWORK_WAIT_SLEEP_SECONDS="${NETWORK_WAIT_SLEEP_SECONDS:-10}"
@@ -61,7 +61,7 @@ else:
 }
 
 python_auto_probable_date() {
-  "$PYTHON" -c 'from datetime import datetime, timedelta, timezone
+  "$PYTHON" -c 'from datetime import datetime, timedelta
 from urllib.parse import urlencode
 from urllib.request import urlopen
 from zoneinfo import ZoneInfo
@@ -80,21 +80,17 @@ url = f"https://statsapi.mlb.com/api/v1/schedule?{params}"
 with urlopen(url, timeout=20) as response:
     schedule = json.load(response)
 
-game_started_or_scheduled_by_now = False
-now_utc = now_local.astimezone(timezone.utc)
+game_started = False
 for date_group in schedule.get("dates", []):
     for game in date_group.get("games", []):
-        game_date = game.get("gameDate")
-        if not game_date:
-            continue
-        game_time = datetime.fromisoformat(game_date.replace("Z", "+00:00"))
-        if game_time <= now_utc:
-            game_started_or_scheduled_by_now = True
+        status = game.get("status", {})
+        if status.get("abstractGameState") in {"Live", "Final"}:
+            game_started = True
             break
-    if game_started_or_scheduled_by_now:
+    if game_started:
         break
 
-print(tomorrow.isoformat() if game_started_or_scheduled_by_now else today.isoformat())'
+print(tomorrow.isoformat() if game_started else today.isoformat())'
 }
 
 case "$PROBABLE_DATE_MODE" in
