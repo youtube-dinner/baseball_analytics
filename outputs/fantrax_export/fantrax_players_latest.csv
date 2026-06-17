@@ -1392,7 +1392,7 @@ fantrax_id,name,mlb_team,primary_position,eligible_positions,league_status,stats
 06lt9,"Caro, Carlos",PIT,2B,"2B,UT,MI",FA,,,
 06oo3,"Caron, Josh",SEA,C,"C,UT",FA,,19644,
 066lb,"Carpenter, D.J.",STL,RP,P,FA,,,
-051em,"Carpenter, Kerry",DET,RF,"OF,UT",WW,,17918,6886b386-f632-4ce4-86f4-e4f3f12d7671
+051em,"Carpenter, Kerry",DET,RF,"OF,UT",FA,,17918,6886b386-f632-4ce4-86f4-e4f3f12d7671
 06qnz,"Carpenter, Michael",MIN,SP,P,FA,,19839,
 02bvl,"Carpenter, Ryan",(N/A),SP,P,FA,10987,12697,f33fc95b-a775-4887-984c-a98494fda8fb
 06s37,"Carpinteiro, Alan",SEA,SP,P,FA,,,
@@ -3299,7 +3299,7 @@ fantrax_id,name,mlb_team,primary_position,eligible_positions,league_status,stats
 03dpg,"Ginkel, Kevin",ARI,RP,P,FA,11626,16424,016e7b25-5855-447a-aa10-10372bcc1fa3
 04pkt,"Ginn, J.T.",ATH,SP,P,T,,15428,6e1ac09d-8ca9-4a73-957d-c55ba6c4da5f
 06h1q,"Ginn, Landon",(N/A),RP,P,FA,,,
-02i37,"Giolito, Lucas",SD,SP,P,WW,9640,12454,1a1311e0-465c-45de-9f94-78e52fc067c3
+02i37,"Giolito, Lucas",SD,SP,P,FA,9640,12454,1a1311e0-465c-45de-9f94-78e52fc067c3
 0514z,"Gipson-Long, Sawyer",DET,RP,P,FA,,18220,0a47ba20-bda0-4f94-a93a-6c07144f70ac
 06qid,"Girton, Brendan",NYM,SP,P,FA,,20920,
 03djp,"Gittens, Chris",(N/A),1B,"1B,UT,CI",FA,,14169,15320481-f34b-4f5b-b934-32204c4abe61
@@ -8082,7 +8082,7 @@ fantrax_id,name,mlb_team,primary_position,eligible_positions,league_status,stats
 075v9,"Schafer, Luke",LAA,SP,P,FA,,,
 06v64,"Schaffner, Jake",(N/A),SS,"UT,SS,MI",FA,,,
 06gj0,"Schanaman, Shay",ATL,RP,P,FA,,,
-05yj1,"Schanuel, Nolan",LAA,1B,"1B,UT,CI",WW,,18903,55915d43-9546-4325-adcc-e2c2bfc87257
+05yj1,"Schanuel, Nolan",LAA,1B,"1B,UT,CI",FA,,18903,55915d43-9546-4325-adcc-e2c2bfc87257
 07670,"Schaum, Bryce",MIL,SP,P,FA,,,
 06akt,"Scheffler, Dominic",CIN,RP,P,FA,,,
 05uom,"Scheffler, Matt",(N/A),C,"C,UT",FA,,16992,
@@ -8473,7 +8473,7 @@ fantrax_id,name,mlb_team,primary_position,eligible_positions,league_status,stats
 06rjo,"Sosa, Andres",(N/A),C,"C,UT",FA,,18409,
 06cwv,"Sosa, Andrews",(N/A),C,"C,UT",FA,,,
 06mv4,"Sosa, Anthony",(N/A),1B,"1B,UT,CI",FA,,,
-02zpf,"Sosa, Edmundo",PHI,2B,"OF,2B,UT,3B,CI,MI",FA,10594,14026,2c3dd982-03d9-42ed-9f7f-a40775a0ced8
+02zpf,"Sosa, Edmundo",PHI,2B,"OF,2B,UT,3B,SS,CI,MI",FA,10594,14026,2c3dd982-03d9-42ed-9f7f-a40775a0ced8
 06rlx,"Sosa, Gabriel",SEA,RP,P,FA,,,
 06rlw,"Sosa, Guillermo",(N/A),2B,"2B,UT,MI",FA,,,
 051eq,"Sosa, Gustavo",(N/A),C,"C,UT",FA,,,
