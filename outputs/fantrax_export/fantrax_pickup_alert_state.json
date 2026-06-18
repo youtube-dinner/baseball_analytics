@@ -59,6 +59,7 @@
         "overage_alerted": 0
       },
       "aqfyadu2mj90wrl7": {
+        "one_remaining": true,
         "overage_alerted": 0
       },
       "bw696uo5mj90wrl7": {
@@ -71,6 +72,7 @@
         "overage_alerted": 0
       },
       "jk36oo1hmj90wrl7": {
+        "one_remaining": true,
         "overage_alerted": 0
       },
       "k7c57nf4mj90wrl8": {
@@ -197,6 +199,16 @@
       "team_name": "Third Degree Burnes",
       "violation_alert_sent": false,
       "window_start": "2026-06-15"
+    },
+    "jk36oo1hmj90wrl7:0518g": {
+      "demotion_alert_sent": true,
+      "eligible_date": "2026-07-10",
+      "fantrax_id": "0518g",
+      "player_name": "Trevor McDonald",
+      "team_id": "jk36oo1hmj90wrl7",
+      "team_name": "Daddy Yankee",
+      "violation_alert_sent": false,
+      "window_start": "2026-06-18"
     },
     "jk36oo1hmj90wrl7:06dlz": {
       "demotion_alert_sent": true,
@@ -2001,7 +2013,7 @@
       "fantrax_id": "04aeb",
       "player_name": "Royce Lewis",
       "primary_position": "3B",
-      "roster_position": "CI",
+      "roster_position": "UT",
       "roster_status": "MINORS",
       "team_id": "f3myl5ugmj90wrl7",
       "team_name": "The Hot and Steamy Boys"
@@ -2226,7 +2238,7 @@
       "fantrax_id": "05xu1",
       "player_name": "Alex Freeland",
       "primary_position": "SS",
-      "roster_position": "CI",
+      "roster_position": "UT",
       "roster_status": "MINORS",
       "team_id": "f3myl5ugmj90wrl7",
       "team_name": "The Hot and Steamy Boys"
@@ -3164,6 +3176,15 @@
       "primary_position": "SP",
       "roster_position": "P",
       "roster_status": "ACTIVE",
+      "team_id": "jk36oo1hmj90wrl7",
+      "team_name": "Daddy Yankee"
+    },
+    "jk36oo1hmj90wrl7:0518g": {
+      "fantrax_id": "0518g",
+      "player_name": "Trevor McDonald",
+      "primary_position": "SP",
+      "roster_position": "P",
+      "roster_status": "MINORS",
       "team_id": "jk36oo1hmj90wrl7",
       "team_name": "Daddy Yankee"
     },
@@ -5035,6 +5056,15 @@
       "player_name": "Jose Altuve",
       "primary_position": "2B",
       "roster_position": "OF",
+      "roster_status": "ACTIVE",
+      "team_id": "qatqhh61mj90wrl7",
+      "team_name": "Je suis Charlie Morton"
+    },
+    "qatqhh61mj90wrl7:026qc": {
+      "fantrax_id": "026qc",
+      "player_name": "Joc Pederson",
+      "primary_position": "DH",
+      "roster_position": "UT",
       "roster_status": "ACTIVE",
       "team_id": "qatqhh61mj90wrl7",
       "team_name": "Je suis Charlie Morton"
