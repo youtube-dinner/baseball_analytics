@@ -1,4 +1,5 @@
 probable_date,game_time_utc,home_away,probable_team,opponent,mlb_player_id,probable_name,fantrax_id,name,mlb_team,primary_position,eligible_positions,league_status,is_rostered,stats_inc_id,rotowire_id,sport_radar_id,game_pk
-2026-06-18,,,CHW,@NYY Thu 6:05PM,,Sean Burke,05xod,"Burke, Sean",CHW,SP,P,FA,False,,17364,1111489e-7f14-47bb-98da-a0c736568892,
-2026-06-18,,,PHI,NYM Thu 5:40PM,,Aaron Nola,02i3o,"Nola, Aaron",PHI,SP,P,FA,False,9882,13359,ded1b30d-52ca-4eec-bce6-251b15b085ac,
-2026-06-18,,,NYM,@PHI Thu 5:40PM,,Sean Manaea,02x0f,"Manaea, Sean",NYM,SP,P,FA,False,9582,12948,f578d526-6d2e-4590-9665-ed42c72c883f,
+2026-06-19,,,ATH,LAA Fri 8:40PM,,Jeffrey Springs,04mlr,"Springs, Jeffrey",ATH,SP,P,FA,False,11121,15663,76375b42-68b1-42a1-94e6-81f152197c81,
+2026-06-19,,,ATL,MIL Fri 6:15PM,,Martin Perez,01fhm,"Perez, Martin",ATL,SP,P,T,True,8652,10867,9012e198-9f53-4885-8b24-402e51524e82,
+2026-06-19,,,CHW,@DET Fri 5:40PM,,Erick Fedde,03d6n,"Fedde, Erick",CHW,SP,P,FA,False,10229,13346,b484880b-790e-45a7-a751-2a03c01ec7ea,
+2026-06-19,,,MIA,SF Fri 6:10PM,,Lake Bachar,041s4,"Bachar, Lake",MIA,RP,P,FA,False,,14313,db566bcf-7a7f-4e17-ab85-d22d185f0e46,
