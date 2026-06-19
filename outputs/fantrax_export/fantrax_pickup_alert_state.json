@@ -2018,7 +2018,7 @@
       "player_name": "Royce Lewis",
       "primary_position": "3B",
       "roster_position": "UT",
-      "roster_status": "MINORS",
+      "roster_status": "ACTIVE",
       "team_id": "f3myl5ugmj90wrl7",
       "team_name": "The Hot and Steamy Boys"
     },
@@ -2234,7 +2234,7 @@
       "player_name": "Alex Freeland",
       "primary_position": "SS",
       "roster_position": "UT",
-      "roster_status": "MINORS",
+      "roster_status": "ACTIVE",
       "team_id": "f3myl5ugmj90wrl7",
       "team_name": "The Hot and Steamy Boys"
     },
@@ -3106,8 +3106,8 @@
       "fantrax_id": "045qo",
       "player_name": "Jazz Chisholm Jr.",
       "primary_position": "2B",
-      "roster_position": "UT",
-      "roster_status": "RESERVE",
+      "roster_position": "2B",
+      "roster_status": "ACTIVE",
       "team_id": "jk36oo1hmj90wrl7",
       "team_name": "Daddy Yankee"
     },
@@ -3314,7 +3314,7 @@
       "player_name": "Jackson Holliday",
       "primary_position": "2B",
       "roster_position": "2B",
-      "roster_status": "ACTIVE",
+      "roster_status": "RESERVE",
       "team_id": "jk36oo1hmj90wrl7",
       "team_name": "Daddy Yankee"
     },
