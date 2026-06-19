@@ -10,7 +10,8 @@
     "2026-06-15": true,
     "2026-06-16": true,
     "2026-06-17": true,
-    "2026-06-18": true
+    "2026-06-18": true,
+    "2026-06-19": true
   },
   "major_add_alerts": {
     "2026-06-08": {
@@ -56,6 +57,7 @@
     },
     "2026-06-15": {
       "6tnz8jgemj90wrl7": {
+        "one_remaining": true,
         "overage_alerted": 0
       },
       "aqfyadu2mj90wrl7": {
@@ -434,20 +436,20 @@
       "team_id": "6tnz8jgemj90wrl7",
       "team_name": "Bobby and the NitWitts"
     },
-    "6tnz8jgemj90wrl7:04eud": {
-      "fantrax_id": "04eud",
-      "player_name": "Shane Drohan",
-      "primary_position": "SP",
-      "roster_position": "P",
-      "roster_status": "ACTIVE",
-      "team_id": "6tnz8jgemj90wrl7",
-      "team_name": "Bobby and the NitWitts"
-    },
     "6tnz8jgemj90wrl7:04lgp": {
       "fantrax_id": "04lgp",
       "player_name": "Bobby Witt Jr.",
       "primary_position": "SS",
       "roster_position": "SS",
+      "roster_status": "ACTIVE",
+      "team_id": "6tnz8jgemj90wrl7",
+      "team_name": "Bobby and the NitWitts"
+    },
+    "6tnz8jgemj90wrl7:04mlr": {
+      "fantrax_id": "04mlr",
+      "player_name": "Jeffrey Springs",
+      "primary_position": "SP",
+      "roster_position": "P",
       "roster_status": "ACTIVE",
       "team_id": "6tnz8jgemj90wrl7",
       "team_name": "Bobby and the NitWitts"
@@ -875,6 +877,15 @@
       "team_id": "aqfyadu2mj90wrl7",
       "team_name": "Ben the Hen"
     },
+    "aqfyadu2mj90wrl7:0317q": {
+      "fantrax_id": "0317q",
+      "player_name": "Griffin Jax",
+      "primary_position": "RP",
+      "roster_position": "P",
+      "roster_status": "ACTIVE",
+      "team_id": "aqfyadu2mj90wrl7",
+      "team_name": "Ben the Hen"
+    },
     "aqfyadu2mj90wrl7:03dfa": {
       "fantrax_id": "03dfa",
       "player_name": "Tanner Scott",
@@ -979,15 +990,6 @@
       "player_name": "Ivan Herrera",
       "primary_position": "DH",
       "roster_position": "C",
-      "roster_status": "ACTIVE",
-      "team_id": "aqfyadu2mj90wrl7",
-      "team_name": "Ben the Hen"
-    },
-    "aqfyadu2mj90wrl7:04mnw": {
-      "fantrax_id": "04mnw",
-      "player_name": "Ryan Weathers",
-      "primary_position": "SP",
-      "roster_position": "P",
       "roster_status": "ACTIVE",
       "team_id": "aqfyadu2mj90wrl7",
       "team_name": "Ben the Hen"
@@ -1915,7 +1917,7 @@
       "player_name": "Mike Trout",
       "primary_position": "DH",
       "roster_position": "OF",
-      "roster_status": "ACTIVE",
+      "roster_status": "INJURED_RESERVE",
       "team_id": "f3myl5ugmj90wrl7",
       "team_name": "The Hot and Steamy Boys"
     },
@@ -2081,15 +2083,6 @@
       "team_id": "f3myl5ugmj90wrl7",
       "team_name": "The Hot and Steamy Boys"
     },
-    "f3myl5ugmj90wrl7:04mlx": {
-      "fantrax_id": "04mlx",
-      "player_name": "Matthew Liberatore",
-      "primary_position": "SP",
-      "roster_position": "P",
-      "roster_status": "ACTIVE",
-      "team_id": "f3myl5ugmj90wrl7",
-      "team_name": "The Hot and Steamy Boys"
-    },
     "f3myl5ugmj90wrl7:04mn5": {
       "fantrax_id": "04mn5",
       "player_name": "Alec Bohm",
@@ -2131,15 +2124,6 @@
       "player_name": "Kyle Bradish",
       "primary_position": "SP",
       "roster_position": "P",
-      "roster_status": "ACTIVE",
-      "team_id": "f3myl5ugmj90wrl7",
-      "team_name": "The Hot and Steamy Boys"
-    },
-    "f3myl5ugmj90wrl7:04pr1": {
-      "fantrax_id": "04pr1",
-      "player_name": "Steven Kwan",
-      "primary_position": "LF",
-      "roster_position": "UT",
       "roster_status": "ACTIVE",
       "team_id": "f3myl5ugmj90wrl7",
       "team_name": "The Hot and Steamy Boys"
@@ -2198,6 +2182,15 @@
       "team_id": "f3myl5ugmj90wrl7",
       "team_name": "The Hot and Steamy Boys"
     },
+    "f3myl5ugmj90wrl7:05sr2": {
+      "fantrax_id": "05sr2",
+      "player_name": "Michael McGreevy",
+      "primary_position": "SP",
+      "roster_position": "P",
+      "roster_status": "ACTIVE",
+      "team_id": "f3myl5ugmj90wrl7",
+      "team_name": "The Hot and Steamy Boys"
+    },
     "f3myl5ugmj90wrl7:05tzn": {
       "fantrax_id": "05tzn",
       "player_name": "Parker Messick",
@@ -2230,7 +2223,7 @@
       "player_name": "Chase DeLauter",
       "primary_position": "CF",
       "roster_position": "OF",
-      "roster_status": "MINORS",
+      "roster_status": "INJURED_RESERVE",
       "team_id": "f3myl5ugmj90wrl7",
       "team_name": "The Hot and Steamy Boys"
     },
@@ -3323,15 +3316,6 @@
       "team_id": "jk36oo1hmj90wrl7",
       "team_name": "Daddy Yankee"
     },
-    "jk36oo1hmj90wrl7:05ycf": {
-      "fantrax_id": "05ycf",
-      "player_name": "Noah Cameron",
-      "primary_position": "SP",
-      "roster_position": "P",
-      "roster_status": "ACTIVE",
-      "team_id": "jk36oo1hmj90wrl7",
-      "team_name": "Daddy Yankee"
-    },
     "jk36oo1hmj90wrl7:060jo": {
       "fantrax_id": "060jo",
       "player_name": "Cam Smith",
@@ -3347,6 +3331,15 @@
       "primary_position": "CF",
       "roster_position": "OF",
       "roster_status": "MINORS",
+      "team_id": "jk36oo1hmj90wrl7",
+      "team_name": "Daddy Yankee"
+    },
+    "jk36oo1hmj90wrl7:061bo": {
+      "fantrax_id": "061bo",
+      "player_name": "Rhett Lowder",
+      "primary_position": "SP",
+      "roster_position": "P",
+      "roster_status": "ACTIVE",
       "team_id": "jk36oo1hmj90wrl7",
       "team_name": "Daddy Yankee"
     },
@@ -3512,15 +3505,6 @@
       "team_id": "k7c57nf4mj90wrl8",
       "team_name": "Hand Foot Mouth Disease Guys"
     },
-    "k7c57nf4mj90wrl8:01fhm": {
-      "fantrax_id": "01fhm",
-      "player_name": "Martin Perez",
-      "primary_position": "SP",
-      "roster_position": "P",
-      "roster_status": "ACTIVE",
-      "team_id": "k7c57nf4mj90wrl8",
-      "team_name": "Hand Foot Mouth Disease Guys"
-    },
     "k7c57nf4mj90wrl8:025j1": {
       "fantrax_id": "025j1",
       "player_name": "Robbie Ray",
@@ -3607,6 +3591,15 @@
       "player_name": "Kyle Tucker",
       "primary_position": "RF",
       "roster_position": "OF",
+      "roster_status": "ACTIVE",
+      "team_id": "k7c57nf4mj90wrl8",
+      "team_name": "Hand Foot Mouth Disease Guys"
+    },
+    "k7c57nf4mj90wrl8:03sef": {
+      "fantrax_id": "03sef",
+      "player_name": "Seth Lugo",
+      "primary_position": "SP",
+      "roster_position": "P",
       "roster_status": "ACTIVE",
       "team_id": "k7c57nf4mj90wrl8",
       "team_name": "Hand Foot Mouth Disease Guys"
