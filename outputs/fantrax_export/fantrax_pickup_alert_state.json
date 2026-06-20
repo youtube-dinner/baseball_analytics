@@ -11,7 +11,8 @@
     "2026-06-16": true,
     "2026-06-17": true,
     "2026-06-18": true,
-    "2026-06-19": true
+    "2026-06-19": true,
+    "2026-06-20": true
   },
   "major_add_alerts": {
     "2026-06-08": {
@@ -57,6 +58,7 @@
     },
     "2026-06-15": {
       "6tnz8jgemj90wrl7": {
+        "none_remaining": true,
         "one_remaining": true,
         "overage_alerted": 0
       },
@@ -313,6 +315,15 @@
       "team_id": "6tnz8jgemj90wrl7",
       "team_name": "Bobby and the NitWitts"
     },
+    "6tnz8jgemj90wrl7:01xfr": {
+      "fantrax_id": "01xfr",
+      "player_name": "Patrick Corbin",
+      "primary_position": "SP",
+      "roster_position": "P",
+      "roster_status": "ACTIVE",
+      "team_id": "6tnz8jgemj90wrl7",
+      "team_name": "Bobby and the NitWitts"
+    },
     "6tnz8jgemj90wrl7:025it": {
       "fantrax_id": "025it",
       "player_name": "Jason Adam",
@@ -453,15 +464,6 @@
       "player_name": "Bobby Witt Jr.",
       "primary_position": "SS",
       "roster_position": "SS",
-      "roster_status": "ACTIVE",
-      "team_id": "6tnz8jgemj90wrl7",
-      "team_name": "Bobby and the NitWitts"
-    },
-    "6tnz8jgemj90wrl7:04mlr": {
-      "fantrax_id": "04mlr",
-      "player_name": "Jeffrey Springs",
-      "primary_position": "SP",
-      "roster_position": "P",
       "roster_status": "ACTIVE",
       "team_id": "6tnz8jgemj90wrl7",
       "team_name": "Bobby and the NitWitts"
