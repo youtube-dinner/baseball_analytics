@@ -84,7 +84,8 @@
       "aqfyadu2mj90wrl7": {
         "none_remaining": true,
         "one_remaining": true,
-        "overage_alerted": 0
+        "over_limit_adds_alerted_through": 9,
+        "overage_alerted": 2
       },
       "bw696uo5mj90wrl7": {
         "overage_alerted": 0
