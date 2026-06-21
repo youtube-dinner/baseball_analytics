@@ -15,6 +15,23 @@
     "2026-06-20": true,
     "2026-06-21": true
   },
+  "ir_exception_adds": {
+    "2026-06-15": {
+      "hd9hwe4mmj90wrl7": {
+        "players": {
+          "04q2n": {
+            "current_status": "INJURED_RESERVE",
+            "fantrax_id": "04q2n",
+            "player_name": "Adley Rutschman",
+            "previous_status": "ACTIVE",
+            "recorded_at": "2026-06-21T17:05:34.390240-05:00",
+            "team_id": "hd9hwe4mmj90wrl7",
+            "team_name": "Third Degree Burnes"
+          }
+        }
+      }
+    }
+  },
   "major_add_alerts": {
     "2026-06-08": {
       "6tnz8jgemj90wrl7": {
@@ -61,9 +78,11 @@
       "6tnz8jgemj90wrl7": {
         "none_remaining": true,
         "one_remaining": true,
-        "overage_alerted": 0
+        "over_limit_adds_alerted_through": 9,
+        "overage_alerted": 2
       },
       "aqfyadu2mj90wrl7": {
+        "none_remaining": true,
         "one_remaining": true,
         "overage_alerted": 0
       },
@@ -481,15 +500,6 @@
       "team_id": "6tnz8jgemj90wrl7",
       "team_name": "Bobby and the NitWitts"
     },
-    "6tnz8jgemj90wrl7:04mn2": {
-      "fantrax_id": "04mn2",
-      "player_name": "Griffin Conine",
-      "primary_position": "LF",
-      "roster_position": "OF",
-      "roster_status": "INJURED_RESERVE",
-      "team_id": "6tnz8jgemj90wrl7",
-      "team_name": "Bobby and the NitWitts"
-    },
     "6tnz8jgemj90wrl7:04y97": {
       "fantrax_id": "04y97",
       "player_name": "Kyle Stowers",
@@ -886,6 +896,15 @@
       "team_id": "aqfyadu2mj90wrl7",
       "team_name": "Ben the Hen"
     },
+    "aqfyadu2mj90wrl7:02iug": {
+      "fantrax_id": "02iug",
+      "player_name": "Michael Wacha",
+      "primary_position": "SP",
+      "roster_position": "P",
+      "roster_status": "ACTIVE",
+      "team_id": "aqfyadu2mj90wrl7",
+      "team_name": "Ben the Hen"
+    },
     "aqfyadu2mj90wrl7:02mzg": {
       "fantrax_id": "02mzg",
       "player_name": "Max Muncy",
@@ -898,15 +917,6 @@
     "aqfyadu2mj90wrl7:02n96": {
       "fantrax_id": "02n96",
       "player_name": "Josh Hader",
-      "primary_position": "RP",
-      "roster_position": "P",
-      "roster_status": "ACTIVE",
-      "team_id": "aqfyadu2mj90wrl7",
-      "team_name": "Ben the Hen"
-    },
-    "aqfyadu2mj90wrl7:0317q": {
-      "fantrax_id": "0317q",
-      "player_name": "Griffin Jax",
       "primary_position": "RP",
       "roster_position": "P",
       "roster_status": "ACTIVE",
@@ -2546,7 +2556,7 @@
       "fantrax_id": "04my4",
       "player_name": "Cal Raleigh",
       "primary_position": "C",
-      "roster_position": "UT",
+      "roster_position": "C",
       "roster_status": "ACTIVE",
       "team_id": "hd9hwe4mmj90wrl7",
       "team_name": "Third Degree Burnes"
@@ -2592,7 +2602,7 @@
       "player_name": "Adley Rutschman",
       "primary_position": "C",
       "roster_position": "C",
-      "roster_status": "ACTIVE",
+      "roster_status": "INJURED_RESERVE",
       "team_id": "hd9hwe4mmj90wrl7",
       "team_name": "Third Degree Burnes"
     },
@@ -3320,7 +3330,7 @@
       "fantrax_id": "05ybv",
       "player_name": "Jackson Holliday",
       "primary_position": "2B",
-      "roster_position": "2B",
+      "roster_position": "UT",
       "roster_status": "RESERVE",
       "team_id": "jk36oo1hmj90wrl7",
       "team_name": "Daddy Yankee"
