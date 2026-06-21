@@ -15,7 +15,7 @@ from zoneinfo import ZoneInfo
 LEAGUE_ID = os.environ.get("FANTRAX_LEAGUE_ID") or "qqll39pvmj90wrl1"
 FANTRAX_OLD_UI_TOKEN = os.environ.get("FANTRAX_OLD_UI_TOKEN", "")
 FANTRAX_REQ_URL = "https://www.fantrax.com/fxpa/req"
-MLB_SCHEDULE_URL = "https://statsapi.mlb.com/api/v1/schedule"
+FANTRAX_GENERAL_URL = "https://www.fantrax.com/fxea/general"
 OUT_DIR = Path(__file__).resolve().parent / "fantrax_export"
 FANTRAX_AUTH_COOKIE_FILE = Path(os.environ.get(
     "FANTRAX_AUTH_COOKIE_FILE",
@@ -64,77 +64,42 @@ def fetch_fantrax_req(method, data):
         return json.loads(response.read().decode("utf-8"))
 
 
-def fetch_mlb_sunday_cutoffs(start, end):
-    sunday_dates = {
-        start.date() - timedelta(days=1),
-        end.date() - timedelta(days=1),
-    }
-    params = urlencode({
-        "sportId": 1,
-        "startDate": min(sunday_dates).isoformat(),
-        "endDate": max(sunday_dates).isoformat(),
-    })
+def fetch_league_scoring_start():
+    params = urlencode({"leagueId": LEAGUE_ID})
     req = Request(
-        f"{MLB_SCHEDULE_URL}?{params}",
-        headers={"User-Agent": "FantraxPickupAudit/1.0", "Accept": "application/json"},
+        f"{FANTRAX_GENERAL_URL}/getLeagueInfo?{params}",
+        headers={"User-Agent": "Mozilla/5.0", "Accept": "application/json"},
     )
     try:
         with urlopen(req, timeout=30) as response:
-            schedule = json.loads(response.read().decode("utf-8"))
+            league_info = json.loads(response.read().decode("utf-8"))
     except Exception as exc:
-        raise RuntimeError(f"Could not verify Sunday MLB game-start cutoff: {exc}") from exc
-
-    cutoffs = {}
-    for date_group in schedule.get("dates", []) or []:
-        try:
-            schedule_date = datetime.fromisoformat(date_group.get("date", "")).date()
-        except ValueError:
-            continue
-        if schedule_date not in sunday_dates:
-            continue
-        starts = []
-        for game in date_group.get("games", []) or []:
-            detailed_state = str((game.get("status") or {}).get("detailedState") or "").lower()
-            if detailed_state in {"postponed", "cancelled", "canceled"}:
-                continue
-            game_date = game.get("gameDate")
-            if not game_date:
-                continue
-            try:
-                starts.append(datetime.fromisoformat(game_date.replace("Z", "+00:00")))
-            except ValueError:
-                continue
-        if starts:
-            cutoffs[schedule_date] = min(starts)
-    return cutoffs
+        raise RuntimeError(f"Could not fetch Fantrax league scoring periods: {exc}") from exc
+    start_date = league_info.get("startDate")
+    try:
+        return datetime.fromisoformat(start_date).date()
+    except (TypeError, ValueError) as exc:
+        raise RuntimeError(f"Fantrax league start date is invalid: {start_date!r}") from exc
 
 
-def effective_week_start(transaction_date, sunday_cutoffs):
-    eastern_date = transaction_date.astimezone(EASTERN)
-    monday = eastern_date.date() - timedelta(days=eastern_date.weekday())
-    shifted = False
-    cutoff = None
-    if eastern_date.weekday() == 6:
-        cutoff = sunday_cutoffs.get(eastern_date.date())
-        if cutoff and transaction_date >= cutoff:
-            monday += timedelta(days=7)
-            shifted = True
-    return datetime.combine(monday, time(0), EASTERN), cutoff, shifted
+def effective_scoring_date(transaction_period, league_start_date):
+    if transaction_period <= 0:
+        return None
+    return league_start_date + timedelta(days=transaction_period - 1)
 
 
-def assign_effective_weeks(rows, sunday_cutoffs):
+def assign_effective_weeks(rows, league_start_date):
     for row in rows:
-        transaction_date = row.get("transaction_date")
-        if not transaction_date:
+        transaction_period = row.get("transaction_period", 0)
+        scoring_date = effective_scoring_date(transaction_period, league_start_date)
+        if not scoring_date:
+            row["effective_scoring_date"] = ""
             row["effective_week_start"] = ""
-            row["sunday_game_start_cutoff"] = ""
-            row["shifted_to_next_week"] = False
             continue
-        date = datetime.fromisoformat(transaction_date)
-        week_start, cutoff, shifted = effective_week_start(date, sunday_cutoffs)
+        week_start_date = scoring_date - timedelta(days=scoring_date.weekday())
+        week_start = datetime.combine(week_start_date, time(0), EASTERN)
+        row["effective_scoring_date"] = scoring_date.isoformat()
         row["effective_week_start"] = week_start.isoformat()
-        row["sunday_game_start_cutoff"] = cutoff.isoformat() if cutoff else ""
-        row["shifted_to_next_week"] = shifted
     return rows
 
 
@@ -296,6 +261,7 @@ def normalize_rows(rows, roster_statuses, players, teams):
         tx_set_id = row.get("txSetId") or row.get("id") or ""
         team_cell = cell_by_key(row, "team")
         date_cell = cell_by_key(row, "date")
+        period_cell = cell_by_key(row, "week")
         team_id = row.get("teamId") or team_cell.get("teamId") or team_cell.get("id") or ""
         team_name = row.get("teamName") or team_cell.get("content") or teams.get(team_id, "")
         date_text = row.get("date") or row.get("transactionDate") or date_cell.get("content") or ""
@@ -322,6 +288,7 @@ def normalize_rows(rows, roster_statuses, players, teams):
             "tx_set_id": tx_set_id,
             "transaction_date": date.isoformat() if date else "",
             "transaction_date_raw": date_text,
+            "transaction_period": int(str(period_cell.get("content") or "0")),
             "team_id": team_id,
             "team_name": team_name,
             "fantrax_id": fantrax_id,
@@ -459,10 +426,10 @@ def main():
     teams = load_teams(args.out_dir / "fantrax_teams_latest.csv")
     normalized = normalize_rows(rows, roster_statuses, players, teams)
     try:
-        sunday_cutoffs = fetch_mlb_sunday_cutoffs(start, end)
+        league_start_date = fetch_league_scoring_start()
     except Exception as exc:
         raise SystemExit(f"Fantrax transaction audit failed: {exc}") from exc
-    assign_effective_weeks(normalized, sunday_cutoffs)
+    assign_effective_weeks(normalized, league_start_date)
     in_window = [
         row for row in normalized
         if row["effective_week_start"] == start.isoformat()
@@ -492,9 +459,9 @@ def main():
         "minor_exempt_confidence",
         "team_id",
         "transaction_date_raw",
+        "transaction_period",
+        "effective_scoring_date",
         "effective_week_start",
-        "sunday_game_start_cutoff",
-        "shifted_to_next_week",
     ]
     summary_fields = [
         "team_name",
@@ -518,13 +485,8 @@ def main():
     metadata = {
         "period_timezone": "America/New_York",
         "fantrax_display_timezone": str(FANTRAX_DISPLAY_TIMEZONE),
-        "sunday_rollover_policy": "Sunday adds at or after the first non-postponed MLB game start count toward the following week.",
-        "previous_sunday_game_start_cutoff": sunday_cutoffs.get(start.date() - timedelta(days=1)).isoformat()
-        if sunday_cutoffs.get(start.date() - timedelta(days=1))
-        else "",
-        "current_sunday_game_start_cutoff": sunday_cutoffs.get(end.date() - timedelta(days=1)).isoformat()
-        if sunday_cutoffs.get(end.date() - timedelta(days=1))
-        else "",
+        "fantrax_league_scoring_start": league_start_date.isoformat(),
+        "transaction_period_policy": "Fantrax transaction Period determines the effective scoring date and weekly add bucket.",
         "period_start": start.isoformat(),
         "period_end_exclusive": end.isoformat(),
         "period_label": f"{start.strftime('%Y-%m-%d')} to {(end - timedelta(days=1)).strftime('%Y-%m-%d')} ET",
