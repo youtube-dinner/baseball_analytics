@@ -15,6 +15,7 @@ from zoneinfo import ZoneInfo
 LEAGUE_ID = os.environ.get("FANTRAX_LEAGUE_ID") or "qqll39pvmj90wrl1"
 FANTRAX_OLD_UI_TOKEN = os.environ.get("FANTRAX_OLD_UI_TOKEN", "")
 FANTRAX_REQ_URL = "https://www.fantrax.com/fxpa/req"
+MLB_SCHEDULE_URL = "https://statsapi.mlb.com/api/v1/schedule"
 OUT_DIR = Path(__file__).resolve().parent / "fantrax_export"
 FANTRAX_AUTH_COOKIE_FILE = Path(os.environ.get(
     "FANTRAX_AUTH_COOKIE_FILE",
@@ -61,6 +62,80 @@ def fetch_fantrax_req(method, data):
     req = Request(url, data=json.dumps(payload).encode("utf-8"), headers=headers, method="POST")
     with urlopen(req, timeout=60) as response:
         return json.loads(response.read().decode("utf-8"))
+
+
+def fetch_mlb_sunday_cutoffs(start, end):
+    sunday_dates = {
+        start.date() - timedelta(days=1),
+        end.date() - timedelta(days=1),
+    }
+    params = urlencode({
+        "sportId": 1,
+        "startDate": min(sunday_dates).isoformat(),
+        "endDate": max(sunday_dates).isoformat(),
+    })
+    req = Request(
+        f"{MLB_SCHEDULE_URL}?{params}",
+        headers={"User-Agent": "FantraxPickupAudit/1.0", "Accept": "application/json"},
+    )
+    try:
+        with urlopen(req, timeout=30) as response:
+            schedule = json.loads(response.read().decode("utf-8"))
+    except Exception as exc:
+        raise RuntimeError(f"Could not verify Sunday MLB game-start cutoff: {exc}") from exc
+
+    cutoffs = {}
+    for date_group in schedule.get("dates", []) or []:
+        try:
+            schedule_date = datetime.fromisoformat(date_group.get("date", "")).date()
+        except ValueError:
+            continue
+        if schedule_date not in sunday_dates:
+            continue
+        starts = []
+        for game in date_group.get("games", []) or []:
+            detailed_state = str((game.get("status") or {}).get("detailedState") or "").lower()
+            if detailed_state in {"postponed", "cancelled", "canceled"}:
+                continue
+            game_date = game.get("gameDate")
+            if not game_date:
+                continue
+            try:
+                starts.append(datetime.fromisoformat(game_date.replace("Z", "+00:00")))
+            except ValueError:
+                continue
+        if starts:
+            cutoffs[schedule_date] = min(starts)
+    return cutoffs
+
+
+def effective_week_start(transaction_date, sunday_cutoffs):
+    eastern_date = transaction_date.astimezone(EASTERN)
+    monday = eastern_date.date() - timedelta(days=eastern_date.weekday())
+    shifted = False
+    cutoff = None
+    if eastern_date.weekday() == 6:
+        cutoff = sunday_cutoffs.get(eastern_date.date())
+        if cutoff and transaction_date >= cutoff:
+            monday += timedelta(days=7)
+            shifted = True
+    return datetime.combine(monday, time(0), EASTERN), cutoff, shifted
+
+
+def assign_effective_weeks(rows, sunday_cutoffs):
+    for row in rows:
+        transaction_date = row.get("transaction_date")
+        if not transaction_date:
+            row["effective_week_start"] = ""
+            row["sunday_game_start_cutoff"] = ""
+            row["shifted_to_next_week"] = False
+            continue
+        date = datetime.fromisoformat(transaction_date)
+        week_start, cutoff, shifted = effective_week_start(date, sunday_cutoffs)
+        row["effective_week_start"] = week_start.isoformat()
+        row["sunday_game_start_cutoff"] = cutoff.isoformat() if cutoff else ""
+        row["shifted_to_next_week"] = shifted
+    return rows
 
 
 def response_data(raw):
@@ -383,10 +458,14 @@ def main():
     players = load_players(args.out_dir / "fantrax_players_latest.csv")
     teams = load_teams(args.out_dir / "fantrax_teams_latest.csv")
     normalized = normalize_rows(rows, roster_statuses, players, teams)
+    try:
+        sunday_cutoffs = fetch_mlb_sunday_cutoffs(start, end)
+    except Exception as exc:
+        raise SystemExit(f"Fantrax transaction audit failed: {exc}") from exc
+    assign_effective_weeks(normalized, sunday_cutoffs)
     in_window = [
         row for row in normalized
-        if row["transaction_date"]
-        and start <= datetime.fromisoformat(row["transaction_date"]) < end
+        if row["effective_week_start"] == start.isoformat()
     ]
     add_details = [row for row in in_window if row["is_add"]]
     summaries = summarize_adds(in_window, args.pickup_limit, teams)
@@ -413,6 +492,9 @@ def main():
         "minor_exempt_confidence",
         "team_id",
         "transaction_date_raw",
+        "effective_week_start",
+        "sunday_game_start_cutoff",
+        "shifted_to_next_week",
     ]
     summary_fields = [
         "team_name",
@@ -436,6 +518,13 @@ def main():
     metadata = {
         "period_timezone": "America/New_York",
         "fantrax_display_timezone": str(FANTRAX_DISPLAY_TIMEZONE),
+        "sunday_rollover_policy": "Sunday adds at or after the first non-postponed MLB game start count toward the following week.",
+        "previous_sunday_game_start_cutoff": sunday_cutoffs.get(start.date() - timedelta(days=1)).isoformat()
+        if sunday_cutoffs.get(start.date() - timedelta(days=1))
+        else "",
+        "current_sunday_game_start_cutoff": sunday_cutoffs.get(end.date() - timedelta(days=1)).isoformat()
+        if sunday_cutoffs.get(end.date() - timedelta(days=1))
+        else "",
         "period_start": start.isoformat(),
         "period_end_exclusive": end.isoformat(),
         "period_label": f"{start.strftime('%Y-%m-%d')} to {(end - timedelta(days=1)).strftime('%Y-%m-%d')} ET",
