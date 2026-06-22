@@ -218,7 +218,7 @@ fantrax_id,name,mlb_team,primary_position,eligible_positions,league_status,stats
 06mi8,"Alvarado, Christopher",BOS,3B,"UT,3B,CI",FA,,,
 040q1,"Alvarado, Cristian",SF,SP,P,FA,,14493,c6981452-a19c-4506-a71f-a4c095238f5f
 0749x,"Alvarado, Cristian",SEA,SP,P,FA,,,
-041g5,"Alvarado, Elvis",ATH,RP,P,WW,,13995,221b2527-fb5b-4b78-9afa-d6a7ae92cf1e
+041g5,"Alvarado, Elvis",ATH,RP,P,FA,,13995,221b2527-fb5b-4b78-9afa-d6a7ae92cf1e
 03btm,"Alvarado, Jose",PHI,RP,P,FA,10692,14610,163d5f8f-78a7-456d-9809-74606c475a7f
 06qxe,"Alvarado, Jose",TEX,SP,P,FA,,,
 075ex,"Alvarado, Wilfred",ATH,RP,P,FA,,,
@@ -870,7 +870,7 @@ fantrax_id,name,mlb_team,primary_position,eligible_positions,league_status,stats
 06umf,"Blanco, Wilmer",PHI,SP,P,FA,,,
 075gb,"Blandford, Bobby",ATH,CF,"OF,UT",FA,,,
 03d6u,"Blandino, Alex",(N/A),1B,"1B,UT,CI",FA,10174,13387,dc8508a2-5a14-4473-bd8b-4d23a3e84c33
-06r1g,"Blasco, Alejandro",CLE,LF,"OF,UT",FA,,20987,
+06r1g,"Blasco, Alejandro",CLE,LF,"OF,UT",FA,,,
 06ood,"Blasick, Nathan",COL,RP,P,FA,,,
 04y95,"Bleday, JJ",CIN,CF,"OF,UT",T,11782,16043,1c21515f-9514-4389-8a34-8518a177597d
 05m1c,"Bleis, Miguel",BOS,RF,"OF,UT",FA,,16759,
@@ -1842,7 +1842,7 @@ fantrax_id,name,mlb_team,primary_position,eligible_positions,league_status,stats
 05tdf,"Coppola, Pierce",CHC,SP,P,FA,,17405,
 0517j,"Corbett, Joe",(N/A),RP,P,FA,,19213,
 06qor,"Corbett, Kaleb",TB,RP,P,FA,,,
-01xfr,"Corbin, Patrick",TOR,SP,P,WW,9168,11033,0764772b-e8ab-42b3-9ee4-2b61af785e75
+01xfr,"Corbin, Patrick",TOR,SP,P,FA,9168,11033,0764772b-e8ab-42b3-9ee4-2b61af785e75
 065ir,"Corcoran, Billy",ARI,SP,P,FA,,,
 06qxa,"Cordero, Albert",TEX,RP,P,FA,,,
 06c3u,"Cordero, Carlos",(N/A),SS,"UT,SS,MI",FA,,,
@@ -1913,7 +1913,7 @@ fantrax_id,name,mlb_team,primary_position,eligible_positions,league_status,stats
 01uci,"Covey, Dylan",(N/A),RP,P,FA,10662,11442,13b09db2-4de1-4452-b533-874d4f595121
 076ae,"Covey, Jake",MIN,SP,P,FA,,,
 05y6f,"Cowles, Ben",CHC,SS,"2B,UT,3B,SS,CI,MI",FA,,19315,c659c8aa-3828-4420-b2d2-c2e4edcb205c
-05ras,"Cowser, Colton",BAL,CF,"OF,UT",WW,,17306,d8829910-7adc-4b28-b8e7-3757638562b7
+05ras,"Cowser, Colton",BAL,CF,"OF,UT",FA,,17306,d8829910-7adc-4b28-b8e7-3757638562b7
 04pra,"Cox, Austin",(N/A),RP,P,FA,11469,15679,d4dac3af-b2e9-4f8c-ae5e-abc3cf990d90
 06486,"Cox, Brenner",WSH,RF,"OF,UT",FA,,18124,
 06146,"Cox, Jackson",COL,SP,P,FA,,17981,
@@ -2283,6 +2283,7 @@ fantrax_id,name,mlb_team,primary_position,eligible_positions,league_status,stats
 076rs,"Degollado, Maicor",BAL,SS,"UT,SS,MI",WW,,,
 06r85,"Del Angel, Anthony",(N/A),3B,"UT,3B,CI",FA,,,
 051h6,"Del Bonta-Smith, Fineas",(N/A),RP,P,FA,,18400,
+076so,"Del Campo, Francisco",MIA,C,"C,UT",WW,,,
 05jn0,"Del Castillo, Adrian",ARI,C,"C,UT",FA,,17332,0d50288c-b223-4520-befc-5b6610a680c5
 057xr,"Del Orbe, Alisson",(N/A),2B,"2B,UT,MI",FA,,,
 05un0,"Del Rosario, Angel",(N/A),3B,"UT,3B,CI",FA,,,
@@ -3377,7 +3378,7 @@ fantrax_id,name,mlb_team,primary_position,eligible_positions,league_status,stats
 03740,"Gonsalves, Stephen",(N/A),RP,P,FA,10197,13033,2b98cb86-ba72-43ec-87d1-201eea0d54f6
 041v6,"Gonsolin, Tony",(N/A),SP,P,FA,11331,15570,c144f063-3940-472c-b607-9e5359844431
 06mff,"Gonzales, Justin",BOS,RF,"OF,UT",T,,19742,
-03111,"Gonzales, Marco",(N/A),SP,P,FA,9627,12949,4f914367-3a65-42d2-a6c4-28d9614e256f
+03111,"Gonzales, Marco",TEX,SP,P,FA,9627,12949,4f914367-3a65-42d2-a6c4-28d9614e256f
 0597k,"Gonzales, Nick",PIT,2B,"2B,UT,3B,CI,MI",T,12049,16671,a5818300-0c75-4964-bacd-fe957f8c48ca
 06s3i,"Gonzalez, Alex",HOU,SP,P,FA,,,
 04mkv,"Gonzalez, Alvaro",(N/A),2B,"2B,UT,MI",FA,,15078,
@@ -4527,7 +4528,7 @@ fantrax_id,name,mlb_team,primary_position,eligible_positions,league_status,stats
 06dn6,"Kayfus, CJ",CLE,RF,"OF,UT",T,,18904,a27f86c4-fccd-443d-aeb5-d0038b166029
 06hf6,"Kean, Chris",NYY,RP,P,FA,,,
 0518t,"Keane, Sebastian",(N/A),RP,P,FA,,16170,
-06mmq,"Keaney, Daniel",TEX,RP,P,FA,,20986,
+06mmq,"Keaney, Daniel",TEX,RP,P,FA,,,
 06r89,"Kearney, Aiden",(N/A),3B,"UT,3B,CI",FA,,,
 05zh9,"Keaschall, Luke",MIN,2B,"2B,UT,MI",T,,19005,00ce18c4-c489-4350-a550-06a6d3948581
 0657j,"Keating, Matt",NYY,RP,P,FA,,,
