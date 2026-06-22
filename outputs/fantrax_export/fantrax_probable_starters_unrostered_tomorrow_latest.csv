@@ -1,10 +1,8 @@
 probable_date,game_time_utc,home_away,probable_team,opponent,mlb_player_id,probable_name,fantrax_id,name,mlb_team,primary_position,eligible_positions,league_status,is_rostered,stats_inc_id,rotowire_id,sport_radar_id,game_pk
-2026-06-22,,,CHW,CLE Mon 6:40PM,,Anthony Kay,041mb,"Kay, Anthony",CHW,SP,P,FA,False,10538,14269,6de93a68-31cd-4278-b933-e43cbcee5d98,
-2026-06-22,,,ATL,@SD Mon 9:10PM,,Grant Holmes,03d6p,"Holmes, Grant",ATL,SP,P,FA,False,10549,13374,5a6101eb-bc40-47af-824a-0f9d1dbe2e0d,
-2026-06-22,,,CIN,MIL Mon 6:10PM,,Brady Singer,03pov,"Singer, Brady",CIN,SP,P,FA,False,11323,13874,18f3c854-6490-4e6b-8afe-bc562c5b20b4,
 2026-06-22,,,ARI,@STL Mon 6:45PM,,Merrill Kelly,02hj7,"Kelly, Merrill",ARI,SP,P,FA,False,11251,15800,871f04aa-367c-48fb-8ae5-a5bd9e27cb8b,
 2026-06-22,,,MIA,TEX Mon 5:40PM,,Tyler Phillips,03qt6,"Phillips, Tyler",MIA,RP,P,FA,False,11400,15681,45fc262f-bb5c-4491-b58b-e7eb585f9ec3,
 2026-06-22,,,LAD,@MIN Mon 6:40PM,,Eric Lauer,031ey,"Lauer, Eric",LAD,SP,P,FA,False,10576,14263,0631a6ce-c41b-4dec-8f68-db2bd61b54a0,
 2026-06-22,,,COL,BOS Mon 7:40PM,,Ryan Feltner,03r06,"Feltner, Ryan",COL,SP,P,FA,False,,15541,87dfe721-2290-44ac-a106-0aa9e676bfbd,
+2026-06-22,,,TEX,@MIA Mon 5:40PM,,Tyler Alexander,0376h,"Alexander, Tyler",TEX,RP,P,FA,False,10469,13880,435128c5-d570-467c-9da1-fdba3ed1bfef,
 2026-06-22,,,LAA,BAL Mon 8:38PM,,Samuel Aldegheri,06aw2,"Aldegheri, Samuel",LAA,SP,P,FA,False,,19357,25da44aa-825b-4787-9abf-730be10a114d,
 2026-06-22,,,BOS,@COL Mon 7:40PM,,Jake Bennett,060i2,"Bennett, Jake",BOS,SP,P,FA,False,,18002,34b7d3c9-7720-4c3e-a1eb-59572d798d26,
