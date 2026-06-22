@@ -237,6 +237,16 @@
       "violation_alert_sent": false,
       "window_start": "2026-06-14"
     },
+    "f3myl5ugmj90wrl7:05xu1": {
+      "demotion_alert_sent": true,
+      "eligible_date": "2026-07-14",
+      "fantrax_id": "05xu1",
+      "player_name": "Alex Freeland",
+      "team_id": "f3myl5ugmj90wrl7",
+      "team_name": "The Hot and Steamy Boys",
+      "violation_alert_sent": false,
+      "window_start": "2026-06-22"
+    },
     "f3myl5ugmj90wrl7:05yib": {
       "demotion_alert_sent": false,
       "eligible_date": "2026-07-10",
@@ -256,6 +266,16 @@
       "team_name": "The Hot and Steamy Boys",
       "violation_alert_sent": false,
       "window_start": "2026-06-18"
+    },
+    "f3myl5ugmj90wrl7:066l0": {
+      "demotion_alert_sent": false,
+      "eligible_date": "2026-07-14",
+      "fantrax_id": "066l0",
+      "player_name": "Zach Ehrhard",
+      "team_id": "f3myl5ugmj90wrl7",
+      "team_name": "The Hot and Steamy Boys",
+      "violation_alert_sent": false,
+      "window_start": "2026-06-22"
     },
     "f3myl5ugmj90wrl7:06qxu": {
       "demotion_alert_sent": false,
@@ -306,6 +326,16 @@
       "team_name": "Daddy Yankee",
       "violation_alert_sent": false,
       "window_start": "2026-06-18"
+    },
+    "jk36oo1hmj90wrl7:05a2d": {
+      "demotion_alert_sent": true,
+      "eligible_date": "2026-07-14",
+      "fantrax_id": "05a2d",
+      "player_name": "Max Meyer",
+      "team_id": "jk36oo1hmj90wrl7",
+      "team_name": "Daddy Yankee",
+      "violation_alert_sent": false,
+      "window_start": "2026-06-22"
     },
     "jk36oo1hmj90wrl7:05rcj": {
       "demotion_alert_sent": true,
@@ -2154,15 +2184,6 @@
       "team_id": "f3myl5ugmj90wrl7",
       "team_name": "The Hot and Steamy Boys"
     },
-    "f3myl5ugmj90wrl7:04azu": {
-      "fantrax_id": "04azu",
-      "player_name": "Kumar Rocker",
-      "primary_position": "SP",
-      "roster_position": "P",
-      "roster_status": "MINORS",
-      "team_id": "f3myl5ugmj90wrl7",
-      "team_name": "The Hot and Steamy Boys"
-    },
     "f3myl5ugmj90wrl7:04de1": {
       "fantrax_id": "04de1",
       "player_name": "Triston Casas",
@@ -2298,6 +2319,15 @@
       "team_id": "f3myl5ugmj90wrl7",
       "team_name": "The Hot and Steamy Boys"
     },
+    "f3myl5ugmj90wrl7:05rfu": {
+      "fantrax_id": "05rfu",
+      "player_name": "Kyle Manzardo",
+      "primary_position": "DH",
+      "roster_position": "UT",
+      "roster_status": "ACTIVE",
+      "team_id": "f3myl5ugmj90wrl7",
+      "team_name": "The Hot and Steamy Boys"
+    },
     "f3myl5ugmj90wrl7:05tzn": {
       "fantrax_id": "05tzn",
       "player_name": "Parker Messick",
@@ -2339,7 +2369,7 @@
       "player_name": "Alex Freeland",
       "primary_position": "SS",
       "roster_position": "UT",
-      "roster_status": "ACTIVE",
+      "roster_status": "MINORS",
       "team_id": "f3myl5ugmj90wrl7",
       "team_name": "The Hot and Steamy Boys"
     },
@@ -2411,6 +2441,15 @@
       "player_name": "Didier Fuentes",
       "primary_position": "SP",
       "roster_position": "P",
+      "roster_status": "MINORS",
+      "team_id": "f3myl5ugmj90wrl7",
+      "team_name": "The Hot and Steamy Boys"
+    },
+    "f3myl5ugmj90wrl7:066l0": {
+      "fantrax_id": "066l0",
+      "player_name": "Zach Ehrhard",
+      "primary_position": "RF",
+      "roster_position": "OF",
       "roster_status": "MINORS",
       "team_id": "f3myl5ugmj90wrl7",
       "team_name": "The Hot and Steamy Boys"
@@ -3185,7 +3224,7 @@
       "player_name": "Mickey Moniak",
       "primary_position": "RF",
       "roster_position": "UT",
-      "roster_status": "INJURED_RESERVE",
+      "roster_status": "RESERVE",
       "team_id": "jk36oo1hmj90wrl7",
       "team_name": "Daddy Yankee"
     },
@@ -3279,15 +3318,6 @@
       "team_id": "jk36oo1hmj90wrl7",
       "team_name": "Daddy Yankee"
     },
-    "jk36oo1hmj90wrl7:0518g": {
-      "fantrax_id": "0518g",
-      "player_name": "Trevor McDonald",
-      "primary_position": "SP",
-      "roster_position": "P",
-      "roster_status": "MINORS",
-      "team_id": "jk36oo1hmj90wrl7",
-      "team_name": "Daddy Yankee"
-    },
     "jk36oo1hmj90wrl7:051ia": {
       "fantrax_id": "051ia",
       "player_name": "Spencer Horwitz",
@@ -3320,7 +3350,7 @@
       "player_name": "Max Meyer",
       "primary_position": "SP",
       "roster_position": "P",
-      "roster_status": "ACTIVE",
+      "roster_status": "MINORS",
       "team_id": "jk36oo1hmj90wrl7",
       "team_name": "Daddy Yankee"
     },
