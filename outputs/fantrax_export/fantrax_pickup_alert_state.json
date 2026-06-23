@@ -1030,7 +1030,7 @@
       "fantrax_id": "02i2k",
       "player_name": "Byron Buxton",
       "primary_position": "CF",
-      "roster_position": "UT",
+      "roster_position": "OF",
       "roster_status": "ACTIVE",
       "team_id": "aqfyadu2mj90wrl7",
       "team_name": "Ben the Hen"
@@ -1094,7 +1094,7 @@
       "player_name": "Randy Arozarena",
       "primary_position": "LF",
       "roster_position": "OF",
-      "roster_status": "INJURED_RESERVE",
+      "roster_status": "ACTIVE",
       "team_id": "aqfyadu2mj90wrl7",
       "team_name": "Ben the Hen"
     },
@@ -1125,20 +1125,11 @@
       "team_id": "aqfyadu2mj90wrl7",
       "team_name": "Ben the Hen"
     },
-    "aqfyadu2mj90wrl7:04eej": {
-      "fantrax_id": "04eej",
-      "player_name": "Gavin Sheets",
-      "primary_position": "LF",
-      "roster_position": "UT",
-      "roster_status": "ACTIVE",
-      "team_id": "aqfyadu2mj90wrl7",
-      "team_name": "Ben the Hen"
-    },
     "aqfyadu2mj90wrl7:04eig": {
       "fantrax_id": "04eig",
       "player_name": "Jose Caballero",
       "primary_position": "SS",
-      "roster_position": "OF",
+      "roster_position": "UT",
       "roster_status": "ACTIVE",
       "team_id": "aqfyadu2mj90wrl7",
       "team_name": "Ben the Hen"
@@ -1183,7 +1174,7 @@
       "fantrax_id": "04pt2",
       "player_name": "Lars Nootbaar",
       "primary_position": "LF",
-      "roster_position": "OF",
+      "roster_position": "UT",
       "roster_status": "ACTIVE",
       "team_id": "aqfyadu2mj90wrl7",
       "team_name": "Ben the Hen"
