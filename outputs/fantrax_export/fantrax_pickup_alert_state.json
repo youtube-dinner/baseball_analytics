@@ -217,6 +217,16 @@
       "violation_alert_sent": true,
       "window_start": "2026-06-09"
     },
+    "f3myl5ugmj90wrl7:04qow": {
+      "demotion_alert_sent": true,
+      "eligible_date": "2026-07-15",
+      "fantrax_id": "04qow",
+      "player_name": "Kevin Alcantara",
+      "team_id": "f3myl5ugmj90wrl7",
+      "team_name": "The Hot and Steamy Boys",
+      "violation_alert_sent": false,
+      "window_start": "2026-06-23"
+    },
     "f3myl5ugmj90wrl7:05rbd": {
       "demotion_alert_sent": false,
       "eligible_date": "2026-07-10",
@@ -2265,6 +2275,15 @@
       "team_id": "f3myl5ugmj90wrl7",
       "team_name": "The Hot and Steamy Boys"
     },
+    "f3myl5ugmj90wrl7:04qow": {
+      "fantrax_id": "04qow",
+      "player_name": "Kevin Alcantara",
+      "primary_position": "CF",
+      "roster_position": "OF",
+      "roster_status": "MINORS",
+      "team_id": "f3myl5ugmj90wrl7",
+      "team_name": "The Hot and Steamy Boys"
+    },
     "f3myl5ugmj90wrl7:04ya2": {
       "fantrax_id": "04ya2",
       "player_name": "Daniel Espino",
@@ -2486,15 +2505,6 @@
       "player_name": "Eduardo Tait",
       "primary_position": "C",
       "roster_position": "C",
-      "roster_status": "MINORS",
-      "team_id": "f3myl5ugmj90wrl7",
-      "team_name": "The Hot and Steamy Boys"
-    },
-    "f3myl5ugmj90wrl7:06dn6": {
-      "fantrax_id": "06dn6",
-      "player_name": "CJ Kayfus",
-      "primary_position": "RF",
-      "roster_position": "OF",
       "roster_status": "MINORS",
       "team_id": "f3myl5ugmj90wrl7",
       "team_name": "The Hot and Steamy Boys"
