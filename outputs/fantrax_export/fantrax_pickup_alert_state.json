@@ -15,7 +15,8 @@
     "2026-06-20": true,
     "2026-06-21": true,
     "2026-06-22": true,
-    "2026-06-23": true
+    "2026-06-23": true,
+    "2026-06-24": true
   },
   "ir_exception_adds": {
     "2026-06-15": {
@@ -34,6 +35,19 @@
       }
     },
     "2026-06-22": {
+      "f3myl5ugmj90wrl7": {
+        "players": {
+          "04ali": {
+            "current_status": "INJURED_RESERVE",
+            "fantrax_id": "04ali",
+            "player_name": "Edward Cabrera",
+            "previous_status": "RESERVE",
+            "recorded_at": "2026-06-24T12:32:07.741838-05:00",
+            "team_id": "f3myl5ugmj90wrl7",
+            "team_name": "The Hot and Steamy Boys"
+          }
+        }
+      },
       "o4jvg6q3mj90wrl7": {
         "players": {
           "04y9o": {
@@ -2133,7 +2147,7 @@
       "fantrax_id": "03aqw",
       "player_name": "Mauricio Dubon",
       "primary_position": "LF",
-      "roster_position": "OF",
+      "roster_position": "3B",
       "roster_status": "ACTIVE",
       "team_id": "f3myl5ugmj90wrl7",
       "team_name": "The Hot and Steamy Boys"
@@ -2197,7 +2211,7 @@
       "player_name": "Edward Cabrera",
       "primary_position": "SP",
       "roster_position": "P",
-      "roster_status": "RESERVE",
+      "roster_status": "INJURED_RESERVE",
       "team_id": "f3myl5ugmj90wrl7",
       "team_name": "The Hot and Steamy Boys"
     },
@@ -2315,6 +2329,15 @@
       "primary_position": "SP",
       "roster_position": "P",
       "roster_status": "MINORS",
+      "team_id": "f3myl5ugmj90wrl7",
+      "team_name": "The Hot and Steamy Boys"
+    },
+    "f3myl5ugmj90wrl7:05161": {
+      "fantrax_id": "05161",
+      "player_name": "Dominic Canzone",
+      "primary_position": "RF",
+      "roster_position": "OF",
+      "roster_status": "ACTIVE",
       "team_id": "f3myl5ugmj90wrl7",
       "team_name": "The Hot and Steamy Boys"
     },
@@ -2449,6 +2472,15 @@
       "player_name": "Jacob Wilson",
       "primary_position": "SS",
       "roster_position": "MI",
+      "roster_status": "ACTIVE",
+      "team_id": "f3myl5ugmj90wrl7",
+      "team_name": "The Hot and Steamy Boys"
+    },
+    "f3myl5ugmj90wrl7:0622w": {
+      "fantrax_id": "0622w",
+      "player_name": "Chandler Simpson",
+      "primary_position": "CF",
+      "roster_position": "UT",
       "roster_status": "ACTIVE",
       "team_id": "f3myl5ugmj90wrl7",
       "team_name": "The Hot and Steamy Boys"
@@ -3249,8 +3281,8 @@
       "fantrax_id": "041e2",
       "player_name": "Mickey Moniak",
       "primary_position": "RF",
-      "roster_position": "OF",
-      "roster_status": "ACTIVE",
+      "roster_position": "UT",
+      "roster_status": "RESERVE",
       "team_id": "jk36oo1hmj90wrl7",
       "team_name": "Daddy Yankee"
     },
@@ -3286,7 +3318,7 @@
       "player_name": "Jake Burger",
       "primary_position": "1B",
       "roster_position": "UT",
-      "roster_status": "RESERVE",
+      "roster_status": "ACTIVE",
       "team_id": "jk36oo1hmj90wrl7",
       "team_name": "Daddy Yankee"
     },
@@ -3492,7 +3524,7 @@
       "fantrax_id": "060jo",
       "player_name": "Cam Smith",
       "primary_position": "RF",
-      "roster_position": "UT",
+      "roster_position": "OF",
       "roster_status": "ACTIVE",
       "team_id": "jk36oo1hmj90wrl7",
       "team_name": "Daddy Yankee"
@@ -3726,7 +3758,7 @@
       "fantrax_id": "02yc4",
       "player_name": "Shohei Ohtani",
       "primary_position": "DH",
-      "roster_position": "UT",
+      "roster_position": "P",
       "roster_status": "ACTIVE",
       "team_id": "k7c57nf4mj90wrl8",
       "team_name": "Hand Foot Mouth Disease Guys"
@@ -3767,10 +3799,10 @@
       "team_id": "k7c57nf4mj90wrl8",
       "team_name": "Hand Foot Mouth Disease Guys"
     },
-    "k7c57nf4mj90wrl8:03poo": {
-      "fantrax_id": "03poo",
-      "player_name": "Peter Lambert",
-      "primary_position": "SP",
+    "k7c57nf4mj90wrl8:03yui": {
+      "fantrax_id": "03yui",
+      "player_name": "Alex Lange",
+      "primary_position": "RP",
       "roster_position": "P",
       "roster_status": "ACTIVE",
       "team_id": "k7c57nf4mj90wrl8",
@@ -3916,7 +3948,7 @@
       "player_name": "Yoshinobu Yamamoto",
       "primary_position": "SP",
       "roster_position": "P",
-      "roster_status": "ACTIVE",
+      "roster_status": "RESERVE",
       "team_id": "k7c57nf4mj90wrl8",
       "team_name": "Hand Foot Mouth Disease Guys"
     },
@@ -4226,15 +4258,6 @@
       "team_id": "mldxq5pemj90wrl7",
       "team_name": "L\u00e1szlar\u00f3 T\u00f3th"
     },
-    "mldxq5pemj90wrl7:04a2t": {
-      "fantrax_id": "04a2t",
-      "player_name": "Kodai Senga",
-      "primary_position": "SP",
-      "roster_position": "P",
-      "roster_status": "ACTIVE",
-      "team_id": "mldxq5pemj90wrl7",
-      "team_name": "L\u00e1szlar\u00f3 T\u00f3th"
-    },
     "mldxq5pemj90wrl7:04aee": {
       "fantrax_id": "04aee",
       "player_name": "Jo Adell",
@@ -4247,15 +4270,6 @@
     "mldxq5pemj90wrl7:04c0o": {
       "fantrax_id": "04c0o",
       "player_name": "Jose Soriano",
-      "primary_position": "SP",
-      "roster_position": "P",
-      "roster_status": "ACTIVE",
-      "team_id": "mldxq5pemj90wrl7",
-      "team_name": "L\u00e1szlar\u00f3 T\u00f3th"
-    },
-    "mldxq5pemj90wrl7:04cwf": {
-      "fantrax_id": "04cwf",
-      "player_name": "Shane Baz",
       "primary_position": "SP",
       "roster_position": "P",
       "roster_status": "ACTIVE",
@@ -4303,6 +4317,15 @@
       "player_name": "Kody Clemens",
       "primary_position": "1B",
       "roster_position": "MI",
+      "roster_status": "ACTIVE",
+      "team_id": "mldxq5pemj90wrl7",
+      "team_name": "L\u00e1szlar\u00f3 T\u00f3th"
+    },
+    "mldxq5pemj90wrl7:04pps": {
+      "fantrax_id": "04pps",
+      "player_name": "Hogan Harris",
+      "primary_position": "RP",
+      "roster_position": "P",
       "roster_status": "ACTIVE",
       "team_id": "mldxq5pemj90wrl7",
       "team_name": "L\u00e1szlar\u00f3 T\u00f3th"
@@ -4375,7 +4398,7 @@
       "player_name": "Eury Perez",
       "primary_position": "SP",
       "roster_position": "P",
-      "roster_status": "INJURED_RESERVE",
+      "roster_status": "ACTIVE",
       "team_id": "mldxq5pemj90wrl7",
       "team_name": "L\u00e1szlar\u00f3 T\u00f3th"
     },
