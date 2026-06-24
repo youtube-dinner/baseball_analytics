@@ -34,6 +34,19 @@
       }
     },
     "2026-06-22": {
+      "o4jvg6q3mj90wrl7": {
+        "players": {
+          "04y9o": {
+            "current_status": "INJURED_RESERVE",
+            "fantrax_id": "04y9o",
+            "player_name": "Jack Leiter",
+            "previous_status": "ACTIVE",
+            "recorded_at": "2026-06-24T05:35:50.610608-05:00",
+            "team_id": "o4jvg6q3mj90wrl7",
+            "team_name": "Skrrt vs The World"
+          }
+        }
+      },
       "qatqhh61mj90wrl7": {
         "players": {
           "05ynb": {
@@ -217,6 +230,16 @@
       "team_name": "The Hot and Steamy Boys",
       "violation_alert_sent": true,
       "window_start": "2026-06-09"
+    },
+    "f3myl5ugmj90wrl7:04nq4": {
+      "demotion_alert_sent": true,
+      "eligible_date": "2026-07-16",
+      "fantrax_id": "04nq4",
+      "player_name": "Blaze Jordan",
+      "team_id": "f3myl5ugmj90wrl7",
+      "team_name": "The Hot and Steamy Boys",
+      "violation_alert_sent": false,
+      "window_start": "2026-06-24"
     },
     "f3myl5ugmj90wrl7:04qow": {
       "demotion_alert_sent": true,
@@ -486,6 +509,15 @@
       "team_id": "6tnz8jgemj90wrl7",
       "team_name": "Bobby and the NitWitts"
     },
+    "6tnz8jgemj90wrl7:02i3o": {
+      "fantrax_id": "02i3o",
+      "player_name": "Aaron Nola",
+      "primary_position": "SP",
+      "roster_position": "P",
+      "roster_status": "ACTIVE",
+      "team_id": "6tnz8jgemj90wrl7",
+      "team_name": "Bobby and the NitWitts"
+    },
     "6tnz8jgemj90wrl7:03aqv": {
       "fantrax_id": "03aqv",
       "player_name": "Raisel Iglesias",
@@ -590,15 +622,6 @@
       "player_name": "William Contreras",
       "primary_position": "C",
       "roster_position": "C",
-      "roster_status": "ACTIVE",
-      "team_id": "6tnz8jgemj90wrl7",
-      "team_name": "Bobby and the NitWitts"
-    },
-    "6tnz8jgemj90wrl7:041qr": {
-      "fantrax_id": "041qr",
-      "player_name": "Aaron Civale",
-      "primary_position": "SP",
-      "roster_position": "P",
       "roster_status": "ACTIVE",
       "team_id": "6tnz8jgemj90wrl7",
       "team_name": "Bobby and the NitWitts"
@@ -981,15 +1004,6 @@
       "team_id": "aqfyadu2mj90wrl7",
       "team_name": "Ben the Hen"
     },
-    "aqfyadu2mj90wrl7:029si": {
-      "fantrax_id": "029si",
-      "player_name": "Eduardo Rodriguez",
-      "primary_position": "SP",
-      "roster_position": "P",
-      "roster_status": "ACTIVE",
-      "team_id": "aqfyadu2mj90wrl7",
-      "team_name": "Ben the Hen"
-    },
     "aqfyadu2mj90wrl7:02bqr": {
       "fantrax_id": "02bqr",
       "player_name": "Blake Snell",
@@ -1047,6 +1061,15 @@
     "aqfyadu2mj90wrl7:02n96": {
       "fantrax_id": "02n96",
       "player_name": "Josh Hader",
+      "primary_position": "RP",
+      "roster_position": "P",
+      "roster_status": "ACTIVE",
+      "team_id": "aqfyadu2mj90wrl7",
+      "team_name": "Ben the Hen"
+    },
+    "aqfyadu2mj90wrl7:0317q": {
+      "fantrax_id": "0317q",
+      "player_name": "Griffin Jax",
       "primary_position": "RP",
       "roster_position": "P",
       "roster_status": "ACTIVE",
@@ -2106,6 +2129,15 @@
       "team_id": "f3myl5ugmj90wrl7",
       "team_name": "The Hot and Steamy Boys"
     },
+    "f3myl5ugmj90wrl7:03aqw": {
+      "fantrax_id": "03aqw",
+      "player_name": "Mauricio Dubon",
+      "primary_position": "LF",
+      "roster_position": "OF",
+      "roster_status": "ACTIVE",
+      "team_id": "f3myl5ugmj90wrl7",
+      "team_name": "The Hot and Steamy Boys"
+    },
     "f3myl5ugmj90wrl7:03e5m": {
       "fantrax_id": "03e5m",
       "player_name": "Bryan Reynolds",
@@ -2165,7 +2197,7 @@
       "player_name": "Edward Cabrera",
       "primary_position": "SP",
       "roster_position": "P",
-      "roster_status": "ACTIVE",
+      "roster_status": "RESERVE",
       "team_id": "f3myl5ugmj90wrl7",
       "team_name": "The Hot and Steamy Boys"
     },
@@ -2228,7 +2260,7 @@
       "player_name": "Blaze Jordan",
       "primary_position": "3B",
       "roster_position": "3B",
-      "roster_status": "ACTIVE",
+      "roster_status": "MINORS",
       "team_id": "f3myl5ugmj90wrl7",
       "team_name": "The Hot and Steamy Boys"
     },
@@ -2245,7 +2277,7 @@
       "fantrax_id": "04pkr",
       "player_name": "Nico Hoerner",
       "primary_position": "2B",
-      "roster_position": "MI",
+      "roster_position": "UT",
       "roster_status": "ACTIVE",
       "team_id": "f3myl5ugmj90wrl7",
       "team_name": "The Hot and Steamy Boys"
@@ -2322,15 +2354,6 @@
       "team_id": "f3myl5ugmj90wrl7",
       "team_name": "The Hot and Steamy Boys"
     },
-    "f3myl5ugmj90wrl7:05rfu": {
-      "fantrax_id": "05rfu",
-      "player_name": "Kyle Manzardo",
-      "primary_position": "DH",
-      "roster_position": "UT",
-      "roster_status": "ACTIVE",
-      "team_id": "f3myl5ugmj90wrl7",
-      "team_name": "The Hot and Steamy Boys"
-    },
     "f3myl5ugmj90wrl7:05tzn": {
       "fantrax_id": "05tzn",
       "player_name": "Parker Messick",
@@ -2390,7 +2413,7 @@
       "player_name": "Emmet Sheehan",
       "primary_position": "SP",
       "roster_position": "P",
-      "roster_status": "RESERVE",
+      "roster_status": "ACTIVE",
       "team_id": "f3myl5ugmj90wrl7",
       "team_name": "The Hot and Steamy Boys"
     },
@@ -2425,7 +2448,7 @@
       "fantrax_id": "0622t",
       "player_name": "Jacob Wilson",
       "primary_position": "SS",
-      "roster_position": "UT",
+      "roster_position": "MI",
       "roster_status": "ACTIVE",
       "team_id": "f3myl5ugmj90wrl7",
       "team_name": "The Hot and Steamy Boys"
@@ -3258,15 +3281,6 @@
       "team_id": "jk36oo1hmj90wrl7",
       "team_name": "Daddy Yankee"
     },
-    "jk36oo1hmj90wrl7:04aok": {
-      "fantrax_id": "04aok",
-      "player_name": "Gregory Soto",
-      "primary_position": "RP",
-      "roster_position": "P",
-      "roster_status": "ACTIVE",
-      "team_id": "jk36oo1hmj90wrl7",
-      "team_name": "Daddy Yankee"
-    },
     "jk36oo1hmj90wrl7:04azv": {
       "fantrax_id": "04azv",
       "player_name": "Jake Burger",
@@ -3461,6 +3475,15 @@
       "player_name": "Jackson Holliday",
       "primary_position": "2B",
       "roster_position": "UT",
+      "roster_status": "ACTIVE",
+      "team_id": "jk36oo1hmj90wrl7",
+      "team_name": "Daddy Yankee"
+    },
+    "jk36oo1hmj90wrl7:05ycf": {
+      "fantrax_id": "05ycf",
+      "player_name": "Noah Cameron",
+      "primary_position": "SP",
+      "roster_position": "P",
       "roster_status": "ACTIVE",
       "team_id": "jk36oo1hmj90wrl7",
       "team_name": "Daddy Yankee"
@@ -4662,6 +4685,15 @@
       "team_id": "mldxq5pemj90wrl7",
       "team_name": "L\u00e1szlar\u00f3 T\u00f3th"
     },
+    "o4jvg6q3mj90wrl7:01fhm": {
+      "fantrax_id": "01fhm",
+      "player_name": "Martin Perez",
+      "primary_position": "SP",
+      "roster_position": "P",
+      "roster_status": "ACTIVE",
+      "team_id": "o4jvg6q3mj90wrl7",
+      "team_name": "Skrrt vs The World"
+    },
     "o4jvg6q3mj90wrl7:01ut7": {
       "fantrax_id": "01ut7",
       "player_name": "Nathan Eovaldi",
@@ -4716,6 +4748,15 @@
       "team_id": "o4jvg6q3mj90wrl7",
       "team_name": "Skrrt vs The World"
     },
+    "o4jvg6q3mj90wrl7:041g5": {
+      "fantrax_id": "041g5",
+      "player_name": "Elvis Alvarado",
+      "primary_position": "RP",
+      "roster_position": "P",
+      "roster_status": "ACTIVE",
+      "team_id": "o4jvg6q3mj90wrl7",
+      "team_name": "Skrrt vs The World"
+    },
     "o4jvg6q3mj90wrl7:04b00": {
       "fantrax_id": "04b00",
       "player_name": "Brice Turang",
@@ -4734,18 +4775,9 @@
       "team_id": "o4jvg6q3mj90wrl7",
       "team_name": "Skrrt vs The World"
     },
-    "o4jvg6q3mj90wrl7:04pkt": {
-      "fantrax_id": "04pkt",
-      "player_name": "J.T. Ginn",
-      "primary_position": "SP",
-      "roster_position": "P",
-      "roster_status": "ACTIVE",
-      "team_id": "o4jvg6q3mj90wrl7",
-      "team_name": "Skrrt vs The World"
-    },
-    "o4jvg6q3mj90wrl7:04pvu": {
-      "fantrax_id": "04pvu",
-      "player_name": "Stephen Kolek",
+    "o4jvg6q3mj90wrl7:04fq2": {
+      "fantrax_id": "04fq2",
+      "player_name": "Javier Assad",
       "primary_position": "SP",
       "roster_position": "P",
       "roster_status": "ACTIVE",
@@ -4779,21 +4811,12 @@
       "team_id": "o4jvg6q3mj90wrl7",
       "team_name": "Skrrt vs The World"
     },
-    "o4jvg6q3mj90wrl7:04t3y": {
-      "fantrax_id": "04t3y",
-      "player_name": "Alejandro Kirk",
-      "primary_position": "C",
-      "roster_position": "C",
-      "roster_status": "ACTIVE",
-      "team_id": "o4jvg6q3mj90wrl7",
-      "team_name": "Skrrt vs The World"
-    },
     "o4jvg6q3mj90wrl7:04y9o": {
       "fantrax_id": "04y9o",
       "player_name": "Jack Leiter",
       "primary_position": "SP",
       "roster_position": "P",
-      "roster_status": "ACTIVE",
+      "roster_status": "INJURED_RESERVE",
       "team_id": "o4jvg6q3mj90wrl7",
       "team_name": "Skrrt vs The World"
     },
@@ -4829,7 +4852,7 @@
       "player_name": "Dylan Crews",
       "primary_position": "RF",
       "roster_position": "OF",
-      "roster_status": "MINORS",
+      "roster_status": "ACTIVE",
       "team_id": "o4jvg6q3mj90wrl7",
       "team_name": "Skrrt vs The World"
     },
@@ -5000,7 +5023,7 @@
       "player_name": "Kyle Teel",
       "primary_position": "C",
       "roster_position": "C",
-      "roster_status": "INJURED_RESERVE",
+      "roster_status": "ACTIVE",
       "team_id": "o4jvg6q3mj90wrl7",
       "team_name": "Skrrt vs The World"
     },
@@ -5064,15 +5087,6 @@
       "primary_position": "SS",
       "roster_position": "SS",
       "roster_status": "MINORS",
-      "team_id": "o4jvg6q3mj90wrl7",
-      "team_name": "Skrrt vs The World"
-    },
-    "o4jvg6q3mj90wrl7:062ho": {
-      "fantrax_id": "062ho",
-      "player_name": "Javier Sanoja",
-      "primary_position": "3B",
-      "roster_position": "OF",
-      "roster_status": "ACTIVE",
       "team_id": "o4jvg6q3mj90wrl7",
       "team_name": "Skrrt vs The World"
     },
