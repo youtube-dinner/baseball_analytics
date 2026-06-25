@@ -1,6 +1,4 @@
 probable_date,game_time_utc,home_away,probable_team,opponent,mlb_player_id,probable_name,fantrax_id,name,mlb_team,primary_position,eligible_positions,league_status,is_rostered,stats_inc_id,rotowire_id,sport_radar_id,game_pk
 2026-06-25,,,STL,ARI Thu 6:45PM,,Michael McGreevy,05sr2,"McGreevy, Michael",STL,SP,P,FA,False,,17320,5d8d6eb5-f95f-4c6e-888a-0209d85c20c4,
 2026-06-25,,,ATH,@SF Thu 2:45PM,,Jeffrey Springs,04mlr,"Springs, Jeffrey",ATH,SP,P,FA,False,11121,15663,76375b42-68b1-42a1-94e6-81f152197c81,
-2026-06-25,,,TB,KC Thu 11:10AM,,Ian Seymour,05jpd,"Seymour, Ian",TB,RP,P,FA,False,,16753,ef36132f-e146-4890-b8a3-47d554e99a62,
-2026-06-25,,,ARI,@STL Thu 6:45PM,,Zac Gallen,041qo,"Gallen, Zac",ARI,SP,P,FA,False,11116,14312,e488a3a6-4673-4e5d-befe-6d5ab57b0b8e,
-2026-06-25,,,CHC,@NYM Thu 6:10PM,,Matthew Boyd,02n4s,"Boyd, Matthew",CHC,SP,P,FA,False,10011,13007,c3e45b7f-c631-472c-ac33-5377df84302d,
+2026-06-25,,,TB,KC Thu 11:10AM,,Casey Legumina,0427a,"Legumina, Casey",TB,RP,P,FA,False,,18272,b081de24-72fc-429a-b197-47f5192448fe,
