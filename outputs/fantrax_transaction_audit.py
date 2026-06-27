@@ -379,7 +379,7 @@ def main():
     parser.add_argument("--end", help="Exclusive Eastern Time end, e.g. 2026-06-08T00:00")
     parser.add_argument("--max-results", type=int, default=500, help="Rows per page to request from Fantrax.")
     parser.add_argument("--pages", type=int, default=5, help="Maximum Fantrax transaction pages to fetch.")
-    parser.add_argument("--pickup-limit", type=int, default=int(os.environ.get("FANTRAX_MAJOR_ADD_LIMIT", "7")))
+    parser.add_argument("--pickup-limit", type=int, default=int(os.environ.get("FANTRAX_MAJOR_ADD_LIMIT", "10")))
     parser.add_argument("--out-dir", type=Path, default=OUT_DIR)
     args = parser.parse_args()
 

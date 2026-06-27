@@ -21,9 +21,7 @@ GROUPME_POST_URL = "https://api.groupme.com/v3/bots/post"
 CENTRAL = ZoneInfo("America/Chicago")
 MINORS_MARKERS = {"MINORS", "MINOR", "MINOR_LEAGUE", "MINOR LEAGUE"}
 ACTIVE_MARKERS = {"ACTIVE"}
-MAJOR_ROSTER_MARKERS = {"ACTIVE", "RESERVE"}
-INJURED_RESERVE_MARKERS = {"INJURED_RESERVE", "INJURED RESERVE", "IR"}
-DEFAULT_MAJOR_ADD_LIMIT = int(os.environ.get("FANTRAX_MAJOR_ADD_LIMIT", "7"))
+DEFAULT_MAJOR_ADD_LIMIT = int(os.environ.get("FANTRAX_MAJOR_ADD_LIMIT", "10"))
 MINOR_WAIT_DAYS = int(os.environ.get("FANTRAX_MINOR_WAIT_DAYS", "21"))
 MINOR_ELIGIBLE_OFFSET_DAYS = int(os.environ.get("FANTRAX_MINOR_ELIGIBLE_OFFSET_DAYS", str(MINOR_WAIT_DAYS + 1)))
 BOLD_UPPER = {chr(ord("A") + index): chr(0x1D400 + index) for index in range(26)}
@@ -79,7 +77,7 @@ OVER_LIMIT_MESSAGES = [
     "{team} are over the cap. The honor system has been wounded.",
     "{team} added too many major leaguers and must face the music.",
     "{team} have violated the weekly add code and disturbed competitive balance.",
-    "{team} went past seven. The evidence is right here.",
+    "{team} went past the limit. The evidence is right here.",
     "{team} exceeded the limit and put the league's integrity in question.",
     "{team} have gone rogue on the waiver wire.",
     "{team} are over the allowed adds. This is a public accounting.",
@@ -111,7 +109,6 @@ def load_state(path):
             "schema_version": 1,
             "major_add_alerts": {},
             "daily_summaries": {},
-            "ir_exception_adds": {},
             "minor_windows": {},
             "roster_snapshot": {},
         }
@@ -119,7 +116,7 @@ def load_state(path):
     state.setdefault("schema_version", 1)
     state.setdefault("major_add_alerts", {})
     state.setdefault("daily_summaries", {})
-    state.setdefault("ir_exception_adds", {})
+    state.pop("ir_exception_adds", None)
     state.setdefault("minor_windows", {})
     state.setdefault("roster_snapshot", {})
     return state
@@ -184,7 +181,7 @@ def format_date(date_value):
     return date_value.strftime("%A %B %-d, %Y")
 
 
-def build_report(summary_rows, metadata, major_add_limit, ir_exception_counts):
+def build_report(summary_rows, metadata, major_add_limit):
     ordered_rows = sorted(
         summary_rows,
         key=lambda row: (-(int_value(row.get("major_leaguer_adds") or row.get("counted_adds"))), row.get("team_name", "")),
@@ -200,14 +197,10 @@ def build_report(summary_rows, metadata, major_add_limit, ir_exception_counts):
         if index:
             lines.append("")
         major_adds = int_value(row.get("major_leaguer_adds") or row.get("counted_adds"))
-        team_id = row.get("team_id") or row.get("team_name", "")
-        ir_exception_adds = ir_exception_counts.get(team_id, 0)
-        adjusted_limit = major_add_limit + ir_exception_adds
-        remaining = max(0, adjusted_limit - major_adds)
+        remaining = max(0, major_add_limit - major_adds)
         lines.extend([
             f"{bold_text(row.get('team_name', ''))}:",
             f"Total Major League Adds: {major_adds}",
-            f"IR Exception Adds: {ir_exception_adds}",
             f"Major League Adds Remaining: {remaining}",
         ])
     return "\n".join(lines)
@@ -231,7 +224,7 @@ def period_key(metadata):
     return start[:10] or central_now().date().isoformat()
 
 
-def build_major_add_alerts(summary_rows, metadata, state, major_add_limit, ir_exception_counts):
+def build_major_add_alerts(summary_rows, metadata, state, major_add_limit):
     alerts = []
     week_key = period_key(metadata)
     week_state = state["major_add_alerts"].setdefault(week_key, {})
@@ -239,21 +232,33 @@ def build_major_add_alerts(summary_rows, metadata, state, major_add_limit, ir_ex
         team_id = row.get("team_id") or row.get("team_name", "")
         team_name = row.get("team_name", "")
         team_state = week_state.setdefault(team_id, {"overage_alerted": 0})
+        has_legacy_alert_state = any(
+            key in team_state
+            for key in ("one_remaining", "none_remaining", "overage_alerted", "over_limit_adds_alerted_through")
+        )
+        previous_limit = int_value(team_state.get("major_add_limit")) or (7 if has_legacy_alert_state else 0)
+        if previous_limit and previous_limit != major_add_limit:
+            team_state.pop("one_remaining", None)
+            team_state.pop("none_remaining", None)
+        team_state["major_add_limit"] = major_add_limit
         major_adds = int_value(row.get("major_leaguer_adds") or row.get("counted_adds"))
-        adjusted_limit = major_add_limit + ir_exception_counts.get(team_id, 0)
         bold_team = bold_text(team_name)
-        if major_adds == adjusted_limit - 1 and not team_state.get("one_remaining"):
+        if major_adds == major_add_limit - 1 and not team_state.get("one_remaining"):
             alerts.append(f"Hey {bold_team}, you only have one more major league add remaining this week!")
             team_state["one_remaining"] = True
-        if major_adds == adjusted_limit and not team_state.get("none_remaining"):
+        if major_adds == major_add_limit and not team_state.get("none_remaining"):
             alerts.append(
                 f"Hey {bold_team}, you have no more adds remaining this week! "
                 f"{random.choice(NO_MORE_ADD_MESSAGES)}"
             )
             team_state["none_remaining"] = True
-        legacy_alerted_through = major_add_limit + int_value(team_state.get("overage_alerted"))
+        legacy_alerted_through = (
+            previous_limit + int_value(team_state.get("overage_alerted"))
+            if previous_limit
+            else major_add_limit + int_value(team_state.get("overage_alerted"))
+        )
         already_alerted_through = max(
-            adjusted_limit,
+            major_add_limit,
             int_value(team_state.get("over_limit_adds_alerted_through")),
             legacy_alerted_through,
         )
@@ -261,7 +266,7 @@ def build_major_add_alerts(summary_rows, metadata, state, major_add_limit, ir_ex
             for _ in range(already_alerted_through + 1, major_adds + 1):
                 alerts.append(random.choice(OVER_LIMIT_MESSAGES).format(team=bold_team))
             team_state["over_limit_adds_alerted_through"] = major_adds
-            team_state["overage_alerted"] = max(0, major_adds - adjusted_limit)
+            team_state["overage_alerted"] = max(0, major_adds - major_add_limit)
     return alerts
 
 
@@ -275,14 +280,6 @@ def is_minors_status(status):
 
 def is_active_status(status):
     return str(status or "").upper() in ACTIVE_MARKERS
-
-
-def is_major_roster_status(status):
-    return str(status or "").upper() in MAJOR_ROSTER_MARKERS
-
-
-def is_injured_reserve_status(status):
-    return str(status or "").upper() in INJURED_RESERVE_MARKERS
 
 
 def load_current_roster(path):
@@ -301,41 +298,6 @@ def load_current_roster(path):
             "primary_position": row.get("primary_position", ""),
         }
     return roster
-
-
-def register_ir_exception_adds(current_roster, metadata, state):
-    previous_roster = state.get("roster_snapshot") or {}
-    week_key = period_key(metadata)
-    week_state = state.setdefault("ir_exception_adds", {}).setdefault(week_key, {})
-    bootstrap = not previous_roster
-
-    if not bootstrap:
-        for key, current in current_roster.items():
-            previous = previous_roster.get(key)
-            if not previous:
-                continue
-            previous_status = previous.get("roster_status", "")
-            current_status = current.get("roster_status", "")
-            if not is_major_roster_status(previous_status) or not is_injured_reserve_status(current_status):
-                continue
-            team_id = current.get("team_id") or current.get("team_name", "")
-            player_id = current.get("fantrax_id") or key
-            team_state = week_state.setdefault(team_id, {"players": {}})
-            players = team_state.setdefault("players", {})
-            players.setdefault(player_id, {
-                "fantrax_id": current.get("fantrax_id", ""),
-                "player_name": current.get("player_name", ""),
-                "team_id": current.get("team_id", ""),
-                "team_name": current.get("team_name", ""),
-                "previous_status": previous_status,
-                "current_status": current_status,
-                "recorded_at": central_now().isoformat(),
-            })
-
-    return {
-        team_id: len((team_state or {}).get("players", {}))
-        for team_id, team_state in week_state.items()
-    }
 
 
 def load_games_played(analytics_dir):
@@ -506,10 +468,9 @@ def main():
     now = central_now()
     messages = []
     current_roster = load_current_roster(args.rosters)
-    ir_exception_counts = register_ir_exception_adds(current_roster, metadata, state)
 
     if should_send_daily_summary(state, now, args.daily_summary_hour, args.force_summary):
-        messages.append(build_report(summary_rows, metadata, args.major_add_limit, ir_exception_counts))
+        messages.append(build_report(summary_rows, metadata, args.major_add_limit))
         mark_daily_summary_sent(state, now)
 
     messages.extend(build_major_add_alerts(
@@ -517,7 +478,6 @@ def main():
         metadata,
         state,
         args.major_add_limit,
-        ir_exception_counts,
     ))
     games_played = load_games_played(args.analytics_dir)
     messages.extend(build_minor_roster_alerts(current_roster, games_played, state, now))
