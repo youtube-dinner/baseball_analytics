@@ -21,108 +21,6 @@
     "2026-06-26": true,
     "2026-06-27": true
   },
-  "ir_exception_adds": {
-    "2026-06-15": {
-      "hd9hwe4mmj90wrl7": {
-        "players": {
-          "04q2n": {
-            "current_status": "INJURED_RESERVE",
-            "fantrax_id": "04q2n",
-            "player_name": "Adley Rutschman",
-            "previous_status": "ACTIVE",
-            "recorded_at": "2026-06-21T17:05:34.390240-05:00",
-            "team_id": "hd9hwe4mmj90wrl7",
-            "team_name": "Third Degree Burnes"
-          }
-        }
-      }
-    },
-    "2026-06-22": {
-      "f3myl5ugmj90wrl7": {
-        "players": {
-          "04ali": {
-            "current_status": "INJURED_RESERVE",
-            "fantrax_id": "04ali",
-            "player_name": "Edward Cabrera",
-            "previous_status": "RESERVE",
-            "recorded_at": "2026-06-24T12:32:07.741838-05:00",
-            "team_id": "f3myl5ugmj90wrl7",
-            "team_name": "The Hot and Steamy Boys"
-          }
-        }
-      },
-      "jk36oo1hmj90wrl7": {
-        "players": {
-          "051ia": {
-            "current_status": "INJURED_RESERVE",
-            "fantrax_id": "051ia",
-            "player_name": "Spencer Horwitz",
-            "previous_status": "ACTIVE",
-            "recorded_at": "2026-06-25T12:34:20.742299-05:00",
-            "team_id": "jk36oo1hmj90wrl7",
-            "team_name": "Daddy Yankee"
-          }
-        }
-      },
-      "k7c57nf4mj90wrl8": {
-        "players": {
-          "04o2w": {
-            "current_status": "INJURED_RESERVE",
-            "fantrax_id": "04o2w",
-            "player_name": "Ben Brown",
-            "previous_status": "ACTIVE",
-            "recorded_at": "2026-06-25T05:22:46.126264-05:00",
-            "team_id": "k7c57nf4mj90wrl8",
-            "team_name": "Hand Foot Mouth Disease Guys"
-          }
-        }
-      },
-      "o4jvg6q3mj90wrl7": {
-        "players": {
-          "04y9o": {
-            "current_status": "INJURED_RESERVE",
-            "fantrax_id": "04y9o",
-            "player_name": "Jack Leiter",
-            "previous_status": "ACTIVE",
-            "recorded_at": "2026-06-24T05:35:50.610608-05:00",
-            "team_id": "o4jvg6q3mj90wrl7",
-            "team_name": "Skrrt vs The World"
-          },
-          "05g3x": {
-            "current_status": "INJURED_RESERVE",
-            "fantrax_id": "05g3x",
-            "player_name": "Maikel Garcia",
-            "previous_status": "ACTIVE",
-            "recorded_at": "2026-06-26T05:39:09.628783-05:00",
-            "team_id": "o4jvg6q3mj90wrl7",
-            "team_name": "Skrrt vs The World"
-          },
-          "05ub0": {
-            "current_status": "INJURED_RESERVE",
-            "fantrax_id": "05ub0",
-            "player_name": "Zack Gelof",
-            "previous_status": "ACTIVE",
-            "recorded_at": "2026-06-26T05:39:09.628798-05:00",
-            "team_id": "o4jvg6q3mj90wrl7",
-            "team_name": "Skrrt vs The World"
-          }
-        }
-      },
-      "qatqhh61mj90wrl7": {
-        "players": {
-          "05ynb": {
-            "current_status": "INJURED_RESERVE",
-            "fantrax_id": "05ynb",
-            "player_name": "Liam Hicks",
-            "previous_status": "ACTIVE",
-            "recorded_at": "2026-06-22T11:19:02.898427-05:00",
-            "team_id": "qatqhh61mj90wrl7",
-            "team_name": "Je suis Charlie Morton"
-          }
-        }
-      }
-    }
-  },
   "major_add_alerts": {
     "2026-06-08": {
       "6tnz8jgemj90wrl7": {
@@ -210,40 +108,43 @@
     },
     "2026-06-22": {
       "6tnz8jgemj90wrl7": {
-        "none_remaining": true,
-        "one_remaining": true,
+        "major_add_limit": 10,
         "overage_alerted": 0
       },
       "aqfyadu2mj90wrl7": {
+        "major_add_limit": 10,
         "overage_alerted": 0
       },
       "bw696uo5mj90wrl7": {
+        "major_add_limit": 10,
         "overage_alerted": 0
       },
       "f3myl5ugmj90wrl7": {
-        "one_remaining": true,
+        "major_add_limit": 10,
         "overage_alerted": 0
       },
       "hd9hwe4mmj90wrl7": {
+        "major_add_limit": 10,
         "overage_alerted": 0
       },
       "jk36oo1hmj90wrl7": {
-        "none_remaining": true,
+        "major_add_limit": 10,
         "overage_alerted": 0
       },
       "k7c57nf4mj90wrl8": {
-        "one_remaining": true,
+        "major_add_limit": 10,
         "overage_alerted": 0
       },
       "mldxq5pemj90wrl7": {
-        "one_remaining": true,
+        "major_add_limit": 10,
         "overage_alerted": 0
       },
       "o4jvg6q3mj90wrl7": {
+        "major_add_limit": 10,
         "overage_alerted": 0
       },
       "qatqhh61mj90wrl7": {
-        "one_remaining": true,
+        "major_add_limit": 10,
         "overage_alerted": 0
       }
     }
