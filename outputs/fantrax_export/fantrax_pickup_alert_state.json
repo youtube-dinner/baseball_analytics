@@ -18,7 +18,8 @@
     "2026-06-23": true,
     "2026-06-24": true,
     "2026-06-25": true,
-    "2026-06-26": true
+    "2026-06-26": true,
+    "2026-06-27": true
   },
   "ir_exception_adds": {
     "2026-06-15": {
@@ -209,6 +210,7 @@
     },
     "2026-06-22": {
       "6tnz8jgemj90wrl7": {
+        "none_remaining": true,
         "one_remaining": true,
         "overage_alerted": 0
       },
@@ -237,6 +239,7 @@
         "overage_alerted": 0
       },
       "qatqhh61mj90wrl7": {
+        "one_remaining": true,
         "overage_alerted": 0
       }
     }
@@ -522,6 +525,16 @@
       "violation_alert_sent": false,
       "window_start": "2026-06-15"
     },
+    "mldxq5pemj90wrl7:06mnl": {
+      "demotion_alert_sent": false,
+      "eligible_date": "2026-07-19",
+      "fantrax_id": "06mnl",
+      "player_name": "Wyatt Sanford",
+      "team_id": "mldxq5pemj90wrl7",
+      "team_name": "L\u00e1szlar\u00f3 T\u00f3th",
+      "violation_alert_sent": false,
+      "window_start": "2026-06-27"
+    },
     "mldxq5pemj90wrl7:06yyn": {
       "demotion_alert_sent": false,
       "eligible_date": "2026-07-13",
@@ -541,6 +554,16 @@
       "team_name": "Skrrt vs The World",
       "violation_alert_sent": false,
       "window_start": "2026-06-14"
+    },
+    "qatqhh61mj90wrl7:06c5r": {
+      "demotion_alert_sent": false,
+      "eligible_date": "2026-07-19",
+      "fantrax_id": "06c5r",
+      "player_name": "Caden Bodine",
+      "team_id": "qatqhh61mj90wrl7",
+      "team_name": "Je suis Charlie Morton",
+      "violation_alert_sent": false,
+      "window_start": "2026-06-27"
     }
   },
   "roster_snapshot": {
@@ -886,9 +909,9 @@
       "team_id": "6tnz8jgemj90wrl7",
       "team_name": "Bobby and the NitWitts"
     },
-    "6tnz8jgemj90wrl7:0629b": {
-      "fantrax_id": "0629b",
-      "player_name": "Walbert Urena",
+    "6tnz8jgemj90wrl7:060i2": {
+      "fantrax_id": "060i2",
+      "player_name": "Jake Bennett",
       "primary_position": "SP",
       "roster_position": "P",
       "roster_status": "ACTIVE",
@@ -1210,15 +1233,6 @@
       "team_id": "aqfyadu2mj90wrl7",
       "team_name": "Ben the Hen"
     },
-    "aqfyadu2mj90wrl7:04ak5": {
-      "fantrax_id": "04ak5",
-      "player_name": "Trevor Rogers",
-      "primary_position": "SP",
-      "roster_position": "P",
-      "roster_status": "ACTIVE",
-      "team_id": "aqfyadu2mj90wrl7",
-      "team_name": "Ben the Hen"
-    },
     "aqfyadu2mj90wrl7:04eig": {
       "fantrax_id": "04eig",
       "player_name": "Jose Caballero",
@@ -1495,6 +1509,15 @@
       "primary_position": "3B",
       "roster_position": "UT",
       "roster_status": "MINORS",
+      "team_id": "aqfyadu2mj90wrl7",
+      "team_name": "Ben the Hen"
+    },
+    "aqfyadu2mj90wrl7:0657l": {
+      "fantrax_id": "0657l",
+      "player_name": "Jack Perkins",
+      "primary_position": "RP",
+      "roster_position": "P",
+      "roster_status": "ACTIVE",
       "team_id": "aqfyadu2mj90wrl7",
       "team_name": "Ben the Hen"
     },
@@ -2686,6 +2709,15 @@
       "team_id": "hd9hwe4mmj90wrl7",
       "team_name": "Third Degree Burnes"
     },
+    "hd9hwe4mmj90wrl7:02iug": {
+      "fantrax_id": "02iug",
+      "player_name": "Michael Wacha",
+      "primary_position": "SP",
+      "roster_position": "P",
+      "roster_status": "ACTIVE",
+      "team_id": "hd9hwe4mmj90wrl7",
+      "team_name": "Third Degree Burnes"
+    },
     "hd9hwe4mmj90wrl7:02n2x": {
       "fantrax_id": "02n2x",
       "player_name": "Paul Sewald",
@@ -2727,15 +2759,6 @@
       "player_name": "Brandon Marsh",
       "primary_position": "CF",
       "roster_position": "OF",
-      "roster_status": "ACTIVE",
-      "team_id": "hd9hwe4mmj90wrl7",
-      "team_name": "Third Degree Burnes"
-    },
-    "hd9hwe4mmj90wrl7:041qo": {
-      "fantrax_id": "041qo",
-      "player_name": "Zac Gallen",
-      "primary_position": "SP",
-      "roster_position": "P",
       "roster_status": "ACTIVE",
       "team_id": "hd9hwe4mmj90wrl7",
       "team_name": "Third Degree Burnes"
@@ -3330,7 +3353,7 @@
       "player_name": "Mickey Moniak",
       "primary_position": "RF",
       "roster_position": "UT",
-      "roster_status": "RESERVE",
+      "roster_status": "ACTIVE",
       "team_id": "jk36oo1hmj90wrl7",
       "team_name": "Daddy Yankee"
     },
@@ -3546,7 +3569,7 @@
       "player_name": "Troy Melton",
       "primary_position": "RP",
       "roster_position": "P",
-      "roster_status": "RESERVE",
+      "roster_status": "ACTIVE",
       "team_id": "jk36oo1hmj90wrl7",
       "team_name": "Daddy Yankee"
     },
@@ -3892,6 +3915,15 @@
       "team_id": "k7c57nf4mj90wrl8",
       "team_name": "Hand Foot Mouth Disease Guys"
     },
+    "k7c57nf4mj90wrl8:04azu": {
+      "fantrax_id": "04azu",
+      "player_name": "Kumar Rocker",
+      "primary_position": "SP",
+      "roster_position": "P",
+      "roster_status": "ACTIVE",
+      "team_id": "k7c57nf4mj90wrl8",
+      "team_name": "Hand Foot Mouth Disease Guys"
+    },
     "k7c57nf4mj90wrl8:04efa": {
       "fantrax_id": "04efa",
       "player_name": "Daulton Varsho",
@@ -3916,15 +3948,6 @@
       "primary_position": "SP",
       "roster_position": "P",
       "roster_status": "INJURED_RESERVE",
-      "team_id": "k7c57nf4mj90wrl8",
-      "team_name": "Hand Foot Mouth Disease Guys"
-    },
-    "k7c57nf4mj90wrl8:04pkt": {
-      "fantrax_id": "04pkt",
-      "player_name": "J.T. Ginn",
-      "primary_position": "SP",
-      "roster_position": "P",
-      "roster_status": "ACTIVE",
       "team_id": "k7c57nf4mj90wrl8",
       "team_name": "Hand Foot Mouth Disease Guys"
     },
@@ -4702,20 +4725,20 @@
       "team_id": "mldxq5pemj90wrl7",
       "team_name": "L\u00e1szlar\u00f3 T\u00f3th"
     },
+    "mldxq5pemj90wrl7:06mnl": {
+      "fantrax_id": "06mnl",
+      "player_name": "Wyatt Sanford",
+      "primary_position": "SS",
+      "roster_position": "2B",
+      "roster_status": "MINORS",
+      "team_id": "mldxq5pemj90wrl7",
+      "team_name": "L\u00e1szlar\u00f3 T\u00f3th"
+    },
     "mldxq5pemj90wrl7:06o0e": {
       "fantrax_id": "06o0e",
       "player_name": "Marco Dinges",
       "primary_position": "C",
       "roster_position": "UT",
-      "roster_status": "MINORS",
-      "team_id": "mldxq5pemj90wrl7",
-      "team_name": "L\u00e1szlar\u00f3 T\u00f3th"
-    },
-    "mldxq5pemj90wrl7:06r9r": {
-      "fantrax_id": "06r9r",
-      "player_name": "Darell Morel",
-      "primary_position": "SS",
-      "roster_position": "SS",
       "roster_status": "MINORS",
       "team_id": "mldxq5pemj90wrl7",
       "team_name": "L\u00e1szlar\u00f3 T\u00f3th"
@@ -4846,15 +4869,6 @@
       "team_id": "o4jvg6q3mj90wrl7",
       "team_name": "Skrrt vs The World"
     },
-    "o4jvg6q3mj90wrl7:04fq2": {
-      "fantrax_id": "04fq2",
-      "player_name": "Javier Assad",
-      "primary_position": "SP",
-      "roster_position": "P",
-      "roster_status": "ACTIVE",
-      "team_id": "o4jvg6q3mj90wrl7",
-      "team_name": "Skrrt vs The World"
-    },
     "o4jvg6q3mj90wrl7:04pxf": {
       "fantrax_id": "04pxf",
       "player_name": "Davis Martin",
@@ -4879,6 +4893,15 @@
       "primary_position": "SP",
       "roster_position": "P",
       "roster_status": "MINORS",
+      "team_id": "o4jvg6q3mj90wrl7",
+      "team_name": "Skrrt vs The World"
+    },
+    "o4jvg6q3mj90wrl7:04tk1": {
+      "fantrax_id": "04tk1",
+      "player_name": "Slade Cecconi",
+      "primary_position": "SP",
+      "roster_position": "P",
+      "roster_status": "ACTIVE",
       "team_id": "o4jvg6q3mj90wrl7",
       "team_name": "Skrrt vs The World"
     },
@@ -4963,15 +4986,6 @@
       "team_id": "o4jvg6q3mj90wrl7",
       "team_name": "Skrrt vs The World"
     },
-    "o4jvg6q3mj90wrl7:05gef": {
-      "fantrax_id": "05gef",
-      "player_name": "Cade Cavalli",
-      "primary_position": "SP",
-      "roster_position": "P",
-      "roster_status": "ACTIVE",
-      "team_id": "o4jvg6q3mj90wrl7",
-      "team_name": "Skrrt vs The World"
-    },
     "o4jvg6q3mj90wrl7:05gwz": {
       "fantrax_id": "05gwz",
       "player_name": "Bobby Miller",
@@ -5005,6 +5019,15 @@
       "primary_position": "2B",
       "roster_position": "2B",
       "roster_status": "MINORS",
+      "team_id": "o4jvg6q3mj90wrl7",
+      "team_name": "Skrrt vs The World"
+    },
+    "o4jvg6q3mj90wrl7:05r3a": {
+      "fantrax_id": "05r3a",
+      "player_name": "Brandon Young",
+      "primary_position": "SP",
+      "roster_position": "P",
+      "roster_status": "ACTIVE",
       "team_id": "o4jvg6q3mj90wrl7",
       "team_name": "Skrrt vs The World"
     },
@@ -5269,15 +5292,6 @@
       "team_id": "qatqhh61mj90wrl7",
       "team_name": "Je suis Charlie Morton"
     },
-    "qatqhh61mj90wrl7:026lz": {
-      "fantrax_id": "026lz",
-      "player_name": "Josh Bell",
-      "primary_position": "DH",
-      "roster_position": "UT",
-      "roster_status": "ACTIVE",
-      "team_id": "qatqhh61mj90wrl7",
-      "team_name": "Je suis Charlie Morton"
-    },
     "qatqhh61mj90wrl7:02bq2": {
       "fantrax_id": "02bq2",
       "player_name": "Brandon Nimmo",
@@ -5337,6 +5351,15 @@
       "player_name": "Logan Webb",
       "primary_position": "SP",
       "roster_position": "P",
+      "roster_status": "ACTIVE",
+      "team_id": "qatqhh61mj90wrl7",
+      "team_name": "Je suis Charlie Morton"
+    },
+    "qatqhh61mj90wrl7:03qyv": {
+      "fantrax_id": "03qyv",
+      "player_name": "Jake McCarthy",
+      "primary_position": "LF",
+      "roster_position": "UT",
       "roster_status": "ACTIVE",
       "team_id": "qatqhh61mj90wrl7",
       "team_name": "Je suis Charlie Morton"
@@ -5620,15 +5643,6 @@
       "team_id": "qatqhh61mj90wrl7",
       "team_name": "Je suis Charlie Morton"
     },
-    "qatqhh61mj90wrl7:06625": {
-      "fantrax_id": "06625",
-      "player_name": "Joendry Vargas",
-      "primary_position": "SS",
-      "roster_position": "SS",
-      "roster_status": "MINORS",
-      "team_id": "qatqhh61mj90wrl7",
-      "team_name": "Je suis Charlie Morton"
-    },
     "qatqhh61mj90wrl7:06626": {
       "fantrax_id": "06626",
       "player_name": "Alfredo Duno",
@@ -5671,6 +5685,15 @@
       "primary_position": "SS",
       "roster_position": "MI",
       "roster_status": "ACTIVE",
+      "team_id": "qatqhh61mj90wrl7",
+      "team_name": "Je suis Charlie Morton"
+    },
+    "qatqhh61mj90wrl7:06c5r": {
+      "fantrax_id": "06c5r",
+      "player_name": "Caden Bodine",
+      "primary_position": "C",
+      "roster_position": "C",
+      "roster_status": "MINORS",
       "team_id": "qatqhh61mj90wrl7",
       "team_name": "Je suis Charlie Morton"
     },
