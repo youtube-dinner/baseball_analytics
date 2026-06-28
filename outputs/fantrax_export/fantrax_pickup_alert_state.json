@@ -19,7 +19,8 @@
     "2026-06-24": true,
     "2026-06-25": true,
     "2026-06-26": true,
-    "2026-06-27": true
+    "2026-06-27": true,
+    "2026-06-28": true
   },
   "major_add_alerts": {
     "2026-06-08": {
@@ -137,6 +138,7 @@
       },
       "mldxq5pemj90wrl7": {
         "major_add_limit": 10,
+        "one_remaining": true,
         "overage_alerted": 0
       },
       "o4jvg6q3mj90wrl7": {
@@ -3288,7 +3290,7 @@
       "player_name": "Mickey Moniak",
       "primary_position": "RF",
       "roster_position": "UT",
-      "roster_status": "ACTIVE",
+      "roster_status": "RESERVE",
       "team_id": "jk36oo1hmj90wrl7",
       "team_name": "Daddy Yankee"
     },
@@ -3306,7 +3308,7 @@
       "player_name": "Jazz Chisholm Jr.",
       "primary_position": "2B",
       "roster_position": "2B",
-      "roster_status": "RESERVE",
+      "roster_status": "ACTIVE",
       "team_id": "jk36oo1hmj90wrl7",
       "team_name": "Daddy Yankee"
     },
@@ -3512,7 +3514,7 @@
       "fantrax_id": "05ybv",
       "player_name": "Jackson Holliday",
       "primary_position": "2B",
-      "roster_position": "2B",
+      "roster_position": "UT",
       "roster_status": "ACTIVE",
       "team_id": "jk36oo1hmj90wrl7",
       "team_name": "Daddy Yankee"
@@ -4201,6 +4203,15 @@
       "team_id": "k7c57nf4mj90wrl8",
       "team_name": "Hand Foot Mouth Disease Guys"
     },
+    "mldxq5pemj90wrl7:01u75": {
+      "fantrax_id": "01u75",
+      "player_name": "Salvador Perez",
+      "primary_position": "C",
+      "roster_position": "C",
+      "roster_status": "ACTIVE",
+      "team_id": "mldxq5pemj90wrl7",
+      "team_name": "L\u00e1szlar\u00f3 T\u00f3th"
+    },
     "mldxq5pemj90wrl7:02i2q": {
       "fantrax_id": "02i2q",
       "player_name": "Carlos Correa",
@@ -4273,15 +4284,6 @@
       "team_id": "mldxq5pemj90wrl7",
       "team_name": "L\u00e1szlar\u00f3 T\u00f3th"
     },
-    "mldxq5pemj90wrl7:04aok": {
-      "fantrax_id": "04aok",
-      "player_name": "Gregory Soto",
-      "primary_position": "RP",
-      "roster_position": "P",
-      "roster_status": "ACTIVE",
-      "team_id": "mldxq5pemj90wrl7",
-      "team_name": "L\u00e1szlar\u00f3 T\u00f3th"
-    },
     "mldxq5pemj90wrl7:04c0o": {
       "fantrax_id": "04c0o",
       "player_name": "Jose Soriano",
@@ -4306,6 +4308,15 @@
       "primary_position": "SP",
       "roster_position": "P",
       "roster_status": "INJURED_RESERVE",
+      "team_id": "mldxq5pemj90wrl7",
+      "team_name": "L\u00e1szlar\u00f3 T\u00f3th"
+    },
+    "mldxq5pemj90wrl7:04mjn": {
+      "fantrax_id": "04mjn",
+      "player_name": "Eduard Bazardo",
+      "primary_position": "RP",
+      "roster_position": "P",
+      "roster_status": "ACTIVE",
       "team_id": "mldxq5pemj90wrl7",
       "team_name": "L\u00e1szlar\u00f3 T\u00f3th"
     },
@@ -4351,15 +4362,6 @@
       "primary_position": "RP",
       "roster_position": "P",
       "roster_status": "INJURED_RESERVE",
-      "team_id": "mldxq5pemj90wrl7",
-      "team_name": "L\u00e1szlar\u00f3 T\u00f3th"
-    },
-    "mldxq5pemj90wrl7:04s1g": {
-      "fantrax_id": "04s1g",
-      "player_name": "Gabriel Moreno",
-      "primary_position": "C",
-      "roster_position": "C",
-      "roster_status": "ACTIVE",
       "team_id": "mldxq5pemj90wrl7",
       "team_name": "L\u00e1szlar\u00f3 T\u00f3th"
     },
