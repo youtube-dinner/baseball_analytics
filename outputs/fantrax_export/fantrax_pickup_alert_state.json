@@ -1134,6 +1134,15 @@
       "team_id": "aqfyadu2mj90wrl7",
       "team_name": "Ben the Hen"
     },
+    "aqfyadu2mj90wrl7:041am": {
+      "fantrax_id": "041am",
+      "player_name": "Lucas Erceg",
+      "primary_position": "RP",
+      "roster_position": "P",
+      "roster_status": "ACTIVE",
+      "team_id": "aqfyadu2mj90wrl7",
+      "team_name": "Ben the Hen"
+    },
     "aqfyadu2mj90wrl7:041ma": {
       "fantrax_id": "041ma",
       "player_name": "Cole Ragans",
@@ -1437,15 +1446,6 @@
       "primary_position": "3B",
       "roster_position": "UT",
       "roster_status": "MINORS",
-      "team_id": "aqfyadu2mj90wrl7",
-      "team_name": "Ben the Hen"
-    },
-    "aqfyadu2mj90wrl7:0657l": {
-      "fantrax_id": "0657l",
-      "player_name": "Jack Perkins",
-      "primary_position": "RP",
-      "roster_position": "P",
-      "roster_status": "ACTIVE",
       "team_id": "aqfyadu2mj90wrl7",
       "team_name": "Ben the Hen"
     },
@@ -2637,19 +2637,19 @@
       "team_id": "hd9hwe4mmj90wrl7",
       "team_name": "Third Degree Burnes"
     },
-    "hd9hwe4mmj90wrl7:02iug": {
-      "fantrax_id": "02iug",
-      "player_name": "Michael Wacha",
-      "primary_position": "SP",
+    "hd9hwe4mmj90wrl7:02n2x": {
+      "fantrax_id": "02n2x",
+      "player_name": "Paul Sewald",
+      "primary_position": "RP",
       "roster_position": "P",
       "roster_status": "ACTIVE",
       "team_id": "hd9hwe4mmj90wrl7",
       "team_name": "Third Degree Burnes"
     },
-    "hd9hwe4mmj90wrl7:02n2x": {
-      "fantrax_id": "02n2x",
-      "player_name": "Paul Sewald",
-      "primary_position": "RP",
+    "hd9hwe4mmj90wrl7:031d4": {
+      "fantrax_id": "031d4",
+      "player_name": "Zack Littell",
+      "primary_position": "SP",
       "roster_position": "P",
       "roster_status": "ACTIVE",
       "team_id": "hd9hwe4mmj90wrl7",
@@ -2776,8 +2776,8 @@
       "fantrax_id": "04q2n",
       "player_name": "Adley Rutschman",
       "primary_position": "C",
-      "roster_position": "C",
-      "roster_status": "INJURED_RESERVE",
+      "roster_position": "UT",
+      "roster_status": "ACTIVE",
       "team_id": "hd9hwe4mmj90wrl7",
       "team_name": "Third Degree Burnes"
     },
@@ -2966,7 +2966,7 @@
       "player_name": "Wyatt Langford",
       "primary_position": "LF",
       "roster_position": "OF",
-      "roster_status": "ACTIVE",
+      "roster_status": "INJURED_RESERVE",
       "team_id": "hd9hwe4mmj90wrl7",
       "team_name": "Third Degree Burnes"
     },
@@ -3001,7 +3001,7 @@
       "fantrax_id": "066eo",
       "player_name": "Cole Carrigg",
       "primary_position": "CF",
-      "roster_position": "UT",
+      "roster_position": "OF",
       "roster_status": "ACTIVE",
       "team_id": "hd9hwe4mmj90wrl7",
       "team_name": "Third Degree Burnes"
@@ -3425,7 +3425,7 @@
       "player_name": "Evan Carter",
       "primary_position": "CF",
       "roster_position": "OF",
-      "roster_status": "INJURED_RESERVE",
+      "roster_status": "ACTIVE",
       "team_id": "jk36oo1hmj90wrl7",
       "team_name": "Daddy Yankee"
     },
@@ -3501,15 +3501,6 @@
       "team_id": "jk36oo1hmj90wrl7",
       "team_name": "Daddy Yankee"
     },
-    "jk36oo1hmj90wrl7:05yaz": {
-      "fantrax_id": "05yaz",
-      "player_name": "Will Warren",
-      "primary_position": "SP",
-      "roster_position": "P",
-      "roster_status": "ACTIVE",
-      "team_id": "jk36oo1hmj90wrl7",
-      "team_name": "Daddy Yankee"
-    },
     "jk36oo1hmj90wrl7:05ybv": {
       "fantrax_id": "05ybv",
       "player_name": "Jackson Holliday",
@@ -3524,7 +3515,7 @@
       "player_name": "Cam Smith",
       "primary_position": "RF",
       "roster_position": "OF",
-      "roster_status": "ACTIVE",
+      "roster_status": "RESERVE",
       "team_id": "jk36oo1hmj90wrl7",
       "team_name": "Daddy Yankee"
     },
