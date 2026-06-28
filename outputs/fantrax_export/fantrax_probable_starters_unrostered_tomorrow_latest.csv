@@ -1,11 +1,8 @@
 probable_date,game_time_utc,home_away,probable_team,opponent,mlb_player_id,probable_name,fantrax_id,name,mlb_team,primary_position,eligible_positions,league_status,is_rostered,stats_inc_id,rotowire_id,sport_radar_id,game_pk
-2026-06-28,,,CHW,KC Sun 1:10PM,,Anthony Kay,041mb,"Kay, Anthony",CHW,SP,P,FA,False,10538,14269,6de93a68-31cd-4278-b933-e43cbcee5d98,
-2026-06-28,,,STL,MIA Sun 1:15PM,,Kyle Leahy,04q08,"Leahy, Kyle",STL,RP,P,FA,False,,18354,66ca1e33-1303-4354-9f94-edae0d332456,
 2026-06-28,,,WSH,@BAL Sun 12:35PM,,Zack Littell,031d4,"Littell, Zack",WSH,SP,P,FA,False,11035,14992,fe0fc487-45d3-4178-9fd7-6c00025aff7e,
-2026-06-28,,,ARI,@TB Sun 12:40PM,,Merrill Kelly,02hj7,"Kelly, Merrill",ARI,SP,P,FA,False,11251,15800,871f04aa-367c-48fb-8ae5-a5bd9e27cb8b,
-2026-06-28,,,ATH,@LAA Sun 2:15PM,,Aaron Civale,041qr,"Civale, Aaron",ATH,SP,P,FA,False,10869,14366,1b65d697-deeb-4eec-8bc3-c704a21c7cda,
 2026-06-28,,,MIA,@STL Sun 1:15PM,,Tyler Phillips,03qt6,"Phillips, Tyler",MIA,RP,P,FA,False,11400,15681,45fc262f-bb5c-4491-b58b-e7eb585f9ec3,
 2026-06-28,,,KC,@CHW Sun 1:10PM,,Luinder Avila,06am5,"Avila, Luinder",KC,RP,P,FA,False,,18728,3f90bd6e-fb37-43fa-b2f9-9dac98348a38,
 2026-06-28,,,COL,@MIN Sun 1:10PM,,Ryan Feltner,03r06,"Feltner, Ryan",COL,SP,P,FA,False,,15541,87dfe721-2290-44ac-a106-0aa9e676bfbd,
-2026-06-28,,,NYM,PHI Sun 12:40PM,,Kodai Senga,04a2t,"Senga, Kodai",NYM,SP,P,FA,False,,14711,06180a69-fef8-44cc-bcea-cf581d7f9dc9,
+2026-06-28,,,CHC,@MIL Sun 1:10PM,,Ryan Rolison,04mlh,"Rolison, Ryan",CHC,RP,P,FA,False,11301,14303,30c1f274-bd18-475a-9d97-0a353ad35085,
+2026-06-28,,,NYM,PHI Sun 12:40PM,,Cionel Perez,03zo6,"Perez, Cionel",NYM,RP,P,FA,False,10644,14546,3c3e37f1-b7b1-4d64-ac0a-303dcc82f688,
 2026-06-28,,,LAA,ATH Sun 2:15PM,,Samuel Aldegheri,06aw2,"Aldegheri, Samuel",LAA,SP,P,FA,False,,19357,25da44aa-825b-4787-9abf-730be10a114d,
