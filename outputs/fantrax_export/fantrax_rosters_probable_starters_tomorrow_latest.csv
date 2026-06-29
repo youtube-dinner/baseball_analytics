@@ -1,1 +1,16 @@
 probable_date,game_time_utc,home_away,probable_team,opponent,mlb_player_id,probable_name,period,team_id,team_name,fantrax_id,name,mlb_team,primary_position,roster_position,roster_status,salary,contract,game_pk
+2026-06-29,2026-06-29T22:40:00Z,home,Philadelphia Phillies,Pittsburgh Pirates,605400,Aaron Nola,97,6tnz8jgemj90wrl7,Bobby and the NitWitts,02i3o,"Nola, Aaron",PHI,SP,P,ACTIVE,,,823444
+2026-06-29,2026-06-29T23:10:00Z,home,Boston Red Sox,Washington Nationals,624133,Ranger Suarez,97,6tnz8jgemj90wrl7,Bobby and the NitWitts,03et8,"Suarez, Ranger",BOS,SP,P,ACTIVE,,,824741
+2026-06-29,2026-06-29T22:40:00Z,away,Pittsburgh Pirates,Philadelphia Phillies,677952,Braxton Ashcraft,97,bw696uo5mj90wrl7,Cant Park Here,04pmq,"Ashcraft, Braxton",PIT,RP,P,ACTIVE,,,823444
+2026-06-29,2026-06-30T01:40:00Z,home,Athletics,Los Angeles Dodgers,695611,Gage Jump,97,bw696uo5mj90wrl7,Cant Park Here,05t9g,"Jump, Gage",ATH,SP,P,ACTIVE,,,824986
+2026-06-29,2026-06-30T00:10:00Z,away,Minnesota Twins,Houston Astros,805673,Zebby Matthews,97,bw696uo5mj90wrl7,Cant Park Here,066cf,"Matthews, Zebby",MIN,SP,P,ACTIVE,,,824176
+2026-06-29,2026-06-30T01:40:00Z,home,Seattle Mariners,Los Angeles Angels,669923,George Kirby,97,jk36oo1hmj90wrl7,Daddy Yankee,04yie,"Kirby, George",SEA,SP,P,ACTIVE,,,823121
+2026-06-29,2026-06-30T01:40:00Z,home,Arizona Diamondbacks,San Francisco Giants,593958,Eduardo Rodriguez,97,jk36oo1hmj90wrl7,Daddy Yankee,029si,"Rodriguez, Eduardo",ARI,SP,P,ACTIVE,,,825065
+2026-06-29,2026-06-29T23:05:00Z,home,New York Yankees,Detroit Tigers,677960,Ryan Weathers,97,jk36oo1hmj90wrl7,Daddy Yankee,04mnw,"Weathers, Ryan",NYY,SP,P,ACTIVE,,,823529
+2026-06-29,2026-06-29T23:40:00Z,away,Cincinnati Reds,Milwaukee Brewers,666157,Nick Lodolo,97,qatqhh61mj90wrl7,Je suis Charlie Morton,041ps,"Lodolo, Nick",CIN,SP,P,ACTIVE,,,823771
+2026-06-29,2026-06-30T00:40:00Z,away,Miami Marlins,Colorado Rockies,645261,Sandy Alcantara,97,mldxq5pemj90wrl7,Lászlaró Tóth,03btv,"Alcantara, Sandy",MIA,SP,P,ACTIVE,,,824339
+2026-06-29,2026-06-30T00:05:00Z,home,Chicago Cubs,San Diego Padres,684007,Shota Imanaga,97,mldxq5pemj90wrl7,Lászlaró Tóth,05ge9,"Imanaga, Shota",CHC,SP,P,ACTIVE,,,824662
+2026-06-29,2026-06-29T22:35:00Z,away,Chicago White Sox,Baltimore Orioles,680732,Sean Burke,97,f3myl5ugmj90wrl7,The Hot and Steamy Boys,05xod,"Burke, Sean",CHW,SP,P,ACTIVE,,,824822
+2026-06-29,2026-06-29T23:10:00Z,home,Cleveland Guardians,Texas Rangers,800048,Parker Messick,97,f3myl5ugmj90wrl7,The Hot and Steamy Boys,05tzn,"Messick, Parker",CLE,SP,P,ACTIVE,,,824420
+2026-06-29,2026-06-29T23:05:00Z,away,Detroit Tigers,New York Yankees,663554,Casey Mize,97,hd9hwe4mmj90wrl7,Third Degree Burnes,04mlf,"Mize, Casey",DET,SP,P,ACTIVE,,,823529
+2026-06-29,2026-06-29T23:07:00Z,home,Toronto Blue Jays,New York Mets,702056,Trey Yesavage,97,hd9hwe4mmj90wrl7,Third Degree Burnes,06apx,"Yesavage, Trey",TOR,SP,P,ACTIVE,,,822792

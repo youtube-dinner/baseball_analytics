@@ -1397,7 +1397,7 @@ def run_pipeline():
     ]
     pitcher_analytics_cols = [
         "Player", "Position", "Status", "FPts", "FP/G",
-        "p_game", "p_save", "p_hold", "IP_per_Game", "p_era", "pitching_score", "command_score",
+        "p_game", "p_save", "p_hold", "IP", "IP_per_Game", "p_era", "pitching_score", "command_score",
         "whiff_percent", "bb_percent", "meatball_percent",
         *pitcher_window_cols_with_sv_hld,
         f"pitching_score_{PREVIOUS_YEAR}", f"command_score_{PREVIOUS_YEAR}",

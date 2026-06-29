@@ -19,6 +19,11 @@ SHEETS = [
     ("All Hitters", "hitter_analytics.csv"),
 ]
 
+DEFAULT_FILTERS = {
+    "Free Agent Pitchers": [{"column": "IP", "op": ">=", "value": "0"}],
+    "All Pitchers": [{"column": "IP", "op": ">=", "value": "0"}],
+}
+
 
 def load_data():
     data = {}
@@ -32,6 +37,7 @@ def load_data():
         data[label] = {
             "columns": list(df.columns),
             "rows": df.to_dict(orient="records"),
+            "defaultFilters": DEFAULT_FILTERS.get(label, []),
         }
     return data
 
@@ -207,8 +213,12 @@ def main():
     const addFilterButton = document.getElementById("add-filter");
     let active = Object.keys(data)[0];
     let sort = {{ column: null, dir: "desc" }};
-    let columnFilters = [];
+    let columnFilters = (data[active].defaultFilters || []).map(filter => {{ return {{ ...filter }}; }});
     let heatStats = {{}};
+
+    function defaultFiltersFor(sheetName) {{
+      return (data[sheetName].defaultFilters || []).map(filter => {{ return {{ ...filter }}; }});
+    }}
 
     const heatMetrics = [
       "pitching_score",
@@ -291,7 +301,7 @@ def main():
         button.onclick = () => {{
           active = name;
           sort = {{ column: null, dir: "desc" }};
-          columnFilters = [];
+          columnFilters = defaultFiltersFor(active);
           search.value = "";
           render();
         }};
