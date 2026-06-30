@@ -1,8 +1,8 @@
 probable_date,game_time_utc,home_away,probable_team,opponent,mlb_player_id,probable_name,fantrax_id,name,mlb_team,primary_position,eligible_positions,league_status,is_rostered,stats_inc_id,rotowire_id,sport_radar_id,game_pk
-2026-06-30,,,KC,TB Tue 6:40PM,,Noah Cameron,05ycf,"Cameron, Noah",KC,SP,P,FA,False,,18727,9f16b92f-5eb3-42b2-8b35-9967e608b9cb,
-2026-06-30,,,ATL,STL Tue 6:15PM,,Martin Perez,01fhm,"Perez, Martin",ATL,SP,P,WW,False,8652,10867,9012e198-9f53-4885-8b24-402e51524e82,
+2026-06-30,,,ATL,STL Tue 6:15PM,,Martin Perez,01fhm,"Perez, Martin",ATL,SP,P,FA,False,8652,10867,9012e198-9f53-4885-8b24-402e51524e82,
 2026-06-30,,,ATH,LAD Tue 8:40PM,,Jeffrey Springs,04mlr,"Springs, Jeffrey",ATH,SP,P,FA,False,11121,15663,76375b42-68b1-42a1-94e6-81f152197c81,
 2026-06-30,,,STL,@ATL Tue 6:15PM,,Matthew Liberatore,04mlx,"Liberatore, Matthew",STL,SP,P,FA,False,11397,15399,5522ef4b-d436-4738-94d6-78a2c1c5a3ae,
 2026-06-30,,,CHW,@BAL Tue 5:35PM,,Erick Fedde,03d6n,"Fedde, Erick",CHW,SP,P,FA,False,10229,13346,b484880b-790e-45a7-a751-2a03c01ec7ea,
+2026-06-30,,,ARI,SF Tue 8:40PM,,Brandon Pfaadt,05lg3,"Pfaadt, Brandon",ARI,SP,P,FA,False,,16903,5f6e12b8-1a4b-4b56-ab3b-1b349c0cd614,
 2026-06-30,,,COL,MIA Tue 7:40PM,,Tanner Gordon,05152,"Gordon, Tanner",COL,SP,P,FA,False,,18754,d5862f27-415f-47d9-84c2-9c3d3ee4b0ec,
 2026-06-30,,,SD,@CHC Tue 7:05PM,,J.P. Sears,04eld,"Sears, J.P.",SD,SP,P,FA,False,,15242,9879d57f-6e61-4d12-be21-25c2b7328947,
