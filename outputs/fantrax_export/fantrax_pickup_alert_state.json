@@ -2153,6 +2153,15 @@
       "team_id": "f3myl5ugmj90wrl7",
       "team_name": "The Hot and Steamy Boys"
     },
+    "f3myl5ugmj90wrl7:01sy3": {
+      "fantrax_id": "01sy3",
+      "player_name": "Nolan Arenado",
+      "primary_position": "3B",
+      "roster_position": "3B",
+      "roster_status": "ACTIVE",
+      "team_id": "f3myl5ugmj90wrl7",
+      "team_name": "The Hot and Steamy Boys"
+    },
     "f3myl5ugmj90wrl7:01ub6": {
       "fantrax_id": "01ub6",
       "player_name": "Jose Ramirez",
@@ -2212,15 +2221,6 @@
       "player_name": "Josh Naylor",
       "primary_position": "1B",
       "roster_position": "1B",
-      "roster_status": "ACTIVE",
-      "team_id": "f3myl5ugmj90wrl7",
-      "team_name": "The Hot and Steamy Boys"
-    },
-    "f3myl5ugmj90wrl7:03poo": {
-      "fantrax_id": "03poo",
-      "player_name": "Peter Lambert",
-      "primary_position": "SP",
-      "roster_position": "P",
       "roster_status": "ACTIVE",
       "team_id": "f3myl5ugmj90wrl7",
       "team_name": "The Hot and Steamy Boys"
@@ -2509,7 +2509,7 @@
       "player_name": "Emmet Sheehan",
       "primary_position": "SP",
       "roster_position": "P",
-      "roster_status": "RESERVE",
+      "roster_status": "ACTIVE",
       "team_id": "f3myl5ugmj90wrl7",
       "team_name": "The Hot and Steamy Boys"
     },
@@ -2536,6 +2536,15 @@
       "player_name": "Jacob Wilson",
       "primary_position": "SS",
       "roster_position": "MI",
+      "roster_status": "INJURED_RESERVE",
+      "team_id": "f3myl5ugmj90wrl7",
+      "team_name": "The Hot and Steamy Boys"
+    },
+    "f3myl5ugmj90wrl7:0622w": {
+      "fantrax_id": "0622w",
+      "player_name": "Chandler Simpson",
+      "primary_position": "CF",
+      "roster_position": "UT",
       "roster_status": "ACTIVE",
       "team_id": "f3myl5ugmj90wrl7",
       "team_name": "The Hot and Steamy Boys"
@@ -2688,15 +2697,6 @@
       "fantrax_id": "02n2x",
       "player_name": "Paul Sewald",
       "primary_position": "RP",
-      "roster_position": "P",
-      "roster_status": "ACTIVE",
-      "team_id": "hd9hwe4mmj90wrl7",
-      "team_name": "Third Degree Burnes"
-    },
-    "hd9hwe4mmj90wrl7:031d4": {
-      "fantrax_id": "031d4",
-      "player_name": "Zack Littell",
-      "primary_position": "SP",
       "roster_position": "P",
       "roster_status": "ACTIVE",
       "team_id": "hd9hwe4mmj90wrl7",
@@ -2978,6 +2978,15 @@
       "primary_position": "SS",
       "roster_position": "SS",
       "roster_status": "MINORS",
+      "team_id": "hd9hwe4mmj90wrl7",
+      "team_name": "Third Degree Burnes"
+    },
+    "hd9hwe4mmj90wrl7:05yaz": {
+      "fantrax_id": "05yaz",
+      "player_name": "Will Warren",
+      "primary_position": "SP",
+      "roster_position": "P",
+      "roster_status": "ACTIVE",
       "team_id": "hd9hwe4mmj90wrl7",
       "team_name": "Third Degree Burnes"
     },
@@ -3264,16 +3273,7 @@
       "fantrax_id": "03atq",
       "player_name": "Willy Adames",
       "primary_position": "SS",
-      "roster_position": "MI",
-      "roster_status": "RESERVE",
-      "team_id": "jk36oo1hmj90wrl7",
-      "team_name": "Daddy Yankee"
-    },
-    "jk36oo1hmj90wrl7:03btu": {
-      "fantrax_id": "03btu",
-      "player_name": "Willi Castro",
-      "primary_position": "2B",
-      "roster_position": "MI",
+      "roster_position": "UT",
       "roster_status": "ACTIVE",
       "team_id": "jk36oo1hmj90wrl7",
       "team_name": "Daddy Yankee"
@@ -3292,6 +3292,15 @@
       "player_name": "Ryan OHearn",
       "primary_position": "1B",
       "roster_position": "OF",
+      "roster_status": "RESERVE",
+      "team_id": "jk36oo1hmj90wrl7",
+      "team_name": "Daddy Yankee"
+    },
+    "jk36oo1hmj90wrl7:03pdw": {
+      "fantrax_id": "03pdw",
+      "player_name": "Andrew Benintendi",
+      "primary_position": "LF",
+      "roster_position": "UT",
       "roster_status": "ACTIVE",
       "team_id": "jk36oo1hmj90wrl7",
       "team_name": "Daddy Yankee"
@@ -3377,6 +3386,15 @@
       "team_id": "jk36oo1hmj90wrl7",
       "team_name": "Daddy Yankee"
     },
+    "jk36oo1hmj90wrl7:04mn2": {
+      "fantrax_id": "04mn2",
+      "player_name": "Griffin Conine",
+      "primary_position": "LF",
+      "roster_position": "OF",
+      "roster_status": "ACTIVE",
+      "team_id": "jk36oo1hmj90wrl7",
+      "team_name": "Daddy Yankee"
+    },
     "jk36oo1hmj90wrl7:04mnw": {
       "fantrax_id": "04mnw",
       "player_name": "Ryan Weathers",
@@ -3390,7 +3408,7 @@
       "fantrax_id": "04nqx",
       "player_name": "Ezequiel Duran",
       "primary_position": "SS",
-      "roster_position": "UT",
+      "roster_position": "MI",
       "roster_status": "ACTIVE",
       "team_id": "jk36oo1hmj90wrl7",
       "team_name": "Daddy Yankee"
@@ -3400,15 +3418,6 @@
       "player_name": "Geraldo Perdomo",
       "primary_position": "SS",
       "roster_position": "SS",
-      "roster_status": "ACTIVE",
-      "team_id": "jk36oo1hmj90wrl7",
-      "team_name": "Daddy Yankee"
-    },
-    "jk36oo1hmj90wrl7:04up9": {
-      "fantrax_id": "04up9",
-      "player_name": "Heriberto Hernandez",
-      "primary_position": "LF",
-      "roster_position": "UT",
       "roster_status": "ACTIVE",
       "team_id": "jk36oo1hmj90wrl7",
       "team_name": "Daddy Yankee"
@@ -3908,15 +3917,6 @@
       "team_id": "k7c57nf4mj90wrl8",
       "team_name": "Hand Foot Mouth Disease Guys"
     },
-    "k7c57nf4mj90wrl8:04pvl": {
-      "fantrax_id": "04pvl",
-      "player_name": "Mike Burrows",
-      "primary_position": "SP",
-      "roster_position": "P",
-      "roster_status": "ACTIVE",
-      "team_id": "k7c57nf4mj90wrl8",
-      "team_name": "Hand Foot Mouth Disease Guys"
-    },
     "k7c57nf4mj90wrl8:04qii": {
       "fantrax_id": "04qii",
       "player_name": "Addison Barger",
@@ -3976,6 +3976,15 @@
       "player_name": "Casey Schmitt",
       "primary_position": "2B",
       "roster_position": "OF",
+      "roster_status": "ACTIVE",
+      "team_id": "k7c57nf4mj90wrl8",
+      "team_name": "Hand Foot Mouth Disease Guys"
+    },
+    "k7c57nf4mj90wrl8:05jq2": {
+      "fantrax_id": "05jq2",
+      "player_name": "Andrew Abbott",
+      "primary_position": "SP",
+      "roster_position": "P",
       "roster_status": "ACTIVE",
       "team_id": "k7c57nf4mj90wrl8",
       "team_name": "Hand Foot Mouth Disease Guys"
