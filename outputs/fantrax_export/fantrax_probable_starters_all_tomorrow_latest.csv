@@ -1,9 +1,7 @@
 probable_date,game_time_utc,home_away,probable_team,opponent,mlb_player_id,probable_name,fantrax_id,name,mlb_team,primary_position,eligible_positions,league_status,is_rostered,stats_inc_id,rotowire_id,sport_radar_id,game_pk
-2026-07-01,,,KC,TB Wed 6:40PM,,Seth Lugo,03sef,"Lugo, Seth",KC,SP,P,FA,False,10326,14095,0600588b-39b2-49eb-9e77-208f8fdaca9b,
 2026-07-01,,,STL,@ATL Wed 6:15PM,,Michael McGreevy,05sr2,"McGreevy, Michael",STL,SP,P,FA,False,,17320,5d8d6eb5-f95f-4c6e-888a-0209d85c20c4,
 2026-07-01,,,CHC,SD Wed 1:20PM,,Colin Rea,02bzn,"Rea, Colin",CHC,SP,P,FA,False,10048,13786,cd417c1f-ecec-4a64-907a-bbb2b04d8507,
-2026-07-01,,,TOR,NYM Wed 2:07PM,,Patrick Corbin,01xfr,"Corbin, Patrick",TOR,SP,P,FA,False,9168,11033,0764772b-e8ab-42b3-9ee4-2b61af785e75,
-2026-07-01,,,ARI,SF Wed 8:40PM,,Zac Gallen,041qo,"Gallen, Zac",ARI,SP,P,FA,False,11116,14312,e488a3a6-4673-4e5d-befe-6d5ab57b0b8e,
+2026-07-01,,,TOR,NYM Wed 2:07PM,,Braydon Fisher,04pqo,"Fisher, Braydon",TOR,RP,P,FA,False,11479,15473,65065b12-776a-4930-98b6-637b0f36456f,
 2026-07-01,,,COL,MIA Wed 7:40PM,,Kyle Freeland,03ca3,"Freeland, Kyle",COL,SP,P,FA,False,9863,13369,e2081019-8ef0-471d-b6d6-1333a8a45897,
 2026-07-01,,,ATL,STL Wed 6:15PM,,Reynaldo Lopez,03i81,"Lopez, Reynaldo",ATL,SP,P,FA,False,10152,13612,942dc231-6052-4410-9bad-e94e465bc914,
 2026-07-01,,,SF,@ARI Wed 8:40PM,,Trevor McDonald,0518g,"McDonald, Trevor",SF,SP,P,FA,False,,16210,7cfd66e7-95dd-4362-a636-545dfef62be9,
