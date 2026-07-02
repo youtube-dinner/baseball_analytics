@@ -23,7 +23,8 @@
     "2026-06-28": true,
     "2026-06-29": true,
     "2026-06-30": true,
-    "2026-07-01": true
+    "2026-07-01": true,
+    "2026-07-02": true
   },
   "major_add_alerts": {
     "2026-06-08": {
@@ -177,6 +178,7 @@
       },
       "jk36oo1hmj90wrl7": {
         "major_add_limit": 10,
+        "one_remaining": true,
         "overage_alerted": 0
       },
       "k7c57nf4mj90wrl8": {
@@ -185,6 +187,7 @@
       },
       "mldxq5pemj90wrl7": {
         "major_add_limit": 10,
+        "one_remaining": true,
         "overage_alerted": 0
       },
       "o4jvg6q3mj90wrl7": {
@@ -1649,7 +1652,7 @@
       "player_name": "Francisco Lindor",
       "primary_position": "SS",
       "roster_position": "UT",
-      "roster_status": "ACTIVE",
+      "roster_status": "RESERVE",
       "team_id": "bw696uo5mj90wrl7",
       "team_name": "Cant Park Here"
     },
@@ -2000,7 +2003,7 @@
       "player_name": "Drake Baldwin",
       "primary_position": "C",
       "roster_position": "UT",
-      "roster_status": "RESERVE",
+      "roster_status": "ACTIVE",
       "team_id": "bw696uo5mj90wrl7",
       "team_name": "Cant Park Here"
     },
@@ -2477,6 +2480,15 @@
       "player_name": "Parker Messick",
       "primary_position": "SP",
       "roster_position": "P",
+      "roster_status": "ACTIVE",
+      "team_id": "f3myl5ugmj90wrl7",
+      "team_name": "The Hot and Steamy Boys"
+    },
+    "f3myl5ugmj90wrl7:05tzp": {
+      "fantrax_id": "05tzp",
+      "player_name": "Jacob Gonzalez",
+      "primary_position": "2B",
+      "roster_position": "MI",
       "roster_status": "ACTIVE",
       "team_id": "f3myl5ugmj90wrl7",
       "team_name": "The Hot and Steamy Boys"
@@ -3826,7 +3838,7 @@
       "fantrax_id": "02yc4",
       "player_name": "Shohei Ohtani",
       "primary_position": "DH",
-      "roster_position": "P",
+      "roster_position": "UT",
       "roster_status": "ACTIVE",
       "team_id": "k7c57nf4mj90wrl8",
       "team_name": "Hand Foot Mouth Disease Guys"
@@ -4097,7 +4109,7 @@
       "player_name": "Caleb Durbin",
       "primary_position": "3B",
       "roster_position": "UT",
-      "roster_status": "ACTIVE",
+      "roster_status": "RESERVE",
       "team_id": "k7c57nf4mj90wrl8",
       "team_name": "Hand Foot Mouth Disease Guys"
     },
@@ -4290,15 +4302,6 @@
       "team_id": "mldxq5pemj90wrl7",
       "team_name": "L\u00e1szlar\u00f3 T\u00f3th"
     },
-    "mldxq5pemj90wrl7:03rmz": {
-      "fantrax_id": "03rmz",
-      "player_name": "Keibert Ruiz",
-      "primary_position": "C",
-      "roster_position": "C",
-      "roster_status": "ACTIVE",
-      "team_id": "mldxq5pemj90wrl7",
-      "team_name": "L\u00e1szlar\u00f3 T\u00f3th"
-    },
     "mldxq5pemj90wrl7:03ynj": {
       "fantrax_id": "03ynj",
       "player_name": "Juan Soto",
@@ -4312,17 +4315,8 @@
       "fantrax_id": "04071",
       "player_name": "Isaac Paredes",
       "primary_position": "3B",
-      "roster_position": "1B",
-      "roster_status": "ACTIVE",
-      "team_id": "mldxq5pemj90wrl7",
-      "team_name": "L\u00e1szlar\u00f3 T\u00f3th"
-    },
-    "mldxq5pemj90wrl7:041vm": {
-      "fantrax_id": "041vm",
-      "player_name": "Dylan Lee",
-      "primary_position": "RP",
-      "roster_position": "P",
-      "roster_status": "ACTIVE",
+      "roster_position": "UT",
+      "roster_status": "RESERVE",
       "team_id": "mldxq5pemj90wrl7",
       "team_name": "L\u00e1szlar\u00f3 T\u00f3th"
     },
@@ -4340,6 +4334,15 @@
       "player_name": "Jo Adell",
       "primary_position": "CF",
       "roster_position": "UT",
+      "roster_status": "ACTIVE",
+      "team_id": "mldxq5pemj90wrl7",
+      "team_name": "L\u00e1szlar\u00f3 T\u00f3th"
+    },
+    "mldxq5pemj90wrl7:04aok": {
+      "fantrax_id": "04aok",
+      "player_name": "Gregory Soto",
+      "primary_position": "RP",
+      "roster_position": "P",
       "roster_status": "ACTIVE",
       "team_id": "mldxq5pemj90wrl7",
       "team_name": "L\u00e1szlar\u00f3 T\u00f3th"
@@ -4429,7 +4432,7 @@
       "fantrax_id": "04si2",
       "player_name": "Andrew Vaughn",
       "primary_position": "1B",
-      "roster_position": "UT",
+      "roster_position": "1B",
       "roster_status": "ACTIVE",
       "team_id": "mldxq5pemj90wrl7",
       "team_name": "L\u00e1szlar\u00f3 T\u00f3th"
@@ -4509,6 +4512,15 @@
     "mldxq5pemj90wrl7:05jsg": {
       "fantrax_id": "05jsg",
       "player_name": "Owen Caissie",
+      "primary_position": "RF",
+      "roster_position": "UT",
+      "roster_status": "ACTIVE",
+      "team_id": "mldxq5pemj90wrl7",
+      "team_name": "L\u00e1szlar\u00f3 T\u00f3th"
+    },
+    "mldxq5pemj90wrl7:05rb1": {
+      "fantrax_id": "05rb1",
+      "player_name": "Sal Frelick",
       "primary_position": "RF",
       "roster_position": "UT",
       "roster_status": "ACTIVE",
