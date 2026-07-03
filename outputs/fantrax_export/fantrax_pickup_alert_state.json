@@ -180,6 +180,7 @@
       },
       "jk36oo1hmj90wrl7": {
         "major_add_limit": 10,
+        "none_remaining": true,
         "one_remaining": true,
         "overage_alerted": 0
       },
@@ -504,6 +505,16 @@
       "violation_alert_sent": false,
       "window_start": "2026-06-20"
     },
+    "jk36oo1hmj90wrl7:0629b": {
+      "demotion_alert_sent": true,
+      "eligible_date": "2026-07-25",
+      "fantrax_id": "0629b",
+      "player_name": "Walbert Urena",
+      "team_id": "jk36oo1hmj90wrl7",
+      "team_name": "Daddy Yankee",
+      "violation_alert_sent": false,
+      "window_start": "2026-07-03"
+    },
     "jk36oo1hmj90wrl7:062pm": {
       "demotion_alert_sent": false,
       "eligible_date": "2026-07-19",
@@ -553,6 +564,16 @@
       "team_name": "Daddy Yankee",
       "violation_alert_sent": false,
       "window_start": "2026-06-17"
+    },
+    "jk36oo1hmj90wrl7:072hk": {
+      "demotion_alert_sent": false,
+      "eligible_date": "2026-07-25",
+      "fantrax_id": "072hk",
+      "player_name": "Ricki Moneys",
+      "team_id": "jk36oo1hmj90wrl7",
+      "team_name": "Daddy Yankee",
+      "violation_alert_sent": false,
+      "window_start": "2026-07-03"
     },
     "mldxq5pemj90wrl7:0603p": {
       "demotion_alert_sent": false,
@@ -1161,7 +1182,7 @@
       "player_name": "Carlos Rodon",
       "primary_position": "SP",
       "roster_position": "P",
-      "roster_status": "ACTIVE",
+      "roster_status": "INJURED_RESERVE",
       "team_id": "aqfyadu2mj90wrl7",
       "team_name": "Ben the Hen"
     },
@@ -1223,8 +1244,8 @@
       "fantrax_id": "03pit",
       "player_name": "Trent Grisham",
       "primary_position": "CF",
-      "roster_position": "OF",
-      "roster_status": "INJURED_RESERVE",
+      "roster_position": "UT",
+      "roster_status": "ACTIVE",
       "team_id": "aqfyadu2mj90wrl7",
       "team_name": "Ben the Hen"
     },
@@ -1278,15 +1299,6 @@
       "player_name": "Hunter Greene",
       "primary_position": "SP",
       "roster_position": "P",
-      "roster_status": "INJURED_RESERVE",
-      "team_id": "aqfyadu2mj90wrl7",
-      "team_name": "Ben the Hen"
-    },
-    "aqfyadu2mj90wrl7:04eig": {
-      "fantrax_id": "04eig",
-      "player_name": "Jose Caballero",
-      "primary_position": "SS",
-      "roster_position": "UT",
       "roster_status": "ACTIVE",
       "team_id": "aqfyadu2mj90wrl7",
       "team_name": "Ben the Hen"
@@ -3442,6 +3454,15 @@
       "team_id": "jk36oo1hmj90wrl7",
       "team_name": "Daddy Yankee"
     },
+    "jk36oo1hmj90wrl7:04mnw": {
+      "fantrax_id": "04mnw",
+      "player_name": "Ryan Weathers",
+      "primary_position": "SP",
+      "roster_position": "P",
+      "roster_status": "ACTIVE",
+      "team_id": "jk36oo1hmj90wrl7",
+      "team_name": "Daddy Yankee"
+    },
     "jk36oo1hmj90wrl7:04nqx": {
       "fantrax_id": "04nqx",
       "player_name": "Ezequiel Duran",
@@ -3510,7 +3531,7 @@
       "player_name": "Cade Cavalli",
       "primary_position": "SP",
       "roster_position": "P",
-      "roster_status": "INJURED_RESERVE",
+      "roster_status": "ACTIVE",
       "team_id": "jk36oo1hmj90wrl7",
       "team_name": "Daddy Yankee"
     },
@@ -3640,20 +3661,11 @@
       "team_id": "jk36oo1hmj90wrl7",
       "team_name": "Daddy Yankee"
     },
-    "jk36oo1hmj90wrl7:0657l": {
-      "fantrax_id": "0657l",
-      "player_name": "Jack Perkins",
-      "primary_position": "RP",
+    "jk36oo1hmj90wrl7:0629b": {
+      "fantrax_id": "0629b",
+      "player_name": "Walbert Urena",
+      "primary_position": "SP",
       "roster_position": "P",
-      "roster_status": "ACTIVE",
-      "team_id": "jk36oo1hmj90wrl7",
-      "team_name": "Daddy Yankee"
-    },
-    "jk36oo1hmj90wrl7:066db": {
-      "fantrax_id": "066db",
-      "player_name": "Zach Cole Jr.",
-      "primary_position": "RF",
-      "roster_position": "OF",
       "roster_status": "MINORS",
       "team_id": "jk36oo1hmj90wrl7",
       "team_name": "Daddy Yankee"
@@ -3780,6 +3792,15 @@
       "player_name": "Juan Rijo",
       "primary_position": "CF",
       "roster_position": "OF",
+      "roster_status": "MINORS",
+      "team_id": "jk36oo1hmj90wrl7",
+      "team_name": "Daddy Yankee"
+    },
+    "jk36oo1hmj90wrl7:072hk": {
+      "fantrax_id": "072hk",
+      "player_name": "Ricki Moneys",
+      "primary_position": "SS",
+      "roster_position": "SS",
       "roster_status": "MINORS",
       "team_id": "jk36oo1hmj90wrl7",
       "team_name": "Daddy Yankee"
@@ -3970,6 +3991,15 @@
       "primary_position": "SS",
       "roster_position": "UT",
       "roster_status": "INJURED_RESERVE",
+      "team_id": "k7c57nf4mj90wrl8",
+      "team_name": "Hand Foot Mouth Disease Guys"
+    },
+    "k7c57nf4mj90wrl8:04pvs": {
+      "fantrax_id": "04pvs",
+      "player_name": "Blaze Alexander",
+      "primary_position": "3B",
+      "roster_position": "SS",
+      "roster_status": "ACTIVE",
       "team_id": "k7c57nf4mj90wrl8",
       "team_name": "Hand Foot Mouth Disease Guys"
     },
