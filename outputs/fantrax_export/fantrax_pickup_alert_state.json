@@ -173,6 +173,7 @@
       },
       "f3myl5ugmj90wrl7": {
         "major_add_limit": 10,
+        "none_remaining": true,
         "overage_alerted": 0
       },
       "hd9hwe4mmj90wrl7": {
@@ -2421,6 +2422,15 @@
       "team_id": "f3myl5ugmj90wrl7",
       "team_name": "The Hot and Steamy Boys"
     },
+    "f3myl5ugmj90wrl7:04pmb": {
+      "fantrax_id": "04pmb",
+      "player_name": "Kris Bubic",
+      "primary_position": "SP",
+      "roster_position": "P",
+      "roster_status": "INJURED_RESERVE",
+      "team_id": "f3myl5ugmj90wrl7",
+      "team_name": "The Hot and Steamy Boys"
+    },
     "f3myl5ugmj90wrl7:04pq4": {
       "fantrax_id": "04pq4",
       "player_name": "Kyle Bradish",
@@ -3874,8 +3884,8 @@
       "fantrax_id": "02yc4",
       "player_name": "Shohei Ohtani",
       "primary_position": "DH",
-      "roster_position": "P",
-      "roster_status": "ACTIVE",
+      "roster_position": "UT",
+      "roster_status": "RESERVE",
       "team_id": "k7c57nf4mj90wrl8",
       "team_name": "Hand Foot Mouth Disease Guys"
     },
@@ -4135,8 +4145,8 @@
       "fantrax_id": "05vy5",
       "player_name": "Carter Jensen",
       "primary_position": "C",
-      "roster_position": "C",
-      "roster_status": "RESERVE",
+      "roster_position": "UT",
+      "roster_status": "ACTIVE",
       "team_id": "k7c57nf4mj90wrl8",
       "team_name": "Hand Foot Mouth Disease Guys"
     },
