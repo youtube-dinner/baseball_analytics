@@ -1226,15 +1226,6 @@
       "team_id": "aqfyadu2mj90wrl7",
       "team_name": "Ben the Hen"
     },
-    "aqfyadu2mj90wrl7:03d6w": {
-      "fantrax_id": "03d6w",
-      "player_name": "Jack Flaherty",
-      "primary_position": "SP",
-      "roster_position": "P",
-      "roster_status": "ACTIVE",
-      "team_id": "aqfyadu2mj90wrl7",
-      "team_name": "Ben the Hen"
-    },
     "aqfyadu2mj90wrl7:03dfa": {
       "fantrax_id": "03dfa",
       "player_name": "Tanner Scott",
@@ -1313,6 +1304,15 @@
       "primary_position": "CF",
       "roster_position": "OF",
       "roster_status": "INJURED_RESERVE",
+      "team_id": "aqfyadu2mj90wrl7",
+      "team_name": "Ben the Hen"
+    },
+    "aqfyadu2mj90wrl7:04fq2": {
+      "fantrax_id": "04fq2",
+      "player_name": "Javier Assad",
+      "primary_position": "SP",
+      "roster_position": "P",
+      "roster_status": "ACTIVE",
       "team_id": "aqfyadu2mj90wrl7",
       "team_name": "Ben the Hen"
     },
@@ -1793,19 +1793,19 @@
       "team_id": "bw696uo5mj90wrl7",
       "team_name": "Cant Park Here"
     },
-    "bw696uo5mj90wrl7:04pkq": {
-      "fantrax_id": "04pkq",
-      "player_name": "Anthony Seigler",
-      "primary_position": "C",
-      "roster_position": "3B",
-      "roster_status": "ACTIVE",
-      "team_id": "bw696uo5mj90wrl7",
-      "team_name": "Cant Park Here"
-    },
     "bw696uo5mj90wrl7:04pmq": {
       "fantrax_id": "04pmq",
       "player_name": "Braxton Ashcraft",
       "primary_position": "RP",
+      "roster_position": "P",
+      "roster_status": "ACTIVE",
+      "team_id": "bw696uo5mj90wrl7",
+      "team_name": "Cant Park Here"
+    },
+    "bw696uo5mj90wrl7:04pxf": {
+      "fantrax_id": "04pxf",
+      "player_name": "Davis Martin",
+      "primary_position": "SP",
       "roster_position": "P",
       "roster_status": "ACTIVE",
       "team_id": "bw696uo5mj90wrl7",
@@ -2239,6 +2239,15 @@
       "player_name": "Xander Bogaerts",
       "primary_position": "SS",
       "roster_position": "UT",
+      "roster_status": "ACTIVE",
+      "team_id": "f3myl5ugmj90wrl7",
+      "team_name": "The Hot and Steamy Boys"
+    },
+    "f3myl5ugmj90wrl7:029si": {
+      "fantrax_id": "029si",
+      "player_name": "Eduardo Rodriguez",
+      "primary_position": "SP",
+      "roster_position": "P",
       "roster_status": "ACTIVE",
       "team_id": "f3myl5ugmj90wrl7",
       "team_name": "The Hot and Steamy Boys"
@@ -5501,10 +5510,10 @@
       "team_id": "qatqhh61mj90wrl7",
       "team_name": "Je suis Charlie Morton"
     },
-    "qatqhh61mj90wrl7:04ew7": {
-      "fantrax_id": "04ew7",
-      "player_name": "Aaron Ashby",
-      "primary_position": "RP",
+    "qatqhh61mj90wrl7:04mlx": {
+      "fantrax_id": "04mlx",
+      "player_name": "Matthew Liberatore",
+      "primary_position": "SP",
       "roster_position": "P",
       "roster_status": "ACTIVE",
       "team_id": "qatqhh61mj90wrl7",
