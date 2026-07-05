@@ -2288,7 +2288,7 @@ fantrax_id,name,mlb_team,primary_position,eligible_positions,league_status,stats
 06lff,"Dees, Bailey",(N/A),RP,P,FA,,,
 064nm,"Deese, Jaycob",PIT,RP,P,FA,,,
 06rgh,"Defrank, Kevin",MIA,SP,P,FA,,20410,
-06qpz,"Degges, Ryan",CLE,SP,P,FA,,,
+06qpz,"Degges, Ryan",CLE,SP,P,FA,,21164,
 076rs,"Degollado, Maicor",BAL,SS,"UT,SS,MI",FA,,,
 06r85,"Del Angel, Anthony",(N/A),3B,"UT,3B,CI",FA,,,
 051h6,"Del Bonta-Smith, Fineas",(N/A),RP,P,FA,,18400,
@@ -8078,7 +8078,7 @@ fantrax_id,name,mlb_team,primary_position,eligible_positions,league_status,stats
 06mnl,"Sanford, Wyatt",PIT,SS,"2B,UT,SS,MI",T,,19522,
 04j1w,"Sanmartin, Reiver",SF,RP,P,FA,,15244,dcdf6389-65cb-46cf-a44d-a6442f41cbec
 01s9d,"Sano, Miguel",(N/A),3B,"1B,UT,3B,CI",FA,9110,11227,aecc630f-57da-4b23-842b-fd65394e81be
-062ho,"Sanoja, Javier",MIA,3B,"OF,UT,2B,3B,CI,P,MI",T,,16543,d0c8d78d-f5d7-43d9-a252-1653ce2d6b4b
+062ho,"Sanoja, Javier",MIA,3B,"OF,UT,2B,3B,CI,P,MI",WW,,16543,d0c8d78d-f5d7-43d9-a252-1653ce2d6b4b
 074z3,"Sansone, Mike",BOS,SP,P,FA,,,
 072in,"Santa Cruz de Oviedo, Anthony",LAA,1B,"OF,1B,UT,CI",FA,,,
 06oon,"Santa Maria, Tony",TB,2B,"OF,2B,UT,MI",FA,,,
