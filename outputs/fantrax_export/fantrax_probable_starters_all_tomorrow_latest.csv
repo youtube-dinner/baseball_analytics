@@ -1,6 +1,5 @@
 probable_date,game_time_utc,home_away,probable_team,opponent,mlb_player_id,probable_name,fantrax_id,name,mlb_team,primary_position,eligible_positions,league_status,is_rostered,stats_inc_id,rotowire_id,sport_radar_id,game_pk
 2026-07-06,,,STL,MIL Mon 6:45PM,,Dustin May,041r5,"May, Dustin",STL,SP,P,FA,False,10898,14331,8c6572ee-d35f-4542-946a-1611e68395fe,
-2026-07-06,,,SD,ARI Mon 8:40PM,,Walker Buehler,03aac,"Buehler, Walker",SD,SP,P,FA,False,10509,13815,3703319e-ec2e-4db7-9e86-59589e233f95,
 2026-07-06,,,KC,PHI Mon 1:10PM,,Noah Cameron,05ycf,"Cameron, Noah",KC,SP,P,FA,False,,18727,9f16b92f-5eb3-42b2-8b35-9967e608b9cb,
 2026-07-06,,,HOU,@WSH Mon 5:45PM,,Mike Burrows,04pvl,"Burrows, Mike",HOU,SP,P,FA,False,,17633,d2aa08d8-1e32-441b-886a-0d3372a4cc65,
 2026-07-06,,,MIL,@STL Mon 6:45PM,,Shane Drohan,04eud,"Drohan, Shane",MIL,SP,P,FA,False,,14851,1ace87c5-9684-4575-9515-8cf7bb98bf45,
