@@ -28,7 +28,8 @@
     "2026-07-03": true,
     "2026-07-04": true,
     "2026-07-05": true,
-    "2026-07-06": true
+    "2026-07-06": true,
+    "2026-07-07": true
   },
   "major_add_alerts": {
     "2026-06-08": {
@@ -733,6 +734,15 @@
       "team_id": "6tnz8jgemj90wrl7",
       "team_name": "Bobby and the NitWitts"
     },
+    "6tnz8jgemj90wrl7:01xfr": {
+      "fantrax_id": "01xfr",
+      "player_name": "Patrick Corbin",
+      "primary_position": "SP",
+      "roster_position": "P",
+      "roster_status": "ACTIVE",
+      "team_id": "6tnz8jgemj90wrl7",
+      "team_name": "Bobby and the NitWitts"
+    },
     "6tnz8jgemj90wrl7:025it": {
       "fantrax_id": "025it",
       "player_name": "Jason Adam",
@@ -864,15 +874,6 @@
       "player_name": "Garrett Mitchell",
       "primary_position": "CF",
       "roster_position": "UT",
-      "roster_status": "ACTIVE",
-      "team_id": "6tnz8jgemj90wrl7",
-      "team_name": "Bobby and the NitWitts"
-    },
-    "6tnz8jgemj90wrl7:04eud": {
-      "fantrax_id": "04eud",
-      "player_name": "Shane Drohan",
-      "primary_position": "SP",
-      "roster_position": "P",
       "roster_status": "ACTIVE",
       "team_id": "6tnz8jgemj90wrl7",
       "team_name": "Bobby and the NitWitts"
