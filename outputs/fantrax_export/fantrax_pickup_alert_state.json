@@ -3978,7 +3978,7 @@
       "fantrax_id": "02jh6",
       "player_name": "Eugenio Suarez",
       "primary_position": "3B",
-      "roster_position": "3B",
+      "roster_position": "UT",
       "roster_status": "ACTIVE",
       "team_id": "k7c57nf4mj90wrl8",
       "team_name": "Hand Foot Mouth Disease Guys"
@@ -4195,7 +4195,7 @@
       "player_name": "Samuel Basallo",
       "primary_position": "C",
       "roster_position": "UT",
-      "roster_status": "RESERVE",
+      "roster_status": "ACTIVE",
       "team_id": "k7c57nf4mj90wrl8",
       "team_name": "Hand Foot Mouth Disease Guys"
     },
@@ -4266,7 +4266,7 @@
       "fantrax_id": "05y4b",
       "player_name": "Caleb Durbin",
       "primary_position": "3B",
-      "roster_position": "UT",
+      "roster_position": "3B",
       "roster_status": "ACTIVE",
       "team_id": "k7c57nf4mj90wrl8",
       "team_name": "Hand Foot Mouth Disease Guys"
