@@ -396,6 +396,16 @@
       "violation_alert_sent": false,
       "window_start": "2026-06-23"
     },
+    "f3myl5ugmj90wrl7:04up9": {
+      "demotion_alert_sent": true,
+      "eligible_date": "2026-07-30",
+      "fantrax_id": "04up9",
+      "player_name": "Heriberto Hernandez",
+      "team_id": "f3myl5ugmj90wrl7",
+      "team_name": "The Hot and Steamy Boys",
+      "violation_alert_sent": false,
+      "window_start": "2026-07-08"
+    },
     "f3myl5ugmj90wrl7:05rbd": {
       "demotion_alert_sent": false,
       "eligible_date": "2026-07-10",
@@ -2325,7 +2335,7 @@
       "player_name": "Mike Trout",
       "primary_position": "DH",
       "roster_position": "OF",
-      "roster_status": "INJURED_RESERVE",
+      "roster_status": "ACTIVE",
       "team_id": "f3myl5ugmj90wrl7",
       "team_name": "The Hot and Steamy Boys"
     },
@@ -2558,7 +2568,7 @@
       "fantrax_id": "04pst",
       "player_name": "Jarren Duran",
       "primary_position": "LF",
-      "roster_position": "OF",
+      "roster_position": "UT",
       "roster_status": "ACTIVE",
       "team_id": "f3myl5ugmj90wrl7",
       "team_name": "The Hot and Steamy Boys"
@@ -2576,8 +2586,8 @@
       "fantrax_id": "04up9",
       "player_name": "Heriberto Hernandez",
       "primary_position": "LF",
-      "roster_position": "OF",
-      "roster_status": "RESERVE",
+      "roster_position": "UT",
+      "roster_status": "MINORS",
       "team_id": "f3myl5ugmj90wrl7",
       "team_name": "The Hot and Steamy Boys"
     },
@@ -2613,7 +2623,7 @@
       "player_name": "Kahlil Watson",
       "primary_position": "CF",
       "roster_position": "UT",
-      "roster_status": "ACTIVE",
+      "roster_status": "RESERVE",
       "team_id": "f3myl5ugmj90wrl7",
       "team_name": "The Hot and Steamy Boys"
     },
@@ -2622,7 +2632,7 @@
       "player_name": "Jackson Jobe",
       "primary_position": "SP",
       "roster_position": "P",
-      "roster_status": "MINORS",
+      "roster_status": "INJURED_RESERVE",
       "team_id": "f3myl5ugmj90wrl7",
       "team_name": "The Hot and Steamy Boys"
     },
@@ -3639,7 +3649,7 @@
       "player_name": "Yainer Diaz",
       "primary_position": "C",
       "roster_position": "C",
-      "roster_status": "RESERVE",
+      "roster_status": "ACTIVE",
       "team_id": "jk36oo1hmj90wrl7",
       "team_name": "Daddy Yankee"
     },
@@ -3720,7 +3730,7 @@
       "player_name": "Hunter Goodman",
       "primary_position": "C",
       "roster_position": "C",
-      "roster_status": "ACTIVE",
+      "roster_status": "RESERVE",
       "team_id": "jk36oo1hmj90wrl7",
       "team_name": "Daddy Yankee"
     },
