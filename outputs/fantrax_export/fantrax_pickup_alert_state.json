@@ -2464,15 +2464,6 @@
       "team_id": "f3myl5ugmj90wrl7",
       "team_name": "The Hot and Steamy Boys"
     },
-    "f3myl5ugmj90wrl7:04cwf": {
-      "fantrax_id": "04cwf",
-      "player_name": "Shane Baz",
-      "primary_position": "SP",
-      "roster_position": "P",
-      "roster_status": "ACTIVE",
-      "team_id": "f3myl5ugmj90wrl7",
-      "team_name": "The Hot and Steamy Boys"
-    },
     "f3myl5ugmj90wrl7:04de1": {
       "fantrax_id": "04de1",
       "player_name": "Triston Casas",
@@ -2578,6 +2569,15 @@
       "primary_position": "CF",
       "roster_position": "OF",
       "roster_status": "MINORS",
+      "team_id": "f3myl5ugmj90wrl7",
+      "team_name": "The Hot and Steamy Boys"
+    },
+    "f3myl5ugmj90wrl7:04up9": {
+      "fantrax_id": "04up9",
+      "player_name": "Heriberto Hernandez",
+      "primary_position": "LF",
+      "roster_position": "OF",
+      "roster_status": "RESERVE",
       "team_id": "f3myl5ugmj90wrl7",
       "team_name": "The Hot and Steamy Boys"
     },
@@ -2896,15 +2896,6 @@
       "team_id": "hd9hwe4mmj90wrl7",
       "team_name": "Third Degree Burnes"
     },
-    "hd9hwe4mmj90wrl7:03sef": {
-      "fantrax_id": "03sef",
-      "player_name": "Seth Lugo",
-      "primary_position": "SP",
-      "roster_position": "P",
-      "roster_status": "ACTIVE",
-      "team_id": "hd9hwe4mmj90wrl7",
-      "team_name": "Third Degree Burnes"
-    },
     "hd9hwe4mmj90wrl7:03zbh": {
       "fantrax_id": "03zbh",
       "player_name": "Fernando Tatis Jr.",
@@ -3036,6 +3027,15 @@
       "player_name": "Otto Lopez",
       "primary_position": "SS",
       "roster_position": "SS",
+      "roster_status": "ACTIVE",
+      "team_id": "hd9hwe4mmj90wrl7",
+      "team_name": "Third Degree Burnes"
+    },
+    "hd9hwe4mmj90wrl7:04tk1": {
+      "fantrax_id": "04tk1",
+      "player_name": "Slade Cecconi",
+      "primary_position": "SP",
+      "roster_position": "P",
       "roster_status": "ACTIVE",
       "team_id": "hd9hwe4mmj90wrl7",
       "team_name": "Third Degree Burnes"
