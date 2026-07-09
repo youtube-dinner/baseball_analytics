@@ -30,7 +30,8 @@
     "2026-07-05": true,
     "2026-07-06": true,
     "2026-07-07": true,
-    "2026-07-08": true
+    "2026-07-08": true,
+    "2026-07-09": true
   },
   "major_add_alerts": {
     "2026-06-08": {
@@ -5607,9 +5608,9 @@
       "team_id": "qatqhh61mj90wrl7",
       "team_name": "Je suis Charlie Morton"
     },
-    "qatqhh61mj90wrl7:041yb": {
-      "fantrax_id": "041yb",
-      "player_name": "Dean Kremer",
+    "qatqhh61mj90wrl7:0425t": {
+      "fantrax_id": "0425t",
+      "player_name": "Bailey Ober",
       "primary_position": "SP",
       "roster_position": "P",
       "roster_status": "ACTIVE",
