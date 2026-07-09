@@ -82,6 +82,23 @@ def fetch_league_scoring_start():
         raise RuntimeError(f"Fantrax league start date is invalid: {start_date!r}") from exc
 
 
+def fetch_fantrax_general(endpoint, **params):
+    query = urlencode({"leagueId": LEAGUE_ID, **params})
+    req = Request(
+        f"{FANTRAX_GENERAL_URL}/{endpoint}?{query}",
+        headers={"User-Agent": "Mozilla/5.0", "Accept": "application/json"},
+    )
+    with urlopen(req, timeout=30) as response:
+        return json.loads(response.read().decode("utf-8"))
+
+
+def int_value(value):
+    try:
+        return int(str(value or "0"))
+    except (TypeError, ValueError):
+        return 0
+
+
 def effective_scoring_date(transaction_period, league_start_date):
     if transaction_period <= 0:
         return None
@@ -210,6 +227,10 @@ def row_has_minors_marker(row):
     return any(marker in haystack for marker in MINORS_MARKERS)
 
 
+def roster_status_key(period, team_id, fantrax_id):
+    return (int_value(period), team_id or "", fantrax_id or "")
+
+
 def load_current_roster_statuses(path):
     statuses = {}
     if not path.exists():
@@ -218,7 +239,32 @@ def load_current_roster_statuses(path):
         for row in csv.DictReader(f):
             fantrax_id = row.get("fantrax_id")
             if fantrax_id:
-                statuses[fantrax_id] = row
+                statuses[roster_status_key(row.get("period"), row.get("team_id"), fantrax_id)] = row
+    return statuses
+
+
+def fetch_roster_statuses_for_periods(periods, teams, players):
+    statuses = {}
+    for period in sorted(period for period in periods if period):
+        rosters = fetch_fantrax_general("getTeamRosters", period=str(period))
+        for team_id, roster in (rosters.get("rosters") or {}).items():
+            team_name = teams.get(team_id, team_id)
+            for item in roster.get("rosterItems", []) or []:
+                fantrax_id = item.get("id")
+                if not fantrax_id:
+                    continue
+                player = players.get(fantrax_id, {})
+                statuses[roster_status_key(period, team_id, fantrax_id)] = {
+                    "period": str(rosters.get("period") or period),
+                    "team_id": team_id,
+                    "team_name": team_name,
+                    "fantrax_id": fantrax_id,
+                    "name": player.get("name", ""),
+                    "mlb_team": player.get("mlb_team", ""),
+                    "primary_position": player.get("primary_position", ""),
+                    "roster_position": item.get("position", ""),
+                    "roster_status": item.get("status", ""),
+                }
     return statuses
 
 
@@ -268,11 +314,12 @@ def normalize_rows(rows, roster_statuses, players, teams):
         date = parse_fantrax_datetime(date_text)
         scorer = row.get("scorer") or row.get("player") or {}
         fantrax_id = player_id_from_scorer(scorer)
+        transaction_period = int_value(period_cell.get("content"))
         unique_key = (tx_set_id, row.get("transactionCode", ""), fantrax_id)
         if unique_key in seen:
             continue
         seen.add(unique_key)
-        current_roster = roster_statuses.get(fantrax_id, {})
+        current_roster = roster_statuses.get(roster_status_key(transaction_period, team_id, fantrax_id), {})
         player = players.get(fantrax_id, {})
         player_type = transaction_player_type(row)
         current_roster_status = current_roster.get("roster_status", "")
@@ -288,7 +335,7 @@ def normalize_rows(rows, roster_statuses, players, teams):
             "tx_set_id": tx_set_id,
             "transaction_date": date.isoformat() if date else "",
             "transaction_date_raw": date_text,
-            "transaction_period": int(str(period_cell.get("content") or "0")),
+            "transaction_period": transaction_period,
             "team_id": team_id,
             "team_name": team_name,
             "fantrax_id": fantrax_id,
@@ -421,9 +468,17 @@ def main():
     raw_path = args.out_dir / f"fantrax_transactions_raw_{stamp}.json"
     raw_path.write_text(json.dumps(raw_pages, indent=2, sort_keys=True), encoding="utf-8")
 
-    roster_statuses = load_current_roster_statuses(args.out_dir / "fantrax_rosters_latest.csv")
     players = load_players(args.out_dir / "fantrax_players_latest.csv")
     teams = load_teams(args.out_dir / "fantrax_teams_latest.csv")
+    roster_statuses = load_current_roster_statuses(args.out_dir / "fantrax_rosters_latest.csv")
+    transaction_periods = {
+        int_value(cell_by_key(row, "week").get("content"))
+        for row in rows
+    }
+    try:
+        roster_statuses.update(fetch_roster_statuses_for_periods(transaction_periods, teams, players))
+    except Exception as exc:
+        raise SystemExit(f"Fantrax transaction audit failed: {exc}") from exc
     normalized = normalize_rows(rows, roster_statuses, players, teams)
     try:
         league_start_date = fetch_league_scoring_start()
