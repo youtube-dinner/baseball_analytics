@@ -2530,15 +2530,6 @@
       "team_id": "f3myl5ugmj90wrl7",
       "team_name": "The Hot and Steamy Boys"
     },
-    "f3myl5ugmj90wrl7:04alp": {
-      "fantrax_id": "04alp",
-      "player_name": "Ernie Clement",
-      "primary_position": "3B",
-      "roster_position": "UT",
-      "roster_status": "ACTIVE",
-      "team_id": "f3myl5ugmj90wrl7",
-      "team_name": "The Hot and Steamy Boys"
-    },
     "f3myl5ugmj90wrl7:04apj": {
       "fantrax_id": "04apj",
       "player_name": "Jhoan Duran",
@@ -2778,7 +2769,7 @@
       "player_name": "Munetaka Murakami",
       "primary_position": "1B",
       "roster_position": "UT",
-      "roster_status": "INJURED_RESERVE",
+      "roster_status": "ACTIVE",
       "team_id": "f3myl5ugmj90wrl7",
       "team_name": "The Hot and Steamy Boys"
     },
