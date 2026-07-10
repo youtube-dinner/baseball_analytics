@@ -310,6 +310,16 @@
       "violation_alert_sent": true,
       "window_start": "2026-06-09"
     },
+    "bw696uo5mj90wrl7:05rcg": {
+      "demotion_alert_sent": true,
+      "eligible_date": "2026-08-01",
+      "fantrax_id": "05rcg",
+      "player_name": "Braden Montgomery",
+      "team_id": "bw696uo5mj90wrl7",
+      "team_name": "Cant Park Here",
+      "violation_alert_sent": false,
+      "window_start": "2026-07-10"
+    },
     "bw696uo5mj90wrl7:06207": {
       "demotion_alert_sent": false,
       "eligible_date": "2026-07-18",
@@ -349,6 +359,16 @@
       "team_name": "Cant Park Here",
       "violation_alert_sent": false,
       "window_start": "2026-06-22"
+    },
+    "bw696uo5mj90wrl7:06zi7": {
+      "demotion_alert_sent": false,
+      "eligible_date": "2026-08-01",
+      "fantrax_id": "06zi7",
+      "player_name": "Josiah Ragsdale",
+      "team_id": "bw696uo5mj90wrl7",
+      "team_name": "Cant Park Here",
+      "violation_alert_sent": false,
+      "window_start": "2026-07-10"
     },
     "bw696uo5mj90wrl7:072zq": {
       "demotion_alert_sent": false,
@@ -711,14 +731,14 @@
       "window_start": "2026-07-09"
     },
     "mldxq5pemj90wrl7:0603p": {
-      "demotion_alert_sent": false,
-      "eligible_date": "2026-07-07",
+      "demotion_alert_sent": true,
+      "eligible_date": "2026-08-01",
       "fantrax_id": "0603p",
       "player_name": "Hurston Waldrep",
       "team_id": "mldxq5pemj90wrl7",
       "team_name": "L\u00e1szlar\u00f3 T\u00f3th",
       "violation_alert_sent": false,
-      "window_start": "2026-06-15"
+      "window_start": "2026-07-10"
     },
     "mldxq5pemj90wrl7:06mnl": {
       "demotion_alert_sent": false,
@@ -2065,7 +2085,7 @@
       "player_name": "Braden Montgomery",
       "primary_position": "CF",
       "roster_position": "OF",
-      "roster_status": "ACTIVE",
+      "roster_status": "MINORS",
       "team_id": "bw696uo5mj90wrl7",
       "team_name": "Cant Park Here"
     },
@@ -2249,6 +2269,15 @@
       "team_id": "bw696uo5mj90wrl7",
       "team_name": "Cant Park Here"
     },
+    "bw696uo5mj90wrl7:06dsa": {
+      "fantrax_id": "06dsa",
+      "player_name": "Kyle Karros",
+      "primary_position": "3B",
+      "roster_position": "3B",
+      "roster_status": "ACTIVE",
+      "team_id": "bw696uo5mj90wrl7",
+      "team_name": "Cant Park Here"
+    },
     "bw696uo5mj90wrl7:06f1b": {
       "fantrax_id": "06f1b",
       "player_name": "Brody Hopkins",
@@ -2339,15 +2368,6 @@
       "team_id": "bw696uo5mj90wrl7",
       "team_name": "Cant Park Here"
     },
-    "bw696uo5mj90wrl7:06r5o": {
-      "fantrax_id": "06r5o",
-      "player_name": "Brailyn Antunez",
-      "primary_position": "CF",
-      "roster_position": "OF",
-      "roster_status": "MINORS",
-      "team_id": "bw696uo5mj90wrl7",
-      "team_name": "Cant Park Here"
-    },
     "bw696uo5mj90wrl7:06rvt": {
       "fantrax_id": "06rvt",
       "player_name": "Charles Davalan",
@@ -2366,11 +2386,11 @@
       "team_id": "bw696uo5mj90wrl7",
       "team_name": "Cant Park Here"
     },
-    "bw696uo5mj90wrl7:072zq": {
-      "fantrax_id": "072zq",
-      "player_name": "Angeni Fernandez",
-      "primary_position": "SS",
-      "roster_position": "SS",
+    "bw696uo5mj90wrl7:06zi7": {
+      "fantrax_id": "06zi7",
+      "player_name": "Josiah Ragsdale",
+      "primary_position": "CF",
+      "roster_position": "OF",
       "roster_status": "MINORS",
       "team_id": "bw696uo5mj90wrl7",
       "team_name": "Cant Park Here"
@@ -4670,6 +4690,15 @@
       "team_id": "mldxq5pemj90wrl7",
       "team_name": "L\u00e1szlar\u00f3 T\u00f3th"
     },
+    "mldxq5pemj90wrl7:04q08": {
+      "fantrax_id": "04q08",
+      "player_name": "Kyle Leahy",
+      "primary_position": "RP",
+      "roster_position": "P",
+      "roster_status": "ACTIVE",
+      "team_id": "mldxq5pemj90wrl7",
+      "team_name": "L\u00e1szlar\u00f3 T\u00f3th"
+    },
     "mldxq5pemj90wrl7:04s1g": {
       "fantrax_id": "04s1g",
       "player_name": "Gabriel Moreno",
@@ -4765,7 +4794,7 @@
       "player_name": "Owen Caissie",
       "primary_position": "RF",
       "roster_position": "UT",
-      "roster_status": "ACTIVE",
+      "roster_status": "INJURED_RESERVE",
       "team_id": "mldxq5pemj90wrl7",
       "team_name": "L\u00e1szlar\u00f3 T\u00f3th"
     },
@@ -4853,15 +4882,6 @@
     "mldxq5pemj90wrl7:0603p": {
       "fantrax_id": "0603p",
       "player_name": "Hurston Waldrep",
-      "primary_position": "SP",
-      "roster_position": "P",
-      "roster_status": "ACTIVE",
-      "team_id": "mldxq5pemj90wrl7",
-      "team_name": "L\u00e1szlar\u00f3 T\u00f3th"
-    },
-    "mldxq5pemj90wrl7:0658b": {
-      "fantrax_id": "0658b",
-      "player_name": "Jonah Tong",
       "primary_position": "SP",
       "roster_position": "P",
       "roster_status": "MINORS",
@@ -4982,6 +5002,15 @@
       "primary_position": "SS",
       "roster_position": "2B",
       "roster_status": "MINORS",
+      "team_id": "mldxq5pemj90wrl7",
+      "team_name": "L\u00e1szlar\u00f3 T\u00f3th"
+    },
+    "mldxq5pemj90wrl7:06nue": {
+      "fantrax_id": "06nue",
+      "player_name": "Joshua Kuroda-Grauer",
+      "primary_position": "SS",
+      "roster_position": "UT",
+      "roster_status": "ACTIVE",
       "team_id": "mldxq5pemj90wrl7",
       "team_name": "L\u00e1szlar\u00f3 T\u00f3th"
     },
