@@ -4658,8 +4658,8 @@
       "fantrax_id": "04pmu",
       "player_name": "Ryan Jeffers",
       "primary_position": "C",
-      "roster_position": "UT",
-      "roster_status": "INJURED_RESERVE",
+      "roster_position": "C",
+      "roster_status": "ACTIVE",
       "team_id": "mldxq5pemj90wrl7",
       "team_name": "L\u00e1szlar\u00f3 T\u00f3th"
     },
@@ -4695,15 +4695,6 @@
       "player_name": "Kyle Leahy",
       "primary_position": "RP",
       "roster_position": "P",
-      "roster_status": "ACTIVE",
-      "team_id": "mldxq5pemj90wrl7",
-      "team_name": "L\u00e1szlar\u00f3 T\u00f3th"
-    },
-    "mldxq5pemj90wrl7:04s1g": {
-      "fantrax_id": "04s1g",
-      "player_name": "Gabriel Moreno",
-      "primary_position": "C",
-      "roster_position": "C",
       "roster_status": "ACTIVE",
       "team_id": "mldxq5pemj90wrl7",
       "team_name": "L\u00e1szlar\u00f3 T\u00f3th"
