@@ -31,7 +31,8 @@
     "2026-07-06": true,
     "2026-07-07": true,
     "2026-07-08": true,
-    "2026-07-09": true
+    "2026-07-09": true,
+    "2026-07-10": true
   },
   "major_add_alerts": {
     "2026-06-08": {
@@ -4052,8 +4053,8 @@
       "fantrax_id": "02jh6",
       "player_name": "Eugenio Suarez",
       "primary_position": "3B",
-      "roster_position": "3B",
-      "roster_status": "ACTIVE",
+      "roster_position": "UT",
+      "roster_status": "RESERVE",
       "team_id": "k7c57nf4mj90wrl8",
       "team_name": "Hand Foot Mouth Disease Guys"
     },
@@ -4070,7 +4071,7 @@
       "fantrax_id": "02yc4",
       "player_name": "Shohei Ohtani",
       "primary_position": "DH",
-      "roster_position": "UT",
+      "roster_position": "P",
       "roster_status": "ACTIVE",
       "team_id": "k7c57nf4mj90wrl8",
       "team_name": "Hand Foot Mouth Disease Guys"
@@ -4098,7 +4099,7 @@
       "player_name": "Vladimir Guerrero Jr.",
       "primary_position": "1B",
       "roster_position": "UT",
-      "roster_status": "RESERVE",
+      "roster_status": "ACTIVE",
       "team_id": "k7c57nf4mj90wrl8",
       "team_name": "Hand Foot Mouth Disease Guys"
     },
@@ -4349,7 +4350,7 @@
       "fantrax_id": "05y4b",
       "player_name": "Caleb Durbin",
       "primary_position": "3B",
-      "roster_position": "UT",
+      "roster_position": "3B",
       "roster_status": "ACTIVE",
       "team_id": "k7c57nf4mj90wrl8",
       "team_name": "Hand Foot Mouth Disease Guys"
