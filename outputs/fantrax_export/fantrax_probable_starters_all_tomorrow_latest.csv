@@ -1,10 +1,9 @@
 probable_date,game_time_utc,home_away,probable_team,opponent,mlb_player_id,probable_name,fantrax_id,name,mlb_team,primary_position,eligible_positions,league_status,is_rostered,stats_inc_id,rotowire_id,sport_radar_id,game_pk
 2026-07-11,,,STL,ATL Sat 6:15PM,,Matthew Liberatore,04mlx,"Liberatore, Matthew",STL,SP,P,FA,False,11397,15399,5522ef4b-d436-4738-94d6-78a2c1c5a3ae,
-2026-07-11,,,CHW,ATH Sat 1:10PM,,Erick Fedde,03d6n,"Fedde, Erick",CHW,SP,P,FA,False,10229,13346,b484880b-790e-45a7-a751-2a03c01ec7ea,
-2026-07-11,,,ATL,@STL Sat 6:15PM,,Reynaldo Lopez,03i81,"Lopez, Reynaldo",ATL,SP,P,FA,False,10152,13612,942dc231-6052-4410-9bad-e94e465bc914,
 2026-07-11,,,SF,COL Sat 3:05PM,,Tyler Mahle,0312g,"Mahle, Tyler",SF,SP,P,FA,False,10455,14058,122f24b5-913e-4abd-90ca-62b1d7519665,
 2026-07-11,,,COL,@SF Sat 3:05PM,,Kyle Freeland,03ca3,"Freeland, Kyle",COL,SP,P,FA,False,9863,13369,e2081019-8ef0-471d-b6d6-1333a8a45897,
-2026-07-11,,,WSH,NYY Sat 3:05PM,,Miles Mikolas,02h9r,"Mikolas, Miles",WSH,SP,P,FA,False,9173,11177,262b24b7-ce98-4885-8715-2732a61db10d,
 2026-07-11,,,CHC,@CIN Sat 6:10PM,,Javier Assad,04fq2,"Assad, Javier",CHC,SP,P,FA,False,,15233,564bb787-e788-4acf-9dab-1da0e14578e0,
-2026-07-11,,,ARI,@LAD Sat 8:10PM,,Brandon Pfaadt,05lg3,"Pfaadt, Brandon",ARI,SP,P,FA,False,,16903,5f6e12b8-1a4b-4b56-ab3b-1b349c0cd614,
+2026-07-11,,,CHW,ATH Sat 1:10PM,,Bryan Hudson,03svw,"Hudson, Bryan",CHW,RP,P,FA,False,10444,13894,b60e970e-aef6-4e74-97c9-b308c6aeca87,
+2026-07-11,,,WSH,NYY Sat 3:05PM,,PJ Poulin,04pvq,"Poulin, PJ",WSH,RP,P,FA,False,,20345,b1b8ae8f-b38f-449a-aa8c-9642977ba31a,
 2026-07-11,,,LAA,@MIN Sat 1:10PM,,Ryan Johnson,05zq4,"Johnson, Ryan",LAA,SP,P,FA,False,,19530,2beede34-b3e0-45bc-a6fb-5153b7069c2a,
+2026-07-11,,,BOS,@NYM Sat 3:10PM,,Eduardo Rivera,05y40,"Rivera, Eduardo",BOS,SP,P,FA,False,,19939,40a852d1-ab0a-4a24-bd67-50e3aa831a28,
