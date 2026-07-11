@@ -751,6 +751,16 @@
       "violation_alert_sent": false,
       "window_start": "2026-06-27"
     },
+    "mldxq5pemj90wrl7:06r5o": {
+      "demotion_alert_sent": false,
+      "eligible_date": "2026-08-02",
+      "fantrax_id": "06r5o",
+      "player_name": "Brailyn Antunez",
+      "team_id": "mldxq5pemj90wrl7",
+      "team_name": "L\u00e1szlar\u00f3 T\u00f3th",
+      "violation_alert_sent": false,
+      "window_start": "2026-07-11"
+    },
     "mldxq5pemj90wrl7:06yyn": {
       "demotion_alert_sent": false,
       "eligible_date": "2026-07-13",
@@ -3607,7 +3617,7 @@
       "player_name": "Mickey Moniak",
       "primary_position": "RF",
       "roster_position": "OF",
-      "roster_status": "RESERVE",
+      "roster_status": "ACTIVE",
       "team_id": "jk36oo1hmj90wrl7",
       "team_name": "Daddy Yankee"
     },
@@ -3624,7 +3634,7 @@
       "fantrax_id": "045qo",
       "player_name": "Jazz Chisholm Jr.",
       "primary_position": "2B",
-      "roster_position": "3B",
+      "roster_position": "2B",
       "roster_status": "ACTIVE",
       "team_id": "jk36oo1hmj90wrl7",
       "team_name": "Daddy Yankee"
@@ -3669,7 +3679,7 @@
       "fantrax_id": "04nqx",
       "player_name": "Ezequiel Duran",
       "primary_position": "SS",
-      "roster_position": "OF",
+      "roster_position": "3B",
       "roster_status": "ACTIVE",
       "team_id": "jk36oo1hmj90wrl7",
       "team_name": "Daddy Yankee"
@@ -3850,7 +3860,7 @@
       "player_name": "Jackson Holliday",
       "primary_position": "2B",
       "roster_position": "2B",
-      "roster_status": "ACTIVE",
+      "roster_status": "RESERVE",
       "team_id": "jk36oo1hmj90wrl7",
       "team_name": "Daddy Yankee"
     },
@@ -5002,6 +5012,15 @@
       "player_name": "Marco Dinges",
       "primary_position": "C",
       "roster_position": "UT",
+      "roster_status": "MINORS",
+      "team_id": "mldxq5pemj90wrl7",
+      "team_name": "L\u00e1szlar\u00f3 T\u00f3th"
+    },
+    "mldxq5pemj90wrl7:06r5o": {
+      "fantrax_id": "06r5o",
+      "player_name": "Brailyn Antunez",
+      "primary_position": "CF",
+      "roster_position": "OF",
       "roster_status": "MINORS",
       "team_id": "mldxq5pemj90wrl7",
       "team_name": "L\u00e1szlar\u00f3 T\u00f3th"
