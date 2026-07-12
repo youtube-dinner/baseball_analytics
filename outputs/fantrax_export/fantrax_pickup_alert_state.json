@@ -3507,15 +3507,6 @@
       "team_id": "jk36oo1hmj90wrl7",
       "team_name": "Daddy Yankee"
     },
-    "jk36oo1hmj90wrl7:02c5l": {
-      "fantrax_id": "02c5l",
-      "player_name": "Luke Weaver",
-      "primary_position": "RP",
-      "roster_position": "P",
-      "roster_status": "ACTIVE",
-      "team_id": "jk36oo1hmj90wrl7",
-      "team_name": "Daddy Yankee"
-    },
     "jk36oo1hmj90wrl7:02mw3": {
       "fantrax_id": "02mw3",
       "player_name": "Christian Walker",
@@ -3630,6 +3621,15 @@
       "primary_position": "2B",
       "roster_position": "2B",
       "roster_status": "ACTIVE",
+      "team_id": "jk36oo1hmj90wrl7",
+      "team_name": "Daddy Yankee"
+    },
+    "jk36oo1hmj90wrl7:04alp": {
+      "fantrax_id": "04alp",
+      "player_name": "Ernie Clement",
+      "primary_position": "3B",
+      "roster_position": "2B",
+      "roster_status": "RESERVE",
       "team_id": "jk36oo1hmj90wrl7",
       "team_name": "Daddy Yankee"
     },
