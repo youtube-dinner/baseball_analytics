@@ -33,7 +33,8 @@
     "2026-07-08": true,
     "2026-07-09": true,
     "2026-07-10": true,
-    "2026-07-11": true
+    "2026-07-11": true,
+    "2026-07-12": true
   },
   "major_add_alerts": {
     "2026-06-08": {
@@ -4586,21 +4587,21 @@
       "team_id": "mldxq5pemj90wrl7",
       "team_name": "L\u00e1szlar\u00f3 T\u00f3th"
     },
+    "mldxq5pemj90wrl7:041vm": {
+      "fantrax_id": "041vm",
+      "player_name": "Dylan Lee",
+      "primary_position": "RP",
+      "roster_position": "P",
+      "roster_status": "ACTIVE",
+      "team_id": "mldxq5pemj90wrl7",
+      "team_name": "L\u00e1szlar\u00f3 T\u00f3th"
+    },
     "mldxq5pemj90wrl7:042sz": {
       "fantrax_id": "042sz",
       "player_name": "Will Smith",
       "primary_position": "C",
       "roster_position": "C",
       "roster_status": "INJURED_RESERVE",
-      "team_id": "mldxq5pemj90wrl7",
-      "team_name": "L\u00e1szlar\u00f3 T\u00f3th"
-    },
-    "mldxq5pemj90wrl7:043ia": {
-      "fantrax_id": "043ia",
-      "player_name": "Adrian Morejon",
-      "primary_position": "RP",
-      "roster_position": "P",
-      "roster_status": "ACTIVE",
       "team_id": "mldxq5pemj90wrl7",
       "team_name": "L\u00e1szlar\u00f3 T\u00f3th"
     },
@@ -5657,6 +5658,15 @@
       "team_id": "qatqhh61mj90wrl7",
       "team_name": "Je suis Charlie Morton"
     },
+    "qatqhh61mj90wrl7:041rj": {
+      "fantrax_id": "041rj",
+      "player_name": "JoJo Romero",
+      "primary_position": "RP",
+      "roster_position": "P",
+      "roster_status": "ACTIVE",
+      "team_id": "qatqhh61mj90wrl7",
+      "team_name": "Je suis Charlie Morton"
+    },
     "qatqhh61mj90wrl7:041wv": {
       "fantrax_id": "041wv",
       "player_name": "Michael King",
@@ -5689,16 +5699,7 @@
       "player_name": "MacKenzie Gore",
       "primary_position": "SP",
       "roster_position": "P",
-      "roster_status": "ACTIVE",
-      "team_id": "qatqhh61mj90wrl7",
-      "team_name": "Je suis Charlie Morton"
-    },
-    "qatqhh61mj90wrl7:04ew7": {
-      "fantrax_id": "04ew7",
-      "player_name": "Aaron Ashby",
-      "primary_position": "RP",
-      "roster_position": "P",
-      "roster_status": "ACTIVE",
+      "roster_status": "RESERVE",
       "team_id": "qatqhh61mj90wrl7",
       "team_name": "Je suis Charlie Morton"
     },
