@@ -2958,15 +2958,6 @@
       "team_id": "hd9hwe4mmj90wrl7",
       "team_name": "Third Degree Burnes"
     },
-    "hd9hwe4mmj90wrl7:03d6n": {
-      "fantrax_id": "03d6n",
-      "player_name": "Erick Fedde",
-      "primary_position": "SP",
-      "roster_position": "P",
-      "roster_status": "ACTIVE",
-      "team_id": "hd9hwe4mmj90wrl7",
-      "team_name": "Third Degree Burnes"
-    },
     "hd9hwe4mmj90wrl7:03oh0": {
       "fantrax_id": "03oh0",
       "player_name": "Willson Contreras",
@@ -3204,6 +3195,15 @@
     "hd9hwe4mmj90wrl7:05jp7": {
       "fantrax_id": "05jp7",
       "player_name": "Gavin Williams",
+      "primary_position": "SP",
+      "roster_position": "P",
+      "roster_status": "ACTIVE",
+      "team_id": "hd9hwe4mmj90wrl7",
+      "team_name": "Third Degree Burnes"
+    },
+    "hd9hwe4mmj90wrl7:05jq2": {
+      "fantrax_id": "05jq2",
+      "player_name": "Andrew Abbott",
       "primary_position": "SP",
       "roster_position": "P",
       "roster_status": "ACTIVE",
