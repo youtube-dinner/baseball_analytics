@@ -3723,15 +3723,6 @@
       "team_id": "jk36oo1hmj90wrl7",
       "team_name": "Daddy Yankee"
     },
-    "jk36oo1hmj90wrl7:0569p": {
-      "fantrax_id": "0569p",
-      "player_name": "Coleman Crow",
-      "primary_position": "SP",
-      "roster_position": "P",
-      "roster_status": "INJURED_RESERVE",
-      "team_id": "jk36oo1hmj90wrl7",
-      "team_name": "Daddy Yankee"
-    },
     "jk36oo1hmj90wrl7:05a2d": {
       "fantrax_id": "05a2d",
       "player_name": "Max Meyer",
@@ -4079,7 +4070,7 @@
       "player_name": "Eugenio Suarez",
       "primary_position": "3B",
       "roster_position": "UT",
-      "roster_status": "RESERVE",
+      "roster_status": "ACTIVE",
       "team_id": "k7c57nf4mj90wrl8",
       "team_name": "Hand Foot Mouth Disease Guys"
     },
@@ -4376,7 +4367,7 @@
       "player_name": "Henry Bolte",
       "primary_position": "RF",
       "roster_position": "UT",
-      "roster_status": "ACTIVE",
+      "roster_status": "RESERVE",
       "team_id": "k7c57nf4mj90wrl8",
       "team_name": "Hand Foot Mouth Disease Guys"
     },
