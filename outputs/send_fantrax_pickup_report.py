@@ -181,6 +181,12 @@ def format_date(date_value):
     return date_value.strftime("%A %B %-d, %Y")
 
 
+def resolve_major_add_limit(metadata, requested_limit):
+    if requested_limit is not None:
+        return requested_limit
+    return int_value(metadata.get("major_add_limit")) or DEFAULT_MAJOR_ADD_LIMIT
+
+
 def build_report(summary_rows, metadata, major_add_limit):
     ordered_rows = sorted(
         summary_rows,
@@ -453,7 +459,7 @@ def main():
     parser.add_argument("--rosters", type=Path, default=OUT_DIR / "fantrax_rosters_latest.csv")
     parser.add_argument("--state", type=Path, default=OUT_DIR / "fantrax_pickup_alert_state.json")
     parser.add_argument("--analytics-dir", type=Path, default=ANALYTICS_DIR)
-    parser.add_argument("--major-add-limit", type=int, default=DEFAULT_MAJOR_ADD_LIMIT)
+    parser.add_argument("--major-add-limit", type=int)
     parser.add_argument("--daily-summary-hour", type=int, default=int(os.environ.get("FANTRAX_DAILY_SUMMARY_HOUR", "7")))
     parser.add_argument("--force-summary", action="store_true")
     parser.add_argument("--update-state", action="store_true")
@@ -463,6 +469,7 @@ def main():
 
     summary_rows = read_csv(args.summary)
     metadata = read_metadata(args.metadata)
+    major_add_limit = resolve_major_add_limit(metadata, args.major_add_limit)
     state = load_state(args.state)
     original_state = deepcopy(state)
     now = central_now()
@@ -470,14 +477,14 @@ def main():
     current_roster = load_current_roster(args.rosters)
 
     if should_send_daily_summary(state, now, args.daily_summary_hour, args.force_summary):
-        messages.append(build_report(summary_rows, metadata, args.major_add_limit))
+        messages.append(build_report(summary_rows, metadata, major_add_limit))
         mark_daily_summary_sent(state, now)
 
     messages.extend(build_major_add_alerts(
         summary_rows,
         metadata,
         state,
-        args.major_add_limit,
+        major_add_limit,
     ))
     games_played = load_games_played(args.analytics_dir)
     messages.extend(build_minor_roster_alerts(current_roster, games_played, state, now))

@@ -160,6 +160,54 @@ def week_key(start):
     return start.isoformat()
 
 
+def parse_fantrax_period_date(value):
+    return datetime.strptime(value.strip(), "%a %b %d, %Y").date()
+
+
+def parse_period_date_range(value):
+    match = re.search(r"\(([^-]+) - ([^)]+)\)", str(value or ""))
+    if not match:
+        return None
+    return parse_fantrax_period_date(match.group(1)), parse_fantrax_period_date(match.group(2))
+
+
+def fetch_matchup_period_windows():
+    data = fetch_fantrax_req("getMatchups", {})
+    windows = []
+    for period in data.get("periods") or []:
+        parsed = parse_period_date_range(period.get("dateRange"))
+        if not parsed:
+            continue
+        start, end = parsed
+        windows.append({
+            "number": int(period.get("number") or 0),
+            "start": start,
+            "end": end,
+            "date_range": period.get("dateRange", ""),
+            "caption": period.get("caption", ""),
+        })
+    return sorted(windows, key=lambda item: item["start"])
+
+
+def current_matchup_window(day, windows=None):
+    for window in windows or fetch_matchup_period_windows():
+        if window["start"] <= day <= window["end"]:
+            return window
+    start = week_start(day)
+    return {"number": 0, "start": start, "end": start + timedelta(days=6), "date_range": "", "caption": ""}
+
+
+def previous_matchup_window(day, windows=None):
+    completed = [
+        window for window in windows or fetch_matchup_period_windows()
+        if window["end"] < day
+    ]
+    if completed:
+        return completed[-1]
+    start, end = previous_week_window(day)
+    return {"number": 0, "start": start, "end": end, "date_range": "", "caption": ""}
+
+
 def previous_week_window(day):
     current_start = week_start(day)
     start = current_start - timedelta(days=7)
@@ -466,16 +514,21 @@ def snapshot_projection_rows(projection_rows, baseline_rows, season_fallbacks=No
     return snapshot
 
 
-def ensure_current_projection_snapshot(state, teams, today, season_fallbacks=None):
-    start, end = current_week_window(today)
+def ensure_current_projection_snapshot(state, teams, today, season_fallbacks=None, matchup_window=None):
+    matchup_window = matchup_window or current_matchup_window(today)
+    start = matchup_window["start"]
+    end = matchup_window["end"]
     key = week_key(start)
-    if today.weekday() != 0 or state["projection_snapshots"].get(key):
+    if today != start or state["projection_snapshots"].get(key):
         return False
     projection_rows = fetch_projection_rows(teams)
     baseline_rows = fetch_pre_week_baseline_rows(teams)
     state["projection_snapshots"][key] = {
         "period_start": start.isoformat(),
         "period_end": end.isoformat(),
+        "fantrax_period_number": matchup_window.get("number", 0),
+        "fantrax_period_caption": matchup_window.get("caption", ""),
+        "fantrax_period_date_range": matchup_window.get("date_range", ""),
         "captured_at": datetime.now(CENTRAL).isoformat(),
         "projection_type": "fantrax_component_projected_per_game_ab_normalized_with_season_fpg_fallback",
         "players": snapshot_projection_rows(projection_rows, baseline_rows, season_fallbacks),
@@ -746,8 +799,12 @@ def main():
     now = now_central()
     today = today_central()
     season_fallbacks = load_projection_fallbacks(args.analytics_dir)
-    ensure_current_projection_snapshot(state, teams, today, season_fallbacks)
-    start, end = previous_week_window(today)
+    matchup_windows = fetch_matchup_period_windows()
+    current_window = current_matchup_window(today, matchup_windows)
+    ensure_current_projection_snapshot(state, teams, today, season_fallbacks, current_window)
+    previous_window = previous_matchup_window(today, matchup_windows)
+    start = previous_window["start"]
+    end = previous_window["end"]
     messages = []
     latest_rows = []
     projection_source = ""
@@ -797,6 +854,9 @@ def main():
         "generated_at": datetime.now(CENTRAL).isoformat(),
         "period_start": start.isoformat(),
         "period_end": end.isoformat(),
+        "fantrax_period_number": previous_window.get("number", 0),
+        "fantrax_period_caption": previous_window.get("caption", ""),
+        "fantrax_period_date_range": previous_window.get("date_range", ""),
         "projection_source": projection_source,
         "posted_message_count": len(messages),
         "player_rows": len(latest_rows),

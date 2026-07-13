@@ -34,6 +34,7 @@ ADD_TRANSACTION_CODES = {"ADD", "CLAIM"}
 ADD_CLAIM_TYPES = {"FA", "WAIVER", "FREE_AGENT", "FREE AGENT"}
 DROP_TYPES = {"DROP", "RELEASE", "REMOVE"}
 MINORS_MARKERS = {"MINORS", "MINOR", "MINOR_LEAGUE", "MINOR LEAGUE"}
+DEFAULT_MAJOR_ADD_LIMIT_OVERRIDES = {"2026-07-13": 14}
 
 
 def fantrax_auth_cookie():
@@ -82,6 +83,36 @@ def fetch_league_scoring_start():
         raise RuntimeError(f"Fantrax league start date is invalid: {start_date!r}") from exc
 
 
+def parse_fantrax_period_date(value):
+    return datetime.strptime(value.strip(), "%a %b %d, %Y").date()
+
+
+def parse_period_date_range(value):
+    match = re.search(r"\(([^-]+) - ([^)]+)\)", str(value or ""))
+    if not match:
+        return None
+    return parse_fantrax_period_date(match.group(1)), parse_fantrax_period_date(match.group(2))
+
+
+def fetch_matchup_period_windows():
+    raw = fetch_fantrax_req("getMatchups", {})
+    data = response_data(raw)
+    windows = []
+    for period in data.get("periods") or []:
+        parsed = parse_period_date_range(period.get("dateRange"))
+        if not parsed:
+            continue
+        start, end = parsed
+        windows.append({
+            "number": int_value(period.get("number")),
+            "start": start,
+            "end": end,
+            "date_range": period.get("dateRange", ""),
+            "caption": period.get("caption", ""),
+        })
+    return sorted(windows, key=lambda item: item["start"])
+
+
 def fetch_fantrax_general(endpoint, **params):
     query = urlencode({"leagueId": LEAGUE_ID, **params})
     req = Request(
@@ -105,18 +136,48 @@ def effective_scoring_date(transaction_period, league_start_date):
     return league_start_date + timedelta(days=transaction_period - 1)
 
 
-def assign_effective_weeks(rows, league_start_date):
+def matchup_window_for_date(day, matchup_windows):
+    for window in matchup_windows:
+        if window["start"] <= day <= window["end"]:
+            return window
+    week_start_date = day - timedelta(days=day.weekday())
+    return {
+        "number": 0,
+        "start": week_start_date,
+        "end": week_start_date + timedelta(days=6),
+        "date_range": "",
+        "caption": "",
+    }
+
+
+def current_pickup_window(matchup_windows):
+    today = datetime.now(EASTERN).date()
+    window = matchup_window_for_date(today, matchup_windows)
+    return (
+        datetime.combine(window["start"], time(0), EASTERN),
+        datetime.combine(window["end"] + timedelta(days=1), time(0), EASTERN),
+        window,
+    )
+
+
+def assign_effective_periods(rows, league_start_date, matchup_windows):
     for row in rows:
         transaction_period = row.get("transaction_period", 0)
         scoring_date = effective_scoring_date(transaction_period, league_start_date)
         if not scoring_date:
             row["effective_scoring_date"] = ""
             row["effective_week_start"] = ""
+            row["effective_period_start"] = ""
+            row["effective_period_end"] = ""
+            row["effective_period_number"] = ""
             continue
-        week_start_date = scoring_date - timedelta(days=scoring_date.weekday())
-        week_start = datetime.combine(week_start_date, time(0), EASTERN)
+        window = matchup_window_for_date(scoring_date, matchup_windows)
+        period_start = datetime.combine(window["start"], time(0), EASTERN)
         row["effective_scoring_date"] = scoring_date.isoformat()
-        row["effective_week_start"] = week_start.isoformat()
+        row["effective_week_start"] = period_start.isoformat()
+        row["effective_period_start"] = period_start.isoformat()
+        row["effective_period_end"] = datetime.combine(window["end"] + timedelta(days=1), time(0), EASTERN).isoformat()
+        row["effective_period_number"] = window.get("number", "")
     return rows
 
 
@@ -300,6 +361,22 @@ def current_week_window():
     return start, start + timedelta(days=7)
 
 
+def add_limit_overrides():
+    raw = os.environ.get("FANTRAX_MAJOR_ADD_LIMIT_OVERRIDES", "")
+    if not raw:
+        return DEFAULT_MAJOR_ADD_LIMIT_OVERRIDES
+    try:
+        parsed = json.loads(raw)
+    except json.JSONDecodeError as exc:
+        raise RuntimeError(f"FANTRAX_MAJOR_ADD_LIMIT_OVERRIDES must be JSON: {exc}") from exc
+    return {str(key): int_value(value) for key, value in parsed.items() if int_value(value)}
+
+
+def pickup_limit_for_window(start, base_limit):
+    overrides = add_limit_overrides()
+    return overrides.get(start.date().isoformat(), base_limit)
+
+
 def normalize_rows(rows, roster_statuses, players, teams):
     normalized = []
     seen = set()
@@ -430,13 +507,17 @@ def main():
     parser.add_argument("--out-dir", type=Path, default=OUT_DIR)
     args = parser.parse_args()
 
+    matchup_windows = fetch_matchup_period_windows()
+    selected_window = None
     if args.start:
         start = datetime.fromisoformat(args.start).replace(tzinfo=EASTERN)
         if not args.end:
             raise SystemExit("--end is required when --start is provided")
         end = datetime.fromisoformat(args.end).replace(tzinfo=EASTERN)
+        selected_window = matchup_window_for_date(start.date(), matchup_windows)
     else:
-        start, end = current_week_window()
+        start, end, selected_window = current_pickup_window(matchup_windows)
+    pickup_limit = pickup_limit_for_window(start, args.pickup_limit)
 
     raw_pages = []
     rows = []
@@ -484,13 +565,13 @@ def main():
         league_start_date = fetch_league_scoring_start()
     except Exception as exc:
         raise SystemExit(f"Fantrax transaction audit failed: {exc}") from exc
-    assign_effective_weeks(normalized, league_start_date)
+    assign_effective_periods(normalized, league_start_date, matchup_windows)
     in_window = [
         row for row in normalized
-        if row["effective_week_start"] == start.isoformat()
+        if row["effective_period_start"] == start.isoformat()
     ]
     add_details = [row for row in in_window if row["is_add"]]
-    summaries = summarize_adds(in_window, args.pickup_limit, teams)
+    summaries = summarize_adds(in_window, pickup_limit, teams)
 
     detail_fields = [
         "transaction_date",
@@ -517,6 +598,9 @@ def main():
         "transaction_period",
         "effective_scoring_date",
         "effective_week_start",
+        "effective_period_start",
+        "effective_period_end",
+        "effective_period_number",
     ]
     summary_fields = [
         "team_name",
@@ -541,7 +625,13 @@ def main():
         "period_timezone": "America/New_York",
         "fantrax_display_timezone": str(FANTRAX_DISPLAY_TIMEZONE),
         "fantrax_league_scoring_start": league_start_date.isoformat(),
-        "transaction_period_policy": "Fantrax transaction Period determines the effective scoring date and weekly add bucket.",
+        "transaction_period_policy": "Fantrax transaction Period determines the effective scoring date; Fantrax matchup date ranges determine the add-limit bucket.",
+        "fantrax_matchup_period_number": selected_window.get("number", 0) if selected_window else 0,
+        "fantrax_matchup_period_caption": selected_window.get("caption", "") if selected_window else "",
+        "fantrax_matchup_period_date_range": selected_window.get("date_range", "") if selected_window else "",
+        "major_add_limit": pickup_limit,
+        "base_major_add_limit": args.pickup_limit,
+        "major_add_limit_override": pickup_limit != args.pickup_limit,
         "period_start": start.isoformat(),
         "period_end_exclusive": end.isoformat(),
         "period_label": f"{start.strftime('%Y-%m-%d')} to {(end - timedelta(days=1)).strftime('%Y-%m-%d')} ET",
