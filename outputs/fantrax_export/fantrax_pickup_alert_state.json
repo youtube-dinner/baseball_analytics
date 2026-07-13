@@ -261,6 +261,48 @@
         "major_add_limit": 10,
         "overage_alerted": 0
       }
+    },
+    "2026-07-13": {
+      "6tnz8jgemj90wrl7": {
+        "major_add_limit": 10,
+        "overage_alerted": 0
+      },
+      "aqfyadu2mj90wrl7": {
+        "major_add_limit": 10,
+        "overage_alerted": 0
+      },
+      "bw696uo5mj90wrl7": {
+        "major_add_limit": 10,
+        "overage_alerted": 0
+      },
+      "f3myl5ugmj90wrl7": {
+        "major_add_limit": 10,
+        "overage_alerted": 0
+      },
+      "hd9hwe4mmj90wrl7": {
+        "major_add_limit": 10,
+        "overage_alerted": 0
+      },
+      "jk36oo1hmj90wrl7": {
+        "major_add_limit": 10,
+        "overage_alerted": 0
+      },
+      "k7c57nf4mj90wrl8": {
+        "major_add_limit": 10,
+        "overage_alerted": 0
+      },
+      "mldxq5pemj90wrl7": {
+        "major_add_limit": 10,
+        "overage_alerted": 0
+      },
+      "o4jvg6q3mj90wrl7": {
+        "major_add_limit": 10,
+        "overage_alerted": 0
+      },
+      "qatqhh61mj90wrl7": {
+        "major_add_limit": 10,
+        "overage_alerted": 0
+      }
     }
   },
   "minor_windows": {
