@@ -1314,12 +1314,12 @@ def run_pipeline():
     pitcher_history, pitcher_history_path = append_daily_snapshot(
         "pitcher_daily_snapshots.csv",
         all_players_pitchers_joined,
-        pitcher_trend_metrics + ["p_game", "IP_per_Game"],
+        pitcher_trend_metrics + ["FPts", "p_game", "IP_per_Game"],
     )
     hitter_history, hitter_history_path = append_daily_snapshot(
         "hitter_daily_snapshots.csv",
         all_players_hitters_joined,
-        hitter_trend_metrics + ["GP", "AB_per_Game", "R_per_Game"],
+        hitter_trend_metrics + ["FPts", "GP", "AB_per_Game", "R_per_Game"],
     )
     status_order = {"ACTIVE": 0, "INJURED_RESERVE": 1, "MINORS": 2}
     current_roster_pitchers_joined["_status_order"] = (

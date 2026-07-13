@@ -48,6 +48,10 @@ PRE_WEEK_BASELINE_PARAMS = {
     "seasonOrProjection": "SEASON_147_YEAR_TO_DATE",
     "timeframeTypeCode": "YEAR_TO_DATE",
 }
+LAST30_HITTER_MIN_GAMES = float(os.environ.get("FANTRAX_FALLBACK_LAST30_HITTER_MIN_GAMES", "10"))
+LAST30_PITCHER_MIN_GAMES = float(os.environ.get("FANTRAX_FALLBACK_LAST30_PITCHER_MIN_GAMES", "2"))
+SEASON_HITTER_MIN_GAMES = float(os.environ.get("FANTRAX_FALLBACK_SEASON_HITTER_MIN_GAMES", "30"))
+SEASON_PITCHER_MIN_GAMES = float(os.environ.get("FANTRAX_FALLBACK_SEASON_PITCHER_MIN_GAMES", "2"))
 
 
 def bold_text(value):
@@ -216,6 +220,74 @@ def season_fallback_key(player_type, player_name):
     return (player_type, sortable_name(player_name))
 
 
+def fallback_min_games(player_type, window):
+    if player_type == "Hitting":
+        return LAST30_HITTER_MIN_GAMES if window == "last30" else SEASON_HITTER_MIN_GAMES
+    return LAST30_PITCHER_MIN_GAMES if window == "last30" else SEASON_PITCHER_MIN_GAMES
+
+
+def fallback_row(source, points, games, window, player_type):
+    min_games = fallback_min_games(player_type, window)
+    if games < min_games or games <= 0:
+        return {}
+    fpts_per_game = points / games
+    if fpts_per_game <= 0:
+        return {}
+    return {
+        "source": source,
+        "points": points,
+        "games": games,
+        "fpts_per_game": fpts_per_game,
+        "window": window,
+        "min_games": min_games,
+    }
+
+
+def load_last30_fallbacks(analytics_dir):
+    fallbacks = {}
+    sources = [
+        ("Hitting", analytics_dir / "hitter_daily_snapshots.csv", "GP"),
+        ("Pitching", analytics_dir / "pitcher_daily_snapshots.csv", "p_game"),
+    ]
+    for player_type, path, games_field in sources:
+        rows = read_csv(path)
+        if not rows:
+            continue
+        dated_rows = []
+        for row in rows:
+            try:
+                snapshot_date = date.fromisoformat(str(row.get("snapshot_date", "")))
+            except ValueError:
+                continue
+            dated_rows.append((snapshot_date, row))
+        if not dated_rows:
+            continue
+        latest_date = max(snapshot_date for snapshot_date, _ in dated_rows)
+        target_date = latest_date - timedelta(days=30)
+        latest_by_player = {}
+        prior_by_player = {}
+        for snapshot_date, row in sorted(dated_rows, key=lambda item: item[0]):
+            name_key = sortable_name(row.get("Player", ""))
+            if not name_key:
+                continue
+            if snapshot_date <= latest_date:
+                latest_by_player[name_key] = row
+            if snapshot_date <= target_date:
+                prior_by_player[name_key] = row
+        for name_key, latest in latest_by_player.items():
+            prior = prior_by_player.get(name_key)
+            if not prior:
+                continue
+            if latest.get("FPts") in (None, "") or prior.get("FPts") in (None, ""):
+                continue
+            points_delta = float_value(latest.get("FPts")) - float_value(prior.get("FPts"))
+            games_delta = float_value(latest.get(games_field)) - float_value(prior.get(games_field))
+            fallback = fallback_row(path.name, points_delta, games_delta, "last30", player_type)
+            if fallback:
+                fallbacks[(player_type, name_key)] = fallback
+    return fallbacks
+
+
 def load_season_fallbacks(analytics_dir):
     fallbacks = {}
     sources = [
@@ -227,14 +299,17 @@ def load_season_fallbacks(analytics_dir):
             name = row.get("Player", "")
             games = float_value(row.get(games_field))
             points = float_value(row.get("FPts"))
-            if not name or games <= 0:
+            if not name:
                 continue
-            fallbacks[season_fallback_key(player_type, name)] = {
-                "source": path.name,
-                "points": points,
-                "games": games,
-                "fpts_per_game": points / games,
-            }
+            fallback = fallback_row(path.name, points, games, "season", player_type)
+            if fallback:
+                fallbacks[season_fallback_key(player_type, name)] = fallback
+    return fallbacks
+
+
+def load_projection_fallbacks(analytics_dir):
+    fallbacks = load_season_fallbacks(analytics_dir)
+    fallbacks.update(load_last30_fallbacks(analytics_dir))
     return fallbacks
 
 
@@ -347,8 +422,23 @@ def snapshot_projection_rows(projection_rows, baseline_rows, season_fallbacks=No
             pre_week_games = season_fallback["games"]
             pre_week_fpts_per_game = season_fallback["fpts_per_game"]
             pre_week_source = season_fallback["source"]
+            pre_week_window = season_fallback["window"]
+            pre_week_min_games = season_fallback["min_games"]
+        elif fallback_row("fantrax_roster_ytd", pre_week_points, pre_week_games, "season", row["player_type"]):
+            roster_fallback = fallback_row("fantrax_roster_ytd", pre_week_points, pre_week_games, "season", row["player_type"])
+            pre_week_points = roster_fallback["points"]
+            pre_week_games = roster_fallback["games"]
+            pre_week_fpts_per_game = roster_fallback["fpts_per_game"]
+            pre_week_source = roster_fallback["source"]
+            pre_week_window = roster_fallback["window"]
+            pre_week_min_games = roster_fallback["min_games"]
         else:
             pre_week_source = "fantrax_roster_ytd"
+            pre_week_points = 0.0
+            pre_week_games = 0.0
+            pre_week_fpts_per_game = 0.0
+            pre_week_window = ""
+            pre_week_min_games = fallback_min_games(row["player_type"], "season")
         snapshot[key] = {
             "team_id": row["team_id"],
             "team_name": row["team_name"],
@@ -365,6 +455,8 @@ def snapshot_projection_rows(projection_rows, baseline_rows, season_fallbacks=No
             "pre_week_games": pre_week_games,
             "pre_week_fpts_per_game": pre_week_fpts_per_game,
             "pre_week_source": pre_week_source,
+            "pre_week_window": pre_week_window,
+            "pre_week_min_games": pre_week_min_games,
             "pre_week_ab_per_game": (
                 baseline.get("at_bats", 0.0) / baseline.get("games_played", 0.0)
                 if baseline.get("games_played", 0.0)
@@ -426,6 +518,8 @@ def enrich_with_projections(actual_rows, snapshot):
         pre_week_points = float_value(projection.get("pre_week_points"))
         pre_week_games = float_value(projection.get("pre_week_games"))
         pre_week_source = projection.get("pre_week_source", "")
+        pre_week_window = projection.get("pre_week_window", "")
+        pre_week_min_games = float_value(projection.get("pre_week_min_games"))
         projection_basis = "fantrax_projected_fpg"
         if row["player_type"] == "Hitting" and projected_per_game > 0 and projected_ab_per_game > 0 and pre_week_ab_per_game > 0:
             projected_per_game = projected_per_game * pre_week_ab_per_game / projected_ab_per_game
@@ -447,6 +541,8 @@ def enrich_with_projections(actual_rows, snapshot):
             "pre_week_points": pre_week_points,
             "pre_week_games": pre_week_games,
             "pre_week_source": pre_week_source,
+            "pre_week_window": pre_week_window,
+            "pre_week_min_games": pre_week_min_games,
             "pre_week_ab_per_game": pre_week_ab_per_game,
             "projection_games_multiplier": projection_games_multiplier,
             "projected_points": projected_total,
@@ -475,6 +571,8 @@ def aggregate_player_rows(rows):
                 "pre_week_points": 0.0,
                 "pre_week_games": 0.0,
                 "pre_week_source": "",
+                "pre_week_window": "",
+                "pre_week_min_games": 0.0,
                 "pre_week_ab_per_game": 0.0,
                 "projection_games_multiplier": 0.0,
                 "projected_points": 0.0,
@@ -496,6 +594,8 @@ def aggregate_player_rows(rows):
         aggregate["pre_week_points"] += row["pre_week_points"]
         aggregate["pre_week_games"] += row["pre_week_games"]
         aggregate["pre_week_source"] = row["pre_week_source"] or aggregate["pre_week_source"]
+        aggregate["pre_week_window"] = row["pre_week_window"] or aggregate["pre_week_window"]
+        aggregate["pre_week_min_games"] = max(aggregate["pre_week_min_games"], row["pre_week_min_games"])
         aggregate["projection_games_multiplier"] += row["projection_games_multiplier"]
         aggregate["component_projection_basis"].append(row["projection_basis"])
         aggregate["component_player_types"].append(row["player_type"])
@@ -645,7 +745,7 @@ def main():
     original_state = deepcopy(state)
     now = now_central()
     today = today_central()
-    season_fallbacks = load_season_fallbacks(args.analytics_dir)
+    season_fallbacks = load_projection_fallbacks(args.analytics_dir)
     ensure_current_projection_snapshot(state, teams, today, season_fallbacks)
     start, end = previous_week_window(today)
     messages = []
@@ -683,6 +783,8 @@ def main():
         "pre_week_points",
         "pre_week_games",
         "pre_week_source",
+        "pre_week_window",
+        "pre_week_min_games",
         "pre_week_ab_per_game",
         "projection_games_multiplier",
         "projected_points",
