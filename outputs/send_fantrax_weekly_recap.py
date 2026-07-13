@@ -6,6 +6,7 @@ import os
 import re
 import smtplib
 import ssl
+import unicodedata
 from copy import deepcopy
 from datetime import date, datetime, timedelta
 from email.message import EmailMessage
@@ -18,6 +19,7 @@ from zoneinfo import ZoneInfo
 LEAGUE_ID = os.environ.get("FANTRAX_LEAGUE_ID") or "qqll39pvmj90wrl1"
 FANTRAX_REQ_URL = "https://www.fantrax.com/fxpa/req"
 OUT_DIR = Path(__file__).resolve().parent / "fantrax_export"
+ANALYTICS_DIR = Path(__file__).resolve().parent / "fantasy_baseball_analytics"
 FANTRAX_AUTH_COOKIE_FILE = Path(os.environ.get(
     "FANTRAX_AUTH_COOKIE_FILE",
     OUT_DIR / "fantrax_auth_cookie_latest.txt",
@@ -170,6 +172,18 @@ def html_text(value):
     return re.sub(r"<[^>]+>", " ", str(value or "")).strip()
 
 
+def sortable_name(value):
+    name = unicodedata.normalize("NFKD", str(value or ""))
+    name = "".join(char for char in name if not unicodedata.combining(char))
+    return " ".join(
+        name.lower()
+        .replace(".", "")
+        .replace("'", "")
+        .replace("-", " ")
+        .split()
+    )
+
+
 def float_value(value):
     text = html_text(value).replace(",", "")
     if text in {"", "-", "--"}:
@@ -196,6 +210,32 @@ def component_key(row):
 
 def player_key(row):
     return f"{row['team_id']}:{row['fantrax_id']}"
+
+
+def season_fallback_key(player_type, player_name):
+    return (player_type, sortable_name(player_name))
+
+
+def load_season_fallbacks(analytics_dir):
+    fallbacks = {}
+    sources = [
+        ("Hitting", analytics_dir / "hitter_analytics.csv", "GP"),
+        ("Pitching", analytics_dir / "pitcher_analytics.csv", "p_game"),
+    ]
+    for player_type, path, games_field in sources:
+        for row in read_csv(path):
+            name = row.get("Player", "")
+            games = float_value(row.get(games_field))
+            points = float_value(row.get("FPts"))
+            if not name or games <= 0:
+                continue
+            fallbacks[season_fallback_key(player_type, name)] = {
+                "source": path.name,
+                "points": points,
+                "games": games,
+                "fpts_per_game": points / games,
+            }
+    return fallbacks
 
 
 def roster_rows_for_team(team_id, team_name, params):
@@ -264,7 +304,8 @@ def fetch_pre_week_baseline_rows(teams):
     return rows
 
 
-def snapshot_projection_rows(projection_rows, baseline_rows):
+def snapshot_projection_rows(projection_rows, baseline_rows, season_fallbacks=None):
+    season_fallbacks = season_fallbacks or {}
     snapshot = {}
     baseline_by_key = {
         component_key(row): row
@@ -300,6 +341,14 @@ def snapshot_projection_rows(projection_rows, baseline_rows):
             if pre_week_games
             else 0.0
         )
+        season_fallback = season_fallbacks.get(season_fallback_key(row["player_type"], row["player_name"]), {})
+        if season_fallback:
+            pre_week_points = season_fallback["points"]
+            pre_week_games = season_fallback["games"]
+            pre_week_fpts_per_game = season_fallback["fpts_per_game"]
+            pre_week_source = season_fallback["source"]
+        else:
+            pre_week_source = "fantrax_roster_ytd"
         snapshot[key] = {
             "team_id": row["team_id"],
             "team_name": row["team_name"],
@@ -315,6 +364,7 @@ def snapshot_projection_rows(projection_rows, baseline_rows):
             "pre_week_points": pre_week_points,
             "pre_week_games": pre_week_games,
             "pre_week_fpts_per_game": pre_week_fpts_per_game,
+            "pre_week_source": pre_week_source,
             "pre_week_ab_per_game": (
                 baseline.get("at_bats", 0.0) / baseline.get("games_played", 0.0)
                 if baseline.get("games_played", 0.0)
@@ -324,7 +374,7 @@ def snapshot_projection_rows(projection_rows, baseline_rows):
     return snapshot
 
 
-def ensure_current_projection_snapshot(state, teams, today):
+def ensure_current_projection_snapshot(state, teams, today, season_fallbacks=None):
     start, end = current_week_window(today)
     key = week_key(start)
     if today.weekday() != 0 or state["projection_snapshots"].get(key):
@@ -335,18 +385,18 @@ def ensure_current_projection_snapshot(state, teams, today):
         "period_start": start.isoformat(),
         "period_end": end.isoformat(),
         "captured_at": datetime.now(CENTRAL).isoformat(),
-        "projection_type": "fantrax_component_projected_per_game_ab_normalized_with_pre_week_fpg_fallback",
-        "players": snapshot_projection_rows(projection_rows, baseline_rows),
+        "projection_type": "fantrax_component_projected_per_game_ab_normalized_with_season_fpg_fallback",
+        "players": snapshot_projection_rows(projection_rows, baseline_rows, season_fallbacks),
     }
     return True
 
 
-def maybe_live_projection_snapshot(teams):
+def maybe_live_projection_snapshot(teams, season_fallbacks=None):
     projection_rows = fetch_projection_rows(teams)
     baseline_rows = fetch_pre_week_baseline_rows(teams)
     return {
-        "projection_type": "fantrax_current_component_projected_per_game_ab_normalized_with_current_fpg_fallback",
-        "players": snapshot_projection_rows(projection_rows, baseline_rows),
+        "projection_type": "fantrax_current_component_projected_per_game_ab_normalized_with_season_fpg_fallback",
+        "players": snapshot_projection_rows(projection_rows, baseline_rows, season_fallbacks),
     }
 
 
@@ -375,6 +425,7 @@ def enrich_with_projections(actual_rows, snapshot):
         pre_week_ab_per_game = float_value(projection.get("pre_week_ab_per_game"))
         pre_week_points = float_value(projection.get("pre_week_points"))
         pre_week_games = float_value(projection.get("pre_week_games"))
+        pre_week_source = projection.get("pre_week_source", "")
         projection_basis = "fantrax_projected_fpg"
         if row["player_type"] == "Hitting" and projected_per_game > 0 and projected_ab_per_game > 0 and pre_week_ab_per_game > 0:
             projected_per_game = projected_per_game * pre_week_ab_per_game / projected_ab_per_game
@@ -395,6 +446,7 @@ def enrich_with_projections(actual_rows, snapshot):
             "projected_ab_per_game": projected_ab_per_game,
             "pre_week_points": pre_week_points,
             "pre_week_games": pre_week_games,
+            "pre_week_source": pre_week_source,
             "pre_week_ab_per_game": pre_week_ab_per_game,
             "projection_games_multiplier": projection_games_multiplier,
             "projected_points": projected_total,
@@ -422,6 +474,7 @@ def aggregate_player_rows(rows):
                 "projected_ab_per_game": 0.0,
                 "pre_week_points": 0.0,
                 "pre_week_games": 0.0,
+                "pre_week_source": "",
                 "pre_week_ab_per_game": 0.0,
                 "projection_games_multiplier": 0.0,
                 "projected_points": 0.0,
@@ -442,6 +495,7 @@ def aggregate_player_rows(rows):
         aggregate["projected_at_bats"] += row["projected_at_bats"]
         aggregate["pre_week_points"] += row["pre_week_points"]
         aggregate["pre_week_games"] += row["pre_week_games"]
+        aggregate["pre_week_source"] = row["pre_week_source"] or aggregate["pre_week_source"]
         aggregate["projection_games_multiplier"] += row["projection_games_multiplier"]
         aggregate["component_projection_basis"].append(row["projection_basis"])
         aggregate["component_player_types"].append(row["player_type"])
@@ -579,6 +633,7 @@ def main():
     parser.add_argument("--teams", type=Path, default=OUT_DIR / "fantrax_teams_latest.csv")
     parser.add_argument("--state", type=Path, default=OUT_DIR / "fantrax_weekly_recap_state.json")
     parser.add_argument("--out-dir", type=Path, default=OUT_DIR)
+    parser.add_argument("--analytics-dir", type=Path, default=ANALYTICS_DIR)
     parser.add_argument("--force-report", action="store_true")
     parser.add_argument("--update-state", action="store_true")
     parser.add_argument("--email", action="store_true")
@@ -590,7 +645,8 @@ def main():
     original_state = deepcopy(state)
     now = now_central()
     today = today_central()
-    ensure_current_projection_snapshot(state, teams, today)
+    season_fallbacks = load_season_fallbacks(args.analytics_dir)
+    ensure_current_projection_snapshot(state, teams, today, season_fallbacks)
     start, end = previous_week_window(today)
     messages = []
     latest_rows = []
@@ -600,7 +656,7 @@ def main():
         actual_rows = fetch_actual_week_rows(teams, start, end)
         snapshot = state["projection_snapshots"].get(week_key(start))
         if not snapshot or not is_component_snapshot(snapshot):
-            snapshot = maybe_live_projection_snapshot(teams)
+            snapshot = maybe_live_projection_snapshot(teams, season_fallbacks)
         projection_source = snapshot.get("projection_type", "")
         latest_rows = aggregate_player_rows(enrich_with_projections(actual_rows, snapshot))
         body = build_report(latest_rows, start, end, projection_source)
@@ -626,6 +682,7 @@ def main():
         "projected_ab_per_game",
         "pre_week_points",
         "pre_week_games",
+        "pre_week_source",
         "pre_week_ab_per_game",
         "projection_games_multiplier",
         "projected_points",
