@@ -34,7 +34,8 @@
     "2026-07-09": true,
     "2026-07-10": true,
     "2026-07-11": true,
-    "2026-07-12": true
+    "2026-07-12": true,
+    "2026-07-13": true
   },
   "major_add_alerts": {
     "2026-06-08": {
@@ -1232,7 +1233,7 @@
       "player_name": "Nick Kurtz",
       "primary_position": "1B",
       "roster_position": "1B",
-      "roster_status": "ACTIVE",
+      "roster_status": "INJURED_RESERVE",
       "team_id": "6tnz8jgemj90wrl7",
       "team_name": "Bobby and the NitWitts"
     },
@@ -5669,7 +5670,7 @@
       "player_name": "Nick Lodolo",
       "primary_position": "SP",
       "roster_position": "P",
-      "roster_status": "ACTIVE",
+      "roster_status": "INJURED_RESERVE",
       "team_id": "qatqhh61mj90wrl7",
       "team_name": "Je suis Charlie Morton"
     },
@@ -5732,7 +5733,7 @@
       "player_name": "MacKenzie Gore",
       "primary_position": "SP",
       "roster_position": "P",
-      "roster_status": "RESERVE",
+      "roster_status": "ACTIVE",
       "team_id": "qatqhh61mj90wrl7",
       "team_name": "Je suis Charlie Morton"
     },
@@ -5840,6 +5841,15 @@
       "player_name": "Jung Hoo Lee",
       "primary_position": "CF",
       "roster_position": "OF",
+      "roster_status": "ACTIVE",
+      "team_id": "qatqhh61mj90wrl7",
+      "team_name": "Je suis Charlie Morton"
+    },
+    "qatqhh61mj90wrl7:05r3a": {
+      "fantrax_id": "05r3a",
+      "player_name": "Brandon Young",
+      "primary_position": "SP",
+      "roster_position": "P",
       "roster_status": "ACTIVE",
       "team_id": "qatqhh61mj90wrl7",
       "team_name": "Je suis Charlie Morton"
