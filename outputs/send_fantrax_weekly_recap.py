@@ -293,6 +293,13 @@ def snapshot_projection_rows(projection_rows, baseline_rows):
             or (row["actual_points"] / projected_games if projected_games else 0.0)
             or row["actual_points"]
         )
+        pre_week_points = baseline.get("actual_points", 0.0)
+        pre_week_games = baseline.get("games_played", 0.0)
+        pre_week_fpts_per_game = (
+            pre_week_points / pre_week_games
+            if pre_week_games
+            else 0.0
+        )
         snapshot[key] = {
             "team_id": row["team_id"],
             "team_name": row["team_name"],
@@ -305,7 +312,9 @@ def snapshot_projection_rows(projection_rows, baseline_rows):
             "projected_at_bats": projected_at_bats,
             "projected_ab_per_game": projected_ab_per_game,
             "projected_innings_pitched": row.get("innings_pitched", 0.0),
-            "pre_week_fpts_per_game": baseline.get("actual_fpts_per_game", 0.0),
+            "pre_week_points": pre_week_points,
+            "pre_week_games": pre_week_games,
+            "pre_week_fpts_per_game": pre_week_fpts_per_game,
             "pre_week_ab_per_game": (
                 baseline.get("at_bats", 0.0) / baseline.get("games_played", 0.0)
                 if baseline.get("games_played", 0.0)
@@ -364,6 +373,8 @@ def enrich_with_projections(actual_rows, snapshot):
             or projected_at_bats
         )
         pre_week_ab_per_game = float_value(projection.get("pre_week_ab_per_game"))
+        pre_week_points = float_value(projection.get("pre_week_points"))
+        pre_week_games = float_value(projection.get("pre_week_games"))
         projection_basis = "fantrax_projected_fpg"
         if row["player_type"] == "Hitting" and projected_per_game > 0 and projected_ab_per_game > 0 and pre_week_ab_per_game > 0:
             projected_per_game = projected_per_game * pre_week_ab_per_game / projected_ab_per_game
@@ -382,6 +393,8 @@ def enrich_with_projections(actual_rows, snapshot):
             "projected_games": projected_games,
             "projected_at_bats": projected_at_bats,
             "projected_ab_per_game": projected_ab_per_game,
+            "pre_week_points": pre_week_points,
+            "pre_week_games": pre_week_games,
             "pre_week_ab_per_game": pre_week_ab_per_game,
             "projection_games_multiplier": projection_games_multiplier,
             "projected_points": projected_total,
@@ -407,6 +420,8 @@ def aggregate_player_rows(rows):
                 "projected_games": 0.0,
                 "projected_at_bats": 0.0,
                 "projected_ab_per_game": 0.0,
+                "pre_week_points": 0.0,
+                "pre_week_games": 0.0,
                 "pre_week_ab_per_game": 0.0,
                 "projection_games_multiplier": 0.0,
                 "projected_points": 0.0,
@@ -425,6 +440,8 @@ def aggregate_player_rows(rows):
         aggregate["games_played"] = max(aggregate["games_played"], row["games_played"])
         aggregate["projected_games"] += row["projected_games"]
         aggregate["projected_at_bats"] += row["projected_at_bats"]
+        aggregate["pre_week_points"] += row["pre_week_points"]
+        aggregate["pre_week_games"] += row["pre_week_games"]
         aggregate["projection_games_multiplier"] += row["projection_games_multiplier"]
         aggregate["component_projection_basis"].append(row["projection_basis"])
         aggregate["component_player_types"].append(row["player_type"])
@@ -607,6 +624,8 @@ def main():
         "projected_games",
         "projected_at_bats",
         "projected_ab_per_game",
+        "pre_week_points",
+        "pre_week_games",
         "pre_week_ab_per_game",
         "projection_games_multiplier",
         "projected_points",
