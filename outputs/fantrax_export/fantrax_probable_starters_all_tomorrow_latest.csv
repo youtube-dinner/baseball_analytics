@@ -1,6 +1,3 @@
 probable_date,game_time_utc,home_away,probable_team,opponent,mlb_player_id,probable_name,fantrax_id,name,mlb_team,primary_position,eligible_positions,league_status,is_rostered,stats_inc_id,rotowire_id,sport_radar_id,game_pk
-2026-07-12,,,MIA,CLE Sun 12:40PM,,Tyler Phillips,03qt6,"Phillips, Tyler",MIA,RP,P,FA,False,11400,15681,45fc262f-bb5c-4491-b58b-e7eb585f9ec3,
-2026-07-12,,,ATL,@STL Sun 1:15PM,,J.R. Ritchie,05tzo,"Ritchie, J.R.",ATL,SP,P,FA,False,,17964,1aa50e2a-e8f4-46ce-a5e9-556db30a8848,
-2026-07-12,,,SD,TOR Sun 3:10PM,,German Marquez,03amq,"Marquez, German",SD,SP,P,FA,False,10402,14109,2764f896-603a-42bb-b031-f50893d42a63,
-2026-07-12,,,NYM,BOS Sun 12:40PM,,Zach Thornton,06ekq,"Thornton, Zach",NYM,SP,P,FA,False,,18886,b760cf04-ac68-4e25-841c-b209605fa581,
-2026-07-12,,,ARI,@LAD Sun 3:10PM,,Mitch Bratt,05xq2,"Bratt, Mitch",ARI,SP,P,FA,False,,17498,f8878ab3-9c9a-4b5f-bb1f-a4a2c0b84aec,
+2026-07-14,2026-07-15T00:00:00Z,away,American League All-Stars,National League All-Stars,656302,Dylan Cease,03df2,"Cease, Dylan",TOR,SP,P,T,True,10438,14062,6072398c-e2b4-405c-932a-aa05582114dc,823443
+2026-07-14,2026-07-15T00:00:00Z,home,National League All-Stars,American League All-Stars,650911,Cristopher Sánchez,052c8,"Sanchez, Cristopher",PHI,SP,P,T,True,11706,16500,224f1f61-6abd-4662-8887-bd812df4357b,823443
