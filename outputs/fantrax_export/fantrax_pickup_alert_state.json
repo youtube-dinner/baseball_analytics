@@ -4910,6 +4910,15 @@
       "team_id": "mldxq5pemj90wrl7",
       "team_name": "L\u00e1szlar\u00f3 T\u00f3th"
     },
+    "mldxq5pemj90wrl7:0622w": {
+      "fantrax_id": "0622w",
+      "player_name": "Chandler Simpson",
+      "primary_position": "CF",
+      "roster_position": "UT",
+      "roster_status": "ACTIVE",
+      "team_id": "mldxq5pemj90wrl7",
+      "team_name": "L\u00e1szlar\u00f3 T\u00f3th"
+    },
     "mldxq5pemj90wrl7:066er": {
       "fantrax_id": "066er",
       "player_name": "Grant Taylor",
@@ -5024,15 +5033,6 @@
       "primary_position": "SS",
       "roster_position": "2B",
       "roster_status": "MINORS",
-      "team_id": "mldxq5pemj90wrl7",
-      "team_name": "L\u00e1szlar\u00f3 T\u00f3th"
-    },
-    "mldxq5pemj90wrl7:06nue": {
-      "fantrax_id": "06nue",
-      "player_name": "Joshua Kuroda-Grauer",
-      "primary_position": "SS",
-      "roster_position": "UT",
-      "roster_status": "ACTIVE",
       "team_id": "mldxq5pemj90wrl7",
       "team_name": "L\u00e1szlar\u00f3 T\u00f3th"
     },
