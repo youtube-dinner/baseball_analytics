@@ -1,3 +1,3 @@
 probable_date,game_time_utc,home_away,probable_team,opponent,mlb_player_id,probable_name,fantrax_id,name,mlb_team,primary_position,eligible_positions,league_status,is_rostered,stats_inc_id,rotowire_id,sport_radar_id,game_pk
-2026-07-14,2026-07-15T00:00:00Z,away,American League All-Stars,National League All-Stars,656302,Dylan Cease,03df2,"Cease, Dylan",TOR,SP,P,T,True,10438,14062,6072398c-e2b4-405c-932a-aa05582114dc,823443
-2026-07-14,2026-07-15T00:00:00Z,home,National League All-Stars,American League All-Stars,650911,Cristopher Sánchez,052c8,"Sanchez, Cristopher",PHI,SP,P,T,True,11706,16500,224f1f61-6abd-4662-8887-bd812df4357b,823443
+2026-07-16,2026-07-16T23:10:00Z,home,Philadelphia Phillies,New York Mets,605400,Aaron Nola,02i3o,"Nola, Aaron",PHI,SP,P,T,True,9882,13359,ded1b30d-52ca-4eec-bce6-251b15b085ac,823440
+2026-07-16,2026-07-16T23:10:00Z,away,New York Mets,Philadelphia Phillies,681035,Christian Scott,05xpq,"Scott, Christian",NYM,SP,P,T,True,,17511,7945584c-94fe-49e4-9d85-ad3ccd6b8617,823440
