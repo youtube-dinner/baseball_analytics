@@ -1,1 +1,11 @@
 probable_date,game_time_utc,home_away,probable_team,opponent,mlb_player_id,probable_name,fantrax_id,name,mlb_team,primary_position,eligible_positions,league_status,is_rostered,stats_inc_id,rotowire_id,sport_radar_id,game_pk
+2026-07-17,,,KC,SD Fri 7:10PM,,Seth Lugo,03sef,"Lugo, Seth",KC,SP,P,WW,False,10326,14095,0600588b-39b2-49eb-9e77-208f8fdaca9b,
+2026-07-17,,,CHC,MIN Fri 7:05PM,,Colin Rea,02bzn,"Rea, Colin",CHC,SP,P,FA,False,10048,13786,cd417c1f-ecec-4a64-907a-bbb2b04d8507,
+2026-07-17,,,CHW,@TOR Fri 6:15PM,,Anthony Kay,041mb,"Kay, Anthony",CHW,SP,P,FA,False,10538,14269,6de93a68-31cd-4278-b933-e43cbcee5d98,
+2026-07-17,,,CIN,@COL Fri 7:40PM,,Brady Singer,03pov,"Singer, Brady",CIN,SP,P,FA,False,11323,13874,18f3c854-6490-4e6b-8afe-bc562c5b20b4,
+2026-07-17,,,ARI,STL Fri 8:40PM,,Merrill Kelly,02hj7,"Kelly, Merrill",ARI,SP,P,FA,False,11251,15800,871f04aa-367c-48fb-8ae5-a5bd9e27cb8b,
+2026-07-17,,,MIN,@CHC Fri 7:05PM,,Bailey Ober,0425t,"Ober, Bailey",MIN,SP,P,FA,False,,16018,d596dae4-f972-444d-9db0-4efd47b0fb44,
+2026-07-17,,,TOR,CHW Fri 6:15PM,,Spencer Miles,064no,"Miles, Spencer",TOR,SP,P,FA,False,,18133,1dc59382-2a84-4987-8385-69279fd9be92,
+2026-07-17,,,TEX,@ATL Fri 6:15PM,,Cal Quantrill,03yxh,"Quantrill, Cal",TEX,SP,P,FA,False,10573,14251,e8abdf47-b38a-44e6-8c6e-4b0bfbd482b0,
+2026-07-17,,,COL,CIN Fri 7:40PM,,Gabriel Hughes,05ubl,"Hughes, Gabriel",COL,SP,P,FA,False,,17941,44d2f893-8201-4477-b22d-4f251f8e04bb,
+2026-07-17,,,BOS,TB Fri 12:35PM 6:10PM,,Patrick Sandoval,03qpi,"Sandoval, Patrick",BOS,SP,P,FA,False,11478,15342,f69252fd-0aa5-4043-9875-d0aa4915056a,
