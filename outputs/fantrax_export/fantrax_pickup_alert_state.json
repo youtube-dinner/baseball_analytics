@@ -601,6 +601,16 @@
       "violation_alert_sent": false,
       "window_start": "2026-06-22"
     },
+    "hd9hwe4mmj90wrl7:067xj": {
+      "demotion_alert_sent": true,
+      "eligible_date": "2026-08-08",
+      "fantrax_id": "067xj",
+      "player_name": "Cooper Pratt",
+      "team_id": "hd9hwe4mmj90wrl7",
+      "team_name": "Third Degree Burnes",
+      "violation_alert_sent": false,
+      "window_start": "2026-07-17"
+    },
     "hd9hwe4mmj90wrl7:06rry": {
       "demotion_alert_sent": false,
       "eligible_date": "2026-07-07",
@@ -3019,7 +3029,7 @@
       "player_name": "Willson Contreras",
       "primary_position": "1B",
       "roster_position": "UT",
-      "roster_status": "INJURED_RESERVE",
+      "roster_status": "ACTIVE",
       "team_id": "hd9hwe4mmj90wrl7",
       "team_name": "Third Degree Burnes"
     },
@@ -3081,7 +3091,7 @@
       "fantrax_id": "04mra",
       "player_name": "Ezequiel Tovar",
       "primary_position": "SS",
-      "roster_position": "MI",
+      "roster_position": "UT",
       "roster_status": "ACTIVE",
       "team_id": "hd9hwe4mmj90wrl7",
       "team_name": "Third Degree Burnes"
@@ -3180,7 +3190,7 @@
       "fantrax_id": "0512e",
       "player_name": "Spencer Steer",
       "primary_position": "1B",
-      "roster_position": "UT",
+      "roster_position": "MI",
       "roster_status": "ACTIVE",
       "team_id": "hd9hwe4mmj90wrl7",
       "team_name": "Third Degree Burnes"
@@ -3406,7 +3416,7 @@
       "player_name": "Cooper Pratt",
       "primary_position": "SS",
       "roster_position": "UT",
-      "roster_status": "ACTIVE",
+      "roster_status": "MINORS",
       "team_id": "hd9hwe4mmj90wrl7",
       "team_name": "Third Degree Burnes"
     },
@@ -3478,15 +3488,6 @@
       "player_name": "Caleb Bonemer",
       "primary_position": "SS",
       "roster_position": "3B",
-      "roster_status": "MINORS",
-      "team_id": "hd9hwe4mmj90wrl7",
-      "team_name": "Third Degree Burnes"
-    },
-    "hd9hwe4mmj90wrl7:06icc": {
-      "fantrax_id": "06icc",
-      "player_name": "Eduardo Beltre",
-      "primary_position": "CF",
-      "roster_position": "OF",
       "roster_status": "MINORS",
       "team_id": "hd9hwe4mmj90wrl7",
       "team_name": "Third Degree Burnes"
@@ -4247,6 +4248,15 @@
       "team_id": "k7c57nf4mj90wrl8",
       "team_name": "Hand Foot Mouth Disease Guys"
     },
+    "k7c57nf4mj90wrl8:04pkt": {
+      "fantrax_id": "04pkt",
+      "player_name": "J.T. Ginn",
+      "primary_position": "SP",
+      "roster_position": "P",
+      "roster_status": "ACTIVE",
+      "team_id": "k7c57nf4mj90wrl8",
+      "team_name": "Hand Foot Mouth Disease Guys"
+    },
     "k7c57nf4mj90wrl8:04ppj": {
       "fantrax_id": "04ppj",
       "player_name": "Jeremy Pena",
@@ -4342,15 +4352,6 @@
       "player_name": "Esmerlyn Valdez",
       "primary_position": "RF",
       "roster_position": "OF",
-      "roster_status": "ACTIVE",
-      "team_id": "k7c57nf4mj90wrl8",
-      "team_name": "Hand Foot Mouth Disease Guys"
-    },
-    "k7c57nf4mj90wrl8:05sr2": {
-      "fantrax_id": "05sr2",
-      "player_name": "Michael McGreevy",
-      "primary_position": "SP",
-      "roster_position": "P",
       "roster_status": "ACTIVE",
       "team_id": "k7c57nf4mj90wrl8",
       "team_name": "Hand Foot Mouth Disease Guys"
@@ -4643,15 +4644,6 @@
       "team_id": "mldxq5pemj90wrl7",
       "team_name": "L\u00e1szlar\u00f3 T\u00f3th"
     },
-    "mldxq5pemj90wrl7:043ia": {
-      "fantrax_id": "043ia",
-      "player_name": "Adrian Morejon",
-      "primary_position": "RP",
-      "roster_position": "P",
-      "roster_status": "ACTIVE",
-      "team_id": "mldxq5pemj90wrl7",
-      "team_name": "L\u00e1szlar\u00f3 T\u00f3th"
-    },
     "mldxq5pemj90wrl7:04aee": {
       "fantrax_id": "04aee",
       "player_name": "Jo Adell",
@@ -4865,6 +4857,15 @@
       "primary_position": "LF",
       "roster_position": "OF",
       "roster_status": "MINORS",
+      "team_id": "mldxq5pemj90wrl7",
+      "team_name": "L\u00e1szlar\u00f3 T\u00f3th"
+    },
+    "mldxq5pemj90wrl7:05y0j": {
+      "fantrax_id": "05y0j",
+      "player_name": "Spencer Arrighetti",
+      "primary_position": "SP",
+      "roster_position": "P",
+      "roster_status": "ACTIVE",
       "team_id": "mldxq5pemj90wrl7",
       "team_name": "L\u00e1szlar\u00f3 T\u00f3th"
     },
