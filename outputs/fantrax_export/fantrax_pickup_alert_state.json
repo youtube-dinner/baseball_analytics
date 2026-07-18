@@ -919,6 +919,15 @@
       "team_id": "6tnz8jgemj90wrl7",
       "team_name": "Bobby and the NitWitts"
     },
+    "6tnz8jgemj90wrl7:031d4": {
+      "fantrax_id": "031d4",
+      "player_name": "Zack Littell",
+      "primary_position": "SP",
+      "roster_position": "P",
+      "roster_status": "ACTIVE",
+      "team_id": "6tnz8jgemj90wrl7",
+      "team_name": "Bobby and the NitWitts"
+    },
     "6tnz8jgemj90wrl7:03aqv": {
       "fantrax_id": "03aqv",
       "player_name": "Raisel Iglesias",
@@ -996,15 +1005,6 @@
       "player_name": "Brandon Lowe",
       "primary_position": "2B",
       "roster_position": "2B",
-      "roster_status": "ACTIVE",
-      "team_id": "6tnz8jgemj90wrl7",
-      "team_name": "Bobby and the NitWitts"
-    },
-    "6tnz8jgemj90wrl7:03qo0": {
-      "fantrax_id": "03qo0",
-      "player_name": "Pete Fairbanks",
-      "primary_position": "RP",
-      "roster_position": "P",
       "roster_status": "ACTIVE",
       "team_id": "6tnz8jgemj90wrl7",
       "team_name": "Bobby and the NitWitts"
@@ -3880,15 +3880,6 @@
       "team_id": "jk36oo1hmj90wrl7",
       "team_name": "Daddy Yankee"
     },
-    "jk36oo1hmj90wrl7:05uvx": {
-      "fantrax_id": "05uvx",
-      "player_name": "Cameron Cauley",
-      "primary_position": "SS",
-      "roster_position": "2B",
-      "roster_status": "MINORS",
-      "team_id": "jk36oo1hmj90wrl7",
-      "team_name": "Daddy Yankee"
-    },
     "jk36oo1hmj90wrl7:05ybv": {
       "fantrax_id": "05ybv",
       "player_name": "Jackson Holliday",
@@ -3919,6 +3910,15 @@
     "jk36oo1hmj90wrl7:0629b": {
       "fantrax_id": "0629b",
       "player_name": "Walbert Urena",
+      "primary_position": "SP",
+      "roster_position": "P",
+      "roster_status": "MINORS",
+      "team_id": "jk36oo1hmj90wrl7",
+      "team_name": "Daddy Yankee"
+    },
+    "jk36oo1hmj90wrl7:062pm": {
+      "fantrax_id": "062pm",
+      "player_name": "Owen Murphy",
       "primary_position": "SP",
       "roster_position": "P",
       "roster_status": "MINORS",
