@@ -1,11 +1,10 @@
 probable_date,game_time_utc,home_away,probable_team,opponent,mlb_player_id,probable_name,fantrax_id,name,mlb_team,primary_position,eligible_positions,league_status,is_rostered,stats_inc_id,rotowire_id,sport_radar_id,game_pk
-2026-07-18,,,STL,@ARI Sat 3:10PM,,Dustin May,041r5,"May, Dustin",STL,SP,P,WW,False,10898,14331,8c6572ee-d35f-4542-946a-1611e68395fe,
 2026-07-18,,,WSH,@ATH Sat 9:05PM,,Zack Littell,031d4,"Littell, Zack",WSH,SP,P,FA,False,11035,14992,fe0fc487-45d3-4178-9fd7-6c00025aff7e,
+2026-07-18,,,COL,CIN Sat 2:10PM,,Tomoyuki Sugano,04b01,"Sugano, Tomoyuki",COL,SP,P,FA,False,,14712,b34ad145-1a14-4fd6-9dc4-27483ad14418,
 2026-07-18,,,NYM,@PHI Sat 3:05PM,,Sean Manaea,02x0f,"Manaea, Sean",NYM,SP,P,FA,False,9582,12948,f578d526-6d2e-4590-9665-ed42c72c883f,
 2026-07-18,,,CIN,@COL Sat 2:10PM,,Rhett Lowder,061bo,"Lowder, Rhett",CIN,SP,P,FA,False,,18854,65e665b2-cd64-4bfe-a7c5-2afa492e7eff,
-2026-07-18,,,COL,CIN Sat 2:10PM,,Ryan Feltner,03r06,"Feltner, Ryan",COL,SP,P,FA,False,,15541,87dfe721-2290-44ac-a106-0aa9e676bfbd,
-2026-07-18,,,ARI,STL Sat 3:10PM,,Brandon Pfaadt,05lg3,"Pfaadt, Brandon",ARI,SP,P,FA,False,,16903,5f6e12b8-1a4b-4b56-ab3b-1b349c0cd614,
 2026-07-18,,,SD,@KC Sat 3:10PM,,Griffin Canning,04eek,"Canning, Griffin",SD,SP,P,FA,False,10894,14783,470b008b-639b-4f14-975b-1eb51d918358,
+2026-07-18,,,KC,SD Sat 3:10PM,,Randy Dobnak,0506h,"Dobnak, Randy",KC,SP,P,FA,False,11629,16427,fed34a9e-a359-4a0b-92cb-99f301b5434d,
 2026-07-18,,,CLE,PIT Sat 12:10PM 6:10PM,,Logan Allen,05jp3,"Allen, Logan",CLE,SP,P,FA,False,,16715,64e072d2-dbcb-499d-8e08-ff2046272ffe,
 2026-07-18,,,BOS,TB Sat 3:10PM,,Patrick Sandoval,03qpi,"Sandoval, Patrick",BOS,SP,P,FA,False,11478,15342,f69252fd-0aa5-4043-9875-d0aa4915056a,
 2026-07-18,,,ATL,TEX Sat 3:10PM,,Owen Murphy,062pm,"Murphy, Owen",ATL,SP,P,FA,False,,17965,94f299e8-eda4-431b-b414-73e1310cdad8,
