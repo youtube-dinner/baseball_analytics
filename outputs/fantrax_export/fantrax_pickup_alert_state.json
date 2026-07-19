@@ -4128,7 +4128,7 @@
       "player_name": "Shohei Ohtani",
       "primary_position": "DH",
       "roster_position": "UT",
-      "roster_status": "RESERVE",
+      "roster_status": "ACTIVE",
       "team_id": "k7c57nf4mj90wrl8",
       "team_name": "Hand Foot Mouth Disease Guys"
     },
@@ -4183,15 +4183,6 @@
       "primary_position": "SP",
       "roster_position": "P",
       "roster_status": "INJURED_RESERVE",
-      "team_id": "k7c57nf4mj90wrl8",
-      "team_name": "Hand Foot Mouth Disease Guys"
-    },
-    "k7c57nf4mj90wrl8:045kb": {
-      "fantrax_id": "045kb",
-      "player_name": "Cristian Javier",
-      "primary_position": "SP",
-      "roster_position": "P",
-      "roster_status": "ACTIVE",
       "team_id": "k7c57nf4mj90wrl8",
       "team_name": "Hand Foot Mouth Disease Guys"
     },
@@ -4255,6 +4246,15 @@
       "primary_position": "3B",
       "roster_position": "OF",
       "roster_status": "INJURED_RESERVE",
+      "team_id": "k7c57nf4mj90wrl8",
+      "team_name": "Hand Foot Mouth Disease Guys"
+    },
+    "k7c57nf4mj90wrl8:04xne": {
+      "fantrax_id": "04xne",
+      "player_name": "Yoendrys Gomez",
+      "primary_position": "RP",
+      "roster_position": "P",
+      "roster_status": "ACTIVE",
       "team_id": "k7c57nf4mj90wrl8",
       "team_name": "Hand Foot Mouth Disease Guys"
     },
@@ -4407,7 +4407,7 @@
       "player_name": "Henry Bolte",
       "primary_position": "RF",
       "roster_position": "UT",
-      "roster_status": "ACTIVE",
+      "roster_status": "RESERVE",
       "team_id": "k7c57nf4mj90wrl8",
       "team_name": "Hand Foot Mouth Disease Guys"
     },
