@@ -813,6 +813,16 @@
       "violation_alert_sent": false,
       "window_start": "2026-06-27"
     },
+    "mldxq5pemj90wrl7:06qif": {
+      "demotion_alert_sent": false,
+      "eligible_date": "2026-08-10",
+      "fantrax_id": "06qif",
+      "player_name": "Brandon Clarke",
+      "team_id": "mldxq5pemj90wrl7",
+      "team_name": "L\u00e1szlar\u00f3 T\u00f3th",
+      "violation_alert_sent": false,
+      "window_start": "2026-07-19"
+    },
     "mldxq5pemj90wrl7:06r5o": {
       "demotion_alert_sent": false,
       "eligible_date": "2026-08-02",
@@ -5042,11 +5052,11 @@
       "team_id": "mldxq5pemj90wrl7",
       "team_name": "L\u00e1szlar\u00f3 T\u00f3th"
     },
-    "mldxq5pemj90wrl7:06r5o": {
-      "fantrax_id": "06r5o",
-      "player_name": "Brailyn Antunez",
-      "primary_position": "CF",
-      "roster_position": "OF",
+    "mldxq5pemj90wrl7:06qif": {
+      "fantrax_id": "06qif",
+      "player_name": "Brandon Clarke",
+      "primary_position": "SP",
+      "roster_position": "P",
       "roster_status": "MINORS",
       "team_id": "mldxq5pemj90wrl7",
       "team_name": "L\u00e1szlar\u00f3 T\u00f3th"
