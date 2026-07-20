@@ -1,6 +1,5 @@
 probable_date,game_time_utc,home_away,probable_team,opponent,mlb_player_id,probable_name,fantrax_id,name,mlb_team,primary_position,eligible_positions,league_status,is_rostered,stats_inc_id,rotowire_id,sport_radar_id,game_pk
 2026-07-20,,,ATL,SD Mon 6:15PM,,Bryce Elder,05jp9,"Elder, Bryce",ATL,SP,P,FA,False,,16801,8a4de81f-a497-40e4-ba42-39b4c1fbbdd3,
-2026-07-20,,,ATH,@ARI Mon 8:40PM,,Jeffrey Springs,04mlr,"Springs, Jeffrey",ATH,SP,P,FA,False,11121,15663,76375b42-68b1-42a1-94e6-81f152197c81,
 2026-07-20,,,CHW,@TEX Mon 7:05PM,,Erick Fedde,03d6n,"Fedde, Erick",CHW,SP,P,FA,False,10229,13346,b484880b-790e-45a7-a751-2a03c01ec7ea,
 2026-07-20,,,COL,WSH Mon 7:40PM,,Kyle Freeland,03ca3,"Freeland, Kyle",COL,SP,P,FA,False,9863,13369,e2081019-8ef0-471d-b6d6-1333a8a45897,
 2026-07-20,,,CHC,DET Mon 7:05PM,,Jameson Taillon,01srb,"Taillon, Jameson",CHC,SP,P,FA,False,9123,11435,0b4c4345-7609-4ab1-9aaa-41d56d7f1fda,
