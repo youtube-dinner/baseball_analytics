@@ -1421,7 +1421,7 @@
       "player_name": "Zack Wheeler",
       "primary_position": "SP",
       "roster_position": "P",
-      "roster_status": "RESERVE",
+      "roster_status": "ACTIVE",
       "team_id": "aqfyadu2mj90wrl7",
       "team_name": "Ben the Hen"
     },
@@ -1601,7 +1601,7 @@
       "player_name": "Grayson Rodriguez",
       "primary_position": "SP",
       "roster_position": "P",
-      "roster_status": "ACTIVE",
+      "roster_status": "RESERVE",
       "team_id": "aqfyadu2mj90wrl7",
       "team_name": "Ben the Hen"
     },
@@ -1609,6 +1609,15 @@
       "fantrax_id": "04ptt",
       "player_name": "Tarik Skubal",
       "primary_position": "SP",
+      "roster_position": "P",
+      "roster_status": "ACTIVE",
+      "team_id": "aqfyadu2mj90wrl7",
+      "team_name": "Ben the Hen"
+    },
+    "aqfyadu2mj90wrl7:04q08": {
+      "fantrax_id": "04q08",
+      "player_name": "Kyle Leahy",
+      "primary_position": "RP",
       "roster_position": "P",
       "roster_status": "ACTIVE",
       "team_id": "aqfyadu2mj90wrl7",
@@ -1764,15 +1773,6 @@
       "primary_position": "LF",
       "roster_position": "OF",
       "roster_status": "MINORS",
-      "team_id": "aqfyadu2mj90wrl7",
-      "team_name": "Ben the Hen"
-    },
-    "aqfyadu2mj90wrl7:05ycf": {
-      "fantrax_id": "05ycf",
-      "player_name": "Noah Cameron",
-      "primary_position": "SP",
-      "roster_position": "P",
-      "roster_status": "ACTIVE",
       "team_id": "aqfyadu2mj90wrl7",
       "team_name": "Ben the Hen"
     },
@@ -2541,15 +2541,6 @@
       "team_id": "f3myl5ugmj90wrl7",
       "team_name": "The Hot and Steamy Boys"
     },
-    "f3myl5ugmj90wrl7:03amq": {
-      "fantrax_id": "03amq",
-      "player_name": "German Marquez",
-      "primary_position": "SP",
-      "roster_position": "P",
-      "roster_status": "ACTIVE",
-      "team_id": "f3myl5ugmj90wrl7",
-      "team_name": "The Hot and Steamy Boys"
-    },
     "f3myl5ugmj90wrl7:03e5m": {
       "fantrax_id": "03e5m",
       "player_name": "Bryan Reynolds",
@@ -2617,6 +2608,15 @@
       "fantrax_id": "04apj",
       "player_name": "Jhoan Duran",
       "primary_position": "RP",
+      "roster_position": "P",
+      "roster_status": "ACTIVE",
+      "team_id": "f3myl5ugmj90wrl7",
+      "team_name": "The Hot and Steamy Boys"
+    },
+    "f3myl5ugmj90wrl7:04cwf": {
+      "fantrax_id": "04cwf",
+      "player_name": "Shane Baz",
+      "primary_position": "SP",
       "roster_position": "P",
       "roster_status": "ACTIVE",
       "team_id": "f3myl5ugmj90wrl7",
