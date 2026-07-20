@@ -774,6 +774,16 @@
       "violation_alert_sent": false,
       "window_start": "2026-07-10"
     },
+    "k7c57nf4mj90wrl8:05y7t": {
+      "demotion_alert_sent": true,
+      "eligible_date": "2026-08-11",
+      "fantrax_id": "05y7t",
+      "player_name": "Henry Bolte",
+      "team_id": "k7c57nf4mj90wrl8",
+      "team_name": "Hand Foot Mouth Disease Guys",
+      "violation_alert_sent": false,
+      "window_start": "2026-07-20"
+    },
     "k7c57nf4mj90wrl8:06ool": {
       "demotion_alert_sent": false,
       "eligible_date": "2026-07-31",
@@ -3869,7 +3879,7 @@
       "fantrax_id": "05yaf",
       "player_name": "Jacob Young",
       "primary_position": "CF",
-      "roster_position": "UT",
+      "roster_position": "OF",
       "roster_status": "ACTIVE",
       "team_id": "jk36oo1hmj90wrl7",
       "team_name": "Daddy Yankee"
@@ -3887,7 +3897,7 @@
       "fantrax_id": "060jo",
       "player_name": "Cam Smith",
       "primary_position": "RF",
-      "roster_position": "OF",
+      "roster_position": "UT",
       "roster_status": "ACTIVE",
       "team_id": "jk36oo1hmj90wrl7",
       "team_name": "Daddy Yankee"
@@ -4175,7 +4185,7 @@
       "fantrax_id": "03pir",
       "player_name": "Kyle Tucker",
       "primary_position": "RF",
-      "roster_position": "OF",
+      "roster_position": "UT",
       "roster_status": "ACTIVE",
       "team_id": "k7c57nf4mj90wrl8",
       "team_name": "Hand Foot Mouth Disease Guys"
@@ -4202,8 +4212,8 @@
       "fantrax_id": "047l7",
       "player_name": "Luis Robert Jr.",
       "primary_position": "CF",
-      "roster_position": "UT",
-      "roster_status": "INJURED_RESERVE",
+      "roster_position": "OF",
+      "roster_status": "ACTIVE",
       "team_id": "k7c57nf4mj90wrl8",
       "team_name": "Hand Foot Mouth Disease Guys"
     },
@@ -4338,7 +4348,7 @@
       "player_name": "Samuel Basallo",
       "primary_position": "C",
       "roster_position": "UT",
-      "roster_status": "ACTIVE",
+      "roster_status": "RESERVE",
       "team_id": "k7c57nf4mj90wrl8",
       "team_name": "Hand Foot Mouth Disease Guys"
     },
@@ -4419,7 +4429,7 @@
       "player_name": "Henry Bolte",
       "primary_position": "RF",
       "roster_position": "UT",
-      "roster_status": "RESERVE",
+      "roster_status": "MINORS",
       "team_id": "k7c57nf4mj90wrl8",
       "team_name": "Hand Foot Mouth Disease Guys"
     },
