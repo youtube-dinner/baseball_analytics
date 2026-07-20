@@ -948,15 +948,6 @@
       "team_id": "6tnz8jgemj90wrl7",
       "team_name": "Bobby and the NitWitts"
     },
-    "6tnz8jgemj90wrl7:03d6p": {
-      "fantrax_id": "03d6p",
-      "player_name": "Grant Holmes",
-      "primary_position": "SP",
-      "roster_position": "P",
-      "roster_status": "ACTIVE",
-      "team_id": "6tnz8jgemj90wrl7",
-      "team_name": "Bobby and the NitWitts"
-    },
     "6tnz8jgemj90wrl7:03deg": {
       "fantrax_id": "03deg",
       "player_name": "Justin Steele",
@@ -1061,6 +1052,15 @@
       "player_name": "Bobby Witt Jr.",
       "primary_position": "SS",
       "roster_position": "SS",
+      "roster_status": "ACTIVE",
+      "team_id": "6tnz8jgemj90wrl7",
+      "team_name": "Bobby and the NitWitts"
+    },
+    "6tnz8jgemj90wrl7:04mlr": {
+      "fantrax_id": "04mlr",
+      "player_name": "Jeffrey Springs",
+      "primary_position": "SP",
+      "roster_position": "P",
       "roster_status": "ACTIVE",
       "team_id": "6tnz8jgemj90wrl7",
       "team_name": "Bobby and the NitWitts"
@@ -3005,7 +3005,7 @@
       "player_name": "Jakob Junis",
       "primary_position": "RP",
       "roster_position": "P",
-      "roster_status": "INJURED_RESERVE",
+      "roster_status": "ACTIVE",
       "team_id": "hd9hwe4mmj90wrl7",
       "team_name": "Third Degree Burnes"
     },
@@ -3213,15 +3213,6 @@
       "primary_position": "CF",
       "roster_position": "UT",
       "roster_status": "INJURED_RESERVE",
-      "team_id": "hd9hwe4mmj90wrl7",
-      "team_name": "Third Degree Burnes"
-    },
-    "hd9hwe4mmj90wrl7:051eh": {
-      "fantrax_id": "051eh",
-      "player_name": "Kevin Kelly",
-      "primary_position": "RP",
-      "roster_position": "P",
-      "roster_status": "ACTIVE",
       "team_id": "hd9hwe4mmj90wrl7",
       "team_name": "Third Degree Burnes"
     },
@@ -4161,6 +4152,15 @@
       "team_id": "k7c57nf4mj90wrl8",
       "team_name": "Hand Foot Mouth Disease Guys"
     },
+    "k7c57nf4mj90wrl8:03d6w": {
+      "fantrax_id": "03d6w",
+      "player_name": "Jack Flaherty",
+      "primary_position": "SP",
+      "roster_position": "P",
+      "roster_status": "ACTIVE",
+      "team_id": "k7c57nf4mj90wrl8",
+      "team_name": "Hand Foot Mouth Disease Guys"
+    },
     "k7c57nf4mj90wrl8:03ojr": {
       "fantrax_id": "03ojr",
       "player_name": "Vladimir Guerrero Jr.",
@@ -4278,6 +4278,15 @@
       "team_id": "k7c57nf4mj90wrl8",
       "team_name": "Hand Foot Mouth Disease Guys"
     },
+    "k7c57nf4mj90wrl8:05a29": {
+      "fantrax_id": "05a29",
+      "player_name": "Carmen Mlodzinski",
+      "primary_position": "RP",
+      "roster_position": "P",
+      "roster_status": "ACTIVE",
+      "team_id": "k7c57nf4mj90wrl8",
+      "team_name": "Hand Foot Mouth Disease Guys"
+    },
     "k7c57nf4mj90wrl8:05ge1": {
       "fantrax_id": "05ge1",
       "player_name": "Ryan Clifford",
@@ -4310,15 +4319,6 @@
       "player_name": "Casey Schmitt",
       "primary_position": "2B",
       "roster_position": "OF",
-      "roster_status": "ACTIVE",
-      "team_id": "k7c57nf4mj90wrl8",
-      "team_name": "Hand Foot Mouth Disease Guys"
-    },
-    "k7c57nf4mj90wrl8:05jpd": {
-      "fantrax_id": "05jpd",
-      "player_name": "Ian Seymour",
-      "primary_position": "RP",
-      "roster_position": "P",
       "roster_status": "ACTIVE",
       "team_id": "k7c57nf4mj90wrl8",
       "team_name": "Hand Foot Mouth Disease Guys"
@@ -4482,15 +4482,6 @@
       "primary_position": "2B",
       "roster_position": "SS",
       "roster_status": "MINORS",
-      "team_id": "k7c57nf4mj90wrl8",
-      "team_name": "Hand Foot Mouth Disease Guys"
-    },
-    "k7c57nf4mj90wrl8:066cf": {
-      "fantrax_id": "066cf",
-      "player_name": "Zebby Matthews",
-      "primary_position": "SP",
-      "roster_position": "P",
-      "roster_status": "ACTIVE",
       "team_id": "k7c57nf4mj90wrl8",
       "team_name": "Hand Foot Mouth Disease Guys"
     },
@@ -5754,6 +5745,15 @@
       "team_id": "qatqhh61mj90wrl7",
       "team_name": "Je suis Charlie Morton"
     },
+    "qatqhh61mj90wrl7:04pmg": {
+      "fantrax_id": "04pmg",
+      "player_name": "Jonathan Bowlan",
+      "primary_position": "RP",
+      "roster_position": "P",
+      "roster_status": "ACTIVE",
+      "team_id": "qatqhh61mj90wrl7",
+      "team_name": "Je suis Charlie Morton"
+    },
     "qatqhh61mj90wrl7:04pr8": {
       "fantrax_id": "04pr8",
       "player_name": "Taj Bradley",
@@ -5913,15 +5913,6 @@
       "primary_position": "CF",
       "roster_position": "OF",
       "roster_status": "MINORS",
-      "team_id": "qatqhh61mj90wrl7",
-      "team_name": "Je suis Charlie Morton"
-    },
-    "qatqhh61mj90wrl7:05ydo": {
-      "fantrax_id": "05ydo",
-      "player_name": "Juan Morillo",
-      "primary_position": "RP",
-      "roster_position": "P",
-      "roster_status": "ACTIVE",
       "team_id": "qatqhh61mj90wrl7",
       "team_name": "Je suis Charlie Morton"
     },
