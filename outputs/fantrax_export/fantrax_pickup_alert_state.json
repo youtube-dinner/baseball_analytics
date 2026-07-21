@@ -2562,6 +2562,15 @@
       "team_id": "f3myl5ugmj90wrl7",
       "team_name": "The Hot and Steamy Boys"
     },
+    "f3myl5ugmj90wrl7:03qo0": {
+      "fantrax_id": "03qo0",
+      "player_name": "Pete Fairbanks",
+      "primary_position": "RP",
+      "roster_position": "P",
+      "roster_status": "ACTIVE",
+      "team_id": "f3myl5ugmj90wrl7",
+      "team_name": "The Hot and Steamy Boys"
+    },
     "f3myl5ugmj90wrl7:0403o": {
       "fantrax_id": "0403o",
       "player_name": "Andres Munoz",
@@ -2602,15 +2611,6 @@
       "fantrax_id": "04apj",
       "player_name": "Jhoan Duran",
       "primary_position": "RP",
-      "roster_position": "P",
-      "roster_status": "ACTIVE",
-      "team_id": "f3myl5ugmj90wrl7",
-      "team_name": "The Hot and Steamy Boys"
-    },
-    "f3myl5ugmj90wrl7:04cwf": {
-      "fantrax_id": "04cwf",
-      "player_name": "Shane Baz",
-      "primary_position": "SP",
       "roster_position": "P",
       "roster_status": "ACTIVE",
       "team_id": "f3myl5ugmj90wrl7",
@@ -3606,6 +3606,15 @@
       "team_id": "jk36oo1hmj90wrl7",
       "team_name": "Daddy Yankee"
     },
+    "jk36oo1hmj90wrl7:03btu": {
+      "fantrax_id": "03btu",
+      "player_name": "Willi Castro",
+      "primary_position": "2B",
+      "roster_position": "UT",
+      "roster_status": "ACTIVE",
+      "team_id": "jk36oo1hmj90wrl7",
+      "team_name": "Daddy Yankee"
+    },
     "jk36oo1hmj90wrl7:03d6s": {
       "fantrax_id": "03d6s",
       "player_name": "Matt Chapman",
@@ -3638,7 +3647,7 @@
       "player_name": "Taylor Ward",
       "primary_position": "LF",
       "roster_position": "OF",
-      "roster_status": "ACTIVE",
+      "roster_status": "RESERVE",
       "team_id": "jk36oo1hmj90wrl7",
       "team_name": "Daddy Yankee"
     },
@@ -3657,15 +3666,6 @@
       "primary_position": "RF",
       "roster_position": "UT",
       "roster_status": "INJURED_RESERVE",
-      "team_id": "jk36oo1hmj90wrl7",
-      "team_name": "Daddy Yankee"
-    },
-    "jk36oo1hmj90wrl7:0406n": {
-      "fantrax_id": "0406n",
-      "player_name": "Andres Chaparro",
-      "primary_position": "1B",
-      "roster_position": "UT",
-      "roster_status": "ACTIVE",
       "team_id": "jk36oo1hmj90wrl7",
       "team_name": "Daddy Yankee"
     },
@@ -3907,8 +3907,8 @@
       "fantrax_id": "060jo",
       "player_name": "Cam Smith",
       "primary_position": "RF",
-      "roster_position": "UT",
-      "roster_status": "RESERVE",
+      "roster_position": "OF",
+      "roster_status": "ACTIVE",
       "team_id": "jk36oo1hmj90wrl7",
       "team_name": "Daddy Yankee"
     },
