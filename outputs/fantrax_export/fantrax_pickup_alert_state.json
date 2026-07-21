@@ -1485,8 +1485,8 @@
       "fantrax_id": "02i2k",
       "player_name": "Byron Buxton",
       "primary_position": "CF",
-      "roster_position": "OF",
-      "roster_status": "INJURED_RESERVE",
+      "roster_position": "UT",
+      "roster_status": "ACTIVE",
       "team_id": "aqfyadu2mj90wrl7",
       "team_name": "Ben the Hen"
     },
@@ -1522,6 +1522,15 @@
       "player_name": "Ozzie Albies",
       "primary_position": "2B",
       "roster_position": "2B",
+      "roster_status": "ACTIVE",
+      "team_id": "aqfyadu2mj90wrl7",
+      "team_name": "Ben the Hen"
+    },
+    "aqfyadu2mj90wrl7:03i81": {
+      "fantrax_id": "03i81",
+      "player_name": "Reynaldo Lopez",
+      "primary_position": "SP",
+      "roster_position": "P",
       "roster_status": "ACTIVE",
       "team_id": "aqfyadu2mj90wrl7",
       "team_name": "Ben the Hen"
@@ -1607,28 +1616,10 @@
       "team_id": "aqfyadu2mj90wrl7",
       "team_name": "Ben the Hen"
     },
-    "aqfyadu2mj90wrl7:04pko": {
-      "fantrax_id": "04pko",
-      "player_name": "Grayson Rodriguez",
-      "primary_position": "SP",
-      "roster_position": "P",
-      "roster_status": "RESERVE",
-      "team_id": "aqfyadu2mj90wrl7",
-      "team_name": "Ben the Hen"
-    },
     "aqfyadu2mj90wrl7:04ptt": {
       "fantrax_id": "04ptt",
       "player_name": "Tarik Skubal",
       "primary_position": "SP",
-      "roster_position": "P",
-      "roster_status": "ACTIVE",
-      "team_id": "aqfyadu2mj90wrl7",
-      "team_name": "Ben the Hen"
-    },
-    "aqfyadu2mj90wrl7:04q08": {
-      "fantrax_id": "04q08",
-      "player_name": "Kyle Leahy",
-      "primary_position": "RP",
       "roster_position": "P",
       "roster_status": "ACTIVE",
       "team_id": "aqfyadu2mj90wrl7",
