@@ -1,8 +1,5 @@
 probable_date,game_time_utc,home_away,probable_team,opponent,mlb_player_id,probable_name,fantrax_id,name,mlb_team,primary_position,eligible_positions,league_status,is_rostered,stats_inc_id,rotowire_id,sport_radar_id,game_pk
-2026-07-21,,,STL,@LAA Tue 8:38PM,,Matthew Liberatore,04mlx,"Liberatore, Matthew",STL,SP,P,FA,False,11397,15399,5522ef4b-d436-4738-94d6-78a2c1c5a3ae,
 2026-07-21,,,SD,@ATL Tue 6:15PM,,Walker Buehler,03aac,"Buehler, Walker",SD,SP,P,FA,False,10509,13815,3703319e-ec2e-4db7-9e86-59589e233f95,
-2026-07-21,,,TEX,CHW Tue 7:05PM,,Kumar Rocker,04azu,"Rocker, Kumar",TEX,SP,P,FA,False,,15407,65ba9ca4-a4e7-4330-ad13-a65a3258315a,
-2026-07-21,,,SEA,CIN Tue 8:40PM,,Luis Castillo,03nuc,"Castillo, Luis",SEA,SP,P,FA,False,10514,14495,71791d18-9c59-4e2f-863d-007d3cdd7efd,
 2026-07-21,,,COL,WSH Tue 7:40PM,,Michael Lorenzen,02hir,"Lorenzen, Michael",COL,SP,P,FA,False,9949,11605,4150b3f7-beb3-4fbc-a947-933d45d20bfe,
 2026-07-21,,,CHC,DET Tue 7:05PM,,David Peterson,04g1x,"Peterson, David",CHC,SP,P,FA,False,10921,14778,42e026c7-10b1-4b2f-881f-472f6e9908cf,
 2026-07-21,,,SF,@KC Tue 6:40PM,,Tyler Mahle,0312g,"Mahle, Tyler",SF,SP,P,FA,False,10455,14058,122f24b5-913e-4abd-90ca-62b1d7519665,
@@ -12,3 +9,4 @@ probable_date,game_time_utc,home_away,probable_team,opponent,mlb_player_id,proba
 2026-07-21,,,KC,SF Tue 6:40PM,,Luinder Avila,06am5,"Avila, Luinder",KC,RP,P,FA,False,,18728,3f90bd6e-fb37-43fa-b2f9-9dac98348a38,
 2026-07-21,,,MIN,@CLE Tue 5:40PM,,Kendry Rojas,05rgq,"Rojas, Kendry",MIN,SP,P,FA,False,,17114,862b919f-6b9e-46cc-8596-d6fea9dfea0d,
 2026-07-21,,,NYM,@MIL Tue 6:40PM,,Zach Thornton,06ekq,"Thornton, Zach",NYM,SP,P,FA,False,,18886,b760cf04-ac68-4e25-841c-b209605fa581,
+2026-07-21,,,ARI,ATH Tue 8:40PM,,Kohl Drake,066m0,"Drake, Kohl",ARI,SP,P,FA,False,,19869,ce1ac426-c261-4329-b3e7-cdabd4a71ab7,
