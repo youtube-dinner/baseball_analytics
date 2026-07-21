@@ -42,7 +42,8 @@
     "2026-07-17": true,
     "2026-07-18": true,
     "2026-07-19": true,
-    "2026-07-20": true
+    "2026-07-20": true,
+    "2026-07-21": true
   },
   "major_add_alerts": {
     "2026-06-08": {
@@ -1004,6 +1005,15 @@
       "team_id": "6tnz8jgemj90wrl7",
       "team_name": "Bobby and the NitWitts"
     },
+    "6tnz8jgemj90wrl7:03nuc": {
+      "fantrax_id": "03nuc",
+      "player_name": "Luis Castillo",
+      "primary_position": "SP",
+      "roster_position": "P",
+      "roster_status": "ACTIVE",
+      "team_id": "6tnz8jgemj90wrl7",
+      "team_name": "Bobby and the NitWitts"
+    },
     "6tnz8jgemj90wrl7:03pov": {
       "fantrax_id": "03pov",
       "player_name": "Brady Singer",
@@ -1063,15 +1073,6 @@
       "player_name": "Bobby Witt Jr.",
       "primary_position": "SS",
       "roster_position": "SS",
-      "roster_status": "ACTIVE",
-      "team_id": "6tnz8jgemj90wrl7",
-      "team_name": "Bobby and the NitWitts"
-    },
-    "6tnz8jgemj90wrl7:04mlr": {
-      "fantrax_id": "04mlr",
-      "player_name": "Jeffrey Springs",
-      "primary_position": "SP",
-      "roster_position": "P",
       "roster_status": "ACTIVE",
       "team_id": "6tnz8jgemj90wrl7",
       "team_name": "Bobby and the NitWitts"
@@ -4739,15 +4740,6 @@
       "team_id": "mldxq5pemj90wrl7",
       "team_name": "L\u00e1szlar\u00f3 T\u00f3th"
     },
-    "mldxq5pemj90wrl7:04q05": {
-      "fantrax_id": "04q05",
-      "player_name": "Alex Vesia",
-      "primary_position": "RP",
-      "roster_position": "P",
-      "roster_status": "ACTIVE",
-      "team_id": "mldxq5pemj90wrl7",
-      "team_name": "L\u00e1szlar\u00f3 T\u00f3th"
-    },
     "mldxq5pemj90wrl7:04si2": {
       "fantrax_id": "04si2",
       "player_name": "Andrew Vaughn",
@@ -4763,6 +4755,15 @@
       "primary_position": "C",
       "roster_position": "UT",
       "roster_status": "MINORS",
+      "team_id": "mldxq5pemj90wrl7",
+      "team_name": "L\u00e1szlar\u00f3 T\u00f3th"
+    },
+    "mldxq5pemj90wrl7:051eh": {
+      "fantrax_id": "051eh",
+      "player_name": "Kevin Kelly",
+      "primary_position": "RP",
+      "roster_position": "P",
+      "roster_status": "ACTIVE",
       "team_id": "mldxq5pemj90wrl7",
       "team_name": "L\u00e1szlar\u00f3 T\u00f3th"
     },
@@ -5670,8 +5671,8 @@
       "fantrax_id": "031t0",
       "player_name": "Gleyber Torres",
       "primary_position": "2B",
-      "roster_position": "UT",
-      "roster_status": "INJURED_RESERVE",
+      "roster_position": "2B",
+      "roster_status": "ACTIVE",
       "team_id": "qatqhh61mj90wrl7",
       "team_name": "Je suis Charlie Morton"
     },
@@ -5765,10 +5766,10 @@
       "team_id": "qatqhh61mj90wrl7",
       "team_name": "Je suis Charlie Morton"
     },
-    "qatqhh61mj90wrl7:04pmg": {
-      "fantrax_id": "04pmg",
-      "player_name": "Jonathan Bowlan",
-      "primary_position": "RP",
+    "qatqhh61mj90wrl7:04mlx": {
+      "fantrax_id": "04mlx",
+      "player_name": "Matthew Liberatore",
+      "primary_position": "SP",
       "roster_position": "P",
       "roster_status": "ACTIVE",
       "team_id": "qatqhh61mj90wrl7",
@@ -5797,15 +5798,6 @@
       "player_name": "CJ Abrams",
       "primary_position": "SS",
       "roster_position": "SS",
-      "roster_status": "ACTIVE",
-      "team_id": "qatqhh61mj90wrl7",
-      "team_name": "Je suis Charlie Morton"
-    },
-    "qatqhh61mj90wrl7:04si3": {
-      "fantrax_id": "04si3",
-      "player_name": "Brayan Rocchio",
-      "primary_position": "SS",
-      "roster_position": "2B",
       "roster_status": "ACTIVE",
       "team_id": "qatqhh61mj90wrl7",
       "team_name": "Je suis Charlie Morton"
