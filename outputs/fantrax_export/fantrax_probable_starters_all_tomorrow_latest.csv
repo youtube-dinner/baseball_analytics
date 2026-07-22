@@ -1,6 +1,5 @@
 probable_date,game_time_utc,home_away,probable_team,opponent,mlb_player_id,probable_name,fantrax_id,name,mlb_team,primary_position,eligible_positions,league_status,is_rostered,stats_inc_id,rotowire_id,sport_radar_id,game_pk
 2026-07-22,,,KC,SF Wed 1:10PM,,Seth Lugo,03sef,"Lugo, Seth",KC,SP,P,FA,False,10326,14095,0600588b-39b2-49eb-9e77-208f8fdaca9b,
-2026-07-22,,,PHI,LAD Wed 5:40PM,,Aaron Nola,02i3o,"Nola, Aaron",PHI,SP,P,FA,False,9882,13359,ded1b30d-52ca-4eec-bce6-251b15b085ac,
 2026-07-22,,,CHC,DET Wed 7:10PM,,Colin Rea,02bzn,"Rea, Colin",CHC,SP,P,FA,False,10048,13786,cd417c1f-ecec-4a64-907a-bbb2b04d8507,
 2026-07-22,,,DET,@CHC Wed 7:10PM,,Keider Montero,05a1v,"Montero, Keider",DET,SP,P,FA,False,,17863,73ecbb81-39b8-4064-95fd-d9fc6907b76c,
 2026-07-22,,,CHW,@TEX Wed 7:05PM,,Anthony Kay,041mb,"Kay, Anthony",CHW,SP,P,FA,False,10538,14269,6de93a68-31cd-4278-b933-e43cbcee5d98,
@@ -9,6 +8,7 @@ probable_date,game_time_utc,home_away,probable_team,opponent,mlb_player_id,proba
 2026-07-22,,,ATL,SD Wed 6:15PM,,Martin Perez,01fhm,"Perez, Martin",ATL,SP,P,FA,False,8652,10867,9012e198-9f53-4885-8b24-402e51524e82,
 2026-07-22,,,LAD,@PHI Wed 5:40PM,,Eric Lauer,031ey,"Lauer, Eric",LAD,SP,P,FA,False,10576,14263,0631a6ce-c41b-4dec-8f68-db2bd61b54a0,
 2026-07-22,,,TOR,TB Wed 6:07PM,,Braydon Fisher,04pqo,"Fisher, Braydon",TOR,RP,P,FA,False,11479,15473,65065b12-776a-4930-98b6-637b0f36456f,
-2026-07-22,,,TEX,CHW Wed 7:05PM,,Cal Quantrill,03yxh,"Quantrill, Cal",TEX,SP,P,FA,False,10573,14251,e8abdf47-b38a-44e6-8c6e-4b0bfbd482b0,
+2026-07-22,,,TEX,CHW Wed 7:05PM,,Tyler Alexander,0376h,"Alexander, Tyler",TEX,RP,P,FA,False,10469,13880,435128c5-d570-467c-9da1-fdba3ed1bfef,
 2026-07-22,,,BAL,@BOS Wed 12:35PM 6:10PM,,Dean Kremer,041yb,"Kremer, Dean",BAL,SP,P,FA,False,11428,15645,dba3e740-244b-487e-8122-2adc89c206f1,
+2026-07-22,,,STL,@LAA Wed 3:07PM,,Hunter Dobbins,05y6w,"Dobbins, Hunter",STL,SP,P,FA,False,,19013,df569e68-70ff-479b-8839-554ebd6ea2fb,
 2026-07-22,,,COL,WSH Wed 2:10PM,,Gabriel Hughes,05ubl,"Hughes, Gabriel",COL,SP,P,FA,False,,17941,44d2f893-8201-4477-b22d-4f251f8e04bb,
