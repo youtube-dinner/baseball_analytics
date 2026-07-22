@@ -5776,15 +5776,6 @@
       "team_id": "qatqhh61mj90wrl7",
       "team_name": "Je suis Charlie Morton"
     },
-    "qatqhh61mj90wrl7:04mlx": {
-      "fantrax_id": "04mlx",
-      "player_name": "Matthew Liberatore",
-      "primary_position": "SP",
-      "roster_position": "P",
-      "roster_status": "ACTIVE",
-      "team_id": "qatqhh61mj90wrl7",
-      "team_name": "Je suis Charlie Morton"
-    },
     "qatqhh61mj90wrl7:04pr8": {
       "fantrax_id": "04pr8",
       "player_name": "Taj Bradley",
@@ -5926,6 +5917,15 @@
       "primary_position": "C",
       "roster_position": "C",
       "roster_status": "MINORS",
+      "team_id": "qatqhh61mj90wrl7",
+      "team_name": "Je suis Charlie Morton"
+    },
+    "qatqhh61mj90wrl7:05y2k": {
+      "fantrax_id": "05y2k",
+      "player_name": "Mason Montgomery",
+      "primary_position": "RP",
+      "roster_position": "P",
+      "roster_status": "ACTIVE",
       "team_id": "qatqhh61mj90wrl7",
       "team_name": "Je suis Charlie Morton"
     },
