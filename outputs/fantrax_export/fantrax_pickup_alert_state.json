@@ -1084,7 +1084,7 @@
       "player_name": "Bobby Witt Jr.",
       "primary_position": "SS",
       "roster_position": "SS",
-      "roster_status": "ACTIVE",
+      "roster_status": "INJURED_RESERVE",
       "team_id": "6tnz8jgemj90wrl7",
       "team_name": "Bobby and the NitWitts"
     },
@@ -1327,6 +1327,15 @@
       "player_name": "Kazuma Okamoto",
       "primary_position": "3B",
       "roster_position": "3B",
+      "roster_status": "ACTIVE",
+      "team_id": "6tnz8jgemj90wrl7",
+      "team_name": "Bobby and the NitWitts"
+    },
+    "6tnz8jgemj90wrl7:06gjo": {
+      "fantrax_id": "06gjo",
+      "player_name": "Jim Jarvis",
+      "primary_position": "SS",
+      "roster_position": "SS",
       "roster_status": "ACTIVE",
       "team_id": "6tnz8jgemj90wrl7",
       "team_name": "Bobby and the NitWitts"
