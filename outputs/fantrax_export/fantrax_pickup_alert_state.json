@@ -944,6 +944,15 @@
       "team_id": "6tnz8jgemj90wrl7",
       "team_name": "Bobby and the NitWitts"
     },
+    "6tnz8jgemj90wrl7:02i3o": {
+      "fantrax_id": "02i3o",
+      "player_name": "Aaron Nola",
+      "primary_position": "SP",
+      "roster_position": "P",
+      "roster_status": "ACTIVE",
+      "team_id": "6tnz8jgemj90wrl7",
+      "team_name": "Bobby and the NitWitts"
+    },
     "6tnz8jgemj90wrl7:02n4s": {
       "fantrax_id": "02n4s",
       "player_name": "Matthew Boyd",
@@ -1012,15 +1021,6 @@
       "player_name": "Ian Happ",
       "primary_position": "LF",
       "roster_position": "OF",
-      "roster_status": "ACTIVE",
-      "team_id": "6tnz8jgemj90wrl7",
-      "team_name": "Bobby and the NitWitts"
-    },
-    "6tnz8jgemj90wrl7:03nuc": {
-      "fantrax_id": "03nuc",
-      "player_name": "Luis Castillo",
-      "primary_position": "SP",
-      "roster_position": "P",
       "roster_status": "ACTIVE",
       "team_id": "6tnz8jgemj90wrl7",
       "team_name": "Bobby and the NitWitts"
@@ -2510,15 +2510,6 @@
       "team_id": "f3myl5ugmj90wrl7",
       "team_name": "The Hot and Steamy Boys"
     },
-    "f3myl5ugmj90wrl7:025gb": {
-      "fantrax_id": "025gb",
-      "player_name": "Xander Bogaerts",
-      "primary_position": "SS",
-      "roster_position": "UT",
-      "roster_status": "ACTIVE",
-      "team_id": "f3myl5ugmj90wrl7",
-      "team_name": "The Hot and Steamy Boys"
-    },
     "f3myl5ugmj90wrl7:02hi7": {
       "fantrax_id": "02hi7",
       "player_name": "Kevin Gausman",
@@ -2650,6 +2641,15 @@
       "player_name": "Drew Rasmussen",
       "primary_position": "SP",
       "roster_position": "P",
+      "roster_status": "ACTIVE",
+      "team_id": "f3myl5ugmj90wrl7",
+      "team_name": "The Hot and Steamy Boys"
+    },
+    "f3myl5ugmj90wrl7:04eig": {
+      "fantrax_id": "04eig",
+      "player_name": "Jose Caballero",
+      "primary_position": "SS",
+      "roster_position": "UT",
       "roster_status": "ACTIVE",
       "team_id": "f3myl5ugmj90wrl7",
       "team_name": "The Hot and Steamy Boys"
