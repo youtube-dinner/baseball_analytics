@@ -955,15 +955,6 @@
       "team_id": "6tnz8jgemj90wrl7",
       "team_name": "Bobby and the NitWitts"
     },
-    "6tnz8jgemj90wrl7:02i3o": {
-      "fantrax_id": "02i3o",
-      "player_name": "Aaron Nola",
-      "primary_position": "SP",
-      "roster_position": "P",
-      "roster_status": "ACTIVE",
-      "team_id": "6tnz8jgemj90wrl7",
-      "team_name": "Bobby and the NitWitts"
-    },
     "6tnz8jgemj90wrl7:02n4s": {
       "fantrax_id": "02n4s",
       "player_name": "Matthew Boyd",
@@ -1122,6 +1113,15 @@
       "player_name": "Kyle Stowers",
       "primary_position": "LF",
       "roster_position": "OF",
+      "roster_status": "ACTIVE",
+      "team_id": "6tnz8jgemj90wrl7",
+      "team_name": "Bobby and the NitWitts"
+    },
+    "6tnz8jgemj90wrl7:0506h": {
+      "fantrax_id": "0506h",
+      "player_name": "Randy Dobnak",
+      "primary_position": "SP",
+      "roster_position": "P",
       "roster_status": "ACTIVE",
       "team_id": "6tnz8jgemj90wrl7",
       "team_name": "Bobby and the NitWitts"
@@ -2170,15 +2170,6 @@
       "team_id": "bw696uo5mj90wrl7",
       "team_name": "Cant Park Here"
     },
-    "bw696uo5mj90wrl7:05js4": {
-      "fantrax_id": "05js4",
-      "player_name": "Yohandy Morales",
-      "primary_position": "1B",
-      "roster_position": "CI",
-      "roster_status": "MINORS",
-      "team_id": "bw696uo5mj90wrl7",
-      "team_name": "Cant Park Here"
-    },
     "bw696uo5mj90wrl7:05m1e": {
       "fantrax_id": "05m1e",
       "player_name": "Jackson Chourio",
@@ -2193,7 +2184,7 @@
       "player_name": "Braden Montgomery",
       "primary_position": "CF",
       "roster_position": "OF",
-      "roster_status": "ACTIVE",
+      "roster_status": "MINORS",
       "team_id": "bw696uo5mj90wrl7",
       "team_name": "Cant Park Here"
     },
