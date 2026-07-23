@@ -2515,7 +2515,7 @@
       "player_name": "Jose Ramirez",
       "primary_position": "3B",
       "roster_position": "3B",
-      "roster_status": "INJURED_RESERVE",
+      "roster_status": "ACTIVE",
       "team_id": "f3myl5ugmj90wrl7",
       "team_name": "The Hot and Steamy Boys"
     },
@@ -2641,15 +2641,6 @@
       "player_name": "Drew Rasmussen",
       "primary_position": "SP",
       "roster_position": "P",
-      "roster_status": "ACTIVE",
-      "team_id": "f3myl5ugmj90wrl7",
-      "team_name": "The Hot and Steamy Boys"
-    },
-    "f3myl5ugmj90wrl7:04eig": {
-      "fantrax_id": "04eig",
-      "player_name": "Jose Caballero",
-      "primary_position": "SS",
-      "roster_position": "UT",
       "roster_status": "ACTIVE",
       "team_id": "f3myl5ugmj90wrl7",
       "team_name": "The Hot and Steamy Boys"
@@ -2982,7 +2973,7 @@
       "fantrax_id": "06plc",
       "player_name": "Sam Antonacci",
       "primary_position": "2B",
-      "roster_position": "3B",
+      "roster_position": "UT",
       "roster_status": "ACTIVE",
       "team_id": "f3myl5ugmj90wrl7",
       "team_name": "The Hot and Steamy Boys"
@@ -5921,15 +5912,6 @@
       "team_id": "qatqhh61mj90wrl7",
       "team_name": "Je suis Charlie Morton"
     },
-    "qatqhh61mj90wrl7:05y2k": {
-      "fantrax_id": "05y2k",
-      "player_name": "Mason Montgomery",
-      "primary_position": "RP",
-      "roster_position": "P",
-      "roster_status": "ACTIVE",
-      "team_id": "qatqhh61mj90wrl7",
-      "team_name": "Je suis Charlie Morton"
-    },
     "qatqhh61mj90wrl7:05y30": {
       "fantrax_id": "05y30",
       "player_name": "Justin Crawford",
@@ -6017,6 +5999,15 @@
       "primary_position": "SS",
       "roster_position": "SS",
       "roster_status": "MINORS",
+      "team_id": "qatqhh61mj90wrl7",
+      "team_name": "Je suis Charlie Morton"
+    },
+    "qatqhh61mj90wrl7:0689r": {
+      "fantrax_id": "0689r",
+      "player_name": "Yuki Matsui",
+      "primary_position": "RP",
+      "roster_position": "P",
+      "roster_status": "ACTIVE",
       "team_id": "qatqhh61mj90wrl7",
       "team_name": "Je suis Charlie Morton"
     },
