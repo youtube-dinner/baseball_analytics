@@ -1,6 +1,5 @@
 probable_date,game_time_utc,home_away,probable_team,opponent,mlb_player_id,probable_name,fantrax_id,name,mlb_team,primary_position,eligible_positions,league_status,is_rostered,stats_inc_id,rotowire_id,sport_radar_id,game_pk
 2026-07-24,,,NYY,@PHI Fri 5:45PM,,Will Warren,05yaz,"Warren, Will",NYY,SP,P,WW,False,,17894,524c0ddf-afcf-4b23-80ae-855313d21840,
-2026-07-24,,,ATL,@BAL Fri 6:05PM,,Grant Holmes,03d6p,"Holmes, Grant",ATL,SP,P,FA,False,10549,13374,5a6101eb-bc40-47af-824a-0f9d1dbe2e0d,
 2026-07-24,,,COL,@MIL Fri 3:10PM,,Tomoyuki Sugano,04b01,"Sugano, Tomoyuki",COL,SP,P,FA,False,,14712,b34ad145-1a14-4fd6-9dc4-27483ad14418,
 2026-07-24,,,NYM,LAD Fri 6:10PM,,Sean Manaea,02x0f,"Manaea, Sean",NYM,SP,P,FA,False,9582,12948,f578d526-6d2e-4590-9665-ed42c72c883f,
 2026-07-24,,,MIN,ATH Fri 7:10PM,,Zebby Matthews,066cf,"Matthews, Zebby",MIN,SP,P,FA,False,,18788,400ea9ba-f842-4381-b71c-cdcac03d8d00,
