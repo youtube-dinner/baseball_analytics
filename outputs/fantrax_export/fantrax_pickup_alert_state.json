@@ -919,6 +919,16 @@
       "violation_alert_sent": false,
       "window_start": "2026-07-01"
     },
+    "qatqhh61mj90wrl7:05wy1": {
+      "demotion_alert_sent": false,
+      "eligible_date": "2026-08-15",
+      "fantrax_id": "05wy1",
+      "player_name": "Brayden Taylor",
+      "team_id": "qatqhh61mj90wrl7",
+      "team_name": "Je suis Charlie Morton",
+      "violation_alert_sent": false,
+      "window_start": "2026-07-24"
+    },
     "qatqhh61mj90wrl7:06c5r": {
       "demotion_alert_sent": false,
       "eligible_date": "2026-07-19",
@@ -4230,7 +4240,7 @@
       "fantrax_id": "03pir",
       "player_name": "Kyle Tucker",
       "primary_position": "RF",
-      "roster_position": "UT",
+      "roster_position": "OF",
       "roster_status": "ACTIVE",
       "team_id": "k7c57nf4mj90wrl8",
       "team_name": "Hand Foot Mouth Disease Guys"
@@ -4275,8 +4285,8 @@
       "fantrax_id": "04efa",
       "player_name": "Daulton Varsho",
       "primary_position": "CF",
-      "roster_position": "OF",
-      "roster_status": "ACTIVE",
+      "roster_position": "UT",
+      "roster_status": "RESERVE",
       "team_id": "k7c57nf4mj90wrl8",
       "team_name": "Hand Foot Mouth Disease Guys"
     },
@@ -4313,6 +4323,15 @@
       "primary_position": "3B",
       "roster_position": "OF",
       "roster_status": "INJURED_RESERVE",
+      "team_id": "k7c57nf4mj90wrl8",
+      "team_name": "Hand Foot Mouth Disease Guys"
+    },
+    "k7c57nf4mj90wrl8:04s1g": {
+      "fantrax_id": "04s1g",
+      "player_name": "Gabriel Moreno",
+      "primary_position": "C",
+      "roster_position": "C",
+      "roster_status": "ACTIVE",
       "team_id": "k7c57nf4mj90wrl8",
       "team_name": "Hand Foot Mouth Disease Guys"
     },
@@ -4446,7 +4465,7 @@
       "fantrax_id": "05vy5",
       "player_name": "Carter Jensen",
       "primary_position": "C",
-      "roster_position": "C",
+      "roster_position": "UT",
       "roster_status": "ACTIVE",
       "team_id": "k7c57nf4mj90wrl8",
       "team_name": "Hand Foot Mouth Disease Guys"
@@ -5945,6 +5964,15 @@
       "team_id": "qatqhh61mj90wrl7",
       "team_name": "Je suis Charlie Morton"
     },
+    "qatqhh61mj90wrl7:05wy1": {
+      "fantrax_id": "05wy1",
+      "player_name": "Brayden Taylor",
+      "primary_position": "3B",
+      "roster_position": "2B",
+      "roster_status": "MINORS",
+      "team_id": "qatqhh61mj90wrl7",
+      "team_name": "Je suis Charlie Morton"
+    },
     "qatqhh61mj90wrl7:05xtz": {
       "fantrax_id": "05xtz",
       "player_name": "Dalton Rushing",
@@ -6029,15 +6057,6 @@
     "qatqhh61mj90wrl7:067yc": {
       "fantrax_id": "067yc",
       "player_name": "Leo De Vries",
-      "primary_position": "SS",
-      "roster_position": "SS",
-      "roster_status": "MINORS",
-      "team_id": "qatqhh61mj90wrl7",
-      "team_name": "Je suis Charlie Morton"
-    },
-    "qatqhh61mj90wrl7:067z9": {
-      "fantrax_id": "067z9",
-      "player_name": "Kayson Cunningham",
       "primary_position": "SS",
       "roster_position": "SS",
       "roster_status": "MINORS",
