@@ -305,6 +305,7 @@
       },
       "mldxq5pemj90wrl7": {
         "major_add_limit": 14,
+        "none_remaining": true,
         "overage_alerted": 0
       },
       "o4jvg6q3mj90wrl7": {
@@ -917,6 +918,16 @@
       "team_name": "Je suis Charlie Morton",
       "violation_alert_sent": false,
       "window_start": "2026-06-27"
+    },
+    "qatqhh61mj90wrl7:06kk6": {
+      "demotion_alert_sent": false,
+      "eligible_date": "2026-08-15",
+      "fantrax_id": "06kk6",
+      "player_name": "Braylon Doughty",
+      "team_id": "qatqhh61mj90wrl7",
+      "team_name": "Je suis Charlie Morton",
+      "violation_alert_sent": false,
+      "window_start": "2026-07-24"
     }
   },
   "roster_snapshot": {
@@ -4619,15 +4630,6 @@
       "team_id": "k7c57nf4mj90wrl8",
       "team_name": "Hand Foot Mouth Disease Guys"
     },
-    "mldxq5pemj90wrl7:025gb": {
-      "fantrax_id": "025gb",
-      "player_name": "Xander Bogaerts",
-      "primary_position": "SS",
-      "roster_position": "UT",
-      "roster_status": "ACTIVE",
-      "team_id": "mldxq5pemj90wrl7",
-      "team_name": "L\u00e1szlar\u00f3 T\u00f3th"
-    },
     "mldxq5pemj90wrl7:02i2q": {
       "fantrax_id": "02i2q",
       "player_name": "Carlos Correa",
@@ -4691,6 +4693,15 @@
       "team_id": "mldxq5pemj90wrl7",
       "team_name": "L\u00e1szlar\u00f3 T\u00f3th"
     },
+    "mldxq5pemj90wrl7:04aok": {
+      "fantrax_id": "04aok",
+      "player_name": "Gregory Soto",
+      "primary_position": "RP",
+      "roster_position": "P",
+      "roster_status": "ACTIVE",
+      "team_id": "mldxq5pemj90wrl7",
+      "team_name": "L\u00e1szlar\u00f3 T\u00f3th"
+    },
     "mldxq5pemj90wrl7:04c0o": {
       "fantrax_id": "04c0o",
       "player_name": "Jose Soriano",
@@ -4705,6 +4716,15 @@
       "player_name": "Heliot Ramos",
       "primary_position": "LF",
       "roster_position": "OF",
+      "roster_status": "ACTIVE",
+      "team_id": "mldxq5pemj90wrl7",
+      "team_name": "L\u00e1szlar\u00f3 T\u00f3th"
+    },
+    "mldxq5pemj90wrl7:04ew7": {
+      "fantrax_id": "04ew7",
+      "player_name": "Aaron Ashby",
+      "primary_position": "RP",
+      "roster_position": "P",
       "roster_status": "ACTIVE",
       "team_id": "mldxq5pemj90wrl7",
       "team_name": "L\u00e1szlar\u00f3 T\u00f3th"
@@ -4759,7 +4779,7 @@
       "player_name": "Andrew Vaughn",
       "primary_position": "1B",
       "roster_position": "UT",
-      "roster_status": "RESERVE",
+      "roster_status": "ACTIVE",
       "team_id": "mldxq5pemj90wrl7",
       "team_name": "L\u00e1szlar\u00f3 T\u00f3th"
     },
@@ -4859,15 +4879,6 @@
       "primary_position": "RF",
       "roster_position": "OF",
       "roster_status": "MINORS",
-      "team_id": "mldxq5pemj90wrl7",
-      "team_name": "L\u00e1szlar\u00f3 T\u00f3th"
-    },
-    "mldxq5pemj90wrl7:05sr2": {
-      "fantrax_id": "05sr2",
-      "player_name": "Michael McGreevy",
-      "primary_position": "SP",
-      "roster_position": "P",
-      "roster_status": "ACTIVE",
       "team_id": "mldxq5pemj90wrl7",
       "team_name": "L\u00e1szlar\u00f3 T\u00f3th"
     },
@@ -6050,15 +6061,6 @@
       "team_id": "qatqhh61mj90wrl7",
       "team_name": "Je suis Charlie Morton"
     },
-    "qatqhh61mj90wrl7:06f14": {
-      "fantrax_id": "06f14",
-      "player_name": "Ethan Pecko",
-      "primary_position": "SP",
-      "roster_position": "P",
-      "roster_status": "MINORS",
-      "team_id": "qatqhh61mj90wrl7",
-      "team_name": "Je suis Charlie Morton"
-    },
     "qatqhh61mj90wrl7:06hua": {
       "fantrax_id": "06hua",
       "player_name": "Bo Davidson",
@@ -6082,6 +6084,15 @@
       "player_name": "Yolfran Castillo",
       "primary_position": "SS",
       "roster_position": "3B",
+      "roster_status": "MINORS",
+      "team_id": "qatqhh61mj90wrl7",
+      "team_name": "Je suis Charlie Morton"
+    },
+    "qatqhh61mj90wrl7:06kk6": {
+      "fantrax_id": "06kk6",
+      "player_name": "Braylon Doughty",
+      "primary_position": "SP",
+      "roster_position": "P",
       "roster_status": "MINORS",
       "team_id": "qatqhh61mj90wrl7",
       "team_name": "Je suis Charlie Morton"
