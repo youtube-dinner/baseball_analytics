@@ -499,6 +499,16 @@
       "violation_alert_sent": false,
       "window_start": "2026-07-08"
     },
+    "f3myl5ugmj90wrl7:05js4": {
+      "demotion_alert_sent": false,
+      "eligible_date": "2026-08-15",
+      "fantrax_id": "05js4",
+      "player_name": "Yohandy Morales",
+      "team_id": "f3myl5ugmj90wrl7",
+      "team_name": "The Hot and Steamy Boys",
+      "violation_alert_sent": false,
+      "window_start": "2026-07-24"
+    },
     "f3myl5ugmj90wrl7:05rb0": {
       "demotion_alert_sent": false,
       "eligible_date": "2026-07-30",
@@ -994,6 +1004,15 @@
       "team_id": "6tnz8jgemj90wrl7",
       "team_name": "Bobby and the NitWitts"
     },
+    "6tnz8jgemj90wrl7:03d6p": {
+      "fantrax_id": "03d6p",
+      "player_name": "Grant Holmes",
+      "primary_position": "SP",
+      "roster_position": "P",
+      "roster_status": "ACTIVE",
+      "team_id": "6tnz8jgemj90wrl7",
+      "team_name": "Bobby and the NitWitts"
+    },
     "6tnz8jgemj90wrl7:03deg": {
       "fantrax_id": "03deg",
       "player_name": "Justin Steele",
@@ -1125,15 +1144,6 @@
       "player_name": "Kyle Stowers",
       "primary_position": "LF",
       "roster_position": "OF",
-      "roster_status": "ACTIVE",
-      "team_id": "6tnz8jgemj90wrl7",
-      "team_name": "Bobby and the NitWitts"
-    },
-    "6tnz8jgemj90wrl7:0506h": {
-      "fantrax_id": "0506h",
-      "player_name": "Randy Dobnak",
-      "primary_position": "SP",
-      "roster_position": "P",
       "roster_status": "ACTIVE",
       "team_id": "6tnz8jgemj90wrl7",
       "team_name": "Bobby and the NitWitts"
@@ -1989,7 +1999,7 @@
       "player_name": "Christian Yelich",
       "primary_position": "DH",
       "roster_position": "UT",
-      "roster_status": "RESERVE",
+      "roster_status": "ACTIVE",
       "team_id": "bw696uo5mj90wrl7",
       "team_name": "Cant Park Here"
     },
@@ -1998,7 +2008,7 @@
       "player_name": "Francisco Lindor",
       "primary_position": "SS",
       "roster_position": "UT",
-      "roster_status": "ACTIVE",
+      "roster_status": "RESERVE",
       "team_id": "bw696uo5mj90wrl7",
       "team_name": "Cant Park Here"
     },
@@ -2106,15 +2116,6 @@
       "player_name": "Braxton Ashcraft",
       "primary_position": "RP",
       "roster_position": "P",
-      "roster_status": "ACTIVE",
-      "team_id": "bw696uo5mj90wrl7",
-      "team_name": "Cant Park Here"
-    },
-    "bw696uo5mj90wrl7:04y79": {
-      "fantrax_id": "04y79",
-      "player_name": "Victor Mesa Jr.",
-      "primary_position": "CF",
-      "roster_position": "OF",
       "roster_status": "ACTIVE",
       "team_id": "bw696uo5mj90wrl7",
       "team_name": "Cant Park Here"
@@ -2353,6 +2354,15 @@
       "team_id": "bw696uo5mj90wrl7",
       "team_name": "Cant Park Here"
     },
+    "bw696uo5mj90wrl7:066cf": {
+      "fantrax_id": "066cf",
+      "player_name": "Zebby Matthews",
+      "primary_position": "SP",
+      "roster_position": "P",
+      "roster_status": "ACTIVE",
+      "team_id": "bw696uo5mj90wrl7",
+      "team_name": "Cant Park Here"
+    },
     "bw696uo5mj90wrl7:067yp": {
       "fantrax_id": "067yp",
       "player_name": "Ralphy Velazquez",
@@ -2403,7 +2413,7 @@
       "player_name": "Zac Thornton",
       "primary_position": "SP",
       "roster_position": "P",
-      "roster_status": "ACTIVE",
+      "roster_status": "RESERVE",
       "team_id": "bw696uo5mj90wrl7",
       "team_name": "Cant Park Here"
     },
@@ -2776,6 +2786,15 @@
       "team_id": "f3myl5ugmj90wrl7",
       "team_name": "The Hot and Steamy Boys"
     },
+    "f3myl5ugmj90wrl7:05js4": {
+      "fantrax_id": "05js4",
+      "player_name": "Yohandy Morales",
+      "primary_position": "1B",
+      "roster_position": "1B",
+      "roster_status": "MINORS",
+      "team_id": "f3myl5ugmj90wrl7",
+      "team_name": "The Hot and Steamy Boys"
+    },
     "f3myl5ugmj90wrl7:05mx9": {
       "fantrax_id": "05mx9",
       "player_name": "Felnin Celesten",
@@ -3022,15 +3041,6 @@
     "f3myl5ugmj90wrl7:06rre": {
       "fantrax_id": "06rre",
       "player_name": "Joseph Dzierwa",
-      "primary_position": "SP",
-      "roster_position": "P",
-      "roster_status": "MINORS",
-      "team_id": "f3myl5ugmj90wrl7",
-      "team_name": "The Hot and Steamy Boys"
-    },
-    "f3myl5ugmj90wrl7:06y0k": {
-      "fantrax_id": "06y0k",
-      "player_name": "Ramon Marquez",
       "primary_position": "SP",
       "roster_position": "P",
       "roster_status": "MINORS",
