@@ -1,5 +1,4 @@
 probable_date,game_time_utc,home_away,probable_team,opponent,mlb_player_id,probable_name,fantrax_id,name,mlb_team,primary_position,eligible_positions,league_status,is_rostered,stats_inc_id,rotowire_id,sport_radar_id,game_pk
-2026-07-25,,,ATL,@BAL Sat 6:05PM,,Bryce Elder,05jp9,"Elder, Bryce",ATL,SP,P,FA,False,,16801,8a4de81f-a497-40e4-ba42-39b4c1fbbdd3,
 2026-07-25,,,SD,@MIA Sat 3:10PM,,J.P. Sears,04eld,"Sears, J.P.",SD,SP,P,FA,False,,15242,9879d57f-6e61-4d12-be21-25c2b7328947,
 2026-07-25,,,ATH,@MIN Sat 6:10PM,,Mason Barnett,0630h,"Barnett, Mason",ATH,SP,P,FA,False,,18118,3937b4a0-cea7-4377-afc5-3e933a77ebf1,
 2026-07-25,,,PHI,NYY Sat 5:05PM,,Alan Rangel,04otv,"Rangel, Alan",PHI,RP,P,FA,False,,17683,4bb091f1-7e8b-4578-bdd5-56e278526248,
