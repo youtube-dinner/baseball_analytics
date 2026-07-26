@@ -47,7 +47,8 @@
     "2026-07-22": true,
     "2026-07-23": true,
     "2026-07-24": true,
-    "2026-07-25": true
+    "2026-07-25": true,
+    "2026-07-26": true
   },
   "major_add_alerts": {
     "2026-06-08": {
@@ -278,6 +279,7 @@
     "2026-07-13": {
       "6tnz8jgemj90wrl7": {
         "major_add_limit": 14,
+        "one_remaining": true,
         "overage_alerted": 0
       },
       "aqfyadu2mj90wrl7": {
@@ -1000,6 +1002,15 @@
       "team_id": "6tnz8jgemj90wrl7",
       "team_name": "Bobby and the NitWitts"
     },
+    "6tnz8jgemj90wrl7:01srb": {
+      "fantrax_id": "01srb",
+      "player_name": "Jameson Taillon",
+      "primary_position": "SP",
+      "roster_position": "P",
+      "roster_status": "ACTIVE",
+      "team_id": "6tnz8jgemj90wrl7",
+      "team_name": "Bobby and the NitWitts"
+    },
     "6tnz8jgemj90wrl7:01ual": {
       "fantrax_id": "01ual",
       "player_name": "Paul Goldschmidt",
@@ -1068,7 +1079,7 @@
       "player_name": "Ranger Suarez",
       "primary_position": "SP",
       "roster_position": "P",
-      "roster_status": "ACTIVE",
+      "roster_status": "INJURED_RESERVE",
       "team_id": "6tnz8jgemj90wrl7",
       "team_name": "Bobby and the NitWitts"
     },
