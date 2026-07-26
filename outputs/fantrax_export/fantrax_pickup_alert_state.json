@@ -2028,6 +2028,15 @@
       "team_id": "aqfyadu2mj90wrl7",
       "team_name": "Ben the Hen"
     },
+    "bw696uo5mj90wrl7:01sy3": {
+      "fantrax_id": "01sy3",
+      "player_name": "Nolan Arenado",
+      "primary_position": "3B",
+      "roster_position": "CI",
+      "roster_status": "ACTIVE",
+      "team_id": "bw696uo5mj90wrl7",
+      "team_name": "Cant Park Here"
+    },
     "bw696uo5mj90wrl7:025dn": {
       "fantrax_id": "025dn",
       "player_name": "Christian Yelich",
@@ -2042,7 +2051,7 @@
       "player_name": "Francisco Lindor",
       "primary_position": "SS",
       "roster_position": "UT",
-      "roster_status": "RESERVE",
+      "roster_status": "ACTIVE",
       "team_id": "bw696uo5mj90wrl7",
       "team_name": "Cant Park Here"
     },
@@ -2104,7 +2113,7 @@
       "fantrax_id": "03aqw",
       "player_name": "Mauricio Dubon",
       "primary_position": "LF",
-      "roster_position": "CI",
+      "roster_position": "OF",
       "roster_status": "ACTIVE",
       "team_id": "bw696uo5mj90wrl7",
       "team_name": "Cant Park Here"
@@ -2141,7 +2150,7 @@
       "player_name": "Shea Langeliers",
       "primary_position": "C",
       "roster_position": "UT",
-      "roster_status": "ACTIVE",
+      "roster_status": "INJURED_RESERVE",
       "team_id": "bw696uo5mj90wrl7",
       "team_name": "Cant Park Here"
     },
