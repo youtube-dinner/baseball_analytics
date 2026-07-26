@@ -862,6 +862,16 @@
       "violation_alert_sent": false,
       "window_start": "2026-07-20"
     },
+    "k7c57nf4mj90wrl8:06kjz": {
+      "demotion_alert_sent": false,
+      "eligible_date": "2026-08-17",
+      "fantrax_id": "06kjz",
+      "player_name": "Chase Harlan",
+      "team_id": "k7c57nf4mj90wrl8",
+      "team_name": "Hand Foot Mouth Disease Guys",
+      "violation_alert_sent": false,
+      "window_start": "2026-07-26"
+    },
     "k7c57nf4mj90wrl8:06ool": {
       "demotion_alert_sent": false,
       "eligible_date": "2026-07-31",
@@ -1012,15 +1022,6 @@
       "team_id": "6tnz8jgemj90wrl7",
       "team_name": "Bobby and the NitWitts"
     },
-    "6tnz8jgemj90wrl7:01srb": {
-      "fantrax_id": "01srb",
-      "player_name": "Jameson Taillon",
-      "primary_position": "SP",
-      "roster_position": "P",
-      "roster_status": "ACTIVE",
-      "team_id": "6tnz8jgemj90wrl7",
-      "team_name": "Bobby and the NitWitts"
-    },
     "6tnz8jgemj90wrl7:01ual": {
       "fantrax_id": "01ual",
       "player_name": "Paul Goldschmidt",
@@ -1089,7 +1090,7 @@
       "player_name": "Ranger Suarez",
       "primary_position": "SP",
       "roster_position": "P",
-      "roster_status": "INJURED_RESERVE",
+      "roster_status": "ACTIVE",
       "team_id": "6tnz8jgemj90wrl7",
       "team_name": "Bobby and the NitWitts"
     },
@@ -2695,6 +2696,15 @@
       "team_id": "f3myl5ugmj90wrl7",
       "team_name": "The Hot and Steamy Boys"
     },
+    "f3myl5ugmj90wrl7:04azu": {
+      "fantrax_id": "04azu",
+      "player_name": "Kumar Rocker",
+      "primary_position": "SP",
+      "roster_position": "P",
+      "roster_status": "ACTIVE",
+      "team_id": "f3myl5ugmj90wrl7",
+      "team_name": "The Hot and Steamy Boys"
+    },
     "f3myl5ugmj90wrl7:04cwf": {
       "fantrax_id": "04cwf",
       "player_name": "Shane Baz",
@@ -2934,15 +2944,6 @@
       "player_name": "Munetaka Murakami",
       "primary_position": "1B",
       "roster_position": "UT",
-      "roster_status": "ACTIVE",
-      "team_id": "f3myl5ugmj90wrl7",
-      "team_name": "The Hot and Steamy Boys"
-    },
-    "f3myl5ugmj90wrl7:05y7v": {
-      "fantrax_id": "05y7v",
-      "player_name": "Carson Whisenhunt",
-      "primary_position": "SP",
-      "roster_position": "P",
       "roster_status": "ACTIVE",
       "team_id": "f3myl5ugmj90wrl7",
       "team_name": "The Hot and Steamy Boys"
@@ -3627,7 +3628,7 @@
       "player_name": "Freddie Freeman",
       "primary_position": "1B",
       "roster_position": "1B",
-      "roster_status": "ACTIVE",
+      "roster_status": "RESERVE",
       "team_id": "jk36oo1hmj90wrl7",
       "team_name": "Daddy Yankee"
     },
@@ -3734,8 +3735,8 @@
       "fantrax_id": "041e2",
       "player_name": "Mickey Moniak",
       "primary_position": "RF",
-      "roster_position": "OF",
-      "roster_status": "ACTIVE",
+      "roster_position": "UT",
+      "roster_status": "RESERVE",
       "team_id": "jk36oo1hmj90wrl7",
       "team_name": "Daddy Yankee"
     },
@@ -3824,7 +3825,7 @@
       "fantrax_id": "04pr1",
       "player_name": "Steven Kwan",
       "primary_position": "LF",
-      "roster_position": "UT",
+      "roster_position": "OF",
       "roster_status": "ACTIVE",
       "team_id": "jk36oo1hmj90wrl7",
       "team_name": "Daddy Yankee"
@@ -4531,15 +4532,6 @@
       "team_id": "k7c57nf4mj90wrl8",
       "team_name": "Hand Foot Mouth Disease Guys"
     },
-    "k7c57nf4mj90wrl8:0630e": {
-      "fantrax_id": "0630e",
-      "player_name": "Colby Thomas",
-      "primary_position": "RF",
-      "roster_position": "OF",
-      "roster_status": "MINORS",
-      "team_id": "k7c57nf4mj90wrl8",
-      "team_name": "Hand Foot Mouth Disease Guys"
-    },
     "k7c57nf4mj90wrl8:0630n": {
       "fantrax_id": "0630n",
       "player_name": "Aron Estrada",
@@ -4590,6 +4582,15 @@
       "player_name": "Jhonny Level",
       "primary_position": "SS",
       "roster_position": "SS",
+      "roster_status": "MINORS",
+      "team_id": "k7c57nf4mj90wrl8",
+      "team_name": "Hand Foot Mouth Disease Guys"
+    },
+    "k7c57nf4mj90wrl8:06kjz": {
+      "fantrax_id": "06kjz",
+      "player_name": "Chase Harlan",
+      "primary_position": "3B",
+      "roster_position": "3B",
       "roster_status": "MINORS",
       "team_id": "k7c57nf4mj90wrl8",
       "team_name": "Hand Foot Mouth Disease Guys"
