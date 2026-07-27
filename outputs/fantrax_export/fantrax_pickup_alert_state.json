@@ -2384,7 +2384,7 @@
       "player_name": "Justin Wrobleski",
       "primary_position": "RP",
       "roster_position": "P",
-      "roster_status": "RESERVE",
+      "roster_status": "ACTIVE",
       "team_id": "bw696uo5mj90wrl7",
       "team_name": "Cant Park Here"
     },
@@ -3288,6 +3288,15 @@
       "team_id": "hd9hwe4mmj90wrl7",
       "team_name": "Third Degree Burnes"
     },
+    "hd9hwe4mmj90wrl7:04si3": {
+      "fantrax_id": "04si3",
+      "player_name": "Brayan Rocchio",
+      "primary_position": "SS",
+      "roster_position": "UT",
+      "roster_status": "ACTIVE",
+      "team_id": "hd9hwe4mmj90wrl7",
+      "team_name": "Third Degree Burnes"
+    },
     "hd9hwe4mmj90wrl7:04tjl": {
       "fantrax_id": "04tjl",
       "player_name": "Otto Lopez",
@@ -3329,7 +3338,7 @@
       "player_name": "Spencer Steer",
       "primary_position": "1B",
       "roster_position": "UT",
-      "roster_status": "ACTIVE",
+      "roster_status": "INJURED_RESERVE",
       "team_id": "hd9hwe4mmj90wrl7",
       "team_name": "Third Degree Burnes"
     },
@@ -4269,6 +4278,15 @@
       "team_id": "k7c57nf4mj90wrl8",
       "team_name": "Hand Foot Mouth Disease Guys"
     },
+    "k7c57nf4mj90wrl8:0312g": {
+      "fantrax_id": "0312g",
+      "player_name": "Tyler Mahle",
+      "primary_position": "SP",
+      "roster_position": "P",
+      "roster_status": "ACTIVE",
+      "team_id": "k7c57nf4mj90wrl8",
+      "team_name": "Hand Foot Mouth Disease Guys"
+    },
     "k7c57nf4mj90wrl8:0326s": {
       "fantrax_id": "0326s",
       "player_name": "Ketel Marte",
@@ -4390,15 +4408,6 @@
       "fantrax_id": "04xne",
       "player_name": "Yoendrys Gomez",
       "primary_position": "RP",
-      "roster_position": "P",
-      "roster_status": "ACTIVE",
-      "team_id": "k7c57nf4mj90wrl8",
-      "team_name": "Hand Foot Mouth Disease Guys"
-    },
-    "k7c57nf4mj90wrl8:04ydi": {
-      "fantrax_id": "04ydi",
-      "player_name": "Ronel Blanco",
-      "primary_position": "SP",
       "roster_position": "P",
       "roster_status": "ACTIVE",
       "team_id": "k7c57nf4mj90wrl8",
