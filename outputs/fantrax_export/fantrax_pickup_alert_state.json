@@ -49,7 +49,8 @@
     "2026-07-24": true,
     "2026-07-25": true,
     "2026-07-26": true,
-    "2026-07-27": true
+    "2026-07-27": true,
+    "2026-07-28": true
   },
   "major_add_alerts": {
     "2026-06-08": {
@@ -5970,6 +5971,15 @@
       "team_id": "qatqhh61mj90wrl7",
       "team_name": "Je suis Charlie Morton"
     },
+    "qatqhh61mj90wrl7:051eh": {
+      "fantrax_id": "051eh",
+      "player_name": "Kevin Kelly",
+      "primary_position": "RP",
+      "roster_position": "P",
+      "roster_status": "ACTIVE",
+      "team_id": "qatqhh61mj90wrl7",
+      "team_name": "Je suis Charlie Morton"
+    },
     "qatqhh61mj90wrl7:05gww": {
       "fantrax_id": "05gww",
       "player_name": "Cade Horton",
@@ -6057,15 +6067,6 @@
       "primary_position": "CF",
       "roster_position": "OF",
       "roster_status": "MINORS",
-      "team_id": "qatqhh61mj90wrl7",
-      "team_name": "Je suis Charlie Morton"
-    },
-    "qatqhh61mj90wrl7:05ym7": {
-      "fantrax_id": "05ym7",
-      "player_name": "Fernando Cruz",
-      "primary_position": "RP",
-      "roster_position": "P",
-      "roster_status": "ACTIVE",
       "team_id": "qatqhh61mj90wrl7",
       "team_name": "Je suis Charlie Morton"
     },
