@@ -609,13 +609,13 @@
     },
     "f3myl5ugmj90wrl7:05tzp": {
       "demotion_alert_sent": true,
-      "eligible_date": "2026-07-29",
+      "eligible_date": "2026-08-20",
       "fantrax_id": "05tzp",
       "player_name": "Jacob Gonzalez",
       "team_id": "f3myl5ugmj90wrl7",
       "team_name": "The Hot and Steamy Boys",
-      "violation_alert_sent": true,
-      "window_start": "2026-07-07"
+      "violation_alert_sent": false,
+      "window_start": "2026-07-29"
     },
     "f3myl5ugmj90wrl7:05uei": {
       "demotion_alert_sent": true,
@@ -2738,7 +2738,7 @@
       "player_name": "Royce Lewis",
       "primary_position": "3B",
       "roster_position": "UT",
-      "roster_status": "MINORS",
+      "roster_status": "ACTIVE",
       "team_id": "f3myl5ugmj90wrl7",
       "team_name": "The Hot and Steamy Boys"
     },
@@ -2945,7 +2945,7 @@
       "player_name": "Jacob Gonzalez",
       "primary_position": "2B",
       "roster_position": "UT",
-      "roster_status": "ACTIVE",
+      "roster_status": "MINORS",
       "team_id": "f3myl5ugmj90wrl7",
       "team_name": "The Hot and Steamy Boys"
     },
