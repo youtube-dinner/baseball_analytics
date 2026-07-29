@@ -1219,6 +1219,15 @@
       "team_id": "6tnz8jgemj90wrl7",
       "team_name": "Bobby and the NitWitts"
     },
+    "6tnz8jgemj90wrl7:04mn2": {
+      "fantrax_id": "04mn2",
+      "player_name": "Griffin Conine",
+      "primary_position": "LF",
+      "roster_position": "UT",
+      "roster_status": "ACTIVE",
+      "team_id": "6tnz8jgemj90wrl7",
+      "team_name": "Bobby and the NitWitts"
+    },
     "6tnz8jgemj90wrl7:04mnw": {
       "fantrax_id": "04mnw",
       "player_name": "Ryan Weathers",
@@ -1714,15 +1723,6 @@
       "team_id": "aqfyadu2mj90wrl7",
       "team_name": "Ben the Hen"
     },
-    "aqfyadu2mj90wrl7:041yb": {
-      "fantrax_id": "041yb",
-      "player_name": "Dean Kremer",
-      "primary_position": "SP",
-      "roster_position": "P",
-      "roster_status": "ACTIVE",
-      "team_id": "aqfyadu2mj90wrl7",
-      "team_name": "Ben the Hen"
-    },
     "aqfyadu2mj90wrl7:04aea": {
       "fantrax_id": "04aea",
       "player_name": "Hunter Greene",
@@ -1807,6 +1807,15 @@
     "aqfyadu2mj90wrl7:051bm": {
       "fantrax_id": "051bm",
       "player_name": "Louis Varland",
+      "primary_position": "RP",
+      "roster_position": "P",
+      "roster_status": "ACTIVE",
+      "team_id": "aqfyadu2mj90wrl7",
+      "team_name": "Ben the Hen"
+    },
+    "aqfyadu2mj90wrl7:05jpd": {
+      "fantrax_id": "05jpd",
+      "player_name": "Ian Seymour",
       "primary_position": "RP",
       "roster_position": "P",
       "roster_status": "ACTIVE",
@@ -2848,6 +2857,15 @@
       "team_id": "f3myl5ugmj90wrl7",
       "team_name": "The Hot and Steamy Boys"
     },
+    "f3myl5ugmj90wrl7:04pxf": {
+      "fantrax_id": "04pxf",
+      "player_name": "Davis Martin",
+      "primary_position": "SP",
+      "roster_position": "P",
+      "roster_status": "ACTIVE",
+      "team_id": "f3myl5ugmj90wrl7",
+      "team_name": "The Hot and Steamy Boys"
+    },
     "f3myl5ugmj90wrl7:04ya2": {
       "fantrax_id": "04ya2",
       "player_name": "Daniel Espino",
@@ -2862,15 +2880,6 @@
       "player_name": "Dillon Dingler",
       "primary_position": "C",
       "roster_position": "C",
-      "roster_status": "ACTIVE",
-      "team_id": "f3myl5ugmj90wrl7",
-      "team_name": "The Hot and Steamy Boys"
-    },
-    "f3myl5ugmj90wrl7:05jnq": {
-      "fantrax_id": "05jnq",
-      "player_name": "Clayton Beeter",
-      "primary_position": "RP",
-      "roster_position": "P",
       "roster_status": "ACTIVE",
       "team_id": "f3myl5ugmj90wrl7",
       "team_name": "The Hot and Steamy Boys"
@@ -3779,8 +3788,8 @@
       "fantrax_id": "03wha",
       "player_name": "Ronald Acuna Jr.",
       "primary_position": "RF",
-      "roster_position": "OF",
-      "roster_status": "RESERVE",
+      "roster_position": "UT",
+      "roster_status": "ACTIVE",
       "team_id": "jk36oo1hmj90wrl7",
       "team_name": "Daddy Yankee"
     },
@@ -3825,7 +3834,7 @@
       "player_name": "Jake Burger",
       "primary_position": "1B",
       "roster_position": "UT",
-      "roster_status": "ACTIVE",
+      "roster_status": "RESERVE",
       "team_id": "jk36oo1hmj90wrl7",
       "team_name": "Daddy Yankee"
     },
@@ -4003,6 +4012,15 @@
     "jk36oo1hmj90wrl7:05uc4": {
       "fantrax_id": "05uc4",
       "player_name": "Troy Melton",
+      "primary_position": "RP",
+      "roster_position": "P",
+      "roster_status": "ACTIVE",
+      "team_id": "jk36oo1hmj90wrl7",
+      "team_name": "Daddy Yankee"
+    },
+    "jk36oo1hmj90wrl7:05uy4": {
+      "fantrax_id": "05uy4",
+      "player_name": "Dylan Dodd",
       "primary_position": "RP",
       "roster_position": "P",
       "roster_status": "ACTIVE",
@@ -4342,6 +4360,15 @@
       "team_id": "k7c57nf4mj90wrl8",
       "team_name": "Hand Foot Mouth Disease Guys"
     },
+    "k7c57nf4mj90wrl8:04auj": {
+      "fantrax_id": "04auj",
+      "player_name": "Framber Valdez",
+      "primary_position": "SP",
+      "roster_position": "P",
+      "roster_status": "ACTIVE",
+      "team_id": "k7c57nf4mj90wrl8",
+      "team_name": "Hand Foot Mouth Disease Guys"
+    },
     "k7c57nf4mj90wrl8:04efa": {
       "fantrax_id": "04efa",
       "player_name": "Daulton Varsho",
@@ -4455,7 +4482,7 @@
       "player_name": "Casey Schmitt",
       "primary_position": "2B",
       "roster_position": "UT",
-      "roster_status": "RESERVE",
+      "roster_status": "INJURED_RESERVE",
       "team_id": "k7c57nf4mj90wrl8",
       "team_name": "Hand Foot Mouth Disease Guys"
     },
@@ -4945,15 +4972,6 @@
       "team_id": "mldxq5pemj90wrl7",
       "team_name": "L\u00e1szlar\u00f3 T\u00f3th"
     },
-    "mldxq5pemj90wrl7:05lg3": {
-      "fantrax_id": "05lg3",
-      "player_name": "Brandon Pfaadt",
-      "primary_position": "SP",
-      "roster_position": "P",
-      "roster_status": "ACTIVE",
-      "team_id": "mldxq5pemj90wrl7",
-      "team_name": "L\u00e1szlar\u00f3 T\u00f3th"
-    },
     "mldxq5pemj90wrl7:05rcf": {
       "fantrax_id": "05rcf",
       "player_name": "Joshua Baez",
@@ -4986,6 +5004,15 @@
       "player_name": "Jackson Merrill",
       "primary_position": "CF",
       "roster_position": "OF",
+      "roster_status": "ACTIVE",
+      "team_id": "mldxq5pemj90wrl7",
+      "team_name": "L\u00e1szlar\u00f3 T\u00f3th"
+    },
+    "mldxq5pemj90wrl7:05ubl": {
+      "fantrax_id": "05ubl",
+      "player_name": "Gabriel Hughes",
+      "primary_position": "SP",
+      "roster_position": "P",
       "roster_status": "ACTIVE",
       "team_id": "mldxq5pemj90wrl7",
       "team_name": "L\u00e1szlar\u00f3 T\u00f3th"
