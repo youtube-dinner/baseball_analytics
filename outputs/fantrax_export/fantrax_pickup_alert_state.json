@@ -50,7 +50,8 @@
     "2026-07-25": true,
     "2026-07-26": true,
     "2026-07-27": true,
-    "2026-07-28": true
+    "2026-07-28": true,
+    "2026-07-29": true
   },
   "major_add_alerts": {
     "2026-06-08": {
@@ -3807,7 +3808,7 @@
       "fantrax_id": "03wha",
       "player_name": "Ronald Acuna Jr.",
       "primary_position": "RF",
-      "roster_position": "UT",
+      "roster_position": "OF",
       "roster_status": "ACTIVE",
       "team_id": "jk36oo1hmj90wrl7",
       "team_name": "Daddy Yankee"
@@ -3816,7 +3817,7 @@
       "fantrax_id": "041e2",
       "player_name": "Mickey Moniak",
       "primary_position": "RF",
-      "roster_position": "OF",
+      "roster_position": "UT",
       "roster_status": "ACTIVE",
       "team_id": "jk36oo1hmj90wrl7",
       "team_name": "Daddy Yankee"
@@ -3830,6 +3831,15 @@
       "team_id": "jk36oo1hmj90wrl7",
       "team_name": "Daddy Yankee"
     },
+    "jk36oo1hmj90wrl7:041r5": {
+      "fantrax_id": "041r5",
+      "player_name": "Dustin May",
+      "primary_position": "SP",
+      "roster_position": "P",
+      "roster_status": "ACTIVE",
+      "team_id": "jk36oo1hmj90wrl7",
+      "team_name": "Daddy Yankee"
+    },
     "jk36oo1hmj90wrl7:045qo": {
       "fantrax_id": "045qo",
       "player_name": "Jazz Chisholm Jr.",
@@ -3839,21 +3849,12 @@
       "team_id": "jk36oo1hmj90wrl7",
       "team_name": "Daddy Yankee"
     },
-    "jk36oo1hmj90wrl7:04alp": {
-      "fantrax_id": "04alp",
-      "player_name": "Ernie Clement",
-      "primary_position": "3B",
-      "roster_position": "UT",
-      "roster_status": "ACTIVE",
-      "team_id": "jk36oo1hmj90wrl7",
-      "team_name": "Daddy Yankee"
-    },
     "jk36oo1hmj90wrl7:04azv": {
       "fantrax_id": "04azv",
       "player_name": "Jake Burger",
       "primary_position": "1B",
       "roster_position": "UT",
-      "roster_status": "RESERVE",
+      "roster_status": "ACTIVE",
       "team_id": "jk36oo1hmj90wrl7",
       "team_name": "Daddy Yankee"
     },
