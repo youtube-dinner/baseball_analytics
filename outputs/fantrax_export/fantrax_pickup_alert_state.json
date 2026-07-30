@@ -51,7 +51,8 @@
     "2026-07-26": true,
     "2026-07-27": true,
     "2026-07-28": true,
-    "2026-07-29": true
+    "2026-07-29": true,
+    "2026-07-30": true
   },
   "major_add_alerts": {
     "2026-06-08": {
@@ -4858,6 +4859,15 @@
       "team_id": "mldxq5pemj90wrl7",
       "team_name": "L\u00e1szlar\u00f3 T\u00f3th"
     },
+    "mldxq5pemj90wrl7:043ia": {
+      "fantrax_id": "043ia",
+      "player_name": "Adrian Morejon",
+      "primary_position": "RP",
+      "roster_position": "P",
+      "roster_status": "ACTIVE",
+      "team_id": "mldxq5pemj90wrl7",
+      "team_name": "L\u00e1szlar\u00f3 T\u00f3th"
+    },
     "mldxq5pemj90wrl7:04aee": {
       "fantrax_id": "04aee",
       "player_name": "Jo Adell",
@@ -4881,15 +4891,6 @@
       "player_name": "Heliot Ramos",
       "primary_position": "LF",
       "roster_position": "OF",
-      "roster_status": "ACTIVE",
-      "team_id": "mldxq5pemj90wrl7",
-      "team_name": "L\u00e1szlar\u00f3 T\u00f3th"
-    },
-    "mldxq5pemj90wrl7:04ew7": {
-      "fantrax_id": "04ew7",
-      "player_name": "Aaron Ashby",
-      "primary_position": "RP",
-      "roster_position": "P",
       "roster_status": "ACTIVE",
       "team_id": "mldxq5pemj90wrl7",
       "team_name": "L\u00e1szlar\u00f3 T\u00f3th"
