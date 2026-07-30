@@ -1,8 +1,7 @@
 probable_date,game_time_utc,home_away,probable_team,opponent,mlb_player_id,probable_name,fantrax_id,name,mlb_team,primary_position,eligible_positions,league_status,is_rostered,stats_inc_id,rotowire_id,sport_radar_id,game_pk
-2026-07-30,,,STL,CHC Thu 1:15PM,,Andre Pallante,05133,"Pallante, Andre",STL,SP,P,FA,False,,16167,6b4748c0-1b93-4a58-9896-80a04af32c5b,
-2026-07-30,,,KC,@MIN Thu 12:40PM,,Noah Cameron,05ycf,"Cameron, Noah",KC,SP,P,FA,False,,18727,9f16b92f-5eb3-42b2-8b35-9967e608b9cb,
-2026-07-30,,,ATL,WSH Thu 6:15PM,,Grant Holmes,03d6p,"Holmes, Grant",ATL,SP,P,FA,False,10549,13374,5a6101eb-bc40-47af-824a-0f9d1dbe2e0d,
-2026-07-30,,,MIN,KC Thu 12:40PM,,Bailey Ober,0425t,"Ober, Bailey",MIN,SP,P,FA,False,,16018,d596dae4-f972-444d-9db0-4efd47b0fb44,
-2026-07-30,,,CIN,PIT Thu 6:10PM,,Rhett Lowder,061bo,"Lowder, Rhett",CIN,SP,P,FA,False,,18854,65e665b2-cd64-4bfe-a7c5-2afa492e7eff,
-2026-07-30,,,SD,SF Thu 8:40PM,,German Marquez,03amq,"Marquez, German",SD,SP,P,FA,False,10402,14109,2764f896-603a-42bb-b031-f50893d42a63,
+2026-07-30,,,PIT,@CIN Thu 6:10PM,,Yohan Ramirez,04ddz,"Ramirez, Yohan",PIT,RP,P,FA,False,11713,16516,bc6343f5-aaf5-4d41-8179-478789f264ed,
+2026-07-30,,,CHC,@STL Thu 1:15PM,,Javier Assad,04fq2,"Assad, Javier",CHC,SP,P,FA,False,,15233,564bb787-e788-4acf-9dab-1da0e14578e0,
+2026-07-30,,,WSH,@ATL Thu 6:15PM,,Jake Irvin,04ppz,"Irvin, Jake",WSH,SP,P,FA,False,11560,15546,53994f14-378a-4570-be06-e8ef68255c32,
+2026-07-30,,,TEX,@TB Thu 11:10AM,,Cole Winn,04paj,"Winn, Cole",TEX,RP,P,FA,False,11404,15408,61e0f054-34d8-4d55-bf21-b3856fcb9226,
+2026-07-30,,,SD,SF Thu 8:40PM,,J.P. Sears,04eld,"Sears, J.P.",SD,SP,P,FA,False,,15242,9879d57f-6e61-4d12-be21-25c2b7328947,
 2026-07-30,,,ATH,BOS Thu 8:40PM,,Mason Barnett,0630h,"Barnett, Mason",ATH,SP,P,FA,False,,18118,3937b4a0-cea7-4377-afc5-3e933a77ebf1,
