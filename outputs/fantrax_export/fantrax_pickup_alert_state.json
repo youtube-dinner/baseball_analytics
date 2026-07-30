@@ -937,6 +937,16 @@
       "violation_alert_sent": false,
       "window_start": "2026-07-09"
     },
+    "k7c57nf4mj90wrl8:076rp": {
+      "demotion_alert_sent": false,
+      "eligible_date": "2026-08-21",
+      "fantrax_id": "076rp",
+      "player_name": "Yostin Pena",
+      "team_id": "k7c57nf4mj90wrl8",
+      "team_name": "Hand Foot Mouth Disease Guys",
+      "violation_alert_sent": false,
+      "window_start": "2026-07-30"
+    },
     "mldxq5pemj90wrl7:051wu": {
       "demotion_alert_sent": true,
       "eligible_date": "2026-07-31",
@@ -4578,15 +4588,6 @@
       "team_id": "k7c57nf4mj90wrl8",
       "team_name": "Hand Foot Mouth Disease Guys"
     },
-    "k7c57nf4mj90wrl8:05ubi": {
-      "fantrax_id": "05ubi",
-      "player_name": "Brock Wilken",
-      "primary_position": "3B",
-      "roster_position": "3B",
-      "roster_status": "MINORS",
-      "team_id": "k7c57nf4mj90wrl8",
-      "team_name": "Hand Foot Mouth Disease Guys"
-    },
     "k7c57nf4mj90wrl8:05vy5": {
       "fantrax_id": "05vy5",
       "player_name": "Carter Jensen",
@@ -4781,6 +4782,15 @@
       "player_name": "Cooper Flemming",
       "primary_position": "SS",
       "roster_position": "SS",
+      "roster_status": "MINORS",
+      "team_id": "k7c57nf4mj90wrl8",
+      "team_name": "Hand Foot Mouth Disease Guys"
+    },
+    "k7c57nf4mj90wrl8:076rp": {
+      "fantrax_id": "076rp",
+      "player_name": "Yostin Pena",
+      "primary_position": "RF",
+      "roster_position": "OF",
       "roster_status": "MINORS",
       "team_id": "k7c57nf4mj90wrl8",
       "team_name": "Hand Foot Mouth Disease Guys"
