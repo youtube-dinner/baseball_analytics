@@ -2484,7 +2484,7 @@ fantrax_id,name,mlb_team,primary_position,eligible_positions,league_status,stats
 05y6w,"Dobbins, Hunter",STL,SP,P,FA,,19013,df569e68-70ff-479b-8839-554ebd6ea2fb
 06qk6,"Dobbins, Hunter",DET,C,"C,UT",FA,,,
 0506h,"Dobnak, Randy",KC,SP,P,FA,11629,16427,fed34a9e-a359-4a0b-92cb-99f301b5434d
-05uy4,"Dodd, Dylan",ATL,RP,P,WW,,17460,8ebfaa01-0895-4b7f-b3c1-a6bd52bb4378
+05uy4,"Dodd, Dylan",ATL,RP,P,FA,,17460,8ebfaa01-0895-4b7f-b3c1-a6bd52bb4378
 04pn2,"Dodson, Tanner",(N/A),RP,P,FA,,15481,9b6921f7-84c6-4be4-87b3-a1be2f19f27d
 06431,"Doersching, Griffin",(N/A),1B,"1B,UT,CI",FA,,,
 06nug,"Dohm, Nate",STL,SP,P,FA,,19636,
@@ -4290,7 +4290,7 @@ fantrax_id,name,mlb_team,primary_position,eligible_positions,league_status,stats
 0647q,"Huggins, Kenya",ATH,SP,P,FA,,18084,
 04eon,"Hughes, Brandon",(N/A),RP,P,FA,,17888,78faf94e-cace-4571-960a-deedf954839f
 070bu,"Hughes, CJ",MIL,SS,"UT,SS,MI",FA,,20435,
-05ubl,"Hughes, Gabriel",COL,SP,P,WW,,17941,44d2f893-8201-4477-b22d-4f251f8e04bb
+05ubl,"Hughes, Gabriel",COL,SP,P,FA,,17941,44d2f893-8201-4477-b22d-4f251f8e04bb
 06v2v,"Hughes, Grif",COL,RP,P,FA,,,
 06qoz,"Hughes, Gus",WSH,RP,P,FA,,,
 03pp4,"Hughes, Jonathan",(N/A),RP,P,FA,,13883,
@@ -5516,7 +5516,7 @@ fantrax_id,name,mlb_team,primary_position,eligible_positions,league_status,stats
 06qr5,"Martin, Colby",MIA,RP,P,FA,,20194,
 04afj,"Martin, Corbin",CHC,RP,P,FA,11316,14871,53dd6b27-78fa-4f2d-b16c-0029efb5d2ac
 066jo,"Martin, David",(N/A),C,"C,UT",FA,,,
-04pxf,"Martin, Davis",CHW,SP,P,WW,,17886,0e023e0b-9637-4333-aabd-b860488d7763
+04pxf,"Martin, Davis",CHW,SP,P,FA,,17886,0e023e0b-9637-4333-aabd-b860488d7763
 04q4k,"Martin, Garrett",NYY,RF,"OF,UT",FA,,,
 0374g,"Martin, Jason",(N/A),LF,"OF,UT",FA,11228,14557,79941731-e6ad-4f71-b8eb-0a6ddffa1c6f
 06h21,"Martin, Logan",SF,SP,P,FA,,20550,
@@ -5674,7 +5674,7 @@ fantrax_id,name,mlb_team,primary_position,eligible_positions,league_status,stats
 070dd,"Maxwell, Logan",NYY,RF,"OF,UT",FA,,,
 0648f,"Maxwell, Zach",CIN,RP,P,FA,,18099,2f08e4f7-e4c8-4148-978c-fced91886ae6
 06mwh,"May, Aiden",MIA,SP,P,FA,,19562,
-041r5,"May, Dustin",STL,SP,P,WW,10898,14331,8c6572ee-d35f-4542-946a-1611e68395fe
+041r5,"May, Dustin",STL,SP,P,FA,10898,14331,8c6572ee-d35f-4542-946a-1611e68395fe
 059c2,"Mayberry, Seth",(N/A),RP,P,FA,,,
 05rez,"Mayea, Brando",NYY,CF,"OF,UT",FA,,18294,
 06qra,"Mayer, Bryce",HOU,SP,P,FA,,20033,
@@ -9106,7 +9106,7 @@ fantrax_id,name,mlb_team,primary_position,eligible_positions,league_status,stats
 05xol,"Thomas, Andy",SD,C,"C,1B,UT,CI",FA,,17573,
 041xd,"Thomas, Cody",(N/A),RF,"OF,UT",FA,11934,14509,dd724e0f-071b-48d6-9bc5-ef7745569e5e
 0630e,"Thomas, Colby",ATH,RF,"OF,UT",FA,,18007,318e511e-40ba-4b82-9785-be28e03f3a87
-0513x,"Thomas, Connor",ATL,RP,P,FA,,16385,1b31bb53-d0f6-439b-85e1-d4c263a33e80
+0513x,"Thomas, Connor",ATH,RP,P,FA,,16385,1b31bb53-d0f6-439b-85e1-d4c263a33e80
 06qkb,"Thomas, Gray",(N/A),RP,P,FA,,,
 06ht6,"Thomas, Jared",(N/A),C,"C,UT",FA,,,
 06mpb,"Thomas, Jared",COL,LF,"OF,UT",T,,19544,
