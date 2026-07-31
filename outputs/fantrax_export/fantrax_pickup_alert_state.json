@@ -3903,7 +3903,7 @@
       "player_name": "Shane McClanahan",
       "primary_position": "SP",
       "roster_position": "P",
-      "roster_status": "ACTIVE",
+      "roster_status": "INJURED_RESERVE",
       "team_id": "jk36oo1hmj90wrl7",
       "team_name": "Daddy Yankee"
     },
@@ -4101,7 +4101,7 @@
       "player_name": "Luis Lara",
       "primary_position": "CF",
       "roster_position": "OF",
-      "roster_status": "MINORS",
+      "roster_status": "RESERVE",
       "team_id": "jk36oo1hmj90wrl7",
       "team_name": "Daddy Yankee"
     },
