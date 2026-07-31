@@ -3867,7 +3867,7 @@
       "player_name": "Jazz Chisholm Jr.",
       "primary_position": "2B",
       "roster_position": "2B",
-      "roster_status": "ACTIVE",
+      "roster_status": "RESERVE",
       "team_id": "jk36oo1hmj90wrl7",
       "team_name": "Daddy Yankee"
     },
@@ -4082,8 +4082,8 @@
       "fantrax_id": "05ybv",
       "player_name": "Jackson Holliday",
       "primary_position": "2B",
-      "roster_position": "UT",
-      "roster_status": "RESERVE",
+      "roster_position": "2B",
+      "roster_status": "ACTIVE",
       "team_id": "jk36oo1hmj90wrl7",
       "team_name": "Daddy Yankee"
     },
@@ -4316,8 +4316,8 @@
       "fantrax_id": "02mw6",
       "player_name": "Corey Seager",
       "primary_position": "SS",
-      "roster_position": "SS",
-      "roster_status": "INJURED_RESERVE",
+      "roster_position": "UT",
+      "roster_status": "ACTIVE",
       "team_id": "k7c57nf4mj90wrl8",
       "team_name": "Hand Foot Mouth Disease Guys"
     },
@@ -4353,7 +4353,7 @@
       "player_name": "Vladimir Guerrero Jr.",
       "primary_position": "1B",
       "roster_position": "UT",
-      "roster_status": "ACTIVE",
+      "roster_status": "RESERVE",
       "team_id": "k7c57nf4mj90wrl8",
       "team_name": "Hand Foot Mouth Disease Guys"
     },
@@ -4488,15 +4488,6 @@
       "player_name": "Pete Crow-Armstrong",
       "primary_position": "CF",
       "roster_position": "OF",
-      "roster_status": "ACTIVE",
-      "team_id": "k7c57nf4mj90wrl8",
-      "team_name": "Hand Foot Mouth Disease Guys"
-    },
-    "k7c57nf4mj90wrl8:05a29": {
-      "fantrax_id": "05a29",
-      "player_name": "Carmen Mlodzinski",
-      "primary_position": "RP",
-      "roster_position": "P",
       "roster_status": "ACTIVE",
       "team_id": "k7c57nf4mj90wrl8",
       "team_name": "Hand Foot Mouth Disease Guys"
@@ -4798,15 +4789,6 @@
       "team_id": "k7c57nf4mj90wrl8",
       "team_name": "Hand Foot Mouth Disease Guys"
     },
-    "mldxq5pemj90wrl7:01u75": {
-      "fantrax_id": "01u75",
-      "player_name": "Salvador Perez",
-      "primary_position": "C",
-      "roster_position": "UT",
-      "roster_status": "ACTIVE",
-      "team_id": "mldxq5pemj90wrl7",
-      "team_name": "L\u00e1szlar\u00f3 T\u00f3th"
-    },
     "mldxq5pemj90wrl7:02i2q": {
       "fantrax_id": "02i2q",
       "player_name": "Carlos Correa",
@@ -4946,6 +4928,15 @@
       "fantrax_id": "04si2",
       "player_name": "Andrew Vaughn",
       "primary_position": "1B",
+      "roster_position": "UT",
+      "roster_status": "ACTIVE",
+      "team_id": "mldxq5pemj90wrl7",
+      "team_name": "L\u00e1szlar\u00f3 T\u00f3th"
+    },
+    "mldxq5pemj90wrl7:04y9p": {
+      "fantrax_id": "04y9p",
+      "player_name": "Anthony Volpe",
+      "primary_position": "SS",
       "roster_position": "UT",
       "roster_status": "ACTIVE",
       "team_id": "mldxq5pemj90wrl7",
@@ -5860,6 +5851,15 @@
       "team_id": "qatqhh61mj90wrl7",
       "team_name": "Je suis Charlie Morton"
     },
+    "qatqhh61mj90wrl7:02c5l": {
+      "fantrax_id": "02c5l",
+      "player_name": "Luke Weaver",
+      "primary_position": "RP",
+      "roster_position": "P",
+      "roster_status": "ACTIVE",
+      "team_id": "qatqhh61mj90wrl7",
+      "team_name": "Je suis Charlie Morton"
+    },
     "qatqhh61mj90wrl7:02mwm": {
       "fantrax_id": "02mwm",
       "player_name": "Matt Olson",
@@ -5932,15 +5932,6 @@
       "team_id": "qatqhh61mj90wrl7",
       "team_name": "Je suis Charlie Morton"
     },
-    "qatqhh61mj90wrl7:041rf": {
-      "fantrax_id": "041rf",
-      "player_name": "Shane Bieber",
-      "primary_position": "SP",
-      "roster_position": "P",
-      "roster_status": "ACTIVE",
-      "team_id": "qatqhh61mj90wrl7",
-      "team_name": "Je suis Charlie Morton"
-    },
     "qatqhh61mj90wrl7:041rj": {
       "fantrax_id": "041rj",
       "player_name": "JoJo Romero",
@@ -5971,6 +5962,15 @@
     "qatqhh61mj90wrl7:04cd5": {
       "fantrax_id": "04cd5",
       "player_name": "MacKenzie Gore",
+      "primary_position": "SP",
+      "roster_position": "P",
+      "roster_status": "ACTIVE",
+      "team_id": "qatqhh61mj90wrl7",
+      "team_name": "Je suis Charlie Morton"
+    },
+    "qatqhh61mj90wrl7:04cwf": {
+      "fantrax_id": "04cwf",
+      "player_name": "Shane Baz",
       "primary_position": "SP",
       "roster_position": "P",
       "roster_status": "ACTIVE",
@@ -6136,15 +6136,6 @@
       "primary_position": "CF",
       "roster_position": "OF",
       "roster_status": "MINORS",
-      "team_id": "qatqhh61mj90wrl7",
-      "team_name": "Je suis Charlie Morton"
-    },
-    "qatqhh61mj90wrl7:05ym7": {
-      "fantrax_id": "05ym7",
-      "player_name": "Fernando Cruz",
-      "primary_position": "RP",
-      "roster_position": "P",
-      "roster_status": "ACTIVE",
       "team_id": "qatqhh61mj90wrl7",
       "team_name": "Je suis Charlie Morton"
     },
