@@ -82,7 +82,7 @@ fantrax_id,name,mlb_team,primary_position,eligible_positions,league_status,stats
 06r7b,"Advincula, Jarren",LAA,2B,"2B,UT,MI",FA,,21019,
 06fzk,"Advincula, Jonah",CLE,LF,"OF,UT",FA,,19999,
 06z9x,"Afthim, Brady",CIN,RP,P,FA,,,
-06zgv,"Agbayani, Bruin",MIN,2B,"2B,UT,MI",FA,,20874,
+06zgv,"Agbayani, Bruin",NYM,2B,"2B,UT,MI",FA,,20874,
 06cq5,"Ager, Matt",PIT,SP,P,FA,,17464,
 064ny,"Agnos, Zach",COL,RP,P,FA,,19812,b4ae5b82-705f-46ab-a8be-7b347f145c23
 05rhq,"Agostini, Gabriel",(N/A),RP,P,FA,,,
@@ -260,7 +260,7 @@ fantrax_id,name,mlb_team,primary_position,eligible_positions,league_status,stats
 0737j,"Amaya, Loidel",ARI,CF,"OF,UT",FA,,,
 03xs3,"Amaya, Miguel",CHC,C,"C,UT",FA,11075,13978,b8dbec1d-4f7b-46d0-942a-61df9d8341d0
 06fz5,"Amendt, Kyle",ARI,RP,P,FA,,19971,
-06cgg,"Amick, Billy",MIN,1B,"1B,UT,3B,CI",FA,,19514,
+06cgg,"Amick, Billy",NYM,1B,"1B,UT,3B,CI",FA,,19514,
 06giv,"Ammons, Ryan",NYM,RP,P,FA,,19202,46b71183-a8f5-43c8-a364-722d3752ee2f
 06kyb,"Amoroso, Brayan",STL,1B,"1B,UT,CI",FA,,,
 06qva,"Amoroso, Luis",(N/A),RP,P,FA,,,
@@ -446,7 +446,7 @@ fantrax_id,name,mlb_team,primary_position,eligible_positions,league_status,stats
 06ic6,"Asencio, Vladimir",(N/A),LF,"OF,UT",FA,,19330,
 064w9,"Asencio, Yosander",(N/A),LF,"OF,UT",FA,,,
 06tla,"Ash, Konnor",(N/A),RP,P,FA,,,
-04ew7,"Ashby, Aaron",MIL,RP,P,WW,11489,15540,3f7d4224-7406-429e-9128-e302ebe4470a
+04ew7,"Ashby, Aaron",MIL,RP,P,FA,11489,15540,3f7d4224-7406-429e-9128-e302ebe4470a
 04pmq,"Ashcraft, Braxton",PIT,RP,P,T,11372,15488,68dbf982-6899-4da8-a33b-43935db6323e
 041x9,"Ashcraft, Graham",CIN,RP,P,FA,,16192,8f0c3e7b-ea0c-471c-870a-c9f7bdd81f47
 06qo7,"Ashman, Micah",BAL,RP,P,FA,,20451,
@@ -1337,7 +1337,7 @@ fantrax_id,name,mlb_team,primary_position,eligible_positions,league_status,stats
 06zcv,"Camarillo, Frank",NYM,RP,P,FA,,,
 06ugx,"Camejo, Jesus",(N/A),RP,P,FA,,,
 02zg5,"Cameron, Daz",TOR,RF,"OF,UT",FA,10481,13810,38f623c5-14e7-4160-9616-e05a2a6759b2
-05ycf,"Cameron, Noah",KC,SP,P,T,,18727,9f16b92f-5eb3-42b2-8b35-9967e608b9cb
+05ycf,"Cameron, Noah",KC,SP,P,WW,,18727,9f16b92f-5eb3-42b2-8b35-9967e608b9cb
 066cl,"Camilletti, Mario",CHW,3B,"UT,3B,CI",FA,,,
 0730l,"Caminero, Efrailin",ATL,SP,P,FA,,,
 05xch,"Caminero, Junior",TB,3B,"UT,3B,CI",T,,17704,0ee484f5-8f12-4715-9ce8-96659bcb8f63
@@ -5029,7 +5029,7 @@ fantrax_id,name,mlb_team,primary_position,eligible_positions,league_status,stats
 06ul3,"Lee, David",(N/A),RP,P,FA,,,
 041vm,"Lee, Dylan",ATL,RP,P,FA,,15964,15b6b15b-12d2-45c0-9bc7-ddc17a5fa52b
 06ibd,"Lee, Eui Lee",(N/A),SP,P,FA,,,
-05u2k,"Lee, Hao-Yu",DET,3B,"2B,UT,3B,CI,MI",WW,,17849,d390fc53-d908-41d8-9a5a-6210c50b59b2
+05u2k,"Lee, Hao-Yu",DET,3B,"2B,UT,3B,CI,MI",FA,,17849,d390fc53-d908-41d8-9a5a-6210c50b59b2
 06rqj,"Lee, Hyun Seung",PIT,3B,"UT,3B,CI",FA,,20915,
 06hum,"Lee, Jeremy",(N/A),SP,P,FA,,,
 05m49,"Lee, Jung Hoo",SF,CF,"OF,UT",T,,17160,b5f88674-e70f-42eb-9a7e-cd09616f7066
@@ -9563,7 +9563,7 @@ fantrax_id,name,mlb_team,primary_position,eligible_positions,league_status,stats
 000dp,"Verlander, Justin",DET,SP,P,FA,7590,8309,2fe6cb9b-c41e-4ee2-9b22-f8b27bf6c5be
 05y4p,"Vernon, Austin",TB,RP,P,FA,,18199,
 06qv0,"Vernon, Cade",SF,RP,P,FA,,,
-04q05,"Vesia, Alex",LAD,RP,P,FA,11920,16615,bea7d9db-323c-4a8b-bbe9-0581df94536b
+04q05,"Vesia, Alex",LAD,RP,P,T,11920,16615,bea7d9db-323c-4a8b-bbe9-0581df94536b
 06qey,"Vespi, Ben",BAL,RP,P,FA,,,
 03qv3,"Vespi, Nick",(N/A),RP,P,FA,,17887,1b1b2a53-fd3b-471b-b4cf-4e7a661c89c6
 04em6,"Vest, Will",DET,RP,P,FA,,17138,5989b40c-e523-4138-853d-40c0f8f4ece3
@@ -9875,7 +9875,7 @@ fantrax_id,name,mlb_team,primary_position,eligible_positions,league_status,stats
 02mwt,"Wiles, Collin",(N/A),SP,P,FA,,12503,67ffa977-ae4d-4cca-a8d3-6f9926f76e0b
 05166,"Wiles, Nathan",(N/A),SP,P,FA,,19277,1ffe236c-2ef8-4be0-807d-4d8c4390440e
 076n1,"Wilford, Connor",SEA,SP,P,FA,,,
-05ubi,"Wilken, Brock",MIL,3B,"UT,3B,CI",WW,,18890,
+05ubi,"Wilken, Brock",MIL,3B,"UT,3B,CI",FA,,18890,
 03see,"Wilkerson, Aaron",(N/A),SP,P,FA,10832,14229,f2aa8ce1-07da-40e6-9bfb-1abded95c35a
 06qp4,"Wilkerson, Holden",TOR,SP,P,FA,,,
 06fu4,"Wilkinson, Danny",(N/A),RP,P,FA,,,
