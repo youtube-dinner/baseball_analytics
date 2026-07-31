@@ -274581,9 +274581,9 @@ snapshot_date,Player,Player_standard,hitter_score,batters_eye_score,barrel_batte
 2026-07-31,James Wood,james wood,2.6,0.78,21.3,110.05050505050505,3.834603028912345,0.9,1089.5
 2026-07-31,Yordan Alvarez,yordan alvarez,1.87,0.29,18.6,107.98192771084337,3.6209762900976292,0.69,1075.5
 2026-07-31,CJ Abrams,cj abrams,-0.25,-1.18,11.1,106.04626708727655,3.753078829945464,0.64,1008.5
-2026-07-31,Pete Crow-Armstrong,pete crow armstrong,0.56,-0.15,11.9,109.01001112347052,3.761122448979592,0.65,980.0
+2026-07-31,Pete Crow-Armstrong,pete crow armstrong,0.56,-0.15,11.9,109.98877665544332,3.72765306122449,0.65,980.0
 2026-07-31,Jordan Walker,jordan walker,0.64,-0.42,13.6,107.03309692671394,3.858619547211486,0.63,905.5
-2026-07-31,Ben Rice,ben rice,1.95,1.02,15.9,104.02761795166859,3.749004424778761,0.67,904.0
+2026-07-31,Ben Rice,ben rice,1.95,1.02,15.9,105.0,3.7142857142857144,0.67,903.0
 2026-07-31,Sal Stewart,sal stewart,1.17,0.23,14.2,107.94902912621359,3.7980888139404163,0.52,889.5
 2026-07-31,Junior Caminero,junior caminero,0.84,-0.0,13.1,107.9683698296837,3.7974084507042254,0.6,887.5
 2026-07-31,Shohei Ohtani,shohei ohtani,1.51,0.16,16.8,103.0267753201397,3.6883615819209035,0.66,885.0
@@ -274615,14 +274615,14 @@ snapshot_date,Player,Player_standard,hitter_score,batters_eye_score,barrel_batte
 2026-07-31,Jake Bauers,jake bauers,1.54,0.93,13.6,98.05699481865285,3.3653896961690886,0.64,757.0
 2026-07-31,Dillon Dingler,dillon dingler,0.32,-0.28,10.9,100.0,3.73,0.55,756.0
 2026-07-31,JJ Wetherholt,jj wetherholt,0.69,1.07,7.3,103.93103448275862,3.916058394160584,0.66,753.5
-2026-07-31,Dansby Swanson,dansby swanson,0.78,1.17,7.5,103.94190871369294,3.434610778443114,0.65,751.5
+2026-07-31,Dansby Swanson,dansby swanson,0.78,1.17,7.5,104.96503496503496,3.401132578281146,0.65,750.5
 2026-07-31,Hunter Goodman,hunter goodman,0.97,-0.68,17.0,100.0,3.74,0.64,750.0
 2026-07-31,Xavier Edwards,xavier edwards,0.0,0.77,4.1,110.05873715124817,3.6435090060040025,0.46,749.5
 2026-07-31,Michael Harris II,michael harris,-0.21,-1.27,11.8,103.02613480055021,3.81456608811749,0.51,749.0
 2026-07-31,Juan Soto,juan soto,1.82,1.18,14.3,83.99098083427283,3.488469798657718,0.55,745.0
 2026-07-31,Liam Hicks,liam hicks,-0.68,-0.17,3.8,97.95514511873351,3.5016026936026936,0.55,742.5
 2026-07-31,Jonathan Aranda,jonathan aranda,0.63,0.3,10.4,105.93705293276109,3.690871033085753,0.48,740.5
-2026-07-31,Nico Hoerner,nico hoerner,-1.35,-0.49,0.8,107.03918722786648,3.998535593220339,0.42,737.5
+2026-07-31,Nico Hoerner,nico hoerner,-1.35,-0.49,0.8,107.99120234604105,3.963285811269518,0.42,736.5
 2026-07-31,Cody Bellinger,cody bellinger,-0.25,-0.08,6.2,101.93905817174516,3.668858695652174,0.51,736.0
 2026-07-31,Jake McCarthy,jake mccarthy,-0.18,0.26,5.2,93.98976982097186,3.48974149659864,0.49,735.0
 2026-07-31,Rafael Devers,rafael devers,0.62,0.07,11.3,108.97626112759643,3.8081688223281147,0.52,734.5
@@ -274635,8 +274635,8 @@ snapshot_date,Player,Player_standard,hitter_score,batters_eye_score,barrel_batte
 2026-07-31,Ivan Herrera,ivan herrera,-0.19,0.15,5.6,107.93051359516616,3.724618614415675,0.6,714.5
 2026-07-31,Wilyer Abreu,wilyer abreu,0.65,-0.13,12.4,105.94353640416047,3.841669004207574,0.51,713.0
 2026-07-31,Seiya Suzuki,seiya suzuki,0.81,0.73,9.6,93.00653594771241,3.7846802529866483,0.63,711.5
-2026-07-31,Michael Busch,michael busch,0.85,0.77,9.7,108.05471124620061,3.7758649789029533,0.44,711.0
 2026-07-31,Ceddanne Rafaela,ceddanne rafaela,-1.19,-1.15,4.8,103.94736842105263,3.8577215189873417,0.48,711.0
+2026-07-31,Michael Busch,michael busch,0.85,0.77,9.7,109.06298003072197,3.740957746478873,0.44,710.0
 2026-07-31,Ryan OHearn,ryan ohearn,-0.62,-0.89,7.4,95.04685408299866,3.735,0.57,710.0
 2026-07-31,Drake Baldwin,drake baldwin,1.43,0.44,15.0,85.99269183922046,3.8724220963172806,0.7,706.0
 2026-07-31,Casey Schmitt,casey schmitt,0.7,-0.02,12.3,98.05555555555556,3.946742209631728,0.48,706.0
@@ -274647,7 +274647,7 @@ snapshot_date,Player,Player_standard,hitter_score,batters_eye_score,barrel_batte
 2026-07-31,Mike Trout,mike trout,1.98,0.64,17.8,89.97412677878395,3.6010352264557874,0.7,695.5
 2026-07-31,Geraldo Perdomo,geraldo perdomo,-0.65,0.03,3.1,105.06042296072508,3.540819554277498,0.5,695.5
 2026-07-31,Jazz Chisholm Jr.,jazz chisholm,0.7,0.57,9.6,101.98237885462555,3.5398272138228943,0.52,694.5
-2026-07-31,Alex Bregman,alex bregman,-0.29,0.29,4.3,106.03975535168196,3.9607786589762073,0.54,693.5
+2026-07-31,Alex Bregman,alex bregman,-0.29,0.29,4.3,107.0216049382716,3.924441240086518,0.53,693.5
 2026-07-31,Brooks Lee,brooks lee,-0.6,-0.06,3.8,105.00758725341427,3.675924855491329,0.47,692.0
 2026-07-31,Isaac Paredes,isaac paredes,-0.32,-0.13,6.0,103.07346326836581,3.6672872727272727,0.42,687.5
 2026-07-31,Brayan Rocchio,brayan rocchio,-0.73,-0.09,3.1,106.93146417445483,3.4882155863073563,0.4,686.5
@@ -274666,8 +274666,8 @@ snapshot_date,Player,Player_standard,hitter_score,batters_eye_score,barrel_batte
 2026-07-31,Jake Burger,jake burger,-0.2,-1.16,11.4,104.0625,3.7093093093093095,0.43,666.0
 2026-07-31,Ezequiel Duran,ezequiel duran,-0.71,-0.85,6.6,100.0,3.42,0.49,666.0
 2026-07-31,Tyler Soderstrom,tyler soderstrom,1.06,1.13,9.5,96.9298245614035,3.6108597285067874,0.52,663.0
-2026-07-31,Ian Happ,ian happ,0.84,0.25,12.0,105.07131537242473,3.7022473604826542,0.62,663.0
 2026-07-31,Josh Naylor,josh naylor,-0.85,-0.61,4.6,103.03265940902023,3.9113811320754714,0.41,662.5
+2026-07-31,Ian Happ,ian happ,0.84,0.25,12.0,105.92,3.672583081570997,0.61,662.0
 2026-07-31,Jose Ramirez,jose ramirez,0.01,0.37,5.9,79.0264423076923,3.7835437262357416,0.58,657.5
 2026-07-31,Chase DeLauter,chase delauter,0.85,1.49,6.5,92.00561009817672,3.728033536585366,0.41,656.0
 2026-07-31,Brandon Marsh,brandon marsh,0.1,-0.2,9.1,103.96196513470682,3.674420731707317,0.53,656.0
@@ -274695,7 +274695,7 @@ snapshot_date,Player,Player_standard,hitter_score,batters_eye_score,barrel_batte
 2026-07-31,Jackson Chourio,jackson chourio,0.42,-0.51,12.6,73.9751552795031,4.190596137699413,0.69,595.5
 2026-07-31,Chandler Simpson,chandler simpson,-1.3,-0.25,0.0,100.93378607809848,3.685584524810765,0.45,594.5
 2026-07-31,Xander Bogaerts,xander bogaerts,0.43,1.0,5.9,102.9616724738676,3.4770219966159055,0.42,591.0
-2026-07-31,Trent Grisham,trent grisham,1.09,1.07,10.0,89.06485671191554,3.424470787468247,0.58,590.5
+2026-07-31,Trent Grisham,trent grisham,1.09,1.07,10.0,90.01524390243902,3.3883149872988994,0.58,590.5
 2026-07-31,Spencer Torkelson,spencer torkelson,1.8,1.24,13.9,107.99632352941175,3.3982638297872345,0.43,587.5
 2026-07-31,Carter Jensen,carter jensen,0.52,0.33,9.5,102.08695652173913,3.5068143100511073,0.45,587.0
 2026-07-31,Oneil Cruz,oneil cruz,0.63,-1.13,16.7,64.02640264026402,3.9046391752577323,0.7,582.0
@@ -274715,7 +274715,7 @@ snapshot_date,Player,Player_standard,hitter_score,batters_eye_score,barrel_batte
 2026-07-31,Andrew Benintendi,andrew benintendi,0.51,0.52,8.6,96.05954465849388,3.081422060164084,0.43,548.5
 2026-07-31,Trevor Larnach,trevor larnach,-0.38,-0.55,7.5,90.0329489291598,3.1321866422689846,0.52,546.5
 2026-07-31,Gavin Sheets,gavin sheets,-0.74,-0.92,6.7,103.0360531309298,3.037771639042357,0.4,543.0
-2026-07-31,Jose Caballero,jose caballero,-1.16,-0.79,3.4,93.05317324185249,3.2884423963133638,0.39,542.5
+2026-07-31,Jose Caballero,jose caballero,-1.16,-0.79,3.4,94.0207972270364,3.254599078341014,0.38,542.5
 2026-07-31,Travis Bazzana,travis bazzana,0.09,0.81,4.5,77.97101449275362,3.732156133828996,0.46,538.0
 2026-07-31,Jacob Young,jacob young,-0.41,-0.4,6.6,95.9605026929982,3.0741814780168384,0.42,534.5
 2026-07-31,Kyle Stowers,kyle stowers,0.93,0.31,12.3,85.01602564102564,3.7287087653157402,0.47,530.5
@@ -274728,7 +274728,7 @@ snapshot_date,Player,Player_standard,hitter_score,batters_eye_score,barrel_batte
 2026-07-31,Troy Johnston,troy johnston,-0.74,0.14,2.0,95.91078066914498,3.1696124031007753,0.34,516.0
 2026-07-31,Ty France,ty france,0.75,0.27,11.3,83.03715670436186,3.119085603112841,0.41,514.0
 2026-07-31,Mickey Moniak,mickey moniak,0.4,-0.2,11.1,70.99447513812154,3.436887159533074,0.51,514.0
-2026-07-31,Paul Goldschmidt,paul goldschmidt,0.31,-0.32,11.0,80.04694835680752,3.5479178885630493,0.46,511.5
+2026-07-31,Paul Goldschmidt,paul goldschmidt,0.31,-0.32,11.0,81.06180665610142,3.5034995112414467,0.46,511.5
 2026-07-31,Steven Kwan,steven kwan,-1.39,-0.45,0.3,101.09126984126983,3.402865554465162,0.43,509.5
 2026-07-31,George Springer,george springer,1.01,1.42,7.9,77.99079754601227,3.8850737463126843,0.47,508.5
 2026-07-31,Aaron Judge,aaron judge,2.43,0.42,21.7,59.016393442622956,3.626111111111111,0.73,504.0
@@ -274837,8 +274837,8 @@ snapshot_date,Player,Player_standard,hitter_score,batters_eye_score,barrel_batte
 2026-07-31,Jared Jones,jared jones,,,,10.998565794191466,,,306.75
 2026-07-31,Alejandro Osuna,alejandro osuna,-1.28,-0.35,0.6,70.0228832951945,2.6562745098039215,0.34,306.0
 2026-07-31,Andruw Monasterio,andruw monasterio,0.8,0.71,9.7,68.04008908685968,2.7777741407528644,0.35,305.5
-2026-07-31,Michael Conforto,michael conforto,1.06,0.68,11.5,72.95673076923077,2.2616144975288304,0.33,303.5
 2026-07-31,Corey Seager,corey seager,2.35,1.72,15.4,51.010101010101,3.6659405940594065,0.55,303.0
+2026-07-31,Michael Conforto,michael conforto,1.06,0.68,11.5,73.96088019559903,2.2309090909090905,0.32,302.5
 2026-07-31,Jose Fermin,jose fermin,-0.74,0.05,2.4,73.06763285024155,2.6140165289256196,0.26,302.5
 2026-07-31,Henry Davis,henry davis,0.81,0.69,9.8,70.0,2.6714285714285713,0.36,297.5
 2026-07-31,Will Smith,will smith,1.04,0.23,13.4,52.02821869488536,3.3251186440677967,0.44,295.0
@@ -274848,7 +274848,7 @@ snapshot_date,Player,Player_standard,hitter_score,batters_eye_score,barrel_batte
 2026-07-31,Henry Bolte,henry bolte,0.43,0.94,6.2,66.02272727272727,3.150430292598968,0.3,290.5
 2026-07-31,Randal Grichuk,randal grichuk,0.28,-0.55,11.8,73.04785894206549,2.135586206896552,0.33,290.0
 2026-07-31,Brent Rooker,brent rooker,1.4,0.29,15.5,48.00664451827243,3.7286505190311416,0.42,289.0
-2026-07-31,Amed Rosario,amed rosario,0.25,-0.49,11.4,63.93805309734514,2.611903114186851,0.34,289.0
+2026-07-31,Amed Rosario,amed rosario,0.25,-0.49,11.4,65.01128668171557,2.5687847222222224,0.34,288.0
 2026-07-31,Hao-Yu Lee,hao yu lee,0.34,0.08,9.4,67.01877934272301,2.745499124343257,0.25,285.5
 2026-07-31,Tyrone Taylor,tyrone taylor,-0.61,-1.75,11.3,64.95433789954338,2.186151142355009,0.32,284.5
 2026-07-31,Ramon Laureano,ramon laureano,1.19,0.25,14.3,52.98507462686567,3.4349295774647888,0.43,284.0
@@ -274860,12 +274860,12 @@ snapshot_date,Player,Player_standard,hitter_score,batters_eye_score,barrel_batte
 2026-07-31,Christian Vazquez,christian vazquez,-1.86,-1.37,1.3,66.99507389162562,2.895735294117647,0.27,272.0
 2026-07-31,Marcelo Mayer,marcelo mayer,0.19,0.61,6.1,70.02583979328165,2.9274907749077492,0.27,271.0
 2026-07-31,Jared Young,jared young,0.95,0.85,10.0,62.04128440366972,2.675637707948244,0.32,270.5
-2026-07-31,Anthony Volpe,anthony volpe,-0.01,0.75,4.1,54.03225806451613,3.053731343283582,0.37,268.0
 2026-07-31,Adolis Garcia,adolis garcia,0.33,0.09,9.3,67.04260651629072,3.4455700934579445,0.31,267.5
 2026-07-31,Derek Hill,derek hill,0.48,-0.16,11.4,78.99408284023669,1.8229213483146067,0.29,267.0
+2026-07-31,Anthony Volpe,anthony volpe,-0.01,0.75,4.1,55.05154639175258,2.9971910112359548,0.36,267.0
 2026-07-31,Dane Myers,dane myers,-0.06,0.27,5.9,74.92957746478874,2.0285714285714285,0.28,266.0
-2026-07-31,Jasson Dominguez,jasson dominguez,-0.63,-0.35,4.9,48.98710865561694,3.776503759398496,0.43,266.0
 2026-07-31,Josh Lowe,josh lowe,0.16,-0.21,9.5,66.91919191919192,2.824301886792453,0.27,265.0
+2026-07-31,Jasson Dominguez,jasson dominguez,-0.63,-0.35,4.9,50.0,3.7,0.42,265.0
 2026-07-31,Logan OHoppe,logan ohoppe,0.15,-0.29,9.8,74.92753623188405,3.1363636363636367,0.27,258.5
 2026-07-31,Brice Matthews,brice matthews,0.56,0.6,8.6,81.90476190476191,2.53953488372093,0.28,258.0
 2026-07-31,Moises Ballesteros,moises ballesteros,-0.14,-0.56,9.1,59.03890160183066,2.6423255813953492,0.27,258.0
@@ -274877,11 +274877,11 @@ snapshot_date,Player,Player_standard,hitter_score,batters_eye_score,barrel_batte
 2026-07-31,Jake Cronenworth,jake cronenworth,-0.24,0.2,5.0,57.94930875576037,3.2097017892644133,0.45,251.5
 2026-07-31,Edmundo Sosa,edmundo sosa,-1.97,-2.69,6.5,60.023866348448685,2.882186878727634,0.3,251.5
 2026-07-31,Braden Montgomery,braden montgomery,-0.04,0.87,3.4,41.97324414715719,3.621354581673307,0.52,251.0
+2026-07-31,Miguel Amaya,miguel amaya,-0.36,-0.28,6.4,58.94117647058823,2.5279441117764474,0.47,250.5
 2026-07-31,Jose Fernandez,jose fernandez,-1.76,-1.8,3.9,54.94505494505495,3.0029999999999997,0.42,250.0
 2026-07-31,Griffin Conine,griffin conine,1.33,0.12,15.8,43.01724137931035,2.6965931863727453,0.44,249.5
 2026-07-31,Tristan Gray,tristan gray,-0.21,0.01,6.1,63.01020408163265,2.6662348178137654,0.25,247.0
 2026-07-31,Austin Hedges,austin hedges,0.19,0.85,5.0,55.02232142857142,2.580770791075051,0.35,246.5
-2026-07-31,Miguel Amaya,miguel amaya,-0.36,-0.28,6.4,58.0,2.5689655172413794,0.48,246.5
 2026-07-31,Tyler ONeill,tyler oneill,0.19,-0.05,9.0,67.95580110497238,2.6340650406504063,0.37,246.0
 2026-07-31,Wade Meckler,wade meckler,-0.25,0.28,4.6,51.037344398340245,2.841056910569106,0.37,246.0
 2026-07-31,Colt Emerson,colt emerson,-0.97,-0.88,5.0,56.94444444444444,3.231219512195122,0.39,246.0
@@ -274921,8 +274921,8 @@ snapshot_date,Player,Player_standard,hitter_score,batters_eye_score,barrel_batte
 2026-07-31,Taylor Trammell,taylor trammell,0.99,0.8,10.5,54.036458333333336,2.4798072289156625,0.35,207.5
 2026-07-31,Blake Dunn,blake dunn,-0.76,-0.1,2.9,37.988826815642454,3.7379411764705885,0.53,204.0
 2026-07-31,Alex Call,alex call,-0.37,0.68,2.1,60.02949852507374,1.965700245700246,0.32,203.5
+2026-07-31,Pedro Ramirez,pedro ramirez,-0.0,1.1,2.6,37.005649717514125,2.43206106870229,0.38,196.5
 2026-07-31,Noelvi Marte,noelvi marte,-0.57,-0.56,6.3,50.0,3.12,0.32,196.5
-2026-07-31,Pedro Ramirez,pedro ramirez,-0.0,1.1,2.6,35.99257884972171,2.5005154639175258,0.39,194.0
 2026-07-31,Trevor Story,trevor story,-1.87,-1.9,3.6,41.014799154334035,4.022938144329897,0.39,194.0
 2026-07-31,Brett Sullivan,brett sullivan,-1.0,-0.41,2.7,54.98575498575499,2.4733678756476682,0.25,193.0
 2026-07-31,Luis Campusano,luis campusano,0.97,1.15,8.8,35.02772643253235,2.683588390501319,0.4,189.5
@@ -274980,8 +274980,8 @@ snapshot_date,Player,Player_standard,hitter_score,batters_eye_score,barrel_batte
 2026-07-31,Alek Thomas,alek thomas,-0.29,-0.67,8.6,28.008298755186722,3.356148148148148,0.43,135.0
 2026-07-31,Blake Perkins,blake perkins,-0.7,-0.33,4.4,54.897959183673464,1.6211895910780671,0.25,134.5
 2026-07-31,Victor Robles,victor robles,0.07,1.31,2.2,49.08424908424909,2.2206716417910446,0.2,134.0
-2026-07-31,Spencer Jones,spencer jones,1.18,1.15,10.2,35.97222222222222,2.4185328185328188,0.19,129.5
 2026-07-31,Javier Baez,javier baez,-2.17,-2.18,2.9,26.004016064257026,3.345637065637066,0.5,129.5
+2026-07-31,Spencer Jones,spencer jones,1.18,1.15,10.2,37.03170028818444,2.349338521400778,0.19,128.5
 2026-07-31,Harrison Bader,harrison bader,-0.88,-1.46,8.2,30.023640661938533,3.5305511811023624,0.33,127.0
 2026-07-31,Colby Thomas,colby thomas,0.15,-0.08,8.9,55.02183406113537,2.071904761904762,0.2,126.0
 2026-07-31,Yoan Moncada,yoan moncada,-0.57,-0.89,7.7,41.042345276872965,2.7045238095238093,0.22,126.0
@@ -275039,7 +275039,7 @@ snapshot_date,Player,Player_standard,hitter_score,batters_eye_score,barrel_batte
 2026-07-31,Nick Madrigal,nick madrigal,-0.58,0.82,0.0,15.0,2.933333333333333,0.47,67.5
 2026-07-31,Thomas Saggese,thomas saggese,0.12,-0.38,10.0,32.03883495145631,2.372121212121212,0.28,66.0
 2026-07-31,Luis Urias,luis urias,1.49,1.93,8.8,20.993589743589745,2.000610687022901,0.19,65.5
-2026-07-31,Ali Sanchez,ali sanchez,-0.0,1.06,2.8,26.954732510288064,1.8178625954198475,0.19,65.5
+2026-07-31,Ali Sanchez,ali sanchez,-0.0,1.06,2.8,27.99145299145299,1.7505343511450382,0.18,65.5
 2026-07-31,Tyler Locklear,tyler locklear,,,,8.0,,0.75,64.0
 2026-07-31,Jorge Polanco,jorge polanco,-1.5,-1.12,2.6,27.056277056277057,3.6959999999999997,0.19,62.5
 2026-07-31,Billy Cook,billy cook,-1.59,-0.68,0.0,65.10416666666667,0.6911999999999999,0.17,62.5
@@ -275199,8 +275199,8 @@ snapshot_date,Player,Player_standard,hitter_score,batters_eye_score,barrel_batte
 2026-07-31,Scott Mudler,scott mudler,,,,,,,
 2026-07-31,Chris Roller,chris roller,,,,,,,
 2026-07-31,Branden Boissiere,branden boissiere,,,,,,,
-2026-07-31,Victor Diaz,victor diaz,,,,,,,
 2026-07-31,Noah Smith,noah smith,,,,,,,
+2026-07-31,Victor Diaz,victor diaz,,,,,,,
 2026-07-31,Alex Ramirez,alex ramirez,,,,,,,
 2026-07-31,Aaron Downs,aaron downs,,,,,,,
 2026-07-31,Yoyner Fajardo,yoyner fajardo,,,,,,,
@@ -275209,12 +275209,12 @@ snapshot_date,Player,Player_standard,hitter_score,batters_eye_score,barrel_batte
 2026-07-31,Jonah Advincula,jonah advincula,,,,,,,
 2026-07-31,Jared McKenzie,jared mckenzie,,,,,,,
 2026-07-31,Jaron Elkins,jaron elkins,,,,,,,
-2026-07-31,Bryson Ware,bryson ware,,,,,,,
 2026-07-31,Everett Cooper III,everett cooper,,,,,,,
+2026-07-31,Bryson Ware,bryson ware,,,,,,,
 2026-07-31,Jankel Ortiz,jankel ortiz,,,,,,,
 2026-07-31,Brett Roberts,brett roberts,,,,,,,
-2026-07-31,Zach Morgan,zach morgan,,,,,,,
 2026-07-31,Ryan Johnson,ryan johnson,,,,,,,
+2026-07-31,Zach Morgan,zach morgan,,,,,,,
 2026-07-31,Tyresse Turner,tyresse turner,,,,,,,
 2026-07-31,Oscar Gonzalez,oscar gonzalez,,,,,,,
 2026-07-31,Javier Valdes,javier valdes,,,,,,,
@@ -275249,8 +275249,8 @@ snapshot_date,Player,Player_standard,hitter_score,batters_eye_score,barrel_batte
 2026-07-31,Max Ferguson,max ferguson,,,,,,,
 2026-07-31,Dru Baker,dru baker,,,,,,,
 2026-07-31,Francisco Coronado,francisco coronado,,,,,,,
-2026-07-31,Dominic Hellman,dominic hellman,,,,,,,
 2026-07-31,Erick Encarnacion,erick encarnacion,,,,,,,
+2026-07-31,Dominic Hellman,dominic hellman,,,,,,,
 2026-07-31,Peyton Graham,peyton graham,,,,,,,
 2026-07-31,Bryan Gonzalez,bryan gonzalez,,,,,,,
 2026-07-31,Robert Perez Jr.,robert perez,,,,,,,
@@ -275285,8 +275285,8 @@ snapshot_date,Player,Player_standard,hitter_score,batters_eye_score,barrel_batte
 2026-07-31,Carter Beck,carter beck,,,,,,,
 2026-07-31,Jose Silva,jose silva,,,,,,,
 2026-07-31,Yu-Lin Liao,yu lin liao,,,,,,,
-2026-07-31,Juan Yepez,juan yepez,,,,,,,
 2026-07-31,Jeison Lopez,jeison lopez,,,,,,,
+2026-07-31,Juan Yepez,juan yepez,,,,,,,
 2026-07-31,Moises Valdez,moises valdez,,,,,,,
 2026-07-31,Luis Dias,luis dias,,,,,,,
 2026-07-31,Diego Guzman,diego guzman,,,,,,,
@@ -275375,8 +275375,8 @@ snapshot_date,Player,Player_standard,hitter_score,batters_eye_score,barrel_batte
 2026-07-31,Erick Pena,erick pena,,,,,,,
 2026-07-31,Mat Nelson,mat nelson,,,,,,,
 2026-07-31,Jordan Yost,jordan yost,,,,,,,
-2026-07-31,Brett Bateman,brett bateman,,,,,,,
 2026-07-31,Dominic Pitelli,dominic pitelli,,,,,,,
+2026-07-31,Brett Bateman,brett bateman,,,,,,,
 2026-07-31,Nate Nankil,nate nankil,,,,,,,
 2026-07-31,Eddie Park,eddie park,,,,,,,
 2026-07-31,Giaconino Lasaracina,giaconino lasaracina,,,,,,,
@@ -275647,8 +275647,8 @@ snapshot_date,Player,Player_standard,hitter_score,batters_eye_score,barrel_batte
 2026-07-31,Harry Owen,harry owen,,,,,,,
 2026-07-31,Maxwell Costes,maxwell costes,,,,,,,
 2026-07-31,Joshua Day,joshua day,,,,,,,
-2026-07-31,Ben Ross,ben ross,,,,,,,
 2026-07-31,Gustavo Melendez,gustavo melendez,,,,,,,
+2026-07-31,Ben Ross,ben ross,,,,,,,
 2026-07-31,Cole Conn,cole conn,,,,,,,
 2026-07-31,Francisco Garcia,francisco garcia,,,,,,,
 2026-07-31,Yaxson Lucena,yaxson lucena,,,,,,,
@@ -275685,8 +275685,8 @@ snapshot_date,Player,Player_standard,hitter_score,batters_eye_score,barrel_batte
 2026-07-31,Colin Burgess,colin burgess,,,,,,,
 2026-07-31,Jake Fox,jake fox,,,,,,,
 2026-07-31,Jake Meyer,jake meyer,,,,,,,
-2026-07-31,William Bergolla,william bergolla,,,,,,,
 2026-07-31,Tyler Johnson,tyler johnson,,,,,,,
+2026-07-31,William Bergolla,william bergolla,,,,,,,
 2026-07-31,Andruw Salcedo,andruw salcedo,,,,,,,
 2026-07-31,Giullianno Allende,giullianno allende,,,,,,,
 2026-07-31,Jose Marcano,jose marcano,,,,,,,
@@ -275701,9 +275701,9 @@ snapshot_date,Player,Player_standard,hitter_score,batters_eye_score,barrel_batte
 2026-07-31,Jack Toomey,jack toomey,,,,,,,
 2026-07-31,Reed Stallman,reed stallman,,,,,,,
 2026-07-31,Jake Ogden,jake ogden,,,,,,,
-2026-07-31,Danny Melendez,danny melendez,,,,,,,
-2026-07-31,Evan Morrison,evan morrison,,,,,,,
 2026-07-31,Joendry Vargas,joendry vargas,,,,,,,
+2026-07-31,Evan Morrison,evan morrison,,,,,,,
+2026-07-31,Danny Melendez,danny melendez,,,,,,,
 2026-07-31,Cesar Acosta,cesar acosta,,,,,,,
 2026-07-31,Jacob Webster,jacob webster,,,,,,,
 2026-07-31,Kyle Nevin,kyle nevin,,,,,,,
@@ -275731,8 +275731,8 @@ snapshot_date,Player,Player_standard,hitter_score,batters_eye_score,barrel_batte
 2026-07-31,Dean Toigo,dean toigo,,,,,,,
 2026-07-31,Abraham Bastidas,abraham bastidas,,,,,,,
 2026-07-31,Jack Natili,jack natili,,,,,,,
-2026-07-31,William Cutshall,william cutshall,,,,,,,
 2026-07-31,Roy Rivero,roy rivero,,,,,,,
+2026-07-31,William Cutshall,william cutshall,,,,,,,
 2026-07-31,Jack Lausch,jack lausch,,,,,,,
 2026-07-31,Wanderly De La Cruz,wanderly de la cruz,,,,,,,
 2026-07-31,Joe Charles,joe charles,,,,,,,
@@ -275756,10 +275756,10 @@ snapshot_date,Player,Player_standard,hitter_score,batters_eye_score,barrel_batte
 2026-07-31,Dylan Carey,dylan carey,,,,,,,
 2026-07-31,Jimmy Nati,jimmy nati,,,,,,,
 2026-07-31,Franyer Noria,franyer noria,,,,,,,
-2026-07-31,Brendan Brock,brendan brock,,,,,,,
 2026-07-31,Leny Carela,leny carela,,,,,,,
-2026-07-31,Ryan Cooney,ryan cooney,,,,,,,
+2026-07-31,Brendan Brock,brendan brock,,,,,,,
 2026-07-31,Cherif Neymour,cherif neymour,,,,,,,
+2026-07-31,Ryan Cooney,ryan cooney,,,,,,,
 2026-07-31,Caden Ferraro,caden ferraro,,,,,,,
 2026-07-31,Daniel Bruzual,daniel bruzual,,,,,,,
 2026-07-31,Manolfi Jimenez,manolfi jimenez,,,,,,,
@@ -275775,26 +275775,26 @@ snapshot_date,Player,Player_standard,hitter_score,batters_eye_score,barrel_batte
 2026-07-31,Belfi Rivera,belfi rivera,,,,,,,
 2026-07-31,Jesse Winker,jesse winker,,,,,,,
 2026-07-31,Luis Cova,luis cova,,,,,,,
-2026-07-31,Jesus Made,jesus made,,,,,,,
 2026-07-31,Jack Collins,jack collins,,,,,,,
+2026-07-31,Jesus Made,jesus made,,,,,,,
 2026-07-31,Leonardo Pineda,leonardo pineda,,,,,,,
 2026-07-31,Jalvin Arias,jalvin arias,,,,,,,
 2026-07-31,Yandel Ricardo,yandel ricardo,,,,,,,
 2026-07-31,Ashly Andujar,ashly andujar,,,,,,,
-2026-07-31,Emil Morales,emil morales,,,,,,,
 2026-07-31,Derek Bender,derek bender,,,,,,,
+2026-07-31,Emil Morales,emil morales,,,,,,,
 2026-07-31,Francisco Vilorio,francisco vilorio,,,,,,,
 2026-07-31,Jorge Quintana,jorge quintana,,,,,,,
 2026-07-31,Robert Arias,robert arias,,,,,,,
 2026-07-31,Leandro Romero,leandro romero,,,,,,,
-2026-07-31,John Bay,john bay,,,,,,,
-2026-07-31,Teddy Stankiewicz,teddy stankiewicz,,,,,,,
 2026-07-31,Caleb Lomavita,caleb lomavita,,,,,,,
+2026-07-31,Teddy Stankiewicz,teddy stankiewicz,,,,,,,
+2026-07-31,John Bay,john bay,,,,,,,
 2026-07-31,Adbiel Feliz,adbiel feliz,,,,,,,
 2026-07-31,Emilio Barreras,emilio barreras,,,,,,,
 2026-07-31,Bradley Frye,bradley frye,,,,,,,
-2026-07-31,Matt Koperniak,matt koperniak,,,,,,,
 2026-07-31,Ju Won Kim,ju won kim,,,,,,,
+2026-07-31,Matt Koperniak,matt koperniak,,,,,,,
 2026-07-31,Anson Aroz,anson aroz,,,,,,,
 2026-07-31,Yohendry Sanchez,yohendry sanchez,,,,,,,
 2026-07-31,Vladimir Asencio,vladimir asencio,,,,,,,
@@ -275812,8 +275812,8 @@ snapshot_date,Player,Player_standard,hitter_score,batters_eye_score,barrel_batte
 2026-07-31,Eli Pitts,eli pitts,,,,,,,
 2026-07-31,Jordan Williams,jordan williams,,,,,,,
 2026-07-31,James Taussig,james taussig,,,,,,,
-2026-07-31,Charlie Saum,charlie saum,,,,,,,
 2026-07-31,Hector Liriano,hector liriano,,,,,,,
+2026-07-31,Charlie Saum,charlie saum,,,,,,,
 2026-07-31,Yirber Ruiz,yirber ruiz,,,,,,,
 2026-07-31,Yoiber Ruiz,yoiber ruiz,,,,,,,
 2026-07-31,Tyler Pettorini,tyler pettorini,,,,,,,
@@ -275824,37 +275824,37 @@ snapshot_date,Player,Player_standard,hitter_score,batters_eye_score,barrel_batte
 2026-07-31,Enyervert Perez,enyervert perez,,,,,,,
 2026-07-31,Pedro Dalmagro,pedro dalmagro,,,,,,,
 2026-07-31,Aneudi Escanio,aneudi escanio,,,,,,,
-2026-07-31,Mason Lytle,mason lytle,,,,,,,
 2026-07-31,Devin Ortiz,devin ortiz,,,,,,,
+2026-07-31,Mason Lytle,mason lytle,,,,,,,
 2026-07-31,Nathan Humphreys,nathan humphreys,,,,,,,
 2026-07-31,Kai Murphy,kai murphy,,,,,,,
 2026-07-31,Maddox Latta,maddox latta,,,,,,,
-2026-07-31,Steven Lancia,steven lancia,,,,,,,
 2026-07-31,Matt Higgins,matt higgins,,,,,,,
-2026-07-31,Jonathan Hogart,jonathan hogart,,,,,,,
+2026-07-31,Steven Lancia,steven lancia,,,,,,,
 2026-07-31,Aaron Graeber,aaron graeber,,,,,,,
-2026-07-31,Damiano Palmegiani,damiano palmegiani,,,,,,,
+2026-07-31,Jonathan Hogart,jonathan hogart,,,,,,,
 2026-07-31,Chase Valentine,chase valentine,,,,,,,
+2026-07-31,Damiano Palmegiani,damiano palmegiani,,,,,,,
 2026-07-31,Jake Bold,jake bold,,,,,,,
-2026-07-31,Brenny Escanio,brenny escanio,,,,,,,
-2026-07-31,Jacob Humphrey,jacob humphrey,,,,,,,
 2026-07-31,Caleb Berry,caleb berry,,,,,,,
+2026-07-31,Jacob Humphrey,jacob humphrey,,,,,,,
+2026-07-31,Brenny Escanio,brenny escanio,,,,,,,
 2026-07-31,Carter Garate,carter garate,,,,,,,
 2026-07-31,Brandon Forrester,brandon forrester,,,,,,,
 2026-07-31,Carter Johnson,carter johnson,,,,,,,
 2026-07-31,Randy Guzman,randy guzman,,,,,,,
-2026-07-31,Jordan Sanchez,jordan sanchez,,,,,,,
 2026-07-31,Darwin Almanzar,darwin almanzar,,,,,,,
+2026-07-31,Jordan Sanchez,jordan sanchez,,,,,,,
 2026-07-31,Bennett Lee,bennett lee,,,,,,,
 2026-07-31,Yolfran Castillo,yolfran castillo,,,,,,,
 2026-07-31,Jose Ramos,jose ramos,,,,,,,
-2026-07-31,Anthony Alford,anthony alford,,,,,,,
 2026-07-31,Jhonny Level,jhonny level,,,,,,,
+2026-07-31,Anthony Alford,anthony alford,,,,,,,
 2026-07-31,Nestor Miranda,nestor miranda,,,,,,,
-2026-07-31,Jo Oyama,jo oyama,,,,,,,
 2026-07-31,Naibel Mariano,naibel mariano,,,,,,,
-2026-07-31,Andrews Opata,andrews opata,,,,,,,
+2026-07-31,Jo Oyama,jo oyama,,,,,,,
 2026-07-31,Edgar Montero,edgar montero,,,,,,,
+2026-07-31,Andrews Opata,andrews opata,,,,,,,
 2026-07-31,Ruben Ibarra,ruben ibarra,,,,,,,
 2026-07-31,Edward Lantigua,edward lantigua,,,,,,,
 2026-07-31,Bralyn Brazoban,bralyn brazoban,,,,,,,
@@ -275864,12 +275864,12 @@ snapshot_date,Player,Player_standard,hitter_score,batters_eye_score,barrel_batte
 2026-07-31,Dylan King,dylan king,,,,,,,
 2026-07-31,Matt Klein,matt klein,,,,,,,
 2026-07-31,Seth Beer,seth beer,,,,,,,
-2026-07-31,Ty Doucette,ty doucette,,,,,,,
 2026-07-31,Jarryd Dale,jarryd dale,,,,,,,
+2026-07-31,Ty Doucette,ty doucette,,,,,,,
 2026-07-31,Ben Davis,ben davis,,,,,,,
 2026-07-31,Jaxson West,jaxson west,,,,,,,
-2026-07-31,Ryan Weingartner,ryan weingartner,,,,,,,
 2026-07-31,Min Suk Kim,min suk kim,,,,,,,
+2026-07-31,Ryan Weingartner,ryan weingartner,,,,,,,
 2026-07-31,Eric Snow,eric snow,,,,,,,
 2026-07-31,Matthew Miura,matthew miura,,,,,,,
 2026-07-31,Will Cresswell,will cresswell,,,,,,,
@@ -275897,8 +275897,8 @@ snapshot_date,Player,Player_standard,hitter_score,batters_eye_score,barrel_batte
 2026-07-31,Romeo Sanabria,romeo sanabria,,,,,,,
 2026-07-31,Mitch Jebb,mitch jebb,,,,,,,
 2026-07-31,Milo Rushford,milo rushford,,,,,,,
-2026-07-31,Ryan Wrobleski,ryan wrobleski,,,,,,,
 2026-07-31,Blake Wright,blake wright,,,,,,,
+2026-07-31,Ryan Wrobleski,ryan wrobleski,,,,,,,
 2026-07-31,Marcus Brown,marcus brown,,,,,,,
 2026-07-31,Johnathon Thomas,johnathon thomas,,,,,,,
 2026-07-31,Cameron Decker,cameron decker,,,,,,,
@@ -275910,15 +275910,15 @@ snapshot_date,Player,Player_standard,hitter_score,batters_eye_score,barrel_batte
 2026-07-31,JD Dix,jd dix,,,,,,,
 2026-07-31,Guillermo Rosario,guillermo rosario,,,,,,,
 2026-07-31,Keshawn Ogans,keshawn ogans,,,,,,,
-2026-07-31,Caden Dawson,caden dawson,,,,,,,
 2026-07-31,Josh Hatcher,josh hatcher,,,,,,,
+2026-07-31,Caden Dawson,caden dawson,,,,,,,
 2026-07-31,Josiah Hartshorn,josiah hartshorn,,,,,,,
 2026-07-31,Bo-gyeong Moon,bo gyeong moon,,,,,,,
 2026-07-31,Chusei Mannami,chusei mannami,,,,,,,
 2026-07-31,Josh Hogue,josh hogue,,,,,,,
 2026-07-31,Jean Gutierrez,jean gutierrez,,,,,,,
-2026-07-31,Anthony Vilar,anthony vilar,,,,,,,
 2026-07-31,Dawson Willis,dawson willis,,,,,,,
+2026-07-31,Anthony Vilar,anthony vilar,,,,,,,
 2026-07-31,Juan Frances,juan frances,,,,,,,
 2026-07-31,Jason Hernandez,jason hernandez,,,,,,,
 2026-07-31,Jonathan Martinez,jonathan martinez,,,,,,,
@@ -275926,16 +275926,16 @@ snapshot_date,Player,Player_standard,hitter_score,batters_eye_score,barrel_batte
 2026-07-31,Jacob Lombard,jacob lombard,,,,,,,
 2026-07-31,Jhorvic Abreus,jhorvic abreus,,,,,,,
 2026-07-31,Felix Amparo,felix amparo,,,,,,,
-2026-07-31,Jack Wheeler,jack wheeler,,,,,,,
 2026-07-31,Noah Williams,noah williams,,,,,,,
-2026-07-31,Josiah Ragsdale,josiah ragsdale,,,,,,,
+2026-07-31,Jack Wheeler,jack wheeler,,,,,,,
 2026-07-31,Sebastian Cadiz,sebastian cadiz,,,,,,,
-2026-07-31,Bruin Agbayani,bruin agbayani,,,,,,,
+2026-07-31,Josiah Ragsdale,josiah ragsdale,,,,,,,
 2026-07-31,Yelserth Ayala,yelserth ayala,,,,,,,
+2026-07-31,Bruin Agbayani,bruin agbayani,,,,,,,
 2026-07-31,Joan Gutierrez,joan gutierrez,,,,,,,
-2026-07-31,Carlos Tirado,carlos tirado,,,,,,,
-2026-07-31,Kendrey Maduro,kendrey maduro,,,,,,,
 2026-07-31,Jake McCutcheon,jake mccutcheon,,,,,,,
+2026-07-31,Kendrey Maduro,kendrey maduro,,,,,,,
+2026-07-31,Carlos Tirado,carlos tirado,,,,,,,
 2026-07-31,Luis Lameda,luis lameda,,,,,,,
 2026-07-31,Ezra Farmer,ezra farmer,,,,,,,
 2026-07-31,Jackson Lovich,jackson lovich,,,,,,,
@@ -275957,8 +275957,8 @@ snapshot_date,Player,Player_standard,hitter_score,batters_eye_score,barrel_batte
 2026-07-31,Edgleen Perez,edgleen perez,,,,,,,
 2026-07-31,Sabin Ceballos,sabin ceballos,,,,,,,
 2026-07-31,Conner Westenburg,conner westenburg,,,,,,,
-2026-07-31,AJ Salgado,aj salgado,,,,,,,
 2026-07-31,Tayden Hall,tayden hall,,,,,,,
+2026-07-31,AJ Salgado,aj salgado,,,,,,,
 2026-07-31,Bryce Willits,bryce willits,,,,,,,
 2026-07-31,Kevin Kilpatrick Jr.,kevin kilpatrick,,,,,,,
 2026-07-31,Brody Moore,brody moore,,,,,,,
@@ -275987,8 +275987,8 @@ snapshot_date,Player,Player_standard,hitter_score,batters_eye_score,barrel_batte
 2026-07-31,Sterling Bazil,sterling bazil,,,,,,,
 2026-07-31,Cole Mathis,cole mathis,,,,,,,
 2026-07-31,Noah Sheffield,noah sheffield,,,,,,,
-2026-07-31,Miguel Hernandez,miguel hernandez,,,,,,,
 2026-07-31,Luis Pena,luis pena,,,,,,,
+2026-07-31,Miguel Hernandez,miguel hernandez,,,,,,,
 2026-07-31,Ethan Surowiec,ethan surowiec,,,,,,,
 2026-07-31,Matthew Batten,matthew batten,,,,,,,
 2026-07-31,Aidan Longwell,aidan longwell,,,,,,,
@@ -276014,13 +276014,13 @@ snapshot_date,Player,Player_standard,hitter_score,batters_eye_score,barrel_batte
 2026-07-31,Chase Adkison,chase adkison,,,,,,,
 2026-07-31,Juan Alva,juan alva,,,,,,,
 2026-07-31,Yovanny Duran,yovanny duran,,,,,,,
-2026-07-31,Juan Torres,juan torres,,,,,,,
 2026-07-31,Taylor Young,taylor young,,,,,,,
-2026-07-31,Sandy Presbot,sandy presbot,,,,,,,
+2026-07-31,Juan Torres,juan torres,,,,,,,
 2026-07-31,Garret Guillemette,garret guillemette,,,,,,,
-2026-07-31,Santiago Almao,santiago almao,,,,,,,
-2026-07-31,Justin Miknis,justin miknis,,,,,,,
+2026-07-31,Sandy Presbot,sandy presbot,,,,,,,
 2026-07-31,Bubba Alleyne,bubba alleyne,,,,,,,
+2026-07-31,Justin Miknis,justin miknis,,,,,,,
+2026-07-31,Santiago Almao,santiago almao,,,,,,,
 2026-07-31,Fredderick Ovalle,fredderick ovalle,,,,,,,
 2026-07-31,Nate Baez,nate baez,,,,,,,
 2026-07-31,Bernard Moon,bernard moon,,,,,,,
