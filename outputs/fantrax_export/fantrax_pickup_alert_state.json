@@ -53,7 +53,8 @@
     "2026-07-28": true,
     "2026-07-29": true,
     "2026-07-30": true,
-    "2026-07-31": true
+    "2026-07-31": true,
+    "2026-08-01": true
   },
   "major_add_alerts": {
     "2026-06-08": {
@@ -4295,15 +4296,6 @@
       "team_id": "k7c57nf4mj90wrl8",
       "team_name": "Hand Foot Mouth Disease Guys"
     },
-    "k7c57nf4mj90wrl8:02jh6": {
-      "fantrax_id": "02jh6",
-      "player_name": "Eugenio Suarez",
-      "primary_position": "3B",
-      "roster_position": "UT",
-      "roster_status": "RESERVE",
-      "team_id": "k7c57nf4mj90wrl8",
-      "team_name": "Hand Foot Mouth Disease Guys"
-    },
     "k7c57nf4mj90wrl8:02mw6": {
       "fantrax_id": "02mw6",
       "player_name": "Corey Seager",
@@ -4661,6 +4653,15 @@
       "primary_position": "2B",
       "roster_position": "SS",
       "roster_status": "MINORS",
+      "team_id": "k7c57nf4mj90wrl8",
+      "team_name": "Hand Foot Mouth Disease Guys"
+    },
+    "k7c57nf4mj90wrl8:0657l": {
+      "fantrax_id": "0657l",
+      "player_name": "Jack Perkins",
+      "primary_position": "RP",
+      "roster_position": "P",
+      "roster_status": "ACTIVE",
       "team_id": "k7c57nf4mj90wrl8",
       "team_name": "Hand Foot Mouth Disease Guys"
     },
