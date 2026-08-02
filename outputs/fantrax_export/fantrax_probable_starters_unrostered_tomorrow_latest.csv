@@ -1,8 +1,4 @@
 probable_date,game_time_utc,home_away,probable_team,opponent,mlb_player_id,probable_name,fantrax_id,name,mlb_team,primary_position,eligible_positions,league_status,is_rostered,stats_inc_id,rotowire_id,sport_radar_id,game_pk
-2026-08-02,,,CHC,NYY Sun 1:20PM,,Colin Rea,02bzn,"Rea, Colin",CHC,SP,P,FA,False,10048,13786,cd417c1f-ecec-4a64-907a-bbb2b04d8507,
-2026-08-02,,,DET,@ATH Sun 3:05PM,,Keider Montero,05a1v,"Montero, Keider",DET,SP,P,FA,False,,17863,73ecbb81-39b8-4064-95fd-d9fc6907b76c,
-2026-08-02,,,STL,@TOR Sun 12:37PM,,Matthew Liberatore,04mlx,"Liberatore, Matthew",STL,SP,P,FA,False,11397,15399,5522ef4b-d436-4738-94d6-78a2c1c5a3ae,
-2026-08-02,,,NYM,MIA Sun 12:40PM,,Sean Manaea,02x0f,"Manaea, Sean",NYM,SP,P,FA,False,9582,12948,f578d526-6d2e-4590-9665-ed42c72c883f,
-2026-08-02,,,ATL,WSH Sun 12:35PM,,Martin Perez,01fhm,"Perez, Martin",ATL,SP,P,FA,False,8652,10867,9012e198-9f53-4885-8b24-402e51524e82,
 2026-08-02,,,COL,KC Sun 2:10PM,,Kyle Freeland,03ca3,"Freeland, Kyle",COL,SP,P,FA,False,9863,13369,e2081019-8ef0-471d-b6d6-1333a8a45897,
 2026-08-02,,,TOR,STL Sun 12:37PM,,Max Scherzer,004ee,"Scherzer, Max",TOR,SP,P,FA,False,8193,9278,2527770b-cf48-42b9-81fa-9323756fb311,
+2026-08-02,,,NYM,MIA Sun 12:40PM,,Robert Stock,01shb,"Stock, Robert",NYM,RP,P,FA,False,11053,11024,55780e25-8b8a-4314-b018-9fc198ec4628,
