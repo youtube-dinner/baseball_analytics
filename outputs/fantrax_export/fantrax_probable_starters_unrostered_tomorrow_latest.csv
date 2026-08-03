@@ -1,10 +1,7 @@
 probable_date,game_time_utc,home_away,probable_team,opponent,mlb_player_id,probable_name,fantrax_id,name,mlb_team,primary_position,eligible_positions,league_status,is_rostered,stats_inc_id,rotowire_id,sport_radar_id,game_pk
-2026-08-03,,,PHI,WSH Mon 5:40PM,,Aaron Nola,02i3o,"Nola, Aaron",PHI,SP,P,FA,False,9882,13359,ded1b30d-52ca-4eec-bce6-251b15b085ac,
-2026-08-03,,,STL,@NYY Mon 6:05PM,,Michael McGreevy,05sr2,"McGreevy, Michael",STL,SP,P,FA,False,,17320,5d8d6eb5-f95f-4c6e-888a-0209d85c20c4,
 2026-08-03,,,TB,@COL Mon 7:40PM,,Ian Seymour,05jpd,"Seymour, Ian",TB,RP,P,FA,False,,16753,ef36132f-e146-4890-b8a3-47d554e99a62,
-2026-08-03,,,WSH,@PHI Mon 5:40PM,,Zack Littell,031d4,"Littell, Zack",WSH,SP,P,FA,False,11035,14992,fe0fc487-45d3-4178-9fd7-6c00025aff7e,
 2026-08-03,,,COL,TB Mon 7:40PM,,Michael Lorenzen,02hir,"Lorenzen, Michael",COL,SP,P,FA,False,9949,11605,4150b3f7-beb3-4fbc-a947-933d45d20bfe,
-2026-08-03,,,ARI,SD Mon 8:40PM,,Brandon Pfaadt,05lg3,"Pfaadt, Brandon",ARI,SP,P,FA,False,,16903,5f6e12b8-1a4b-4b56-ab3b-1b349c0cd614,
+2026-08-03,,,WSH,@PHI Mon 5:40PM,,Andrew Alvarez,060u3,"Alvarez, Andrew",WSH,SP,P,FA,False,,19439,e6a98e62-8cf1-4b27-bfc7-19f4b094d845,
 2026-08-03,,,TEX,SF Mon 7:05PM,,Cal Quantrill,03yxh,"Quantrill, Cal",TEX,SP,P,FA,False,10573,14251,e8abdf47-b38a-44e6-8c6e-4b0bfbd482b0,
 2026-08-03,,,TOR,@HOU Mon 7:10PM,,Shane Bieber,041rf,"Bieber, Shane",TOR,SP,P,FA,False,10867,14383,5a6d40fb-f37a-415d-bae6-83fd66bb3322,
 2026-08-03,,,HOU,TOR Mon 7:10PM,,Cristian Javier,045kb,"Javier, Cristian",HOU,SP,P,FA,False,11315,14482,00a81b80-a20f-4fb7-894f-23b4d1a63941,
