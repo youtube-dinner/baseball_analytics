@@ -2192,15 +2192,6 @@
       "team_id": "aqfyadu2mj90wrl7",
       "team_name": "Ben the Hen"
     },
-    "bw696uo5mj90wrl7:004ee": {
-      "fantrax_id": "004ee",
-      "player_name": "Max Scherzer",
-      "primary_position": "SP",
-      "roster_position": "P",
-      "roster_status": "ACTIVE",
-      "team_id": "bw696uo5mj90wrl7",
-      "team_name": "Cant Park Here"
-    },
     "bw696uo5mj90wrl7:025dn": {
       "fantrax_id": "025dn",
       "player_name": "Christian Yelich",
@@ -2368,7 +2359,7 @@
       "player_name": "Brandon Sproat",
       "primary_position": "SP",
       "roster_position": "P",
-      "roster_status": "RESERVE",
+      "roster_status": "ACTIVE",
       "team_id": "bw696uo5mj90wrl7",
       "team_name": "Cant Park Here"
     },
@@ -3245,15 +3236,6 @@
       "team_id": "hd9hwe4mmj90wrl7",
       "team_name": "Third Degree Burnes"
     },
-    "hd9hwe4mmj90wrl7:03ca3": {
-      "fantrax_id": "03ca3",
-      "player_name": "Kyle Freeland",
-      "primary_position": "SP",
-      "roster_position": "P",
-      "roster_status": "ACTIVE",
-      "team_id": "hd9hwe4mmj90wrl7",
-      "team_name": "Third Degree Burnes"
-    },
     "hd9hwe4mmj90wrl7:03oh0": {
       "fantrax_id": "03oh0",
       "player_name": "Willson Contreras",
@@ -3500,6 +3482,15 @@
     "hd9hwe4mmj90wrl7:05rik": {
       "fantrax_id": "05rik",
       "player_name": "Bubba Chandler",
+      "primary_position": "SP",
+      "roster_position": "P",
+      "roster_status": "ACTIVE",
+      "team_id": "hd9hwe4mmj90wrl7",
+      "team_name": "Third Degree Burnes"
+    },
+    "hd9hwe4mmj90wrl7:05sr2": {
+      "fantrax_id": "05sr2",
+      "player_name": "Michael McGreevy",
       "primary_position": "SP",
       "roster_position": "P",
       "roster_status": "ACTIVE",
@@ -4316,15 +4307,6 @@
       "team_id": "k7c57nf4mj90wrl8",
       "team_name": "Hand Foot Mouth Disease Guys"
     },
-    "k7c57nf4mj90wrl8:02hj7": {
-      "fantrax_id": "02hj7",
-      "player_name": "Merrill Kelly",
-      "primary_position": "SP",
-      "roster_position": "P",
-      "roster_status": "ACTIVE",
-      "team_id": "k7c57nf4mj90wrl8",
-      "team_name": "Hand Foot Mouth Disease Guys"
-    },
     "k7c57nf4mj90wrl8:02hjp": {
       "fantrax_id": "02hjp",
       "player_name": "Jacob deGrom",
@@ -4388,15 +4370,6 @@
       "team_id": "k7c57nf4mj90wrl8",
       "team_name": "Hand Foot Mouth Disease Guys"
     },
-    "k7c57nf4mj90wrl8:041mb": {
-      "fantrax_id": "041mb",
-      "player_name": "Anthony Kay",
-      "primary_position": "SP",
-      "roster_position": "P",
-      "roster_status": "ACTIVE",
-      "team_id": "k7c57nf4mj90wrl8",
-      "team_name": "Hand Foot Mouth Disease Guys"
-    },
     "k7c57nf4mj90wrl8:041w4": {
       "fantrax_id": "041w4",
       "player_name": "Bryan Baker",
@@ -4447,6 +4420,15 @@
       "player_name": "Daulton Varsho",
       "primary_position": "CF",
       "roster_position": "OF",
+      "roster_status": "ACTIVE",
+      "team_id": "k7c57nf4mj90wrl8",
+      "team_name": "Hand Foot Mouth Disease Guys"
+    },
+    "k7c57nf4mj90wrl8:04eig": {
+      "fantrax_id": "04eig",
+      "player_name": "Jose Caballero",
+      "primary_position": "SS",
+      "roster_position": "UT",
       "roster_status": "ACTIVE",
       "team_id": "k7c57nf4mj90wrl8",
       "team_name": "Hand Foot Mouth Disease Guys"
@@ -4550,6 +4532,15 @@
       "team_id": "k7c57nf4mj90wrl8",
       "team_name": "Hand Foot Mouth Disease Guys"
     },
+    "k7c57nf4mj90wrl8:05lg3": {
+      "fantrax_id": "05lg3",
+      "player_name": "Brandon Pfaadt",
+      "primary_position": "SP",
+      "roster_position": "P",
+      "roster_status": "ACTIVE",
+      "team_id": "k7c57nf4mj90wrl8",
+      "team_name": "Hand Foot Mouth Disease Guys"
+    },
     "k7c57nf4mj90wrl8:05r8n": {
       "fantrax_id": "05r8n",
       "player_name": "Yoshinobu Yamamoto",
@@ -4609,7 +4600,7 @@
       "player_name": "Carter Jensen",
       "primary_position": "C",
       "roster_position": "UT",
-      "roster_status": "ACTIVE",
+      "roster_status": "RESERVE",
       "team_id": "k7c57nf4mj90wrl8",
       "team_name": "Hand Foot Mouth Disease Guys"
     },
