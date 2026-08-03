@@ -55,7 +55,8 @@
     "2026-07-30": true,
     "2026-07-31": true,
     "2026-08-01": true,
-    "2026-08-02": true
+    "2026-08-02": true,
+    "2026-08-03": true
   },
   "major_add_alerts": {
     "2026-06-08": {
@@ -362,6 +363,48 @@
       "mldxq5pemj90wrl7": {
         "major_add_limit": 10,
         "one_remaining": true,
+        "overage_alerted": 0
+      },
+      "o4jvg6q3mj90wrl7": {
+        "major_add_limit": 10,
+        "overage_alerted": 0
+      },
+      "qatqhh61mj90wrl7": {
+        "major_add_limit": 10,
+        "overage_alerted": 0
+      }
+    },
+    "2026-08-03": {
+      "6tnz8jgemj90wrl7": {
+        "major_add_limit": 10,
+        "overage_alerted": 0
+      },
+      "aqfyadu2mj90wrl7": {
+        "major_add_limit": 10,
+        "overage_alerted": 0
+      },
+      "bw696uo5mj90wrl7": {
+        "major_add_limit": 10,
+        "overage_alerted": 0
+      },
+      "f3myl5ugmj90wrl7": {
+        "major_add_limit": 10,
+        "overage_alerted": 0
+      },
+      "hd9hwe4mmj90wrl7": {
+        "major_add_limit": 10,
+        "overage_alerted": 0
+      },
+      "jk36oo1hmj90wrl7": {
+        "major_add_limit": 10,
+        "overage_alerted": 0
+      },
+      "k7c57nf4mj90wrl8": {
+        "major_add_limit": 10,
+        "overage_alerted": 0
+      },
+      "mldxq5pemj90wrl7": {
+        "major_add_limit": 10,
         "overage_alerted": 0
       },
       "o4jvg6q3mj90wrl7": {
@@ -4777,6 +4820,24 @@
       "team_id": "mldxq5pemj90wrl7",
       "team_name": "L\u00e1szlar\u00f3 T\u00f3th"
     },
+    "mldxq5pemj90wrl7:02i3o": {
+      "fantrax_id": "02i3o",
+      "player_name": "Aaron Nola",
+      "primary_position": "SP",
+      "roster_position": "P",
+      "roster_status": "ACTIVE",
+      "team_id": "mldxq5pemj90wrl7",
+      "team_name": "L\u00e1szlar\u00f3 T\u00f3th"
+    },
+    "mldxq5pemj90wrl7:02myt": {
+      "fantrax_id": "02myt",
+      "player_name": "Steven Okert",
+      "primary_position": "RP",
+      "roster_position": "P",
+      "roster_status": "ACTIVE",
+      "team_id": "mldxq5pemj90wrl7",
+      "team_name": "L\u00e1szlar\u00f3 T\u00f3th"
+    },
     "mldxq5pemj90wrl7:02w7p": {
       "fantrax_id": "02w7p",
       "player_name": "Alex Bregman",
@@ -4930,15 +4991,6 @@
       "team_id": "mldxq5pemj90wrl7",
       "team_name": "L\u00e1szlar\u00f3 T\u00f3th"
     },
-    "mldxq5pemj90wrl7:05a1v": {
-      "fantrax_id": "05a1v",
-      "player_name": "Keider Montero",
-      "primary_position": "SP",
-      "roster_position": "P",
-      "roster_status": "ACTIVE",
-      "team_id": "mldxq5pemj90wrl7",
-      "team_name": "L\u00e1szlar\u00f3 T\u00f3th"
-    },
     "mldxq5pemj90wrl7:05aoc": {
       "fantrax_id": "05aoc",
       "player_name": "Eury Perez",
@@ -4978,15 +5030,6 @@
     "mldxq5pemj90wrl7:05h2u": {
       "fantrax_id": "05h2u",
       "player_name": "Jared Jones",
-      "primary_position": "SP",
-      "roster_position": "P",
-      "roster_status": "ACTIVE",
-      "team_id": "mldxq5pemj90wrl7",
-      "team_name": "L\u00e1szlar\u00f3 T\u00f3th"
-    },
-    "mldxq5pemj90wrl7:05jq2": {
-      "fantrax_id": "05jq2",
-      "player_name": "Andrew Abbott",
       "primary_position": "SP",
       "roster_position": "P",
       "roster_status": "ACTIVE",
@@ -5830,15 +5873,6 @@
       "team_id": "qatqhh61mj90wrl7",
       "team_name": "Je suis Charlie Morton"
     },
-    "qatqhh61mj90wrl7:02c5l": {
-      "fantrax_id": "02c5l",
-      "player_name": "Luke Weaver",
-      "primary_position": "RP",
-      "roster_position": "P",
-      "roster_status": "ACTIVE",
-      "team_id": "qatqhh61mj90wrl7",
-      "team_name": "Je suis Charlie Morton"
-    },
     "qatqhh61mj90wrl7:02mwm": {
       "fantrax_id": "02mwm",
       "player_name": "Matt Olson",
@@ -5947,10 +5981,10 @@
       "team_id": "qatqhh61mj90wrl7",
       "team_name": "Je suis Charlie Morton"
     },
-    "qatqhh61mj90wrl7:04cwf": {
-      "fantrax_id": "04cwf",
-      "player_name": "Shane Baz",
-      "primary_position": "SP",
+    "qatqhh61mj90wrl7:04ew7": {
+      "fantrax_id": "04ew7",
+      "player_name": "Aaron Ashby",
+      "primary_position": "RP",
       "roster_position": "P",
       "roster_status": "ACTIVE",
       "team_id": "qatqhh61mj90wrl7",
@@ -6213,6 +6247,15 @@
       "player_name": "A.J. Ewing",
       "primary_position": "CF",
       "roster_position": "OF",
+      "roster_status": "ACTIVE",
+      "team_id": "qatqhh61mj90wrl7",
+      "team_name": "Je suis Charlie Morton"
+    },
+    "qatqhh61mj90wrl7:06guh": {
+      "fantrax_id": "06guh",
+      "player_name": "Brandyn Garcia",
+      "primary_position": "RP",
+      "roster_position": "P",
       "roster_status": "ACTIVE",
       "team_id": "qatqhh61mj90wrl7",
       "team_name": "Je suis Charlie Morton"
