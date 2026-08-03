@@ -3845,7 +3845,7 @@
       "player_name": "Taylor Ward",
       "primary_position": "LF",
       "roster_position": "OF",
-      "roster_status": "ACTIVE",
+      "roster_status": "RESERVE",
       "team_id": "jk36oo1hmj90wrl7",
       "team_name": "Daddy Yankee"
     },
@@ -3855,6 +3855,15 @@
       "primary_position": "SP",
       "roster_position": "P",
       "roster_status": "INJURED_RESERVE",
+      "team_id": "jk36oo1hmj90wrl7",
+      "team_name": "Daddy Yankee"
+    },
+    "jk36oo1hmj90wrl7:03qr0": {
+      "fantrax_id": "03qr0",
+      "player_name": "Cedric Mullins",
+      "primary_position": "CF",
+      "roster_position": "OF",
+      "roster_status": "ACTIVE",
       "team_id": "jk36oo1hmj90wrl7",
       "team_name": "Daddy Yankee"
     },
@@ -3953,7 +3962,7 @@
       "player_name": "Steven Kwan",
       "primary_position": "LF",
       "roster_position": "OF",
-      "roster_status": "ACTIVE",
+      "roster_status": "RESERVE",
       "team_id": "jk36oo1hmj90wrl7",
       "team_name": "Daddy Yankee"
     },
@@ -3966,19 +3975,19 @@
       "team_id": "jk36oo1hmj90wrl7",
       "team_name": "Daddy Yankee"
     },
-    "jk36oo1hmj90wrl7:04yie": {
-      "fantrax_id": "04yie",
-      "player_name": "George Kirby",
-      "primary_position": "SP",
-      "roster_position": "P",
+    "jk36oo1hmj90wrl7:04y79": {
+      "fantrax_id": "04y79",
+      "player_name": "Victor Mesa Jr.",
+      "primary_position": "CF",
+      "roster_position": "OF",
       "roster_status": "ACTIVE",
       "team_id": "jk36oo1hmj90wrl7",
       "team_name": "Daddy Yankee"
     },
-    "jk36oo1hmj90wrl7:051eh": {
-      "fantrax_id": "051eh",
-      "player_name": "Kevin Kelly",
-      "primary_position": "RP",
+    "jk36oo1hmj90wrl7:04yie": {
+      "fantrax_id": "04yie",
+      "player_name": "George Kirby",
+      "primary_position": "SP",
       "roster_position": "P",
       "roster_status": "ACTIVE",
       "team_id": "jk36oo1hmj90wrl7",
