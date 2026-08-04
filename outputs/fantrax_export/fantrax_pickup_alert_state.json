@@ -1314,21 +1314,12 @@
       "team_id": "6tnz8jgemj90wrl7",
       "team_name": "Bobby and the NitWitts"
     },
-    "6tnz8jgemj90wrl7:04en7": {
-      "fantrax_id": "04en7",
-      "player_name": "Garrett Mitchell",
-      "primary_position": "CF",
-      "roster_position": "UT",
-      "roster_status": "ACTIVE",
-      "team_id": "6tnz8jgemj90wrl7",
-      "team_name": "Bobby and the NitWitts"
-    },
     "6tnz8jgemj90wrl7:04lgp": {
       "fantrax_id": "04lgp",
       "player_name": "Bobby Witt Jr.",
       "primary_position": "SS",
       "roster_position": "SS",
-      "roster_status": "INJURED_RESERVE",
+      "roster_status": "ACTIVE",
       "team_id": "6tnz8jgemj90wrl7",
       "team_name": "Bobby and the NitWitts"
     },
@@ -1363,7 +1354,7 @@
       "fantrax_id": "04vvy",
       "player_name": "Andruw Monasterio",
       "primary_position": "SS",
-      "roster_position": "MI",
+      "roster_position": "UT",
       "roster_status": "ACTIVE",
       "team_id": "6tnz8jgemj90wrl7",
       "team_name": "Bobby and the NitWitts"
@@ -1444,7 +1435,7 @@
       "fantrax_id": "05rch",
       "player_name": "Colson Montgomery",
       "primary_position": "SS",
-      "roster_position": "SS",
+      "roster_position": "MI",
       "roster_status": "ACTIVE",
       "team_id": "6tnz8jgemj90wrl7",
       "team_name": "Bobby and the NitWitts"
