@@ -631,13 +631,13 @@
     },
     "f3myl5ugmj90wrl7:04qow": {
       "demotion_alert_sent": true,
-      "eligible_date": "2026-07-15",
+      "eligible_date": "2026-08-26",
       "fantrax_id": "04qow",
       "player_name": "Kevin Alcantara",
       "team_id": "f3myl5ugmj90wrl7",
       "team_name": "The Hot and Steamy Boys",
       "violation_alert_sent": false,
-      "window_start": "2026-06-23"
+      "window_start": "2026-08-04"
     },
     "f3myl5ugmj90wrl7:04up9": {
       "demotion_alert_sent": true,
@@ -1158,6 +1158,16 @@
       "team_name": "Je suis Charlie Morton",
       "violation_alert_sent": false,
       "window_start": "2026-07-24"
+    },
+    "qatqhh61mj90wrl7:06yk0": {
+      "demotion_alert_sent": false,
+      "eligible_date": "2026-08-26",
+      "fantrax_id": "06yk0",
+      "player_name": "Conor Essenburg",
+      "team_id": "qatqhh61mj90wrl7",
+      "team_name": "Je suis Charlie Morton",
+      "violation_alert_sent": false,
+      "window_start": "2026-08-04"
     }
   },
   "roster_snapshot": {
@@ -1188,11 +1198,20 @@
       "team_id": "6tnz8jgemj90wrl7",
       "team_name": "Bobby and the NitWitts"
     },
+    "6tnz8jgemj90wrl7:02xic": {
+      "fantrax_id": "02xic",
+      "player_name": "Teoscar Hernandez",
+      "primary_position": "RF",
+      "roster_position": "OF",
+      "roster_status": "ACTIVE",
+      "team_id": "6tnz8jgemj90wrl7",
+      "team_name": "Bobby and the NitWitts"
+    },
     "6tnz8jgemj90wrl7:0316v": {
       "fantrax_id": "0316v",
       "player_name": "Jake Bauers",
       "primary_position": "LF",
-      "roster_position": "OF",
+      "roster_position": "CI",
       "roster_status": "ACTIVE",
       "team_id": "6tnz8jgemj90wrl7",
       "team_name": "Bobby and the NitWitts"
@@ -1255,7 +1274,7 @@
       "fantrax_id": "03m6o",
       "player_name": "Yandy Diaz",
       "primary_position": "DH",
-      "roster_position": "CI",
+      "roster_position": "1B",
       "roster_status": "ACTIVE",
       "team_id": "6tnz8jgemj90wrl7",
       "team_name": "Bobby and the NitWitts"
@@ -1535,7 +1554,7 @@
       "player_name": "Nick Kurtz",
       "primary_position": "1B",
       "roster_position": "1B",
-      "roster_status": "ACTIVE",
+      "roster_status": "INJURED_RESERVE",
       "team_id": "6tnz8jgemj90wrl7",
       "team_name": "Bobby and the NitWitts"
     },
@@ -2979,11 +2998,11 @@
       "team_id": "f3myl5ugmj90wrl7",
       "team_name": "The Hot and Steamy Boys"
     },
-    "f3myl5ugmj90wrl7:04ya2": {
-      "fantrax_id": "04ya2",
-      "player_name": "Daniel Espino",
-      "primary_position": "SP",
-      "roster_position": "P",
+    "f3myl5ugmj90wrl7:04qow": {
+      "fantrax_id": "04qow",
+      "player_name": "Kevin Alcantara",
+      "primary_position": "CF",
+      "roster_position": "OF",
       "roster_status": "MINORS",
       "team_id": "f3myl5ugmj90wrl7",
       "team_name": "The Hot and Steamy Boys"
@@ -3875,7 +3894,7 @@
       "player_name": "Taylor Ward",
       "primary_position": "LF",
       "roster_position": "UT",
-      "roster_status": "ACTIVE",
+      "roster_status": "RESERVE",
       "team_id": "jk36oo1hmj90wrl7",
       "team_name": "Daddy Yankee"
     },
@@ -3996,21 +4015,21 @@
       "team_id": "jk36oo1hmj90wrl7",
       "team_name": "Daddy Yankee"
     },
+    "jk36oo1hmj90wrl7:04tlv": {
+      "fantrax_id": "04tlv",
+      "player_name": "Bryan Abreu",
+      "primary_position": "RP",
+      "roster_position": "P",
+      "roster_status": "ACTIVE",
+      "team_id": "jk36oo1hmj90wrl7",
+      "team_name": "Daddy Yankee"
+    },
     "jk36oo1hmj90wrl7:04y79": {
       "fantrax_id": "04y79",
       "player_name": "Victor Mesa Jr.",
       "primary_position": "CF",
       "roster_position": "OF",
       "roster_status": "ACTIVE",
-      "team_id": "jk36oo1hmj90wrl7",
-      "team_name": "Daddy Yankee"
-    },
-    "jk36oo1hmj90wrl7:04y94": {
-      "fantrax_id": "04y94",
-      "player_name": "Jonny DeLuca",
-      "primary_position": "CF",
-      "roster_position": "OF",
-      "roster_status": "RESERVE",
       "team_id": "jk36oo1hmj90wrl7",
       "team_name": "Daddy Yankee"
     },
@@ -4028,7 +4047,7 @@
       "player_name": "Spencer Horwitz",
       "primary_position": "1B",
       "roster_position": "UT",
-      "roster_status": "ACTIVE",
+      "roster_status": "RESERVE",
       "team_id": "jk36oo1hmj90wrl7",
       "team_name": "Daddy Yankee"
     },
@@ -4145,7 +4164,7 @@
       "player_name": "Jackson Holliday",
       "primary_position": "2B",
       "roster_position": "UT",
-      "roster_status": "RESERVE",
+      "roster_status": "ACTIVE",
       "team_id": "jk36oo1hmj90wrl7",
       "team_name": "Daddy Yankee"
     },
@@ -4154,7 +4173,7 @@
       "player_name": "Cam Smith",
       "primary_position": "RF",
       "roster_position": "UT",
-      "roster_status": "RESERVE",
+      "roster_status": "ACTIVE",
       "team_id": "jk36oo1hmj90wrl7",
       "team_name": "Daddy Yankee"
     },
@@ -4523,7 +4542,7 @@
       "player_name": "Gabriel Moreno",
       "primary_position": "C",
       "roster_position": "C",
-      "roster_status": "ACTIVE",
+      "roster_status": "RESERVE",
       "team_id": "k7c57nf4mj90wrl8",
       "team_name": "Hand Foot Mouth Disease Guys"
     },
@@ -4648,8 +4667,8 @@
       "fantrax_id": "05vy5",
       "player_name": "Carter Jensen",
       "primary_position": "C",
-      "roster_position": "UT",
-      "roster_status": "RESERVE",
+      "roster_position": "C",
+      "roster_status": "ACTIVE",
       "team_id": "k7c57nf4mj90wrl8",
       "team_name": "Hand Foot Mouth Disease Guys"
     },
@@ -6179,7 +6198,7 @@
       "player_name": "Dalton Rushing",
       "primary_position": "C",
       "roster_position": "C",
-      "roster_status": "MINORS",
+      "roster_status": "INJURED_RESERVE",
       "team_id": "qatqhh61mj90wrl7",
       "team_name": "Je suis Charlie Morton"
     },
@@ -6377,6 +6396,15 @@
       "player_name": "Liam Doyle",
       "primary_position": "SP",
       "roster_position": "P",
+      "roster_status": "MINORS",
+      "team_id": "qatqhh61mj90wrl7",
+      "team_name": "Je suis Charlie Morton"
+    },
+    "qatqhh61mj90wrl7:06yk0": {
+      "fantrax_id": "06yk0",
+      "player_name": "Conor Essenburg",
+      "primary_position": "CF",
+      "roster_position": "OF",
       "roster_status": "MINORS",
       "team_id": "qatqhh61mj90wrl7",
       "team_name": "Je suis Charlie Morton"
