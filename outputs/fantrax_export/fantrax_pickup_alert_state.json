@@ -57,7 +57,8 @@
     "2026-08-01": true,
     "2026-08-02": true,
     "2026-08-03": true,
-    "2026-08-04": true
+    "2026-08-04": true,
+    "2026-08-05": true
   },
   "major_add_alerts": {
     "2026-06-08": {
@@ -3911,8 +3912,8 @@
       "fantrax_id": "03pje",
       "player_name": "Taylor Ward",
       "primary_position": "LF",
-      "roster_position": "OF",
-      "roster_status": "ACTIVE",
+      "roster_position": "UT",
+      "roster_status": "RESERVE",
       "team_id": "jk36oo1hmj90wrl7",
       "team_name": "Daddy Yankee"
     },
@@ -3929,7 +3930,7 @@
       "fantrax_id": "03qr0",
       "player_name": "Cedric Mullins",
       "primary_position": "CF",
-      "roster_position": "OF",
+      "roster_position": "UT",
       "roster_status": "ACTIVE",
       "team_id": "jk36oo1hmj90wrl7",
       "team_name": "Daddy Yankee"
@@ -3975,7 +3976,7 @@
       "player_name": "Jake Burger",
       "primary_position": "1B",
       "roster_position": "UT",
-      "roster_status": "RESERVE",
+      "roster_status": "ACTIVE",
       "team_id": "jk36oo1hmj90wrl7",
       "team_name": "Daddy Yankee"
     },
@@ -4028,7 +4029,7 @@
       "fantrax_id": "04pr1",
       "player_name": "Steven Kwan",
       "primary_position": "LF",
-      "roster_position": "UT",
+      "roster_position": "OF",
       "roster_status": "ACTIVE",
       "team_id": "jk36oo1hmj90wrl7",
       "team_name": "Daddy Yankee"
@@ -4047,7 +4048,7 @@
       "player_name": "Spencer Horwitz",
       "primary_position": "1B",
       "roster_position": "UT",
-      "roster_status": "RESERVE",
+      "roster_status": "ACTIVE",
       "team_id": "jk36oo1hmj90wrl7",
       "team_name": "Daddy Yankee"
     },
@@ -4164,7 +4165,7 @@
       "player_name": "Jackson Holliday",
       "primary_position": "2B",
       "roster_position": "UT",
-      "roster_status": "ACTIVE",
+      "roster_status": "RESERVE",
       "team_id": "jk36oo1hmj90wrl7",
       "team_name": "Daddy Yankee"
     },
@@ -4181,7 +4182,7 @@
       "fantrax_id": "060jo",
       "player_name": "Cam Smith",
       "primary_position": "RF",
-      "roster_position": "UT",
+      "roster_position": "OF",
       "roster_status": "ACTIVE",
       "team_id": "jk36oo1hmj90wrl7",
       "team_name": "Daddy Yankee"
