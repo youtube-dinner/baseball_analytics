@@ -5896,24 +5896,6 @@
       "team_id": "qatqhh61mj90wrl7",
       "team_name": "Je suis Charlie Morton"
     },
-    "qatqhh61mj90wrl7:024m0": {
-      "fantrax_id": "024m0",
-      "player_name": "Jose Altuve",
-      "primary_position": "2B",
-      "roster_position": "OF",
-      "roster_status": "ACTIVE",
-      "team_id": "qatqhh61mj90wrl7",
-      "team_name": "Je suis Charlie Morton"
-    },
-    "qatqhh61mj90wrl7:029si": {
-      "fantrax_id": "029si",
-      "player_name": "Eduardo Rodriguez",
-      "primary_position": "SP",
-      "roster_position": "P",
-      "roster_status": "ACTIVE",
-      "team_id": "qatqhh61mj90wrl7",
-      "team_name": "Je suis Charlie Morton"
-    },
     "qatqhh61mj90wrl7:02bq2": {
       "fantrax_id": "02bq2",
       "player_name": "Brandon Nimmo",
@@ -5990,7 +5972,7 @@
       "fantrax_id": "03qyv",
       "player_name": "Jake McCarthy",
       "primary_position": "LF",
-      "roster_position": "UT",
+      "roster_position": "OF",
       "roster_status": "ACTIVE",
       "team_id": "qatqhh61mj90wrl7",
       "team_name": "Je suis Charlie Morton"
@@ -6049,6 +6031,15 @@
       "team_id": "qatqhh61mj90wrl7",
       "team_name": "Je suis Charlie Morton"
     },
+    "qatqhh61mj90wrl7:043ia": {
+      "fantrax_id": "043ia",
+      "player_name": "Adrian Morejon",
+      "primary_position": "RP",
+      "roster_position": "P",
+      "roster_status": "ACTIVE",
+      "team_id": "qatqhh61mj90wrl7",
+      "team_name": "Je suis Charlie Morton"
+    },
     "qatqhh61mj90wrl7:04cd5": {
       "fantrax_id": "04cd5",
       "player_name": "MacKenzie Gore",
@@ -6072,7 +6063,7 @@
       "player_name": "Brendan Donovan",
       "primary_position": "2B",
       "roster_position": "UT",
-      "roster_status": "INJURED_RESERVE",
+      "roster_status": "ACTIVE",
       "team_id": "qatqhh61mj90wrl7",
       "team_name": "Je suis Charlie Morton"
     },
