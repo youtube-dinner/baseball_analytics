@@ -1142,6 +1142,16 @@
       "violation_alert_sent": false,
       "window_start": "2026-06-14"
     },
+    "qatqhh61mj90wrl7:04cd5": {
+      "demotion_alert_sent": true,
+      "eligible_date": "2026-08-28",
+      "fantrax_id": "04cd5",
+      "player_name": "MacKenzie Gore",
+      "team_id": "qatqhh61mj90wrl7",
+      "team_name": "Je suis Charlie Morton",
+      "violation_alert_sent": false,
+      "window_start": "2026-08-06"
+    },
     "qatqhh61mj90wrl7:05uc7": {
       "demotion_alert_sent": true,
       "eligible_date": "2026-07-23",
@@ -2337,6 +2347,15 @@
       "team_id": "bw696uo5mj90wrl7",
       "team_name": "Cant Park Here"
     },
+    "bw696uo5mj90wrl7:03nuc": {
+      "fantrax_id": "03nuc",
+      "player_name": "Luis Castillo",
+      "primary_position": "SP",
+      "roster_position": "P",
+      "roster_status": "ACTIVE",
+      "team_id": "bw696uo5mj90wrl7",
+      "team_name": "Cant Park Here"
+    },
     "bw696uo5mj90wrl7:03zlh": {
       "fantrax_id": "03zlh",
       "player_name": "Oneil Cruz",
@@ -2531,7 +2550,7 @@
       "player_name": "Justin Wrobleski",
       "primary_position": "RP",
       "roster_position": "P",
-      "roster_status": "ACTIVE",
+      "roster_status": "RESERVE",
       "team_id": "bw696uo5mj90wrl7",
       "team_name": "Cant Park Here"
     },
@@ -2739,15 +2758,6 @@
       "primary_position": "CF",
       "roster_position": "2B",
       "roster_status": "MINORS",
-      "team_id": "bw696uo5mj90wrl7",
-      "team_name": "Cant Park Here"
-    },
-    "bw696uo5mj90wrl7:06rkk": {
-      "fantrax_id": "06rkk",
-      "player_name": "Eduardo Valencia",
-      "primary_position": "1B",
-      "roster_position": "1B",
-      "roster_status": "ACTIVE",
       "team_id": "bw696uo5mj90wrl7",
       "team_name": "Cant Park Here"
     },
@@ -6059,7 +6069,7 @@
       "player_name": "MacKenzie Gore",
       "primary_position": "SP",
       "roster_position": "P",
-      "roster_status": "ACTIVE",
+      "roster_status": "MINORS",
       "team_id": "qatqhh61mj90wrl7",
       "team_name": "Je suis Charlie Morton"
     },
@@ -6148,8 +6158,8 @@
       "fantrax_id": "05jse",
       "player_name": "Tommy Troy",
       "primary_position": "2B",
-      "roster_position": "SS",
-      "roster_status": "MINORS",
+      "roster_position": "2B",
+      "roster_status": "INJURED_RESERVE",
       "team_id": "qatqhh61mj90wrl7",
       "team_name": "Je suis Charlie Morton"
     },
@@ -6213,6 +6223,15 @@
       "primary_position": "C",
       "roster_position": "C",
       "roster_status": "INJURED_RESERVE",
+      "team_id": "qatqhh61mj90wrl7",
+      "team_name": "Je suis Charlie Morton"
+    },
+    "qatqhh61mj90wrl7:05y2k": {
+      "fantrax_id": "05y2k",
+      "player_name": "Mason Montgomery",
+      "primary_position": "RP",
+      "roster_position": "P",
+      "roster_status": "ACTIVE",
       "team_id": "qatqhh61mj90wrl7",
       "team_name": "Je suis Charlie Morton"
     },
