@@ -59,7 +59,8 @@
     "2026-08-03": true,
     "2026-08-04": true,
     "2026-08-05": true,
-    "2026-08-06": true
+    "2026-08-06": true,
+    "2026-08-07": true
   },
   "major_add_alerts": {
     "2026-06-08": {
@@ -6003,6 +6004,15 @@
       "team_id": "qatqhh61mj90wrl7",
       "team_name": "Je suis Charlie Morton"
     },
+    "qatqhh61mj90wrl7:03ann": {
+      "fantrax_id": "03ann",
+      "player_name": "Jeff Hoffman",
+      "primary_position": "RP",
+      "roster_position": "P",
+      "roster_status": "ACTIVE",
+      "team_id": "qatqhh61mj90wrl7",
+      "team_name": "Je suis Charlie Morton"
+    },
     "qatqhh61mj90wrl7:03dbm": {
       "fantrax_id": "03dbm",
       "player_name": "Logan Webb",
@@ -6075,21 +6085,21 @@
       "team_id": "qatqhh61mj90wrl7",
       "team_name": "Je suis Charlie Morton"
     },
-    "qatqhh61mj90wrl7:043ia": {
-      "fantrax_id": "043ia",
-      "player_name": "Adrian Morejon",
-      "primary_position": "RP",
-      "roster_position": "P",
-      "roster_status": "ACTIVE",
-      "team_id": "qatqhh61mj90wrl7",
-      "team_name": "Je suis Charlie Morton"
-    },
     "qatqhh61mj90wrl7:04cd5": {
       "fantrax_id": "04cd5",
       "player_name": "MacKenzie Gore",
       "primary_position": "SP",
       "roster_position": "P",
       "roster_status": "MINORS",
+      "team_id": "qatqhh61mj90wrl7",
+      "team_name": "Je suis Charlie Morton"
+    },
+    "qatqhh61mj90wrl7:04mlx": {
+      "fantrax_id": "04mlx",
+      "player_name": "Matthew Liberatore",
+      "primary_position": "SP",
+      "roster_position": "P",
+      "roster_status": "ACTIVE",
       "team_id": "qatqhh61mj90wrl7",
       "team_name": "Je suis Charlie Morton"
     },
@@ -6188,15 +6198,6 @@
       "player_name": "Jung Hoo Lee",
       "primary_position": "CF",
       "roster_position": "OF",
-      "roster_status": "ACTIVE",
-      "team_id": "qatqhh61mj90wrl7",
-      "team_name": "Je suis Charlie Morton"
-    },
-    "qatqhh61mj90wrl7:05r3a": {
-      "fantrax_id": "05r3a",
-      "player_name": "Brandon Young",
-      "primary_position": "SP",
-      "roster_position": "P",
       "roster_status": "ACTIVE",
       "team_id": "qatqhh61mj90wrl7",
       "team_name": "Je suis Charlie Morton"
