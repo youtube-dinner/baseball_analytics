@@ -1,7 +1,9 @@
 probable_date,game_time_utc,home_away,probable_team,opponent,mlb_player_id,probable_name,fantrax_id,name,mlb_team,primary_position,eligible_positions,league_status,is_rostered,stats_inc_id,rotowire_id,sport_radar_id,game_pk
-2026-08-07,,,ARI,LAD Fri 8:40PM,,Merrill Kelly,02hj7,"Kelly, Merrill",ARI,SP,P,FA,False,11251,15800,871f04aa-367c-48fb-8ae5-a5bd9e27cb8b,
+2026-08-07,,,CIN,@WSH Fri 5:45PM,,Andrew Abbott,05jq2,"Abbott, Andrew",CIN,SP,P,WW,False,,16805,f7000da1-4701-412d-b283-92b0098530a0,
 2026-08-07,,,PIT,NYM Fri 5:40PM,,Carmen Mlodzinski,05a29,"Mlodzinski, Carmen",PIT,RP,P,FA,False,,16695,2c64b648-699e-4b5b-87e5-0c8bb609b724,
+2026-08-07,,,ATL,@NYY Fri 6:05PM,,Tyler Mahle,0312g,"Mahle, Tyler",ATL,SP,P,FA,False,10455,14058,122f24b5-913e-4abd-90ca-62b1d7519665,
 2026-08-07,,,MIA,LAA Fri 6:10PM,,Tyler Phillips,03qt6,"Phillips, Tyler",MIA,RP,P,FA,False,11400,15681,45fc262f-bb5c-4491-b58b-e7eb585f9ec3,
 2026-08-07,,,ATH,@BOS Fri 6:10PM,,Jack Perkins,0657l,"Perkins, Jack",ATH,RP,P,FA,False,,18142,81387e90-584a-4397-8dff-4fc011e1921d,
 2026-08-07,,,COL,@STL Fri 7:15PM,,Ryan Feltner,03r06,"Feltner, Ryan",COL,SP,P,FA,False,,15541,87dfe721-2290-44ac-a106-0aa9e676bfbd,
+2026-08-07,,,KC,CHC Fri 7:10PM,,Daniel Lynch,04pma,"Lynch, Daniel",KC,RP,P,FA,False,11322,15477,efc03ee4-4b93-48c1-bc90-059e319d9f30,
 2026-08-07,,,LAA,@MIA Fri 6:10PM,,George Klassen,067xm,"Klassen, George",LAA,SP,P,FA,False,,18859,7b64f2fa-d827-4ef7-b4aa-f2e27ae7b873,
