@@ -394,6 +394,7 @@
       },
       "f3myl5ugmj90wrl7": {
         "major_add_limit": 10,
+        "none_remaining": true,
         "one_remaining": true,
         "overage_alerted": 0
       },
@@ -2946,15 +2947,6 @@
       "team_id": "f3myl5ugmj90wrl7",
       "team_name": "The Hot and Steamy Boys"
     },
-    "f3myl5ugmj90wrl7:04cwf": {
-      "fantrax_id": "04cwf",
-      "player_name": "Shane Baz",
-      "primary_position": "SP",
-      "roster_position": "P",
-      "roster_status": "ACTIVE",
-      "team_id": "f3myl5ugmj90wrl7",
-      "team_name": "The Hot and Steamy Boys"
-    },
     "f3myl5ugmj90wrl7:04de1": {
       "fantrax_id": "04de1",
       "player_name": "Triston Casas",
@@ -3054,15 +3046,6 @@
       "team_id": "f3myl5ugmj90wrl7",
       "team_name": "The Hot and Steamy Boys"
     },
-    "f3myl5ugmj90wrl7:04q08": {
-      "fantrax_id": "04q08",
-      "player_name": "Kyle Leahy",
-      "primary_position": "RP",
-      "roster_position": "P",
-      "roster_status": "ACTIVE",
-      "team_id": "f3myl5ugmj90wrl7",
-      "team_name": "The Hot and Steamy Boys"
-    },
     "f3myl5ugmj90wrl7:04qow": {
       "fantrax_id": "04qow",
       "player_name": "Kevin Alcantara",
@@ -3077,6 +3060,15 @@
       "player_name": "Dillon Dingler",
       "primary_position": "C",
       "roster_position": "C",
+      "roster_status": "ACTIVE",
+      "team_id": "f3myl5ugmj90wrl7",
+      "team_name": "The Hot and Steamy Boys"
+    },
+    "f3myl5ugmj90wrl7:05jpd": {
+      "fantrax_id": "05jpd",
+      "player_name": "Ian Seymour",
+      "primary_position": "RP",
+      "roster_position": "P",
       "roster_status": "ACTIVE",
       "team_id": "f3myl5ugmj90wrl7",
       "team_name": "The Hot and Steamy Boys"
@@ -3230,7 +3222,7 @@
       "player_name": "Didier Fuentes",
       "primary_position": "SP",
       "roster_position": "P",
-      "roster_status": "MINORS",
+      "roster_status": "ACTIVE",
       "team_id": "f3myl5ugmj90wrl7",
       "team_name": "The Hot and Steamy Boys"
     },
