@@ -60,7 +60,8 @@
     "2026-08-04": true,
     "2026-08-05": true,
     "2026-08-06": true,
-    "2026-08-07": true
+    "2026-08-07": true,
+    "2026-08-08": true
   },
   "major_add_alerts": {
     "2026-06-08": {
@@ -1253,9 +1254,9 @@
       "team_id": "6tnz8jgemj90wrl7",
       "team_name": "Bobby and the NitWitts"
     },
-    "6tnz8jgemj90wrl7:02hj7": {
-      "fantrax_id": "02hj7",
-      "player_name": "Merrill Kelly",
+    "6tnz8jgemj90wrl7:02i3o": {
+      "fantrax_id": "02i3o",
+      "player_name": "Aaron Nola",
       "primary_position": "SP",
       "roster_position": "P",
       "roster_status": "ACTIVE",
@@ -5114,10 +5115,10 @@
       "team_id": "mldxq5pemj90wrl7",
       "team_name": "L\u00e1szlar\u00f3 T\u00f3th"
     },
-    "mldxq5pemj90wrl7:05a1v": {
-      "fantrax_id": "05a1v",
-      "player_name": "Keider Montero",
-      "primary_position": "SP",
+    "mldxq5pemj90wrl7:0596g": {
+      "fantrax_id": "0596g",
+      "player_name": "Reid Detmers",
+      "primary_position": "RP",
       "roster_position": "P",
       "roster_status": "ACTIVE",
       "team_id": "mldxq5pemj90wrl7",
