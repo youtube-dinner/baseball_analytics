@@ -679,7 +679,7 @@ fantrax_id,name,mlb_team,primary_position,eligible_positions,league_status,stats
 06v4z,"Bayles, Max",MIN,SP,P,FA,,,
 06s3e,"Bayless, Jarod",PIT,RP,P,FA,,,59ed92fe-146d-411a-9603-7f2a5091dc30
 0512t,"Baylor, Jamari",NYM,SS,"UT,SS,MI",FA,,16189,
-04cwf,"Baz, Shane",BAL,SP,P,T,10934,14774,a4b31c01-082b-4ea2-8325-766f7e10e92e
+04cwf,"Baz, Shane",BAL,SP,P,WW,10934,14774,a4b31c01-082b-4ea2-8325-766f7e10e92e
 04mjn,"Bazardo, Eduard",SEA,RP,P,FA,,17129,8984b351-e602-475d-b6eb-eabc38470ba7
 06yt9,"Bazil, Sterling",DET,SS,"UT,SS,MI",FA,,,
 05zde,"Bazzana, Travis",CLE,2B,"2B,UT,MI",T,,19498,09f3a47c-3883-4be7-9bdc-1ac681593db3
@@ -1253,7 +1253,7 @@ fantrax_id,name,mlb_team,primary_position,eligible_positions,league_status,stats
 066mx,"Caba, Starlyn",MIA,SS,"UT,SS,MI",FA,,18313,
 06qsc,"Cabada, Juan",CHC,2B,"2B,UT,MI",FA,,19962,
 06bkv,"Caballero, Jorge",(N/A),RF,"OF,UT",FA,,,
-04eig,"Caballero, Jose",NYY,SS,"OF,UT,2B,3B,SS,CI,MI",T,,15202,c5756137-aad3-4279-a217-cff96ccf0db8
+04eig,"Caballero, Jose",NYY,SS,"OF,UT,2B,3B,SS,CI,MI",WW,,15202,c5756137-aad3-4279-a217-cff96ccf0db8
 06qf1,"Cabarcas, Ryan",BAL,RP,P,FA,,,
 03qko,"Cabbage, Trey",(N/A),RF,"OF,UT",FA,,13917,0a039417-4f92-4a88-bf1e-df715d481ffb
 06sb5,"Cabello, Brayan",SF,RP,P,FA,,,
@@ -1478,7 +1478,7 @@ fantrax_id,name,mlb_team,primary_position,eligible_positions,league_status,stats
 05mdt,"Carter, Evan",TEX,CF,"OF,UT",T,,16875,32d00b51-571d-43b7-86eb-ac750e69af35
 06agt,"Carter, Greysen",NYY,SP,P,FA,,19723,
 05uy2,"Carter, Irv",TOR,RP,P,FA,,17403,
-078f6,"Carver, John",HOU,RP,P,WW,,,
+078f6,"Carver, John",HOU,RP,P,FA,,,
 061bm,"Carver, Ross",(N/A),RP,P,FA,,,
 0731c,"Casanova, Esterlin",BOS,SS,"UT,SS,MI",FA,,,
 0731t,"Casanova, Sebastian",TOR,SS,"UT,SS,MI",FA,,,
@@ -1530,7 +1530,7 @@ fantrax_id,name,mlb_team,primary_position,eligible_positions,league_status,stats
 07692,"Castillo, Keisther",KC,SP,P,FA,,,
 05rhs,"Castillo, Kenny",ARI,C,"C,UT",FA,,17224,
 06dqm,"Castillo, Kevyn",LAA,CF,"OF,UT",FA,,20059,
-03nuc,"Castillo, Luis",CHW,SP,P,WW,10514,14495,71791d18-9c59-4e2f-863d-007d3cdd7efd
+03nuc,"Castillo, Luis",CHW,SP,P,FA,10514,14495,71791d18-9c59-4e2f-863d-007d3cdd7efd
 061v8,"Castillo, Luis",MIL,LF,"OF,UT",FA,,18168,
 05yoe,"Castillo, Luis F.",(N/A),SP,P,FA,,18224,c307915b-77df-4231-a477-63644f8ac28e
 04k4u,"Castillo, Max",(N/A),SP,P,FA,,15193,1439620f-2288-45a3-9139-3dfd1067c7f4
@@ -1655,7 +1655,7 @@ fantrax_id,name,mlb_team,primary_position,eligible_positions,league_status,stats
 01gya,"Chapman, Aroldis",BOS,RP,P,T,8616,10866,17a14a6a-42f8-4f2e-86f3-42051584563e
 06m60,"Chapman, Emmanuel",PIT,RP,P,FA,,20741,
 03d6s,"Chapman, Matt",SF,3B,"UT,3B,CI",T,10205,13428,19e35294-99c1-4cd3-bf24-8c2bd0c4c512
-078f4,"Chapman, Noah",BAL,SP,P,WW,,,
+078f4,"Chapman, Noah",BAL,SP,P,FA,,,
 077zz,"Chappel, Greyson",LAA,SP,P,FA,,,
 02mx4,"Chargois, J.T.",(N/A),RP,P,FA,10132,12525,27966a78-ad8b-4fde-80fb-3ccc8958dcc1
 0647z,"Charles, Austin",KC,3B,"UT,3B,SS,CI,MI",FA,,18028,
@@ -1950,7 +1950,7 @@ fantrax_id,name,mlb_team,primary_position,eligible_positions,league_status,stats
 06op2,"Costello, Jack",SD,1B,"OF,1B,UT,CI",FA,,,
 04evo,"Costes, Marty",(N/A),LF,"OF,UT",FA,,17789,b4696f5a-8de4-4033-a895-34c3f4fbda1b
 0664b,"Costes, Maxwell",(N/A),1B,"1B,UT,CI",FA,,,
-078f8,"Coston, Elijah",LAD,RP,P,WW,,,
+078f8,"Coston, Elijah",LAD,RP,P,FA,,,
 06u0c,"Cota, Irving",NYM,RP,P,FA,,,
 0637h,"Cotes, Felix",TB,2B,"2B,UT,MI",FA,,,
 06r03,"Cotter, Cameron",CIN,SP,P,FA,,,
@@ -2391,9 +2391,9 @@ fantrax_id,name,mlb_team,primary_position,eligible_positions,league_status,stats
 05155,"Deppermann, Brad",SF,RP,P,FA,,,
 06ror,"Dernedde, Kyle",CLE,2B,"2B,UT,3B,CI,MI",FA,,,
 06sut,"Deschamps, Nicolas",(N/A),C,"C,UT",FA,,,
-078fa,"Detlefsen, Drew",SD,LF,"OF,UT",WW,,,
+078fa,"Detlefsen, Drew",SD,LF,"OF,UT",FA,,,
 067ym,"Detmers, Parker",(N/A),SP,P,FA,,18947,
-0596g,"Detmers, Reid",LAA,RP,P,WW,11926,16674,1cdd5198-b8c8-4c0f-8c96-b0192b00b8b2
+0596g,"Detmers, Reid",LAA,RP,P,T,11926,16674,1cdd5198-b8c8-4c0f-8c96-b0192b00b8b2
 063e1,"Dettmer, Nathan",ATH,SP,P,FA,,18853,
 051bu,"Devanney, Cam",(N/A),3B,"UT,3B,CI",FA,,19205,60c8d1c1-8430-40bf-80aa-573fb16154b3
 02i31,"Devenski, Chris",PIT,RP,P,FA,10264,12654,a9d45a51-418a-4539-8352-4817409eb481
@@ -2523,7 +2523,7 @@ fantrax_id,name,mlb_team,primary_position,eligible_positions,league_status,stats
 0664q,"Doolan, Liam",(N/A),SP,P,FA,,18581,
 06quu,"Dorchies, Ethan",MIL,SP,P,FA,,20113,
 06qio,"Dorighi, Carter",SEA,3B,"1B,UT,2B,3B,CI,MI",FA,,,
-078f0,"Doroteo, Felix",PIT,RP,P,WW,,21249,
+078f0,"Doroteo, Felix",PIT,RP,P,FA,,21249,
 06quk,"Dorsey, Carson",BAL,SP,P,FA,,,
 06rj9,"Dos Passos, Manuel",ATL,C,"C,UT",FA,,,
 06yd4,"Dos Santos, Sebastian",STL,SS,"UT,SS,MI",T,,20542,
@@ -2788,7 +2788,7 @@ fantrax_id,name,mlb_team,primary_position,eligible_positions,league_status,stats
 03aay,"Estrada, Thairo",(N/A),2B,"2B,UT,MI",FA,10923,14569,2df4c1ae-3eb7-4009-a7ef-00335aa82893
 0776k,"Estrella, Luis",STL,RF,"OF,UT",FA,,,
 064vp,"Estrella, Mauricio",SF,RP,P,FA,,,
-078f3,"Estridge, Carson",HOU,RP,P,WW,,,
+078f3,"Estridge, Carson",HOU,RP,P,FA,,,
 06qll,"Etheridge, J.T.",NYY,SP,P,FA,,,
 06fut,"Etzel, Matthew",MIA,LF,"OF,UT",FA,,19174,
 06rr6,"Eui Song, Chan",(N/A),2B,"2B,UT,MI",FA,,,
@@ -3356,7 +3356,7 @@ fantrax_id,name,mlb_team,primary_position,eligible_positions,league_status,stats
 06v2w,"Geraldo, Jose",SEA,RP,P,FA,,,
 060xy,"Gerardo, Jose",(N/A),RP,P,FA,,18166,
 04pta,"Gerber, Joey",NYM,RP,P,FA,11569,16659,e681b9a9-800a-47b4-8e52-178ec0dba8fb
-078fb,"Gerety, Ryan",SD,CF,"OF,UT",WW,,,
+078fb,"Gerety, Ryan",SD,CF,"OF,UT",FA,,,
 03c97,"German, Domingo",(N/A),SP,P,FA,10069,13600,f7967ff6-16ea-408f-aa90-7d4df691679f
 07634,"German, Lewis",KC,CF,"OF,UT",FA,,,
 064vt,"German, Luis",SD,RP,P,FA,,19887,
@@ -4686,7 +4686,7 @@ fantrax_id,name,mlb_team,primary_position,eligible_positions,league_status,stats
 06uxw,"Kelly, Justin",(N/A),RP,P,FA,,,
 051eh,"Kelly, Kevin",TB,RP,P,FA,,18283,4f244175-792a-43b9-b8fe-fff4c2680662
 06z44,"Kelly, Lucas",SEA,RP,P,FA,,21172,
-02hj7,"Kelly, Merrill",ARI,SP,P,T,11251,15800,871f04aa-367c-48fb-8ae5-a5bd9e27cb8b
+02hj7,"Kelly, Merrill",ARI,SP,P,WW,11251,15800,871f04aa-367c-48fb-8ae5-a5bd9e27cb8b
 02bqn,"Kelly, Michael",(N/A),RP,P,FA,,12164,c7640828-635c-44b1-ad56-201318720baf
 06z7p,"Kelly, Riley",COL,SP,P,FA,,20250,
 073k7,"Kelly, Ronald",CHW,SP,P,FA,,,
@@ -5308,7 +5308,7 @@ fantrax_id,name,mlb_team,primary_position,eligible_positions,league_status,stats
 06ica,"Lugo, Joswa",LAA,SS,"UT,SS,MI",FA,,19222,
 04yic,"Lugo, Matthew",KC,CF,"OF,UT",FA,11737,16073,92daa4ef-b485-4c3d-9166-03602fd19a1f
 04n0h,"Lugo, Moises",(N/A),RP,P,FA,,18383,
-03sef,"Lugo, Seth",KC,SP,P,FA,10326,14095,0600588b-39b2-49eb-9e77-208f8fdaca9b
+03sef,"Lugo, Seth",KC,SP,P,T,10326,14095,0600588b-39b2-49eb-9e77-208f8fdaca9b
 04ymb,"Lugo, William",(N/A),SS,"2B,UT,3B,SS,CI,MI",FA,,15894,
 06akj,"Lugo, Wilmer",NYM,RP,P,FA,,,
 06rhs,"Lugo, Yoneiker",MIL,C,"C,UT",FA,,,
@@ -5683,7 +5683,7 @@ fantrax_id,name,mlb_team,primary_position,eligible_positions,league_status,stats
 06taf,"Matthews, Jason",CHW,3B,"UT,3B,CI",FA,,,
 0516a,"Matthews, John",(N/A),RP,P,FA,,,
 05u3t,"Matthews, Micah",(N/A),3B,"UT,3B,CI",FA,,,
-066cf,"Matthews, Zebby",MIN,SP,P,T,,18788,400ea9ba-f842-4381-b71c-cdcac03d8d00
+066cf,"Matthews, Zebby",MIN,SP,P,WW,,18788,400ea9ba-f842-4381-b71c-cdcac03d8d00
 07808,"Matthijs, Matthew",SEA,RP,P,FA,,,
 06l3j,"Mattison, Connor",MIN,SP,P,FA,,,
 05xom,"Mattison, Tyler",DET,SP,P,FA,,17557,e426b579-14af-4642-8238-acaf0df4dba1
@@ -5697,7 +5697,7 @@ fantrax_id,name,mlb_team,primary_position,eligible_positions,league_status,stats
 0648f,"Maxwell, Zach",CIN,RP,P,FA,,18099,2f08e4f7-e4c8-4148-978c-fced91886ae6
 06mwh,"May, Aiden",COL,SP,P,FA,,19562,
 041r5,"May, Dustin",MIL,SP,P,WW,10898,14331,8c6572ee-d35f-4542-946a-1611e68395fe
-078fc,"May, Ian",LAD,RP,P,WW,,,
+078fc,"May, Ian",LAD,RP,P,FA,,,
 059c2,"Mayberry, Seth",(N/A),RP,P,FA,,,
 05rez,"Mayea, Brando",NYY,CF,"OF,UT",FA,,18294,
 06qra,"Mayer, Bryce",HOU,SP,P,FA,,20033,
@@ -6183,7 +6183,7 @@ fantrax_id,name,mlb_team,primary_position,eligible_positions,league_status,stats
 05r5l,"Montero, Hans",NYY,1B,"1B,UT,2B,CI,MI",FA,,16786,
 0689l,"Montero, Jose",CIN,SP,P,FA,,19792,
 05r5m,"Montero, Juan",BOS,C,"C,UT",FA,,16984,
-05a1v,"Montero, Keider",DET,SP,P,T,,17863,73ecbb81-39b8-4064-95fd-d9fc6907b76c
+05a1v,"Montero, Keider",DET,SP,P,WW,,17863,73ecbb81-39b8-4064-95fd-d9fc6907b76c
 06sul,"Montero, Neurelin",TEX,C,"C,UT",FA,,,
 06y2w,"Montero, Pedro",MIA,SP,P,FA,,,
 02jhl,"Montero, Rafael",NYY,RP,P,FA,9598,12735,0be3617f-5d44-4609-967b-d16bc9681c96
@@ -6262,7 +6262,7 @@ fantrax_id,name,mlb_team,primary_position,eligible_positions,league_status,stats
 06v24,"Morao, Jhonny",(N/A),RP,P,FA,,,
 060ou,"Mordan, Aneudis",(N/A),1B,"1B,UT,CI",FA,,19068,
 06hwo,"Morehouse, Zane",CLE,RP,P,FA,,,
-043ia,"Morejon, Adrian",SD,RP,P,WW,10574,14068,7251332d-7c46-4b43-8a87-a94e185c7e6b
+043ia,"Morejon, Adrian",SD,RP,P,FA,10574,14068,7251332d-7c46-4b43-8a87-a94e185c7e6b
 06uwj,"Morejon, Luis",COL,LF,"OF,UT",FA,,20397,
 06vy5,"Morel, Albert",LAA,SP,P,FA,,,
 06dq5,"Morel, Braylin",(N/A),RF,"OF,UT",FA,,19179,
@@ -6347,7 +6347,7 @@ fantrax_id,name,mlb_team,primary_position,eligible_positions,league_status,stats
 06l5h,"Moutzouridis, P.J.",MIN,SS,"UT,SS,MI",FA,,,
 06qy2,"Moya, Jeyson",SF,3B,"UT,3B,CI",FA,,,
 06qzt,"Moya, Jonathan",DET,LF,"OF,UT",FA,,,
-078f1,"Moyer, Mac",SD,CF,"OF,UT",WW,,,
+078f1,"Moyer, Mac",SD,CF,"OF,UT",FA,,,
 06hf5,"Moylan, Josh",NYY,1B,"1B,UT,3B,CI",FA,,,
 05tcb,"Mozzicato, Frank",KC,SP,P,FA,,17331,ae52766f-0f21-41be-a38b-1133d9c9f2b8
 06qj7,"Mracna, Christian",(N/A),RP,P,FA,,,
@@ -6539,7 +6539,7 @@ fantrax_id,name,mlb_team,primary_position,eligible_positions,league_status,stats
 04yrs,"Noel, Jhonkensy",(N/A),RF,"OF,UT",T,,16470,3662b6e6-e420-4b58-8407-a3cd0fed6a52
 041so,"Nogosek, Stephen",(N/A),RP,P,FA,11601,15153,debfa8e3-8562-4f9a-b8e5-45f99a649017
 06zgp,"Nohos, Cameron",(N/A),RP,P,FA,,,
-02i3o,"Nola, Aaron",PHI,SP,P,FA,9882,13359,ded1b30d-52ca-4eec-bce6-251b15b085ac
+02i3o,"Nola, Aaron",PHI,SP,P,T,9882,13359,ded1b30d-52ca-4eec-bce6-251b15b085ac
 06su6,"Nolan, Chance",(N/A),RP,P,FA,,,
 065iy,"Noland, Connor",CHC,SP,P,FA,,20464,
 05g4n,"Nolasco, Rodolfo",(N/A),RF,"OF,UT",FA,,17230,4421c9f1-2308-479b-b464-1f4eb751af5f
@@ -7007,7 +7007,7 @@ fantrax_id,name,mlb_team,primary_position,eligible_positions,league_status,stats
 06qnt,"Pence, Dalton",TEX,SP,P,FA,,20502,
 06rsi,"Pence, Striker",(N/A),3B,"UT,3B,CI",FA,,,
 05rg6,"Pendleton, Caleb",(N/A),1B,"1B,UT,CI",FA,,,
-078f7,"Pendley, Brady",LAD,RP,P,WW,,,
+078f7,"Pendley, Brady",LAD,RP,P,FA,,,
 06yw6,"Pengelly, Dayne",TOR,SP,P,FA,,,
 066ah,"Penner, Ty",(N/A),1B,"1B,UT,CI",FA,,,
 06qie,"Penney, Jack",DET,2B,"2B,UT,SS,MI",FA,,19706,
@@ -7102,7 +7102,7 @@ fantrax_id,name,mlb_team,primary_position,eligible_positions,league_status,stats
 064p5,"Perez, Manuel",(N/A),SP,P,FA,,,
 066lx,"Perez, Marcelo",SEA,SP,P,FA,,18832,
 064qa,"Perez, Marlon",(N/A),RP,P,FA,,,
-01fhm,"Perez, Martin",ATL,SP,P,WW,8652,10867,9012e198-9f53-4885-8b24-402e51524e82
+01fhm,"Perez, Martin",ATL,SP,P,FA,8652,10867,9012e198-9f53-4885-8b24-402e51524e82
 02btc,"Perez, Michael",(N/A),C,"C,UT",FA,11119,12255,28f7e616-b7ff-4e37-b77a-fbc69ab7a759
 06tn8,"Perez, Michael",MIA,RP,P,FA,,,
 06mhv,"Perez, Miguel",(N/A),LF,"OF,UT",FA,,,
@@ -7215,7 +7215,7 @@ fantrax_id,name,mlb_team,primary_position,eligible_positions,league_status,stats
 072ii,"Pinazzi, Nicolo",LAA,RP,P,FA,,17096,
 06ek5,"Pinckney, Andrew",WSH,CF,"OF,UT",FA,,19033,96bf23a6-452b-4283-a489-a7f5bed27ba4
 06qa3,"Pinder, Rashawn",TEX,CF,"OF,UT",FA,,,
-078f9,"Pineau, Jack",SD,SP,P,WW,,,
+078f9,"Pineau, Jack",SD,SP,P,FA,,,
 06rh6,"Pineda, Alen",(N/A),C,"C,UT",FA,,,
 05ykv,"Pineda, Esmith",CIN,RF,"OF,UT",FA,,18249,
 06rh5,"Pineda, Euri",(N/A),RP,P,FA,,,
@@ -8090,7 +8090,7 @@ fantrax_id,name,mlb_team,primary_position,eligible_positions,league_status,stats
 06if7,"Ruiz, Yoiber",(N/A),C,"C,UT",FA,,,
 06rug,"Rujano, Juan",STL,DH,UT,FA,,,
 06576,"Rujano, Luis",CHC,RP,P,FA,,19903,
-05yb0,"Rumfield, T.J.",COL,1B,"1B,UT,CI",WW,,17710,93dd8717-b9f4-495b-954b-8bc6b6bcf6e2
+05yb0,"Rumfield, T.J.",COL,1B,"1B,UT,CI",T,,17710,93dd8717-b9f4-495b-954b-8bc6b6bcf6e2
 06um8,"Rund, Aaron",(N/A),RP,P,FA,,,
 077yc,"Rusch, Cade",DET,RP,P,FA,,,
 066et,"Rushford, Milo",(N/A),RF,"OF,UT",FA,,19072,
@@ -8404,7 +8404,7 @@ fantrax_id,name,mlb_team,primary_position,eligible_positions,league_status,stats
 06c1i,"Scott, Matt",CLE,SP,P,FA,,20337,
 06fz8,"Scott, Quincy",TEX,1B,"1B,UT,CI",FA,,,
 057w1,"Scott, Stephen",(N/A),C,"C,UT",FA,,18680,a77ac64b-9633-4e50-b84e-461353140566
-03dfa,"Scott, Tanner",LAD,RP,P,WW,10432,14171,9e883466-7d2d-45a0-a509-44c14aeff967
+03dfa,"Scott, Tanner",LAD,RP,P,FA,10432,14171,9e883466-7d2d-45a0-a509-44c14aeff967
 02btg,"Scott, Tayler",(N/A),RP,P,FA,11593,15154,6862278e-5f96-4043-8851-0fd1a5d65d7b
 0648z,"Scott, Victor",STL,CF,"OF,UT",FA,,18144,e3c46c38-b6ad-439c-a03f-287646d47fc0
 066cg,"Scott, Wesley",(N/A),SP,P,FA,,,
@@ -8626,7 +8626,7 @@ fantrax_id,name,mlb_team,primary_position,eligible_positions,league_status,stats
 06nk6,"Sisneros, Cameron",HOU,1B,"1B,UT,CI",FA,,20984,
 05wru,"Skenes, Paul",PIT,SP,P,T,,18838,96de3b8e-efd5-4cdd-a6b8-617e47069c5a
 05ogv,"Skirrow, Noah",(N/A),SP,P,FA,,16963,
-078f5,"Skowronski, Josh",SD,RF,"OF,UT",WW,,,
+078f5,"Skowronski, Josh",SD,RF,"OF,UT",FA,,,
 04ptt,"Skubal, Tarik",LAD,SP,P,T,11763,16006,22187b04-0bc4-4351-a0f6-d41013673cb6
 0512q,"Slaten, Justin",BOS,RP,P,FA,,16231,9d251d7a-c88a-481c-be6a-22fdfc7a1cfe
 03dg7,"Slater, Austin",TB,LF,"OF,UT",FA,10719,13506,a94f3112-28dc-4fb4-a6d1-a73b5c738621
@@ -9214,7 +9214,7 @@ fantrax_id,name,mlb_team,primary_position,eligible_positions,league_status,stats
 04o0z,"Tokar, Heitor",(N/A),RP,P,FA,,15874,
 074vb,"Tokheim, Teddy",(N/A),3B,"UT,3B,CI",FA,,,
 06qow,"Tolbert, Cole",BOS,SP,P,FA,,,
-0519u,"Tolbert, Tyler",KC,CF,"OF,UT,SS,P,MI",WW,,18413,84b55593-b104-482a-9b4d-01b1ee2ed0fb
+0519u,"Tolbert, Tyler",KC,CF,"OF,UT,SS,P,MI",FA,,18413,84b55593-b104-482a-9b4d-01b1ee2ed0fb
 066po,"Toledo, Francisco",NYM,C,"C,UT",FA,,,
 06ms3,"Toledo, Jeral",(N/A),2B,"2B,UT,MI",FA,,,
 06mvb,"Tolentino, Almen",MIA,C,"C,UT",FA,,,
@@ -9701,7 +9701,7 @@ fantrax_id,name,mlb_team,primary_position,eligible_positions,league_status,stats
 072eu,"Wakefield, Josh",HOU,RF,"OF,UT",FA,,,
 0662o,"Walcott, Sebastian",TEX,SS,"UT,SS,MI",T,,18309,
 0513y,"Waldichuk, Ken",WSH,SP,P,FA,,17287,5f586661-b5eb-4830-80fe-d2e7a8d78a95
-0603p,"Waldrep, Hurston",ATL,SP,P,WW,,18880,12bf3b8a-01f7-4312-ab3c-79f547e9fb8f
+0603p,"Waldrep, Hurston",ATL,SP,P,FA,,18880,12bf3b8a-01f7-4312-ab3c-79f547e9fb8f
 051e5,"Waldron, Matt",TOR,SP,P,FA,,19015,a6efa9a9-3dd0-426b-9d1a-edce8c252051
 06dlz,"Waldschmidt, Ryan",ARI,LF,"OF,UT",T,,19526,c0efe266-3b71-4592-a80d-8a5696ea1e1d
 06qew,"Walker, Bo",ARI,LF,"OF,UT",FA,,,
@@ -9728,7 +9728,7 @@ fantrax_id,name,mlb_team,primary_position,eligible_positions,league_status,stats
 0668g,"Walling, Reece",(N/A),RF,"OF,UT",FA,,,
 04o78,"Wallner, Matt",MIN,RF,"OF,UT",FA,11795,16097,91f9054d-6b34-41a8-b032-591dfc026fd7
 04bpj,"Walls, Taylor",TB,SS,"UT,SS,MI",FA,11891,14947,4c8bdaff-1cf9-4b2b-b22e-26b6dcde5d1b
-078f2,"Walsh, Alex",LAD,SP,P,WW,,,
+078f2,"Walsh, Alex",LAD,SP,P,FA,,,
 05zq3,"Walsh, Jacob",WSH,1B,"1B,UT,CI",FA,,,
 04ep2,"Walsh, Jake",(N/A),RP,P,FA,,17697,89b210c0-3f54-4c5f-8ce0-9f6abea20b99
 04p9n,"Walsh, Jared",(N/A),1B,"1B,UT,CI",FA,11585,15591,99b24d3a-ce15-4418-bd86-489cd76d8b2f
@@ -10109,7 +10109,7 @@ fantrax_id,name,mlb_team,primary_position,eligible_positions,league_status,stats
 06hom,"Yost, Eric",SD,SP,P,FA,,20496,
 06y4f,"Yost, Jordan",DET,SS,"UT,SS,MI",FA,,20188,
 03aad,"Young, Alex",WSH,RP,P,FA,10414,13839,186d83c6-e87a-4bf3-a930-31d1ec4cea90
-05r3a,"Young, Brandon",BAL,SP,P,WW,,16949,623e9837-a580-43f3-a524-74342173fe67
+05r3a,"Young, Brandon",BAL,SP,P,FA,,16949,623e9837-a580-43f3-a524-74342173fe67
 05u2n,"Young, Carter",BAL,SS,"UT,3B,SS,CI,MI",FA,,16187,
 046y2,"Young, Chavez",(N/A),CF,"OF,UT",FA,,15850,5b956ef0-aba0-4ae8-adbc-61f74bcebcf1
 0425f,"Young, Christian",(N/A),RP,P,FA,,19208,
