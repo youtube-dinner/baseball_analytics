@@ -423,6 +423,7 @@
       },
       "qatqhh61mj90wrl7": {
         "major_add_limit": 10,
+        "one_remaining": true,
         "overage_alerted": 0
       }
     }
@@ -1175,7 +1176,7 @@
       "player_name": "MacKenzie Gore",
       "team_id": "qatqhh61mj90wrl7",
       "team_name": "Je suis Charlie Morton",
-      "violation_alert_sent": false,
+      "violation_alert_sent": true,
       "window_start": "2026-08-06"
     },
     "qatqhh61mj90wrl7:05uc7": {
@@ -1842,6 +1843,15 @@
       "team_id": "aqfyadu2mj90wrl7",
       "team_name": "Ben the Hen"
     },
+    "aqfyadu2mj90wrl7:02n4s": {
+      "fantrax_id": "02n4s",
+      "player_name": "Matthew Boyd",
+      "primary_position": "SP",
+      "roster_position": "P",
+      "roster_status": "ACTIVE",
+      "team_id": "aqfyadu2mj90wrl7",
+      "team_name": "Ben the Hen"
+    },
     "aqfyadu2mj90wrl7:02n96": {
       "fantrax_id": "02n96",
       "player_name": "Josh Hader",
@@ -1874,15 +1884,6 @@
       "player_name": "Austin Riley",
       "primary_position": "3B",
       "roster_position": "UT",
-      "roster_status": "ACTIVE",
-      "team_id": "aqfyadu2mj90wrl7",
-      "team_name": "Ben the Hen"
-    },
-    "aqfyadu2mj90wrl7:03qt6": {
-      "fantrax_id": "03qt6",
-      "player_name": "Tyler Phillips",
-      "primary_position": "RP",
-      "roster_position": "P",
       "roster_status": "ACTIVE",
       "team_id": "aqfyadu2mj90wrl7",
       "team_name": "Ben the Hen"
@@ -4038,21 +4039,21 @@
       "team_id": "jk36oo1hmj90wrl7",
       "team_name": "Daddy Yankee"
     },
+    "jk36oo1hmj90wrl7:045kb": {
+      "fantrax_id": "045kb",
+      "player_name": "Cristian Javier",
+      "primary_position": "SP",
+      "roster_position": "P",
+      "roster_status": "ACTIVE",
+      "team_id": "jk36oo1hmj90wrl7",
+      "team_name": "Daddy Yankee"
+    },
     "jk36oo1hmj90wrl7:045qo": {
       "fantrax_id": "045qo",
       "player_name": "Jazz Chisholm Jr.",
       "primary_position": "2B",
       "roster_position": "3B",
       "roster_status": "RESERVE",
-      "team_id": "jk36oo1hmj90wrl7",
-      "team_name": "Daddy Yankee"
-    },
-    "jk36oo1hmj90wrl7:04azv": {
-      "fantrax_id": "04azv",
-      "player_name": "Jake Burger",
-      "primary_position": "1B",
-      "roster_position": "UT",
-      "roster_status": "ACTIVE",
       "team_id": "jk36oo1hmj90wrl7",
       "team_name": "Daddy Yankee"
     },
@@ -4452,6 +4453,15 @@
       "team_id": "k7c57nf4mj90wrl8",
       "team_name": "Hand Foot Mouth Disease Guys"
     },
+    "k7c57nf4mj90wrl8:029si": {
+      "fantrax_id": "029si",
+      "player_name": "Eduardo Rodriguez",
+      "primary_position": "SP",
+      "roster_position": "P",
+      "roster_status": "ACTIVE",
+      "team_id": "k7c57nf4mj90wrl8",
+      "team_name": "Hand Foot Mouth Disease Guys"
+    },
     "k7c57nf4mj90wrl8:02hjp": {
       "fantrax_id": "02hjp",
       "player_name": "Jacob deGrom",
@@ -4511,15 +4521,6 @@
       "player_name": "Kyle Tucker",
       "primary_position": "RF",
       "roster_position": "OF",
-      "roster_status": "ACTIVE",
-      "team_id": "k7c57nf4mj90wrl8",
-      "team_name": "Hand Foot Mouth Disease Guys"
-    },
-    "k7c57nf4mj90wrl8:041mb": {
-      "fantrax_id": "041mb",
-      "player_name": "Anthony Kay",
-      "primary_position": "SP",
-      "roster_position": "P",
       "roster_status": "ACTIVE",
       "team_id": "k7c57nf4mj90wrl8",
       "team_name": "Hand Foot Mouth Disease Guys"
@@ -5978,15 +5979,6 @@
       "player_name": "Clay Holmes",
       "primary_position": "SP",
       "roster_position": "P",
-      "roster_status": "INJURED_RESERVE",
-      "team_id": "qatqhh61mj90wrl7",
-      "team_name": "Je suis Charlie Morton"
-    },
-    "qatqhh61mj90wrl7:02c5l": {
-      "fantrax_id": "02c5l",
-      "player_name": "Luke Weaver",
-      "primary_position": "RP",
-      "roster_position": "P",
       "roster_status": "ACTIVE",
       "team_id": "qatqhh61mj90wrl7",
       "team_name": "Je suis Charlie Morton"
@@ -6014,15 +6006,6 @@
       "player_name": "Gleyber Torres",
       "primary_position": "2B",
       "roster_position": "2B",
-      "roster_status": "ACTIVE",
-      "team_id": "qatqhh61mj90wrl7",
-      "team_name": "Je suis Charlie Morton"
-    },
-    "qatqhh61mj90wrl7:03ann": {
-      "fantrax_id": "03ann",
-      "player_name": "Jeff Hoffman",
-      "primary_position": "RP",
-      "roster_position": "P",
       "roster_status": "ACTIVE",
       "team_id": "qatqhh61mj90wrl7",
       "team_name": "Je suis Charlie Morton"
@@ -6072,6 +6055,15 @@
       "team_id": "qatqhh61mj90wrl7",
       "team_name": "Je suis Charlie Morton"
     },
+    "qatqhh61mj90wrl7:041rf": {
+      "fantrax_id": "041rf",
+      "player_name": "Shane Bieber",
+      "primary_position": "SP",
+      "roster_position": "P",
+      "roster_status": "ACTIVE",
+      "team_id": "qatqhh61mj90wrl7",
+      "team_name": "Je suis Charlie Morton"
+    },
     "qatqhh61mj90wrl7:041rj": {
       "fantrax_id": "041rj",
       "player_name": "JoJo Romero",
@@ -6104,13 +6096,13 @@
       "player_name": "MacKenzie Gore",
       "primary_position": "SP",
       "roster_position": "P",
-      "roster_status": "MINORS",
+      "roster_status": "ACTIVE",
       "team_id": "qatqhh61mj90wrl7",
       "team_name": "Je suis Charlie Morton"
     },
-    "qatqhh61mj90wrl7:04mlx": {
-      "fantrax_id": "04mlx",
-      "player_name": "Matthew Liberatore",
+    "qatqhh61mj90wrl7:04pkt": {
+      "fantrax_id": "04pkt",
+      "player_name": "J.T. Ginn",
       "primary_position": "SP",
       "roster_position": "P",
       "roster_status": "ACTIVE",
@@ -6374,15 +6366,6 @@
       "player_name": "A.J. Ewing",
       "primary_position": "CF",
       "roster_position": "OF",
-      "roster_status": "ACTIVE",
-      "team_id": "qatqhh61mj90wrl7",
-      "team_name": "Je suis Charlie Morton"
-    },
-    "qatqhh61mj90wrl7:06guh": {
-      "fantrax_id": "06guh",
-      "player_name": "Brandyn Garcia",
-      "primary_position": "RP",
-      "roster_position": "P",
       "roster_status": "ACTIVE",
       "team_id": "qatqhh61mj90wrl7",
       "team_name": "Je suis Charlie Morton"
