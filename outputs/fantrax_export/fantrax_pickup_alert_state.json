@@ -3984,7 +3984,7 @@
       "fantrax_id": "03btu",
       "player_name": "Willi Castro",
       "primary_position": "2B",
-      "roster_position": "OF",
+      "roster_position": "UT",
       "roster_status": "ACTIVE",
       "team_id": "jk36oo1hmj90wrl7",
       "team_name": "Daddy Yankee"
@@ -4011,7 +4011,7 @@
       "fantrax_id": "03oh0",
       "player_name": "Willson Contreras",
       "primary_position": "1B",
-      "roster_position": "UT",
+      "roster_position": "1B",
       "roster_status": "ACTIVE",
       "team_id": "jk36oo1hmj90wrl7",
       "team_name": "Daddy Yankee"
@@ -4039,7 +4039,7 @@
       "player_name": "Mickey Moniak",
       "primary_position": "RF",
       "roster_position": "OF",
-      "roster_status": "RESERVE",
+      "roster_status": "ACTIVE",
       "team_id": "jk36oo1hmj90wrl7",
       "team_name": "Daddy Yankee"
     },
@@ -4065,7 +4065,7 @@
       "fantrax_id": "045qo",
       "player_name": "Jazz Chisholm Jr.",
       "primary_position": "2B",
-      "roster_position": "UT",
+      "roster_position": "2B",
       "roster_status": "ACTIVE",
       "team_id": "jk36oo1hmj90wrl7",
       "team_name": "Daddy Yankee"
@@ -4101,7 +4101,7 @@
       "fantrax_id": "04nqx",
       "player_name": "Ezequiel Duran",
       "primary_position": "SS",
-      "roster_position": "2B",
+      "roster_position": "UT",
       "roster_status": "ACTIVE",
       "team_id": "jk36oo1hmj90wrl7",
       "team_name": "Daddy Yankee"
@@ -4137,8 +4137,8 @@
       "fantrax_id": "051ia",
       "player_name": "Spencer Horwitz",
       "primary_position": "1B",
-      "roster_position": "1B",
-      "roster_status": "ACTIVE",
+      "roster_position": "UT",
+      "roster_status": "RESERVE",
       "team_id": "jk36oo1hmj90wrl7",
       "team_name": "Daddy Yankee"
     },
