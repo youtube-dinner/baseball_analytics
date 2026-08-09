@@ -3778,7 +3778,7 @@
       "player_name": "Cooper Pratt",
       "primary_position": "SS",
       "roster_position": "UT",
-      "roster_status": "MINORS",
+      "roster_status": "INJURED_RESERVE",
       "team_id": "hd9hwe4mmj90wrl7",
       "team_name": "Third Degree Burnes"
     },
@@ -5506,7 +5506,7 @@
       "player_name": "Griffin Jax",
       "primary_position": "RP",
       "roster_position": "P",
-      "roster_status": "ACTIVE",
+      "roster_status": "RESERVE",
       "team_id": "o4jvg6q3mj90wrl7",
       "team_name": "Skrrt vs The World"
     },
@@ -5569,7 +5569,7 @@
       "player_name": "Kumar Rocker",
       "primary_position": "SP",
       "roster_position": "P",
-      "roster_status": "RESERVE",
+      "roster_status": "ACTIVE",
       "team_id": "o4jvg6q3mj90wrl7",
       "team_name": "Skrrt vs The World"
     },
