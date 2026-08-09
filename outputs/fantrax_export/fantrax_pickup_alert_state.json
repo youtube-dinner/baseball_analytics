@@ -382,6 +382,7 @@
     "2026-08-03": {
       "6tnz8jgemj90wrl7": {
         "major_add_limit": 10,
+        "one_remaining": true,
         "overage_alerted": 0
       },
       "aqfyadu2mj90wrl7": {
@@ -1059,6 +1060,16 @@
       "violation_alert_sent": false,
       "window_start": "2026-07-09"
     },
+    "k7c57nf4mj90wrl8:06z0x": {
+      "demotion_alert_sent": false,
+      "eligible_date": "2026-08-31",
+      "fantrax_id": "06z0x",
+      "player_name": "Caden Hunter",
+      "team_id": "k7c57nf4mj90wrl8",
+      "team_name": "Hand Foot Mouth Disease Guys",
+      "violation_alert_sent": false,
+      "window_start": "2026-08-09"
+    },
     "k7c57nf4mj90wrl8:076rp": {
       "demotion_alert_sent": false,
       "eligible_date": "2026-08-21",
@@ -1255,15 +1266,6 @@
       "primary_position": "RP",
       "roster_position": "P",
       "roster_status": "INJURED_RESERVE",
-      "team_id": "6tnz8jgemj90wrl7",
-      "team_name": "Bobby and the NitWitts"
-    },
-    "6tnz8jgemj90wrl7:02i3o": {
-      "fantrax_id": "02i3o",
-      "player_name": "Aaron Nola",
-      "primary_position": "SP",
-      "roster_position": "P",
-      "roster_status": "ACTIVE",
       "team_id": "6tnz8jgemj90wrl7",
       "team_name": "Bobby and the NitWitts"
     },
@@ -1567,6 +1569,15 @@
     "6tnz8jgemj90wrl7:05wru": {
       "fantrax_id": "05wru",
       "player_name": "Paul Skenes",
+      "primary_position": "SP",
+      "roster_position": "P",
+      "roster_status": "ACTIVE",
+      "team_id": "6tnz8jgemj90wrl7",
+      "team_name": "Bobby and the NitWitts"
+    },
+    "6tnz8jgemj90wrl7:05xop": {
+      "fantrax_id": "05xop",
+      "player_name": "Cade Povich",
       "primary_position": "SP",
       "roster_position": "P",
       "roster_status": "ACTIVE",
@@ -4660,15 +4671,6 @@
       "team_id": "k7c57nf4mj90wrl8",
       "team_name": "Hand Foot Mouth Disease Guys"
     },
-    "k7c57nf4mj90wrl8:05j8u": {
-      "fantrax_id": "05j8u",
-      "player_name": "Jhostynxon Garcia",
-      "primary_position": "CF",
-      "roster_position": "OF",
-      "roster_status": "MINORS",
-      "team_id": "k7c57nf4mj90wrl8",
-      "team_name": "Hand Foot Mouth Disease Guys"
-    },
     "k7c57nf4mj90wrl8:05jp4": {
       "fantrax_id": "05jp4",
       "player_name": "Casey Schmitt",
@@ -4935,6 +4937,15 @@
       "player_name": "Cooper Flemming",
       "primary_position": "SS",
       "roster_position": "SS",
+      "roster_status": "MINORS",
+      "team_id": "k7c57nf4mj90wrl8",
+      "team_name": "Hand Foot Mouth Disease Guys"
+    },
+    "k7c57nf4mj90wrl8:06z0x": {
+      "fantrax_id": "06z0x",
+      "player_name": "Caden Hunter",
+      "primary_position": "SP",
+      "roster_position": "P",
       "roster_status": "MINORS",
       "team_id": "k7c57nf4mj90wrl8",
       "team_name": "Hand Foot Mouth Disease Guys"
