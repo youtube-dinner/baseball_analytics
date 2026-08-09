@@ -1,10 +1,10 @@
 output,rows,path
 current_roster_pitchers.csv,22,/home/runner/work/baseball_analytics/baseball_analytics/outputs/fantasy_baseball_analytics/current_roster_pitchers.csv
-pitcher_analytics.csv,5266,/home/runner/work/baseball_analytics/baseball_analytics/outputs/fantasy_baseball_analytics/pitcher_analytics.csv
-streaming_pitcher_analytics.csv,4,/home/runner/work/baseball_analytics/baseball_analytics/outputs/fantasy_baseball_analytics/streaming_pitcher_analytics.csv
+pitcher_analytics.csv,5276,/home/runner/work/baseball_analytics/baseball_analytics/outputs/fantasy_baseball_analytics/pitcher_analytics.csv
+streaming_pitcher_analytics.csv,9,/home/runner/work/baseball_analytics/baseball_analytics/outputs/fantasy_baseball_analytics/streaming_pitcher_analytics.csv
 current_roster_hitters.csv,37,/home/runner/work/baseball_analytics/baseball_analytics/outputs/fantasy_baseball_analytics/current_roster_hitters.csv
-hitter_analytics.csv,4931,/home/runner/work/baseball_analytics/baseball_analytics/outputs/fantasy_baseball_analytics/hitter_analytics.csv
-free_agent_pitchers.csv,579,/home/runner/work/baseball_analytics/baseball_analytics/outputs/fantasy_baseball_analytics/free_agent_pitchers.csv
+hitter_analytics.csv,4934,/home/runner/work/baseball_analytics/baseball_analytics/outputs/fantasy_baseball_analytics/hitter_analytics.csv
+free_agent_pitchers.csv,576,/home/runner/work/baseball_analytics/baseball_analytics/outputs/fantasy_baseball_analytics/free_agent_pitchers.csv
 free_agent_hitters.csv,383,/home/runner/work/baseball_analytics/baseball_analytics/outputs/fantasy_baseball_analytics/free_agent_hitters.csv
-pitcher_baseball_savant.csv,557,/home/runner/work/baseball_analytics/baseball_analytics/outputs/fantasy_baseball_analytics/pitcher_baseball_savant.csv
+pitcher_baseball_savant.csv,559,/home/runner/work/baseball_analytics/baseball_analytics/outputs/fantasy_baseball_analytics/pitcher_baseball_savant.csv
 hitter_baseball_savant.csv,518,/home/runner/work/baseball_analytics/baseball_analytics/outputs/fantasy_baseball_analytics/hitter_baseball_savant.csv
