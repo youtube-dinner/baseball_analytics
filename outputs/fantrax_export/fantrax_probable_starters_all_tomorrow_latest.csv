@@ -1,8 +1,7 @@
 probable_date,game_time_utc,home_away,probable_team,opponent,mlb_player_id,probable_name,fantrax_id,name,mlb_team,primary_position,eligible_positions,league_status,is_rostered,stats_inc_id,rotowire_id,sport_radar_id,game_pk
 2026-08-10,,,KC,@LAD Mon 9:10PM,,Noah Cameron,05ycf,"Cameron, Noah",KC,SP,P,FA,False,,18727,9f16b92f-5eb3-42b2-8b35-9967e608b9cb,
-2026-08-10,,,TEX,@LAA Mon 8:38PM,,Cal Quantrill,03yxh,"Quantrill, Cal",TEX,SP,P,FA,False,10573,14251,e8abdf47-b38a-44e6-8c6e-4b0bfbd482b0,
+2026-08-10,,,TOR,BOS Mon 6:07PM,,Jameson Taillon,01srb,"Taillon, Jameson",TOR,SP,P,FA,False,9123,11435,0b4c4345-7609-4ab1-9aaa-41d56d7f1fda,
 2026-08-10,,,STL,PHI Mon 6:45PM,,Hunter Dobbins,05y6w,"Dobbins, Hunter",STL,SP,P,FA,False,,19013,df569e68-70ff-479b-8839-554ebd6ea2fb,
 2026-08-10,,,MIN,BAL Mon 6:40PM,,Dean Kremer,041yb,"Kremer, Dean",MIN,SP,P,FA,False,11428,15645,dba3e740-244b-487e-8122-2adc89c206f1,
 2026-08-10,,,COL,@ARI Mon 8:40PM,,Gabriel Hughes,05ubl,"Hughes, Gabriel",COL,SP,P,FA,False,,17941,44d2f893-8201-4477-b22d-4f251f8e04bb,
-2026-08-10,,,SF,HOU Mon 8:45PM,,Blade Tidwell,05u2q,"Tidwell, Blade",SF,SP,P,FA,False,,17944,0f6ab9aa-3a45-411b-8555-82eb99b29f94,
 2026-08-10,,,HOU,@SF Mon 8:45PM,,Hayden Wesneski,0514f,"Wesneski, Hayden",HOU,SP,P,FA,False,,16209,07e64bda-3dd4-4634-84ff-1a2693ea6c76,
