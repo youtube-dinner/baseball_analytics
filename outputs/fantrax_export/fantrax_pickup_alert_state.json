@@ -1880,7 +1880,7 @@
       "player_name": "Blake Snell",
       "primary_position": "SP",
       "roster_position": "P",
-      "roster_status": "INJURED_RESERVE",
+      "roster_status": "ACTIVE",
       "team_id": "aqfyadu2mj90wrl7",
       "team_name": "Ben the Hen"
     },
@@ -1925,15 +1925,6 @@
       "player_name": "Max Muncy",
       "primary_position": "3B",
       "roster_position": "CI",
-      "roster_status": "ACTIVE",
-      "team_id": "aqfyadu2mj90wrl7",
-      "team_name": "Ben the Hen"
-    },
-    "aqfyadu2mj90wrl7:02n4s": {
-      "fantrax_id": "02n4s",
-      "player_name": "Matthew Boyd",
-      "primary_position": "SP",
-      "roster_position": "P",
       "roster_status": "ACTIVE",
       "team_id": "aqfyadu2mj90wrl7",
       "team_name": "Ben the Hen"
@@ -4057,7 +4048,7 @@
       "fantrax_id": "03atq",
       "player_name": "Willy Adames",
       "primary_position": "SS",
-      "roster_position": "MI",
+      "roster_position": "SS",
       "roster_status": "ACTIVE",
       "team_id": "jk36oo1hmj90wrl7",
       "team_name": "Daddy Yankee"
@@ -4138,8 +4129,8 @@
       "fantrax_id": "045qo",
       "player_name": "Jazz Chisholm Jr.",
       "primary_position": "2B",
-      "roster_position": "2B",
-      "roster_status": "RESERVE",
+      "roster_position": "MI",
+      "roster_status": "ACTIVE",
       "team_id": "jk36oo1hmj90wrl7",
       "team_name": "Daddy Yankee"
     },
@@ -4192,8 +4183,8 @@
       "fantrax_id": "04pbq",
       "player_name": "Geraldo Perdomo",
       "primary_position": "SS",
-      "roster_position": "SS",
-      "roster_status": "ACTIVE",
+      "roster_position": "MI",
+      "roster_status": "RESERVE",
       "team_id": "jk36oo1hmj90wrl7",
       "team_name": "Daddy Yankee"
     },
