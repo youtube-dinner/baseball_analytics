@@ -1335,6 +1335,15 @@
       "team_id": "6tnz8jgemj90wrl7",
       "team_name": "Bobby and the NitWitts"
     },
+    "6tnz8jgemj90wrl7:02jh6": {
+      "fantrax_id": "02jh6",
+      "player_name": "Eugenio Suarez",
+      "primary_position": "3B",
+      "roster_position": "UT",
+      "roster_status": "ACTIVE",
+      "team_id": "6tnz8jgemj90wrl7",
+      "team_name": "Bobby and the NitWitts"
+    },
     "6tnz8jgemj90wrl7:02xic": {
       "fantrax_id": "02xic",
       "player_name": "Teoscar Hernandez",
@@ -1349,6 +1358,15 @@
       "player_name": "Jake Bauers",
       "primary_position": "LF",
       "roster_position": "CI",
+      "roster_status": "ACTIVE",
+      "team_id": "6tnz8jgemj90wrl7",
+      "team_name": "Bobby and the NitWitts"
+    },
+    "6tnz8jgemj90wrl7:031cy": {
+      "fantrax_id": "031cy",
+      "player_name": "Emilio Pagan",
+      "primary_position": "RP",
+      "roster_position": "P",
       "roster_status": "ACTIVE",
       "team_id": "6tnz8jgemj90wrl7",
       "team_name": "Bobby and the NitWitts"
@@ -1483,7 +1501,7 @@
       "fantrax_id": "04mn2",
       "player_name": "Griffin Conine",
       "primary_position": "LF",
-      "roster_position": "UT",
+      "roster_position": "OF",
       "roster_status": "ACTIVE",
       "team_id": "6tnz8jgemj90wrl7",
       "team_name": "Bobby and the NitWitts"
@@ -1520,7 +1538,7 @@
       "player_name": "Kyle Stowers",
       "primary_position": "LF",
       "roster_position": "OF",
-      "roster_status": "ACTIVE",
+      "roster_status": "INJURED_RESERVE",
       "team_id": "6tnz8jgemj90wrl7",
       "team_name": "Bobby and the NitWitts"
     },
@@ -1530,15 +1548,6 @@
       "primary_position": "LF",
       "roster_position": "OF",
       "roster_status": "MINORS",
-      "team_id": "6tnz8jgemj90wrl7",
-      "team_name": "Bobby and the NitWitts"
-    },
-    "6tnz8jgemj90wrl7:05143": {
-      "fantrax_id": "05143",
-      "player_name": "Hunter Gaddis",
-      "primary_position": "RP",
-      "roster_position": "P",
-      "roster_status": "ACTIVE",
       "team_id": "6tnz8jgemj90wrl7",
       "team_name": "Bobby and the NitWitts"
     },
