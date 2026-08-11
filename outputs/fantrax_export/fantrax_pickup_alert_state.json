@@ -1423,6 +1423,15 @@
       "team_id": "6tnz8jgemj90wrl7",
       "team_name": "Bobby and the NitWitts"
     },
+    "6tnz8jgemj90wrl7:03qpi": {
+      "fantrax_id": "03qpi",
+      "player_name": "Patrick Sandoval",
+      "primary_position": "SP",
+      "roster_position": "P",
+      "roster_status": "ACTIVE",
+      "team_id": "6tnz8jgemj90wrl7",
+      "team_name": "Bobby and the NitWitts"
+    },
     "6tnz8jgemj90wrl7:03yrz": {
       "fantrax_id": "03yrz",
       "player_name": "William Contreras",
@@ -1600,15 +1609,6 @@
       "primary_position": "SP",
       "roster_position": "P",
       "roster_status": "INJURED_RESERVE",
-      "team_id": "6tnz8jgemj90wrl7",
-      "team_name": "Bobby and the NitWitts"
-    },
-    "6tnz8jgemj90wrl7:05u2q": {
-      "fantrax_id": "05u2q",
-      "player_name": "Blade Tidwell",
-      "primary_position": "SP",
-      "roster_position": "P",
-      "roster_status": "ACTIVE",
       "team_id": "6tnz8jgemj90wrl7",
       "team_name": "Bobby and the NitWitts"
     },
@@ -3412,15 +3412,6 @@
       "team_id": "f3myl5ugmj90wrl7",
       "team_name": "The Hot and Steamy Boys"
     },
-    "hd9hwe4mmj90wrl7:01srb": {
-      "fantrax_id": "01srb",
-      "player_name": "Jameson Taillon",
-      "primary_position": "SP",
-      "roster_position": "P",
-      "roster_status": "ACTIVE",
-      "team_id": "hd9hwe4mmj90wrl7",
-      "team_name": "Third Degree Burnes"
-    },
     "hd9hwe4mmj90wrl7:02i2j": {
       "fantrax_id": "02i2j",
       "player_name": "Max Fried",
@@ -3434,6 +3425,15 @@
       "fantrax_id": "02n2x",
       "player_name": "Paul Sewald",
       "primary_position": "RP",
+      "roster_position": "P",
+      "roster_status": "ACTIVE",
+      "team_id": "hd9hwe4mmj90wrl7",
+      "team_name": "Third Degree Burnes"
+    },
+    "hd9hwe4mmj90wrl7:02nb6": {
+      "fantrax_id": "02nb6",
+      "player_name": "Drew Anderson",
+      "primary_position": "SP",
       "roster_position": "P",
       "roster_status": "ACTIVE",
       "team_id": "hd9hwe4mmj90wrl7",
