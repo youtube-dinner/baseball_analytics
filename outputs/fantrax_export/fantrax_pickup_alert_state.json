@@ -1235,6 +1235,16 @@
       "violation_alert_sent": false,
       "window_start": "2026-06-14"
     },
+    "qatqhh61mj90wrl7:041ps": {
+      "demotion_alert_sent": true,
+      "eligible_date": "2026-09-02",
+      "fantrax_id": "041ps",
+      "player_name": "Nick Lodolo",
+      "team_id": "qatqhh61mj90wrl7",
+      "team_name": "Je suis Charlie Morton",
+      "violation_alert_sent": false,
+      "window_start": "2026-08-11"
+    },
     "qatqhh61mj90wrl7:04cd5": {
       "demotion_alert_sent": true,
       "eligible_date": "2026-08-28",
@@ -6058,6 +6068,15 @@
       "team_id": "qatqhh61mj90wrl7",
       "team_name": "Je suis Charlie Morton"
     },
+    "qatqhh61mj90wrl7:02c5l": {
+      "fantrax_id": "02c5l",
+      "player_name": "Luke Weaver",
+      "primary_position": "RP",
+      "roster_position": "P",
+      "roster_status": "ACTIVE",
+      "team_id": "qatqhh61mj90wrl7",
+      "team_name": "Je suis Charlie Morton"
+    },
     "qatqhh61mj90wrl7:02mwm": {
       "fantrax_id": "02mwm",
       "player_name": "Matt Olson",
@@ -6117,7 +6136,7 @@
       "player_name": "Nick Lodolo",
       "primary_position": "SP",
       "roster_position": "P",
-      "roster_status": "INJURED_RESERVE",
+      "roster_status": "MINORS",
       "team_id": "qatqhh61mj90wrl7",
       "team_name": "Je suis Charlie Morton"
     },
@@ -6256,15 +6275,6 @@
       "team_id": "qatqhh61mj90wrl7",
       "team_name": "Je suis Charlie Morton"
     },
-    "qatqhh61mj90wrl7:051eh": {
-      "fantrax_id": "051eh",
-      "player_name": "Kevin Kelly",
-      "primary_position": "RP",
-      "roster_position": "P",
-      "roster_status": "ACTIVE",
-      "team_id": "qatqhh61mj90wrl7",
-      "team_name": "Je suis Charlie Morton"
-    },
     "qatqhh61mj90wrl7:05gww": {
       "fantrax_id": "05gww",
       "player_name": "Cade Horton",
@@ -6337,21 +6347,21 @@
       "team_id": "qatqhh61mj90wrl7",
       "team_name": "Je suis Charlie Morton"
     },
+    "qatqhh61mj90wrl7:05y2k": {
+      "fantrax_id": "05y2k",
+      "player_name": "Mason Montgomery",
+      "primary_position": "RP",
+      "roster_position": "P",
+      "roster_status": "ACTIVE",
+      "team_id": "qatqhh61mj90wrl7",
+      "team_name": "Je suis Charlie Morton"
+    },
     "qatqhh61mj90wrl7:05y30": {
       "fantrax_id": "05y30",
       "player_name": "Justin Crawford",
       "primary_position": "CF",
       "roster_position": "OF",
       "roster_status": "MINORS",
-      "team_id": "qatqhh61mj90wrl7",
-      "team_name": "Je suis Charlie Morton"
-    },
-    "qatqhh61mj90wrl7:05ycf": {
-      "fantrax_id": "05ycf",
-      "player_name": "Noah Cameron",
-      "primary_position": "SP",
-      "roster_position": "P",
-      "roster_status": "ACTIVE",
       "team_id": "qatqhh61mj90wrl7",
       "team_name": "Je suis Charlie Morton"
     },
