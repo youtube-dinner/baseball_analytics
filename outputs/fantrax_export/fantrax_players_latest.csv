@@ -8260,7 +8260,7 @@ fantrax_id,name,mlb_team,primary_position,eligible_positions,league_status,stats
 0776d,"Sandoval, Carlos",HOU,LF,"OF,UT",FA,,,
 064n1,"Sandoval, Eliam",(N/A),LF,"OF,UT",FA,,,
 06r29,"Sandoval, Joshuan",(N/A),1B,"1B,UT,CI",FA,,,
-03qpi,"Sandoval, Patrick",BOS,SP,P,FA,11478,15342,f69252fd-0aa5-4043-9875-d0aa4915056a
+03qpi,"Sandoval, Patrick",BOS,SP,P,T,11478,15342,f69252fd-0aa5-4043-9875-d0aa4915056a
 04yl9,"Sandridge, Jayvien",BAL,RP,P,FA,,19852,84a60be4-3f69-47c5-aa2e-2fa266d0a70c
 03qxr,"Sands, Cole",MIN,RP,P,FA,,13859,6104d7b2-b208-4bb3-b76d-a21f3c661e78
 03qnj,"Sands, Donny",(N/A),C,"C,UT",FA,,17684,773ecf6a-79b5-437e-961a-c567eecd0098
@@ -9200,7 +9200,7 @@ fantrax_id,name,mlb_team,primary_position,eligible_positions,league_status,stats
 06qxs,"Tiberi, Humberto",LAA,C,"C,UT",FA,,19410,
 06qp1,"Tiberia, Matt",SEA,SP,P,FA,,,
 06rt7,"Tiburcio, Brian",COL,RP,P,FA,,,
-05u2q,"Tidwell, Blade",SF,SP,P,T,,17944,0f6ab9aa-3a45-411b-8555-82eb99b29f94
+05u2q,"Tidwell, Blade",SF,SP,P,WW,,17944,0f6ab9aa-3a45-411b-8555-82eb99b29f94
 06hw5,"Tiedemann, Josh",NYY,RP,P,FA,,,
 05js6,"Tiedemann, Ricky",TOR,SP,P,FA,,16743,8ec3be78-9b04-4af9-9d8b-b04566118637
 06fqy,"Tiger, Izack",TEX,SP,P,FA,,19245,
