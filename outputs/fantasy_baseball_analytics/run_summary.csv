@@ -1,10 +1,10 @@
 output,rows,path
 current_roster_pitchers.csv,22,/home/runner/work/baseball_analytics/baseball_analytics/outputs/fantasy_baseball_analytics/current_roster_pitchers.csv
-pitcher_analytics.csv,5315,/home/runner/work/baseball_analytics/baseball_analytics/outputs/fantasy_baseball_analytics/pitcher_analytics.csv
-streaming_pitcher_analytics.csv,12,/home/runner/work/baseball_analytics/baseball_analytics/outputs/fantasy_baseball_analytics/streaming_pitcher_analytics.csv
+pitcher_analytics.csv,5322,/home/runner/work/baseball_analytics/baseball_analytics/outputs/fantasy_baseball_analytics/pitcher_analytics.csv
+streaming_pitcher_analytics.csv,13,/home/runner/work/baseball_analytics/baseball_analytics/outputs/fantasy_baseball_analytics/streaming_pitcher_analytics.csv
 current_roster_hitters.csv,38,/home/runner/work/baseball_analytics/baseball_analytics/outputs/fantasy_baseball_analytics/current_roster_hitters.csv
-hitter_analytics.csv,4952,/home/runner/work/baseball_analytics/baseball_analytics/outputs/fantasy_baseball_analytics/hitter_analytics.csv
-free_agent_pitchers.csv,580,/home/runner/work/baseball_analytics/baseball_analytics/outputs/fantasy_baseball_analytics/free_agent_pitchers.csv
+hitter_analytics.csv,4958,/home/runner/work/baseball_analytics/baseball_analytics/outputs/fantasy_baseball_analytics/hitter_analytics.csv
+free_agent_pitchers.csv,581,/home/runner/work/baseball_analytics/baseball_analytics/outputs/fantasy_baseball_analytics/free_agent_pitchers.csv
 free_agent_hitters.csv,386,/home/runner/work/baseball_analytics/baseball_analytics/outputs/fantasy_baseball_analytics/free_agent_hitters.csv
 pitcher_baseball_savant.csv,565,/home/runner/work/baseball_analytics/baseball_analytics/outputs/fantasy_baseball_analytics/pitcher_baseball_savant.csv
 hitter_baseball_savant.csv,521,/home/runner/work/baseball_analytics/baseball_analytics/outputs/fantasy_baseball_analytics/hitter_baseball_savant.csv
