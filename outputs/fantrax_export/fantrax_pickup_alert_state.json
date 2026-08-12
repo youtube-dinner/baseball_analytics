@@ -827,6 +827,16 @@
       "violation_alert_sent": false,
       "window_start": "2026-06-23"
     },
+    "f3myl5ugmj90wrl7:06plc": {
+      "demotion_alert_sent": true,
+      "eligible_date": "2026-09-03",
+      "fantrax_id": "06plc",
+      "player_name": "Sam Antonacci",
+      "team_id": "f3myl5ugmj90wrl7",
+      "team_name": "The Hot and Steamy Boys",
+      "violation_alert_sent": false,
+      "window_start": "2026-08-12"
+    },
     "f3myl5ugmj90wrl7:06qxu": {
       "demotion_alert_sent": false,
       "eligible_date": "2026-07-10",
@@ -2920,6 +2930,15 @@
       "team_id": "f3myl5ugmj90wrl7",
       "team_name": "The Hot and Steamy Boys"
     },
+    "f3myl5ugmj90wrl7:01sy3": {
+      "fantrax_id": "01sy3",
+      "player_name": "Nolan Arenado",
+      "primary_position": "3B",
+      "roster_position": "UT",
+      "roster_status": "ACTIVE",
+      "team_id": "f3myl5ugmj90wrl7",
+      "team_name": "The Hot and Steamy Boys"
+    },
     "f3myl5ugmj90wrl7:01ub6": {
       "fantrax_id": "01ub6",
       "player_name": "Jose Ramirez",
@@ -3384,7 +3403,7 @@
       "player_name": "Sam Antonacci",
       "primary_position": "2B",
       "roster_position": "UT",
-      "roster_status": "ACTIVE",
+      "roster_status": "MINORS",
       "team_id": "f3myl5ugmj90wrl7",
       "team_name": "The Hot and Steamy Boys"
     },
