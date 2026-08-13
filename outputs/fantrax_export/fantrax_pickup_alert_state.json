@@ -2949,15 +2949,6 @@
       "team_id": "f3myl5ugmj90wrl7",
       "team_name": "The Hot and Steamy Boys"
     },
-    "f3myl5ugmj90wrl7:01sy3": {
-      "fantrax_id": "01sy3",
-      "player_name": "Nolan Arenado",
-      "primary_position": "3B",
-      "roster_position": "UT",
-      "roster_status": "ACTIVE",
-      "team_id": "f3myl5ugmj90wrl7",
-      "team_name": "The Hot and Steamy Boys"
-    },
     "f3myl5ugmj90wrl7:01ub6": {
       "fantrax_id": "01ub6",
       "player_name": "Jose Ramirez",
@@ -3153,6 +3144,15 @@
       "primary_position": "SP",
       "roster_position": "P",
       "roster_status": "INJURED_RESERVE",
+      "team_id": "f3myl5ugmj90wrl7",
+      "team_name": "The Hot and Steamy Boys"
+    },
+    "f3myl5ugmj90wrl7:04ppi": {
+      "fantrax_id": "04ppi",
+      "player_name": "Kody Clemens",
+      "primary_position": "1B",
+      "roster_position": "UT",
+      "roster_status": "ACTIVE",
       "team_id": "f3myl5ugmj90wrl7",
       "team_name": "The Hot and Steamy Boys"
     },
@@ -5163,15 +5163,6 @@
       "team_id": "mldxq5pemj90wrl7",
       "team_name": "L\u00e1szlar\u00f3 T\u00f3th"
     },
-    "mldxq5pemj90wrl7:04ppi": {
-      "fantrax_id": "04ppi",
-      "player_name": "Kody Clemens",
-      "primary_position": "1B",
-      "roster_position": "UT",
-      "roster_status": "ACTIVE",
-      "team_id": "mldxq5pemj90wrl7",
-      "team_name": "L\u00e1szlar\u00f3 T\u00f3th"
-    },
     "mldxq5pemj90wrl7:04prt": {
       "fantrax_id": "04prt",
       "player_name": "Lawrence Butler",
@@ -5199,6 +5190,15 @@
       "team_id": "mldxq5pemj90wrl7",
       "team_name": "L\u00e1szlar\u00f3 T\u00f3th"
     },
+    "mldxq5pemj90wrl7:04y9f": {
+      "fantrax_id": "04y9f",
+      "player_name": "Ryan Zeferjahn",
+      "primary_position": "RP",
+      "roster_position": "P",
+      "roster_status": "ACTIVE",
+      "team_id": "mldxq5pemj90wrl7",
+      "team_name": "L\u00e1szlar\u00f3 T\u00f3th"
+    },
     "mldxq5pemj90wrl7:04z6m": {
       "fantrax_id": "04z6m",
       "player_name": "Agustin Ramirez",
@@ -5213,7 +5213,7 @@
       "player_name": "Victor Bericoto",
       "primary_position": "1B",
       "roster_position": "UT",
-      "roster_status": "RESERVE",
+      "roster_status": "ACTIVE",
       "team_id": "mldxq5pemj90wrl7",
       "team_name": "L\u00e1szlar\u00f3 T\u00f3th"
     },
