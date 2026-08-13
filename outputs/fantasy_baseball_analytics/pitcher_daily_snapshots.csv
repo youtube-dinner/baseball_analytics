@@ -361270,8 +361270,8 @@ snapshot_date,Player,Player_standard,pitching_score,command_score,whiff_percent,
 2026-08-13,Dylan Lee,dylan lee,2.21,0.63,37.7,56.0,1.0,534.25
 2026-08-13,Merrill Kelly,merrill kelly,0.47,1.35,21.6,21.0,5.7,533.75
 2026-08-13,Tomoyuki Sugano,tomoyuki sugano,-0.56,0.57,18.2,21.0,5.4,533.5
+2026-08-13,Brent Headrick,brent headrick,0.36,-0.82,31.9,61.0,1.0,531.5
 2026-08-13,Andres Munoz,andres munoz,2.63,0.71,40.3,45.0,0.9,530.25
-2026-08-13,Brent Headrick,brent headrick,0.36,-0.82,31.9,61.0,1.0,525.5
 2026-08-13,Griffin Jax,griffin jax,1.15,0.42,31.2,29.0,3.1,524.25
 2026-08-13,Gerrit Cole,gerrit cole,-0.13,0.52,21.5,14.0,5.7,522.25
 2026-08-13,Emmet Sheehan,emmet sheehan,0.98,0.26,30.8,20.0,4.8,521.25
@@ -361316,12 +361316,12 @@ snapshot_date,Player,Player_standard,pitching_score,command_score,whiff_percent,
 2026-08-13,Connor Prielipp,connor prielipp,-0.28,-0.08,23.5,16.0,5.1,432.75
 2026-08-13,Jeffrey Springs,jeffrey springs,0.09,0.42,23.6,22.0,4.9,432.0
 2026-08-13,Didier Fuentes,didier fuentes,0.5,-0.23,29.9,42.0,1.2,429.25
-2026-08-13,Rhett Lowder,rhett lowder,-1.05,-0.63,20.8,20.0,4.4,428.0
 2026-08-13,Ben Brown,ben brown,0.25,-0.08,27.3,20.0,3.4,427.5
 2026-08-13,Adrian Houser,adrian houser,-0.36,0.93,17.8,23.0,4.2,427.0
 2026-08-13,Spencer Miles,spencer miles,-1.04,-0.15,18.4,35.0,2.2,426.75
 2026-08-13,Brandon Pfaadt,brandon pfaadt,-0.64,0.04,20.3,21.0,4.1,426.25
 2026-08-13,Fernando Cruz,fernando cruz,1.79,-0.27,39.3,55.0,0.9,426.0
+2026-08-13,Rhett Lowder,rhett lowder,-1.05,-0.63,20.8,20.0,4.4,426.0
 2026-08-13,Mason Montgomery,mason montgomery,-0.27,-1.69,31.8,48.0,1.0,423.25
 2026-08-13,Josh Hader,josh hader,1.78,0.01,37.8,28.0,1.0,421.0
 2026-08-13,Michael Petersen,michael petersen,-0.3,-1.18,29.0,48.0,1.0,420.75
@@ -361329,6 +361329,7 @@ snapshot_date,Player,Player_standard,pitching_score,command_score,whiff_percent,
 2026-08-13,Jake Bennett,jake bennett,0.18,0.58,23.4,13.0,5.9,415.0
 2026-08-13,Devin Williams,devin williams,1.96,0.82,34.9,42.0,0.9,414.5
 2026-08-13,Tatsuya Imai,tatsuya imai,0.08,-1.35,32.6,16.0,3.8,411.25
+2026-08-13,Eric Lauer,eric lauer,-0.31,0.94,18.1,18.0,5.1,411.25
 2026-08-13,Sean Newcomb,sean newcomb,-0.34,-0.37,24.6,44.0,1.5,411.25
 2026-08-13,Rico Garcia,rico garcia,1.77,0.83,33.5,55.0,0.9,409.75
 2026-08-13,Tyler Rogers,tyler rogers,-2.68,-1.51,13.6,56.0,1.0,406.5
@@ -361343,7 +361344,6 @@ snapshot_date,Player,Player_standard,pitching_score,command_score,whiff_percent,
 2026-08-13,Jack Leiter,jack leiter,0.18,0.19,25.4,15.0,5.3,392.25
 2026-08-13,Mike Burrows,mike burrows,-0.21,0.39,21.6,18.0,5.2,392.25
 2026-08-13,Javier Assad,javier assad,-1.62,-0.15,14.3,20.0,3.8,391.5
-2026-08-13,Eric Lauer,eric lauer,-0.31,0.94,18.1,18.0,5.1,389.5
 2026-08-13,Jacob Lopez,jacob lopez,-0.38,-0.32,24.0,19.0,4.3,387.0
 2026-08-13,Garrett Cleavinger,garrett cleavinger,0.74,0.18,29.5,42.0,0.8,385.5
 2026-08-13,Braydon Fisher,braydon fisher,0.14,-0.12,26.7,57.0,1.1,383.25
@@ -361355,6 +361355,7 @@ snapshot_date,Player,Player_standard,pitching_score,command_score,whiff_percent,
 2026-08-13,Michael Lorenzen,michael lorenzen,-0.98,-0.02,18.2,25.0,4.5,375.5
 2026-08-13,Mason Fluharty,mason fluharty,0.42,-0.14,28.8,62.0,0.8,373.25
 2026-08-13,Erik Sabrowski,erik sabrowski,-1.02,-2.65,31.3,43.0,0.7,373.25
+2026-08-13,Paul Blackburn,paul blackburn,0.08,0.72,22.0,43.0,1.5,373.0
 2026-08-13,Ryan Feltner,ryan feltner,-0.78,-0.85,23.9,17.0,4.8,371.75
 2026-08-13,Reynaldo Lopez,reynaldo lopez,-0.56,-0.14,21.8,24.0,3.0,371.0
 2026-08-13,Caleb Kilian,caleb kilian,0.25,-0.2,27.9,49.0,1.0,370.25
@@ -361362,7 +361363,6 @@ snapshot_date,Player,Player_standard,pitching_score,command_score,whiff_percent,
 2026-08-13,Edward Cabrera,edward cabrera,0.27,0.13,26.4,14.0,5.1,368.75
 2026-08-13,Enyel De Los Santos,enyel de los santos,1.29,1.1,28.7,52.0,1.1,368.5
 2026-08-13,Ryne Stanek,ryne stanek,0.23,-0.38,28.7,52.0,0.9,368.5
-2026-08-13,Paul Blackburn,paul blackburn,0.08,0.72,22.0,43.0,1.5,365.0
 2026-08-13,Clayton Beeter,clayton beeter,-0.9,-1.77,27.7,38.0,0.9,364.75
 2026-08-13,Tyler Alexander,tyler alexander,0.26,0.93,22.2,53.0,1.0,364.25
 2026-08-13,Brad Lord,brad lord,-1.02,-0.57,20.7,29.0,2.1,363.25
@@ -361370,9 +361370,9 @@ snapshot_date,Player,Player_standard,pitching_score,command_score,whiff_percent,
 2026-08-13,Andrew Alvarez,andrew alvarez,0.32,0.16,26.6,17.0,4.1,362.75
 2026-08-13,Orion Kerkering,orion kerkering,-0.66,-1.36,27.3,50.0,0.9,362.25
 2026-08-13,Calvin Faucher,calvin faucher,-0.45,-0.91,26.5,50.0,1.0,359.0
+2026-08-13,Huascar Brazoban,huascar brazoban,0.65,0.74,26.0,49.0,1.1,358.75
 2026-08-13,Antonio Senzatela,antonio senzatela,0.28,0.54,24.3,37.0,1.5,358.75
 2026-08-13,Erik Miller,erik miller,1.31,-0.26,35.8,41.0,0.9,358.0
-2026-08-13,Huascar Brazoban,huascar brazoban,0.65,0.74,26.0,49.0,1.1,356.0
 2026-08-13,Lake Bachar,lake bachar,0.89,0.07,31.1,40.0,1.6,355.75
 2026-08-13,Bradgley Rodriguez,bradgley rodriguez,0.56,0.06,28.8,49.0,1.1,354.5
 2026-08-13,Colin Holderman,colin holderman,0.89,0.68,28.0,46.0,1.0,352.75
@@ -361387,6 +361387,7 @@ snapshot_date,Player,Player_standard,pitching_score,command_score,whiff_percent,
 2026-08-13,Patrick Corbin,patrick corbin,0.6,1.63,21.1,19.0,4.2,336.25
 2026-08-13,Hunter Gaddis,hunter gaddis,0.75,0.11,29.9,46.0,0.8,336.0
 2026-08-13,Robert Gasser,robert gasser,-0.42,0.02,22.0,13.0,5.2,334.5
+2026-08-13,Daniel Lynch,daniel lynch,0.96,0.63,28.8,47.0,1.0,334.25
 2026-08-13,Tyler Holton,tyler holton,0.06,0.4,23.5,51.0,1.1,333.75
 2026-08-13,Edgardo Henriquez,edgardo henriquez,0.27,-0.35,28.8,47.0,1.0,330.75
 2026-08-13,Zac Gallen,zac gallen,-0.01,1.18,19.0,19.0,5.2,330.75
@@ -361398,13 +361399,13 @@ snapshot_date,Player,Player_standard,pitching_score,command_score,whiff_percent,
 2026-08-13,JoJo Romero,jojo romero,0.75,1.34,23.6,44.0,1.0,327.0
 2026-08-13,Juan Mejia,juan mejia,-0.47,-0.78,25.7,47.0,1.1,326.0
 2026-08-13,Sam Bachman,sam bachman,0.41,-0.99,33.1,41.0,1.1,325.25
-2026-08-13,Daniel Lynch,daniel lynch,0.96,0.63,28.8,47.0,1.0,325.0
 2026-08-13,Peyton Gray,peyton gray,0.55,0.46,26.7,39.0,1.2,324.0
 2026-08-13,Emilio Pagan,emilio pagan,1.15,0.87,28.9,28.0,0.9,322.25
 2026-08-13,Jakob Junis,jakob junis,-0.87,0.01,18.8,36.0,1.1,321.75
 2026-08-13,Alex Lange,alex lange,0.14,-0.14,26.8,45.0,1.0,320.25
 2026-08-13,Brent Suter,brent suter,-0.15,0.21,22.9,43.0,1.6,318.75
 2026-08-13,Jared Jones,jared jones,1.06,0.49,30.2,13.0,4.5,318.25
+2026-08-13,Cal Quantrill,cal quantrill,0.03,1.32,18.5,24.0,2.7,318.25
 2026-08-13,Luinder Avila,luinder avila,-0.79,-0.87,23.9,21.0,3.3,317.75
 2026-08-13,Chase Silseth,chase silseth,0.63,-0.58,32.6,53.0,0.9,316.5
 2026-08-13,Lucas Erceg,lucas erceg,-1.26,-0.96,21.0,46.0,0.9,316.25
@@ -361427,7 +361428,6 @@ snapshot_date,Player,Player_standard,pitching_score,command_score,whiff_percent,
 2026-08-13,Carlos Rodon,carlos rodon,-0.76,-1.79,28.8,9.0,5.1,298.5
 2026-08-13,Tyler Kinley,tyler kinley,0.95,0.78,27.9,47.0,0.9,296.25
 2026-08-13,Taylor Clarke,taylor clarke,0.6,1.8,20.2,54.0,1.0,295.5
-2026-08-13,Cal Quantrill,cal quantrill,0.03,1.32,18.5,24.0,2.7,294.5
 2026-08-13,Kris Bubic,kris bubic,-0.57,-1.0,26.1,9.0,5.6,294.5
 2026-08-13,Steven Cruz,steven cruz,0.27,-0.43,29.2,42.0,1.0,294.0
 2026-08-13,Anthony Nunez,anthony nunez,1.19,0.3,32.1,40.0,1.1,292.5
@@ -361472,11 +361472,11 @@ snapshot_date,Player,Player_standard,pitching_score,command_score,whiff_percent,
 2026-08-13,Sam Moll,sam moll,-0.6,-0.61,23.9,54.0,0.9,253.25
 2026-08-13,Casey Legumina,casey legumina,-0.55,0.15,20.4,40.0,1.3,252.0
 2026-08-13,Tim Herrin,tim herrin,-0.21,-1.33,30.4,48.0,0.8,251.5
-2026-08-13,Gabe Speier,gabe speier,-1.04,-1.21,23.8,36.0,0.8,251.25
 2026-08-13,Hunter Dobbins,hunter dobbins,0.34,0.97,22.6,9.0,5.0,250.25
 2026-08-13,Ryan Watson,ryan watson,-0.45,-0.26,23.2,36.0,1.6,250.25
 2026-08-13,Kody Funderburk,kody funderburk,-0.73,-0.62,23.0,39.0,1.0,250.25
 2026-08-13,Anthony Banda,anthony banda,0.54,0.44,26.7,39.0,0.9,249.5
+2026-08-13,Gabe Speier,gabe speier,-1.04,-1.21,23.8,36.0,0.8,249.25
 2026-08-13,Kyle Hart,kyle hart,-0.17,0.5,21.3,31.0,1.5,247.75
 2026-08-13,Dean Kremer,dean kremer,0.97,0.95,27.2,9.0,5.3,247.0
 2026-08-13,Chase Dollander,chase dollander,-0.39,-1.11,28.0,10.0,4.4,246.75
@@ -361627,6 +361627,7 @@ snapshot_date,Player,Player_standard,pitching_score,command_score,whiff_percent,
 2026-08-13,Danny Coulombe,danny coulombe,-1.3,-0.26,17.1,29.0,0.8,100.25
 2026-08-13,Seth Johnson,seth johnson,-0.31,-1.14,28.7,19.0,1.0,99.75
 2026-08-13,Bryse Wilson,bryse wilson,-0.67,0.72,16.6,10.0,2.5,99.75
+2026-08-13,Nick Davila,nick davila,-1.56,-0.27,15.3,21.0,1.1,99.75
 2026-08-13,Jordan Leasure,jordan leasure,0.0,-0.27,26.5,18.0,1.0,98.75
 2026-08-13,Ryan Fernandez,ryan fernandez,1.66,0.2,36.0,11.0,1.2,97.5
 2026-08-13,Riley Cornelio,riley cornelio,-0.45,-1.92,31.7,11.0,1.8,97.25
@@ -361635,7 +361636,6 @@ snapshot_date,Player,Player_standard,pitching_score,command_score,whiff_percent,
 2026-08-13,Seth Halvorsen,seth halvorsen,-1.7,-1.93,22.8,22.0,0.9,96.0
 2026-08-13,Hunter Bigge,hunter bigge,-0.01,-0.17,25.9,18.0,1.1,95.5
 2026-08-13,Justin Topa,justin topa,-2.1,-0.79,14.1,23.0,0.8,95.5
-2026-08-13,Nick Davila,nick davila,-1.56,-0.27,15.3,21.0,1.1,94.75
 2026-08-13,Angel Chivilli,angel chivilli,1.54,0.68,32.6,15.0,1.1,93.25
 2026-08-13,Tyler Samaniego,tyler samaniego,0.08,0.79,21.6,20.0,1.0,92.5
 2026-08-13,Mason Black,mason black,-1.38,-0.99,20.3,13.0,1.7,92.0
@@ -361671,6 +361671,7 @@ snapshot_date,Player,Player_standard,pitching_score,command_score,whiff_percent,
 2026-08-13,Ronel Blanco,ronel blanco,-0.31,-0.63,26.1,4.0,4.8,70.5
 2026-08-13,Danny Young,danny young,-0.91,-0.77,22.5,15.0,0.7,70.0
 2026-08-13,Josh Walker,josh walker,-0.61,0.84,16.4,12.0,1.2,69.75
+2026-08-13,Jose Cuas,jose cuas,,,,,,69.25
 2026-08-13,Drey Jameson,drey jameson,0.05,-0.75,29.3,11.0,1.6,66.75
 2026-08-13,Jason Alexander,jason alexander,-1.46,-1.11,20.3,4.0,4.5,65.75
 2026-08-13,Tom Cosgrove,tom cosgrove,-2.03,-0.57,13.5,11.0,0.9,65.25
@@ -361683,7 +361684,6 @@ snapshot_date,Player,Player_standard,pitching_score,command_score,whiff_percent,
 2026-08-13,Kohl Drake,kohl drake,0.38,1.23,21.5,4.0,4.0,60.5
 2026-08-13,Angel Zerpa,angel zerpa,-2.35,-1.86,17.8,12.0,1.0,60.0
 2026-08-13,Dax Fulton,dax fulton,-0.35,-1.13,28.4,6.0,2.3,59.25
-2026-08-13,Jose Cuas,jose cuas,,,,,,59.0
 2026-08-13,Lazaro Estrada,lazaro estrada,-2.73,-3.32,22.5,7.0,1.7,57.75
 2026-08-13,Drew Rom,drew rom,,,,,,56.5
 2026-08-13,Jose Cabrera,jose cabrera,-0.07,0.86,20.2,4.0,4.3,55.25
@@ -361701,8 +361701,10 @@ snapshot_date,Player,Player_standard,pitching_score,command_score,whiff_percent,
 2026-08-13,Zak Kent,zak kent,-0.57,0.02,20.9,10.0,1.4,49.75
 2026-08-13,Garrett Stallings,garrett stallings,,,,,,49.5
 2026-08-13,Riley Martin,riley martin,,,,,,49.25
+2026-08-13,George Klassen,george klassen,,,,,,49.25
 2026-08-13,Cody Bradford,cody bradford,0.48,1.72,19.7,2.0,5.6,48.75
 2026-08-13,Jayden Murray,jayden murray,1.28,1.28,27.7,10.0,1.6,48.5
+2026-08-13,Yerry De Los Santos,yerry de los santos,,,,,,48.5
 2026-08-13,Joe Rock,joe rock,-1.83,-3.01,27.4,4.0,2.5,48.0
 2026-08-13,Carl Edwards Jr.,carl edwards,,,,,,47.25
 2026-08-13,Eddy Yean,eddy yean,-1.55,-0.24,15.2,7.0,1.4,46.25
@@ -361719,7 +361721,6 @@ snapshot_date,Player,Player_standard,pitching_score,command_score,whiff_percent,
 2026-08-13,Logan Allen,logan allen,,,,,,44.25
 2026-08-13,Ben Peoples,ben peoples,0.93,1.45,24.3,12.0,1.0,43.75
 2026-08-13,Garrett Acton,garrett acton,,,,,,43.75
-2026-08-13,Yerry De Los Santos,yerry de los santos,,,,,,43.0
 2026-08-13,Hunter Barco,hunter barco,-1.77,-0.78,16.4,6.0,2.4,42.75
 2026-08-13,Nate Lavender,nate lavender,,,,,,42.25
 2026-08-13,Yovanny Cruz,yovanny cruz,,,,,,42.25
@@ -361729,6 +361730,7 @@ snapshot_date,Player,Player_standard,pitching_score,command_score,whiff_percent,
 2026-08-13,Carlos Rodriguez,carlos rodriguez,,,,,,40.5
 2026-08-13,Scott Blewett,scott blewett,0.61,1.66,21.0,6.0,1.7,40.0
 2026-08-13,Paul Gervase,paul gervase,,,,,,40.0
+2026-08-13,Hagen Smith,hagen smith,,,,,,39.75
 2026-08-13,Kervin Castro,kervin castro,,,,,,39.75
 2026-08-13,Carson Seymour,carson seymour,-2.68,-2.37,18.0,5.0,2.2,39.75
 2026-08-13,Robert Garcia,robert garcia,,,,,,39.5
@@ -361751,7 +361753,6 @@ snapshot_date,Player,Player_standard,pitching_score,command_score,whiff_percent,
 2026-08-13,Beau Brieske,beau brieske,,,,,,34.75
 2026-08-13,Jackson Jobe,jackson jobe,,,,,,34.5
 2026-08-13,Marco Gonzales,marco gonzales,,,,,,34.25
-2026-08-13,Hagen Smith,hagen smith,,,,,,33.75
 2026-08-13,Alek Jacob,alek jacob,,,,,,33.25
 2026-08-13,Zach McCambley,zach mccambley,,,,,,32.25
 2026-08-13,Zach Pop,zach pop,,,,,,32.0
@@ -361759,7 +361760,6 @@ snapshot_date,Player,Player_standard,pitching_score,command_score,whiff_percent,
 2026-08-13,Kyle Nicolas,kyle nicolas,,,,,,31.75
 2026-08-13,Colton Gordon,colton gordon,,,,,,31.0
 2026-08-13,Ken Waldichuk,ken waldichuk,,,,,,31.0
-2026-08-13,George Klassen,george klassen,,,,,,30.75
 2026-08-13,Jose Urquidy,jose urquidy,,,,,,30.75
 2026-08-13,Joe Ross,joe ross,0.46,-0.32,30.0,8.0,1.4,30.5
 2026-08-13,Matt Krook,matt krook,,,,,,30.25
@@ -362921,9 +362921,12 @@ snapshot_date,Player,Player_standard,pitching_score,command_score,whiff_percent,
 2026-08-13,Isaac Gallegos,isaac gallegos,,,,,,
 2026-08-13,Alec Baker,alec baker,,,,,,
 2026-08-13,Andrew Landry,andrew landry,,,,,,
+2026-08-13,Daniel Gentile,daniel gentile,,,,,,
 2026-08-13,Yanzel Correa,yanzel correa,,,,,,
 2026-08-13,Sam Whiting,sam whiting,,,,,,
+2026-08-13,Russell Sandefer,russell sandefer,,,,,,
 2026-08-13,Luke Russo,luke russo,,,,,,
+2026-08-13,Angel Roa,angel roa,,,,,,
 2026-08-13,Colby Langford,colby langford,,,,,,
 2026-08-13,Merrick Baldo,merrick baldo,,,,,,
 2026-08-13,Kaleb Wing,kaleb wing,,,,,,
@@ -363042,6 +363045,7 @@ snapshot_date,Player,Player_standard,pitching_score,command_score,whiff_percent,
 2026-08-13,Peyton Stumbo,peyton stumbo,,,,,,
 2026-08-13,Johnathan Rogers,johnathan rogers,,,,,,
 2026-08-13,Rob Evans,rob evans,,,,,,
+2026-08-13,Josh McDevitt,josh mcdevitt,,,,,,
 2026-08-13,Casey Steward,casey steward,,,,,,
 2026-08-13,Diego Barrera,diego barrera,,,,,,
 2026-08-13,Ty Brachbill,ty brachbill,,,,,,
