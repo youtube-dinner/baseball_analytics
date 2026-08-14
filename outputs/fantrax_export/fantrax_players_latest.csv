@@ -501,7 +501,7 @@ fantrax_id,name,mlb_team,primary_position,eligible_positions,league_status,stats
 03yux,"Azocar, Jose",ATL,LF,"OF,UT",FA,10476,14204,25a9b399-77d4-49a2-bd94-85821abdaefd
 06ktp,"Azuma, Katsuki",(N/A),SP,P,FA,,,
 0669o,"Baca, Tyler",(N/A),CF,"OF,UT",FA,,,
-041s4,"Bachar, Lake",PIT,RP,P,WW,,14313,db566bcf-7a7f-4e17-ab85-d22d185f0e46
+041s4,"Bachar, Lake",PIT,RP,P,FA,,14313,db566bcf-7a7f-4e17-ab85-d22d185f0e46
 05rb4,"Bachman, Sam",LAA,RP,P,FA,,17309,100688be-d63e-4b2f-a511-ebb9c6c7de35
 06kwi,"Backhus, Kyle",PHI,RP,P,FA,,20010,a5cc16b0-8fe8-4963-b3e0-9f17d6a1545f
 051e3,"Backstrom, Mahki",(N/A),1B,"1B,UT,CI",FA,,16443,
@@ -5142,7 +5142,7 @@ fantrax_id,name,mlb_team,primary_position,eligible_positions,league_status,stats
 05xpv,"Lee, Chase",TOR,RP,P,FA,,17919,2c2f9c80-b6c8-44e1-9fda-c8d7b724b029
 06aky,"Lee, Chen-Hsun",SF,SP,P,FA,,,
 06ul3,"Lee, David",(N/A),RP,P,FA,,,
-041vm,"Lee, Dylan",ATL,RP,P,WW,,15964,15b6b15b-12d2-45c0-9bc7-ddc17a5fa52b
+041vm,"Lee, Dylan",ATL,RP,P,FA,,15964,15b6b15b-12d2-45c0-9bc7-ddc17a5fa52b
 06ibd,"Lee, Eui Lee",(N/A),SP,P,FA,,,
 05u2k,"Lee, Hao-Yu",DET,3B,"2B,UT,3B,CI,MI",FA,,17849,d390fc53-d908-41d8-9a5a-6210c50b59b2
 06rqj,"Lee, Hyun Seung",MIA,3B,"UT,3B,CI",FA,,20915,
@@ -9230,7 +9230,7 @@ fantrax_id,name,mlb_team,primary_position,eligible_positions,league_status,stats
 078ox,"Tayman, Ryan",NYM,C,"C,UT",WW,,,
 06mx1,"Tears, Kavares",SD,RF,"OF,UT",FA,,19547,
 064n5,"Tebrake, Dylan",WSH,RP,P,FA,,,
-078p7,"Teel, Aidan",MIN,CF,"OF,UT",WW,,,
+078p7,"Teel, Aidan",MIN,CF,"OF,UT",WW,,20309,
 05wxy,"Teel, Kyle",CHW,C,"C,UT",T,,18857,a6e16307-07f1-4bb3-a6b6-84906197b5fb
 06ahr,"Tejada, Abrahan",(N/A),SP,P,FA,,,
 05ykw,"Tejada, Angel",(N/A),2B,"2B,UT,MI",FA,,,
