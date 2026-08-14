@@ -1,7 +1,7 @@
 probable_date,game_time_utc,home_away,probable_team,opponent,mlb_player_id,probable_name,fantrax_id,name,mlb_team,primary_position,eligible_positions,league_status,is_rostered,stats_inc_id,rotowire_id,sport_radar_id,game_pk
 2026-08-14,,,STL,@CHC Fri 1:20PM,,Matthew Liberatore,04mlx,"Liberatore, Matthew",STL,SP,P,FA,False,11397,15399,5522ef4b-d436-4738-94d6-78a2c1c5a3ae,
 2026-08-14,,,COL,@SF Fri 9:15PM,,Kyle Freeland,03ca3,"Freeland, Kyle",COL,SP,P,FA,False,9863,13369,e2081019-8ef0-471d-b6d6-1333a8a45897,
-2026-08-14,,,WSH,@NYM Fri 6:10PM,,Andrew Alvarez,060u3,"Alvarez, Andrew",WSH,SP,P,FA,False,,19439,e6a98e62-8cf1-4b27-bfc7-19f4b094d845,
+2026-08-14,,,CHW,@DET Fri 5:40PM,,Sean Newcomb,032lk,"Newcomb, Sean",CHW,RP,P,FA,False,9868,13368,c8034571-7279-4346-8490-15707c3b3c12,
 2026-08-14,,,TB,BAL Fri 6:10PM,,Steven Matz,02h8d,"Matz, Steven",TB,RP,P,FA,False,9599,11012,03fda22a-f8a3-45e8-80dc-bf8190a22020,
 2026-08-14,,,TOR,NYY Fri 6:15PM,,Shane Bieber,041rf,"Bieber, Shane",TOR,SP,P,FA,False,10867,14383,5a6d40fb-f37a-415d-bae6-83fd66bb3322,
 2026-08-14,,,NYM,WSH Fri 6:10PM,,Robert Stock,01shb,"Stock, Robert",NYM,RP,P,FA,False,11053,11024,55780e25-8b8a-4314-b018-9fc198ec4628,
