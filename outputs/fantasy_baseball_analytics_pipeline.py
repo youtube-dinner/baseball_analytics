@@ -1508,13 +1508,10 @@ def run_pipeline():
 
     pitcher_window_cols = []
     pitcher_window_cols_with_sv_hld = []
-    pitcher_fantasy_window_cols = []
     for days in [7, 14, 30]:
-        pitcher_fantasy_window_cols.extend([
+        pitcher_window_cols.extend([
             f"FPts_{days}d",
             f"FP/G_{days}d",
-        ])
-        pitcher_window_cols.extend([
             f"pitching_score_{days}d",
             f"command_score_{days}d",
             f"whiff_percent_{days}d",
@@ -1524,6 +1521,8 @@ def run_pipeline():
             f"IP_per_Game_{days}d",
         ])
         pitcher_window_cols_with_sv_hld.extend([
+            f"FPts_{days}d",
+            f"FP/G_{days}d",
             f"pitching_score_{days}d",
             f"command_score_{days}d",
             f"whiff_percent_{days}d",
@@ -1538,13 +1537,10 @@ def run_pipeline():
     pitcher_trend_cols = pitcher_window_cols_with_sv_hld + pitcher_snapshot_cols
 
     hitter_window_cols = []
-    hitter_fantasy_window_cols = []
     for days in [7, 14, 30]:
-        hitter_fantasy_window_cols.extend([
+        hitter_window_cols.extend([
             f"FPts_{days}d",
             f"FP/G_{days}d",
-        ])
-        hitter_window_cols.extend([
             f"hitter_score_{days}d",
             f"batters_eye_score_{days}d",
             f"barrel_batted_rate_{days}d",
@@ -1560,7 +1556,6 @@ def run_pipeline():
 
     pitcher_cols = [
         "Player", "Eligible", "Status", "Fantasy Points", "Average Fantasy Points per Game",
-        *pitcher_fantasy_window_cols,
         "p_formatted_ip", "p_save", "p_hold", "IP_per_Game", "p_era",
         "pitching_score", "command_score", "whiff_percent", "bb_percent", "meatball_percent",
         *pitcher_window_cols_with_sv_hld,
@@ -1570,7 +1565,6 @@ def run_pipeline():
     ]
     pitcher_analytics_cols = [
         "Player", "Position", "Status", "FPts", "FP/G",
-        *pitcher_fantasy_window_cols,
         "p_game", "p_save", "p_hold", "IP", "IP_per_Game", "p_era", "pitching_score", "command_score",
         "whiff_percent", "bb_percent", "meatball_percent",
         *pitcher_window_cols_with_sv_hld,
@@ -1580,7 +1574,6 @@ def run_pipeline():
     ]
     streamer_cols = [
         "Player", "Team", "Opponent", "Position", "Status", "FPts", "FP/G",
-        *pitcher_fantasy_window_cols,
         "p_game", "IP_per_Game", "p_era", "pitching_score", "command_score",
         "whiff_percent", "bb_percent", "meatball_percent",
         *pitcher_window_cols,
@@ -1590,7 +1583,6 @@ def run_pipeline():
     ]
     hitter_cols = [
         "Player", "Eligible", "Status", "Fantasy Points", "Average Fantasy Points per Game",
-        *hitter_fantasy_window_cols,
         "GP", "AB_per_Game", "hitter_score", "batters_eye_score",
         "barrel_batted_rate", "oz_swing_percent", "meatball_swing_percent",
         *hitter_window_cols,
@@ -1600,7 +1592,6 @@ def run_pipeline():
     ]
     hitter_analytics_cols = [
         "Player", "Position", "Status", "FPts", "FP/G", "GP", "AB_per_Game",
-        *hitter_fantasy_window_cols,
         "hitter_score", "batters_eye_score", "barrel_batted_rate", "oz_swing_percent", "meatball_swing_percent",
         *hitter_window_cols,
         f"hitter_score_{PREVIOUS_YEAR}", f"batters_eye_score_{PREVIOUS_YEAR}",
