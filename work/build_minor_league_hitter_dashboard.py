@@ -20,10 +20,21 @@ FANTRAX_PLAYERS = ROOT / "outputs" / "fantrax_export" / "fantrax_players_latest.
 FANTRAX_ROSTERS = ROOT / "outputs" / "fantrax_export" / "fantrax_rosters_latest.csv"
 MY_FANTASY_TEAM = "Bobby and the NitWitts"
 LEVEL_ORDER = {"R": 0, "CPX": 1, "A": 2, "A+": 3, "AA": 4, "AAA": 5}
+RECENT_DRAFT_CLASS = 2026
+RECENT_DRAFT_PLAYERS = {
+    "Vahn Lackey",
+    "Roch Cholowsky",
+    "Tyler Bell",
+    "Grady Emerson",
+    "Jackson Flora",
+    "Drew Burress",
+    "Derek Curiel",
+}
 
 BASE_COLUMN_MAP = {
     "Player Name": "Player",
     "Fantasy Roster": "Fantasy Roster",
+    "Draft Class": "Draft Class",
     "Team": "Team",
     "League Name": "League",
     "League Level": "Level",
@@ -116,6 +127,7 @@ HEAT_COLUMNS = [
 PITCHER_COLUMN_MAP = {
     "Player Name": "Player",
     "Fantasy Roster": "Fantasy Roster",
+    "Draft Class": "Draft Class",
     "Team": "Team",
     "League Name": "League",
     "League Level": "Level",
@@ -349,6 +361,23 @@ def add_fantasy_roster_column(df):
     return out
 
 
+def add_recent_draft_class(df):
+    recent_draft_keys = {
+        key
+        for player_name in RECENT_DRAFT_PLAYERS
+        for key in name_keys(player_name)
+    }
+    out = df.copy()
+    out["Draft Class"] = out["Player Name"].map(
+        lambda player_name: (
+            RECENT_DRAFT_CLASS
+            if any(key in recent_draft_keys for key in name_keys(player_name))
+            else ""
+        )
+    )
+    return out
+
+
 def clean_number(value, decimals=None):
     if pd.isna(value):
         return ""
@@ -430,6 +459,7 @@ def format_dashboard_frame(df, column_map, sort_cols):
 def load_dashboard_data():
     df = pd.read_csv(SOURCE)
     df = add_fantasy_roster_column(df)
+    df = add_recent_draft_class(df)
     overall = format_dashboard_frame(df, OVERALL_COLUMN_MAP, ["5 Tool+", "wRC+", "FG/G+"])
     promotion_players = build_promotion_tracker(df)
     promotion_column_map = {}
@@ -474,6 +504,7 @@ def load_dashboard_data():
     if PITCHER_SOURCE.exists():
         pitchers = pd.read_csv(PITCHER_SOURCE)
         pitchers = add_fantasy_roster_column(pitchers)
+        pitchers = add_recent_draft_class(pitchers)
         pitcher_column_map = existing_column_map(pitchers, PITCHER_COLUMN_MAP)
         pitcher_overall = format_dashboard_frame(
             pitchers,
@@ -588,6 +619,19 @@ def main():
     .tabs button.active {{ background: #14532d; color: white; border-color: #14532d; }}
     main {{ padding: 16px 18px 28px; }}
     .toolbar {{ display: flex; gap: 10px; align-items: center; margin-bottom: 12px; flex-wrap: wrap; }}
+    .toggle-control {{
+      display: inline-flex;
+      align-items: center;
+      gap: 7px;
+      padding: 8px 10px;
+      border: 1px solid #cbd5d4;
+      border-radius: 6px;
+      background: #f8fafc;
+      font-size: 13px;
+      font-weight: 650;
+      white-space: nowrap;
+    }}
+    .toggle-control input {{ width: auto; margin: 0; accent-color: #14532d; }}
     .filters {{
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
@@ -703,6 +747,10 @@ def main():
   <main>
     <div class="toolbar">
       <input id="search" placeholder="Filter players or values">
+      <label class="toggle-control">
+        <input id="exclude-recent-draft" type="checkbox" checked>
+        Exclude 2026 Draft Class
+      </label>
       <span class="muted" id="count"></span>
     </div>
     <div class="filters" id="filters"></div>
@@ -715,6 +763,7 @@ def main():
     const tabs = document.getElementById("tabs");
     const tableHost = document.getElementById("table");
     const search = document.getElementById("search");
+    const excludeRecentDraft = document.getElementById("exclude-recent-draft");
     const count = document.getElementById("count");
     const filtersHost = document.getElementById("filters");
     const addFilterButton = document.getElementById("add-filter");
@@ -849,6 +898,9 @@ def main():
       let out = filter
         ? rows.filter(row => Object.values(row).some(value => String(value).toLowerCase().includes(filter)))
         : [...rows];
+      if (excludeRecentDraft.checked) {{
+        out = out.filter(row => String(row["Draft Class"] ?? "") !== "{RECENT_DRAFT_CLASS}");
+      }}
       out = out.filter(matchesColumnFilters);
       if (!sort.column) return out;
       out.sort((a, b) => {{
@@ -956,6 +1008,7 @@ def main():
     }}
 
     search.addEventListener("input", render);
+    excludeRecentDraft.addEventListener("change", render);
     addFilterButton.addEventListener("click", () => {{
       columnFilters.push({{ column: "", op: ">=", value: "" }});
       render();

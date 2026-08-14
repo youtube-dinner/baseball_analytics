@@ -1,6 +1,7 @@
 probable_date,game_time_utc,home_away,probable_team,opponent,mlb_player_id,probable_name,fantrax_id,name,mlb_team,primary_position,eligible_positions,league_status,is_rostered,stats_inc_id,rotowire_id,sport_radar_id,game_pk
-2026-07-12,,,MIA,CLE Sun 12:40PM,,Tyler Phillips,03qt6,"Phillips, Tyler",MIA,RP,P,FA,False,11400,15681,45fc262f-bb5c-4491-b58b-e7eb585f9ec3,
-2026-07-12,,,ATL,@STL Sun 1:15PM,,J.R. Ritchie,05tzo,"Ritchie, J.R.",ATL,SP,P,FA,False,,17964,1aa50e2a-e8f4-46ce-a5e9-556db30a8848,
-2026-07-12,,,SD,TOR Sun 3:10PM,,German Marquez,03amq,"Marquez, German",SD,SP,P,FA,False,10402,14109,2764f896-603a-42bb-b031-f50893d42a63,
-2026-07-12,,,NYM,BOS Sun 12:40PM,,Zach Thornton,06ekq,"Thornton, Zach",NYM,SP,P,FA,False,,18886,b760cf04-ac68-4e25-841c-b209605fa581,
-2026-07-12,,,ARI,@LAD Sun 3:10PM,,Mitch Bratt,05xq2,"Bratt, Mitch",ARI,SP,P,FA,False,,17498,f8878ab3-9c9a-4b5f-bb1f-a4a2c0b84aec,
+2026-08-14,,,STL,@CHC Fri 1:20PM,,Matthew Liberatore,04mlx,"Liberatore, Matthew",STL,SP,P,FA,False,11397,15399,5522ef4b-d436-4738-94d6-78a2c1c5a3ae,
+2026-08-14,,,COL,@SF Fri 9:15PM,,Kyle Freeland,03ca3,"Freeland, Kyle",COL,SP,P,FA,False,9863,13369,e2081019-8ef0-471d-b6d6-1333a8a45897,
+2026-08-14,,,CHW,@DET Fri 5:40PM,,Sean Newcomb,032lk,"Newcomb, Sean",CHW,RP,P,FA,False,9868,13368,c8034571-7279-4346-8490-15707c3b3c12,
+2026-08-14,,,TB,BAL Fri 6:10PM,,Steven Matz,02h8d,"Matz, Steven",TB,RP,P,FA,False,9599,11012,03fda22a-f8a3-45e8-80dc-bf8190a22020,
+2026-08-14,,,TOR,NYY Fri 6:15PM,,Shane Bieber,041rf,"Bieber, Shane",TOR,SP,P,FA,False,10867,14383,5a6d40fb-f37a-415d-bae6-83fd66bb3322,
+2026-08-14,,,NYM,WSH Fri 6:10PM,,Robert Stock,01shb,"Stock, Robert",NYM,RP,P,FA,False,11053,11024,55780e25-8b8a-4314-b018-9fc198ec4628,

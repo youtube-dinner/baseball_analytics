@@ -193,6 +193,7 @@ else
   echo "Skipping workbook build because REFRESH_BUILD_WORKBOOK=$REFRESH_BUILD_WORKBOOK"
 fi
 "$PYTHON" work/build_sortable_dashboard.py
+"$PYTHON" work/build_minor_league_hitter_dashboard.py
 
 write_refresh_status "success" 0 "Outputs rebuilt successfully. If publish is requested, commit/push happens after this status is written."
 
