@@ -4026,7 +4026,7 @@
       "fantrax_id": "01cgo",
       "player_name": "Freddie Freeman",
       "primary_position": "1B",
-      "roster_position": "1B",
+      "roster_position": "UT",
       "roster_status": "ACTIVE",
       "team_id": "jk36oo1hmj90wrl7",
       "team_name": "Daddy Yankee"
@@ -4044,7 +4044,7 @@
       "fantrax_id": "024m0",
       "player_name": "Jose Altuve",
       "primary_position": "2B",
-      "roster_position": "OF",
+      "roster_position": "UT",
       "roster_status": "ACTIVE",
       "team_id": "jk36oo1hmj90wrl7",
       "team_name": "Daddy Yankee"
@@ -4134,7 +4134,7 @@
       "fantrax_id": "03oh0",
       "player_name": "Willson Contreras",
       "primary_position": "1B",
-      "roster_position": "UT",
+      "roster_position": "1B",
       "roster_status": "ACTIVE",
       "team_id": "jk36oo1hmj90wrl7",
       "team_name": "Daddy Yankee"
@@ -4161,7 +4161,7 @@
       "fantrax_id": "041e2",
       "player_name": "Mickey Moniak",
       "primary_position": "RF",
-      "roster_position": "UT",
+      "roster_position": "OF",
       "roster_status": "ACTIVE",
       "team_id": "jk36oo1hmj90wrl7",
       "team_name": "Daddy Yankee"
