@@ -980,6 +980,150 @@ def add_calculated_fantasy_points(all_players, league_info):
     return out
 
 
+def add_recent_fantasy_points(all_players, league_info):
+    out = all_players.copy()
+    hit_weights = scoring_weights(league_info, "HITTING")
+    pitch_weights = scoring_weights(league_info, "PITCHING")
+    end_day = date.today()
+
+    def merge_recent_points(base, recent, days):
+        value_cols = [f"FPts_{days}d", f"FP/G_{days}d"]
+        if recent.empty:
+            return base
+        merged = base.copy()
+        recent = recent.copy()
+        recent["mlb_player_id"] = pd.to_numeric(recent["mlb_player_id"], errors="coerce")
+        is_pitcher = merged.get("Position", pd.Series("", index=merged.index)).isin(["SP", "RP"])
+        frame_specs = [
+            (is_pitcher, recent[recent["_fantasy_group"] == "PITCHING"].copy()),
+            (~is_pitcher, recent[recent["_fantasy_group"] == "HITTING"].copy()),
+        ]
+        for col in value_cols:
+            if col not in merged.columns:
+                merged[col] = np.nan
+        parts = []
+        for mask, group_recent in frame_specs:
+            part = merged[mask].drop(columns=value_cols, errors="ignore").copy()
+            if part.empty or group_recent.empty:
+                for col in value_cols:
+                    part[col] = np.nan
+                parts.append(part)
+                continue
+            group_recent = group_recent.drop(columns=["_fantasy_group"], errors="ignore")
+            if "mlb_player_id" in part.columns:
+                part["mlb_player_id"] = pd.to_numeric(part["mlb_player_id"], errors="coerce")
+                by_id = group_recent.dropna(subset=["mlb_player_id"]).drop_duplicates("mlb_player_id")
+                part = part.merge(
+                    by_id[["mlb_player_id"] + value_cols],
+                    on="mlb_player_id",
+                    how="left",
+                )
+            else:
+                for col in value_cols:
+                    part[col] = np.nan
+
+            by_team_name = group_recent.drop_duplicates(["Player_standard", "mlb_team"])
+            fallback = part.merge(
+                by_team_name[["Player_standard", "mlb_team"] + value_cols],
+                on=["Player_standard", "mlb_team"],
+                how="left",
+                suffixes=("", "_matched"),
+            )
+            for col in value_cols:
+                matched_col = f"{col}_matched"
+                if matched_col in fallback.columns:
+                    fallback[col] = fallback[col].combine_first(fallback[matched_col])
+            parts.append(fallback.drop(columns=[f"{col}_matched" for col in value_cols], errors="ignore"))
+        return pd.concat(parts, ignore_index=True, sort=False).sort_index()
+
+    for days in RECENT_WINDOWS:
+        start = (end_day - timedelta(days=days - 1)).isoformat()
+        end = end_day.isoformat()
+        hitting = fetch_mlb_stats("hitting", "byDateRange", start, end)
+        pitching = fetch_mlb_stats("pitching", "byDateRange", start, end)
+        pitching_adv = fetch_mlb_stats("pitching", "byDateRangeAdvanced", start, end)
+
+        if not pitching.empty and not pitching_adv.empty and "qualityStarts" in pitching_adv.columns:
+            pitching = pitching.merge(
+                pitching_adv[["Player_standard", "qualityStarts"]],
+                on="Player_standard",
+                how="left",
+            )
+
+        recent_frames = []
+        if not hitting.empty:
+            singles = (
+                float_series(hitting, "hits")
+                - float_series(hitting, "doubles")
+                - float_series(hitting, "triples")
+                - float_series(hitting, "homeRuns")
+            )
+            hitting[f"FPts_{days}d"] = (
+                singles * hit_weights.get("1B", 0)
+                + float_series(hitting, "doubles") * hit_weights.get("2B", 0)
+                + float_series(hitting, "triples") * hit_weights.get("3B", 0)
+                + float_series(hitting, "homeRuns") * hit_weights.get("HR", 0)
+                + float_series(hitting, "runs") * hit_weights.get("R", 0)
+                + float_series(hitting, "rbi") * hit_weights.get("RBI", 0)
+                + float_series(hitting, "baseOnBalls") * hit_weights.get("BB", 0)
+                + float_series(hitting, "strikeOuts") * hit_weights.get("SO", 0)
+                + float_series(hitting, "stolenBases") * hit_weights.get("SB", 0)
+                + float_series(hitting, "caughtStealing") * hit_weights.get("CS", 0)
+                + float_series(hitting, "hitByPitch") * hit_weights.get("HBP", 0)
+                + float_series(hitting, "groundIntoDoublePlay") * hit_weights.get("GIDP", 0)
+                + float_series(hitting, "sacBunts") * hit_weights.get("SH", 0)
+            ).round(2)
+            hitting[f"FP/G_{days}d"] = (
+                hitting[f"FPts_{days}d"] / float_series(hitting, "gamesPlayed").replace(0, np.nan)
+            ).round(2)
+            hitting["_fantasy_group"] = "HITTING"
+            recent_frames.append(hitting[[
+                "mlb_player_id",
+                "Player_standard",
+                "mlb_team",
+                f"FPts_{days}d",
+                f"FP/G_{days}d",
+                "_fantasy_group",
+            ]])
+
+        if not pitching.empty:
+            ip = innings_to_float(pitching["inningsPitched"])
+            pitching[f"FPts_{days}d"] = (
+                ip * pitch_weights.get("IP", 0)
+                + float_series(pitching, "wins") * pitch_weights.get("W", 0)
+                + float_series(pitching, "losses") * pitch_weights.get("L", 0)
+                + float_series(pitching, "saves") * pitch_weights.get("SV", 0)
+                + float_series(pitching, "holds") * pitch_weights.get("HLD", 0)
+                + float_series(pitching, "blownSaves") * pitch_weights.get("BS", 0)
+                + float_series(pitching, "earnedRuns") * pitch_weights.get("ER", 0)
+                + float_series(pitching, "hits") * pitch_weights.get("H", 0)
+                + float_series(pitching, "baseOnBalls") * pitch_weights.get("BB", 0)
+                + float_series(pitching, "strikeOuts") * pitch_weights.get("K", 0)
+                + float_series(pitching, "balks") * pitch_weights.get("BK", 0)
+                + float_series(pitching, "completeGames") * pitch_weights.get("CG", 0)
+                + float_series(pitching, "qualityStarts") * pitch_weights.get("QA3", 0)
+            ).round(2)
+            pitching[f"FP/G_{days}d"] = (
+                pitching[f"FPts_{days}d"] / float_series(pitching, "gamesPitched").replace(0, np.nan)
+            ).round(2)
+            pitching["_fantasy_group"] = "PITCHING"
+            recent_frames.append(pitching[[
+                "mlb_player_id",
+                "Player_standard",
+                "mlb_team",
+                f"FPts_{days}d",
+                f"FP/G_{days}d",
+                "_fantasy_group",
+            ]])
+
+        if not recent_frames:
+            continue
+        recent = pd.concat(recent_frames, ignore_index=True)
+        out = merge_recent_points(out, recent, days)
+
+    return out
+
+
 def append_daily_snapshot(filename, df, snapshot_columns):
     path = OUT_DIR / filename
     snapshot_date = date.today().isoformat()
@@ -1162,6 +1306,7 @@ def run_pipeline():
     hitter_previous = prepare_savant(fetch_savant_csv(PREVIOUS_YEAR, "batter"), "hitter")
     all_players, current_roster, streaming_pitchers, league_info = build_fantrax_frames()
     all_players = add_calculated_fantasy_points(all_players, league_info)
+    all_players = add_recent_fantasy_points(all_players, league_info)
     fantasy_merge_cols = [
         "fantrax_id",
         "FPts",
@@ -1175,6 +1320,8 @@ def run_pipeline():
         "IP",
         "IP_per_Game_MLB",
     ]
+    for days in RECENT_WINDOWS:
+        fantasy_merge_cols.extend([f"FPts_{days}d", f"FP/G_{days}d"])
     fantasy_merge_cols = [col for col in fantasy_merge_cols if col in all_players.columns]
     current_roster = current_roster.drop(
         columns=[
@@ -1187,6 +1334,8 @@ def run_pipeline():
             "Pitching_G",
             "IP",
             "IP_per_Game_MLB",
+            *[f"FPts_{days}d" for days in RECENT_WINDOWS],
+            *[f"FP/G_{days}d" for days in RECENT_WINDOWS],
         ],
         errors="ignore",
     ).merge(
@@ -1197,10 +1346,23 @@ def run_pipeline():
     current_roster["Fantasy Points"] = current_roster["FPts"]
     current_roster["Average Fantasy Points per Game"] = current_roster["FP/G"]
     streaming_pitchers = streaming_pitchers.drop(
-        columns=["FPts", "FP/G", "fantasy_points_source"],
+        columns=[
+            "FPts",
+            "FP/G",
+            "fantasy_points_source",
+            *[f"FPts_{days}d" for days in RECENT_WINDOWS],
+            *[f"FP/G_{days}d" for days in RECENT_WINDOWS],
+        ],
         errors="ignore",
     ).merge(
-        all_players[["fantrax_id", "FPts", "FP/G", "fantasy_points_source"]],
+        all_players[[
+            "fantrax_id",
+            "FPts",
+            "FP/G",
+            "fantasy_points_source",
+            *[f"FPts_{days}d" for days in RECENT_WINDOWS if f"FPts_{days}d" in all_players.columns],
+            *[f"FP/G_{days}d" for days in RECENT_WINDOWS if f"FP/G_{days}d" in all_players.columns],
+        ]],
         on="fantrax_id",
         how="left",
     )
@@ -1346,7 +1508,12 @@ def run_pipeline():
 
     pitcher_window_cols = []
     pitcher_window_cols_with_sv_hld = []
+    pitcher_fantasy_window_cols = []
     for days in [7, 14, 30]:
+        pitcher_fantasy_window_cols.extend([
+            f"FPts_{days}d",
+            f"FP/G_{days}d",
+        ])
         pitcher_window_cols.extend([
             f"pitching_score_{days}d",
             f"command_score_{days}d",
@@ -1371,7 +1538,12 @@ def run_pipeline():
     pitcher_trend_cols = pitcher_window_cols_with_sv_hld + pitcher_snapshot_cols
 
     hitter_window_cols = []
+    hitter_fantasy_window_cols = []
     for days in [7, 14, 30]:
+        hitter_fantasy_window_cols.extend([
+            f"FPts_{days}d",
+            f"FP/G_{days}d",
+        ])
         hitter_window_cols.extend([
             f"hitter_score_{days}d",
             f"batters_eye_score_{days}d",
@@ -1388,6 +1560,7 @@ def run_pipeline():
 
     pitcher_cols = [
         "Player", "Eligible", "Status", "Fantasy Points", "Average Fantasy Points per Game",
+        *pitcher_fantasy_window_cols,
         "p_formatted_ip", "p_save", "p_hold", "IP_per_Game", "p_era",
         "pitching_score", "command_score", "whiff_percent", "bb_percent", "meatball_percent",
         *pitcher_window_cols_with_sv_hld,
@@ -1397,6 +1570,7 @@ def run_pipeline():
     ]
     pitcher_analytics_cols = [
         "Player", "Position", "Status", "FPts", "FP/G",
+        *pitcher_fantasy_window_cols,
         "p_game", "p_save", "p_hold", "IP", "IP_per_Game", "p_era", "pitching_score", "command_score",
         "whiff_percent", "bb_percent", "meatball_percent",
         *pitcher_window_cols_with_sv_hld,
@@ -1406,6 +1580,7 @@ def run_pipeline():
     ]
     streamer_cols = [
         "Player", "Team", "Opponent", "Position", "Status", "FPts", "FP/G",
+        *pitcher_fantasy_window_cols,
         "p_game", "IP_per_Game", "p_era", "pitching_score", "command_score",
         "whiff_percent", "bb_percent", "meatball_percent",
         *pitcher_window_cols,
@@ -1415,6 +1590,7 @@ def run_pipeline():
     ]
     hitter_cols = [
         "Player", "Eligible", "Status", "Fantasy Points", "Average Fantasy Points per Game",
+        *hitter_fantasy_window_cols,
         "GP", "AB_per_Game", "hitter_score", "batters_eye_score",
         "barrel_batted_rate", "oz_swing_percent", "meatball_swing_percent",
         *hitter_window_cols,
@@ -1424,6 +1600,7 @@ def run_pipeline():
     ]
     hitter_analytics_cols = [
         "Player", "Position", "Status", "FPts", "FP/G", "GP", "AB_per_Game",
+        *hitter_fantasy_window_cols,
         "hitter_score", "batters_eye_score", "barrel_batted_rate", "oz_swing_percent", "meatball_swing_percent",
         *hitter_window_cols,
         f"hitter_score_{PREVIOUS_YEAR}", f"batters_eye_score_{PREVIOUS_YEAR}",
@@ -1437,8 +1614,8 @@ def run_pipeline():
         & pd.to_numeric(free_agent_pitchers["FPts"], errors="coerce").notna()
     ].copy()
     free_agent_pitchers = free_agent_pitchers.sort_values(
-        ["pitching_score_7d", "command_score_7d", "whiff_percent_7d"],
-        ascending=[False, False, False],
+        ["FPts_14d", "FPts_30d", "FPts_7d", "p_game_14d", "pitching_score_14d"],
+        ascending=[False, False, False, False, False],
         na_position="last",
     )
 
@@ -1448,8 +1625,8 @@ def run_pipeline():
         & pd.to_numeric(free_agent_hitters["FPts"], errors="coerce").notna()
     ].copy()
     free_agent_hitters = free_agent_hitters.sort_values(
-        ["hitter_score_7d", "batters_eye_score_7d", "barrel_batted_rate_7d"],
-        ascending=[False, False, False],
+        ["FPts_14d", "FPts_30d", "FPts_7d", "hitter_score_14d", "GP_14d"],
+        ascending=[False, False, False, False, False],
         na_position="last",
     )
 
