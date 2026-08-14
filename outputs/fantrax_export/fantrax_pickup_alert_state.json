@@ -66,7 +66,8 @@
     "2026-08-10": true,
     "2026-08-11": true,
     "2026-08-12": true,
-    "2026-08-13": true
+    "2026-08-13": true,
+    "2026-08-14": true
   },
   "major_add_alerts": {
     "2026-06-08": {
@@ -4062,7 +4063,7 @@
       "player_name": "Christian Walker",
       "primary_position": "1B",
       "roster_position": "UT",
-      "roster_status": "RESERVE",
+      "roster_status": "ACTIVE",
       "team_id": "jk36oo1hmj90wrl7",
       "team_name": "Daddy Yankee"
     },
@@ -4097,8 +4098,8 @@
       "fantrax_id": "03atq",
       "player_name": "Willy Adames",
       "primary_position": "SS",
-      "roster_position": "SS",
-      "roster_status": "ACTIVE",
+      "roster_position": "UT",
+      "roster_status": "RESERVE",
       "team_id": "jk36oo1hmj90wrl7",
       "team_name": "Daddy Yankee"
     },
@@ -4223,7 +4224,7 @@
       "fantrax_id": "04pbq",
       "player_name": "Geraldo Perdomo",
       "primary_position": "SS",
-      "roster_position": "UT",
+      "roster_position": "SS",
       "roster_status": "ACTIVE",
       "team_id": "jk36oo1hmj90wrl7",
       "team_name": "Daddy Yankee"
