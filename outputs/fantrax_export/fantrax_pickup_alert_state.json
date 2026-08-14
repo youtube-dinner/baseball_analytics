@@ -4665,8 +4665,8 @@
       "fantrax_id": "047l7",
       "player_name": "Luis Robert Jr.",
       "primary_position": "CF",
-      "roster_position": "OF",
-      "roster_status": "RESERVE",
+      "roster_position": "UT",
+      "roster_status": "ACTIVE",
       "team_id": "k7c57nf4mj90wrl8",
       "team_name": "Hand Foot Mouth Disease Guys"
     },
@@ -4855,7 +4855,7 @@
       "player_name": "Carter Jensen",
       "primary_position": "C",
       "roster_position": "UT",
-      "roster_status": "ACTIVE",
+      "roster_status": "RESERVE",
       "team_id": "k7c57nf4mj90wrl8",
       "team_name": "Hand Foot Mouth Disease Guys"
     },
