@@ -452,6 +452,7 @@
       },
       "f3myl5ugmj90wrl7": {
         "major_add_limit": 10,
+        "one_remaining": true,
         "overage_alerted": 0
       },
       "hd9hwe4mmj90wrl7": {
@@ -4651,7 +4652,7 @@
       "player_name": "Vladimir Guerrero Jr.",
       "primary_position": "1B",
       "roster_position": "UT",
-      "roster_status": "RESERVE",
+      "roster_status": "INJURED_RESERVE",
       "team_id": "k7c57nf4mj90wrl8",
       "team_name": "Hand Foot Mouth Disease Guys"
     },
