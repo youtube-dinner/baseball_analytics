@@ -1190,6 +1190,16 @@
       "violation_alert_sent": false,
       "window_start": "2026-07-10"
     },
+    "mldxq5pemj90wrl7:06hx4": {
+      "demotion_alert_sent": true,
+      "eligible_date": "2026-09-06",
+      "fantrax_id": "06hx4",
+      "player_name": "Kaelen Culpepper",
+      "team_id": "mldxq5pemj90wrl7",
+      "team_name": "L\u00e1szlar\u00f3 T\u00f3th",
+      "violation_alert_sent": false,
+      "window_start": "2026-08-15"
+    },
     "mldxq5pemj90wrl7:06mnl": {
       "demotion_alert_sent": false,
       "eligible_date": "2026-07-19",
@@ -5193,15 +5203,6 @@
       "team_id": "mldxq5pemj90wrl7",
       "team_name": "L\u00e1szlar\u00f3 T\u00f3th"
     },
-    "mldxq5pemj90wrl7:04y9f": {
-      "fantrax_id": "04y9f",
-      "player_name": "Ryan Zeferjahn",
-      "primary_position": "RP",
-      "roster_position": "P",
-      "roster_status": "ACTIVE",
-      "team_id": "mldxq5pemj90wrl7",
-      "team_name": "L\u00e1szlar\u00f3 T\u00f3th"
-    },
     "mldxq5pemj90wrl7:04z6m": {
       "fantrax_id": "04z6m",
       "player_name": "Agustin Ramirez",
@@ -5296,8 +5297,8 @@
       "fantrax_id": "05rcf",
       "player_name": "Joshua Baez",
       "primary_position": "RF",
-      "roster_position": "OF",
-      "roster_status": "MINORS",
+      "roster_position": "UT",
+      "roster_status": "ACTIVE",
       "team_id": "mldxq5pemj90wrl7",
       "team_name": "L\u00e1szlar\u00f3 T\u00f3th"
     },
@@ -5369,6 +5370,15 @@
       "player_name": "Jackson Holliday",
       "primary_position": "2B",
       "roster_position": "2B",
+      "roster_status": "ACTIVE",
+      "team_id": "mldxq5pemj90wrl7",
+      "team_name": "L\u00e1szlar\u00f3 T\u00f3th"
+    },
+    "mldxq5pemj90wrl7:05ycf": {
+      "fantrax_id": "05ycf",
+      "player_name": "Noah Cameron",
+      "primary_position": "SP",
+      "roster_position": "P",
       "roster_status": "ACTIVE",
       "team_id": "mldxq5pemj90wrl7",
       "team_name": "L\u00e1szlar\u00f3 T\u00f3th"
@@ -5459,7 +5469,7 @@
       "player_name": "Kaelen Culpepper",
       "primary_position": "SS",
       "roster_position": "UT",
-      "roster_status": "ACTIVE",
+      "roster_status": "MINORS",
       "team_id": "mldxq5pemj90wrl7",
       "team_name": "L\u00e1szlar\u00f3 T\u00f3th"
     },
