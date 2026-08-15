@@ -4075,7 +4075,7 @@
       "player_name": "George Springer",
       "primary_position": "RF",
       "roster_position": "OF",
-      "roster_status": "ACTIVE",
+      "roster_status": "RESERVE",
       "team_id": "jk36oo1hmj90wrl7",
       "team_name": "Daddy Yankee"
     },
@@ -4128,8 +4128,8 @@
       "fantrax_id": "03btu",
       "player_name": "Willi Castro",
       "primary_position": "2B",
-      "roster_position": "UT",
-      "roster_status": "RESERVE",
+      "roster_position": "OF",
+      "roster_status": "ACTIVE",
       "team_id": "jk36oo1hmj90wrl7",
       "team_name": "Daddy Yankee"
     },
