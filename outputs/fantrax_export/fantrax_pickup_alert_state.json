@@ -463,6 +463,7 @@
       },
       "jk36oo1hmj90wrl7": {
         "major_add_limit": 10,
+        "none_remaining": true,
         "overage_alerted": 0
       },
       "k7c57nf4mj90wrl8": {
@@ -1202,7 +1203,7 @@
       "player_name": "Kaelen Culpepper",
       "team_id": "mldxq5pemj90wrl7",
       "team_name": "L\u00e1szlar\u00f3 T\u00f3th",
-      "violation_alert_sent": false,
+      "violation_alert_sent": true,
       "window_start": "2026-08-15"
     },
     "mldxq5pemj90wrl7:06mnl": {
@@ -4164,6 +4165,15 @@
       "team_id": "jk36oo1hmj90wrl7",
       "team_name": "Daddy Yankee"
     },
+    "jk36oo1hmj90wrl7:03pdw": {
+      "fantrax_id": "03pdw",
+      "player_name": "Andrew Benintendi",
+      "primary_position": "LF",
+      "roster_position": "UT",
+      "roster_status": "ACTIVE",
+      "team_id": "jk36oo1hmj90wrl7",
+      "team_name": "Daddy Yankee"
+    },
     "jk36oo1hmj90wrl7:03pjf": {
       "fantrax_id": "03pjf",
       "player_name": "Michael Soroka",
@@ -4206,15 +4216,6 @@
       "primary_position": "2B",
       "roster_position": "UT",
       "roster_status": "RESERVE",
-      "team_id": "jk36oo1hmj90wrl7",
-      "team_name": "Daddy Yankee"
-    },
-    "jk36oo1hmj90wrl7:04azv": {
-      "fantrax_id": "04azv",
-      "player_name": "Jake Burger",
-      "primary_position": "1B",
-      "roster_position": "UT",
-      "roster_status": "ACTIVE",
       "team_id": "jk36oo1hmj90wrl7",
       "team_name": "Daddy Yankee"
     },
@@ -5221,7 +5222,7 @@
       "fantrax_id": "04si2",
       "player_name": "Andrew Vaughn",
       "primary_position": "1B",
-      "roster_position": "UT",
+      "roster_position": "1B",
       "roster_status": "ACTIVE",
       "team_id": "mldxq5pemj90wrl7",
       "team_name": "L\u00e1szlar\u00f3 T\u00f3th"
@@ -5294,7 +5295,7 @@
       "player_name": "Tyler Soderstrom",
       "primary_position": "LF",
       "roster_position": "1B",
-      "roster_status": "ACTIVE",
+      "roster_status": "INJURED_RESERVE",
       "team_id": "mldxq5pemj90wrl7",
       "team_name": "L\u00e1szlar\u00f3 T\u00f3th"
     },
@@ -5492,7 +5493,7 @@
       "player_name": "Kaelen Culpepper",
       "primary_position": "SS",
       "roster_position": "UT",
-      "roster_status": "MINORS",
+      "roster_status": "ACTIVE",
       "team_id": "mldxq5pemj90wrl7",
       "team_name": "L\u00e1szlar\u00f3 T\u00f3th"
     },
