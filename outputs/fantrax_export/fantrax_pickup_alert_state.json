@@ -440,6 +440,7 @@
     "2026-08-10": {
       "6tnz8jgemj90wrl7": {
         "major_add_limit": 10,
+        "none_remaining": true,
         "one_remaining": true,
         "overage_alerted": 0
       },
@@ -1499,15 +1500,6 @@
       "team_id": "6tnz8jgemj90wrl7",
       "team_name": "Bobby and the NitWitts"
     },
-    "6tnz8jgemj90wrl7:043ia": {
-      "fantrax_id": "043ia",
-      "player_name": "Adrian Morejon",
-      "primary_position": "RP",
-      "roster_position": "P",
-      "roster_status": "ACTIVE",
-      "team_id": "6tnz8jgemj90wrl7",
-      "team_name": "Bobby and the NitWitts"
-    },
     "6tnz8jgemj90wrl7:0473n": {
       "fantrax_id": "0473n",
       "player_name": "Tyler Wells",
@@ -1586,6 +1578,15 @@
       "primary_position": "LF",
       "roster_position": "OF",
       "roster_status": "MINORS",
+      "team_id": "6tnz8jgemj90wrl7",
+      "team_name": "Bobby and the NitWitts"
+    },
+    "6tnz8jgemj90wrl7:0514o": {
+      "fantrax_id": "0514o",
+      "player_name": "Cody Bradford",
+      "primary_position": "SP",
+      "roster_position": "P",
+      "roster_status": "ACTIVE",
       "team_id": "6tnz8jgemj90wrl7",
       "team_name": "Bobby and the NitWitts"
     },
