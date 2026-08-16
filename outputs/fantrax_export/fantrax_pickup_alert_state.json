@@ -68,7 +68,8 @@
     "2026-08-12": true,
     "2026-08-13": true,
     "2026-08-14": true,
-    "2026-08-15": true
+    "2026-08-15": true,
+    "2026-08-16": true
   },
   "major_add_alerts": {
     "2026-06-08": {
@@ -5620,15 +5621,6 @@
       "team_id": "o4jvg6q3mj90wrl7",
       "team_name": "Skrrt vs The World"
     },
-    "o4jvg6q3mj90wrl7:02bzn": {
-      "fantrax_id": "02bzn",
-      "player_name": "Colin Rea",
-      "primary_position": "SP",
-      "roster_position": "P",
-      "roster_status": "ACTIVE",
-      "team_id": "o4jvg6q3mj90wrl7",
-      "team_name": "Skrrt vs The World"
-    },
     "o4jvg6q3mj90wrl7:02x0f": {
       "fantrax_id": "02x0f",
       "player_name": "Sean Manaea",
@@ -5706,6 +5698,15 @@
       "player_name": "Nathaniel Lowe",
       "primary_position": "1B",
       "roster_position": "1B",
+      "roster_status": "ACTIVE",
+      "team_id": "o4jvg6q3mj90wrl7",
+      "team_name": "Skrrt vs The World"
+    },
+    "o4jvg6q3mj90wrl7:041yb": {
+      "fantrax_id": "041yb",
+      "player_name": "Dean Kremer",
+      "primary_position": "SP",
+      "roster_position": "P",
       "roster_status": "ACTIVE",
       "team_id": "o4jvg6q3mj90wrl7",
       "team_name": "Skrrt vs The World"
