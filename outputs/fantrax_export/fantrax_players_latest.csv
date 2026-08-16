@@ -766,7 +766,7 @@ fantrax_id,name,mlb_team,primary_position,eligible_positions,league_status,stats
 06id1,"Bender, Derek",(N/A),1B,"1B,UT,CI",FA,,19657,
 06htk,"Bengard, Spencer",MIN,RP,P,FA,,,
 06aly,"Benge, Carson",NYM,CF,"OF,UT",T,,19509,a268389e-f3d7-4301-8af4-7c6ad1f79459
-03pdw,"Benintendi, Andrew",CHW,LF,"OF,UT",FA,10159,13812,0e5244cd-9226-4ee1-bb63-d022a9240ca0
+03pdw,"Benintendi, Andrew",CHW,LF,"OF,UT",T,10159,13812,0e5244cd-9226-4ee1-bb63-d022a9240ca0
 061zf,"Benitez, Angel",NYY,SP,P,FA,,19119,
 05u32,"Benitez, Diego",(N/A),1B,"1B,UT,CI",FA,,17751,
 04ek0,"Benitez, Jorge",(N/A),RP,P,FA,,15741,
@@ -1027,7 +1027,7 @@ fantrax_id,name,mlb_team,primary_position,eligible_positions,league_status,stats
 0731r,"Bracho, Oswaldo",CLE,LF,"OF,UT",FA,,,
 03djz,"Bracho, Silvino",(N/A),RP,P,FA,10064,14036,4f7115d4-0cab-40b2-af8c-ba59b6e5d437
 05jre,"Bradfield Jr., Enrique",BAL,CF,"OF,UT",FA,,16731,
-0514o,"Bradford, Cody",TEX,SP,P,FA,,16193,0feb47d0-1eac-4553-9a83-5926f9cc795b
+0514o,"Bradford, Cody",TEX,SP,P,T,,16193,0feb47d0-1eac-4553-9a83-5926f9cc795b
 04pq4,"Bradish, Kyle",BAL,SP,P,T,,15482,ac593ed6-be4c-46be-b1ab-9a18da4338cf
 05yas,"Bradley, Nicholas",(N/A),SP,P,FA,,,
 04pr8,"Bradley, Taj",MIN,SP,P,T,,15684,3c8607f6-c72d-4582-9904-dc1fe813c8d2
@@ -2704,7 +2704,7 @@ fantrax_id,name,mlb_team,primary_position,eligible_positions,league_status,stats
 06zam,"Edge, Kamden",KC,RP,P,FA,,,
 06l50,"Edgington, Brian",CIN,SP,P,FA,,19390,
 06s3c,"Edington, Derrick",TB,RP,P,FA,,,
-041sq,"Edman, Tommy",LAD,2B,"OF,UT,2B,MI",T,11596,15743,3aea48c2-9d7c-46bc-b48e-627cbfa2a954
+041sq,"Edman, Tommy",LAD,2B,"OF,UT,2B,MI",WW,11596,15743,3aea48c2-9d7c-46bc-b48e-627cbfa2a954
 072dj,"Edmondson, Clay",SD,SP,P,FA,,,
 02of2,"Edwards Jr., Carl",DET,RP,P,FA,9555,12910,10eb3767-83a4-46b9-a072-9a0bc88bc06a
 05yo8,"Edwards, Christian",(N/A),SP,P,FA,,,
@@ -6379,7 +6379,7 @@ fantrax_id,name,mlb_team,primary_position,eligible_positions,league_status,stats
 06v24,"Morao, Jhonny",(N/A),RP,P,FA,,,
 060ou,"Mordan, Aneudis",(N/A),1B,"1B,UT,CI",FA,,19068,
 06hwo,"Morehouse, Zane",CLE,RP,P,FA,,,
-043ia,"Morejon, Adrian",SD,RP,P,T,10574,14068,7251332d-7c46-4b43-8a87-a94e185c7e6b
+043ia,"Morejon, Adrian",SD,RP,P,WW,10574,14068,7251332d-7c46-4b43-8a87-a94e185c7e6b
 06uwj,"Morejon, Luis",COL,LF,"OF,UT",FA,,20397,
 06vy5,"Morel, Albert",LAA,SP,P,FA,,,
 06dq5,"Morel, Braylin",(N/A),RF,"OF,UT",FA,,19179,
