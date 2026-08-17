@@ -282,7 +282,7 @@ fantrax_id,name,mlb_team,primary_position,eligible_positions,league_status,stats
 06gjs,"Anderson, Casey",ARI,RP,P,FA,,,
 026k6,"Anderson, Chase",(N/A),RP,P,FA,9698,12419,4bdcd59e-2cd5-4d1e-8058-588a72a1f8ae
 06r8a,"Anderson, Colin",(N/A),3B,"UT,3B,CI",FA,,,
-02nb6,"Anderson, Drew",DET,SP,P,T,10779,14602,9186e5cf-98cf-4191-b070-282357135748
+02nb6,"Anderson, Drew",DET,SP,P,WW,10779,14602,9186e5cf-98cf-4191-b070-282357135748
 06dqr,"Anderson, Ethan",BAL,C,"C,1B,UT,CI",FA,,19555,
 04q3y,"Anderson, Grant",MIL,RP,P,FA,,16000,a6651b0c-51b9-4586-a4e6-edb74b826daa
 041m0,"Anderson, Ian",(N/A),SP,P,FA,10424,14241,3686f2a5-7144-4bd0-95c8-12ceb78fe192
@@ -6410,7 +6410,7 @@ fantrax_id,name,mlb_team,primary_position,eligible_positions,league_status,stats
 06v24,"Morao, Jhonny",(N/A),RP,P,FA,,,
 060ou,"Mordan, Aneudis",(N/A),1B,"1B,UT,CI",FA,,19068,
 06hwo,"Morehouse, Zane",CLE,RP,P,FA,,,
-043ia,"Morejon, Adrian",SD,RP,P,WW,10574,14068,7251332d-7c46-4b43-8a87-a94e185c7e6b
+043ia,"Morejon, Adrian",SD,RP,P,FA,10574,14068,7251332d-7c46-4b43-8a87-a94e185c7e6b
 06uwj,"Morejon, Luis",COL,LF,"OF,UT",FA,,20397,
 06vy5,"Morel, Albert",LAA,SP,P,FA,,,
 06dq5,"Morel, Braylin",(N/A),RF,"OF,UT",FA,,19179,
@@ -6969,6 +6969,7 @@ fantrax_id,name,mlb_team,primary_position,eligible_positions,league_status,stats
 03qne,"Paddack, Chris",(N/A),SP,P,FA,10575,14409,cb1d6940-da1d-431f-a868-35a76a97a8da
 06qvr,"Paddack, Liam",CHW,RP,P,FA,,,
 06zf7,"Paden, Jaylen",ATL,RP,P,FA,,,
+078sz,"Padgett, Cam",BOS,RP,P,WW,,,
 07341,"Padilla, Alexander",DET,SP,P,FA,,,
 06r39,"Padilla, Leider",LAD,LF,"OF,UT",FA,,,
 03qra,"Padilla, Nicholas",(N/A),RP,P,FA,,18231,ac5064b8-e6ce-48b5-99e4-6b193fd99462
@@ -7129,7 +7130,7 @@ fantrax_id,name,mlb_team,primary_position,eligible_positions,league_status,stats
 04o10,"Peguero, Joel",SF,RP,P,FA,,18765,93531cf2-8162-499a-8c64-2df97b209388
 05rjm,"Peguero, Jonathan",(N/A),C,"C,UT",FA,,,
 06beo,"Peguero, Juanfel",TB,SS,"UT,SS,MI",FA,,,
-04ol2,"Peguero, Liover",WSH,SS,"UT,SS,MI",FA,11883,16254,5d763ac5-137a-4461-bba5-a2e5588e87f2
+04ol2,"Peguero, Liover",PHI,SS,"UT,SS,MI",FA,11883,16254,5d763ac5-137a-4461-bba5-a2e5588e87f2
 05nny,"Peguero, Odalys",(N/A),SS,"UT,SS,MI",FA,,16601,
 06kle,"Peguero, Rafy",LAD,LF,"OF,UT",FA,,,
 03dwk,"Pelham, CD",PIT,RP,P,FA,11087,15708,ae150b03-17df-443c-9cb1-9ce1b02781fa
@@ -7719,7 +7720,7 @@ fantrax_id,name,mlb_team,primary_position,eligible_positions,league_status,stats
 06z06,"Raymond, Cole",LAA,SP,P,FA,,,
 05unz,"Rayo, Elian",(N/A),3B,"UT,3B,CI",FA,,20724,
 06ftu,"Rayo, Oscar",KC,RP,P,FA,,20726,
-02bzn,"Rea, Colin",CHC,SP,P,WW,10048,13786,cd417c1f-ecec-4a64-907a-bbb2b04d8507
+02bzn,"Rea, Colin",CHC,SP,P,FA,10048,13786,cd417c1f-ecec-4a64-907a-bbb2b04d8507
 025i9,"Realmuto, J.T.",PHI,C,"C,UT",FA,9718,11641,f2a70df3-0bff-48e3-92ae-970c2a103fcf
 06k7o,"Reaves, Tanner",(N/A),2B,"2B,UT,MI",FA,,,
 074a5,"Recio, Ambeiro",SEA,CF,"OF,UT",FA,,,
@@ -9148,7 +9149,7 @@ fantrax_id,name,mlb_team,primary_position,eligible_positions,league_status,stats
 06lfg,"Suero, Chris",NYM,C,"C,OF,UT",FA,,19468,
 06rks,"Suero, Larry",COL,3B,"UT,3B,CI",FA,,,
 03mp9,"Suero, Wander",ATH,RP,P,FA,11007,15240,99a4e02c-6349-4031-ac5e-88a64934c9dc
-04b01,"Sugano, Tomoyuki",COL,SP,P,FA,,14712,b34ad145-1a14-4fd6-9dc4-27483ad14418
+04b01,"Sugano, Tomoyuki",COL,SP,P,T,,14712,b34ad145-1a14-4fd6-9dc4-27483ad14418
 05j8l,"Sugastey, Adrian",SF,C,"C,UT",FA,,16583,
 0669h,"Suggs, Matt",WSH,C,"C,UT",FA,,,
 05aku,"Suisbel, Luis",SEA,3B,"UT,3B,CI",FA,,19149,
@@ -9499,7 +9500,7 @@ fantrax_id,name,mlb_team,primary_position,eligible_positions,league_status,stats
 06c4t,"Tovar, Deward",TEX,RF,"OF,UT",FA,,,
 064vy,"Tovar, Eduardo",(N/A),RP,P,FA,,,
 06r1n,"Tovar, Erich",CLE,RP,P,FA,,,
-04mra,"Tovar, Ezequiel",COL,SS,"UT,SS,MI",T,,16456,9f9b67ad-6d80-408a-bf23-4ff1dbd8e999
+04mra,"Tovar, Ezequiel",COL,SS,"UT,SS,MI",WW,,16456,9f9b67ad-6d80-408a-bf23-4ff1dbd8e999
 06rnb,"Tovar, Geremy",(N/A),RP,P,FA,,,
 06rna,"Tovar, Jhemiangel",(N/A),RP,P,FA,,,
 077c2,"Tovar, Jhoener",PHI,SP,P,FA,,,
@@ -10347,7 +10348,7 @@ fantrax_id,name,mlb_team,primary_position,eligible_positions,league_status,stats
 06zbk,"Young, Ethan",STL,RP,P,FA,,20377,
 06qu0,"Young, Jack",CHW,RP,P,FA,,,
 05yaf,"Young, Jacob",WSH,CF,"OF,UT",FA,,18764,3be58676-a613-4f65-9859-c3b29d2750ce
-04eoj,"Young, Jared",NYM,1B,"1B,UT,CI",FA,,15950,fa5caff9-4291-4cbf-ab6b-374dc583a57f
+04eoj,"Young, Jared",NYM,1B,"1B,UT,CI",T,,15950,fa5caff9-4291-4cbf-ab6b-374dc583a57f
 065nw,"Young, Luke",WSH,RP,P,FA,,,
 05yat,"Young, Quentin",MIN,SS,"UT,SS,MI",FA,,20168,
 065nt,"Young, Taylor",LAD,3B,"2B,UT,3B,CI,MI",FA,,,
