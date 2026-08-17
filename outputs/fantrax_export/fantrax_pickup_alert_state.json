@@ -483,6 +483,48 @@
         "one_remaining": true,
         "overage_alerted": 0
       }
+    },
+    "2026-08-17": {
+      "6tnz8jgemj90wrl7": {
+        "major_add_limit": 10,
+        "overage_alerted": 0
+      },
+      "aqfyadu2mj90wrl7": {
+        "major_add_limit": 10,
+        "overage_alerted": 0
+      },
+      "bw696uo5mj90wrl7": {
+        "major_add_limit": 10,
+        "overage_alerted": 0
+      },
+      "f3myl5ugmj90wrl7": {
+        "major_add_limit": 10,
+        "overage_alerted": 0
+      },
+      "hd9hwe4mmj90wrl7": {
+        "major_add_limit": 10,
+        "overage_alerted": 0
+      },
+      "jk36oo1hmj90wrl7": {
+        "major_add_limit": 10,
+        "overage_alerted": 0
+      },
+      "k7c57nf4mj90wrl8": {
+        "major_add_limit": 10,
+        "overage_alerted": 0
+      },
+      "mldxq5pemj90wrl7": {
+        "major_add_limit": 10,
+        "overage_alerted": 0
+      },
+      "o4jvg6q3mj90wrl7": {
+        "major_add_limit": 10,
+        "overage_alerted": 0
+      },
+      "qatqhh61mj90wrl7": {
+        "major_add_limit": 10,
+        "overage_alerted": 0
+      }
     }
   },
   "minor_windows": {
@@ -3508,15 +3550,6 @@
       "team_id": "hd9hwe4mmj90wrl7",
       "team_name": "Third Degree Burnes"
     },
-    "hd9hwe4mmj90wrl7:02nb6": {
-      "fantrax_id": "02nb6",
-      "player_name": "Drew Anderson",
-      "primary_position": "SP",
-      "roster_position": "P",
-      "roster_status": "ACTIVE",
-      "team_id": "hd9hwe4mmj90wrl7",
-      "team_name": "Third Degree Burnes"
-    },
     "hd9hwe4mmj90wrl7:03zbh": {
       "fantrax_id": "03zbh",
       "player_name": "Fernando Tatis Jr.",
@@ -3553,6 +3586,15 @@
       "team_id": "hd9hwe4mmj90wrl7",
       "team_name": "Third Degree Burnes"
     },
+    "hd9hwe4mmj90wrl7:04b01": {
+      "fantrax_id": "04b01",
+      "player_name": "Tomoyuki Sugano",
+      "primary_position": "SP",
+      "roster_position": "P",
+      "roster_status": "ACTIVE",
+      "team_id": "hd9hwe4mmj90wrl7",
+      "team_name": "Third Degree Burnes"
+    },
     "hd9hwe4mmj90wrl7:04ej3": {
       "fantrax_id": "04ej3",
       "player_name": "Riley OBrien",
@@ -3567,15 +3609,6 @@
       "player_name": "Casey Mize",
       "primary_position": "SP",
       "roster_position": "P",
-      "roster_status": "ACTIVE",
-      "team_id": "hd9hwe4mmj90wrl7",
-      "team_name": "Third Degree Burnes"
-    },
-    "hd9hwe4mmj90wrl7:04mra": {
-      "fantrax_id": "04mra",
-      "player_name": "Ezequiel Tovar",
-      "primary_position": "SS",
-      "roster_position": "UT",
       "roster_status": "ACTIVE",
       "team_id": "hd9hwe4mmj90wrl7",
       "team_name": "Third Degree Burnes"
@@ -3630,7 +3663,7 @@
       "player_name": "Adley Rutschman",
       "primary_position": "C",
       "roster_position": "UT",
-      "roster_status": "INJURED_RESERVE",
+      "roster_status": "ACTIVE",
       "team_id": "hd9hwe4mmj90wrl7",
       "team_name": "Third Degree Burnes"
     },
