@@ -2127,7 +2127,7 @@
       "player_name": "Vaughn Grissom",
       "primary_position": "2B",
       "roster_position": "UT",
-      "roster_status": "ACTIVE",
+      "roster_status": "RESERVE",
       "team_id": "aqfyadu2mj90wrl7",
       "team_name": "Ben the Hen"
     },
@@ -2266,15 +2266,6 @@
       "team_id": "aqfyadu2mj90wrl7",
       "team_name": "Ben the Hen"
     },
-    "aqfyadu2mj90wrl7:05y72": {
-      "fantrax_id": "05y72",
-      "player_name": "Landen Roupp",
-      "primary_position": "SP",
-      "roster_position": "P",
-      "roster_status": "ACTIVE",
-      "team_id": "aqfyadu2mj90wrl7",
-      "team_name": "Ben the Hen"
-    },
     "aqfyadu2mj90wrl7:05yci": {
       "fantrax_id": "05yci",
       "player_name": "Tony Blanco Jr.",
@@ -2326,6 +2317,15 @@
       "primary_position": "3B",
       "roster_position": "UT",
       "roster_status": "MINORS",
+      "team_id": "aqfyadu2mj90wrl7",
+      "team_name": "Ben the Hen"
+    },
+    "aqfyadu2mj90wrl7:064n8": {
+      "fantrax_id": "064n8",
+      "player_name": "Nathan Church",
+      "primary_position": "CF",
+      "roster_position": "UT",
+      "roster_status": "ACTIVE",
       "team_id": "aqfyadu2mj90wrl7",
       "team_name": "Ben the Hen"
     },
@@ -5227,6 +5227,15 @@
       "team_id": "mldxq5pemj90wrl7",
       "team_name": "L\u00e1szlar\u00f3 T\u00f3th"
     },
+    "mldxq5pemj90wrl7:04y9f": {
+      "fantrax_id": "04y9f",
+      "player_name": "Ryan Zeferjahn",
+      "primary_position": "RP",
+      "roster_position": "P",
+      "roster_status": "ACTIVE",
+      "team_id": "mldxq5pemj90wrl7",
+      "team_name": "L\u00e1szlar\u00f3 T\u00f3th"
+    },
     "mldxq5pemj90wrl7:04z6m": {
       "fantrax_id": "04z6m",
       "player_name": "Agustin Ramirez",
@@ -5394,15 +5403,6 @@
       "player_name": "Jackson Holliday",
       "primary_position": "2B",
       "roster_position": "2B",
-      "roster_status": "ACTIVE",
-      "team_id": "mldxq5pemj90wrl7",
-      "team_name": "L\u00e1szlar\u00f3 T\u00f3th"
-    },
-    "mldxq5pemj90wrl7:05ycf": {
-      "fantrax_id": "05ycf",
-      "player_name": "Noah Cameron",
-      "primary_position": "SP",
-      "roster_position": "P",
       "roster_status": "ACTIVE",
       "team_id": "mldxq5pemj90wrl7",
       "team_name": "L\u00e1szlar\u00f3 T\u00f3th"
