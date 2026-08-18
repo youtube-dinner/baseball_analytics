@@ -3581,6 +3581,15 @@
       "team_id": "hd9hwe4mmj90wrl7",
       "team_name": "Third Degree Burnes"
     },
+    "hd9hwe4mmj90wrl7:03r06": {
+      "fantrax_id": "03r06",
+      "player_name": "Ryan Feltner",
+      "primary_position": "SP",
+      "roster_position": "P",
+      "roster_status": "ACTIVE",
+      "team_id": "hd9hwe4mmj90wrl7",
+      "team_name": "Third Degree Burnes"
+    },
     "hd9hwe4mmj90wrl7:03zbh": {
       "fantrax_id": "03zbh",
       "player_name": "Fernando Tatis Jr.",
@@ -3614,15 +3623,6 @@
       "primary_position": "SP",
       "roster_position": "P",
       "roster_status": "INJURED_RESERVE",
-      "team_id": "hd9hwe4mmj90wrl7",
-      "team_name": "Third Degree Burnes"
-    },
-    "hd9hwe4mmj90wrl7:04b01": {
-      "fantrax_id": "04b01",
-      "player_name": "Tomoyuki Sugano",
-      "primary_position": "SP",
-      "roster_position": "P",
-      "roster_status": "ACTIVE",
       "team_id": "hd9hwe4mmj90wrl7",
       "team_name": "Third Degree Burnes"
     },
@@ -5183,15 +5183,6 @@
       "team_id": "mldxq5pemj90wrl7",
       "team_name": "L\u00e1szlar\u00f3 T\u00f3th"
     },
-    "mldxq5pemj90wrl7:03pix": {
-      "fantrax_id": "03pix",
-      "player_name": "Tyler Stephenson",
-      "primary_position": "C",
-      "roster_position": "UT",
-      "roster_status": "ACTIVE",
-      "team_id": "mldxq5pemj90wrl7",
-      "team_name": "L\u00e1szlar\u00f3 T\u00f3th"
-    },
     "mldxq5pemj90wrl7:03ynj": {
       "fantrax_id": "03ynj",
       "player_name": "Juan Soto",
@@ -5296,6 +5287,15 @@
       "player_name": "Andrew Vaughn",
       "primary_position": "1B",
       "roster_position": "1B",
+      "roster_status": "ACTIVE",
+      "team_id": "mldxq5pemj90wrl7",
+      "team_name": "L\u00e1szlar\u00f3 T\u00f3th"
+    },
+    "mldxq5pemj90wrl7:04t3y": {
+      "fantrax_id": "04t3y",
+      "player_name": "Alejandro Kirk",
+      "primary_position": "C",
+      "roster_position": "UT",
       "roster_status": "ACTIVE",
       "team_id": "mldxq5pemj90wrl7",
       "team_name": "L\u00e1szlar\u00f3 T\u00f3th"
