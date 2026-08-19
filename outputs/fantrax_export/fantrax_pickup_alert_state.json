@@ -3230,15 +3230,6 @@
       "team_id": "f3myl5ugmj90wrl7",
       "team_name": "The Hot and Steamy Boys"
     },
-    "f3myl5ugmj90wrl7:04q08": {
-      "fantrax_id": "04q08",
-      "player_name": "Kyle Leahy",
-      "primary_position": "RP",
-      "roster_position": "P",
-      "roster_status": "ACTIVE",
-      "team_id": "f3myl5ugmj90wrl7",
-      "team_name": "The Hot and Steamy Boys"
-    },
     "f3myl5ugmj90wrl7:04y76": {
       "fantrax_id": "04y76",
       "player_name": "Jacob Webb",
@@ -3389,6 +3380,15 @@
       "primary_position": "SP",
       "roster_position": "P",
       "roster_status": "RESERVE",
+      "team_id": "f3myl5ugmj90wrl7",
+      "team_name": "The Hot and Steamy Boys"
+    },
+    "f3myl5ugmj90wrl7:060eu": {
+      "fantrax_id": "060eu",
+      "player_name": "Ben Joyce",
+      "primary_position": "RP",
+      "roster_position": "P",
+      "roster_status": "ACTIVE",
       "team_id": "f3myl5ugmj90wrl7",
       "team_name": "The Hot and Steamy Boys"
     },
