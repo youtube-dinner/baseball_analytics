@@ -842,7 +842,7 @@ fantrax_id,name,mlb_team,primary_position,eligible_positions,league_status,stats
 076g6,"Betancourt, Yoelvis",ATL,C,"C,UT",FA,,,
 05vyo,"Betemit Jr., Wilson",(N/A),SP,P,FA,,,
 06zs7,"Betencourt, Freiker",CHC,CF,"OF,UT",FA,,,
-01sci,"Bethancourt, Christian",NYY,C,"C,UT",FA,9530,11209,f5a594e5-adfe-4678-ac59-d4b3c823ce37
+01sci,"Bethancourt, Christian",PIT,C,"C,UT",FA,9530,11209,f5a594e5-adfe-4678-ac59-d4b3c823ce37
 02btf,"Betts, Mookie",LAD,SS,"UT,SS,MI",T,9552,12925,084d2514-9ffb-414e-ae16-3bc690aaad51
 06647,"Beutel, Ben",(N/A),SP,P,FA,,,
 05y23,"Bibee, Tanner",CLE,SP,P,T,,17443,337921aa-4410-42f6-9900-3f81ad7fb00c
@@ -1826,7 +1826,7 @@ fantrax_id,name,mlb_team,primary_position,eligible_positions,league_status,stats
 078fo,"Climie, Cade",PHI,1B,"1B,UT,CI",FA,,,
 06tlw,"Clode, Jesus",(N/A),RP,P,FA,,,
 06qnw,"Clohisy, Patrick",ATL,CF,"OF,UT",FA,,20025,
-05150,"Cluff, Jackson",NYM,SS,"UT,SS,MI",FA,,17088,f809731c-1823-403b-afc4-116e37cebd25
+05150,"Cluff, Jackson",CHC,SS,"UT,SS,MI",FA,,17088,f809731c-1823-403b-afc4-116e37cebd25
 078mu,"Clyne, Owen",PHI,SS,"2B,UT,SS,MI",FA,,,
 077qg,"Coates, Colton",BOS,SS,"UT,SS,MI",FA,,,
 0741k,"Coats, Quinton",(N/A),1B,"1B,UT,CI",FA,,,
@@ -1993,7 +1993,7 @@ fantrax_id,name,mlb_team,primary_position,eligible_positions,league_status,stats
 0637g,"Correa, Jesus",(N/A),SS,"UT,SS,MI",FA,,,
 06hot,"Correa, Yanzel",COL,RP,P,FA,,,
 064p4,"Corro, Derek",(N/A),RP,P,FA,,,
-03bin,"Cortes Jr., Nestor",(N/A),SP,P,FA,10970,15285,ba4aa21b-081c-4ce4-a3db-b1ddf6a08c4c
+03bin,"Cortes Jr., Nestor",PHI,SP,P,FA,10970,15285,ba4aa21b-081c-4ce4-a3db-b1ddf6a08c4c
 0423c,"Cortes, Carlos",ATH,RF,"OF,UT,P",FA,,14323,088a8499-8613-49ea-bebe-06fbb6b8d8ec
 072ct,"Cortese, Richie",PHI,RP,P,FA,,,
 06rgo,"Cortesia, Brayan",WSH,SS,"UT,SS,MI",FA,,19965,
@@ -2623,7 +2623,7 @@ fantrax_id,name,mlb_team,primary_position,eligible_positions,league_status,stats
 06kk8,"Dreiling, Dylan",TEX,CF,"OF,UT",FA,,19553,
 06luc,"Dreyer, Jack",LAD,RP,P,FA,,19463,03ba898a-7dc9-4937-b4f2-bd45e5978569
 06zb0,"Driessen, Dylan",STL,RP,P,FA,,,
-0512b,"Driscoll, Logan",TB,C,"C,UT",FA,,16220,bf179c54-a0e3-47d6-9381-88fd90a2d7f8
+0512b,"Driscoll, Logan",MIA,C,"C,UT",FA,,16220,bf179c54-a0e3-47d6-9381-88fd90a2d7f8
 06gif,"Driver, Jay",CLE,RP,P,FA,,,
 04eud,"Drohan, Shane",MIL,SP,P,T,,14851,1ace87c5-9684-4575-9515-8cf7bb98bf45
 06ppu,"Dromboski, Ryan",PHI,SP,P,FA,,,
