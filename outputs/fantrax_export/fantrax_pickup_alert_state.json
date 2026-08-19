@@ -4136,7 +4136,7 @@
       "player_name": "George Springer",
       "primary_position": "RF",
       "roster_position": "UT",
-      "roster_status": "ACTIVE",
+      "roster_status": "RESERVE",
       "team_id": "jk36oo1hmj90wrl7",
       "team_name": "Daddy Yankee"
     },
@@ -4181,7 +4181,7 @@
       "player_name": "Willy Adames",
       "primary_position": "SS",
       "roster_position": "UT",
-      "roster_status": "RESERVE",
+      "roster_status": "ACTIVE",
       "team_id": "jk36oo1hmj90wrl7",
       "team_name": "Daddy Yankee"
     },
