@@ -71,7 +71,8 @@
     "2026-08-15": true,
     "2026-08-16": true,
     "2026-08-17": true,
-    "2026-08-18": true
+    "2026-08-18": true,
+    "2026-08-19": true
   },
   "major_add_alerts": {
     "2026-06-08": {
@@ -5687,6 +5688,15 @@
       "team_id": "o4jvg6q3mj90wrl7",
       "team_name": "Skrrt vs The World"
     },
+    "o4jvg6q3mj90wrl7:029si": {
+      "fantrax_id": "029si",
+      "player_name": "Eduardo Rodriguez",
+      "primary_position": "SP",
+      "roster_position": "P",
+      "roster_status": "ACTIVE",
+      "team_id": "o4jvg6q3mj90wrl7",
+      "team_name": "Skrrt vs The World"
+    },
     "o4jvg6q3mj90wrl7:02x0f": {
       "fantrax_id": "02x0f",
       "player_name": "Sean Manaea",
@@ -6227,20 +6237,20 @@
       "team_id": "qatqhh61mj90wrl7",
       "team_name": "Je suis Charlie Morton"
     },
-    "qatqhh61mj90wrl7:0312g": {
-      "fantrax_id": "0312g",
-      "player_name": "Tyler Mahle",
-      "primary_position": "SP",
-      "roster_position": "P",
-      "roster_status": "ACTIVE",
-      "team_id": "qatqhh61mj90wrl7",
-      "team_name": "Je suis Charlie Morton"
-    },
     "qatqhh61mj90wrl7:031t0": {
       "fantrax_id": "031t0",
       "player_name": "Gleyber Torres",
       "primary_position": "2B",
       "roster_position": "2B",
+      "roster_status": "ACTIVE",
+      "team_id": "qatqhh61mj90wrl7",
+      "team_name": "Je suis Charlie Morton"
+    },
+    "qatqhh61mj90wrl7:03ann": {
+      "fantrax_id": "03ann",
+      "player_name": "Jeff Hoffman",
+      "primary_position": "RP",
+      "roster_position": "P",
       "roster_status": "ACTIVE",
       "team_id": "qatqhh61mj90wrl7",
       "team_name": "Je suis Charlie Morton"
