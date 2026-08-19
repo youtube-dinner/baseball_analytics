@@ -1,10 +1,9 @@
 probable_date,game_time_utc,home_away,probable_team,opponent,mlb_player_id,probable_name,fantrax_id,name,mlb_team,primary_position,eligible_positions,league_status,is_rostered,stats_inc_id,rotowire_id,sport_radar_id,game_pk
 2026-08-19,,,KC,ATH Wed 6:40PM,,Seth Lugo,03sef,"Lugo, Seth",KC,SP,P,FA,False,10326,14095,0600588b-39b2-49eb-9e77-208f8fdaca9b,
 2026-08-19,,,COL,LAD Wed 7:40PM,,Kyle Freeland,03ca3,"Freeland, Kyle",COL,SP,P,FA,False,9863,13369,e2081019-8ef0-471d-b6d6-1333a8a45897,
-2026-08-19,,,SF,@CLE Wed 5:40PM,,Adrian Houser,02brc,"Houser, Adrian",SF,SP,P,FA,False,10098,12199,8156bec7-9689-46d6-9b0f-eddf7240d9a3,
 2026-08-19,,,CHW,@CHC Wed 1:20PM,,Sean Newcomb,032lk,"Newcomb, Sean",CHW,RP,P,FA,False,9868,13368,c8034571-7279-4346-8490-15707c3b3c12,
-2026-08-19,,,HOU,LAA Wed 7:10PM,,Bryan King,06mi0,"King, Bryan",HOU,RP,P,FA,False,,19669,336054f7-c72a-425a-8d43-fb07073dbc62,
 2026-08-19,,,BAL,NYY Wed 5:35PM,,Chris Bassitt,02c2h,"Bassitt, Chris",BAL,SP,P,FA,False,9799,13613,90fa044f-7148-414c-af09-e0d4eb621775,
 2026-08-19,,,TOR,@TB Wed 5:40PM,,Max Scherzer,004ee,"Scherzer, Max",TOR,SP,P,FA,False,8193,9278,2527770b-cf48-42b9-81fa-9323756fb311,
 2026-08-19,,,NYM,SD Wed 12:10PM,,Robert Stock,01shb,"Stock, Robert",NYM,RP,P,FA,False,11053,11024,55780e25-8b8a-4314-b018-9fc198ec4628,
 2026-08-19,,,ATL,@MIN Wed 12:40PM,,AJ Smith-Shawver,05uy5,"Smith-Shawver, AJ",ATL,SP,P,FA,False,,17490,d9026eb2-ed6d-427e-87e1-eaa4dbd82d70,
+2026-08-19,,,HOU,LAA Wed 7:10PM,,Ethan Pecko,06f14,"Pecko, Ethan",HOU,SP,P,FA,False,,19813,fb2bb532-e3ec-4eb0-a7cf-e098e03f5c69,
