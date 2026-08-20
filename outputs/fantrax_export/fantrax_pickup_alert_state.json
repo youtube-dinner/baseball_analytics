@@ -72,7 +72,8 @@
     "2026-08-16": true,
     "2026-08-17": true,
     "2026-08-18": true,
-    "2026-08-19": true
+    "2026-08-19": true,
+    "2026-08-20": true
   },
   "major_add_alerts": {
     "2026-06-08": {
@@ -3047,7 +3048,7 @@
       "player_name": "Kevin Gausman",
       "primary_position": "SP",
       "roster_position": "P",
-      "roster_status": "ACTIVE",
+      "roster_status": "RESERVE",
       "team_id": "f3myl5ugmj90wrl7",
       "team_name": "The Hot and Steamy Boys"
     },
@@ -3254,7 +3255,7 @@
       "player_name": "Ian Seymour",
       "primary_position": "RP",
       "roster_position": "P",
-      "roster_status": "RESERVE",
+      "roster_status": "ACTIVE",
       "team_id": "f3myl5ugmj90wrl7",
       "team_name": "The Hot and Steamy Boys"
     },
@@ -6237,15 +6238,6 @@
       "team_id": "qatqhh61mj90wrl7",
       "team_name": "Je suis Charlie Morton"
     },
-    "qatqhh61mj90wrl7:03ann": {
-      "fantrax_id": "03ann",
-      "player_name": "Jeff Hoffman",
-      "primary_position": "RP",
-      "roster_position": "P",
-      "roster_status": "ACTIVE",
-      "team_id": "qatqhh61mj90wrl7",
-      "team_name": "Je suis Charlie Morton"
-    },
     "qatqhh61mj90wrl7:03dbm": {
       "fantrax_id": "03dbm",
       "player_name": "Logan Webb",
@@ -6300,15 +6292,6 @@
       "team_id": "qatqhh61mj90wrl7",
       "team_name": "Je suis Charlie Morton"
     },
-    "qatqhh61mj90wrl7:041r5": {
-      "fantrax_id": "041r5",
-      "player_name": "Dustin May",
-      "primary_position": "SP",
-      "roster_position": "P",
-      "roster_status": "ACTIVE",
-      "team_id": "qatqhh61mj90wrl7",
-      "team_name": "Je suis Charlie Morton"
-    },
     "qatqhh61mj90wrl7:041rj": {
       "fantrax_id": "041rj",
       "player_name": "JoJo Romero",
@@ -6340,6 +6323,15 @@
       "fantrax_id": "04cd5",
       "player_name": "MacKenzie Gore",
       "primary_position": "SP",
+      "roster_position": "P",
+      "roster_status": "ACTIVE",
+      "team_id": "qatqhh61mj90wrl7",
+      "team_name": "Je suis Charlie Morton"
+    },
+    "qatqhh61mj90wrl7:04ggi": {
+      "fantrax_id": "04ggi",
+      "player_name": "Andrew Kittredge",
+      "primary_position": "RP",
       "roster_position": "P",
       "roster_status": "ACTIVE",
       "team_id": "qatqhh61mj90wrl7",
@@ -6411,6 +6403,15 @@
     "qatqhh61mj90wrl7:05144": {
       "fantrax_id": "05144",
       "player_name": "Hunter Brown",
+      "primary_position": "SP",
+      "roster_position": "P",
+      "roster_status": "ACTIVE",
+      "team_id": "qatqhh61mj90wrl7",
+      "team_name": "Je suis Charlie Morton"
+    },
+    "qatqhh61mj90wrl7:0514f": {
+      "fantrax_id": "0514f",
+      "player_name": "Hayden Wesneski",
       "primary_position": "SP",
       "roster_position": "P",
       "roster_status": "ACTIVE",
