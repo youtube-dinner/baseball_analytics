@@ -511,6 +511,7 @@
       },
       "jk36oo1hmj90wrl7": {
         "major_add_limit": 10,
+        "one_remaining": true,
         "overage_alerted": 0
       },
       "k7c57nf4mj90wrl8": {
@@ -4128,7 +4129,7 @@
       "player_name": "George Springer",
       "primary_position": "RF",
       "roster_position": "UT",
-      "roster_status": "RESERVE",
+      "roster_status": "ACTIVE",
       "team_id": "jk36oo1hmj90wrl7",
       "team_name": "Daddy Yankee"
     },
@@ -4237,15 +4238,6 @@
       "primary_position": "1B",
       "roster_position": "CI",
       "roster_status": "ACTIVE",
-      "team_id": "jk36oo1hmj90wrl7",
-      "team_name": "Daddy Yankee"
-    },
-    "jk36oo1hmj90wrl7:041sq": {
-      "fantrax_id": "041sq",
-      "player_name": "Tommy Edman",
-      "primary_position": "2B",
-      "roster_position": "2B",
-      "roster_status": "RESERVE",
       "team_id": "jk36oo1hmj90wrl7",
       "team_name": "Daddy Yankee"
     },
@@ -4470,6 +4462,15 @@
       "player_name": "Cam Smith",
       "primary_position": "RF",
       "roster_position": "OF",
+      "roster_status": "ACTIVE",
+      "team_id": "jk36oo1hmj90wrl7",
+      "team_name": "Daddy Yankee"
+    },
+    "jk36oo1hmj90wrl7:060u3": {
+      "fantrax_id": "060u3",
+      "player_name": "Andrew Alvarez",
+      "primary_position": "SP",
+      "roster_position": "P",
       "roster_status": "ACTIVE",
       "team_id": "jk36oo1hmj90wrl7",
       "team_name": "Daddy Yankee"
@@ -5176,6 +5177,15 @@
       "team_id": "mldxq5pemj90wrl7",
       "team_name": "L\u00e1szlar\u00f3 T\u00f3th"
     },
+    "mldxq5pemj90wrl7:0317o": {
+      "fantrax_id": "0317o",
+      "player_name": "Jeff McNeil",
+      "primary_position": "2B",
+      "roster_position": "UT",
+      "roster_status": "ACTIVE",
+      "team_id": "mldxq5pemj90wrl7",
+      "team_name": "L\u00e1szlar\u00f3 T\u00f3th"
+    },
     "mldxq5pemj90wrl7:03btv": {
       "fantrax_id": "03btv",
       "player_name": "Sandy Alcantara",
@@ -5257,15 +5267,6 @@
       "team_id": "mldxq5pemj90wrl7",
       "team_name": "L\u00e1szlar\u00f3 T\u00f3th"
     },
-    "mldxq5pemj90wrl7:04pmu": {
-      "fantrax_id": "04pmu",
-      "player_name": "Ryan Jeffers",
-      "primary_position": "C",
-      "roster_position": "C",
-      "roster_status": "ACTIVE",
-      "team_id": "mldxq5pemj90wrl7",
-      "team_name": "L\u00e1szlar\u00f3 T\u00f3th"
-    },
     "mldxq5pemj90wrl7:04prt": {
       "fantrax_id": "04prt",
       "player_name": "Lawrence Butler",
@@ -5297,7 +5298,7 @@
       "fantrax_id": "04t3y",
       "player_name": "Alejandro Kirk",
       "primary_position": "C",
-      "roster_position": "UT",
+      "roster_position": "C",
       "roster_status": "ACTIVE",
       "team_id": "mldxq5pemj90wrl7",
       "team_name": "L\u00e1szlar\u00f3 T\u00f3th"
