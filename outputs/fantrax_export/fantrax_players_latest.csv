@@ -3037,7 +3037,7 @@ fantrax_id,name,mlb_team,primary_position,eligible_positions,league_status,stats
 0657x,"Firoved, Graham",(N/A),RP,P,FA,,,
 06k7t,"Fischer, Andrew",MIL,3B,"UT,3B,CI",T,,20166,
 070db,"Fischer, Carson",WSH,RP,P,FA,,21121,
-04pqo,"Fisher, Braydon",TOR,RP,P,FA,11479,15473,65065b12-776a-4930-98b6-637b0f36456f
+04pqo,"Fisher, Braydon",TOR,RP,P,T,11479,15473,65065b12-776a-4930-98b6-637b0f36456f
 06agk,"Fisher, Cade",BOS,SP,P,FA,,,
 06amp,"Fisher, Cam",(N/A),RF,"OF,1B,UT,CI",FA,,19041,
 06mib,"Fisher, Colin",SF,SP,P,FA,,18932,
@@ -4331,7 +4331,7 @@ fantrax_id,name,mlb_team,primary_position,eligible_positions,league_status,stats
 04pkr,"Hoerner, Nico",CHC,2B,"2B,UT,SS,MI",T,11284,15440,6ea2efc3-345a-4e30-8b95-744a60a3e7a5
 04zjm,"Hoese, Kody",(N/A),3B,"UT,3B,CI",FA,11779,16064,701ce9f3-e2f3-4a83-b6ae-50a094d39150
 06r4e,"Hoff, Paul",MIL,SP,P,FA,,,
-03ann,"Hoffman, Jeff",MIN,RP,P,WW,9896,13345,d2b49c9d-1c9f-44b4-b9b9-c4222dc0c089
+03ann,"Hoffman, Jeff",MIN,RP,P,FA,9896,13345,d2b49c9d-1c9f-44b4-b9b9-c4222dc0c089
 04pr7,"Hoffman, Nolan",KC,RP,P,FA,,17712,da719a63-21d3-46bc-a1a5-89b87ca1fbea
 06u74,"Hoffman, Wyatt",SD,LF,"OF,UT",FA,,,
 05y29,"Hoffmann, Andrew",PHI,RP,P,FA,,18106,d41cb606-6ad6-4a00-966f-7f79dd113200
@@ -4936,7 +4936,7 @@ fantrax_id,name,mlb_team,primary_position,eligible_positions,league_status,stats
 06l5i,"Kirwin, Danny",(N/A),RP,P,FA,,19404,
 06qsu,"Kisting, Jacob",MIA,RP,P,FA,,20555,
 06mi2,"Kitchen, Austin",SEA,RP,P,FA,,19670,5443703e-83a8-4d6e-949b-f5b391f04147
-04ggi,"Kittredge, Andrew",BAL,RP,P,T,10763,15094,6ff68416-4a92-49e8-8432-b672e0e6d4db
+04ggi,"Kittredge, Andrew",BAL,RP,P,WW,10763,15094,6ff68416-4a92-49e8-8432-b672e0e6d4db
 04n0l,"Kiyomiya, Kotaro",(N/A),1B,"1B,UT,CI",FA,,,
 0596f,"Kjerstad, Heston",BAL,LF,"OF,UT",FA,,16682,97a22126-469f-45b4-a47e-b0ff4bfc25f1
 067xm,"Klassen, George",LAA,SP,P,FA,,18859,7b64f2fa-d827-4ef7-b4aa-f2e27ae7b873
@@ -5881,7 +5881,7 @@ fantrax_id,name,mlb_team,primary_position,eligible_positions,league_status,stats
 070dd,"Maxwell, Logan",NYY,RF,"OF,UT",FA,,,
 0648f,"Maxwell, Zach",CIN,RP,P,FA,,18099,2f08e4f7-e4c8-4148-978c-fced91886ae6
 06mwh,"May, Aiden",COL,SP,P,FA,,19562,
-041r5,"May, Dustin",MIL,SP,P,WW,10898,14331,8c6572ee-d35f-4542-946a-1611e68395fe
+041r5,"May, Dustin",MIL,SP,P,FA,10898,14331,8c6572ee-d35f-4542-946a-1611e68395fe
 078fc,"May, Ian",LAD,RP,P,FA,,,
 059c2,"Mayberry, Seth",(N/A),RP,P,FA,,,
 05rez,"Mayea, Brando",NYY,CF,"OF,UT",FA,,18294,
@@ -6484,7 +6484,7 @@ fantrax_id,name,mlb_team,primary_position,eligible_positions,league_status,stats
 061bp,"Morgan, Blake",TB,SP,P,FA,,,
 06l4x,"Morgan, Chase",(N/A),SP,P,FA,,,
 066a8,"Morgan, David",SD,RP,P,FA,,19889,09141187-c7c4-4dda-8ad8-95d7f2f0a9c0
-04eiw,"Morgan, Eli",KC,RP,P,FA,11447,15380,d7ef5d66-3914-4a6a-bf41-1b77369a58a6
+04eiw,"Morgan, Eli",NYY,RP,P,FA,11447,15380,d7ef5d66-3914-4a6a-bf41-1b77369a58a6
 06kki,"Morgan, Marcus",(N/A),SP,P,FA,,,
 05wrt,"Morgan, Tre",TB,1B,"1B,UT,CI",FA,,18935,
 06hwn,"Morgan, Tyler",SD,RP,P,FA,,,
@@ -8092,7 +8092,7 @@ fantrax_id,name,mlb_team,primary_position,eligible_positions,league_status,stats
 06rnv,"Rodriguez, Gabriel",PIT,CF,"OF,UT",FA,,,
 06fex,"Rodriguez, Gerardo",BOS,C,"C,UT",FA,,,
 06v2i,"Rodriguez, Geury",TEX,RP,P,FA,,,
-04pko,"Rodriguez, Grayson",LAA,SP,P,T,11277,15420,8e17fe93-87da-4a6c-a63e-32a8083470cc
+04pko,"Rodriguez, Grayson",LAA,SP,P,WW,11277,15420,8e17fe93-87da-4a6c-a63e-32a8083470cc
 078xo,"Rodriguez, Gregory",TB,C,"C,1B,UT,CI",WW,,,
 066nd,"Rodriguez, Gustavo",ATH,RP,P,FA,,,
 05xse,"Rodriguez, Hector",CIN,LF,"OF,UT",T,,18177,1984776a-1b9f-49d7-b33c-9011a9c9de22
@@ -9971,7 +9971,7 @@ fantrax_id,name,mlb_team,primary_position,eligible_positions,league_status,stats
 06roq,"Vu, Kien",CIN,LF,"OF,UT",FA,,,
 06zrg,"Vucinovich, Hayden",MIL,SP,P,FA,,,
 05jql,"Vukovich, A.J.",ARI,LF,"OF,UT",FA,,16888,
-02iug,"Wacha, Michael",KC,SP,P,FA,9329,12457,db6ced3d-7838-4a7c-92a5-50d0b63dac3b
+02iug,"Wacha, Michael",KC,SP,P,T,9329,12457,db6ced3d-7838-4a7c-92a5-50d0b63dac3b
 0780n,"Wachsmann, Ethan",MIN,SP,P,FA,,21148,
 0766b,"Waco, LJ",WSH,SP,P,FA,,,
 03qlh,"Waddell, Brandon",NYM,RP,P,FA,12076,14212,02a63222-ca50-46b8-b4a3-5c6c37076849
