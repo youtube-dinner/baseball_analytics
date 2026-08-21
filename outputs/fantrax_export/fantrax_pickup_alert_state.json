@@ -3207,6 +3207,15 @@
       "team_id": "f3myl5ugmj90wrl7",
       "team_name": "The Hot and Steamy Boys"
     },
+    "f3myl5ugmj90wrl7:04pmu": {
+      "fantrax_id": "04pmu",
+      "player_name": "Ryan Jeffers",
+      "primary_position": "C",
+      "roster_position": "UT",
+      "roster_status": "ACTIVE",
+      "team_id": "f3myl5ugmj90wrl7",
+      "team_name": "The Hot and Steamy Boys"
+    },
     "f3myl5ugmj90wrl7:04ppi": {
       "fantrax_id": "04ppi",
       "player_name": "Kody Clemens",
@@ -3401,7 +3410,7 @@
       "player_name": "Jacob Wilson",
       "primary_position": "SS",
       "roster_position": "UT",
-      "roster_status": "ACTIVE",
+      "roster_status": "RESERVE",
       "team_id": "f3myl5ugmj90wrl7",
       "team_name": "The Hot and Steamy Boys"
     },
