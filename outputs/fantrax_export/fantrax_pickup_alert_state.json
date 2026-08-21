@@ -512,6 +512,7 @@
       },
       "jk36oo1hmj90wrl7": {
         "major_add_limit": 10,
+        "none_remaining": true,
         "one_remaining": true,
         "overage_alerted": 0
       },
@@ -2046,6 +2047,15 @@
       "team_id": "aqfyadu2mj90wrl7",
       "team_name": "Ben the Hen"
     },
+    "aqfyadu2mj90wrl7:02yk4": {
+      "fantrax_id": "02yk4",
+      "player_name": "Tyler ONeill",
+      "primary_position": "RF",
+      "roster_position": "UT",
+      "roster_status": "ACTIVE",
+      "team_id": "aqfyadu2mj90wrl7",
+      "team_name": "Ben the Hen"
+    },
     "aqfyadu2mj90wrl7:03fi0": {
       "fantrax_id": "03fi0",
       "player_name": "Ozzie Albies",
@@ -2094,15 +2104,6 @@
     "aqfyadu2mj90wrl7:041r1": {
       "fantrax_id": "041r1",
       "player_name": "Jesus Luzardo",
-      "primary_position": "SP",
-      "roster_position": "P",
-      "roster_status": "ACTIVE",
-      "team_id": "aqfyadu2mj90wrl7",
-      "team_name": "Ben the Hen"
-    },
-    "aqfyadu2mj90wrl7:041rf": {
-      "fantrax_id": "041rf",
-      "player_name": "Shane Bieber",
       "primary_position": "SP",
       "roster_position": "P",
       "roster_status": "ACTIVE",
@@ -2168,7 +2169,7 @@
       "player_name": "Francisco Alvarez",
       "primary_position": "C",
       "roster_position": "UT",
-      "roster_status": "ACTIVE",
+      "roster_status": "RESERVE",
       "team_id": "aqfyadu2mj90wrl7",
       "team_name": "Ben the Hen"
     },
@@ -4102,7 +4103,7 @@
       "fantrax_id": "01cgo",
       "player_name": "Freddie Freeman",
       "primary_position": "1B",
-      "roster_position": "1B",
+      "roster_position": "UT",
       "roster_status": "ACTIVE",
       "team_id": "jk36oo1hmj90wrl7",
       "team_name": "Daddy Yankee"
@@ -4120,7 +4121,7 @@
       "fantrax_id": "024m0",
       "player_name": "Jose Altuve",
       "primary_position": "2B",
-      "roster_position": "MI",
+      "roster_position": "UT",
       "roster_status": "ACTIVE",
       "team_id": "jk36oo1hmj90wrl7",
       "team_name": "Daddy Yankee"
@@ -4183,7 +4184,7 @@
       "fantrax_id": "03atq",
       "player_name": "Willy Adames",
       "primary_position": "SS",
-      "roster_position": "UT",
+      "roster_position": "MI",
       "roster_status": "ACTIVE",
       "team_id": "jk36oo1hmj90wrl7",
       "team_name": "Daddy Yankee"
@@ -4193,7 +4194,7 @@
       "player_name": "Willi Castro",
       "primary_position": "2B",
       "roster_position": "2B",
-      "roster_status": "RESERVE",
+      "roster_status": "ACTIVE",
       "team_id": "jk36oo1hmj90wrl7",
       "team_name": "Daddy Yankee"
     },
@@ -4219,7 +4220,7 @@
       "fantrax_id": "03oh0",
       "player_name": "Willson Contreras",
       "primary_position": "1B",
-      "roster_position": "UT",
+      "roster_position": "1B",
       "roster_status": "ACTIVE",
       "team_id": "jk36oo1hmj90wrl7",
       "team_name": "Daddy Yankee"
@@ -4256,7 +4257,7 @@
       "player_name": "Jazz Chisholm Jr.",
       "primary_position": "2B",
       "roster_position": "2B",
-      "roster_status": "ACTIVE",
+      "roster_status": "RESERVE",
       "team_id": "jk36oo1hmj90wrl7",
       "team_name": "Daddy Yankee"
     },
