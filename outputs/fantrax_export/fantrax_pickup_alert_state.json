@@ -2536,16 +2536,7 @@
       "player_name": "Edwin Diaz",
       "primary_position": "RP",
       "roster_position": "P",
-      "roster_status": "ACTIVE",
-      "team_id": "bw696uo5mj90wrl7",
-      "team_name": "Cant Park Here"
-    },
-    "bw696uo5mj90wrl7:03aqw": {
-      "fantrax_id": "03aqw",
-      "player_name": "Mauricio Dubon",
-      "primary_position": "LF",
-      "roster_position": "OF",
-      "roster_status": "ACTIVE",
+      "roster_status": "INJURED_RESERVE",
       "team_id": "bw696uo5mj90wrl7",
       "team_name": "Cant Park Here"
     },
@@ -2572,7 +2563,7 @@
       "player_name": "Oneil Cruz",
       "primary_position": "CF",
       "roster_position": "OF",
-      "roster_status": "INJURED_RESERVE",
+      "roster_status": "ACTIVE",
       "team_id": "bw696uo5mj90wrl7",
       "team_name": "Cant Park Here"
     },
@@ -2589,15 +2580,6 @@
       "fantrax_id": "04pmq",
       "player_name": "Braxton Ashcraft",
       "primary_position": "RP",
-      "roster_position": "P",
-      "roster_status": "ACTIVE",
-      "team_id": "bw696uo5mj90wrl7",
-      "team_name": "Cant Park Here"
-    },
-    "bw696uo5mj90wrl7:04ppz": {
-      "fantrax_id": "04ppz",
-      "player_name": "Jake Irvin",
-      "primary_position": "SP",
       "roster_position": "P",
       "roster_status": "ACTIVE",
       "team_id": "bw696uo5mj90wrl7",
@@ -2672,6 +2654,15 @@
       "primary_position": "SP",
       "roster_position": "P",
       "roster_status": "RESERVE",
+      "team_id": "bw696uo5mj90wrl7",
+      "team_name": "Cant Park Here"
+    },
+    "bw696uo5mj90wrl7:0518s": {
+      "fantrax_id": "0518s",
+      "player_name": "Ryan Gusto",
+      "primary_position": "SP",
+      "roster_position": "P",
+      "roster_status": "ACTIVE",
       "team_id": "bw696uo5mj90wrl7",
       "team_name": "Cant Park Here"
     },
@@ -2797,7 +2788,7 @@
       "player_name": "Kade Anderson",
       "primary_position": "SP",
       "roster_position": "P",
-      "roster_status": "MINORS",
+      "roster_status": "ACTIVE",
       "team_id": "bw696uo5mj90wrl7",
       "team_name": "Cant Park Here"
     },
@@ -3656,21 +3647,21 @@
       "team_id": "hd9hwe4mmj90wrl7",
       "team_name": "Third Degree Burnes"
     },
-    "hd9hwe4mmj90wrl7:04pko": {
-      "fantrax_id": "04pko",
-      "player_name": "Grayson Rodriguez",
-      "primary_position": "SP",
-      "roster_position": "P",
-      "roster_status": "ACTIVE",
-      "team_id": "hd9hwe4mmj90wrl7",
-      "team_name": "Third Degree Burnes"
-    },
     "hd9hwe4mmj90wrl7:04pmn": {
       "fantrax_id": "04pmn",
       "player_name": "Parker Meadows",
       "primary_position": "CF",
       "roster_position": "OF",
       "roster_status": "INJURED_RESERVE",
+      "team_id": "hd9hwe4mmj90wrl7",
+      "team_name": "Third Degree Burnes"
+    },
+    "hd9hwe4mmj90wrl7:04pqo": {
+      "fantrax_id": "04pqo",
+      "player_name": "Braydon Fisher",
+      "primary_position": "RP",
+      "roster_position": "P",
+      "roster_status": "ACTIVE",
       "team_id": "hd9hwe4mmj90wrl7",
       "team_name": "Third Degree Burnes"
     },
