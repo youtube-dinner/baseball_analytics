@@ -2047,15 +2047,6 @@
       "team_id": "aqfyadu2mj90wrl7",
       "team_name": "Ben the Hen"
     },
-    "aqfyadu2mj90wrl7:02yk4": {
-      "fantrax_id": "02yk4",
-      "player_name": "Tyler ONeill",
-      "primary_position": "RF",
-      "roster_position": "UT",
-      "roster_status": "ACTIVE",
-      "team_id": "aqfyadu2mj90wrl7",
-      "team_name": "Ben the Hen"
-    },
     "aqfyadu2mj90wrl7:03fi0": {
       "fantrax_id": "03fi0",
       "player_name": "Ozzie Albies",
@@ -2079,6 +2070,15 @@
       "player_name": "Austin Riley",
       "primary_position": "3B",
       "roster_position": "UT",
+      "roster_status": "ACTIVE",
+      "team_id": "aqfyadu2mj90wrl7",
+      "team_name": "Ben the Hen"
+    },
+    "aqfyadu2mj90wrl7:03qpi": {
+      "fantrax_id": "03qpi",
+      "player_name": "Patrick Sandoval",
+      "primary_position": "SP",
+      "roster_position": "P",
       "roster_status": "ACTIVE",
       "team_id": "aqfyadu2mj90wrl7",
       "team_name": "Ben the Hen"
@@ -2169,7 +2169,7 @@
       "player_name": "Francisco Alvarez",
       "primary_position": "C",
       "roster_position": "UT",
-      "roster_status": "RESERVE",
+      "roster_status": "ACTIVE",
       "team_id": "aqfyadu2mj90wrl7",
       "team_name": "Ben the Hen"
     },
