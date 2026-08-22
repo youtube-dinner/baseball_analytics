@@ -74,7 +74,8 @@
     "2026-08-18": true,
     "2026-08-19": true,
     "2026-08-20": true,
-    "2026-08-21": true
+    "2026-08-21": true,
+    "2026-08-22": true
   },
   "major_add_alerts": {
     "2026-06-08": {
@@ -1534,9 +1535,9 @@
       "team_id": "6tnz8jgemj90wrl7",
       "team_name": "Bobby and the NitWitts"
     },
-    "6tnz8jgemj90wrl7:03pov": {
-      "fantrax_id": "03pov",
-      "player_name": "Brady Singer",
+    "6tnz8jgemj90wrl7:03nuc": {
+      "fantrax_id": "03nuc",
+      "player_name": "Luis Castillo",
       "primary_position": "SP",
       "roster_position": "P",
       "roster_status": "ACTIVE",
@@ -1642,15 +1643,6 @@
       "team_id": "6tnz8jgemj90wrl7",
       "team_name": "Bobby and the NitWitts"
     },
-    "6tnz8jgemj90wrl7:05152": {
-      "fantrax_id": "05152",
-      "player_name": "Tanner Gordon",
-      "primary_position": "SP",
-      "roster_position": "P",
-      "roster_status": "ACTIVE",
-      "team_id": "6tnz8jgemj90wrl7",
-      "team_name": "Bobby and the NitWitts"
-    },
     "6tnz8jgemj90wrl7:0516x": {
       "fantrax_id": "0516x",
       "player_name": "Brent Headrick",
@@ -1738,6 +1730,15 @@
       "primary_position": "SP",
       "roster_position": "P",
       "roster_status": "INJURED_RESERVE",
+      "team_id": "6tnz8jgemj90wrl7",
+      "team_name": "Bobby and the NitWitts"
+    },
+    "6tnz8jgemj90wrl7:05u2q": {
+      "fantrax_id": "05u2q",
+      "player_name": "Blade Tidwell",
+      "primary_position": "SP",
+      "roster_position": "P",
+      "roster_status": "ACTIVE",
       "team_id": "6tnz8jgemj90wrl7",
       "team_name": "Bobby and the NitWitts"
     },
