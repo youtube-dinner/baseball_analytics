@@ -816,6 +816,16 @@
       "violation_alert_sent": false,
       "window_start": "2026-07-29"
     },
+    "f3myl5ugmj90wrl7:05u4l": {
+      "demotion_alert_sent": true,
+      "eligible_date": "2026-09-13",
+      "fantrax_id": "05u4l",
+      "player_name": "Daniel Palencia",
+      "team_id": "f3myl5ugmj90wrl7",
+      "team_name": "The Hot and Steamy Boys",
+      "violation_alert_sent": false,
+      "window_start": "2026-08-22"
+    },
     "f3myl5ugmj90wrl7:05uei": {
       "demotion_alert_sent": true,
       "eligible_date": "2026-07-06",
@@ -3331,7 +3341,7 @@
       "player_name": "Daniel Palencia",
       "primary_position": "RP",
       "roster_position": "P",
-      "roster_status": "INJURED_RESERVE",
+      "roster_status": "MINORS",
       "team_id": "f3myl5ugmj90wrl7",
       "team_name": "The Hot and Steamy Boys"
     },
@@ -3466,15 +3476,6 @@
       "player_name": "Eduardo Tait",
       "primary_position": "C",
       "roster_position": "C",
-      "roster_status": "MINORS",
-      "team_id": "f3myl5ugmj90wrl7",
-      "team_name": "The Hot and Steamy Boys"
-    },
-    "f3myl5ugmj90wrl7:06dmr": {
-      "fantrax_id": "06dmr",
-      "player_name": "Matt Wilkinson",
-      "primary_position": "SP",
-      "roster_position": "P",
       "roster_status": "MINORS",
       "team_id": "f3myl5ugmj90wrl7",
       "team_name": "The Hot and Steamy Boys"
