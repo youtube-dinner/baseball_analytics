@@ -4178,7 +4178,7 @@
       "player_name": "Willi Castro",
       "primary_position": "2B",
       "roster_position": "2B",
-      "roster_status": "ACTIVE",
+      "roster_status": "RESERVE",
       "team_id": "jk36oo1hmj90wrl7",
       "team_name": "Daddy Yankee"
     },
@@ -4250,7 +4250,7 @@
       "player_name": "Jazz Chisholm Jr.",
       "primary_position": "2B",
       "roster_position": "2B",
-      "roster_status": "RESERVE",
+      "roster_status": "ACTIVE",
       "team_id": "jk36oo1hmj90wrl7",
       "team_name": "Daddy Yankee"
     },
@@ -4709,7 +4709,7 @@
       "player_name": "Vladimir Guerrero Jr.",
       "primary_position": "1B",
       "roster_position": "UT",
-      "roster_status": "INJURED_RESERVE",
+      "roster_status": "RESERVE",
       "team_id": "k7c57nf4mj90wrl8",
       "team_name": "Hand Foot Mouth Disease Guys"
     },
@@ -4992,15 +4992,6 @@
       "team_id": "k7c57nf4mj90wrl8",
       "team_name": "Hand Foot Mouth Disease Guys"
     },
-    "k7c57nf4mj90wrl8:05yj1": {
-      "fantrax_id": "05yj1",
-      "player_name": "Nolan Schanuel",
-      "primary_position": "1B",
-      "roster_position": "UT",
-      "roster_status": "RESERVE",
-      "team_id": "k7c57nf4mj90wrl8",
-      "team_name": "Hand Foot Mouth Disease Guys"
-    },
     "k7c57nf4mj90wrl8:0630n": {
       "fantrax_id": "0630n",
       "player_name": "Aron Estrada",
@@ -5199,6 +5190,15 @@
       "team_id": "mldxq5pemj90wrl7",
       "team_name": "L\u00e1szlar\u00f3 T\u00f3th"
     },
+    "mldxq5pemj90wrl7:03yxh": {
+      "fantrax_id": "03yxh",
+      "player_name": "Cal Quantrill",
+      "primary_position": "SP",
+      "roster_position": "P",
+      "roster_status": "ACTIVE",
+      "team_id": "mldxq5pemj90wrl7",
+      "team_name": "L\u00e1szlar\u00f3 T\u00f3th"
+    },
     "mldxq5pemj90wrl7:04071": {
       "fantrax_id": "04071",
       "player_name": "Isaac Paredes",
@@ -5249,15 +5249,6 @@
       "player_name": "Xavier Edwards",
       "primary_position": "2B",
       "roster_position": "SS",
-      "roster_status": "ACTIVE",
-      "team_id": "mldxq5pemj90wrl7",
-      "team_name": "L\u00e1szlar\u00f3 T\u00f3th"
-    },
-    "mldxq5pemj90wrl7:04pkt": {
-      "fantrax_id": "04pkt",
-      "player_name": "J.T. Ginn",
-      "primary_position": "SP",
-      "roster_position": "P",
       "roster_status": "ACTIVE",
       "team_id": "mldxq5pemj90wrl7",
       "team_name": "L\u00e1szlar\u00f3 T\u00f3th"
