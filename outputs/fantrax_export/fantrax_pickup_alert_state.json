@@ -4144,15 +4144,6 @@
       "team_id": "jk36oo1hmj90wrl7",
       "team_name": "Daddy Yankee"
     },
-    "jk36oo1hmj90wrl7:02n4s": {
-      "fantrax_id": "02n4s",
-      "player_name": "Matthew Boyd",
-      "primary_position": "SP",
-      "roster_position": "P",
-      "roster_status": "ACTIVE",
-      "team_id": "jk36oo1hmj90wrl7",
-      "team_name": "Daddy Yankee"
-    },
     "jk36oo1hmj90wrl7:02w7p": {
       "fantrax_id": "02w7p",
       "player_name": "Alex Bregman",
@@ -4231,6 +4222,15 @@
       "primary_position": "RF",
       "roster_position": "OF",
       "roster_status": "ACTIVE",
+      "team_id": "jk36oo1hmj90wrl7",
+      "team_name": "Daddy Yankee"
+    },
+    "jk36oo1hmj90wrl7:0406n": {
+      "fantrax_id": "0406n",
+      "player_name": "Andres Chaparro",
+      "primary_position": "1B",
+      "roster_position": "1B",
+      "roster_status": "RESERVE",
       "team_id": "jk36oo1hmj90wrl7",
       "team_name": "Daddy Yankee"
     },
@@ -4864,21 +4864,21 @@
       "team_id": "k7c57nf4mj90wrl8",
       "team_name": "Hand Foot Mouth Disease Guys"
     },
-    "k7c57nf4mj90wrl8:05itb": {
-      "fantrax_id": "05itb",
-      "player_name": "Randy Vasquez",
-      "primary_position": "SP",
-      "roster_position": "P",
-      "roster_status": "ACTIVE",
-      "team_id": "k7c57nf4mj90wrl8",
-      "team_name": "Hand Foot Mouth Disease Guys"
-    },
     "k7c57nf4mj90wrl8:05jp4": {
       "fantrax_id": "05jp4",
       "player_name": "Casey Schmitt",
       "primary_position": "2B",
       "roster_position": "UT",
       "roster_status": "INJURED_RESERVE",
+      "team_id": "k7c57nf4mj90wrl8",
+      "team_name": "Hand Foot Mouth Disease Guys"
+    },
+    "k7c57nf4mj90wrl8:05r3a": {
+      "fantrax_id": "05r3a",
+      "player_name": "Brandon Young",
+      "primary_position": "SP",
+      "roster_position": "P",
+      "roster_status": "ACTIVE",
       "team_id": "k7c57nf4mj90wrl8",
       "team_name": "Hand Foot Mouth Disease Guys"
     },
@@ -5845,6 +5845,15 @@
       "team_id": "o4jvg6q3mj90wrl7",
       "team_name": "Skrrt vs The World"
     },
+    "o4jvg6q3mj90wrl7:051ui": {
+      "fantrax_id": "051ui",
+      "player_name": "Jacob Lopez",
+      "primary_position": "SP",
+      "roster_position": "P",
+      "roster_status": "ACTIVE",
+      "team_id": "o4jvg6q3mj90wrl7",
+      "team_name": "Skrrt vs The World"
+    },
     "o4jvg6q3mj90wrl7:0529l": {
       "fantrax_id": "0529l",
       "player_name": "Endy Rodriguez",
@@ -6259,6 +6268,15 @@
       "team_id": "qatqhh61mj90wrl7",
       "team_name": "Je suis Charlie Morton"
     },
+    "qatqhh61mj90wrl7:03pjf": {
+      "fantrax_id": "03pjf",
+      "player_name": "Michael Soroka",
+      "primary_position": "SP",
+      "roster_position": "P",
+      "roster_status": "ACTIVE",
+      "team_id": "qatqhh61mj90wrl7",
+      "team_name": "Je suis Charlie Morton"
+    },
     "qatqhh61mj90wrl7:03qyv": {
       "fantrax_id": "03qyv",
       "player_name": "Jake McCarthy",
@@ -6397,15 +6415,6 @@
     "qatqhh61mj90wrl7:05144": {
       "fantrax_id": "05144",
       "player_name": "Hunter Brown",
-      "primary_position": "SP",
-      "roster_position": "P",
-      "roster_status": "ACTIVE",
-      "team_id": "qatqhh61mj90wrl7",
-      "team_name": "Je suis Charlie Morton"
-    },
-    "qatqhh61mj90wrl7:0514f": {
-      "fantrax_id": "0514f",
-      "player_name": "Hayden Wesneski",
       "primary_position": "SP",
       "roster_position": "P",
       "roster_status": "ACTIVE",
