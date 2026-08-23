@@ -1578,15 +1578,6 @@
       "team_id": "6tnz8jgemj90wrl7",
       "team_name": "Bobby and the NitWitts"
     },
-    "6tnz8jgemj90wrl7:043ia": {
-      "fantrax_id": "043ia",
-      "player_name": "Adrian Morejon",
-      "primary_position": "RP",
-      "roster_position": "P",
-      "roster_status": "RESERVE",
-      "team_id": "6tnz8jgemj90wrl7",
-      "team_name": "Bobby and the NitWitts"
-    },
     "6tnz8jgemj90wrl7:0473n": {
       "fantrax_id": "0473n",
       "player_name": "Tyler Wells",
@@ -4147,8 +4138,8 @@
       "fantrax_id": "02mw3",
       "player_name": "Christian Walker",
       "primary_position": "1B",
-      "roster_position": "UT",
-      "roster_status": "ACTIVE",
+      "roster_position": "CI",
+      "roster_status": "RESERVE",
       "team_id": "jk36oo1hmj90wrl7",
       "team_name": "Daddy Yankee"
     },
@@ -4229,7 +4220,7 @@
       "player_name": "Ronald Acuna Jr.",
       "primary_position": "RF",
       "roster_position": "OF",
-      "roster_status": "ACTIVE",
+      "roster_status": "RESERVE",
       "team_id": "jk36oo1hmj90wrl7",
       "team_name": "Daddy Yankee"
     },
@@ -4237,8 +4228,8 @@
       "fantrax_id": "0406n",
       "player_name": "Andres Chaparro",
       "primary_position": "1B",
-      "roster_position": "1B",
-      "roster_status": "RESERVE",
+      "roster_position": "CI",
+      "roster_status": "ACTIVE",
       "team_id": "jk36oo1hmj90wrl7",
       "team_name": "Daddy Yankee"
     },
@@ -4255,7 +4246,7 @@
       "fantrax_id": "041pz",
       "player_name": "Pete Alonso",
       "primary_position": "1B",
-      "roster_position": "CI",
+      "roster_position": "UT",
       "roster_status": "ACTIVE",
       "team_id": "jk36oo1hmj90wrl7",
       "team_name": "Daddy Yankee"
@@ -4310,7 +4301,7 @@
       "player_name": "Ezequiel Duran",
       "primary_position": "SS",
       "roster_position": "OF",
-      "roster_status": "RESERVE",
+      "roster_status": "ACTIVE",
       "team_id": "jk36oo1hmj90wrl7",
       "team_name": "Daddy Yankee"
     },
@@ -4332,29 +4323,11 @@
       "team_id": "jk36oo1hmj90wrl7",
       "team_name": "Daddy Yankee"
     },
-    "jk36oo1hmj90wrl7:04tlv": {
-      "fantrax_id": "04tlv",
-      "player_name": "Bryan Abreu",
-      "primary_position": "RP",
-      "roster_position": "P",
-      "roster_status": "ACTIVE",
-      "team_id": "jk36oo1hmj90wrl7",
-      "team_name": "Daddy Yankee"
-    },
     "jk36oo1hmj90wrl7:04yie": {
       "fantrax_id": "04yie",
       "player_name": "George Kirby",
       "primary_position": "SP",
       "roster_position": "P",
-      "roster_status": "ACTIVE",
-      "team_id": "jk36oo1hmj90wrl7",
-      "team_name": "Daddy Yankee"
-    },
-    "jk36oo1hmj90wrl7:0524l": {
-      "fantrax_id": "0524l",
-      "player_name": "Yainer Diaz",
-      "primary_position": "C",
-      "roster_position": "C",
       "roster_status": "ACTIVE",
       "team_id": "jk36oo1hmj90wrl7",
       "team_name": "Daddy Yankee"
@@ -4782,15 +4755,6 @@
       "team_id": "k7c57nf4mj90wrl8",
       "team_name": "Hand Foot Mouth Disease Guys"
     },
-    "k7c57nf4mj90wrl8:04cwf": {
-      "fantrax_id": "04cwf",
-      "player_name": "Shane Baz",
-      "primary_position": "SP",
-      "roster_position": "P",
-      "roster_status": "ACTIVE",
-      "team_id": "k7c57nf4mj90wrl8",
-      "team_name": "Hand Foot Mouth Disease Guys"
-    },
     "k7c57nf4mj90wrl8:04efa": {
       "fantrax_id": "04efa",
       "player_name": "Daulton Varsho",
@@ -4815,6 +4779,15 @@
       "primary_position": "SP",
       "roster_position": "P",
       "roster_status": "INJURED_RESERVE",
+      "team_id": "k7c57nf4mj90wrl8",
+      "team_name": "Hand Foot Mouth Disease Guys"
+    },
+    "k7c57nf4mj90wrl8:04pks": {
+      "fantrax_id": "04pks",
+      "player_name": "Matt McLain",
+      "primary_position": "2B",
+      "roster_position": "2B",
+      "roster_status": "RESERVE",
       "team_id": "k7c57nf4mj90wrl8",
       "team_name": "Hand Foot Mouth Disease Guys"
     },
@@ -6362,7 +6335,7 @@
       "player_name": "Brendan Donovan",
       "primary_position": "2B",
       "roster_position": "UT",
-      "roster_status": "ACTIVE",
+      "roster_status": "INJURED_RESERVE",
       "team_id": "qatqhh61mj90wrl7",
       "team_name": "Je suis Charlie Morton"
     },
@@ -6525,6 +6498,15 @@
       "primary_position": "CF",
       "roster_position": "OF",
       "roster_status": "MINORS",
+      "team_id": "qatqhh61mj90wrl7",
+      "team_name": "Je suis Charlie Morton"
+    },
+    "qatqhh61mj90wrl7:05y4m": {
+      "fantrax_id": "05y4m",
+      "player_name": "Tim Tawa",
+      "primary_position": "1B",
+      "roster_position": "UT",
+      "roster_status": "ACTIVE",
       "team_id": "qatqhh61mj90wrl7",
       "team_name": "Je suis Charlie Morton"
     },
