@@ -495,7 +495,8 @@
       "6tnz8jgemj90wrl7": {
         "major_add_limit": 10,
         "none_remaining": true,
-        "overage_alerted": 0
+        "over_limit_adds_alerted_through": 11,
+        "overage_alerted": 1
       },
       "aqfyadu2mj90wrl7": {
         "major_add_limit": 10,
@@ -1576,6 +1577,15 @@
       "team_id": "6tnz8jgemj90wrl7",
       "team_name": "Bobby and the NitWitts"
     },
+    "6tnz8jgemj90wrl7:043ia": {
+      "fantrax_id": "043ia",
+      "player_name": "Adrian Morejon",
+      "primary_position": "RP",
+      "roster_position": "P",
+      "roster_status": "ACTIVE",
+      "team_id": "6tnz8jgemj90wrl7",
+      "team_name": "Bobby and the NitWitts"
+    },
     "6tnz8jgemj90wrl7:0473n": {
       "fantrax_id": "0473n",
       "player_name": "Tyler Wells",
@@ -1617,7 +1627,7 @@
       "player_name": "Ryan Weathers",
       "primary_position": "SP",
       "roster_position": "P",
-      "roster_status": "ACTIVE",
+      "roster_status": "INJURED_RESERVE",
       "team_id": "6tnz8jgemj90wrl7",
       "team_name": "Bobby and the NitWitts"
     },
@@ -5793,7 +5803,7 @@
       "player_name": "Andy Pages",
       "primary_position": "CF",
       "roster_position": "OF",
-      "roster_status": "ACTIVE",
+      "roster_status": "INJURED_RESERVE",
       "team_id": "o4jvg6q3mj90wrl7",
       "team_name": "Skrrt vs The World"
     },
@@ -5883,7 +5893,7 @@
       "player_name": "Maikel Garcia",
       "primary_position": "3B",
       "roster_position": "UT",
-      "roster_status": "ACTIVE",
+      "roster_status": "INJURED_RESERVE",
       "team_id": "o4jvg6q3mj90wrl7",
       "team_name": "Skrrt vs The World"
     },
@@ -6103,6 +6113,15 @@
       "team_id": "o4jvg6q3mj90wrl7",
       "team_name": "Skrrt vs The World"
     },
+    "o4jvg6q3mj90wrl7:067xm": {
+      "fantrax_id": "067xm",
+      "player_name": "George Klassen",
+      "primary_position": "SP",
+      "roster_position": "P",
+      "roster_status": "RESERVE",
+      "team_id": "o4jvg6q3mj90wrl7",
+      "team_name": "Skrrt vs The World"
+    },
     "o4jvg6q3mj90wrl7:06cq7": {
       "fantrax_id": "06cq7",
       "player_name": "Seaver King",
@@ -6116,6 +6135,15 @@
       "fantrax_id": "06fpn",
       "player_name": "Brett Bateman",
       "primary_position": "CF",
+      "roster_position": "OF",
+      "roster_status": "ACTIVE",
+      "team_id": "o4jvg6q3mj90wrl7",
+      "team_name": "Skrrt vs The World"
+    },
+    "o4jvg6q3mj90wrl7:06hvg": {
+      "fantrax_id": "06hvg",
+      "player_name": "Brett Callahan",
+      "primary_position": "RF",
       "roster_position": "OF",
       "roster_status": "ACTIVE",
       "team_id": "o4jvg6q3mj90wrl7",
