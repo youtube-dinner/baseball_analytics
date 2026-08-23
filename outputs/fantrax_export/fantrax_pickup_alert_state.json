@@ -493,10 +493,12 @@
     "2026-08-17": {
       "6tnz8jgemj90wrl7": {
         "major_add_limit": 10,
+        "none_remaining": true,
         "overage_alerted": 0
       },
       "aqfyadu2mj90wrl7": {
         "major_add_limit": 10,
+        "one_remaining": true,
         "overage_alerted": 0
       },
       "bw696uo5mj90wrl7": {
@@ -1464,6 +1466,15 @@
       "team_id": "6tnz8jgemj90wrl7",
       "team_name": "Bobby and the NitWitts"
     },
+    "6tnz8jgemj90wrl7:0312g": {
+      "fantrax_id": "0312g",
+      "player_name": "Tyler Mahle",
+      "primary_position": "SP",
+      "roster_position": "P",
+      "roster_status": "ACTIVE",
+      "team_id": "6tnz8jgemj90wrl7",
+      "team_name": "Bobby and the NitWitts"
+    },
     "6tnz8jgemj90wrl7:0316v": {
       "fantrax_id": "0316v",
       "player_name": "Jake Bauers",
@@ -1541,15 +1552,6 @@
       "player_name": "Ian Happ",
       "primary_position": "LF",
       "roster_position": "OF",
-      "roster_status": "ACTIVE",
-      "team_id": "6tnz8jgemj90wrl7",
-      "team_name": "Bobby and the NitWitts"
-    },
-    "6tnz8jgemj90wrl7:03nuc": {
-      "fantrax_id": "03nuc",
-      "player_name": "Luis Castillo",
-      "primary_position": "SP",
-      "roster_position": "P",
       "roster_status": "ACTIVE",
       "team_id": "6tnz8jgemj90wrl7",
       "team_name": "Bobby and the NitWitts"
@@ -1662,6 +1664,15 @@
       "team_id": "6tnz8jgemj90wrl7",
       "team_name": "Bobby and the NitWitts"
     },
+    "6tnz8jgemj90wrl7:05a1v": {
+      "fantrax_id": "05a1v",
+      "player_name": "Keider Montero",
+      "primary_position": "SP",
+      "roster_position": "P",
+      "roster_status": "ACTIVE",
+      "team_id": "6tnz8jgemj90wrl7",
+      "team_name": "Bobby and the NitWitts"
+    },
     "6tnz8jgemj90wrl7:05ahe": {
       "fantrax_id": "05ahe",
       "player_name": "Curtis Mead",
@@ -1740,15 +1751,6 @@
       "primary_position": "SP",
       "roster_position": "P",
       "roster_status": "INJURED_RESERVE",
-      "team_id": "6tnz8jgemj90wrl7",
-      "team_name": "Bobby and the NitWitts"
-    },
-    "6tnz8jgemj90wrl7:05u2q": {
-      "fantrax_id": "05u2q",
-      "player_name": "Blade Tidwell",
-      "primary_position": "SP",
-      "roster_position": "P",
-      "roster_status": "ACTIVE",
       "team_id": "6tnz8jgemj90wrl7",
       "team_name": "Bobby and the NitWitts"
     },
@@ -2058,6 +2060,15 @@
       "team_id": "aqfyadu2mj90wrl7",
       "team_name": "Ben the Hen"
     },
+    "aqfyadu2mj90wrl7:02xic": {
+      "fantrax_id": "02xic",
+      "player_name": "Teoscar Hernandez",
+      "primary_position": "RF",
+      "roster_position": "UT",
+      "roster_status": "ACTIVE",
+      "team_id": "aqfyadu2mj90wrl7",
+      "team_name": "Ben the Hen"
+    },
     "aqfyadu2mj90wrl7:03fi0": {
       "fantrax_id": "03fi0",
       "player_name": "Ozzie Albies",
@@ -2085,9 +2096,9 @@
       "team_id": "aqfyadu2mj90wrl7",
       "team_name": "Ben the Hen"
     },
-    "aqfyadu2mj90wrl7:03qpi": {
-      "fantrax_id": "03qpi",
-      "player_name": "Patrick Sandoval",
+    "aqfyadu2mj90wrl7:03poo": {
+      "fantrax_id": "03poo",
+      "player_name": "Peter Lambert",
       "primary_position": "SP",
       "roster_position": "P",
       "roster_status": "ACTIVE",
@@ -2127,15 +2138,6 @@
       "primary_position": "SP",
       "roster_position": "P",
       "roster_status": "INJURED_RESERVE",
-      "team_id": "aqfyadu2mj90wrl7",
-      "team_name": "Ben the Hen"
-    },
-    "aqfyadu2mj90wrl7:04azv": {
-      "fantrax_id": "04azv",
-      "player_name": "Jake Burger",
-      "primary_position": "1B",
-      "roster_position": "UT",
-      "roster_status": "ACTIVE",
       "team_id": "aqfyadu2mj90wrl7",
       "team_name": "Ben the Hen"
     },
