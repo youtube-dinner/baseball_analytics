@@ -523,6 +523,7 @@
       },
       "k7c57nf4mj90wrl8": {
         "major_add_limit": 10,
+        "one_remaining": true,
         "overage_alerted": 0
       },
       "mldxq5pemj90wrl7": {
@@ -4723,7 +4724,7 @@
       "player_name": "Vladimir Guerrero Jr.",
       "primary_position": "1B",
       "roster_position": "UT",
-      "roster_status": "RESERVE",
+      "roster_status": "ACTIVE",
       "team_id": "k7c57nf4mj90wrl8",
       "team_name": "Hand Foot Mouth Disease Guys"
     },
@@ -4775,6 +4776,15 @@
     "k7c57nf4mj90wrl8:04auj": {
       "fantrax_id": "04auj",
       "player_name": "Framber Valdez",
+      "primary_position": "SP",
+      "roster_position": "P",
+      "roster_status": "ACTIVE",
+      "team_id": "k7c57nf4mj90wrl8",
+      "team_name": "Hand Foot Mouth Disease Guys"
+    },
+    "k7c57nf4mj90wrl8:04cwf": {
+      "fantrax_id": "04cwf",
+      "player_name": "Shane Baz",
       "primary_position": "SP",
       "roster_position": "P",
       "roster_status": "ACTIVE",
@@ -4880,15 +4890,6 @@
       "team_id": "k7c57nf4mj90wrl8",
       "team_name": "Hand Foot Mouth Disease Guys"
     },
-    "k7c57nf4mj90wrl8:05r3a": {
-      "fantrax_id": "05r3a",
-      "player_name": "Brandon Young",
-      "primary_position": "SP",
-      "roster_position": "P",
-      "roster_status": "ACTIVE",
-      "team_id": "k7c57nf4mj90wrl8",
-      "team_name": "Hand Foot Mouth Disease Guys"
-    },
     "k7c57nf4mj90wrl8:05r8n": {
       "fantrax_id": "05r8n",
       "player_name": "Yoshinobu Yamamoto",
@@ -4948,7 +4949,7 @@
       "player_name": "Carter Jensen",
       "primary_position": "C",
       "roster_position": "UT",
-      "roster_status": "ACTIVE",
+      "roster_status": "RESERVE",
       "team_id": "k7c57nf4mj90wrl8",
       "team_name": "Hand Foot Mouth Disease Guys"
     },
@@ -5174,15 +5175,6 @@
       "primary_position": "SS",
       "roster_position": "SS",
       "roster_status": "INJURED_RESERVE",
-      "team_id": "mldxq5pemj90wrl7",
-      "team_name": "L\u00e1szlar\u00f3 T\u00f3th"
-    },
-    "mldxq5pemj90wrl7:0317o": {
-      "fantrax_id": "0317o",
-      "player_name": "Jeff McNeil",
-      "primary_position": "2B",
-      "roster_position": "UT",
-      "roster_status": "ACTIVE",
       "team_id": "mldxq5pemj90wrl7",
       "team_name": "L\u00e1szlar\u00f3 T\u00f3th"
     },
@@ -5478,6 +5470,15 @@
       "fantrax_id": "0622w",
       "player_name": "Chandler Simpson",
       "primary_position": "CF",
+      "roster_position": "UT",
+      "roster_status": "ACTIVE",
+      "team_id": "mldxq5pemj90wrl7",
+      "team_name": "L\u00e1szlar\u00f3 T\u00f3th"
+    },
+    "mldxq5pemj90wrl7:062ho": {
+      "fantrax_id": "062ho",
+      "player_name": "Javier Sanoja",
+      "primary_position": "3B",
       "roster_position": "UT",
       "roster_status": "ACTIVE",
       "team_id": "mldxq5pemj90wrl7",
