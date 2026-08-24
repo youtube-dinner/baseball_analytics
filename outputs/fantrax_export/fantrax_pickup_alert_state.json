@@ -1522,15 +1522,6 @@
       "team_id": "6tnz8jgemj90wrl7",
       "team_name": "Bobby and the NitWitts"
     },
-    "6tnz8jgemj90wrl7:0312g": {
-      "fantrax_id": "0312g",
-      "player_name": "Tyler Mahle",
-      "primary_position": "SP",
-      "roster_position": "P",
-      "roster_status": "ACTIVE",
-      "team_id": "6tnz8jgemj90wrl7",
-      "team_name": "Bobby and the NitWitts"
-    },
     "6tnz8jgemj90wrl7:0316v": {
       "fantrax_id": "0316v",
       "player_name": "Jake Bauers",
@@ -1861,6 +1852,15 @@
       "primary_position": "SP",
       "roster_position": "P",
       "roster_status": "MINORS",
+      "team_id": "6tnz8jgemj90wrl7",
+      "team_name": "Bobby and the NitWitts"
+    },
+    "6tnz8jgemj90wrl7:060u3": {
+      "fantrax_id": "060u3",
+      "player_name": "Andrew Alvarez",
+      "primary_position": "SP",
+      "roster_position": "P",
+      "roster_status": "ACTIVE",
       "team_id": "6tnz8jgemj90wrl7",
       "team_name": "Bobby and the NitWitts"
     },
