@@ -4807,15 +4807,6 @@
       "team_id": "k7c57nf4mj90wrl8",
       "team_name": "Hand Foot Mouth Disease Guys"
     },
-    "k7c57nf4mj90wrl8:04efa": {
-      "fantrax_id": "04efa",
-      "player_name": "Daulton Varsho",
-      "primary_position": "CF",
-      "roster_position": "OF",
-      "roster_status": "ACTIVE",
-      "team_id": "k7c57nf4mj90wrl8",
-      "team_name": "Hand Foot Mouth Disease Guys"
-    },
     "k7c57nf4mj90wrl8:04n0m": {
       "fantrax_id": "04n0m",
       "player_name": "Logan Gilbert",
@@ -4838,7 +4829,7 @@
       "fantrax_id": "04pks",
       "player_name": "Matt McLain",
       "primary_position": "2B",
-      "roster_position": "UT",
+      "roster_position": "2B",
       "roster_status": "ACTIVE",
       "team_id": "k7c57nf4mj90wrl8",
       "team_name": "Hand Foot Mouth Disease Guys"
@@ -4879,6 +4870,15 @@
       "team_id": "k7c57nf4mj90wrl8",
       "team_name": "Hand Foot Mouth Disease Guys"
     },
+    "k7c57nf4mj90wrl8:0519f": {
+      "fantrax_id": "0519f",
+      "player_name": "Nick Sogard",
+      "primary_position": "1B",
+      "roster_position": "UT",
+      "roster_status": "ACTIVE",
+      "team_id": "k7c57nf4mj90wrl8",
+      "team_name": "Hand Foot Mouth Disease Guys"
+    },
     "k7c57nf4mj90wrl8:051wv": {
       "fantrax_id": "051wv",
       "player_name": "Pete Crow-Armstrong",
@@ -4901,7 +4901,7 @@
       "fantrax_id": "05gsi",
       "player_name": "Ceddanne Rafaela",
       "primary_position": "CF",
-      "roster_position": "2B",
+      "roster_position": "OF",
       "roster_status": "ACTIVE",
       "team_id": "k7c57nf4mj90wrl8",
       "team_name": "Hand Foot Mouth Disease Guys"
