@@ -5302,21 +5302,12 @@
       "team_id": "mldxq5pemj90wrl7",
       "team_name": "L\u00e1szlar\u00f3 T\u00f3th"
     },
-    "mldxq5pemj90wrl7:04t3y": {
-      "fantrax_id": "04t3y",
-      "player_name": "Alejandro Kirk",
-      "primary_position": "C",
-      "roster_position": "C",
-      "roster_status": "ACTIVE",
-      "team_id": "mldxq5pemj90wrl7",
-      "team_name": "L\u00e1szlar\u00f3 T\u00f3th"
-    },
     "mldxq5pemj90wrl7:04z6m": {
       "fantrax_id": "04z6m",
       "player_name": "Agustin Ramirez",
       "primary_position": "C",
-      "roster_position": "UT",
-      "roster_status": "MINORS",
+      "roster_position": "C",
+      "roster_status": "ACTIVE",
       "team_id": "mldxq5pemj90wrl7",
       "team_name": "L\u00e1szlar\u00f3 T\u00f3th"
     },
