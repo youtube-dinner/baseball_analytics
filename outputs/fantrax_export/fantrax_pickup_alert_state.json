@@ -1684,21 +1684,12 @@
       "team_id": "6tnz8jgemj90wrl7",
       "team_name": "Bobby and the NitWitts"
     },
-    "6tnz8jgemj90wrl7:04vvy": {
-      "fantrax_id": "04vvy",
-      "player_name": "Andruw Monasterio",
-      "primary_position": "SS",
-      "roster_position": "UT",
-      "roster_status": "ACTIVE",
-      "team_id": "6tnz8jgemj90wrl7",
-      "team_name": "Bobby and the NitWitts"
-    },
     "6tnz8jgemj90wrl7:04y97": {
       "fantrax_id": "04y97",
       "player_name": "Kyle Stowers",
       "primary_position": "LF",
-      "roster_position": "OF",
-      "roster_status": "INJURED_RESERVE",
+      "roster_position": "UT",
+      "roster_status": "ACTIVE",
       "team_id": "6tnz8jgemj90wrl7",
       "team_name": "Bobby and the NitWitts"
     },
