@@ -539,6 +539,48 @@
         "one_remaining": true,
         "overage_alerted": 0
       }
+    },
+    "2026-08-24": {
+      "6tnz8jgemj90wrl7": {
+        "major_add_limit": 10,
+        "overage_alerted": 0
+      },
+      "aqfyadu2mj90wrl7": {
+        "major_add_limit": 10,
+        "overage_alerted": 0
+      },
+      "bw696uo5mj90wrl7": {
+        "major_add_limit": 10,
+        "overage_alerted": 0
+      },
+      "f3myl5ugmj90wrl7": {
+        "major_add_limit": 10,
+        "overage_alerted": 0
+      },
+      "hd9hwe4mmj90wrl7": {
+        "major_add_limit": 10,
+        "overage_alerted": 0
+      },
+      "jk36oo1hmj90wrl7": {
+        "major_add_limit": 10,
+        "overage_alerted": 0
+      },
+      "k7c57nf4mj90wrl8": {
+        "major_add_limit": 10,
+        "overage_alerted": 0
+      },
+      "mldxq5pemj90wrl7": {
+        "major_add_limit": 10,
+        "overage_alerted": 0
+      },
+      "o4jvg6q3mj90wrl7": {
+        "major_add_limit": 10,
+        "overage_alerted": 0
+      },
+      "qatqhh61mj90wrl7": {
+        "major_add_limit": 10,
+        "overage_alerted": 0
+      }
     }
   },
   "minor_windows": {
@@ -1461,6 +1503,15 @@
       "team_id": "6tnz8jgemj90wrl7",
       "team_name": "Bobby and the NitWitts"
     },
+    "6tnz8jgemj90wrl7:02i3o": {
+      "fantrax_id": "02i3o",
+      "player_name": "Aaron Nola",
+      "primary_position": "SP",
+      "roster_position": "P",
+      "roster_status": "ACTIVE",
+      "team_id": "6tnz8jgemj90wrl7",
+      "team_name": "Bobby and the NitWitts"
+    },
     "6tnz8jgemj90wrl7:02jh6": {
       "fantrax_id": "02jh6",
       "player_name": "Eugenio Suarez",
@@ -1556,6 +1607,15 @@
       "player_name": "Ian Happ",
       "primary_position": "LF",
       "roster_position": "OF",
+      "roster_status": "ACTIVE",
+      "team_id": "6tnz8jgemj90wrl7",
+      "team_name": "Bobby and the NitWitts"
+    },
+    "6tnz8jgemj90wrl7:03pov": {
+      "fantrax_id": "03pov",
+      "player_name": "Brady Singer",
+      "primary_position": "SP",
+      "roster_position": "P",
       "roster_status": "ACTIVE",
       "team_id": "6tnz8jgemj90wrl7",
       "team_name": "Bobby and the NitWitts"
@@ -1663,15 +1723,6 @@
       "fantrax_id": "0516x",
       "player_name": "Brent Headrick",
       "primary_position": "RP",
-      "roster_position": "P",
-      "roster_status": "ACTIVE",
-      "team_id": "6tnz8jgemj90wrl7",
-      "team_name": "Bobby and the NitWitts"
-    },
-    "6tnz8jgemj90wrl7:05a1v": {
-      "fantrax_id": "05a1v",
-      "player_name": "Keider Montero",
-      "primary_position": "SP",
       "roster_position": "P",
       "roster_status": "ACTIVE",
       "team_id": "6tnz8jgemj90wrl7",
