@@ -1112,7 +1112,7 @@
       "player_name": "Evan Carter",
       "team_id": "jk36oo1hmj90wrl7",
       "team_name": "Daddy Yankee",
-      "violation_alert_sent": false,
+      "violation_alert_sent": true,
       "window_start": "2026-08-03"
     },
     "jk36oo1hmj90wrl7:05rcj": {
@@ -4146,7 +4146,7 @@
       "player_name": "Freddie Freeman",
       "primary_position": "1B",
       "roster_position": "UT",
-      "roster_status": "ACTIVE",
+      "roster_status": "RESERVE",
       "team_id": "jk36oo1hmj90wrl7",
       "team_name": "Daddy Yankee"
     },
@@ -4163,7 +4163,7 @@
       "fantrax_id": "024m0",
       "player_name": "Jose Altuve",
       "primary_position": "2B",
-      "roster_position": "MI",
+      "roster_position": "UT",
       "roster_status": "ACTIVE",
       "team_id": "jk36oo1hmj90wrl7",
       "team_name": "Daddy Yankee"
@@ -4172,7 +4172,7 @@
       "fantrax_id": "025he",
       "player_name": "George Springer",
       "primary_position": "RF",
-      "roster_position": "OF",
+      "roster_position": "UT",
       "roster_status": "ACTIVE",
       "team_id": "jk36oo1hmj90wrl7",
       "team_name": "Daddy Yankee"
@@ -4213,11 +4213,20 @@
       "team_id": "jk36oo1hmj90wrl7",
       "team_name": "Daddy Yankee"
     },
+    "jk36oo1hmj90wrl7:0317o": {
+      "fantrax_id": "0317o",
+      "player_name": "Jeff McNeil",
+      "primary_position": "2B",
+      "roster_position": "CI",
+      "roster_status": "ACTIVE",
+      "team_id": "jk36oo1hmj90wrl7",
+      "team_name": "Daddy Yankee"
+    },
     "jk36oo1hmj90wrl7:03atq": {
       "fantrax_id": "03atq",
       "player_name": "Willy Adames",
       "primary_position": "SS",
-      "roster_position": "UT",
+      "roster_position": "MI",
       "roster_status": "ACTIVE",
       "team_id": "jk36oo1hmj90wrl7",
       "team_name": "Daddy Yankee"
@@ -4226,7 +4235,7 @@
       "fantrax_id": "03btu",
       "player_name": "Willi Castro",
       "primary_position": "2B",
-      "roster_position": "UT",
+      "roster_position": "2B",
       "roster_status": "ACTIVE",
       "team_id": "jk36oo1hmj90wrl7",
       "team_name": "Daddy Yankee"
@@ -4267,15 +4276,6 @@
       "team_id": "jk36oo1hmj90wrl7",
       "team_name": "Daddy Yankee"
     },
-    "jk36oo1hmj90wrl7:0406n": {
-      "fantrax_id": "0406n",
-      "player_name": "Andres Chaparro",
-      "primary_position": "1B",
-      "roster_position": "CI",
-      "roster_status": "ACTIVE",
-      "team_id": "jk36oo1hmj90wrl7",
-      "team_name": "Daddy Yankee"
-    },
     "jk36oo1hmj90wrl7:041e2": {
       "fantrax_id": "041e2",
       "player_name": "Mickey Moniak",
@@ -4290,7 +4290,7 @@
       "player_name": "Pete Alonso",
       "primary_position": "1B",
       "roster_position": "UT",
-      "roster_status": "ACTIVE",
+      "roster_status": "RESERVE",
       "team_id": "jk36oo1hmj90wrl7",
       "team_name": "Daddy Yankee"
     },
@@ -4298,16 +4298,7 @@
       "fantrax_id": "045qo",
       "player_name": "Jazz Chisholm Jr.",
       "primary_position": "2B",
-      "roster_position": "2B",
-      "roster_status": "ACTIVE",
-      "team_id": "jk36oo1hmj90wrl7",
-      "team_name": "Daddy Yankee"
-    },
-    "jk36oo1hmj90wrl7:04a2t": {
-      "fantrax_id": "04a2t",
-      "player_name": "Kodai Senga",
-      "primary_position": "SP",
-      "roster_position": "P",
+      "roster_position": "UT",
       "roster_status": "ACTIVE",
       "team_id": "jk36oo1hmj90wrl7",
       "team_name": "Daddy Yankee"
@@ -4415,8 +4406,8 @@
       "fantrax_id": "05mdt",
       "player_name": "Evan Carter",
       "primary_position": "CF",
-      "roster_position": "UT",
-      "roster_status": "MINORS",
+      "roster_position": "OF",
+      "roster_status": "ACTIVE",
       "team_id": "jk36oo1hmj90wrl7",
       "team_name": "Daddy Yankee"
     },
@@ -4492,11 +4483,20 @@
       "team_id": "jk36oo1hmj90wrl7",
       "team_name": "Daddy Yankee"
     },
+    "jk36oo1hmj90wrl7:060eu": {
+      "fantrax_id": "060eu",
+      "player_name": "Ben Joyce",
+      "primary_position": "RP",
+      "roster_position": "P",
+      "roster_status": "ACTIVE",
+      "team_id": "jk36oo1hmj90wrl7",
+      "team_name": "Daddy Yankee"
+    },
     "jk36oo1hmj90wrl7:060jo": {
       "fantrax_id": "060jo",
       "player_name": "Cam Smith",
       "primary_position": "RF",
-      "roster_position": "OF",
+      "roster_position": "UT",
       "roster_status": "ACTIVE",
       "team_id": "jk36oo1hmj90wrl7",
       "team_name": "Daddy Yankee"
@@ -4533,7 +4533,7 @@
       "player_name": "Ryan Waldschmidt",
       "primary_position": "LF",
       "roster_position": "OF",
-      "roster_status": "MINORS",
+      "roster_status": "ACTIVE",
       "team_id": "jk36oo1hmj90wrl7",
       "team_name": "Daddy Yankee"
     },
