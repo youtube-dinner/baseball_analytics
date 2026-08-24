@@ -4670,7 +4670,7 @@
       "player_name": "Shohei Ohtani",
       "primary_position": "DH",
       "roster_position": "UT",
-      "roster_status": "ACTIVE",
+      "roster_status": "RESERVE",
       "team_id": "k7c57nf4mj90wrl8",
       "team_name": "Hand Foot Mouth Disease Guys"
     },
@@ -4786,8 +4786,8 @@
       "fantrax_id": "04pks",
       "player_name": "Matt McLain",
       "primary_position": "2B",
-      "roster_position": "2B",
-      "roster_status": "RESERVE",
+      "roster_position": "UT",
+      "roster_status": "ACTIVE",
       "team_id": "k7c57nf4mj90wrl8",
       "team_name": "Hand Foot Mouth Disease Guys"
     },
