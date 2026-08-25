@@ -1,7 +1,6 @@
 probable_date,game_time_utc,home_away,probable_team,opponent,mlb_player_id,probable_name,fantrax_id,name,mlb_team,primary_position,eligible_positions,league_status,is_rostered,stats_inc_id,rotowire_id,sport_radar_id,game_pk
-2026-08-24,,,ARI,CHC Mon 8:40PM,,Merrill Kelly,02hj7,"Kelly, Merrill",ARI,SP,P,FA,False,11251,15800,871f04aa-367c-48fb-8ae5-a5bd9e27cb8b,
-2026-08-24,,,MIN,@ATH Mon 8:40PM,,Zebby Matthews,066cf,"Matthews, Zebby",MIN,SP,P,FA,False,,18788,400ea9ba-f842-4381-b71c-cdcac03d8d00,
-2026-08-24,,,ATH,MIN Mon 8:40PM,,Jeffrey Springs,04mlr,"Springs, Jeffrey",ATH,SP,P,FA,False,11121,15663,76375b42-68b1-42a1-94e6-81f152197c81,
-2026-08-24,,,COL,@WSH Mon 5:45PM,,Ryan Feltner,03r06,"Feltner, Ryan",COL,SP,P,FA,False,,15541,87dfe721-2290-44ac-a106-0aa9e676bfbd,
-2026-08-24,,,SF,CIN Mon 8:45PM,,Carson Whisenhunt,05y7v,"Whisenhunt, Carson",SF,SP,P,FA,False,,17956,6212a28e-bfa1-43ce-a5f4-0da9346a94d4,
-2026-08-24,,,CHW,TEX Mon 6:40PM,,Jose Urquidy,0440h,"Urquidy, Jose",CHW,SP,P,FA,False,11608,15944,54a4a196-9a19-4af0-954e-f8d337542ecd,
+2026-08-25,,,ATL,LAD Tue 6:15PM,,Bryce Elder,05jp9,"Elder, Bryce",ATL,SP,P,FA,False,,16801,8a4de81f-a497-40e4-ba42-39b4c1fbbdd3,
+2026-08-25,,,KC,@TOR Tue 6:07PM,,Seth Lugo,03sef,"Lugo, Seth",KC,SP,P,FA,False,10326,14095,0600588b-39b2-49eb-9e77-208f8fdaca9b,
+2026-08-25,,,BAL,@STL Tue 6:45PM,,Chris Bassitt,02c2h,"Bassitt, Chris",BAL,SP,P,FA,False,9799,13613,90fa044f-7148-414c-af09-e0d4eb621775,
+2026-08-25,,,TOR,KC Tue 6:07PM,,Max Scherzer,004ee,"Scherzer, Max",TOR,SP,P,FA,False,8193,9278,2527770b-cf48-42b9-81fa-9323756fb311,
+2026-08-25,,,HOU,@NYY Tue 6:05PM,,Ethan Pecko,06f14,"Pecko, Ethan",HOU,SP,P,FA,False,,19813,fb2bb532-e3ec-4eb0-a7cf-e098e03f5c69,
