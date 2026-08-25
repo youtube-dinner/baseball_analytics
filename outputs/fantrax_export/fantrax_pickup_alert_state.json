@@ -4174,7 +4174,7 @@
       "fantrax_id": "024m0",
       "player_name": "Jose Altuve",
       "primary_position": "2B",
-      "roster_position": "UT",
+      "roster_position": "2B",
       "roster_status": "ACTIVE",
       "team_id": "jk36oo1hmj90wrl7",
       "team_name": "Daddy Yankee"
@@ -4201,7 +4201,7 @@
       "fantrax_id": "02mw3",
       "player_name": "Christian Walker",
       "primary_position": "1B",
-      "roster_position": "UT",
+      "roster_position": "CI",
       "roster_status": "ACTIVE",
       "team_id": "jk36oo1hmj90wrl7",
       "team_name": "Daddy Yankee"
@@ -4237,7 +4237,7 @@
       "fantrax_id": "0317o",
       "player_name": "Jeff McNeil",
       "primary_position": "2B",
-      "roster_position": "CI",
+      "roster_position": "UT",
       "roster_status": "ACTIVE",
       "team_id": "jk36oo1hmj90wrl7",
       "team_name": "Daddy Yankee"
@@ -4255,7 +4255,7 @@
       "fantrax_id": "03btu",
       "player_name": "Willi Castro",
       "primary_position": "2B",
-      "roster_position": "2B",
+      "roster_position": "UT",
       "roster_status": "ACTIVE",
       "team_id": "jk36oo1hmj90wrl7",
       "team_name": "Daddy Yankee"
@@ -4463,7 +4463,7 @@
       "player_name": "Hunter Goodman",
       "primary_position": "C",
       "roster_position": "C",
-      "roster_status": "INJURED_RESERVE",
+      "roster_status": "ACTIVE",
       "team_id": "jk36oo1hmj90wrl7",
       "team_name": "Daddy Yankee"
     },
@@ -4517,7 +4517,7 @@
       "player_name": "Cam Smith",
       "primary_position": "RF",
       "roster_position": "OF",
-      "roster_status": "ACTIVE",
+      "roster_status": "RESERVE",
       "team_id": "jk36oo1hmj90wrl7",
       "team_name": "Daddy Yankee"
     },
@@ -4552,8 +4552,8 @@
       "fantrax_id": "06dlz",
       "player_name": "Ryan Waldschmidt",
       "primary_position": "LF",
-      "roster_position": "UT",
-      "roster_status": "RESERVE",
+      "roster_position": "OF",
+      "roster_status": "ACTIVE",
       "team_id": "jk36oo1hmj90wrl7",
       "team_name": "Daddy Yankee"
     },
