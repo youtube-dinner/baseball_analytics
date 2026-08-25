@@ -1036,6 +1036,16 @@
       "violation_alert_sent": false,
       "window_start": "2026-08-09"
     },
+    "hd9hwe4mmj90wrl7:06481": {
+      "demotion_alert_sent": false,
+      "eligible_date": "2026-09-16",
+      "fantrax_id": "06481",
+      "player_name": "Jacob Reimer",
+      "team_id": "hd9hwe4mmj90wrl7",
+      "team_name": "Third Degree Burnes",
+      "violation_alert_sent": false,
+      "window_start": "2026-08-25"
+    },
     "hd9hwe4mmj90wrl7:066j0": {
       "demotion_alert_sent": false,
       "eligible_date": "2026-08-27",
@@ -3823,8 +3833,8 @@
       "fantrax_id": "05gbg",
       "player_name": "Zac Veen",
       "primary_position": "LF",
-      "roster_position": "OF",
-      "roster_status": "MINORS",
+      "roster_position": "UT",
+      "roster_status": "ACTIVE",
       "team_id": "hd9hwe4mmj90wrl7",
       "team_name": "Third Degree Burnes"
     },
@@ -3842,7 +3852,7 @@
       "player_name": "Masyn Winn",
       "primary_position": "SS",
       "roster_position": "UT",
-      "roster_status": "ACTIVE",
+      "roster_status": "INJURED_RESERVE",
       "team_id": "hd9hwe4mmj90wrl7",
       "team_name": "Third Degree Burnes"
     },
@@ -3977,6 +3987,15 @@
       "player_name": "Aroon Escobar",
       "primary_position": "2B",
       "roster_position": "2B",
+      "roster_status": "MINORS",
+      "team_id": "hd9hwe4mmj90wrl7",
+      "team_name": "Third Degree Burnes"
+    },
+    "hd9hwe4mmj90wrl7:06481": {
+      "fantrax_id": "06481",
+      "player_name": "Jacob Reimer",
+      "primary_position": "3B",
+      "roster_position": "3B",
       "roster_status": "MINORS",
       "team_id": "hd9hwe4mmj90wrl7",
       "team_name": "Third Degree Burnes"
@@ -4867,7 +4886,7 @@
       "fantrax_id": "04s1g",
       "player_name": "Gabriel Moreno",
       "primary_position": "C",
-      "roster_position": "C",
+      "roster_position": "UT",
       "roster_status": "ACTIVE",
       "team_id": "k7c57nf4mj90wrl8",
       "team_name": "Hand Foot Mouth Disease Guys"
@@ -4984,7 +5003,7 @@
       "fantrax_id": "05vy5",
       "player_name": "Carter Jensen",
       "primary_position": "C",
-      "roster_position": "UT",
+      "roster_position": "C",
       "roster_status": "ACTIVE",
       "team_id": "k7c57nf4mj90wrl8",
       "team_name": "Hand Foot Mouth Disease Guys"
