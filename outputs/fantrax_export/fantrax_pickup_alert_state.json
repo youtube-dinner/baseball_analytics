@@ -3349,15 +3349,6 @@
       "team_id": "f3myl5ugmj90wrl7",
       "team_name": "The Hot and Steamy Boys"
     },
-    "f3myl5ugmj90wrl7:05rbd": {
-      "fantrax_id": "05rbd",
-      "player_name": "Manuel Pena",
-      "primary_position": "1B",
-      "roster_position": "UT",
-      "roster_status": "MINORS",
-      "team_id": "f3myl5ugmj90wrl7",
-      "team_name": "The Hot and Steamy Boys"
-    },
     "f3myl5ugmj90wrl7:05tzn": {
       "fantrax_id": "05tzn",
       "player_name": "Parker Messick",
@@ -4177,6 +4168,15 @@
       "team_id": "jk36oo1hmj90wrl7",
       "team_name": "Daddy Yankee"
     },
+    "jk36oo1hmj90wrl7:02brc": {
+      "fantrax_id": "02brc",
+      "player_name": "Adrian Houser",
+      "primary_position": "SP",
+      "roster_position": "P",
+      "roster_status": "ACTIVE",
+      "team_id": "jk36oo1hmj90wrl7",
+      "team_name": "Daddy Yankee"
+    },
     "jk36oo1hmj90wrl7:02mw3": {
       "fantrax_id": "02mw3",
       "player_name": "Christian Walker",
@@ -4272,7 +4272,7 @@
       "player_name": "Ronald Acuna Jr.",
       "primary_position": "RF",
       "roster_position": "OF",
-      "roster_status": "RESERVE",
+      "roster_status": "ACTIVE",
       "team_id": "jk36oo1hmj90wrl7",
       "team_name": "Daddy Yankee"
     },
@@ -4407,7 +4407,7 @@
       "player_name": "Evan Carter",
       "primary_position": "CF",
       "roster_position": "OF",
-      "roster_status": "ACTIVE",
+      "roster_status": "MINORS",
       "team_id": "jk36oo1hmj90wrl7",
       "team_name": "Daddy Yankee"
     },
@@ -4798,6 +4798,15 @@
       "team_id": "k7c57nf4mj90wrl8",
       "team_name": "Hand Foot Mouth Disease Guys"
     },
+    "k7c57nf4mj90wrl8:04mlx": {
+      "fantrax_id": "04mlx",
+      "player_name": "Matthew Liberatore",
+      "primary_position": "SP",
+      "roster_position": "P",
+      "roster_status": "ACTIVE",
+      "team_id": "k7c57nf4mj90wrl8",
+      "team_name": "Hand Foot Mouth Disease Guys"
+    },
     "k7c57nf4mj90wrl8:04n0m": {
       "fantrax_id": "04n0m",
       "player_name": "Logan Gilbert",
@@ -4813,15 +4822,6 @@
       "primary_position": "SP",
       "roster_position": "P",
       "roster_status": "INJURED_RESERVE",
-      "team_id": "k7c57nf4mj90wrl8",
-      "team_name": "Hand Foot Mouth Disease Guys"
-    },
-    "k7c57nf4mj90wrl8:04pks": {
-      "fantrax_id": "04pks",
-      "player_name": "Matt McLain",
-      "primary_position": "2B",
-      "roster_position": "2B",
-      "roster_status": "ACTIVE",
       "team_id": "k7c57nf4mj90wrl8",
       "team_name": "Hand Foot Mouth Disease Guys"
     },
