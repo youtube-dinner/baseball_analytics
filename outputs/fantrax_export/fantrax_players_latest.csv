@@ -941,7 +941,7 @@ fantrax_id,name,mlb_team,primary_position,eligible_positions,league_status,stats
 05mrr,"Blomgren, Jack",(N/A),SS,"UT,SS,MI",FA,,16843,
 078gx,"Blomker, Dylan",CHC,SP,P,FA,,21247,
 06dqi,"Bloss, Jake",TOR,SP,P,FA,,18868,5528abad-3d57-48dd-bff3-ed92d06907c1
-0649e,"Blubaugh, A.J.",HOU,RP,P,FA,,19336,68e8b052-f70d-42a6-a535-7fc3ec9d8bec
+0649e,"Blubaugh, A.J.",HOU,RP,P,T,,19336,68e8b052-f70d-42a6-a535-7fc3ec9d8bec
 07574,"Blum, Harry",BOS,RP,P,FA,,,
 06qqv,"Blum, Josh",NYM,RP,P,FA,,20746,
 06u79,"Boadas, Miguelangel",MIN,SP,P,FA,,,
@@ -1260,7 +1260,7 @@ fantrax_id,name,mlb_team,primary_position,eligible_positions,league_status,stats
 06su8,"Burgos, Yerlin",ATH,RP,P,FA,,,
 05yc2,"Burhenn, Garrett",DET,SP,P,FA,,,
 062jb,"Burke, Blake",MIL,1B,"1B,UT,CI",T,,19546,
-03dap,"Burke, Brock",CIN,RP,P,WW,11241,13459,eb458d81-ba52-443b-8a22-e9c35d089012
+03dap,"Burke, Brock",CIN,RP,P,FA,11241,13459,eb458d81-ba52-443b-8a22-e9c35d089012
 06584,"Burke, Jacob",CHW,CF,"OF,UT",FA,,19077,
 05xod,"Burke, Sean",CHW,SP,P,T,,17364,1111489e-7f14-47bb-98da-a0c736568892
 06heo,"Burkett, Langston",(N/A),RP,P,FA,,,
@@ -1824,7 +1824,7 @@ fantrax_id,name,mlb_team,primary_position,eligible_positions,league_status,stats
 03day,"Clay, Sam",(N/A),RP,P,FA,11960,13470,cf26108f-871a-4448-a3c4-90b1e84e98c8
 06pha,"Clayton, Cam",MIA,1B,"1B,UT,SS,CI,MI",FA,,18906,
 078ty,"Cleary, Ben",CLE,SS,"UT,SS,MI",FA,,,
-03qju,"Cleavinger, Garrett",TB,RP,P,FA,11704,13908,be51cd4d-69f7-49a5-8691-e88a66988306
+03qju,"Cleavinger, Garrett",TB,RP,P,T,11704,13908,be51cd4d-69f7-49a5-8691-e88a66988306
 077o2,"Cleavinger, Grant",CHW,RP,P,FA,,,
 04ppi,"Clemens, Kody",MIN,1B,"OF,1B,UT,2B,CI,MI",T,11309,15513,a4630a73-2fd8-4558-b4ca-87a6b305497c
 04alp,"Clement, Ernie",TOR,3B,"UT,2B,3B,SS,CI,MI",FA,11892,14854,9a64565e-788e-46ae-8e37-47261c8ea326
@@ -6075,7 +6075,7 @@ fantrax_id,name,mlb_team,primary_position,eligible_positions,league_status,stats
 075g9,"McMurray, Cooper",ATL,1B,"1B,UT,CI",FA,,,
 05y0v,"McNair, Brennon",(N/A),LF,"OF,UT",FA,,17773,
 06uxr,"McNeely, Caleb",(N/A),RF,"OF,UT",FA,,,
-0317o,"McNeil, Jeff",ATH,2B,"OF,1B,UT,2B,CI,MI",T,11118,15389,c31c5931-b7db-447d-9207-5d6f58ec0f4f
+0317o,"McNeil, Jeff",ATH,2B,"OF,1B,UT,2B,CI,MI",WW,11118,15389,c31c5931-b7db-447d-9207-5d6f58ec0f4f
 068jh,"McNeillie, Luke",NYM,SP,P,FA,,18976,
 074vz,"McPherson, Brandon",HOU,SP,P,FA,,,
 073sm,"McPherson, Ryan",(N/A),RP,P,FA,,,
