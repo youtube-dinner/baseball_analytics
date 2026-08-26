@@ -1317,6 +1317,16 @@
       "violation_alert_sent": false,
       "window_start": "2026-07-30"
     },
+    "mldxq5pemj90wrl7:04z6m": {
+      "demotion_alert_sent": true,
+      "eligible_date": "2026-09-17",
+      "fantrax_id": "04z6m",
+      "player_name": "Agustin Ramirez",
+      "team_id": "mldxq5pemj90wrl7",
+      "team_name": "L\u00e1szlar\u00f3 T\u00f3th",
+      "violation_alert_sent": false,
+      "window_start": "2026-08-26"
+    },
     "mldxq5pemj90wrl7:051wu": {
       "demotion_alert_sent": true,
       "eligible_date": "2026-07-31",
@@ -4176,7 +4186,7 @@
       "fantrax_id": "01cgo",
       "player_name": "Freddie Freeman",
       "primary_position": "1B",
-      "roster_position": "UT",
+      "roster_position": "1B",
       "roster_status": "ACTIVE",
       "team_id": "jk36oo1hmj90wrl7",
       "team_name": "Daddy Yankee"
@@ -4212,7 +4222,7 @@
       "fantrax_id": "02mw3",
       "player_name": "Christian Walker",
       "primary_position": "1B",
-      "roster_position": "CI",
+      "roster_position": "UT",
       "roster_status": "ACTIVE",
       "team_id": "jk36oo1hmj90wrl7",
       "team_name": "Daddy Yankee"
@@ -4257,7 +4267,7 @@
       "fantrax_id": "03btu",
       "player_name": "Willi Castro",
       "primary_position": "2B",
-      "roster_position": "UT",
+      "roster_position": "CI",
       "roster_status": "ACTIVE",
       "team_id": "jk36oo1hmj90wrl7",
       "team_name": "Daddy Yankee"
@@ -4284,7 +4294,7 @@
       "fantrax_id": "03oh0",
       "player_name": "Willson Contreras",
       "primary_position": "1B",
-      "roster_position": "1B",
+      "roster_position": "UT",
       "roster_status": "ACTIVE",
       "team_id": "jk36oo1hmj90wrl7",
       "team_name": "Daddy Yankee"
@@ -5356,7 +5366,7 @@
       "player_name": "Agustin Ramirez",
       "primary_position": "C",
       "roster_position": "C",
-      "roster_status": "ACTIVE",
+      "roster_status": "MINORS",
       "team_id": "mldxq5pemj90wrl7",
       "team_name": "L\u00e1szlar\u00f3 T\u00f3th"
     },
@@ -5472,8 +5482,8 @@
       "fantrax_id": "05xse",
       "player_name": "Hector Rodriguez",
       "primary_position": "LF",
-      "roster_position": "OF",
-      "roster_status": "MINORS",
+      "roster_position": "UT",
+      "roster_status": "ACTIVE",
       "team_id": "mldxq5pemj90wrl7",
       "team_name": "L\u00e1szlar\u00f3 T\u00f3th"
     },
@@ -5500,7 +5510,7 @@
       "player_name": "Cole Young",
       "primary_position": "2B",
       "roster_position": "MI",
-      "roster_status": "ACTIVE",
+      "roster_status": "RESERVE",
       "team_id": "mldxq5pemj90wrl7",
       "team_name": "L\u00e1szlar\u00f3 T\u00f3th"
     },
@@ -5535,7 +5545,7 @@
       "fantrax_id": "062ho",
       "player_name": "Javier Sanoja",
       "primary_position": "3B",
-      "roster_position": "UT",
+      "roster_position": "MI",
       "roster_status": "ACTIVE",
       "team_id": "mldxq5pemj90wrl7",
       "team_name": "L\u00e1szlar\u00f3 T\u00f3th"
