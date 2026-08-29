@@ -4403,7 +4403,7 @@ fantrax_id,name,mlb_team,primary_position,eligible_positions,league_status,stats
 0765q,"Holmann, Juan",MIN,SS,"UT,SS,MI",FA,,,
 06pqd,"Holmes, Bridger",LAA,RP,P,FA,,19660,
 02bx4,"Holmes, Clay",CHC,SP,P,T,10569,14607,9a62f791-fe7a-4e1f-9823-82a361f546bd
-03d6p,"Holmes, Grant",ATL,SP,P,T,10549,13374,5a6101eb-bc40-47af-824a-0f9d1dbe2e0d
+03d6p,"Holmes, Grant",ATL,SP,P,WW,10549,13374,5a6101eb-bc40-47af-824a-0f9d1dbe2e0d
 075ey,"Holmes, Jackson",ATH,SP,P,FA,,,
 078zg,"Holmes, Will",ATL,SP,P,FA,,,
 06pge,"Holobetz, John",BOS,SP,P,FA,,19724,
@@ -5893,7 +5893,7 @@ fantrax_id,name,mlb_team,primary_position,eligible_positions,league_status,stats
 077bu,"Mateo, Marcos",CHC,SS,"UT,SS,MI",FA,,,
 04euk,"Matheny, Shane",(N/A),1B,"1B,UT,CI",FA,,18685,4a9b6898-5c0d-4bd5-8148-abee1e15a156
 066t9,"Matheus, Juan",MIA,3B,"UT,3B,CI",FA,,20594,
-060gd,"Mathews, Quinn",STL,SP,P,FA,,18092,ab497abf-7b0b-4695-81a9-211f50a8f910
+060gd,"Mathews, Quinn",STL,SP,P,T,,18092,ab497abf-7b0b-4695-81a9-211f50a8f910
 06qii,"Mathey, Jack",SD,C,"C,UT",FA,,,
 03qkb,"Mathias, Mark",(N/A),2B,"2B,UT,MI",FA,11703,13902,a51513df-033d-49d9-ac1a-feebbe16df46
 070dv,"Mathiesen, Dylan",PIT,SP,P,FA,,,
