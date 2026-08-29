@@ -81,7 +81,8 @@
     "2026-08-25": true,
     "2026-08-26": true,
     "2026-08-27": true,
-    "2026-08-28": true
+    "2026-08-28": true,
+    "2026-08-29": true
   },
   "major_add_alerts": {
     "2026-06-08": {
@@ -651,6 +652,16 @@
       "team_name": "Bobby and the NitWitts",
       "violation_alert_sent": false,
       "window_start": "2026-07-25"
+    },
+    "aqfyadu2mj90wrl7:04qnc": {
+      "demotion_alert_sent": true,
+      "eligible_date": "2026-09-20",
+      "fantrax_id": "04qnc",
+      "player_name": "Francisco Alvarez",
+      "team_id": "aqfyadu2mj90wrl7",
+      "team_name": "Ben the Hen",
+      "violation_alert_sent": false,
+      "window_start": "2026-08-29"
     },
     "aqfyadu2mj90wrl7:05unf": {
       "demotion_alert_sent": true,
@@ -2287,7 +2298,7 @@
       "player_name": "Francisco Alvarez",
       "primary_position": "C",
       "roster_position": "UT",
-      "roster_status": "ACTIVE",
+      "roster_status": "MINORS",
       "team_id": "aqfyadu2mj90wrl7",
       "team_name": "Ben the Hen"
     },
@@ -2439,8 +2450,8 @@
       "fantrax_id": "05xty",
       "player_name": "Dylan Beavers",
       "primary_position": "LF",
-      "roster_position": "OF",
-      "roster_status": "MINORS",
+      "roster_position": "UT",
+      "roster_status": "ACTIVE",
       "team_id": "aqfyadu2mj90wrl7",
       "team_name": "Ben the Hen"
     },
@@ -4330,7 +4341,7 @@
       "player_name": "Leody Taveras",
       "primary_position": "CF",
       "roster_position": "OF",
-      "roster_status": "ACTIVE",
+      "roster_status": "RESERVE",
       "team_id": "jk36oo1hmj90wrl7",
       "team_name": "Daddy Yankee"
     },
@@ -4357,15 +4368,6 @@
       "player_name": "Pete Alonso",
       "primary_position": "1B",
       "roster_position": "CI",
-      "roster_status": "ACTIVE",
-      "team_id": "jk36oo1hmj90wrl7",
-      "team_name": "Daddy Yankee"
-    },
-    "jk36oo1hmj90wrl7:041yb": {
-      "fantrax_id": "041yb",
-      "player_name": "Dean Kremer",
-      "primary_position": "SP",
-      "roster_position": "P",
       "roster_status": "ACTIVE",
       "team_id": "jk36oo1hmj90wrl7",
       "team_name": "Daddy Yankee"
@@ -4573,7 +4575,7 @@
       "player_name": "Cam Smith",
       "primary_position": "RF",
       "roster_position": "OF",
-      "roster_status": "RESERVE",
+      "roster_status": "ACTIVE",
       "team_id": "jk36oo1hmj90wrl7",
       "team_name": "Daddy Yankee"
     },
