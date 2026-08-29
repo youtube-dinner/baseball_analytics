@@ -548,6 +548,7 @@
     "2026-08-24": {
       "6tnz8jgemj90wrl7": {
         "major_add_limit": 10,
+        "none_remaining": true,
         "overage_alerted": 0
       },
       "aqfyadu2mj90wrl7": {
@@ -1588,6 +1589,15 @@
       "team_id": "6tnz8jgemj90wrl7",
       "team_name": "Bobby and the NitWitts"
     },
+    "6tnz8jgemj90wrl7:0312g": {
+      "fantrax_id": "0312g",
+      "player_name": "Tyler Mahle",
+      "primary_position": "SP",
+      "roster_position": "P",
+      "roster_status": "ACTIVE",
+      "team_id": "6tnz8jgemj90wrl7",
+      "team_name": "Bobby and the NitWitts"
+    },
     "6tnz8jgemj90wrl7:0316v": {
       "fantrax_id": "0316v",
       "player_name": "Jake Bauers",
@@ -1678,20 +1688,20 @@
       "team_id": "6tnz8jgemj90wrl7",
       "team_name": "Bobby and the NitWitts"
     },
-    "6tnz8jgemj90wrl7:03qpi": {
-      "fantrax_id": "03qpi",
-      "player_name": "Patrick Sandoval",
-      "primary_position": "SP",
-      "roster_position": "P",
-      "roster_status": "ACTIVE",
-      "team_id": "6tnz8jgemj90wrl7",
-      "team_name": "Bobby and the NitWitts"
-    },
     "6tnz8jgemj90wrl7:03yrz": {
       "fantrax_id": "03yrz",
       "player_name": "William Contreras",
       "primary_position": "C",
       "roster_position": "C",
+      "roster_status": "ACTIVE",
+      "team_id": "6tnz8jgemj90wrl7",
+      "team_name": "Bobby and the NitWitts"
+    },
+    "6tnz8jgemj90wrl7:045kb": {
+      "fantrax_id": "045kb",
+      "player_name": "Cristian Javier",
+      "primary_position": "SP",
+      "roster_position": "P",
       "roster_status": "ACTIVE",
       "team_id": "6tnz8jgemj90wrl7",
       "team_name": "Bobby and the NitWitts"
@@ -1710,15 +1720,6 @@
       "player_name": "Seiya Suzuki",
       "primary_position": "DH",
       "roster_position": "OF",
-      "roster_status": "ACTIVE",
-      "team_id": "6tnz8jgemj90wrl7",
-      "team_name": "Bobby and the NitWitts"
-    },
-    "6tnz8jgemj90wrl7:04g1x": {
-      "fantrax_id": "04g1x",
-      "player_name": "David Peterson",
-      "primary_position": "SP",
-      "roster_position": "P",
       "roster_status": "ACTIVE",
       "team_id": "6tnz8jgemj90wrl7",
       "team_name": "Bobby and the NitWitts"
@@ -3186,7 +3187,7 @@
       "player_name": "Cody Bellinger",
       "primary_position": "LF",
       "roster_position": "OF",
-      "roster_status": "INJURED_RESERVE",
+      "roster_status": "ACTIVE",
       "team_id": "f3myl5ugmj90wrl7",
       "team_name": "The Hot and Steamy Boys"
     },
@@ -3502,15 +3503,6 @@
       "primary_position": "C",
       "roster_position": "C",
       "roster_status": "MINORS",
-      "team_id": "f3myl5ugmj90wrl7",
-      "team_name": "The Hot and Steamy Boys"
-    },
-    "f3myl5ugmj90wrl7:05ycf": {
-      "fantrax_id": "05ycf",
-      "player_name": "Noah Cameron",
-      "primary_position": "SP",
-      "roster_position": "P",
-      "roster_status": "ACTIVE",
       "team_id": "f3myl5ugmj90wrl7",
       "team_name": "The Hot and Steamy Boys"
     },
@@ -4338,7 +4330,7 @@
       "player_name": "Leody Taveras",
       "primary_position": "CF",
       "roster_position": "OF",
-      "roster_status": "RESERVE",
+      "roster_status": "ACTIVE",
       "team_id": "jk36oo1hmj90wrl7",
       "team_name": "Daddy Yankee"
     },
@@ -4581,7 +4573,7 @@
       "player_name": "Cam Smith",
       "primary_position": "RF",
       "roster_position": "OF",
-      "roster_status": "ACTIVE",
+      "roster_status": "RESERVE",
       "team_id": "jk36oo1hmj90wrl7",
       "team_name": "Daddy Yankee"
     },
@@ -4792,15 +4784,6 @@
       "team_id": "k7c57nf4mj90wrl8",
       "team_name": "Hand Foot Mouth Disease Guys"
     },
-    "k7c57nf4mj90wrl8:02iug": {
-      "fantrax_id": "02iug",
-      "player_name": "Michael Wacha",
-      "primary_position": "SP",
-      "roster_position": "P",
-      "roster_status": "ACTIVE",
-      "team_id": "k7c57nf4mj90wrl8",
-      "team_name": "Hand Foot Mouth Disease Guys"
-    },
     "k7c57nf4mj90wrl8:02mw6": {
       "fantrax_id": "02mw6",
       "player_name": "Corey Seager",
@@ -4851,6 +4834,15 @@
       "player_name": "Kyle Tucker",
       "primary_position": "RF",
       "roster_position": "OF",
+      "roster_status": "ACTIVE",
+      "team_id": "k7c57nf4mj90wrl8",
+      "team_name": "Hand Foot Mouth Disease Guys"
+    },
+    "k7c57nf4mj90wrl8:03yxh": {
+      "fantrax_id": "03yxh",
+      "player_name": "Cal Quantrill",
+      "primary_position": "SP",
+      "roster_position": "P",
       "roster_status": "ACTIVE",
       "team_id": "k7c57nf4mj90wrl8",
       "team_name": "Hand Foot Mouth Disease Guys"
@@ -5359,6 +5351,15 @@
       "team_id": "mldxq5pemj90wrl7",
       "team_name": "L\u00e1szlar\u00f3 T\u00f3th"
     },
+    "mldxq5pemj90wrl7:04cwf": {
+      "fantrax_id": "04cwf",
+      "player_name": "Shane Baz",
+      "primary_position": "SP",
+      "roster_position": "P",
+      "roster_status": "ACTIVE",
+      "team_id": "mldxq5pemj90wrl7",
+      "team_name": "L\u00e1szlar\u00f3 T\u00f3th"
+    },
     "mldxq5pemj90wrl7:04ee8": {
       "fantrax_id": "04ee8",
       "player_name": "Heliot Ramos",
@@ -5491,15 +5492,6 @@
       "primary_position": "RF",
       "roster_position": "UT",
       "roster_status": "MINORS",
-      "team_id": "mldxq5pemj90wrl7",
-      "team_name": "L\u00e1szlar\u00f3 T\u00f3th"
-    },
-    "mldxq5pemj90wrl7:05r3a": {
-      "fantrax_id": "05r3a",
-      "player_name": "Brandon Young",
-      "primary_position": "SP",
-      "roster_position": "P",
-      "roster_status": "ACTIVE",
       "team_id": "mldxq5pemj90wrl7",
       "team_name": "L\u00e1szlar\u00f3 T\u00f3th"
     },
