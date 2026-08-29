@@ -579,6 +579,7 @@
       },
       "mldxq5pemj90wrl7": {
         "major_add_limit": 10,
+        "none_remaining": true,
         "one_remaining": true,
         "overage_alerted": 0
       },
@@ -3189,7 +3190,7 @@
       "player_name": "Kevin Gausman",
       "primary_position": "SP",
       "roster_position": "P",
-      "roster_status": "RESERVE",
+      "roster_status": "ACTIVE",
       "team_id": "f3myl5ugmj90wrl7",
       "team_name": "The Hot and Steamy Boys"
     },
@@ -4341,7 +4342,7 @@
       "player_name": "Leody Taveras",
       "primary_position": "CF",
       "roster_position": "OF",
-      "roster_status": "RESERVE",
+      "roster_status": "ACTIVE",
       "team_id": "jk36oo1hmj90wrl7",
       "team_name": "Daddy Yankee"
     },
@@ -4575,7 +4576,7 @@
       "player_name": "Cam Smith",
       "primary_position": "RF",
       "roster_position": "OF",
-      "roster_status": "ACTIVE",
+      "roster_status": "RESERVE",
       "team_id": "jk36oo1hmj90wrl7",
       "team_name": "Daddy Yankee"
     },
@@ -5281,15 +5282,6 @@
       "team_id": "mldxq5pemj90wrl7",
       "team_name": "L\u00e1szlar\u00f3 T\u00f3th"
     },
-    "mldxq5pemj90wrl7:03d6p": {
-      "fantrax_id": "03d6p",
-      "player_name": "Grant Holmes",
-      "primary_position": "SP",
-      "roster_position": "P",
-      "roster_status": "ACTIVE",
-      "team_id": "mldxq5pemj90wrl7",
-      "team_name": "L\u00e1szlar\u00f3 T\u00f3th"
-    },
     "mldxq5pemj90wrl7:03ynj": {
       "fantrax_id": "03ynj",
       "player_name": "Juan Soto",
@@ -5584,6 +5576,15 @@
       "primary_position": "3B",
       "roster_position": "SS",
       "roster_status": "MINORS",
+      "team_id": "mldxq5pemj90wrl7",
+      "team_name": "L\u00e1szlar\u00f3 T\u00f3th"
+    },
+    "mldxq5pemj90wrl7:060gd": {
+      "fantrax_id": "060gd",
+      "player_name": "Quinn Mathews",
+      "primary_position": "SP",
+      "roster_position": "P",
+      "roster_status": "ACTIVE",
       "team_id": "mldxq5pemj90wrl7",
       "team_name": "L\u00e1szlar\u00f3 T\u00f3th"
     },
