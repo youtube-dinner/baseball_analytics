@@ -82,7 +82,8 @@
     "2026-08-26": true,
     "2026-08-27": true,
     "2026-08-28": true,
-    "2026-08-29": true
+    "2026-08-29": true,
+    "2026-08-30": true
   },
   "major_add_alerts": {
     "2026-06-08": {
@@ -4841,15 +4842,6 @@
       "team_id": "k7c57nf4mj90wrl8",
       "team_name": "Hand Foot Mouth Disease Guys"
     },
-    "k7c57nf4mj90wrl8:03yxh": {
-      "fantrax_id": "03yxh",
-      "player_name": "Cal Quantrill",
-      "primary_position": "SP",
-      "roster_position": "P",
-      "roster_status": "ACTIVE",
-      "team_id": "k7c57nf4mj90wrl8",
-      "team_name": "Hand Foot Mouth Disease Guys"
-    },
     "k7c57nf4mj90wrl8:041w4": {
       "fantrax_id": "041w4",
       "player_name": "Bryan Baker",
@@ -4900,6 +4892,15 @@
       "player_name": "Daulton Varsho",
       "primary_position": "CF",
       "roster_position": "OF",
+      "roster_status": "ACTIVE",
+      "team_id": "k7c57nf4mj90wrl8",
+      "team_name": "Hand Foot Mouth Disease Guys"
+    },
+    "k7c57nf4mj90wrl8:04mlx": {
+      "fantrax_id": "04mlx",
+      "player_name": "Matthew Liberatore",
+      "primary_position": "SP",
+      "roster_position": "P",
       "roster_status": "ACTIVE",
       "team_id": "k7c57nf4mj90wrl8",
       "team_name": "Hand Foot Mouth Disease Guys"
