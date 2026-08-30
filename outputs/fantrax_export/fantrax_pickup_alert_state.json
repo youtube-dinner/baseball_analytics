@@ -571,11 +571,13 @@
       },
       "jk36oo1hmj90wrl7": {
         "major_add_limit": 10,
+        "none_remaining": true,
         "one_remaining": true,
         "overage_alerted": 0
       },
       "k7c57nf4mj90wrl8": {
         "major_add_limit": 10,
+        "none_remaining": true,
         "overage_alerted": 0
       },
       "mldxq5pemj90wrl7": {
@@ -2165,7 +2167,7 @@
       "player_name": "Byron Buxton",
       "primary_position": "CF",
       "roster_position": "OF",
-      "roster_status": "ACTIVE",
+      "roster_status": "INJURED_RESERVE",
       "team_id": "aqfyadu2mj90wrl7",
       "team_name": "Ben the Hen"
     },
@@ -4270,7 +4272,7 @@
       "fantrax_id": "02w7p",
       "player_name": "Alex Bregman",
       "primary_position": "3B",
-      "roster_position": "3B",
+      "roster_position": "UT",
       "roster_status": "ACTIVE",
       "team_id": "jk36oo1hmj90wrl7",
       "team_name": "Daddy Yankee"
@@ -4306,7 +4308,7 @@
       "fantrax_id": "03btu",
       "player_name": "Willi Castro",
       "primary_position": "2B",
-      "roster_position": "UT",
+      "roster_position": "SS",
       "roster_status": "ACTIVE",
       "team_id": "jk36oo1hmj90wrl7",
       "team_name": "Daddy Yankee"
@@ -4333,7 +4335,7 @@
       "fantrax_id": "03oh0",
       "player_name": "Willson Contreras",
       "primary_position": "1B",
-      "roster_position": "UT",
+      "roster_position": "CI",
       "roster_status": "ACTIVE",
       "team_id": "jk36oo1hmj90wrl7",
       "team_name": "Daddy Yankee"
@@ -4369,7 +4371,7 @@
       "fantrax_id": "041pz",
       "player_name": "Pete Alonso",
       "primary_position": "1B",
-      "roster_position": "CI",
+      "roster_position": "UT",
       "roster_status": "ACTIVE",
       "team_id": "jk36oo1hmj90wrl7",
       "team_name": "Daddy Yankee"
@@ -4414,7 +4416,7 @@
       "fantrax_id": "04nqx",
       "player_name": "Ezequiel Duran",
       "primary_position": "SS",
-      "roster_position": "UT",
+      "roster_position": "3B",
       "roster_status": "ACTIVE",
       "team_id": "jk36oo1hmj90wrl7",
       "team_name": "Daddy Yankee"
@@ -4423,8 +4425,8 @@
       "fantrax_id": "04pbq",
       "player_name": "Geraldo Perdomo",
       "primary_position": "SS",
-      "roster_position": "SS",
-      "roster_status": "ACTIVE",
+      "roster_position": "UT",
+      "roster_status": "RESERVE",
       "team_id": "jk36oo1hmj90wrl7",
       "team_name": "Daddy Yankee"
     },
@@ -4509,6 +4511,15 @@
       "team_id": "jk36oo1hmj90wrl7",
       "team_name": "Daddy Yankee"
     },
+    "jk36oo1hmj90wrl7:05ras": {
+      "fantrax_id": "05ras",
+      "player_name": "Colton Cowser",
+      "primary_position": "CF",
+      "roster_position": "OF",
+      "roster_status": "RESERVE",
+      "team_id": "jk36oo1hmj90wrl7",
+      "team_name": "Daddy Yankee"
+    },
     "jk36oo1hmj90wrl7:05rc3": {
       "fantrax_id": "05rc3",
       "player_name": "Masataka Yoshida",
@@ -4576,8 +4587,8 @@
       "fantrax_id": "060jo",
       "player_name": "Cam Smith",
       "primary_position": "RF",
-      "roster_position": "OF",
-      "roster_status": "RESERVE",
+      "roster_position": "UT",
+      "roster_status": "ACTIVE",
       "team_id": "jk36oo1hmj90wrl7",
       "team_name": "Daddy Yankee"
     },
@@ -4761,6 +4772,15 @@
       "team_id": "k7c57nf4mj90wrl8",
       "team_name": "Hand Foot Mouth Disease Guys"
     },
+    "k7c57nf4mj90wrl8:01u75": {
+      "fantrax_id": "01u75",
+      "player_name": "Salvador Perez",
+      "primary_position": "C",
+      "roster_position": "1B",
+      "roster_status": "ACTIVE",
+      "team_id": "k7c57nf4mj90wrl8",
+      "team_name": "Hand Foot Mouth Disease Guys"
+    },
     "k7c57nf4mj90wrl8:025j1": {
       "fantrax_id": "025j1",
       "player_name": "Robbie Ray",
@@ -4811,7 +4831,7 @@
       "player_name": "Rafael Devers",
       "primary_position": "DH",
       "roster_position": "1B",
-      "roster_status": "ACTIVE",
+      "roster_status": "RESERVE",
       "team_id": "k7c57nf4mj90wrl8",
       "team_name": "Hand Foot Mouth Disease Guys"
     },
@@ -4838,6 +4858,15 @@
       "player_name": "Kyle Tucker",
       "primary_position": "RF",
       "roster_position": "OF",
+      "roster_status": "ACTIVE",
+      "team_id": "k7c57nf4mj90wrl8",
+      "team_name": "Hand Foot Mouth Disease Guys"
+    },
+    "k7c57nf4mj90wrl8:041r5": {
+      "fantrax_id": "041r5",
+      "player_name": "Dustin May",
+      "primary_position": "SP",
+      "roster_position": "P",
       "roster_status": "ACTIVE",
       "team_id": "k7c57nf4mj90wrl8",
       "team_name": "Hand Foot Mouth Disease Guys"
@@ -4878,29 +4907,11 @@
       "team_id": "k7c57nf4mj90wrl8",
       "team_name": "Hand Foot Mouth Disease Guys"
     },
-    "k7c57nf4mj90wrl8:04auj": {
-      "fantrax_id": "04auj",
-      "player_name": "Framber Valdez",
-      "primary_position": "SP",
-      "roster_position": "P",
-      "roster_status": "ACTIVE",
-      "team_id": "k7c57nf4mj90wrl8",
-      "team_name": "Hand Foot Mouth Disease Guys"
-    },
     "k7c57nf4mj90wrl8:04efa": {
       "fantrax_id": "04efa",
       "player_name": "Daulton Varsho",
       "primary_position": "CF",
       "roster_position": "OF",
-      "roster_status": "ACTIVE",
-      "team_id": "k7c57nf4mj90wrl8",
-      "team_name": "Hand Foot Mouth Disease Guys"
-    },
-    "k7c57nf4mj90wrl8:04mlx": {
-      "fantrax_id": "04mlx",
-      "player_name": "Matthew Liberatore",
-      "primary_position": "SP",
-      "roster_position": "P",
       "roster_status": "ACTIVE",
       "team_id": "k7c57nf4mj90wrl8",
       "team_name": "Hand Foot Mouth Disease Guys"
@@ -4946,7 +4957,7 @@
       "player_name": "Gabriel Moreno",
       "primary_position": "C",
       "roster_position": "C",
-      "roster_status": "ACTIVE",
+      "roster_status": "RESERVE",
       "team_id": "k7c57nf4mj90wrl8",
       "team_name": "Hand Foot Mouth Disease Guys"
     },
@@ -5044,8 +5055,8 @@
       "fantrax_id": "05u9z",
       "player_name": "Roman Anthony",
       "primary_position": "RF",
-      "roster_position": "OF",
-      "roster_status": "RESERVE",
+      "roster_position": "UT",
+      "roster_status": "ACTIVE",
       "team_id": "k7c57nf4mj90wrl8",
       "team_name": "Hand Foot Mouth Disease Guys"
     },
@@ -5053,7 +5064,7 @@
       "fantrax_id": "05vy5",
       "player_name": "Carter Jensen",
       "primary_position": "C",
-      "roster_position": "UT",
+      "roster_position": "C",
       "roster_status": "ACTIVE",
       "team_id": "k7c57nf4mj90wrl8",
       "team_name": "Hand Foot Mouth Disease Guys"
