@@ -4626,7 +4626,7 @@ fantrax_id,name,mlb_team,primary_position,eligible_positions,league_status,stats
 078xi,"Jasso, Joseph",ARI,RP,P,FA,,,
 074nz,"Jatczak, Hayden",SF,3B,"UT,3B,CI",FA,,,
 06rgt,"Jauregui, Cristian",PIT,LF,"OF,UT",FA,,20913,
-045kb,"Javier, Cristian",HOU,SP,P,WW,11315,14482,00a81b80-a20f-4fb7-894f-23b4d1a63941
+045kb,"Javier, Cristian",HOU,SP,P,FA,11315,14482,00a81b80-a20f-4fb7-894f-23b4d1a63941
 0782e,"Javier, Denichel",TB,RP,P,FA,,,
 06com,"Javier, Ismael",(N/A),SS,"UT,SS,MI",FA,,,
 04sy2,"Javier, Odalvi",(N/A),SP,P,FA,,18385,
@@ -6819,7 +6819,7 @@ fantrax_id,name,mlb_team,primary_position,eligible_positions,league_status,stats
 02hia,"Nolin, Sean",(N/A),RP,P,FA,9405,11691,6081c039-cd1e-48bb-98d9-1ae367629f73
 05ycg,"Noot, Jaden",(N/A),SP,P,FA,,,
 04pt2,"Nootbaar, Lars",ARI,LF,"OF,UT",FA,,17536,99518b96-7d38-4f19-8c49-cafbac98ea74
-05tce,"Norby, Connor",COL,3B,"1B,UT,2B,3B,CI,MI",FA,,17346,1e0a56f9-8b82-4e03-9921-a587e317fcf9
+05tce,"Norby, Connor",COL,3B,"1B,UT,2B,3B,CI,MI",T,,17346,1e0a56f9-8b82-4e03-9921-a587e317fcf9
 06rsd,"Norby, Ethan",CIN,SP,P,FA,,21078,
 06649,"Nordmann, Trey",BAL,RP,P,FA,,,
 06ien,"Nori, Dante",PHI,CF,"OF,UT",FA,,19534,
@@ -7463,7 +7463,7 @@ fantrax_id,name,mlb_team,primary_position,eligible_positions,league_status,stats
 065nq,"Pfennigs, Jake",(N/A),RP,P,FA,,17522,
 06qim,"Pferrer, Cam",(N/A),RP,P,FA,,,
 06bkt,"Pham, Alex",BAL,RP,P,FA,,18811,
-025fx,"Pham, Tommy",PHI,LF,"OF,UT",FA,9842,11374,a8ff76c9-1554-421c-baed-2a22fb00ad71
+025fx,"Pham, Tommy",CHW,LF,"OF,UT",FA,9842,11374,a8ff76c9-1554-421c-baed-2a22fb00ad71
 065jh,"Phansalkar, Roman",(N/A),RP,P,FA,,,
 072dq,"Phelps, Robert",PHI,SS,"UT,SS,MI",FA,,,
 06mie,"Phelps, Tre",PIT,RF,"OF,UT",FA,,20249,
@@ -8058,7 +8058,7 @@ fantrax_id,name,mlb_team,primary_position,eligible_positions,league_status,stats
 0731w,"Robbins, Aiden",NYM,RF,"OF,UT",FA,,21009,
 04elv,"Roberson, Josh",(N/A),RP,P,FA,,14967,5c01ed7d-fd7d-4de9-8e57-32c8cfa55d4c
 078n5,"Roberson, Wessley",MIA,OF,"OF,UT",FA,,21186,
-047l7,"Robert Jr., Luis",NYM,CF,"OF,UT",T,10765,14686,213bd941-37dc-40a1-ab22-1d62cebb6bc1
+047l7,"Robert Jr., Luis",BAL,CF,"OF,UT",T,10765,14686,213bd941-37dc-40a1-ab22-1d62cebb6bc1
 04et8,"Robert, Daniel",PHI,RP,P,FA,,19682,d8a8391b-8616-4398-bcfd-eeae86167c88
 05gsk,"Robertis, Robert",(N/A),LF,"OF,UT",FA,,16608,
 06mv3,"Roberts Jr., Kevin",BAL,CF,"OF,UT",FA,,21111,
@@ -8703,7 +8703,7 @@ fantrax_id,name,mlb_team,primary_position,eligible_positions,league_status,stats
 064wj,"Schoolcraft, Kruz",SD,SP,P,FA,,20160,
 0603l,"Schreck, RJ",TOR,RF,"OF,UT",FA,,19760,
 066jz,"Schreffler, Troy",(N/A),LF,"OF,UT",FA,,,
-041z3,"Schreiber, John",KC,RP,P,FA,11634,16428,0f25d081-94d3-46b7-b534-2699a252a140
+041z3,"Schreiber, John",NYY,RP,P,FA,11634,16428,0f25d081-94d3-46b7-b534-2699a252a140
 05uam,"Schrier, Cody",MIA,1B,"1B,UT,CI",FA,,17350,
 06amt,"Schroedle, Kyle",(N/A),RF,"OF,UT",FA,,,
 05re4,"Schubart, Nolan",CLE,1B,"1B,UT,CI",FA,,19975,
@@ -9290,7 +9290,7 @@ fantrax_id,name,mlb_team,primary_position,eligible_positions,league_status,stats
 0792n,"Suarez, Jose",CHW,C,"C,1B,UT,CI",FA,,,
 06mq5,"Suarez, Orlando",CHW,SP,P,FA,,19799,
 06um7,"Suarez, Ramon",TOR,RP,P,FA,,,
-03et8,"Suarez, Ranger",BOS,SP,P,T,11117,14750,1fde5e4a-c91a-4035-a94c-bd6762496e65
+03et8,"Suarez, Ranger",BOS,SP,P,WW,11117,14750,1fde5e4a-c91a-4035-a94c-bd6762496e65
 05r01,"Suarez, Robert",ATL,RP,P,FA,,17146,1c172560-1d12-4223-ae7d-a31122a531e1
 06ro8,"Suarez, Ronny",ARI,RF,"OF,UT",FA,,,
 0620x,"Suarez, Santiago",TB,SP,P,FA,,18268,
@@ -9807,7 +9807,7 @@ fantrax_id,name,mlb_team,primary_position,eligible_positions,league_status,stats
 0662n,"Valdez, Derniche",CHC,CF,"OF,UT",FA,,18308,
 042af,"Valdez, Enmanuel",PIT,1B,"1B,UT,CI",FA,,17796,37f33376-ea29-4a8b-8acf-963af66bf126
 05rbw,"Valdez, Esmerlyn",PIT,RF,"OF,UT",T,,20105,b2c9775b-1a33-4b50-abec-15a2cc2c751c
-04auj,"Valdez, Framber",DET,SP,P,WW,11138,14900,00026bf9-dc12-4711-8443-45fbac448ea0
+04auj,"Valdez, Framber",DET,SP,P,FA,11138,14900,00026bf9-dc12-4711-8443-45fbac448ea0
 05j8n,"Valdez, Jesus",ARI,3B,"2B,UT,3B,CI,MI",FA,,17285,a9ec8568-19da-42bd-9be7-08ab552bc9b2
 05y16,"Valdez, Joel",(N/A),RP,P,FA,,17702,204a33f8-ef0b-4e8a-b782-245d8e5b223c
 06tkj,"Valdez, Jonawel",MIA,RP,P,FA,,,
