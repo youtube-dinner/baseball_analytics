@@ -83,7 +83,8 @@
     "2026-08-27": true,
     "2026-08-28": true,
     "2026-08-29": true,
-    "2026-08-30": true
+    "2026-08-30": true,
+    "2026-08-31": true
   },
   "major_add_alerts": {
     "2026-06-08": {
@@ -584,6 +585,48 @@
         "major_add_limit": 10,
         "none_remaining": true,
         "one_remaining": true,
+        "overage_alerted": 0
+      },
+      "o4jvg6q3mj90wrl7": {
+        "major_add_limit": 10,
+        "overage_alerted": 0
+      },
+      "qatqhh61mj90wrl7": {
+        "major_add_limit": 10,
+        "overage_alerted": 0
+      }
+    },
+    "2026-08-31": {
+      "6tnz8jgemj90wrl7": {
+        "major_add_limit": 10,
+        "overage_alerted": 0
+      },
+      "aqfyadu2mj90wrl7": {
+        "major_add_limit": 10,
+        "overage_alerted": 0
+      },
+      "bw696uo5mj90wrl7": {
+        "major_add_limit": 10,
+        "overage_alerted": 0
+      },
+      "f3myl5ugmj90wrl7": {
+        "major_add_limit": 10,
+        "overage_alerted": 0
+      },
+      "hd9hwe4mmj90wrl7": {
+        "major_add_limit": 10,
+        "overage_alerted": 0
+      },
+      "jk36oo1hmj90wrl7": {
+        "major_add_limit": 10,
+        "overage_alerted": 0
+      },
+      "k7c57nf4mj90wrl8": {
+        "major_add_limit": 10,
+        "overage_alerted": 0
+      },
+      "mldxq5pemj90wrl7": {
+        "major_add_limit": 10,
         "overage_alerted": 0
       },
       "o4jvg6q3mj90wrl7": {
@@ -1447,6 +1490,16 @@
       "violation_alert_sent": false,
       "window_start": "2026-08-06"
     },
+    "mldxq5pemj90wrl7:06r9y": {
+      "demotion_alert_sent": false,
+      "eligible_date": "2026-09-22",
+      "fantrax_id": "06r9y",
+      "player_name": "Sadbiel Delzine",
+      "team_id": "mldxq5pemj90wrl7",
+      "team_name": "L\u00e1szlar\u00f3 T\u00f3th",
+      "violation_alert_sent": false,
+      "window_start": "2026-08-31"
+    },
     "mldxq5pemj90wrl7:06yyn": {
       "demotion_alert_sent": false,
       "eligible_date": "2026-07-13",
@@ -1583,6 +1636,15 @@
       "primary_position": "RP",
       "roster_position": "P",
       "roster_status": "INJURED_RESERVE",
+      "team_id": "6tnz8jgemj90wrl7",
+      "team_name": "Bobby and the NitWitts"
+    },
+    "6tnz8jgemj90wrl7:026qc": {
+      "fantrax_id": "026qc",
+      "player_name": "Joc Pederson",
+      "primary_position": "DH",
+      "roster_position": "UT",
+      "roster_status": "ACTIVE",
       "team_id": "6tnz8jgemj90wrl7",
       "team_name": "Bobby and the NitWitts"
     },
@@ -2033,15 +2095,6 @@
       "primary_position": "SS",
       "roster_position": "SS",
       "roster_status": "MINORS",
-      "team_id": "6tnz8jgemj90wrl7",
-      "team_name": "Bobby and the NitWitts"
-    },
-    "6tnz8jgemj90wrl7:06rkk": {
-      "fantrax_id": "06rkk",
-      "player_name": "Eduardo Valencia",
-      "primary_position": "1B",
-      "roster_position": "UT",
-      "roster_status": "ACTIVE",
       "team_id": "6tnz8jgemj90wrl7",
       "team_name": "Bobby and the NitWitts"
     },
@@ -4466,6 +4519,15 @@
       "team_id": "jk36oo1hmj90wrl7",
       "team_name": "Daddy Yankee"
     },
+    "jk36oo1hmj90wrl7:051eh": {
+      "fantrax_id": "051eh",
+      "player_name": "Kevin Kelly",
+      "primary_position": "RP",
+      "roster_position": "P",
+      "roster_status": "ACTIVE",
+      "team_id": "jk36oo1hmj90wrl7",
+      "team_name": "Daddy Yankee"
+    },
     "jk36oo1hmj90wrl7:052c8": {
       "fantrax_id": "052c8",
       "player_name": "Cristopher Sanchez",
@@ -4616,15 +4678,6 @@
       "primary_position": "SP",
       "roster_position": "P",
       "roster_status": "MINORS",
-      "team_id": "jk36oo1hmj90wrl7",
-      "team_name": "Daddy Yankee"
-    },
-    "jk36oo1hmj90wrl7:0649e": {
-      "fantrax_id": "0649e",
-      "player_name": "A.J. Blubaugh",
-      "primary_position": "RP",
-      "roster_position": "P",
-      "roster_status": "ACTIVE",
       "team_id": "jk36oo1hmj90wrl7",
       "team_name": "Daddy Yankee"
     },
@@ -5308,15 +5361,6 @@
       "player_name": "Juan Soto",
       "primary_position": "RF",
       "roster_position": "OF",
-      "roster_status": "INJURED_RESERVE",
-      "team_id": "mldxq5pemj90wrl7",
-      "team_name": "L\u00e1szlar\u00f3 T\u00f3th"
-    },
-    "mldxq5pemj90wrl7:0406n": {
-      "fantrax_id": "0406n",
-      "player_name": "Andres Chaparro",
-      "primary_position": "1B",
-      "roster_position": "UT",
       "roster_status": "ACTIVE",
       "team_id": "mldxq5pemj90wrl7",
       "team_name": "L\u00e1szlar\u00f3 T\u00f3th"
@@ -5327,15 +5371,6 @@
       "primary_position": "3B",
       "roster_position": "CI",
       "roster_status": "ACTIVE",
-      "team_id": "mldxq5pemj90wrl7",
-      "team_name": "L\u00e1szlar\u00f3 T\u00f3th"
-    },
-    "mldxq5pemj90wrl7:041rf": {
-      "fantrax_id": "041rf",
-      "player_name": "Shane Bieber",
-      "primary_position": "SP",
-      "roster_position": "P",
-      "roster_status": "INJURED_RESERVE",
       "team_id": "mldxq5pemj90wrl7",
       "team_name": "L\u00e1szlar\u00f3 T\u00f3th"
     },
@@ -5379,7 +5414,7 @@
       "fantrax_id": "04ee8",
       "player_name": "Heliot Ramos",
       "primary_position": "LF",
-      "roster_position": "OF",
+      "roster_position": "UT",
       "roster_status": "ACTIVE",
       "team_id": "mldxq5pemj90wrl7",
       "team_name": "L\u00e1szlar\u00f3 T\u00f3th"
@@ -5416,15 +5451,6 @@
       "player_name": "Andrew Vaughn",
       "primary_position": "1B",
       "roster_position": "1B",
-      "roster_status": "ACTIVE",
-      "team_id": "mldxq5pemj90wrl7",
-      "team_name": "L\u00e1szlar\u00f3 T\u00f3th"
-    },
-    "mldxq5pemj90wrl7:04t3y": {
-      "fantrax_id": "04t3y",
-      "player_name": "Alejandro Kirk",
-      "primary_position": "C",
-      "roster_position": "C",
       "roster_status": "ACTIVE",
       "team_id": "mldxq5pemj90wrl7",
       "team_name": "L\u00e1szlar\u00f3 T\u00f3th"
@@ -5749,6 +5775,15 @@
       "player_name": "Brailyn Antunez",
       "primary_position": "CF",
       "roster_position": "OF",
+      "roster_status": "MINORS",
+      "team_id": "mldxq5pemj90wrl7",
+      "team_name": "L\u00e1szlar\u00f3 T\u00f3th"
+    },
+    "mldxq5pemj90wrl7:06r9y": {
+      "fantrax_id": "06r9y",
+      "player_name": "Sadbiel Delzine",
+      "primary_position": "SP",
+      "roster_position": "P",
       "roster_status": "MINORS",
       "team_id": "mldxq5pemj90wrl7",
       "team_name": "L\u00e1szlar\u00f3 T\u00f3th"
