@@ -641,6 +641,16 @@
     }
   },
   "minor_windows": {
+    "6tnz8jgemj90wrl7:02jh6": {
+      "demotion_alert_sent": true,
+      "eligible_date": "2026-09-23",
+      "fantrax_id": "02jh6",
+      "player_name": "Eugenio Suarez",
+      "team_id": "6tnz8jgemj90wrl7",
+      "team_name": "Bobby and the NitWitts",
+      "violation_alert_sent": false,
+      "window_start": "2026-09-01"
+    },
     "6tnz8jgemj90wrl7:050c3": {
       "demotion_alert_sent": true,
       "eligible_date": "2026-07-06",
@@ -1663,7 +1673,7 @@
       "player_name": "Eugenio Suarez",
       "primary_position": "3B",
       "roster_position": "UT",
-      "roster_status": "ACTIVE",
+      "roster_status": "MINORS",
       "team_id": "6tnz8jgemj90wrl7",
       "team_name": "Bobby and the NitWitts"
     },
@@ -1941,8 +1951,8 @@
       "fantrax_id": "05u96",
       "player_name": "Bryce Eldridge",
       "primary_position": "1B",
-      "roster_position": "1B",
-      "roster_status": "MINORS",
+      "roster_position": "UT",
+      "roster_status": "ACTIVE",
       "team_id": "6tnz8jgemj90wrl7",
       "team_name": "Bobby and the NitWitts"
     },
@@ -2234,6 +2244,15 @@
       "team_id": "aqfyadu2mj90wrl7",
       "team_name": "Ben the Hen"
     },
+    "aqfyadu2mj90wrl7:03aqw": {
+      "fantrax_id": "03aqw",
+      "player_name": "Mauricio Dubon",
+      "primary_position": "LF",
+      "roster_position": "OF",
+      "roster_status": "ACTIVE",
+      "team_id": "aqfyadu2mj90wrl7",
+      "team_name": "Ben the Hen"
+    },
     "aqfyadu2mj90wrl7:03fi0": {
       "fantrax_id": "03fi0",
       "player_name": "Ozzie Albies",
@@ -2258,15 +2277,6 @@
       "primary_position": "3B",
       "roster_position": "UT",
       "roster_status": "ACTIVE",
-      "team_id": "aqfyadu2mj90wrl7",
-      "team_name": "Ben the Hen"
-    },
-    "aqfyadu2mj90wrl7:03poo": {
-      "fantrax_id": "03poo",
-      "player_name": "Peter Lambert",
-      "primary_position": "SP",
-      "roster_position": "P",
-      "roster_status": "RESERVE",
       "team_id": "aqfyadu2mj90wrl7",
       "team_name": "Ben the Hen"
     },
@@ -4826,6 +4836,15 @@
       "team_id": "k7c57nf4mj90wrl8",
       "team_name": "Hand Foot Mouth Disease Guys"
     },
+    "k7c57nf4mj90wrl8:024m0": {
+      "fantrax_id": "024m0",
+      "player_name": "Jose Altuve",
+      "primary_position": "2B",
+      "roster_position": "2B",
+      "roster_status": "RESERVE",
+      "team_id": "k7c57nf4mj90wrl8",
+      "team_name": "Hand Foot Mouth Disease Guys"
+    },
     "k7c57nf4mj90wrl8:025j1": {
       "fantrax_id": "025j1",
       "player_name": "Robbie Ray",
@@ -4903,15 +4922,6 @@
       "player_name": "Kyle Tucker",
       "primary_position": "RF",
       "roster_position": "OF",
-      "roster_status": "ACTIVE",
-      "team_id": "k7c57nf4mj90wrl8",
-      "team_name": "Hand Foot Mouth Disease Guys"
-    },
-    "k7c57nf4mj90wrl8:041r5": {
-      "fantrax_id": "041r5",
-      "player_name": "Dustin May",
-      "primary_position": "SP",
-      "roster_position": "P",
       "roster_status": "ACTIVE",
       "team_id": "k7c57nf4mj90wrl8",
       "team_name": "Hand Foot Mouth Disease Guys"
