@@ -84,7 +84,8 @@
     "2026-08-28": true,
     "2026-08-29": true,
     "2026-08-30": true,
-    "2026-08-31": true
+    "2026-08-31": true,
+    "2026-09-01": true
   },
   "major_add_alerts": {
     "2026-06-08": {
@@ -1693,6 +1694,15 @@
       "team_id": "6tnz8jgemj90wrl7",
       "team_name": "Bobby and the NitWitts"
     },
+    "6tnz8jgemj90wrl7:031ey": {
+      "fantrax_id": "031ey",
+      "player_name": "Eric Lauer",
+      "primary_position": "SP",
+      "roster_position": "P",
+      "roster_status": "ACTIVE",
+      "team_id": "6tnz8jgemj90wrl7",
+      "team_name": "Bobby and the NitWitts"
+    },
     "6tnz8jgemj90wrl7:03aqv": {
       "fantrax_id": "03aqv",
       "player_name": "Raisel Iglesias",
@@ -1807,15 +1817,6 @@
       "primary_position": "SP",
       "roster_position": "P",
       "roster_status": "INJURED_RESERVE",
-      "team_id": "6tnz8jgemj90wrl7",
-      "team_name": "Bobby and the NitWitts"
-    },
-    "6tnz8jgemj90wrl7:04pkt": {
-      "fantrax_id": "04pkt",
-      "player_name": "J.T. Ginn",
-      "primary_position": "SP",
-      "roster_position": "P",
-      "roster_status": "ACTIVE",
       "team_id": "6tnz8jgemj90wrl7",
       "team_name": "Bobby and the NitWitts"
     },
