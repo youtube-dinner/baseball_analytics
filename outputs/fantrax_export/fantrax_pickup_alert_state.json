@@ -2185,7 +2185,7 @@
       "player_name": "Tyler Glasnow",
       "primary_position": "SP",
       "roster_position": "P",
-      "roster_status": "RESERVE",
+      "roster_status": "ACTIVE",
       "team_id": "aqfyadu2mj90wrl7",
       "team_name": "Ben the Hen"
     },
@@ -2266,7 +2266,7 @@
       "player_name": "Peter Lambert",
       "primary_position": "SP",
       "roster_position": "P",
-      "roster_status": "ACTIVE",
+      "roster_status": "RESERVE",
       "team_id": "aqfyadu2mj90wrl7",
       "team_name": "Ben the Hen"
     },
@@ -3233,15 +3233,6 @@
       "team_id": "f3myl5ugmj90wrl7",
       "team_name": "The Hot and Steamy Boys"
     },
-    "f3myl5ugmj90wrl7:01sy3": {
-      "fantrax_id": "01sy3",
-      "player_name": "Nolan Arenado",
-      "primary_position": "3B",
-      "roster_position": "UT",
-      "roster_status": "ACTIVE",
-      "team_id": "f3myl5ugmj90wrl7",
-      "team_name": "The Hot and Steamy Boys"
-    },
     "f3myl5ugmj90wrl7:01ub6": {
       "fantrax_id": "01ub6",
       "player_name": "Jose Ramirez",
@@ -3308,6 +3299,15 @@
     "f3myl5ugmj90wrl7:0403o": {
       "fantrax_id": "0403o",
       "player_name": "Andres Munoz",
+      "primary_position": "RP",
+      "roster_position": "P",
+      "roster_status": "ACTIVE",
+      "team_id": "f3myl5ugmj90wrl7",
+      "team_name": "The Hot and Steamy Boys"
+    },
+    "f3myl5ugmj90wrl7:043ia": {
+      "fantrax_id": "043ia",
+      "player_name": "Adrian Morejon",
       "primary_position": "RP",
       "roster_position": "P",
       "roster_status": "ACTIVE",
@@ -3472,7 +3472,7 @@
       "player_name": "Ian Seymour",
       "primary_position": "RP",
       "roster_position": "P",
-      "roster_status": "ACTIVE",
+      "roster_status": "RESERVE",
       "team_id": "f3myl5ugmj90wrl7",
       "team_name": "The Hot and Steamy Boys"
     },
