@@ -1724,15 +1724,6 @@
       "team_id": "6tnz8jgemj90wrl7",
       "team_name": "Bobby and the NitWitts"
     },
-    "6tnz8jgemj90wrl7:031ey": {
-      "fantrax_id": "031ey",
-      "player_name": "Eric Lauer",
-      "primary_position": "SP",
-      "roster_position": "P",
-      "roster_status": "ACTIVE",
-      "team_id": "6tnz8jgemj90wrl7",
-      "team_name": "Bobby and the NitWitts"
-    },
     "6tnz8jgemj90wrl7:03aqv": {
       "fantrax_id": "03aqv",
       "player_name": "Raisel Iglesias",
@@ -1747,6 +1738,15 @@
       "player_name": "Kyle Schwarber",
       "primary_position": "DH",
       "roster_position": "UT",
+      "roster_status": "ACTIVE",
+      "team_id": "6tnz8jgemj90wrl7",
+      "team_name": "Bobby and the NitWitts"
+    },
+    "6tnz8jgemj90wrl7:03d6p": {
+      "fantrax_id": "03d6p",
+      "player_name": "Grant Holmes",
+      "primary_position": "SP",
+      "roster_position": "P",
       "roster_status": "ACTIVE",
       "team_id": "6tnz8jgemj90wrl7",
       "team_name": "Bobby and the NitWitts"
@@ -2188,7 +2188,7 @@
       "player_name": "Zack Wheeler",
       "primary_position": "SP",
       "roster_position": "P",
-      "roster_status": "ACTIVE",
+      "roster_status": "RESERVE",
       "team_id": "aqfyadu2mj90wrl7",
       "team_name": "Ben the Hen"
     },
@@ -2264,15 +2264,6 @@
       "team_id": "aqfyadu2mj90wrl7",
       "team_name": "Ben the Hen"
     },
-    "aqfyadu2mj90wrl7:03aqw": {
-      "fantrax_id": "03aqw",
-      "player_name": "Mauricio Dubon",
-      "primary_position": "LF",
-      "roster_position": "OF",
-      "roster_status": "ACTIVE",
-      "team_id": "aqfyadu2mj90wrl7",
-      "team_name": "Ben the Hen"
-    },
     "aqfyadu2mj90wrl7:03fi0": {
       "fantrax_id": "03fi0",
       "player_name": "Ozzie Albies",
@@ -2296,6 +2287,15 @@
       "player_name": "Austin Riley",
       "primary_position": "3B",
       "roster_position": "UT",
+      "roster_status": "ACTIVE",
+      "team_id": "aqfyadu2mj90wrl7",
+      "team_name": "Ben the Hen"
+    },
+    "aqfyadu2mj90wrl7:03qpi": {
+      "fantrax_id": "03qpi",
+      "player_name": "Patrick Sandoval",
+      "primary_position": "SP",
+      "roster_position": "P",
       "roster_status": "ACTIVE",
       "team_id": "aqfyadu2mj90wrl7",
       "team_name": "Ben the Hen"
@@ -3320,15 +3320,6 @@
     "f3myl5ugmj90wrl7:0403o": {
       "fantrax_id": "0403o",
       "player_name": "Andres Munoz",
-      "primary_position": "RP",
-      "roster_position": "P",
-      "roster_status": "ACTIVE",
-      "team_id": "f3myl5ugmj90wrl7",
-      "team_name": "The Hot and Steamy Boys"
-    },
-    "f3myl5ugmj90wrl7:043ia": {
-      "fantrax_id": "043ia",
-      "player_name": "Adrian Morejon",
       "primary_position": "RP",
       "roster_position": "P",
       "roster_status": "ACTIVE",
@@ -4532,15 +4523,6 @@
       "team_id": "jk36oo1hmj90wrl7",
       "team_name": "Daddy Yankee"
     },
-    "jk36oo1hmj90wrl7:050ok": {
-      "fantrax_id": "050ok",
-      "player_name": "Yennier Cano",
-      "primary_position": "RP",
-      "roster_position": "P",
-      "roster_status": "ACTIVE",
-      "team_id": "jk36oo1hmj90wrl7",
-      "team_name": "Daddy Yankee"
-    },
     "jk36oo1hmj90wrl7:0514f": {
       "fantrax_id": "0514f",
       "player_name": "Hayden Wesneski",
@@ -4680,6 +4662,15 @@
       "fantrax_id": "05uc4",
       "player_name": "Troy Melton",
       "primary_position": "RP",
+      "roster_position": "P",
+      "roster_status": "ACTIVE",
+      "team_id": "jk36oo1hmj90wrl7",
+      "team_name": "Daddy Yankee"
+    },
+    "jk36oo1hmj90wrl7:05ycf": {
+      "fantrax_id": "05ycf",
+      "player_name": "Noah Cameron",
+      "primary_position": "SP",
       "roster_position": "P",
       "roster_status": "ACTIVE",
       "team_id": "jk36oo1hmj90wrl7",
