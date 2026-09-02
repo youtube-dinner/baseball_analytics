@@ -85,7 +85,8 @@
     "2026-08-29": true,
     "2026-08-30": true,
     "2026-08-31": true,
-    "2026-09-01": true
+    "2026-09-01": true,
+    "2026-09-02": true
   },
   "major_add_alerts": {
     "2026-06-08": {
@@ -1468,7 +1469,7 @@
       "player_name": "Hector Rodriguez",
       "team_id": "mldxq5pemj90wrl7",
       "team_name": "L\u00e1szlar\u00f3 T\u00f3th",
-      "violation_alert_sent": false,
+      "violation_alert_sent": true,
       "window_start": "2026-08-27"
     },
     "mldxq5pemj90wrl7:0603p": {
@@ -3484,7 +3485,7 @@
       "player_name": "Ian Seymour",
       "primary_position": "RP",
       "roster_position": "P",
-      "roster_status": "RESERVE",
+      "roster_status": "ACTIVE",
       "team_id": "f3myl5ugmj90wrl7",
       "team_name": "The Hot and Steamy Boys"
     },
@@ -5437,7 +5438,7 @@
       "player_name": "Xavier Edwards",
       "primary_position": "2B",
       "roster_position": "SS",
-      "roster_status": "ACTIVE",
+      "roster_status": "INJURED_RESERVE",
       "team_id": "mldxq5pemj90wrl7",
       "team_name": "L\u00e1szlar\u00f3 T\u00f3th"
     },
@@ -5589,8 +5590,8 @@
       "fantrax_id": "05xse",
       "player_name": "Hector Rodriguez",
       "primary_position": "LF",
-      "roster_position": "OF",
-      "roster_status": "MINORS",
+      "roster_position": "UT",
+      "roster_status": "ACTIVE",
       "team_id": "mldxq5pemj90wrl7",
       "team_name": "L\u00e1szlar\u00f3 T\u00f3th"
     },
@@ -5724,7 +5725,7 @@
       "fantrax_id": "06hx4",
       "player_name": "Kaelen Culpepper",
       "primary_position": "SS",
-      "roster_position": "UT",
+      "roster_position": "SS",
       "roster_status": "ACTIVE",
       "team_id": "mldxq5pemj90wrl7",
       "team_name": "L\u00e1szlar\u00f3 T\u00f3th"
