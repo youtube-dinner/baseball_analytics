@@ -731,6 +731,16 @@
       "violation_alert_sent": false,
       "window_start": "2026-07-01"
     },
+    "aqfyadu2mj90wrl7:05xty": {
+      "demotion_alert_sent": true,
+      "eligible_date": "2026-09-23",
+      "fantrax_id": "05xty",
+      "player_name": "Dylan Beavers",
+      "team_id": "aqfyadu2mj90wrl7",
+      "team_name": "Ben the Hen",
+      "violation_alert_sent": false,
+      "window_start": "2026-09-01"
+    },
     "aqfyadu2mj90wrl7:06c1j": {
       "demotion_alert_sent": false,
       "eligible_date": "2026-07-28",
@@ -1223,13 +1233,23 @@
     },
     "jk36oo1hmj90wrl7:05rcj": {
       "demotion_alert_sent": true,
-      "eligible_date": "2026-07-14",
+      "eligible_date": "2026-09-23",
       "fantrax_id": "05rcj",
       "player_name": "Edwin Arroyo",
       "team_id": "jk36oo1hmj90wrl7",
       "team_name": "Daddy Yankee",
       "violation_alert_sent": false,
-      "window_start": "2026-06-22"
+      "window_start": "2026-09-01"
+    },
+    "jk36oo1hmj90wrl7:05u3v": {
+      "demotion_alert_sent": true,
+      "eligible_date": "2026-09-23",
+      "fantrax_id": "05u3v",
+      "player_name": "Walker Jenkins",
+      "team_id": "jk36oo1hmj90wrl7",
+      "team_name": "Daddy Yankee",
+      "violation_alert_sent": false,
+      "window_start": "2026-09-01"
     },
     "jk36oo1hmj90wrl7:05uvx": {
       "demotion_alert_sent": false,
@@ -2338,8 +2358,8 @@
       "fantrax_id": "04nb2",
       "player_name": "Riley Greene",
       "primary_position": "LF",
-      "roster_position": "OF",
-      "roster_status": "INJURED_RESERVE",
+      "roster_position": "UT",
+      "roster_status": "ACTIVE",
       "team_id": "aqfyadu2mj90wrl7",
       "team_name": "Ben the Hen"
     },
@@ -2510,7 +2530,7 @@
       "player_name": "Dylan Beavers",
       "primary_position": "LF",
       "roster_position": "UT",
-      "roster_status": "ACTIVE",
+      "roster_status": "MINORS",
       "team_id": "aqfyadu2mj90wrl7",
       "team_name": "Ben the Hen"
     },
@@ -2627,15 +2647,6 @@
       "player_name": "Edward Florentino",
       "primary_position": "CF",
       "roster_position": "OF",
-      "roster_status": "MINORS",
-      "team_id": "aqfyadu2mj90wrl7",
-      "team_name": "Ben the Hen"
-    },
-    "aqfyadu2mj90wrl7:06pg4": {
-      "fantrax_id": "06pg4",
-      "player_name": "Deniel Ortiz",
-      "primary_position": "3B",
-      "roster_position": "1B",
       "roster_status": "MINORS",
       "team_id": "aqfyadu2mj90wrl7",
       "team_name": "Ben the Hen"
@@ -4332,6 +4343,15 @@
       "team_id": "jk36oo1hmj90wrl7",
       "team_name": "Daddy Yankee"
     },
+    "jk36oo1hmj90wrl7:02mwd": {
+      "fantrax_id": "02mwd",
+      "player_name": "Paul Blackburn",
+      "primary_position": "RP",
+      "roster_position": "P",
+      "roster_status": "ACTIVE",
+      "team_id": "jk36oo1hmj90wrl7",
+      "team_name": "Daddy Yankee"
+    },
     "jk36oo1hmj90wrl7:02w7p": {
       "fantrax_id": "02w7p",
       "player_name": "Alex Bregman",
@@ -4372,7 +4392,7 @@
       "fantrax_id": "03btu",
       "player_name": "Willi Castro",
       "primary_position": "2B",
-      "roster_position": "UT",
+      "roster_position": "CI",
       "roster_status": "ACTIVE",
       "team_id": "jk36oo1hmj90wrl7",
       "team_name": "Daddy Yankee"
@@ -4435,7 +4455,7 @@
       "fantrax_id": "041pz",
       "player_name": "Pete Alonso",
       "primary_position": "1B",
-      "roster_position": "CI",
+      "roster_position": "UT",
       "roster_status": "ACTIVE",
       "team_id": "jk36oo1hmj90wrl7",
       "team_name": "Daddy Yankee"
@@ -4507,6 +4527,15 @@
       "fantrax_id": "04yie",
       "player_name": "George Kirby",
       "primary_position": "SP",
+      "roster_position": "P",
+      "roster_status": "ACTIVE",
+      "team_id": "jk36oo1hmj90wrl7",
+      "team_name": "Daddy Yankee"
+    },
+    "jk36oo1hmj90wrl7:050ok": {
+      "fantrax_id": "050ok",
+      "player_name": "Yennier Cano",
+      "primary_position": "RP",
       "roster_position": "P",
       "roster_status": "ACTIVE",
       "team_id": "jk36oo1hmj90wrl7",
@@ -4607,7 +4636,7 @@
       "player_name": "Edwin Arroyo",
       "primary_position": "SS",
       "roster_position": "UT",
-      "roster_status": "RESERVE",
+      "roster_status": "MINORS",
       "team_id": "jk36oo1hmj90wrl7",
       "team_name": "Daddy Yankee"
     },
@@ -4634,7 +4663,7 @@
       "player_name": "Walker Jenkins",
       "primary_position": "CF",
       "roster_position": "UT",
-      "roster_status": "RESERVE",
+      "roster_status": "MINORS",
       "team_id": "jk36oo1hmj90wrl7",
       "team_name": "Daddy Yankee"
     },
@@ -5372,7 +5401,7 @@
       "player_name": "Will Smith",
       "primary_position": "C",
       "roster_position": "C",
-      "roster_status": "INJURED_RESERVE",
+      "roster_status": "ACTIVE",
       "team_id": "mldxq5pemj90wrl7",
       "team_name": "L\u00e1szlar\u00f3 T\u00f3th"
     },
