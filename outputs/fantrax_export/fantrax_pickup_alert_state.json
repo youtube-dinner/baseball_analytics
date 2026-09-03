@@ -86,7 +86,8 @@
     "2026-08-30": true,
     "2026-08-31": true,
     "2026-09-01": true,
-    "2026-09-02": true
+    "2026-09-02": true,
+    "2026-09-03": true
   },
   "major_add_alerts": {
     "2026-06-08": {
@@ -4488,6 +4489,15 @@
       "team_id": "jk36oo1hmj90wrl7",
       "team_name": "Daddy Yankee"
     },
+    "jk36oo1hmj90wrl7:04pxo": {
+      "fantrax_id": "04pxo",
+      "player_name": "Erik Sabrowski",
+      "primary_position": "RP",
+      "roster_position": "P",
+      "roster_status": "ACTIVE",
+      "team_id": "jk36oo1hmj90wrl7",
+      "team_name": "Daddy Yankee"
+    },
     "jk36oo1hmj90wrl7:04yie": {
       "fantrax_id": "04yie",
       "player_name": "George Kirby",
@@ -4569,15 +4579,6 @@
       "team_id": "jk36oo1hmj90wrl7",
       "team_name": "Daddy Yankee"
     },
-    "jk36oo1hmj90wrl7:05ras": {
-      "fantrax_id": "05ras",
-      "player_name": "Colton Cowser",
-      "primary_position": "CF",
-      "roster_position": "UT",
-      "roster_status": "ACTIVE",
-      "team_id": "jk36oo1hmj90wrl7",
-      "team_name": "Daddy Yankee"
-    },
     "jk36oo1hmj90wrl7:05rc3": {
       "fantrax_id": "05rc3",
       "player_name": "Masataka Yoshida",
@@ -4637,7 +4638,7 @@
       "player_name": "Troy Melton",
       "primary_position": "RP",
       "roster_position": "P",
-      "roster_status": "ACTIVE",
+      "roster_status": "RESERVE",
       "team_id": "jk36oo1hmj90wrl7",
       "team_name": "Daddy Yankee"
     },
