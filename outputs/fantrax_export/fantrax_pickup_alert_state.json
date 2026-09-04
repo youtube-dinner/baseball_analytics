@@ -651,7 +651,7 @@
       "player_name": "Eugenio Suarez",
       "team_id": "6tnz8jgemj90wrl7",
       "team_name": "Bobby and the NitWitts",
-      "violation_alert_sent": false,
+      "violation_alert_sent": true,
       "window_start": "2026-09-01"
     },
     "6tnz8jgemj90wrl7:050c3": {
@@ -1673,15 +1673,6 @@
       "team_id": "6tnz8jgemj90wrl7",
       "team_name": "Bobby and the NitWitts"
     },
-    "6tnz8jgemj90wrl7:026qc": {
-      "fantrax_id": "026qc",
-      "player_name": "Joc Pederson",
-      "primary_position": "DH",
-      "roster_position": "UT",
-      "roster_status": "ACTIVE",
-      "team_id": "6tnz8jgemj90wrl7",
-      "team_name": "Bobby and the NitWitts"
-    },
     "6tnz8jgemj90wrl7:02hj7": {
       "fantrax_id": "02hj7",
       "player_name": "Merrill Kelly",
@@ -1705,7 +1696,7 @@
       "player_name": "Eugenio Suarez",
       "primary_position": "3B",
       "roster_position": "UT",
-      "roster_status": "MINORS",
+      "roster_status": "ACTIVE",
       "team_id": "6tnz8jgemj90wrl7",
       "team_name": "Bobby and the NitWitts"
     },
