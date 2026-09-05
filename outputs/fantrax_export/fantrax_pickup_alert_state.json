@@ -989,13 +989,13 @@
     },
     "f3myl5ugmj90wrl7:05uei": {
       "demotion_alert_sent": true,
-      "eligible_date": "2026-07-06",
+      "eligible_date": "2026-09-27",
       "fantrax_id": "05uei",
       "player_name": "Chase DeLauter",
       "team_id": "f3myl5ugmj90wrl7",
       "team_name": "The Hot and Steamy Boys",
-      "violation_alert_sent": true,
-      "window_start": "2026-06-14"
+      "violation_alert_sent": false,
+      "window_start": "2026-09-05"
     },
     "f3myl5ugmj90wrl7:05xu1": {
       "demotion_alert_sent": true,
@@ -3242,6 +3242,15 @@
       "team_id": "f3myl5ugmj90wrl7",
       "team_name": "The Hot and Steamy Boys"
     },
+    "f3myl5ugmj90wrl7:01sy3": {
+      "fantrax_id": "01sy3",
+      "player_name": "Nolan Arenado",
+      "primary_position": "3B",
+      "roster_position": "UT",
+      "roster_status": "ACTIVE",
+      "team_id": "f3myl5ugmj90wrl7",
+      "team_name": "The Hot and Steamy Boys"
+    },
     "f3myl5ugmj90wrl7:01ub6": {
       "fantrax_id": "01ub6",
       "player_name": "Jose Ramirez",
@@ -3453,7 +3462,7 @@
       "fantrax_id": "05161",
       "player_name": "Dominic Canzone",
       "primary_position": "RF",
-      "roster_position": "UT",
+      "roster_position": "OF",
       "roster_status": "ACTIVE",
       "team_id": "f3myl5ugmj90wrl7",
       "team_name": "The Hot and Steamy Boys"
@@ -3526,7 +3535,7 @@
       "player_name": "Chase DeLauter",
       "primary_position": "CF",
       "roster_position": "OF",
-      "roster_status": "ACTIVE",
+      "roster_status": "MINORS",
       "team_id": "f3myl5ugmj90wrl7",
       "team_name": "The Hot and Steamy Boys"
     },
@@ -3572,6 +3581,15 @@
       "primary_position": "C",
       "roster_position": "C",
       "roster_status": "MINORS",
+      "team_id": "f3myl5ugmj90wrl7",
+      "team_name": "The Hot and Steamy Boys"
+    },
+    "f3myl5ugmj90wrl7:05ydo": {
+      "fantrax_id": "05ydo",
+      "player_name": "Juan Morillo",
+      "primary_position": "RP",
+      "roster_position": "P",
+      "roster_status": "ACTIVE",
       "team_id": "f3myl5ugmj90wrl7",
       "team_name": "The Hot and Steamy Boys"
     },
