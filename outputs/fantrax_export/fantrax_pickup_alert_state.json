@@ -1178,13 +1178,13 @@
     },
     "jk36oo1hmj90wrl7:04eud": {
       "demotion_alert_sent": true,
-      "eligible_date": "2026-07-31",
+      "eligible_date": "2026-09-27",
       "fantrax_id": "04eud",
       "player_name": "Shane Drohan",
       "team_id": "jk36oo1hmj90wrl7",
       "team_name": "Daddy Yankee",
       "violation_alert_sent": false,
-      "window_start": "2026-07-09"
+      "window_start": "2026-09-05"
     },
     "jk36oo1hmj90wrl7:04mlt": {
       "demotion_alert_sent": true,
@@ -1648,6 +1648,15 @@
     }
   },
   "roster_snapshot": {
+    "6tnz8jgemj90wrl7:01fhm": {
+      "fantrax_id": "01fhm",
+      "player_name": "Martin Perez",
+      "primary_position": "SP",
+      "roster_position": "P",
+      "roster_status": "ACTIVE",
+      "team_id": "6tnz8jgemj90wrl7",
+      "team_name": "Bobby and the NitWitts"
+    },
     "6tnz8jgemj90wrl7:01gya": {
       "fantrax_id": "01gya",
       "player_name": "Aroldis Chapman",
@@ -1672,15 +1681,6 @@
       "primary_position": "RP",
       "roster_position": "P",
       "roster_status": "INJURED_RESERVE",
-      "team_id": "6tnz8jgemj90wrl7",
-      "team_name": "Bobby and the NitWitts"
-    },
-    "6tnz8jgemj90wrl7:02hj7": {
-      "fantrax_id": "02hj7",
-      "player_name": "Merrill Kelly",
-      "primary_position": "SP",
-      "roster_position": "P",
-      "roster_status": "ACTIVE",
       "team_id": "6tnz8jgemj90wrl7",
       "team_name": "Bobby and the NitWitts"
     },
@@ -1801,6 +1801,15 @@
       "team_id": "6tnz8jgemj90wrl7",
       "team_name": "Bobby and the NitWitts"
     },
+    "6tnz8jgemj90wrl7:041r5": {
+      "fantrax_id": "041r5",
+      "player_name": "Dustin May",
+      "primary_position": "SP",
+      "roster_position": "P",
+      "roster_status": "ACTIVE",
+      "team_id": "6tnz8jgemj90wrl7",
+      "team_name": "Bobby and the NitWitts"
+    },
     "6tnz8jgemj90wrl7:0473n": {
       "fantrax_id": "0473n",
       "player_name": "Tyler Wells",
@@ -1906,15 +1915,6 @@
       "primary_position": "SP",
       "roster_position": "P",
       "roster_status": "INJURED_RESERVE",
-      "team_id": "6tnz8jgemj90wrl7",
-      "team_name": "Bobby and the NitWitts"
-    },
-    "6tnz8jgemj90wrl7:05nso": {
-      "fantrax_id": "05nso",
-      "player_name": "Abner Uribe",
-      "primary_position": "RP",
-      "roster_position": "P",
-      "roster_status": "ACTIVE",
       "team_id": "6tnz8jgemj90wrl7",
       "team_name": "Bobby and the NitWitts"
     },
@@ -2184,7 +2184,7 @@
       "player_name": "Zack Wheeler",
       "primary_position": "SP",
       "roster_position": "P",
-      "roster_status": "RESERVE",
+      "roster_status": "ACTIVE",
       "team_id": "aqfyadu2mj90wrl7",
       "team_name": "Ben the Hen"
     },
@@ -2255,15 +2255,6 @@
       "fantrax_id": "02n96",
       "player_name": "Josh Hader",
       "primary_position": "RP",
-      "roster_position": "P",
-      "roster_status": "ACTIVE",
-      "team_id": "aqfyadu2mj90wrl7",
-      "team_name": "Ben the Hen"
-    },
-    "aqfyadu2mj90wrl7:03et8": {
-      "fantrax_id": "03et8",
-      "player_name": "Ranger Suarez",
-      "primary_position": "SP",
       "roster_position": "P",
       "roster_status": "ACTIVE",
       "team_id": "aqfyadu2mj90wrl7",
@@ -2350,6 +2341,15 @@
       "team_id": "aqfyadu2mj90wrl7",
       "team_name": "Ben the Hen"
     },
+    "aqfyadu2mj90wrl7:04ml0": {
+      "fantrax_id": "04ml0",
+      "player_name": "Yusei Kikuchi",
+      "primary_position": "SP",
+      "roster_position": "P",
+      "roster_status": "ACTIVE",
+      "team_id": "aqfyadu2mj90wrl7",
+      "team_name": "Ben the Hen"
+    },
     "aqfyadu2mj90wrl7:04nb2": {
       "fantrax_id": "04nb2",
       "player_name": "Riley Greene",
@@ -2364,7 +2364,7 @@
       "player_name": "Tarik Skubal",
       "primary_position": "SP",
       "roster_position": "P",
-      "roster_status": "ACTIVE",
+      "roster_status": "RESERVE",
       "team_id": "aqfyadu2mj90wrl7",
       "team_name": "Ben the Hen"
     },
@@ -3610,15 +3610,6 @@
       "team_id": "f3myl5ugmj90wrl7",
       "team_name": "The Hot and Steamy Boys"
     },
-    "f3myl5ugmj90wrl7:066cf": {
-      "fantrax_id": "066cf",
-      "player_name": "Zebby Matthews",
-      "primary_position": "SP",
-      "roster_position": "P",
-      "roster_status": "ACTIVE",
-      "team_id": "f3myl5ugmj90wrl7",
-      "team_name": "The Hot and Steamy Boys"
-    },
     "f3myl5ugmj90wrl7:067yn": {
       "fantrax_id": "067yn",
       "player_name": "Seth Hernandez",
@@ -4420,12 +4411,21 @@
       "team_id": "jk36oo1hmj90wrl7",
       "team_name": "Daddy Yankee"
     },
+    "jk36oo1hmj90wrl7:04auj": {
+      "fantrax_id": "04auj",
+      "player_name": "Framber Valdez",
+      "primary_position": "SP",
+      "roster_position": "P",
+      "roster_status": "ACTIVE",
+      "team_id": "jk36oo1hmj90wrl7",
+      "team_name": "Daddy Yankee"
+    },
     "jk36oo1hmj90wrl7:04eud": {
       "fantrax_id": "04eud",
       "player_name": "Shane Drohan",
       "primary_position": "SP",
       "roster_position": "P",
-      "roster_status": "ACTIVE",
+      "roster_status": "MINORS",
       "team_id": "jk36oo1hmj90wrl7",
       "team_name": "Daddy Yankee"
     },
