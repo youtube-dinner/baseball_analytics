@@ -604,6 +604,7 @@
     "2026-08-31": {
       "6tnz8jgemj90wrl7": {
         "major_add_limit": 10,
+        "none_remaining": true,
         "one_remaining": true,
         "overage_alerted": 0
       },
