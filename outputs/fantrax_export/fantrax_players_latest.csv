@@ -375,7 +375,7 @@ fantrax_id,name,mlb_team,primary_position,eligible_positions,league_status,stats
 062l0,"Areinamo, Jadher",TB,SS,"2B,UT,SS,MI",FA,,18731,647d995a-f4cf-433d-8bcc-91b256fe8ff7
 06o0i,"Arellan, Derek",(N/A),RP,P,FA,,,
 067zh,"Arellano, Joneiker",(N/A),SP,P,FA,,,
-01sy3,"Arenado, Nolan",ARI,3B,"UT,3B,CI",T,9105,11018,aec77ff1-c238-449c-9af6-ed76ff9dd702
+01sy3,"Arenado, Nolan",ARI,3B,"UT,3B,CI",WW,9105,11018,aec77ff1-c238-449c-9af6-ed76ff9dd702
 06mei,"Arends, Nathan",ATH,RP,P,FA,,,
 070dw,"Arendt, Bryan",ATH,C,"C,UT",FA,,,
 06iey,"Arestigueta, Luis",ATL,SP,P,FA,,20017,
@@ -443,7 +443,7 @@ fantrax_id,name,mlb_team,primary_position,eligible_positions,league_status,stats
 06jfj,"Arredondo, Angel",LAA,3B,"UT,3B,CI",FA,,21250,
 06r7y,"Arrieche, Esmeiquel",TOR,C,"C,UT",FA,,,
 06r57,"Arrieche, Gregori",SEA,SP,P,FA,,,
-05y0j,"Arrighetti, Spencer",TOR,SP,P,FA,,17672,21d20dee-78af-4fc3-b8ec-ed6fe31c0efa
+05y0j,"Arrighetti, Spencer",TOR,SP,P,T,,17672,21d20dee-78af-4fc3-b8ec-ed6fe31c0efa
 06g2a,"Arronde, Felix",KC,SP,P,FA,,19822,
 06tn4,"Arroyo, Carlos",(N/A),2B,"2B,UT,MI",FA,,,
 06yjv,"Arroyo, Chris",MIA,1B,"1B,UT,CI",FA,,20277,
@@ -1038,7 +1038,7 @@ fantrax_id,name,mlb_team,primary_position,eligible_positions,league_status,stats
 064nf,"Boyd, Emaarion",MIA,CF,"OF,UT",FA,,18304,
 06gj9,"Boyd, Jeremiah",ARI,C,"C,UT",FA,,,
 0630m,"Boyd, Justin",(N/A),RF,"OF,UT",FA,,18059,3efa46ce-fd8b-4e23-baa5-5793a073b675
-02n4s,"Boyd, Matthew",CHC,SP,P,T,10011,13007,c3e45b7f-c631-472c-ac33-5377df84302d
+02n4s,"Boyd, Matthew",CHC,SP,P,FA,10011,13007,c3e45b7f-c631-472c-ac33-5377df84302d
 05188,"Boyer, Logan",(N/A),RP,P,FA,,,
 068yb,"Boyer, Ryan",(N/A),RP,P,FA,,19780,
 05jpk,"Boyle, Joe",TB,SP,P,FA,,16840,ffe35bfe-22b4-4865-927b-ab9842cebc56
@@ -5924,7 +5924,7 @@ fantrax_id,name,mlb_team,primary_position,eligible_positions,league_status,stats
 06taf,"Matthews, Jason",CHW,3B,"UT,3B,CI",FA,,,
 0516a,"Matthews, John",(N/A),RP,P,FA,,,
 05u3t,"Matthews, Micah",(N/A),3B,"UT,3B,CI",FA,,,
-066cf,"Matthews, Zebby",MIN,SP,P,WW,,18788,400ea9ba-f842-4381-b71c-cdcac03d8d00
+066cf,"Matthews, Zebby",MIN,SP,P,FA,,18788,400ea9ba-f842-4381-b71c-cdcac03d8d00
 07808,"Matthijs, Matthew",SEA,RP,P,FA,,,
 06l3j,"Mattison, Connor",MIN,SP,P,FA,,,
 05xom,"Mattison, Tyler",DET,SP,P,FA,,17557,e426b579-14af-4642-8238-acaf0df4dba1
