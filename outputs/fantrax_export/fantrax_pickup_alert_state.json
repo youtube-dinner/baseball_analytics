@@ -619,6 +619,7 @@
       },
       "f3myl5ugmj90wrl7": {
         "major_add_limit": 10,
+        "one_remaining": true,
         "overage_alerted": 0
       },
       "hd9hwe4mmj90wrl7": {
@@ -3254,15 +3255,6 @@
       "team_id": "f3myl5ugmj90wrl7",
       "team_name": "The Hot and Steamy Boys"
     },
-    "f3myl5ugmj90wrl7:01sy3": {
-      "fantrax_id": "01sy3",
-      "player_name": "Nolan Arenado",
-      "primary_position": "3B",
-      "roster_position": "UT",
-      "roster_status": "ACTIVE",
-      "team_id": "f3myl5ugmj90wrl7",
-      "team_name": "The Hot and Steamy Boys"
-    },
     "f3myl5ugmj90wrl7:01ub6": {
       "fantrax_id": "01ub6",
       "player_name": "Jose Ramirez",
@@ -3278,15 +3270,6 @@
       "primary_position": "SP",
       "roster_position": "P",
       "roster_status": "RESERVE",
-      "team_id": "f3myl5ugmj90wrl7",
-      "team_name": "The Hot and Steamy Boys"
-    },
-    "f3myl5ugmj90wrl7:02n4s": {
-      "fantrax_id": "02n4s",
-      "player_name": "Matthew Boyd",
-      "primary_position": "SP",
-      "roster_position": "P",
-      "roster_status": "ACTIVE",
       "team_id": "f3myl5ugmj90wrl7",
       "team_name": "The Hot and Steamy Boys"
     },
@@ -3584,6 +3567,15 @@
       "primary_position": "SS",
       "roster_position": "UT",
       "roster_status": "MINORS",
+      "team_id": "f3myl5ugmj90wrl7",
+      "team_name": "The Hot and Steamy Boys"
+    },
+    "f3myl5ugmj90wrl7:05y0j": {
+      "fantrax_id": "05y0j",
+      "player_name": "Spencer Arrighetti",
+      "primary_position": "SP",
+      "roster_position": "P",
+      "roster_status": "ACTIVE",
       "team_id": "f3myl5ugmj90wrl7",
       "team_name": "The Hot and Steamy Boys"
     },
