@@ -89,7 +89,8 @@
     "2026-09-02": true,
     "2026-09-03": true,
     "2026-09-04": true,
-    "2026-09-05": true
+    "2026-09-05": true,
+    "2026-09-06": true
   },
   "major_add_alerts": {
     "2026-06-08": {
@@ -1660,15 +1661,6 @@
     }
   },
   "roster_snapshot": {
-    "6tnz8jgemj90wrl7:01fhm": {
-      "fantrax_id": "01fhm",
-      "player_name": "Martin Perez",
-      "primary_position": "SP",
-      "roster_position": "P",
-      "roster_status": "ACTIVE",
-      "team_id": "6tnz8jgemj90wrl7",
-      "team_name": "Bobby and the NitWitts"
-    },
     "6tnz8jgemj90wrl7:01gya": {
       "fantrax_id": "01gya",
       "player_name": "Aroldis Chapman",
@@ -1791,6 +1783,15 @@
       "player_name": "Ian Happ",
       "primary_position": "LF",
       "roster_position": "OF",
+      "roster_status": "ACTIVE",
+      "team_id": "6tnz8jgemj90wrl7",
+      "team_name": "Bobby and the NitWitts"
+    },
+    "6tnz8jgemj90wrl7:03pov": {
+      "fantrax_id": "03pov",
+      "player_name": "Brady Singer",
+      "primary_position": "SP",
+      "roster_position": "P",
       "roster_status": "ACTIVE",
       "team_id": "6tnz8jgemj90wrl7",
       "team_name": "Bobby and the NitWitts"
@@ -2299,6 +2300,15 @@
       "team_id": "aqfyadu2mj90wrl7",
       "team_name": "Ben the Hen"
     },
+    "aqfyadu2mj90wrl7:03poo": {
+      "fantrax_id": "03poo",
+      "player_name": "Peter Lambert",
+      "primary_position": "SP",
+      "roster_position": "P",
+      "roster_status": "ACTIVE",
+      "team_id": "aqfyadu2mj90wrl7",
+      "team_name": "Ben the Hen"
+    },
     "aqfyadu2mj90wrl7:040b5": {
       "fantrax_id": "040b5",
       "player_name": "Randy Arozarena",
@@ -2349,15 +2359,6 @@
       "player_name": "Ivan Herrera",
       "primary_position": "DH",
       "roster_position": "C",
-      "roster_status": "ACTIVE",
-      "team_id": "aqfyadu2mj90wrl7",
-      "team_name": "Ben the Hen"
-    },
-    "aqfyadu2mj90wrl7:04ml0": {
-      "fantrax_id": "04ml0",
-      "player_name": "Yusei Kikuchi",
-      "primary_position": "SP",
-      "roster_position": "P",
       "roster_status": "ACTIVE",
       "team_id": "aqfyadu2mj90wrl7",
       "team_name": "Ben the Hen"
@@ -3276,6 +3277,15 @@
       "player_name": "Kevin Gausman",
       "primary_position": "SP",
       "roster_position": "P",
+      "roster_status": "RESERVE",
+      "team_id": "f3myl5ugmj90wrl7",
+      "team_name": "The Hot and Steamy Boys"
+    },
+    "f3myl5ugmj90wrl7:02n4s": {
+      "fantrax_id": "02n4s",
+      "player_name": "Matthew Boyd",
+      "primary_position": "SP",
+      "roster_position": "P",
       "roster_status": "ACTIVE",
       "team_id": "f3myl5ugmj90wrl7",
       "team_name": "The Hot and Steamy Boys"
@@ -3528,7 +3538,7 @@
       "player_name": "Jackson Jobe",
       "primary_position": "SP",
       "roster_position": "P",
-      "roster_status": "MINORS",
+      "roster_status": "ACTIVE",
       "team_id": "f3myl5ugmj90wrl7",
       "team_name": "The Hot and Steamy Boys"
     },
@@ -3601,15 +3611,6 @@
       "primary_position": "C",
       "roster_position": "C",
       "roster_status": "MINORS",
-      "team_id": "f3myl5ugmj90wrl7",
-      "team_name": "The Hot and Steamy Boys"
-    },
-    "f3myl5ugmj90wrl7:05ydo": {
-      "fantrax_id": "05ydo",
-      "player_name": "Juan Morillo",
-      "primary_position": "RP",
-      "roster_position": "P",
-      "roster_status": "ACTIVE",
       "team_id": "f3myl5ugmj90wrl7",
       "team_name": "The Hot and Steamy Boys"
     },
