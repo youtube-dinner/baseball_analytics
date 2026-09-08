@@ -5,6 +5,7 @@ import json
 import math
 import re
 import sys
+import unicodedata
 from pathlib import Path
 from urllib.parse import urlencode
 from urllib.request import Request, urlopen
@@ -15,6 +16,7 @@ import pandas as pd
 OUT_DIR = Path(__file__).resolve().parent / "minor_league_hitter_stars"
 FANGRAPHS_MINOR_LEAGUE_API = "https://www.fangraphs.com/api/leaders/minor-league/data"
 FANGRAPHS_MINOR_LEAGUE_PAGE = "https://www.fangraphs.com/leaders/minor-league"
+MLB_STATS_URL = "https://statsapi.mlb.com/api/v1/stats"
 
 AFFILIATED_MINOR_LEAGUE_IDS = [
     2,
@@ -48,6 +50,7 @@ LEAGUE_REFERENCE = {
     17: {"League Name": "Florida Complex League", "League Level": "CPX"},
     30: {"League Name": "Dominican Summer League", "League Level": "R"},
 }
+LEAGUE_LEVEL_ORDER = {"R": 0, "CPX": 1, "A": 2, "A+": 3, "AA": 4, "AAA": 5, "MLB": 6}
 DEFAULT_HITTING_WEIGHTS = {
     "1B": 2.5,
     "2B": 4.0,
@@ -136,6 +139,52 @@ def fetch_bytes(url):
     )
     with urlopen(req, timeout=60) as response:
         return response.read()
+
+
+def normalized_person_key(value):
+    text = unicodedata.normalize("NFKD", str(value or "")).encode("ascii", "ignore").decode("ascii")
+    return re.sub(r"[^a-z0-9]", "", text.lower())
+
+
+def fetch_mlb_player_keys(year, group):
+    """Return MLB player IDs and normalized names with stats in the requested season."""
+    params = urlencode({"stats": "season", "group": group, "season": year, "sportIds": 1, "limit": 10000})
+    try:
+        payload = json.loads(fetch_bytes(f"{MLB_STATS_URL}?{params}"))
+    except Exception:
+        return set(), set()
+    ids, names = set(), set()
+    for stat in payload.get("stats", []):
+        for item in stat.get("splits", []):
+            player = item.get("player", {})
+            if player.get("id") is not None:
+                ids.add(str(player["id"]))
+            if player.get("fullName"):
+                names.add(normalized_person_key(player["fullName"]))
+    return ids, names
+
+
+def add_highest_league_flag(players, mlb_player_ids=None, mlb_player_names=None):
+    """Mark every row at each player's highest level, including MLB promotions."""
+    out = players.copy()
+    if "League Level" not in out.columns:
+        return out
+    mlb_player_ids = mlb_player_ids or set()
+    mlb_player_names = mlb_player_names or set()
+    player_ids = out.get("PlayerId", pd.Series(index=out.index, dtype="object")).astype(str).str.strip()
+    player_names = out.get("Player Name", pd.Series(index=out.index, dtype="object")).map(normalized_person_key)
+    keys = player_ids.where(~player_ids.isin({"", "nan", "None"}), player_names)
+    level_order = out["League Level"].map(LEAGUE_LEVEL_ORDER)
+    minor_max = level_order.groupby(keys).transform("max")
+    reached_mlb = player_ids.isin(mlb_player_ids) | player_names.isin(mlb_player_names)
+    highest_order = minor_max.where(~reached_mlb, LEAGUE_LEVEL_ORDER["MLB"])
+    out["Highest League"] = level_order.eq(highest_order).map({True: "Yes", False: "No"})
+    if "Level" in out.columns:
+        columns = list(out.columns)
+        columns.remove("Highest League")
+        columns.insert(columns.index("Level") + 1, "Highest League")
+        out = out[columns]
+    return out
 
 
 def fan_graphs_params(year, report_type, page, page_items, leagues, split_team):
@@ -321,6 +370,8 @@ def build_players_from_csv_dir(csv_dir, year, leagues, hitting_weights=None, req
     }
     players = merge_reports(reports["standard"], reports["advanced"], reports["batted"])
     players = add_league_reference_columns(players)
+    mlb_hitting_ids, mlb_hitting_names = fetch_mlb_player_keys(year, "hitting")
+    players = add_highest_league_flag(players, mlb_hitting_ids, mlb_hitting_names)
     players = add_standard_analytics(players, hitting_weights=hitting_weights)
     players["Baseline Source Year"] = year
     return players
@@ -1076,6 +1127,8 @@ def write_player_comparison_output(players, league_age_baselines, league_baselin
 def write_outputs(players, year, out_dir, hitting_weights=None):
     out_dir.mkdir(parents=True, exist_ok=True)
     players = add_league_reference_columns(players)
+    mlb_hitting_ids, mlb_hitting_names = fetch_mlb_player_keys(year, "hitting")
+    players = add_highest_league_flag(players, mlb_hitting_ids, mlb_hitting_names)
     players = add_standard_analytics(players, hitting_weights=hitting_weights)
     players = team_league_game_columns(players)
     sort_cols = [col for col in ["League Level", "League Name", "Source League ID", "League", "Age", "Player Name", "Team"] if col in players.columns]
@@ -1209,6 +1262,8 @@ def main():
             combined_league_baselines,
         ) = write_combined_baseline_outputs(combined_players, args.year, args.out_dir)
         current_players = add_league_reference_columns(players)
+        mlb_hitting_ids, mlb_hitting_names = fetch_mlb_player_keys(args.year, "hitting")
+        current_players = add_highest_league_flag(current_players, mlb_hitting_ids, mlb_hitting_names)
         current_players = add_standard_analytics(current_players, hitting_weights=hitting_weights)
         current_players["Baseline Source Year"] = args.year
         player_comparison_path = write_player_comparison_output(

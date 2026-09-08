@@ -571,6 +571,8 @@ def build_players_from_csv_dir(csv_dir, year, leagues, pitching_weights=None, re
     if players.empty:
         return players
     players = add_league_reference_columns(players)
+    mlb_pitching_ids, mlb_pitching_names = shared.fetch_mlb_player_keys(year, "pitching")
+    players = shared.add_highest_league_flag(players, mlb_pitching_ids, mlb_pitching_names)
     players = normalize_rate_scales(players)
     players = add_standard_analytics(players, pitching_weights=pitching_weights)
     return players
@@ -579,6 +581,8 @@ def build_players_from_csv_dir(csv_dir, year, leagues, pitching_weights=None, re
 def write_outputs(players, year, out_dir, pitching_weights=None, combined_baseline_csv_dirs=None, leagues=None):
     out_dir.mkdir(parents=True, exist_ok=True)
     players = add_league_reference_columns(players)
+    mlb_pitching_ids, mlb_pitching_names = shared.fetch_mlb_player_keys(year, "pitching")
+    players = shared.add_highest_league_flag(players, mlb_pitching_ids, mlb_pitching_names)
     players = normalize_rate_scales(players)
     players = add_standard_analytics(players, pitching_weights=pitching_weights)
     players = team_league_game_columns(players)

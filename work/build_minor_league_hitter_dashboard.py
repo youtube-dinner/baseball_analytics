@@ -34,11 +34,12 @@ RECENT_DRAFT_PLAYERS = {
 BASE_COLUMN_MAP = {
     "Player Name": "Player",
     "Fantasy Roster": "Fantasy Roster",
-    "Draft Class": "Draft Class",
     "Team": "Team",
     "League Name": "League",
     "League Level": "Level",
+    "Highest League": "Highest League",
     "Age": "Age",
+    "Draft Class": "Draft Class",
     "G": "G",
     "FGPts_per_game": "FP/G",
     "AB_per_game": "AB/G",
@@ -127,11 +128,12 @@ HEAT_COLUMNS = [
 PITCHER_COLUMN_MAP = {
     "Player Name": "Player",
     "Fantasy Roster": "Fantasy Roster",
-    "Draft Class": "Draft Class",
     "Team": "Team",
     "League Name": "League",
     "League Level": "Level",
+    "Highest League": "Highest League",
     "Age": "Age",
+    "Draft Class": "Draft Class",
     "G": "G",
     "FGPts_per_game": "FP/G",
     "IP_per_game": "IP/G",
@@ -312,10 +314,24 @@ def fantrax_display_name(value):
 def build_fantrax_roster_lookup():
     player_status = {}
     roster_status = {}
+    fantrax_players_by_name = {}
+
+    def remember_player(keys, row):
+        fantrax_id = str(row.get("fantrax_id") or "").strip()
+        if not fantrax_id:
+            return
+        team = str(row.get("mlb_team") or "").strip()
+        if team in {"", "(N/A)", "N/A", "nan"}:
+            team = ""
+        for key in keys:
+            fantrax_players_by_name.setdefault(key, {})[fantrax_id] = team
+
     if FANTRAX_PLAYERS.exists():
         players = pd.read_csv(FANTRAX_PLAYERS)
         for _, row in players.iterrows():
-            for key in name_keys(fantrax_display_name(row.get("name"))):
+            keys = name_keys(fantrax_display_name(row.get("name")))
+            remember_player(keys, row)
+            for key in keys:
                 player_status[key] = row.get("league_status")
     if FANTRAX_ROSTERS.exists():
         rosters = pd.read_csv(FANTRAX_ROSTERS)
@@ -323,6 +339,9 @@ def build_fantrax_roster_lookup():
             keys = name_keys(fantrax_display_name(row.get("name")))
             if not keys:
                 continue
+            # The roster export is refreshed daily and is authoritative for a
+            # rostered player's current organization after an MLB/MiLB trade.
+            remember_player(keys, row)
             label = row.get("team_name")
             status = row.get("roster_status")
             if pd.notna(status) and status:
@@ -331,23 +350,33 @@ def build_fantrax_roster_lookup():
                 roster_status.setdefault(key, [])
                 if label not in roster_status[key]:
                     roster_status[key].append(label)
-    return player_status, roster_status
+
+    current_team = {}
+    for key, identities in fantrax_players_by_name.items():
+        # Never guess when two distinct Fantrax players normalize to the same
+        # name. Team matching is a fallback, not part of player identity.
+        if len(identities) == 1:
+            team = next(iter(identities.values()))
+            if team:
+                current_team[key] = team
+    return player_status, roster_status, current_team
 
 
 def add_fantasy_roster_column(df):
-    player_status, roster_status = build_fantrax_roster_lookup()
+    player_status, roster_status, current_team = build_fantrax_roster_lookup()
+
+    def lookup_by_name(lookup, player_name):
+        for key in name_keys(player_name):
+            value = lookup.get(key)
+            if value:
+                return value
+        return None
 
     def roster_label(player_name):
-        keys = name_keys(player_name)
-        for key in keys:
-            rostered = roster_status.get(key)
-            if rostered:
-                return "; ".join(rostered)
-        status = None
-        for key in keys:
-            status = player_status.get(key)
-            if status:
-                break
+        rostered = lookup_by_name(roster_status, player_name)
+        if rostered:
+            return "; ".join(rostered)
+        status = lookup_by_name(player_status, player_name)
         if status == "FA":
             return "Available"
         if status == "WW":
@@ -358,6 +387,29 @@ def add_fantasy_roster_column(df):
 
     out = df.copy()
     out["Fantasy Roster"] = out["Player Name"].map(roster_label)
+    if "Team" in out.columns:
+        # FanGraphs assigns a split-season stat row to the organization where
+        # those stats were recorded. Display the current Fantrax organization
+        # while leaving every metric on the original row untouched.
+        teams = out["Player Name"].map(lambda name: lookup_by_name(current_team, name))
+        out["Team"] = teams.where(teams.notna(), out["Team"])
+    return out
+
+
+def add_recent_draft_class(df):
+    recent_draft_keys = {
+        key
+        for player_name in RECENT_DRAFT_PLAYERS
+        for key in name_keys(player_name)
+    }
+    out = df.copy()
+    out["Draft Class"] = out["Player Name"].map(
+        lambda player_name: (
+            RECENT_DRAFT_CLASS
+            if any(key in recent_draft_keys for key in name_keys(player_name))
+            else ""
+        )
+    )
     return out
 
 
@@ -483,7 +535,7 @@ def load_dashboard_data():
             "columns": list(overall.columns),
             "rows": overall.to_dict(orient="records"),
             "defaultSort": {"column": "5 Tool+", "dir": "desc"},
-            "defaultFilters": [{"column": "AB", "op": ">=", "value": "50"}],
+            "defaultFilters": [{"column": "AB", "op": ">=", "value": "50", "includeRecentDraft": True}],
         },
         "Batter Promotion Tracker": {
             "columns": list(promotion_view.columns),
@@ -875,6 +927,7 @@ def main():
     function matchesColumnFilters(row) {{
       return columnFilters.every(filter => {{
         if (!filter.column || filter.value === "") return true;
+        if (filter.includeRecentDraft && String(row["Draft Class"] ?? "") === "{RECENT_DRAFT_CLASS}") return true;
         const raw = row[filter.column];
         const op = filter.op;
         if (["=", "!="].includes(op)) {{
