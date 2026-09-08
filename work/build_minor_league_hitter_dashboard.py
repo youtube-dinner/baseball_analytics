@@ -22,6 +22,7 @@ MY_FANTASY_TEAM = "Bobby and the NitWitts"
 LEVEL_ORDER = {"R": 0, "CPX": 1, "A": 2, "A+": 3, "AA": 4, "AAA": 5}
 RECENT_DRAFT_CLASS = 2026
 RECENT_DRAFT_PLAYERS = {
+    "Ace Reese",
     "Vahn Lackey",
     "Roch Cholowsky",
     "Tyler Bell",
