@@ -724,6 +724,16 @@
       "violation_alert_sent": false,
       "window_start": "2026-06-14"
     },
+    "6tnz8jgemj90wrl7:05rcw": {
+      "demotion_alert_sent": true,
+      "eligible_date": "2026-09-30",
+      "fantrax_id": "05rcw",
+      "player_name": "Leo Bernal",
+      "team_id": "6tnz8jgemj90wrl7",
+      "team_name": "Bobby and the NitWitts",
+      "violation_alert_sent": false,
+      "window_start": "2026-09-08"
+    },
     "6tnz8jgemj90wrl7:067z9": {
       "demotion_alert_sent": false,
       "eligible_date": "2026-08-16",
@@ -2005,6 +2015,15 @@
       "team_id": "6tnz8jgemj90wrl7",
       "team_name": "Bobby and the NitWitts"
     },
+    "6tnz8jgemj90wrl7:05rcw": {
+      "fantrax_id": "05rcw",
+      "player_name": "Leo Bernal",
+      "primary_position": "C",
+      "roster_position": "C",
+      "roster_status": "MINORS",
+      "team_id": "6tnz8jgemj90wrl7",
+      "team_name": "Bobby and the NitWitts"
+    },
     "6tnz8jgemj90wrl7:05t2b": {
       "fantrax_id": "05t2b",
       "player_name": "Daylen Lile",
@@ -2181,15 +2200,6 @@
       "player_name": "Shotaro Morii",
       "primary_position": "SS",
       "roster_position": "SS",
-      "roster_status": "MINORS",
-      "team_id": "6tnz8jgemj90wrl7",
-      "team_name": "Bobby and the NitWitts"
-    },
-    "6tnz8jgemj90wrl7:06uwm": {
-      "fantrax_id": "06uwm",
-      "player_name": "Luis Arana",
-      "primary_position": "3B",
-      "roster_position": "3B",
       "roster_status": "MINORS",
       "team_id": "6tnz8jgemj90wrl7",
       "team_name": "Bobby and the NitWitts"
