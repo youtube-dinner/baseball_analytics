@@ -79,7 +79,20 @@
     "2026-08-23": true,
     "2026-08-24": true,
     "2026-08-25": true,
-    "2026-08-26": true
+    "2026-08-26": true,
+    "2026-08-27": true,
+    "2026-08-28": true,
+    "2026-08-29": true,
+    "2026-08-30": true,
+    "2026-08-31": true,
+    "2026-09-01": true,
+    "2026-09-02": true,
+    "2026-09-03": true,
+    "2026-09-04": true,
+    "2026-09-05": true,
+    "2026-09-06": true,
+    "2026-09-07": true,
+    "2026-09-08": true
   },
   "major_add_alerts": {
     "2026-06-08": {
@@ -546,6 +559,100 @@
     "2026-08-24": {
       "6tnz8jgemj90wrl7": {
         "major_add_limit": 10,
+        "none_remaining": true,
+        "overage_alerted": 0
+      },
+      "aqfyadu2mj90wrl7": {
+        "major_add_limit": 10,
+        "overage_alerted": 0
+      },
+      "bw696uo5mj90wrl7": {
+        "major_add_limit": 10,
+        "overage_alerted": 0
+      },
+      "f3myl5ugmj90wrl7": {
+        "major_add_limit": 10,
+        "overage_alerted": 0
+      },
+      "hd9hwe4mmj90wrl7": {
+        "major_add_limit": 10,
+        "overage_alerted": 0
+      },
+      "jk36oo1hmj90wrl7": {
+        "major_add_limit": 10,
+        "none_remaining": true,
+        "one_remaining": true,
+        "overage_alerted": 0
+      },
+      "k7c57nf4mj90wrl8": {
+        "major_add_limit": 10,
+        "none_remaining": true,
+        "overage_alerted": 0
+      },
+      "mldxq5pemj90wrl7": {
+        "major_add_limit": 10,
+        "none_remaining": true,
+        "one_remaining": true,
+        "overage_alerted": 0
+      },
+      "o4jvg6q3mj90wrl7": {
+        "major_add_limit": 10,
+        "overage_alerted": 0
+      },
+      "qatqhh61mj90wrl7": {
+        "major_add_limit": 10,
+        "overage_alerted": 0
+      }
+    },
+    "2026-08-31": {
+      "6tnz8jgemj90wrl7": {
+        "major_add_limit": 10,
+        "none_remaining": true,
+        "one_remaining": true,
+        "overage_alerted": 0
+      },
+      "aqfyadu2mj90wrl7": {
+        "major_add_limit": 10,
+        "overage_alerted": 0
+      },
+      "bw696uo5mj90wrl7": {
+        "major_add_limit": 10,
+        "overage_alerted": 0
+      },
+      "f3myl5ugmj90wrl7": {
+        "major_add_limit": 10,
+        "one_remaining": true,
+        "overage_alerted": 0
+      },
+      "hd9hwe4mmj90wrl7": {
+        "major_add_limit": 10,
+        "overage_alerted": 0
+      },
+      "jk36oo1hmj90wrl7": {
+        "major_add_limit": 10,
+        "one_remaining": true,
+        "overage_alerted": 0
+      },
+      "k7c57nf4mj90wrl8": {
+        "major_add_limit": 10,
+        "overage_alerted": 0
+      },
+      "mldxq5pemj90wrl7": {
+        "major_add_limit": 10,
+        "overage_alerted": 0
+      },
+      "o4jvg6q3mj90wrl7": {
+        "major_add_limit": 10,
+        "overage_alerted": 0
+      },
+      "qatqhh61mj90wrl7": {
+        "major_add_limit": 10,
+        "overage_alerted": 0
+      }
+    },
+    "2026-09-07": {
+      "6tnz8jgemj90wrl7": {
+        "major_add_limit": 10,
         "overage_alerted": 0
       },
       "aqfyadu2mj90wrl7": {
@@ -587,6 +694,16 @@
     }
   },
   "minor_windows": {
+    "6tnz8jgemj90wrl7:02jh6": {
+      "demotion_alert_sent": true,
+      "eligible_date": "2026-09-23",
+      "fantrax_id": "02jh6",
+      "player_name": "Eugenio Suarez",
+      "team_id": "6tnz8jgemj90wrl7",
+      "team_name": "Bobby and the NitWitts",
+      "violation_alert_sent": true,
+      "window_start": "2026-09-01"
+    },
     "6tnz8jgemj90wrl7:050c3": {
       "demotion_alert_sent": true,
       "eligible_date": "2026-07-06",
@@ -606,6 +723,16 @@
       "team_name": "Bobby and the NitWitts",
       "violation_alert_sent": false,
       "window_start": "2026-06-14"
+    },
+    "6tnz8jgemj90wrl7:05rcw": {
+      "demotion_alert_sent": true,
+      "eligible_date": "2026-09-30",
+      "fantrax_id": "05rcw",
+      "player_name": "Leo Bernal",
+      "team_id": "6tnz8jgemj90wrl7",
+      "team_name": "Bobby and the NitWitts",
+      "violation_alert_sent": false,
+      "window_start": "2026-09-08"
     },
     "6tnz8jgemj90wrl7:067z9": {
       "demotion_alert_sent": false,
@@ -647,6 +774,26 @@
       "violation_alert_sent": false,
       "window_start": "2026-07-25"
     },
+    "aqfyadu2mj90wrl7:04qnc": {
+      "demotion_alert_sent": true,
+      "eligible_date": "2026-09-20",
+      "fantrax_id": "04qnc",
+      "player_name": "Francisco Alvarez",
+      "team_id": "aqfyadu2mj90wrl7",
+      "team_name": "Ben the Hen",
+      "violation_alert_sent": false,
+      "window_start": "2026-08-29"
+    },
+    "aqfyadu2mj90wrl7:05rb3": {
+      "demotion_alert_sent": true,
+      "eligible_date": "2026-09-30",
+      "fantrax_id": "05rb3",
+      "player_name": "Chase Burns",
+      "team_id": "aqfyadu2mj90wrl7",
+      "team_name": "Ben the Hen",
+      "violation_alert_sent": false,
+      "window_start": "2026-09-08"
+    },
     "aqfyadu2mj90wrl7:05unf": {
       "demotion_alert_sent": true,
       "eligible_date": "2026-07-23",
@@ -656,6 +803,16 @@
       "team_name": "Ben the Hen",
       "violation_alert_sent": false,
       "window_start": "2026-07-01"
+    },
+    "aqfyadu2mj90wrl7:05xty": {
+      "demotion_alert_sent": true,
+      "eligible_date": "2026-09-23",
+      "fantrax_id": "05xty",
+      "player_name": "Dylan Beavers",
+      "team_id": "aqfyadu2mj90wrl7",
+      "team_name": "Ben the Hen",
+      "violation_alert_sent": false,
+      "window_start": "2026-09-01"
     },
     "aqfyadu2mj90wrl7:06c1j": {
       "demotion_alert_sent": false,
@@ -736,6 +893,16 @@
       "team_name": "Cant Park Here",
       "violation_alert_sent": false,
       "window_start": "2026-07-01"
+    },
+    "bw696uo5mj90wrl7:06qwv": {
+      "demotion_alert_sent": false,
+      "eligible_date": "2026-09-19",
+      "fantrax_id": "06qwv",
+      "player_name": "Kane Kepley",
+      "team_id": "bw696uo5mj90wrl7",
+      "team_name": "Cant Park Here",
+      "violation_alert_sent": false,
+      "window_start": "2026-08-28"
     },
     "bw696uo5mj90wrl7:06r5o": {
       "demotion_alert_sent": false,
@@ -837,6 +1004,16 @@
       "violation_alert_sent": false,
       "window_start": "2026-07-08"
     },
+    "f3myl5ugmj90wrl7:04ya2": {
+      "demotion_alert_sent": false,
+      "eligible_date": "2026-09-27",
+      "fantrax_id": "04ya2",
+      "player_name": "Daniel Espino",
+      "team_id": "f3myl5ugmj90wrl7",
+      "team_name": "The Hot and Steamy Boys",
+      "violation_alert_sent": true,
+      "window_start": "2026-09-05"
+    },
     "f3myl5ugmj90wrl7:05js4": {
       "demotion_alert_sent": false,
       "eligible_date": "2026-08-15",
@@ -848,14 +1025,14 @@
       "window_start": "2026-07-24"
     },
     "f3myl5ugmj90wrl7:05rb0": {
-      "demotion_alert_sent": false,
-      "eligible_date": "2026-07-30",
+      "demotion_alert_sent": true,
+      "eligible_date": "2026-09-29",
       "fantrax_id": "05rb0",
       "player_name": "Jackson Jobe",
       "team_id": "f3myl5ugmj90wrl7",
       "team_name": "The Hot and Steamy Boys",
       "violation_alert_sent": false,
-      "window_start": "2026-07-08"
+      "window_start": "2026-09-07"
     },
     "f3myl5ugmj90wrl7:05rbd": {
       "demotion_alert_sent": false,
@@ -889,13 +1066,13 @@
     },
     "f3myl5ugmj90wrl7:05uei": {
       "demotion_alert_sent": true,
-      "eligible_date": "2026-07-06",
+      "eligible_date": "2026-09-27",
       "fantrax_id": "05uei",
       "player_name": "Chase DeLauter",
       "team_id": "f3myl5ugmj90wrl7",
       "team_name": "The Hot and Steamy Boys",
-      "violation_alert_sent": true,
-      "window_start": "2026-06-14"
+      "violation_alert_sent": false,
+      "window_start": "2026-09-05"
     },
     "f3myl5ugmj90wrl7:05xu1": {
       "demotion_alert_sent": true,
@@ -916,6 +1093,16 @@
       "team_name": "The Hot and Steamy Boys",
       "violation_alert_sent": false,
       "window_start": "2026-08-03"
+    },
+    "f3myl5ugmj90wrl7:05ybr": {
+      "demotion_alert_sent": true,
+      "eligible_date": "2026-09-30",
+      "fantrax_id": "05ybr",
+      "player_name": "Ethan Salas",
+      "team_id": "f3myl5ugmj90wrl7",
+      "team_name": "The Hot and Steamy Boys",
+      "violation_alert_sent": false,
+      "window_start": "2026-09-08"
     },
     "f3myl5ugmj90wrl7:05yib": {
       "demotion_alert_sent": false,
@@ -1079,13 +1266,13 @@
     },
     "jk36oo1hmj90wrl7:04eud": {
       "demotion_alert_sent": true,
-      "eligible_date": "2026-07-31",
+      "eligible_date": "2026-09-27",
       "fantrax_id": "04eud",
       "player_name": "Shane Drohan",
       "team_id": "jk36oo1hmj90wrl7",
       "team_name": "Daddy Yankee",
       "violation_alert_sent": false,
-      "window_start": "2026-07-09"
+      "window_start": "2026-09-05"
     },
     "jk36oo1hmj90wrl7:04mlt": {
       "demotion_alert_sent": true,
@@ -1139,13 +1326,23 @@
     },
     "jk36oo1hmj90wrl7:05rcj": {
       "demotion_alert_sent": true,
-      "eligible_date": "2026-07-14",
+      "eligible_date": "2026-09-23",
       "fantrax_id": "05rcj",
       "player_name": "Edwin Arroyo",
       "team_id": "jk36oo1hmj90wrl7",
       "team_name": "Daddy Yankee",
       "violation_alert_sent": false,
-      "window_start": "2026-06-22"
+      "window_start": "2026-09-01"
+    },
+    "jk36oo1hmj90wrl7:05u3v": {
+      "demotion_alert_sent": true,
+      "eligible_date": "2026-09-23",
+      "fantrax_id": "05u3v",
+      "player_name": "Walker Jenkins",
+      "team_id": "jk36oo1hmj90wrl7",
+      "team_name": "Daddy Yankee",
+      "violation_alert_sent": false,
+      "window_start": "2026-09-01"
     },
     "jk36oo1hmj90wrl7:05uvx": {
       "demotion_alert_sent": false,
@@ -1228,14 +1425,14 @@
       "window_start": "2026-06-15"
     },
     "jk36oo1hmj90wrl7:06oo7": {
-      "demotion_alert_sent": false,
-      "eligible_date": "2026-07-09",
+      "demotion_alert_sent": true,
+      "eligible_date": "2026-09-26",
       "fantrax_id": "06oo7",
       "player_name": "Sean Keys",
       "team_id": "jk36oo1hmj90wrl7",
       "team_name": "Daddy Yankee",
       "violation_alert_sent": false,
-      "window_start": "2026-06-17"
+      "window_start": "2026-09-04"
     },
     "jk36oo1hmj90wrl7:072hk": {
       "demotion_alert_sent": false,
@@ -1317,6 +1514,16 @@
       "violation_alert_sent": false,
       "window_start": "2026-07-30"
     },
+    "mldxq5pemj90wrl7:04z6m": {
+      "demotion_alert_sent": true,
+      "eligible_date": "2026-09-17",
+      "fantrax_id": "04z6m",
+      "player_name": "Agustin Ramirez",
+      "team_id": "mldxq5pemj90wrl7",
+      "team_name": "L\u00e1szlar\u00f3 T\u00f3th",
+      "violation_alert_sent": false,
+      "window_start": "2026-08-26"
+    },
     "mldxq5pemj90wrl7:051wu": {
       "demotion_alert_sent": true,
       "eligible_date": "2026-07-31",
@@ -1327,6 +1534,16 @@
       "violation_alert_sent": false,
       "window_start": "2026-07-09"
     },
+    "mldxq5pemj90wrl7:05gdz": {
+      "demotion_alert_sent": true,
+      "eligible_date": "2026-09-18",
+      "fantrax_id": "05gdz",
+      "player_name": "Roki Sasaki",
+      "team_id": "mldxq5pemj90wrl7",
+      "team_name": "L\u00e1szlar\u00f3 T\u00f3th",
+      "violation_alert_sent": false,
+      "window_start": "2026-08-27"
+    },
     "mldxq5pemj90wrl7:05jsg": {
       "demotion_alert_sent": true,
       "eligible_date": "2026-08-29",
@@ -1336,6 +1553,16 @@
       "team_name": "L\u00e1szlar\u00f3 T\u00f3th",
       "violation_alert_sent": false,
       "window_start": "2026-08-07"
+    },
+    "mldxq5pemj90wrl7:05xse": {
+      "demotion_alert_sent": true,
+      "eligible_date": "2026-09-18",
+      "fantrax_id": "05xse",
+      "player_name": "Hector Rodriguez",
+      "team_id": "mldxq5pemj90wrl7",
+      "team_name": "L\u00e1szlar\u00f3 T\u00f3th",
+      "violation_alert_sent": true,
+      "window_start": "2026-08-27"
     },
     "mldxq5pemj90wrl7:0603p": {
       "demotion_alert_sent": true,
@@ -1386,6 +1613,16 @@
       "team_name": "L\u00e1szlar\u00f3 T\u00f3th",
       "violation_alert_sent": false,
       "window_start": "2026-08-06"
+    },
+    "mldxq5pemj90wrl7:06r9y": {
+      "demotion_alert_sent": false,
+      "eligible_date": "2026-09-22",
+      "fantrax_id": "06r9y",
+      "player_name": "Sadbiel Delzine",
+      "team_id": "mldxq5pemj90wrl7",
+      "team_name": "L\u00e1szlar\u00f3 T\u00f3th",
+      "violation_alert_sent": false,
+      "window_start": "2026-08-31"
     },
     "mldxq5pemj90wrl7:06yyn": {
       "demotion_alert_sent": false,
@@ -1544,6 +1781,15 @@
       "team_id": "6tnz8jgemj90wrl7",
       "team_name": "Bobby and the NitWitts"
     },
+    "6tnz8jgemj90wrl7:0312g": {
+      "fantrax_id": "0312g",
+      "player_name": "Tyler Mahle",
+      "primary_position": "SP",
+      "roster_position": "P",
+      "roster_status": "ACTIVE",
+      "team_id": "6tnz8jgemj90wrl7",
+      "team_name": "Bobby and the NitWitts"
+    },
     "6tnz8jgemj90wrl7:0316v": {
       "fantrax_id": "0316v",
       "player_name": "Jake Bauers",
@@ -1688,15 +1934,6 @@
       "team_id": "6tnz8jgemj90wrl7",
       "team_name": "Bobby and the NitWitts"
     },
-    "6tnz8jgemj90wrl7:04pkt": {
-      "fantrax_id": "04pkt",
-      "player_name": "J.T. Ginn",
-      "primary_position": "SP",
-      "roster_position": "P",
-      "roster_status": "ACTIVE",
-      "team_id": "6tnz8jgemj90wrl7",
-      "team_name": "Bobby and the NitWitts"
-    },
     "6tnz8jgemj90wrl7:04up9": {
       "fantrax_id": "04up9",
       "player_name": "Heriberto Hernandez",
@@ -1760,15 +1997,6 @@
       "team_id": "6tnz8jgemj90wrl7",
       "team_name": "Bobby and the NitWitts"
     },
-    "6tnz8jgemj90wrl7:05nso": {
-      "fantrax_id": "05nso",
-      "player_name": "Abner Uribe",
-      "primary_position": "RP",
-      "roster_position": "P",
-      "roster_status": "INJURED_RESERVE",
-      "team_id": "6tnz8jgemj90wrl7",
-      "team_name": "Bobby and the NitWitts"
-    },
     "6tnz8jgemj90wrl7:05r1m": {
       "fantrax_id": "05r1m",
       "player_name": "Jordan Lawlar",
@@ -1784,6 +2012,15 @@
       "primary_position": "SS",
       "roster_position": "MI",
       "roster_status": "ACTIVE",
+      "team_id": "6tnz8jgemj90wrl7",
+      "team_name": "Bobby and the NitWitts"
+    },
+    "6tnz8jgemj90wrl7:05rcw": {
+      "fantrax_id": "05rcw",
+      "player_name": "Leo Bernal",
+      "primary_position": "C",
+      "roster_position": "C",
+      "roster_status": "MINORS",
       "team_id": "6tnz8jgemj90wrl7",
       "team_name": "Bobby and the NitWitts"
     },
@@ -1818,8 +2055,8 @@
       "fantrax_id": "05u96",
       "player_name": "Bryce Eldridge",
       "primary_position": "1B",
-      "roster_position": "1B",
-      "roster_status": "MINORS",
+      "roster_position": "UT",
+      "roster_status": "ACTIVE",
       "team_id": "6tnz8jgemj90wrl7",
       "team_name": "Bobby and the NitWitts"
     },
@@ -1847,15 +2084,6 @@
       "primary_position": "C",
       "roster_position": "C",
       "roster_status": "MINORS",
-      "team_id": "6tnz8jgemj90wrl7",
-      "team_name": "Bobby and the NitWitts"
-    },
-    "6tnz8jgemj90wrl7:05y72": {
-      "fantrax_id": "05y72",
-      "player_name": "Landen Roupp",
-      "primary_position": "SP",
-      "roster_position": "P",
-      "roster_status": "ACTIVE",
       "team_id": "6tnz8jgemj90wrl7",
       "team_name": "Bobby and the NitWitts"
     },
@@ -1976,24 +2204,6 @@
       "team_id": "6tnz8jgemj90wrl7",
       "team_name": "Bobby and the NitWitts"
     },
-    "6tnz8jgemj90wrl7:06rkk": {
-      "fantrax_id": "06rkk",
-      "player_name": "Eduardo Valencia",
-      "primary_position": "1B",
-      "roster_position": "UT",
-      "roster_status": "ACTIVE",
-      "team_id": "6tnz8jgemj90wrl7",
-      "team_name": "Bobby and the NitWitts"
-    },
-    "6tnz8jgemj90wrl7:06uwm": {
-      "fantrax_id": "06uwm",
-      "player_name": "Luis Arana",
-      "primary_position": "3B",
-      "roster_position": "3B",
-      "roster_status": "MINORS",
-      "team_id": "6tnz8jgemj90wrl7",
-      "team_name": "Bobby and the NitWitts"
-    },
     "6tnz8jgemj90wrl7:06v26": {
       "fantrax_id": "06v26",
       "player_name": "Marconi German",
@@ -2080,7 +2290,7 @@
       "player_name": "Tyler Glasnow",
       "primary_position": "SP",
       "roster_position": "P",
-      "roster_status": "INJURED_RESERVE",
+      "roster_status": "ACTIVE",
       "team_id": "aqfyadu2mj90wrl7",
       "team_name": "Ben the Hen"
     },
@@ -2107,7 +2317,7 @@
       "player_name": "Byron Buxton",
       "primary_position": "CF",
       "roster_position": "OF",
-      "roster_status": "ACTIVE",
+      "roster_status": "INJURED_RESERVE",
       "team_id": "aqfyadu2mj90wrl7",
       "team_name": "Ben the Hen"
     },
@@ -2129,15 +2339,6 @@
       "team_id": "aqfyadu2mj90wrl7",
       "team_name": "Ben the Hen"
     },
-    "aqfyadu2mj90wrl7:02xic": {
-      "fantrax_id": "02xic",
-      "player_name": "Teoscar Hernandez",
-      "primary_position": "RF",
-      "roster_position": "UT",
-      "roster_status": "ACTIVE",
-      "team_id": "aqfyadu2mj90wrl7",
-      "team_name": "Ben the Hen"
-    },
     "aqfyadu2mj90wrl7:03fi0": {
       "fantrax_id": "03fi0",
       "player_name": "Ozzie Albies",
@@ -2152,7 +2353,7 @@
       "player_name": "Trent Grisham",
       "primary_position": "CF",
       "roster_position": "OF",
-      "roster_status": "ACTIVE",
+      "roster_status": "INJURED_RESERVE",
       "team_id": "aqfyadu2mj90wrl7",
       "team_name": "Ben the Hen"
     },
@@ -2161,15 +2362,6 @@
       "player_name": "Austin Riley",
       "primary_position": "3B",
       "roster_position": "UT",
-      "roster_status": "ACTIVE",
-      "team_id": "aqfyadu2mj90wrl7",
-      "team_name": "Ben the Hen"
-    },
-    "aqfyadu2mj90wrl7:03poo": {
-      "fantrax_id": "03poo",
-      "player_name": "Peter Lambert",
-      "primary_position": "SP",
-      "roster_position": "P",
       "roster_status": "ACTIVE",
       "team_id": "aqfyadu2mj90wrl7",
       "team_name": "Ben the Hen"
@@ -2233,7 +2425,7 @@
       "player_name": "Riley Greene",
       "primary_position": "LF",
       "roster_position": "OF",
-      "roster_status": "INJURED_RESERVE",
+      "roster_status": "ACTIVE",
       "team_id": "aqfyadu2mj90wrl7",
       "team_name": "Ben the Hen"
     },
@@ -2251,7 +2443,7 @@
       "player_name": "Francisco Alvarez",
       "primary_position": "C",
       "roster_position": "UT",
-      "roster_status": "ACTIVE",
+      "roster_status": "MINORS",
       "team_id": "aqfyadu2mj90wrl7",
       "team_name": "Ben the Hen"
     },
@@ -2270,15 +2462,6 @@
       "primary_position": "2B",
       "roster_position": "2B",
       "roster_status": "MINORS",
-      "team_id": "aqfyadu2mj90wrl7",
-      "team_name": "Ben the Hen"
-    },
-    "aqfyadu2mj90wrl7:05161": {
-      "fantrax_id": "05161",
-      "player_name": "Dominic Canzone",
-      "primary_position": "RF",
-      "roster_position": "OF",
-      "roster_status": "ACTIVE",
       "team_id": "aqfyadu2mj90wrl7",
       "team_name": "Ben the Hen"
     },
@@ -2305,7 +2488,7 @@
       "player_name": "Andrew Painter",
       "primary_position": "SP",
       "roster_position": "P",
-      "roster_status": "MINORS",
+      "roster_status": "ACTIVE",
       "team_id": "aqfyadu2mj90wrl7",
       "team_name": "Ben the Hen"
     },
@@ -2314,7 +2497,7 @@
       "player_name": "James Wood",
       "primary_position": "LF",
       "roster_position": "OF",
-      "roster_status": "INJURED_RESERVE",
+      "roster_status": "ACTIVE",
       "team_id": "aqfyadu2mj90wrl7",
       "team_name": "Ben the Hen"
     },
@@ -2332,7 +2515,7 @@
       "player_name": "Chase Burns",
       "primary_position": "SP",
       "roster_position": "P",
-      "roster_status": "ACTIVE",
+      "roster_status": "MINORS",
       "team_id": "aqfyadu2mj90wrl7",
       "team_name": "Ben the Hen"
     },
@@ -2367,8 +2550,8 @@
       "fantrax_id": "05u3u",
       "player_name": "Konnor Griffin",
       "primary_position": "SS",
-      "roster_position": "UT",
-      "roster_status": "INJURED_RESERVE",
+      "roster_position": "MI",
+      "roster_status": "ACTIVE",
       "team_id": "aqfyadu2mj90wrl7",
       "team_name": "Ben the Hen"
     },
@@ -2403,8 +2586,17 @@
       "fantrax_id": "05xty",
       "player_name": "Dylan Beavers",
       "primary_position": "LF",
-      "roster_position": "OF",
+      "roster_position": "UT",
       "roster_status": "MINORS",
+      "team_id": "aqfyadu2mj90wrl7",
+      "team_name": "Ben the Hen"
+    },
+    "aqfyadu2mj90wrl7:05yb0": {
+      "fantrax_id": "05yb0",
+      "player_name": "T.J. Rumfield",
+      "primary_position": "1B",
+      "roster_position": "UT",
+      "roster_status": "ACTIVE",
       "team_id": "aqfyadu2mj90wrl7",
       "team_name": "Ben the Hen"
     },
@@ -2430,7 +2622,7 @@
       "fantrax_id": "05zh9",
       "player_name": "Luke Keaschall",
       "primary_position": "2B",
-      "roster_position": "MI",
+      "roster_position": "OF",
       "roster_status": "ACTIVE",
       "team_id": "aqfyadu2mj90wrl7",
       "team_name": "Ben the Hen"
@@ -2489,6 +2681,15 @@
       "team_id": "aqfyadu2mj90wrl7",
       "team_name": "Ben the Hen"
     },
+    "aqfyadu2mj90wrl7:06ek4": {
+      "fantrax_id": "06ek4",
+      "player_name": "Jonah Cox",
+      "primary_position": "CF",
+      "roster_position": "UT",
+      "roster_status": "ACTIVE",
+      "team_id": "aqfyadu2mj90wrl7",
+      "team_name": "Ben the Hen"
+    },
     "aqfyadu2mj90wrl7:06ibv": {
       "fantrax_id": "06ibv",
       "player_name": "Jesus Made",
@@ -2512,15 +2713,6 @@
       "player_name": "Edward Florentino",
       "primary_position": "CF",
       "roster_position": "OF",
-      "roster_status": "MINORS",
-      "team_id": "aqfyadu2mj90wrl7",
-      "team_name": "Ben the Hen"
-    },
-    "aqfyadu2mj90wrl7:06pg4": {
-      "fantrax_id": "06pg4",
-      "player_name": "Deniel Ortiz",
-      "primary_position": "3B",
-      "roster_position": "1B",
       "roster_status": "MINORS",
       "team_id": "aqfyadu2mj90wrl7",
       "team_name": "Ben the Hen"
@@ -2660,15 +2852,6 @@
       "team_id": "bw696uo5mj90wrl7",
       "team_name": "Cant Park Here"
     },
-    "bw696uo5mj90wrl7:04pma": {
-      "fantrax_id": "04pma",
-      "player_name": "Daniel Lynch",
-      "primary_position": "RP",
-      "roster_position": "P",
-      "roster_status": "ACTIVE",
-      "team_id": "bw696uo5mj90wrl7",
-      "team_name": "Cant Park Here"
-    },
     "bw696uo5mj90wrl7:04pmq": {
       "fantrax_id": "04pmq",
       "player_name": "Braxton Ashcraft",
@@ -2795,6 +2978,15 @@
       "team_id": "bw696uo5mj90wrl7",
       "team_name": "Cant Park Here"
     },
+    "bw696uo5mj90wrl7:05tce": {
+      "fantrax_id": "05tce",
+      "player_name": "Connor Norby",
+      "primary_position": "3B",
+      "roster_position": "1B",
+      "roster_status": "ACTIVE",
+      "team_id": "bw696uo5mj90wrl7",
+      "team_name": "Cant Park Here"
+    },
     "bw696uo5mj90wrl7:05udp": {
       "fantrax_id": "05udp",
       "player_name": "Elly De La Cruz",
@@ -2818,7 +3010,7 @@
       "player_name": "Elmer Rodriguez",
       "primary_position": "SP",
       "roster_position": "P",
-      "roster_status": "MINORS",
+      "roster_status": "ACTIVE",
       "team_id": "bw696uo5mj90wrl7",
       "team_name": "Cant Park Here"
     },
@@ -2864,6 +3056,15 @@
       "primary_position": "SP",
       "roster_position": "P",
       "roster_status": "ACTIVE",
+      "team_id": "bw696uo5mj90wrl7",
+      "team_name": "Cant Park Here"
+    },
+    "bw696uo5mj90wrl7:05ydz": {
+      "fantrax_id": "05ydz",
+      "player_name": "Tristan Peters",
+      "primary_position": "LF",
+      "roster_position": "OF",
+      "roster_status": "RESERVE",
       "team_id": "bw696uo5mj90wrl7",
       "team_name": "Cant Park Here"
     },
@@ -3074,6 +3275,15 @@
       "team_id": "bw696uo5mj90wrl7",
       "team_name": "Cant Park Here"
     },
+    "bw696uo5mj90wrl7:06qwv": {
+      "fantrax_id": "06qwv",
+      "player_name": "Kane Kepley",
+      "primary_position": "CF",
+      "roster_position": "OF",
+      "roster_status": "MINORS",
+      "team_id": "bw696uo5mj90wrl7",
+      "team_name": "Cant Park Here"
+    },
     "bw696uo5mj90wrl7:06rvt": {
       "fantrax_id": "06rvt",
       "player_name": "Charles Davalan",
@@ -3110,15 +3320,6 @@
       "team_id": "f3myl5ugmj90wrl7",
       "team_name": "The Hot and Steamy Boys"
     },
-    "f3myl5ugmj90wrl7:01sy3": {
-      "fantrax_id": "01sy3",
-      "player_name": "Nolan Arenado",
-      "primary_position": "3B",
-      "roster_position": "UT",
-      "roster_status": "ACTIVE",
-      "team_id": "f3myl5ugmj90wrl7",
-      "team_name": "The Hot and Steamy Boys"
-    },
     "f3myl5ugmj90wrl7:01ub6": {
       "fantrax_id": "01ub6",
       "player_name": "Jose Ramirez",
@@ -3133,7 +3334,16 @@
       "player_name": "Kevin Gausman",
       "primary_position": "SP",
       "roster_position": "P",
-      "roster_status": "RESERVE",
+      "roster_status": "ACTIVE",
+      "team_id": "f3myl5ugmj90wrl7",
+      "team_name": "The Hot and Steamy Boys"
+    },
+    "f3myl5ugmj90wrl7:02iug": {
+      "fantrax_id": "02iug",
+      "player_name": "Michael Wacha",
+      "primary_position": "SP",
+      "roster_position": "P",
+      "roster_status": "ACTIVE",
       "team_id": "f3myl5ugmj90wrl7",
       "team_name": "The Hot and Steamy Boys"
     },
@@ -3142,7 +3352,7 @@
       "player_name": "Cody Bellinger",
       "primary_position": "LF",
       "roster_position": "OF",
-      "roster_status": "INJURED_RESERVE",
+      "roster_status": "ACTIVE",
       "team_id": "f3myl5ugmj90wrl7",
       "team_name": "The Hot and Steamy Boys"
     },
@@ -3290,6 +3500,15 @@
       "team_id": "f3myl5ugmj90wrl7",
       "team_name": "The Hot and Steamy Boys"
     },
+    "f3myl5ugmj90wrl7:04pmg": {
+      "fantrax_id": "04pmg",
+      "player_name": "Jonathan Bowlan",
+      "primary_position": "RP",
+      "roster_position": "P",
+      "roster_status": "ACTIVE",
+      "team_id": "f3myl5ugmj90wrl7",
+      "team_name": "The Hot and Steamy Boys"
+    },
     "f3myl5ugmj90wrl7:04pmu": {
       "fantrax_id": "04pmu",
       "player_name": "Ryan Jeffers",
@@ -3308,15 +3527,6 @@
       "team_id": "f3myl5ugmj90wrl7",
       "team_name": "The Hot and Steamy Boys"
     },
-    "f3myl5ugmj90wrl7:04pq4": {
-      "fantrax_id": "04pq4",
-      "player_name": "Kyle Bradish",
-      "primary_position": "SP",
-      "roster_position": "P",
-      "roster_status": "ACTIVE",
-      "team_id": "f3myl5ugmj90wrl7",
-      "team_name": "The Hot and Steamy Boys"
-    },
     "f3myl5ugmj90wrl7:04pst": {
       "fantrax_id": "04pst",
       "player_name": "Jarren Duran",
@@ -3326,12 +3536,12 @@
       "team_id": "f3myl5ugmj90wrl7",
       "team_name": "The Hot and Steamy Boys"
     },
-    "f3myl5ugmj90wrl7:04y76": {
-      "fantrax_id": "04y76",
-      "player_name": "Jacob Webb",
-      "primary_position": "RP",
+    "f3myl5ugmj90wrl7:04ya2": {
+      "fantrax_id": "04ya2",
+      "player_name": "Daniel Espino",
+      "primary_position": "SP",
       "roster_position": "P",
-      "roster_status": "ACTIVE",
+      "roster_status": "MINORS",
       "team_id": "f3myl5ugmj90wrl7",
       "team_name": "The Hot and Steamy Boys"
     },
@@ -3340,15 +3550,6 @@
       "player_name": "Dillon Dingler",
       "primary_position": "C",
       "roster_position": "C",
-      "roster_status": "ACTIVE",
-      "team_id": "f3myl5ugmj90wrl7",
-      "team_name": "The Hot and Steamy Boys"
-    },
-    "f3myl5ugmj90wrl7:05jpd": {
-      "fantrax_id": "05jpd",
-      "player_name": "Ian Seymour",
-      "primary_position": "RP",
-      "roster_position": "P",
       "roster_status": "ACTIVE",
       "team_id": "f3myl5ugmj90wrl7",
       "team_name": "The Hot and Steamy Boys"
@@ -3368,6 +3569,15 @@
       "primary_position": "SS",
       "roster_position": "SS",
       "roster_status": "MINORS",
+      "team_id": "f3myl5ugmj90wrl7",
+      "team_name": "The Hot and Steamy Boys"
+    },
+    "f3myl5ugmj90wrl7:05r3a": {
+      "fantrax_id": "05r3a",
+      "player_name": "Brandon Young",
+      "primary_position": "SP",
+      "roster_position": "P",
+      "roster_status": "ACTIVE",
       "team_id": "f3myl5ugmj90wrl7",
       "team_name": "The Hot and Steamy Boys"
     },
@@ -3398,21 +3608,12 @@
       "team_id": "f3myl5ugmj90wrl7",
       "team_name": "The Hot and Steamy Boys"
     },
-    "f3myl5ugmj90wrl7:05u4l": {
-      "fantrax_id": "05u4l",
-      "player_name": "Daniel Palencia",
-      "primary_position": "RP",
-      "roster_position": "P",
-      "roster_status": "MINORS",
-      "team_id": "f3myl5ugmj90wrl7",
-      "team_name": "The Hot and Steamy Boys"
-    },
     "f3myl5ugmj90wrl7:05uei": {
       "fantrax_id": "05uei",
       "player_name": "Chase DeLauter",
       "primary_position": "CF",
       "roster_position": "OF",
-      "roster_status": "ACTIVE",
+      "roster_status": "MINORS",
       "team_id": "f3myl5ugmj90wrl7",
       "team_name": "The Hot and Steamy Boys"
     },
@@ -3456,17 +3657,8 @@
       "fantrax_id": "05ybr",
       "player_name": "Ethan Salas",
       "primary_position": "C",
-      "roster_position": "C",
+      "roster_position": "UT",
       "roster_status": "MINORS",
-      "team_id": "f3myl5ugmj90wrl7",
-      "team_name": "The Hot and Steamy Boys"
-    },
-    "f3myl5ugmj90wrl7:05ycf": {
-      "fantrax_id": "05ycf",
-      "player_name": "Noah Cameron",
-      "primary_position": "SP",
-      "roster_position": "P",
-      "roster_status": "ACTIVE",
       "team_id": "f3myl5ugmj90wrl7",
       "team_name": "The Hot and Steamy Boys"
     },
@@ -3502,7 +3694,7 @@
       "player_name": "Didier Fuentes",
       "primary_position": "SP",
       "roster_position": "P",
-      "roster_status": "MINORS",
+      "roster_status": "ACTIVE",
       "team_id": "f3myl5ugmj90wrl7",
       "team_name": "The Hot and Steamy Boys"
     },
@@ -3556,7 +3748,7 @@
       "player_name": "Payton Tolle",
       "primary_position": "RP",
       "roster_position": "P",
-      "roster_status": "ACTIVE",
+      "roster_status": "RESERVE",
       "team_id": "f3myl5ugmj90wrl7",
       "team_name": "The Hot and Steamy Boys"
     },
@@ -3574,7 +3766,7 @@
       "player_name": "Sam Antonacci",
       "primary_position": "2B",
       "roster_position": "UT",
-      "roster_status": "MINORS",
+      "roster_status": "ACTIVE",
       "team_id": "f3myl5ugmj90wrl7",
       "team_name": "The Hot and Steamy Boys"
     },
@@ -3619,7 +3811,7 @@
       "player_name": "Max Fried",
       "primary_position": "SP",
       "roster_position": "P",
-      "roster_status": "INJURED_RESERVE",
+      "roster_status": "ACTIVE",
       "team_id": "hd9hwe4mmj90wrl7",
       "team_name": "Third Degree Burnes"
     },
@@ -3799,7 +3991,7 @@
       "player_name": "Emerson Hancock",
       "primary_position": "SP",
       "roster_position": "P",
-      "roster_status": "ACTIVE",
+      "roster_status": "INJURED_RESERVE",
       "team_id": "hd9hwe4mmj90wrl7",
       "team_name": "Third Degree Burnes"
     },
@@ -4176,7 +4368,7 @@
       "fantrax_id": "01cgo",
       "player_name": "Freddie Freeman",
       "primary_position": "1B",
-      "roster_position": "UT",
+      "roster_position": "1B",
       "roster_status": "ACTIVE",
       "team_id": "jk36oo1hmj90wrl7",
       "team_name": "Daddy Yankee"
@@ -4190,20 +4382,11 @@
       "team_id": "jk36oo1hmj90wrl7",
       "team_name": "Daddy Yankee"
     },
-    "jk36oo1hmj90wrl7:024m0": {
-      "fantrax_id": "024m0",
-      "player_name": "Jose Altuve",
-      "primary_position": "2B",
-      "roster_position": "OF",
-      "roster_status": "ACTIVE",
-      "team_id": "jk36oo1hmj90wrl7",
-      "team_name": "Daddy Yankee"
-    },
     "jk36oo1hmj90wrl7:025he": {
       "fantrax_id": "025he",
       "player_name": "George Springer",
       "primary_position": "RF",
-      "roster_position": "UT",
+      "roster_position": "OF",
       "roster_status": "ACTIVE",
       "team_id": "jk36oo1hmj90wrl7",
       "team_name": "Daddy Yankee"
@@ -4212,7 +4395,7 @@
       "fantrax_id": "02mw3",
       "player_name": "Christian Walker",
       "primary_position": "1B",
-      "roster_position": "CI",
+      "roster_position": "UT",
       "roster_status": "ACTIVE",
       "team_id": "jk36oo1hmj90wrl7",
       "team_name": "Daddy Yankee"
@@ -4221,7 +4404,7 @@
       "fantrax_id": "02w7p",
       "player_name": "Alex Bregman",
       "primary_position": "3B",
-      "roster_position": "UT",
+      "roster_position": "3B",
       "roster_status": "ACTIVE",
       "team_id": "jk36oo1hmj90wrl7",
       "team_name": "Daddy Yankee"
@@ -4230,8 +4413,8 @@
       "fantrax_id": "02z0s",
       "player_name": "Aaron Judge",
       "primary_position": "RF",
-      "roster_position": "OF",
-      "roster_status": "INJURED_RESERVE",
+      "roster_position": "UT",
+      "roster_status": "ACTIVE",
       "team_id": "jk36oo1hmj90wrl7",
       "team_name": "Daddy Yankee"
     },
@@ -4244,30 +4427,12 @@
       "team_id": "jk36oo1hmj90wrl7",
       "team_name": "Daddy Yankee"
     },
-    "jk36oo1hmj90wrl7:0317o": {
-      "fantrax_id": "0317o",
-      "player_name": "Jeff McNeil",
-      "primary_position": "2B",
-      "roster_position": "2B",
-      "roster_status": "ACTIVE",
-      "team_id": "jk36oo1hmj90wrl7",
-      "team_name": "Daddy Yankee"
-    },
     "jk36oo1hmj90wrl7:03atq": {
       "fantrax_id": "03atq",
       "player_name": "Willy Adames",
       "primary_position": "SS",
       "roster_position": "MI",
       "roster_status": "INJURED_RESERVE",
-      "team_id": "jk36oo1hmj90wrl7",
-      "team_name": "Daddy Yankee"
-    },
-    "jk36oo1hmj90wrl7:03btu": {
-      "fantrax_id": "03btu",
-      "player_name": "Willi Castro",
-      "primary_position": "2B",
-      "roster_position": "3B",
-      "roster_status": "ACTIVE",
       "team_id": "jk36oo1hmj90wrl7",
       "team_name": "Daddy Yankee"
     },
@@ -4293,8 +4458,8 @@
       "fantrax_id": "03oh0",
       "player_name": "Willson Contreras",
       "primary_position": "1B",
-      "roster_position": "1B",
-      "roster_status": "ACTIVE",
+      "roster_position": "CI",
+      "roster_status": "INJURED_RESERVE",
       "team_id": "jk36oo1hmj90wrl7",
       "team_name": "Daddy Yankee"
     },
@@ -4320,7 +4485,7 @@
       "fantrax_id": "041pz",
       "player_name": "Pete Alonso",
       "primary_position": "1B",
-      "roster_position": "UT",
+      "roster_position": "CI",
       "roster_status": "ACTIVE",
       "team_id": "jk36oo1hmj90wrl7",
       "team_name": "Daddy Yankee"
@@ -4329,15 +4494,15 @@
       "fantrax_id": "045qo",
       "player_name": "Jazz Chisholm Jr.",
       "primary_position": "2B",
-      "roster_position": "MI",
+      "roster_position": "2B",
       "roster_status": "ACTIVE",
       "team_id": "jk36oo1hmj90wrl7",
       "team_name": "Daddy Yankee"
     },
-    "jk36oo1hmj90wrl7:04eos": {
-      "fantrax_id": "04eos",
-      "player_name": "Joey Cantillo",
-      "primary_position": "RP",
+    "jk36oo1hmj90wrl7:04auj": {
+      "fantrax_id": "04auj",
+      "player_name": "Framber Valdez",
+      "primary_position": "SP",
       "roster_position": "P",
       "roster_status": "ACTIVE",
       "team_id": "jk36oo1hmj90wrl7",
@@ -4365,7 +4530,7 @@
       "fantrax_id": "04nqx",
       "player_name": "Ezequiel Duran",
       "primary_position": "SS",
-      "roster_position": "OF",
+      "roster_position": "MI",
       "roster_status": "ACTIVE",
       "team_id": "jk36oo1hmj90wrl7",
       "team_name": "Daddy Yankee"
@@ -4391,6 +4556,15 @@
     "jk36oo1hmj90wrl7:04yie": {
       "fantrax_id": "04yie",
       "player_name": "George Kirby",
+      "primary_position": "SP",
+      "roster_position": "P",
+      "roster_status": "ACTIVE",
+      "team_id": "jk36oo1hmj90wrl7",
+      "team_name": "Daddy Yankee"
+    },
+    "jk36oo1hmj90wrl7:0514f": {
+      "fantrax_id": "0514f",
+      "player_name": "Hayden Wesneski",
       "primary_position": "SP",
       "roster_position": "P",
       "roster_status": "ACTIVE",
@@ -4491,7 +4665,7 @@
       "fantrax_id": "05u3v",
       "player_name": "Walker Jenkins",
       "primary_position": "CF",
-      "roster_position": "OF",
+      "roster_position": "UT",
       "roster_status": "MINORS",
       "team_id": "jk36oo1hmj90wrl7",
       "team_name": "Daddy Yankee"
@@ -4514,10 +4688,10 @@
       "team_id": "jk36oo1hmj90wrl7",
       "team_name": "Daddy Yankee"
     },
-    "jk36oo1hmj90wrl7:060eu": {
-      "fantrax_id": "060eu",
-      "player_name": "Ben Joyce",
-      "primary_position": "RP",
+    "jk36oo1hmj90wrl7:05ycf": {
+      "fantrax_id": "05ycf",
+      "player_name": "Noah Cameron",
+      "primary_position": "SP",
       "roster_position": "P",
       "roster_status": "ACTIVE",
       "team_id": "jk36oo1hmj90wrl7",
@@ -4528,7 +4702,7 @@
       "player_name": "Cam Smith",
       "primary_position": "RF",
       "roster_position": "OF",
-      "roster_status": "RESERVE",
+      "roster_status": "ACTIVE",
       "team_id": "jk36oo1hmj90wrl7",
       "team_name": "Daddy Yankee"
     },
@@ -4537,7 +4711,7 @@
       "player_name": "Luis Lara",
       "primary_position": "CF",
       "roster_position": "UT",
-      "roster_status": "MINORS",
+      "roster_status": "ACTIVE",
       "team_id": "jk36oo1hmj90wrl7",
       "team_name": "Daddy Yankee"
     },
@@ -4608,7 +4782,7 @@
       "fantrax_id": "06oo7",
       "player_name": "Sean Keys",
       "primary_position": "3B",
-      "roster_position": "1B",
+      "roster_position": "UT",
       "roster_status": "MINORS",
       "team_id": "jk36oo1hmj90wrl7",
       "team_name": "Daddy Yankee"
@@ -4703,6 +4877,15 @@
       "team_id": "k7c57nf4mj90wrl8",
       "team_name": "Hand Foot Mouth Disease Guys"
     },
+    "k7c57nf4mj90wrl8:024m0": {
+      "fantrax_id": "024m0",
+      "player_name": "Jose Altuve",
+      "primary_position": "2B",
+      "roster_position": "2B",
+      "roster_status": "RESERVE",
+      "team_id": "k7c57nf4mj90wrl8",
+      "team_name": "Hand Foot Mouth Disease Guys"
+    },
     "k7c57nf4mj90wrl8:025j1": {
       "fantrax_id": "025j1",
       "player_name": "Robbie Ray",
@@ -4762,7 +4945,7 @@
       "player_name": "Ketel Marte",
       "primary_position": "2B",
       "roster_position": "UT",
-      "roster_status": "INJURED_RESERVE",
+      "roster_status": "RESERVE",
       "team_id": "k7c57nf4mj90wrl8",
       "team_name": "Hand Foot Mouth Disease Guys"
     },
@@ -4780,15 +4963,6 @@
       "player_name": "Kyle Tucker",
       "primary_position": "RF",
       "roster_position": "OF",
-      "roster_status": "ACTIVE",
-      "team_id": "k7c57nf4mj90wrl8",
-      "team_name": "Hand Foot Mouth Disease Guys"
-    },
-    "k7c57nf4mj90wrl8:041r5": {
-      "fantrax_id": "041r5",
-      "player_name": "Dustin May",
-      "primary_position": "SP",
-      "roster_position": "P",
       "roster_status": "ACTIVE",
       "team_id": "k7c57nf4mj90wrl8",
       "team_name": "Hand Foot Mouth Disease Guys"
@@ -4824,15 +4998,6 @@
       "fantrax_id": "04aqc",
       "player_name": "David Bednar",
       "primary_position": "RP",
-      "roster_position": "P",
-      "roster_status": "ACTIVE",
-      "team_id": "k7c57nf4mj90wrl8",
-      "team_name": "Hand Foot Mouth Disease Guys"
-    },
-    "k7c57nf4mj90wrl8:04auj": {
-      "fantrax_id": "04auj",
-      "player_name": "Framber Valdez",
-      "primary_position": "SP",
       "roster_position": "P",
       "roster_status": "ACTIVE",
       "team_id": "k7c57nf4mj90wrl8",
@@ -4887,8 +5052,8 @@
       "fantrax_id": "04s1g",
       "player_name": "Gabriel Moreno",
       "primary_position": "C",
-      "roster_position": "UT",
-      "roster_status": "ACTIVE",
+      "roster_position": "C",
+      "roster_status": "RESERVE",
       "team_id": "k7c57nf4mj90wrl8",
       "team_name": "Hand Foot Mouth Disease Guys"
     },
@@ -4986,8 +5151,8 @@
       "fantrax_id": "05u9z",
       "player_name": "Roman Anthony",
       "primary_position": "RF",
-      "roster_position": "OF",
-      "roster_status": "INJURED_RESERVE",
+      "roster_position": "UT",
+      "roster_status": "ACTIVE",
       "team_id": "k7c57nf4mj90wrl8",
       "team_name": "Hand Foot Mouth Disease Guys"
     },
@@ -5033,15 +5198,6 @@
       "primary_position": "3B",
       "roster_position": "3B",
       "roster_status": "MINORS",
-      "team_id": "k7c57nf4mj90wrl8",
-      "team_name": "Hand Foot Mouth Disease Guys"
-    },
-    "k7c57nf4mj90wrl8:05yb0": {
-      "fantrax_id": "05yb0",
-      "player_name": "T.J. Rumfield",
-      "primary_position": "1B",
-      "roster_position": "UT",
-      "roster_status": "RESERVE",
       "team_id": "k7c57nf4mj90wrl8",
       "team_name": "Hand Foot Mouth Disease Guys"
     },
@@ -5225,15 +5381,6 @@
       "team_id": "mldxq5pemj90wrl7",
       "team_name": "L\u00e1szlar\u00f3 T\u00f3th"
     },
-    "mldxq5pemj90wrl7:03ann": {
-      "fantrax_id": "03ann",
-      "player_name": "Jeff Hoffman",
-      "primary_position": "RP",
-      "roster_position": "P",
-      "roster_status": "ACTIVE",
-      "team_id": "mldxq5pemj90wrl7",
-      "team_name": "L\u00e1szlar\u00f3 T\u00f3th"
-    },
     "mldxq5pemj90wrl7:03btv": {
       "fantrax_id": "03btv",
       "player_name": "Sandy Alcantara",
@@ -5248,7 +5395,7 @@
       "player_name": "Juan Soto",
       "primary_position": "RF",
       "roster_position": "OF",
-      "roster_status": "INJURED_RESERVE",
+      "roster_status": "ACTIVE",
       "team_id": "mldxq5pemj90wrl7",
       "team_name": "L\u00e1szlar\u00f3 T\u00f3th"
     },
@@ -5261,21 +5408,12 @@
       "team_id": "mldxq5pemj90wrl7",
       "team_name": "L\u00e1szlar\u00f3 T\u00f3th"
     },
-    "mldxq5pemj90wrl7:041rf": {
-      "fantrax_id": "041rf",
-      "player_name": "Shane Bieber",
-      "primary_position": "SP",
-      "roster_position": "P",
-      "roster_status": "INJURED_RESERVE",
-      "team_id": "mldxq5pemj90wrl7",
-      "team_name": "L\u00e1szlar\u00f3 T\u00f3th"
-    },
     "mldxq5pemj90wrl7:042sz": {
       "fantrax_id": "042sz",
       "player_name": "Will Smith",
       "primary_position": "C",
       "roster_position": "C",
-      "roster_status": "INJURED_RESERVE",
+      "roster_status": "ACTIVE",
       "team_id": "mldxq5pemj90wrl7",
       "team_name": "L\u00e1szlar\u00f3 T\u00f3th"
     },
@@ -5297,11 +5435,20 @@
       "team_id": "mldxq5pemj90wrl7",
       "team_name": "L\u00e1szlar\u00f3 T\u00f3th"
     },
+    "mldxq5pemj90wrl7:04cwf": {
+      "fantrax_id": "04cwf",
+      "player_name": "Shane Baz",
+      "primary_position": "SP",
+      "roster_position": "P",
+      "roster_status": "ACTIVE",
+      "team_id": "mldxq5pemj90wrl7",
+      "team_name": "L\u00e1szlar\u00f3 T\u00f3th"
+    },
     "mldxq5pemj90wrl7:04ee8": {
       "fantrax_id": "04ee8",
       "player_name": "Heliot Ramos",
       "primary_position": "LF",
-      "roster_position": "OF",
+      "roster_position": "UT",
       "roster_status": "ACTIVE",
       "team_id": "mldxq5pemj90wrl7",
       "team_name": "L\u00e1szlar\u00f3 T\u00f3th"
@@ -5311,7 +5458,7 @@
       "player_name": "Xavier Edwards",
       "primary_position": "2B",
       "roster_position": "SS",
-      "roster_status": "ACTIVE",
+      "roster_status": "INJURED_RESERVE",
       "team_id": "mldxq5pemj90wrl7",
       "team_name": "L\u00e1szlar\u00f3 T\u00f3th"
     },
@@ -5347,7 +5494,7 @@
       "player_name": "Agustin Ramirez",
       "primary_position": "C",
       "roster_position": "C",
-      "roster_status": "ACTIVE",
+      "roster_status": "MINORS",
       "team_id": "mldxq5pemj90wrl7",
       "team_name": "L\u00e1szlar\u00f3 T\u00f3th"
     },
@@ -5383,7 +5530,7 @@
       "player_name": "Roki Sasaki",
       "primary_position": "SP",
       "roster_position": "P",
-      "roster_status": "ACTIVE",
+      "roster_status": "INJURED_RESERVE",
       "team_id": "mldxq5pemj90wrl7",
       "team_name": "L\u00e1szlar\u00f3 T\u00f3th"
     },
@@ -5463,8 +5610,8 @@
       "fantrax_id": "05xse",
       "player_name": "Hector Rodriguez",
       "primary_position": "LF",
-      "roster_position": "OF",
-      "roster_status": "MINORS",
+      "roster_position": "UT",
+      "roster_status": "ACTIVE",
       "team_id": "mldxq5pemj90wrl7",
       "team_name": "L\u00e1szlar\u00f3 T\u00f3th"
     },
@@ -5513,19 +5660,19 @@
       "team_id": "mldxq5pemj90wrl7",
       "team_name": "L\u00e1szlar\u00f3 T\u00f3th"
     },
-    "mldxq5pemj90wrl7:0622w": {
-      "fantrax_id": "0622w",
-      "player_name": "Chandler Simpson",
-      "primary_position": "CF",
-      "roster_position": "UT",
+    "mldxq5pemj90wrl7:060gd": {
+      "fantrax_id": "060gd",
+      "player_name": "Quinn Mathews",
+      "primary_position": "SP",
+      "roster_position": "P",
       "roster_status": "ACTIVE",
       "team_id": "mldxq5pemj90wrl7",
       "team_name": "L\u00e1szlar\u00f3 T\u00f3th"
     },
-    "mldxq5pemj90wrl7:062ho": {
-      "fantrax_id": "062ho",
-      "player_name": "Javier Sanoja",
-      "primary_position": "3B",
+    "mldxq5pemj90wrl7:0622w": {
+      "fantrax_id": "0622w",
+      "player_name": "Chandler Simpson",
+      "primary_position": "CF",
       "roster_position": "UT",
       "roster_status": "ACTIVE",
       "team_id": "mldxq5pemj90wrl7",
@@ -5598,7 +5745,7 @@
       "fantrax_id": "06hx4",
       "player_name": "Kaelen Culpepper",
       "primary_position": "SS",
-      "roster_position": "UT",
+      "roster_position": "SS",
       "roster_status": "ACTIVE",
       "team_id": "mldxq5pemj90wrl7",
       "team_name": "L\u00e1szlar\u00f3 T\u00f3th"
@@ -5662,6 +5809,15 @@
       "player_name": "Brailyn Antunez",
       "primary_position": "CF",
       "roster_position": "OF",
+      "roster_status": "MINORS",
+      "team_id": "mldxq5pemj90wrl7",
+      "team_name": "L\u00e1szlar\u00f3 T\u00f3th"
+    },
+    "mldxq5pemj90wrl7:06r9y": {
+      "fantrax_id": "06r9y",
+      "player_name": "Sadbiel Delzine",
+      "primary_position": "SP",
+      "roster_position": "P",
       "roster_status": "MINORS",
       "team_id": "mldxq5pemj90wrl7",
       "team_name": "L\u00e1szlar\u00f3 T\u00f3th"
