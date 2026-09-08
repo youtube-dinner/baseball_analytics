@@ -773,6 +773,16 @@
       "violation_alert_sent": false,
       "window_start": "2026-08-29"
     },
+    "aqfyadu2mj90wrl7:05rb3": {
+      "demotion_alert_sent": true,
+      "eligible_date": "2026-09-30",
+      "fantrax_id": "05rb3",
+      "player_name": "Chase Burns",
+      "team_id": "aqfyadu2mj90wrl7",
+      "team_name": "Ben the Hen",
+      "violation_alert_sent": false,
+      "window_start": "2026-09-08"
+    },
     "aqfyadu2mj90wrl7:05unf": {
       "demotion_alert_sent": true,
       "eligible_date": "2026-07-23",
@@ -1072,6 +1082,16 @@
       "team_name": "The Hot and Steamy Boys",
       "violation_alert_sent": false,
       "window_start": "2026-08-03"
+    },
+    "f3myl5ugmj90wrl7:05ybr": {
+      "demotion_alert_sent": true,
+      "eligible_date": "2026-09-30",
+      "fantrax_id": "05ybr",
+      "player_name": "Ethan Salas",
+      "team_id": "f3myl5ugmj90wrl7",
+      "team_name": "The Hot and Steamy Boys",
+      "violation_alert_sent": false,
+      "window_start": "2026-09-08"
     },
     "f3myl5ugmj90wrl7:05yib": {
       "demotion_alert_sent": false,
@@ -2457,7 +2477,7 @@
       "player_name": "Andrew Painter",
       "primary_position": "SP",
       "roster_position": "P",
-      "roster_status": "MINORS",
+      "roster_status": "ACTIVE",
       "team_id": "aqfyadu2mj90wrl7",
       "team_name": "Ben the Hen"
     },
@@ -2484,7 +2504,7 @@
       "player_name": "Chase Burns",
       "primary_position": "SP",
       "roster_position": "P",
-      "roster_status": "ACTIVE",
+      "roster_status": "MINORS",
       "team_id": "aqfyadu2mj90wrl7",
       "team_name": "Ben the Hen"
     },
@@ -2623,15 +2643,6 @@
       "team_id": "aqfyadu2mj90wrl7",
       "team_name": "Ben the Hen"
     },
-    "aqfyadu2mj90wrl7:06am0": {
-      "fantrax_id": "06am0",
-      "player_name": "Mickey Gasper",
-      "primary_position": "C",
-      "roster_position": "UT",
-      "roster_status": "ACTIVE",
-      "team_id": "aqfyadu2mj90wrl7",
-      "team_name": "Ben the Hen"
-    },
     "aqfyadu2mj90wrl7:06c10": {
       "fantrax_id": "06c10",
       "player_name": "Ike Irish",
@@ -2656,6 +2667,15 @@
       "primary_position": "SS",
       "roster_position": "3B",
       "roster_status": "MINORS",
+      "team_id": "aqfyadu2mj90wrl7",
+      "team_name": "Ben the Hen"
+    },
+    "aqfyadu2mj90wrl7:06ek4": {
+      "fantrax_id": "06ek4",
+      "player_name": "Jonah Cox",
+      "primary_position": "CF",
+      "roster_position": "UT",
+      "roster_status": "ACTIVE",
       "team_id": "aqfyadu2mj90wrl7",
       "team_name": "Ben the Hen"
     },
@@ -3307,6 +3327,15 @@
       "team_id": "f3myl5ugmj90wrl7",
       "team_name": "The Hot and Steamy Boys"
     },
+    "f3myl5ugmj90wrl7:02iug": {
+      "fantrax_id": "02iug",
+      "player_name": "Michael Wacha",
+      "primary_position": "SP",
+      "roster_position": "P",
+      "roster_status": "ACTIVE",
+      "team_id": "f3myl5ugmj90wrl7",
+      "team_name": "The Hot and Steamy Boys"
+    },
     "f3myl5ugmj90wrl7:03120": {
       "fantrax_id": "03120",
       "player_name": "Cody Bellinger",
@@ -3415,15 +3444,6 @@
       "team_id": "f3myl5ugmj90wrl7",
       "team_name": "The Hot and Steamy Boys"
     },
-    "f3myl5ugmj90wrl7:04eos": {
-      "fantrax_id": "04eos",
-      "player_name": "Joey Cantillo",
-      "primary_position": "RP",
-      "roster_position": "P",
-      "roster_status": "ACTIVE",
-      "team_id": "f3myl5ugmj90wrl7",
-      "team_name": "The Hot and Steamy Boys"
-    },
     "f3myl5ugmj90wrl7:04mn5": {
       "fantrax_id": "04mn5",
       "player_name": "Alec Bohm",
@@ -3510,7 +3530,7 @@
       "player_name": "Daniel Espino",
       "primary_position": "SP",
       "roster_position": "P",
-      "roster_status": "ACTIVE",
+      "roster_status": "MINORS",
       "team_id": "f3myl5ugmj90wrl7",
       "team_name": "The Hot and Steamy Boys"
     },
@@ -3538,6 +3558,15 @@
       "primary_position": "SS",
       "roster_position": "SS",
       "roster_status": "MINORS",
+      "team_id": "f3myl5ugmj90wrl7",
+      "team_name": "The Hot and Steamy Boys"
+    },
+    "f3myl5ugmj90wrl7:05r3a": {
+      "fantrax_id": "05r3a",
+      "player_name": "Brandon Young",
+      "primary_position": "SP",
+      "roster_position": "P",
+      "roster_status": "ACTIVE",
       "team_id": "f3myl5ugmj90wrl7",
       "team_name": "The Hot and Steamy Boys"
     },
@@ -3618,7 +3647,7 @@
       "player_name": "Ethan Salas",
       "primary_position": "C",
       "roster_position": "UT",
-      "roster_status": "ACTIVE",
+      "roster_status": "MINORS",
       "team_id": "f3myl5ugmj90wrl7",
       "team_name": "The Hot and Steamy Boys"
     },
@@ -3726,7 +3755,7 @@
       "player_name": "Sam Antonacci",
       "primary_position": "2B",
       "roster_position": "UT",
-      "roster_status": "MINORS",
+      "roster_status": "ACTIVE",
       "team_id": "f3myl5ugmj90wrl7",
       "team_name": "The Hot and Steamy Boys"
     },
@@ -4373,8 +4402,8 @@
       "fantrax_id": "02z0s",
       "player_name": "Aaron Judge",
       "primary_position": "RF",
-      "roster_position": "OF",
-      "roster_status": "INJURED_RESERVE",
+      "roster_position": "UT",
+      "roster_status": "ACTIVE",
       "team_id": "jk36oo1hmj90wrl7",
       "team_name": "Daddy Yankee"
     },
