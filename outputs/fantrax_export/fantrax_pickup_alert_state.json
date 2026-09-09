@@ -92,7 +92,8 @@
     "2026-09-05": true,
     "2026-09-06": true,
     "2026-09-07": true,
-    "2026-09-08": true
+    "2026-09-08": true,
+    "2026-09-09": true
   },
   "major_add_alerts": {
     "2026-06-08": {
@@ -3367,15 +3368,6 @@
       "team_id": "f3myl5ugmj90wrl7",
       "team_name": "The Hot and Steamy Boys"
     },
-    "f3myl5ugmj90wrl7:02iug": {
-      "fantrax_id": "02iug",
-      "player_name": "Michael Wacha",
-      "primary_position": "SP",
-      "roster_position": "P",
-      "roster_status": "ACTIVE",
-      "team_id": "f3myl5ugmj90wrl7",
-      "team_name": "The Hot and Steamy Boys"
-    },
     "f3myl5ugmj90wrl7:03120": {
       "fantrax_id": "03120",
       "player_name": "Cody Bellinger",
@@ -3565,12 +3557,30 @@
       "team_id": "f3myl5ugmj90wrl7",
       "team_name": "The Hot and Steamy Boys"
     },
+    "f3myl5ugmj90wrl7:04tlv": {
+      "fantrax_id": "04tlv",
+      "player_name": "Bryan Abreu",
+      "primary_position": "RP",
+      "roster_position": "P",
+      "roster_status": "ACTIVE",
+      "team_id": "f3myl5ugmj90wrl7",
+      "team_name": "The Hot and Steamy Boys"
+    },
     "f3myl5ugmj90wrl7:04ya2": {
       "fantrax_id": "04ya2",
       "player_name": "Daniel Espino",
       "primary_position": "SP",
       "roster_position": "P",
       "roster_status": "MINORS",
+      "team_id": "f3myl5ugmj90wrl7",
+      "team_name": "The Hot and Steamy Boys"
+    },
+    "f3myl5ugmj90wrl7:05161": {
+      "fantrax_id": "05161",
+      "player_name": "Dominic Canzone",
+      "primary_position": "RF",
+      "roster_position": "OF",
+      "roster_status": "ACTIVE",
       "team_id": "f3myl5ugmj90wrl7",
       "team_name": "The Hot and Steamy Boys"
     },
@@ -3768,7 +3778,7 @@
       "player_name": "Payton Tolle",
       "primary_position": "RP",
       "roster_position": "P",
-      "roster_status": "RESERVE",
+      "roster_status": "ACTIVE",
       "team_id": "f3myl5ugmj90wrl7",
       "team_name": "The Hot and Steamy Boys"
     },
