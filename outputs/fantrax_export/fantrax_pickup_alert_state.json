@@ -744,6 +744,16 @@
       "violation_alert_sent": false,
       "window_start": "2026-07-25"
     },
+    "6tnz8jgemj90wrl7:06af4": {
+      "demotion_alert_sent": false,
+      "eligible_date": "2026-09-30",
+      "fantrax_id": "06af4",
+      "player_name": "Carson Roccaforte",
+      "team_id": "6tnz8jgemj90wrl7",
+      "team_name": "Bobby and the NitWitts",
+      "violation_alert_sent": false,
+      "window_start": "2026-09-09"
+    },
     "6tnz8jgemj90wrl7:06y0k": {
       "demotion_alert_sent": false,
       "eligible_date": "2026-08-16",
@@ -783,6 +793,16 @@
       "team_name": "Ben the Hen",
       "violation_alert_sent": false,
       "window_start": "2026-08-29"
+    },
+    "aqfyadu2mj90wrl7:05r3i": {
+      "demotion_alert_sent": true,
+      "eligible_date": "2026-09-30",
+      "fantrax_id": "05r3i",
+      "player_name": "Andrew Painter",
+      "team_id": "aqfyadu2mj90wrl7",
+      "team_name": "Ben the Hen",
+      "violation_alert_sent": false,
+      "window_start": "2026-09-09"
     },
     "aqfyadu2mj90wrl7:05rb3": {
       "demotion_alert_sent": true,
@@ -2141,6 +2161,15 @@
       "team_id": "6tnz8jgemj90wrl7",
       "team_name": "Bobby and the NitWitts"
     },
+    "6tnz8jgemj90wrl7:06af4": {
+      "fantrax_id": "06af4",
+      "player_name": "Carson Roccaforte",
+      "primary_position": "CF",
+      "roster_position": "OF",
+      "roster_status": "MINORS",
+      "team_id": "6tnz8jgemj90wrl7",
+      "team_name": "Bobby and the NitWitts"
+    },
     "6tnz8jgemj90wrl7:06fzu": {
       "fantrax_id": "06fzu",
       "player_name": "Kazuma Okamoto",
@@ -2263,7 +2292,7 @@
       "player_name": "Zack Wheeler",
       "primary_position": "SP",
       "roster_position": "P",
-      "roster_status": "RESERVE",
+      "roster_status": "ACTIVE",
       "team_id": "aqfyadu2mj90wrl7",
       "team_name": "Ben the Hen"
     },
@@ -2469,8 +2498,8 @@
       "fantrax_id": "04ysv",
       "player_name": "Adael Amador",
       "primary_position": "2B",
-      "roster_position": "2B",
-      "roster_status": "MINORS",
+      "roster_position": "UT",
+      "roster_status": "ACTIVE",
       "team_id": "aqfyadu2mj90wrl7",
       "team_name": "Ben the Hen"
     },
@@ -2497,7 +2526,7 @@
       "player_name": "Andrew Painter",
       "primary_position": "SP",
       "roster_position": "P",
-      "roster_status": "ACTIVE",
+      "roster_status": "MINORS",
       "team_id": "aqfyadu2mj90wrl7",
       "team_name": "Ben the Hen"
     },
@@ -2641,7 +2670,7 @@
       "player_name": "Colt Emerson",
       "primary_position": "SS",
       "roster_position": "SS",
-      "roster_status": "MINORS",
+      "roster_status": "INJURED_RESERVE",
       "team_id": "aqfyadu2mj90wrl7",
       "team_name": "Ben the Hen"
     },
@@ -3572,15 +3601,6 @@
       "team_id": "f3myl5ugmj90wrl7",
       "team_name": "The Hot and Steamy Boys"
     },
-    "f3myl5ugmj90wrl7:05r3a": {
-      "fantrax_id": "05r3a",
-      "player_name": "Brandon Young",
-      "primary_position": "SP",
-      "roster_position": "P",
-      "roster_status": "ACTIVE",
-      "team_id": "f3myl5ugmj90wrl7",
-      "team_name": "The Hot and Steamy Boys"
-    },
     "f3myl5ugmj90wrl7:05rb0": {
       "fantrax_id": "05rb0",
       "player_name": "Jackson Jobe",
@@ -4505,15 +4525,6 @@
       "primary_position": "SP",
       "roster_position": "P",
       "roster_status": "ACTIVE",
-      "team_id": "jk36oo1hmj90wrl7",
-      "team_name": "Daddy Yankee"
-    },
-    "jk36oo1hmj90wrl7:04eud": {
-      "fantrax_id": "04eud",
-      "player_name": "Shane Drohan",
-      "primary_position": "SP",
-      "roster_position": "P",
-      "roster_status": "MINORS",
       "team_id": "jk36oo1hmj90wrl7",
       "team_name": "Daddy Yankee"
     },
