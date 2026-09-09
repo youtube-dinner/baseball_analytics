@@ -2396,15 +2396,6 @@
       "team_id": "aqfyadu2mj90wrl7",
       "team_name": "Ben the Hen"
     },
-    "aqfyadu2mj90wrl7:03yxh": {
-      "fantrax_id": "03yxh",
-      "player_name": "Cal Quantrill",
-      "primary_position": "SP",
-      "roster_position": "P",
-      "roster_status": "ACTIVE",
-      "team_id": "aqfyadu2mj90wrl7",
-      "team_name": "Ben the Hen"
-    },
     "aqfyadu2mj90wrl7:040b5": {
       "fantrax_id": "040b5",
       "player_name": "Randy Arozarena",
@@ -2438,6 +2429,15 @@
       "primary_position": "SP",
       "roster_position": "P",
       "roster_status": "INJURED_RESERVE",
+      "team_id": "aqfyadu2mj90wrl7",
+      "team_name": "Ben the Hen"
+    },
+    "aqfyadu2mj90wrl7:04eec": {
+      "fantrax_id": "04eec",
+      "player_name": "Nate Pearson",
+      "primary_position": "SP",
+      "roster_position": "P",
+      "roster_status": "ACTIVE",
       "team_id": "aqfyadu2mj90wrl7",
       "team_name": "Ben the Hen"
     },
