@@ -2273,7 +2273,7 @@ fantrax_id,name,mlb_team,primary_position,eligible_positions,league_status,stats
 06sj6,"Davis, Tague",(N/A),1B,"1B,UT,CI",FA,,,
 06qre,"Davis, Tyler",BOS,RP,P,FA,,,
 06qxg,"Davis, Tyler",CHW,RP,P,FA,,20898,e9f433fc-bdf1-4515-b43f-d314d25a840f
-066f4,"Davitt, Duncan",ATL,SP,P,FA,,20122,b7c4a4b3-5a90-4e52-9863-7d40446efa52
+066f4,"Davitt, Duncan",SF,SP,P,FA,,20122,b7c4a4b3-5a90-4e52-9863-7d40446efa52
 06igc,"Dawson, Caden",(N/A),CF,"OF,UT",FA,,,
 072dk,"Dawson, Logan",PHI,SS,"UT,SS,MI",FA,,,
 06quq,"Day, Brady",PHI,3B,"UT,3B,CI",FA,,,
@@ -2644,7 +2644,7 @@ fantrax_id,name,mlb_team,primary_position,eligible_positions,league_status,stats
 06zb0,"Driessen, Dylan",STL,RP,P,FA,,,
 0512b,"Driscoll, Logan",MIA,C,"C,UT",FA,,16220,bf179c54-a0e3-47d6-9381-88fd90a2d7f8
 06gif,"Driver, Jay",CLE,RP,P,FA,,,
-04eud,"Drohan, Shane",MIL,SP,P,WW,,14851,1ace87c5-9684-4575-9515-8cf7bb98bf45
+04eud,"Drohan, Shane",MIL,SP,P,FA,,14851,1ace87c5-9684-4575-9515-8cf7bb98bf45
 06ppu,"Dromboski, Ryan",PHI,SP,P,FA,,,
 05ua1,"Drost, Brody",(N/A),CF,"OF,UT",FA,,,
 06z5z,"Drullard, Jorge",BAL,2B,"2B,UT,MI",FA,,,
@@ -10514,7 +10514,7 @@ fantrax_id,name,mlb_team,primary_position,eligible_positions,league_status,stats
 078gz,"Yost, Hayden",SEA,RF,"OF,UT",FA,,21296,
 06y4f,"Yost, Jordan",DET,SS,"UT,SS,MI",FA,,20188,
 03aad,"Young, Alex",WSH,RP,P,FA,10414,13839,186d83c6-e87a-4bf3-a930-31d1ec4cea90
-05r3a,"Young, Brandon",BAL,SP,P,WW,,16949,623e9837-a580-43f3-a524-74342173fe67
+05r3a,"Young, Brandon",BAL,SP,P,FA,,16949,623e9837-a580-43f3-a524-74342173fe67
 05u2n,"Young, Carter",BAL,SS,"UT,3B,SS,CI,MI",FA,,16187,
 046y2,"Young, Chavez",(N/A),CF,"OF,UT",FA,,15850,5b956ef0-aba0-4ae8-adbc-61f74bcebcf1
 0425f,"Young, Christian",(N/A),RP,P,FA,,19208,
