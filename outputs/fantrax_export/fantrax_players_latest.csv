@@ -2405,7 +2405,7 @@ fantrax_id,name,mlb_team,primary_position,eligible_positions,league_status,stats
 05uei,"DeLauter, Chase",CLE,CF,"OF,UT",T,,17940,a5aa30a0-5081-419c-b43f-60dbc514a1c7
 06ahf,"DeLeo, Jake",(N/A),CF,"OF,UT",FA,,19126,
 05gs6,"DeLoach, Zach",(N/A),CF,"OF,UT",FA,11986,16748,fe1300a8-309f-4f9c-a28e-be24240bad27
-04y94,"DeLuca, Jonny",TB,CF,"OF,UT",FA,,18242,911b89ab-11fc-433f-9a4d-3befcd3dc471
+04y94,"DeLuca, Jonny",TB,CF,"OF,UT",T,,18242,911b89ab-11fc-433f-9a4d-3befcd3dc471
 06494,"DeLucia, Dylan",CLE,SP,P,FA,,18190,
 062ec,"DeMartini, Carson",PHI,3B,"UT,3B,SS,CI,MI",FA,,19573,
 06zlf,"DePino, Anthony",CHW,1B,"1B,UT,CI",FA,,,
@@ -7237,7 +7237,7 @@ fantrax_id,name,mlb_team,primary_position,eligible_positions,league_status,stats
 06dne,"Paz, Marcos",(N/A),SP,"1B,UT,CI,P",FA,,20229,
 06y02,"Pazos, Francisco",SEA,SP,P,FA,,,
 05ud5,"Pearson, Josh",(N/A),RF,"OF,UT",FA,,,
-04eec,"Pearson, Nate",KC,SP,P,T,10960,14792,f15abf11-e9c6-4f90-a16d-59a14176dff3
+04eec,"Pearson, Nate",KC,SP,P,WW,10960,14792,f15abf11-e9c6-4f90-a16d-59a14176dff3
 06ax6,"Peavyhouse, Shaddon",(N/A),RP,P,FA,,,
 060uf,"Peck, John",DET,SS,"UT,3B,SS,CI,MI",FA,,20470,99818c81-a7fd-4ba7-98d4-978b4c233729
 06f14,"Pecko, Ethan",HOU,SP,P,FA,,19813,fb2bb532-e3ec-4eb0-a7cf-e098e03f5c69
@@ -7689,7 +7689,7 @@ fantrax_id,name,mlb_team,primary_position,eligible_positions,league_status,stats
 078og,"Putnam, Tyler",COL,P,P,FA,,21106,
 062eb,"Pyne, Josh",(N/A),3B,"UT,3B,CI",FA,,,
 0657d,"Qin, Zack",SD,RP,P,FA,,19105,
-03yxh,"Quantrill, Cal",TEX,SP,P,WW,10573,14251,e8abdf47-b38a-44e6-8c6e-4b0bfbd482b0
+03yxh,"Quantrill, Cal",TEX,SP,P,FA,10573,14251,e8abdf47-b38a-44e6-8c6e-4b0bfbd482b0
 078ld,"Quatrani, Mark",SD,C,"C,UT",FA,,,
 078ku,"Queen, Wyatt",SEA,RP,P,FA,,,
 048vs,"Querecuto, Juniel",(N/A),3B,"UT,3B,CI",FA,10409,14549,512c35f8-0ed7-448b-a654-ad28842d9263
@@ -10056,7 +10056,7 @@ fantrax_id,name,mlb_team,primary_position,eligible_positions,league_status,stats
 06roq,"Vu, Kien",CIN,LF,"OF,UT",FA,,,
 06zrg,"Vucinovich, Hayden",MIL,SP,P,FA,,,
 05jql,"Vukovich, A.J.",ARI,LF,"OF,UT",FA,,16888,
-02iug,"Wacha, Michael",KC,SP,P,WW,9329,12457,db6ced3d-7838-4a7c-92a5-50d0b63dac3b
+02iug,"Wacha, Michael",KC,SP,P,FA,9329,12457,db6ced3d-7838-4a7c-92a5-50d0b63dac3b
 0780n,"Wachsmann, Ethan",MIN,SP,P,FA,,21148,
 0766b,"Waco, LJ",WSH,SP,P,FA,,,
 03qlh,"Waddell, Brandon",NYM,RP,P,FA,12076,14212,02a63222-ca50-46b8-b4a3-5c6c37076849
