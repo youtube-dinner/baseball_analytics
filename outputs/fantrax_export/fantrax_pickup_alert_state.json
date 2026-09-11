@@ -94,7 +94,8 @@
     "2026-09-07": true,
     "2026-09-08": true,
     "2026-09-09": true,
-    "2026-09-10": true
+    "2026-09-10": true,
+    "2026-09-11": true
   },
   "major_add_alerts": {
     "2026-06-08": {
@@ -5022,7 +5023,7 @@
       "player_name": "Luis Robert Jr.",
       "primary_position": "CF",
       "roster_position": "OF",
-      "roster_status": "ACTIVE",
+      "roster_status": "INJURED_RESERVE",
       "team_id": "k7c57nf4mj90wrl8",
       "team_name": "Hand Foot Mouth Disease Guys"
     },
@@ -5131,6 +5132,15 @@
       "primary_position": "2B",
       "roster_position": "UT",
       "roster_status": "INJURED_RESERVE",
+      "team_id": "k7c57nf4mj90wrl8",
+      "team_name": "Hand Foot Mouth Disease Guys"
+    },
+    "k7c57nf4mj90wrl8:05jpd": {
+      "fantrax_id": "05jpd",
+      "player_name": "Ian Seymour",
+      "primary_position": "RP",
+      "roster_position": "P",
+      "roster_status": "ACTIVE",
       "team_id": "k7c57nf4mj90wrl8",
       "team_name": "Hand Foot Mouth Disease Guys"
     },
