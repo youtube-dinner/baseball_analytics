@@ -2405,7 +2405,7 @@ fantrax_id,name,mlb_team,primary_position,eligible_positions,league_status,stats
 05uei,"DeLauter, Chase",CLE,CF,"OF,UT",T,,17940,a5aa30a0-5081-419c-b43f-60dbc514a1c7
 06ahf,"DeLeo, Jake",(N/A),CF,"OF,UT",FA,,19126,
 05gs6,"DeLoach, Zach",(N/A),CF,"OF,UT",FA,11986,16748,fe1300a8-309f-4f9c-a28e-be24240bad27
-04y94,"DeLuca, Jonny",TB,CF,"OF,UT",WW,,18242,911b89ab-11fc-433f-9a4d-3befcd3dc471
+04y94,"DeLuca, Jonny",TB,CF,"OF,UT",FA,,18242,911b89ab-11fc-433f-9a4d-3befcd3dc471
 06494,"DeLucia, Dylan",CLE,SP,P,FA,,18190,
 062ec,"DeMartini, Carson",PHI,3B,"UT,3B,SS,CI,MI",FA,,19573,
 06zlf,"DePino, Anthony",CHW,1B,"1B,UT,CI",FA,,,
@@ -7237,7 +7237,7 @@ fantrax_id,name,mlb_team,primary_position,eligible_positions,league_status,stats
 06dne,"Paz, Marcos",(N/A),SP,"1B,UT,CI,P",FA,,20229,
 06y02,"Pazos, Francisco",SEA,SP,P,FA,,,
 05ud5,"Pearson, Josh",(N/A),RF,"OF,UT",FA,,,
-04eec,"Pearson, Nate",KC,SP,P,WW,10960,14792,f15abf11-e9c6-4f90-a16d-59a14176dff3
+04eec,"Pearson, Nate",KC,SP,P,FA,10960,14792,f15abf11-e9c6-4f90-a16d-59a14176dff3
 06ax6,"Peavyhouse, Shaddon",(N/A),RP,P,FA,,,
 060uf,"Peck, John",DET,SS,"UT,3B,SS,CI,MI",FA,,20470,99818c81-a7fd-4ba7-98d4-978b4c233729
 06f14,"Pecko, Ethan",HOU,SP,P,FA,,19813,fb2bb532-e3ec-4eb0-a7cf-e098e03f5c69
@@ -8821,7 +8821,7 @@ fantrax_id,name,mlb_team,primary_position,eligible_positions,league_status,stats
 06yuz,"Seward, Dylan",(N/A),SS,"UT,SS,MI",FA,,,
 05jrw,"Seymour, Bob",(N/A),1B,"1B,UT,CI",FA,,16853,6a6d87c2-5d46-4d12-9242-1a7f5588c38f
 05jqk,"Seymour, Carson",SF,RP,P,FA,,16809,294840a7-54cc-4a25-bcc5-13d422c032a9
-05jpd,"Seymour, Ian",TB,RP,P,FA,,16753,ef36132f-e146-4890-b8a3-47d554e99a62
+05jpd,"Seymour, Ian",TB,RP,P,T,,16753,ef36132f-e146-4890-b8a3-47d554e99a62
 06c29,"Sha, Tzu-Chen",ATH,SP,P,FA,,19064,
 06fz7,"Shade, Colby",MIA,CF,"OF,UT",FA,,,
 06qpy,"Shafer, Jacob",ATL,SP,P,FA,,,
