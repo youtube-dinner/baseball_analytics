@@ -669,6 +669,7 @@
       },
       "f3myl5ugmj90wrl7": {
         "major_add_limit": 10,
+        "none_remaining": true,
         "overage_alerted": 0
       },
       "hd9hwe4mmj90wrl7": {
@@ -3570,15 +3571,6 @@
       "team_id": "f3myl5ugmj90wrl7",
       "team_name": "The Hot and Steamy Boys"
     },
-    "f3myl5ugmj90wrl7:04tlv": {
-      "fantrax_id": "04tlv",
-      "player_name": "Bryan Abreu",
-      "primary_position": "RP",
-      "roster_position": "P",
-      "roster_status": "ACTIVE",
-      "team_id": "f3myl5ugmj90wrl7",
-      "team_name": "The Hot and Steamy Boys"
-    },
     "f3myl5ugmj90wrl7:04ya2": {
       "fantrax_id": "04ya2",
       "player_name": "Daniel Espino",
@@ -3602,6 +3594,15 @@
       "player_name": "Dillon Dingler",
       "primary_position": "C",
       "roster_position": "C",
+      "roster_status": "ACTIVE",
+      "team_id": "f3myl5ugmj90wrl7",
+      "team_name": "The Hot and Steamy Boys"
+    },
+    "f3myl5ugmj90wrl7:05joq": {
+      "fantrax_id": "05joq",
+      "player_name": "Connor Prielipp",
+      "primary_position": "SP",
+      "roster_position": "P",
       "roster_status": "ACTIVE",
       "team_id": "f3myl5ugmj90wrl7",
       "team_name": "The Hot and Steamy Boys"
