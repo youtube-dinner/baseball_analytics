@@ -1100,6 +1100,16 @@
       "violation_alert_sent": false,
       "window_start": "2026-09-05"
     },
+    "f3myl5ugmj90wrl7:05xod": {
+      "demotion_alert_sent": true,
+      "eligible_date": "2026-10-04",
+      "fantrax_id": "05xod",
+      "player_name": "Sean Burke",
+      "team_id": "f3myl5ugmj90wrl7",
+      "team_name": "The Hot and Steamy Boys",
+      "violation_alert_sent": false,
+      "window_start": "2026-09-13"
+    },
     "f3myl5ugmj90wrl7:05xu1": {
       "demotion_alert_sent": true,
       "eligible_date": "2026-07-14",
@@ -2893,7 +2903,7 @@
       "player_name": "Shea Langeliers",
       "primary_position": "C",
       "roster_position": "UT",
-      "roster_status": "INJURED_RESERVE",
+      "roster_status": "RESERVE",
       "team_id": "bw696uo5mj90wrl7",
       "team_name": "Cant Park Here"
     },
@@ -2901,15 +2911,6 @@
       "fantrax_id": "04pmq",
       "player_name": "Braxton Ashcraft",
       "primary_position": "RP",
-      "roster_position": "P",
-      "roster_status": "ACTIVE",
-      "team_id": "bw696uo5mj90wrl7",
-      "team_name": "Cant Park Here"
-    },
-    "bw696uo5mj90wrl7:04pxf": {
-      "fantrax_id": "04pxf",
-      "player_name": "Davis Martin",
-      "primary_position": "SP",
       "roster_position": "P",
       "roster_status": "INJURED_RESERVE",
       "team_id": "bw696uo5mj90wrl7",
@@ -3023,15 +3024,6 @@
       "team_id": "bw696uo5mj90wrl7",
       "team_name": "Cant Park Here"
     },
-    "bw696uo5mj90wrl7:05tce": {
-      "fantrax_id": "05tce",
-      "player_name": "Connor Norby",
-      "primary_position": "3B",
-      "roster_position": "1B",
-      "roster_status": "ACTIVE",
-      "team_id": "bw696uo5mj90wrl7",
-      "team_name": "Cant Park Here"
-    },
     "bw696uo5mj90wrl7:05udp": {
       "fantrax_id": "05udp",
       "player_name": "Elly De La Cruz",
@@ -3091,7 +3083,7 @@
       "player_name": "Justin Wrobleski",
       "primary_position": "RP",
       "roster_position": "P",
-      "roster_status": "INJURED_RESERVE",
+      "roster_status": "ACTIVE",
       "team_id": "bw696uo5mj90wrl7",
       "team_name": "Cant Park Here"
     },
@@ -3101,15 +3093,6 @@
       "primary_position": "SP",
       "roster_position": "P",
       "roster_status": "ACTIVE",
-      "team_id": "bw696uo5mj90wrl7",
-      "team_name": "Cant Park Here"
-    },
-    "bw696uo5mj90wrl7:05ydz": {
-      "fantrax_id": "05ydz",
-      "player_name": "Tristan Peters",
-      "primary_position": "LF",
-      "roster_position": "OF",
-      "roster_status": "RESERVE",
       "team_id": "bw696uo5mj90wrl7",
       "team_name": "Cant Park Here"
     },
@@ -3217,7 +3200,7 @@
       "player_name": "Kyle Karros",
       "primary_position": "3B",
       "roster_position": "CI",
-      "roster_status": "INJURED_RESERVE",
+      "roster_status": "ACTIVE",
       "team_id": "bw696uo5mj90wrl7",
       "team_name": "Cant Park Here"
     },
@@ -3667,7 +3650,7 @@
       "player_name": "Sean Burke",
       "primary_position": "SP",
       "roster_position": "P",
-      "roster_status": "ACTIVE",
+      "roster_status": "MINORS",
       "team_id": "f3myl5ugmj90wrl7",
       "team_name": "The Hot and Steamy Boys"
     },
@@ -3685,7 +3668,7 @@
       "player_name": "Emmet Sheehan",
       "primary_position": "SP",
       "roster_position": "P",
-      "roster_status": "MINORS",
+      "roster_status": "ACTIVE",
       "team_id": "f3myl5ugmj90wrl7",
       "team_name": "The Hot and Steamy Boys"
     },
