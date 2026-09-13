@@ -96,7 +96,8 @@
     "2026-09-09": true,
     "2026-09-10": true,
     "2026-09-11": true,
-    "2026-09-12": true
+    "2026-09-12": true,
+    "2026-09-13": true
   },
   "major_add_alerts": {
     "2026-06-08": {
@@ -2410,9 +2411,9 @@
       "team_id": "aqfyadu2mj90wrl7",
       "team_name": "Ben the Hen"
     },
-    "aqfyadu2mj90wrl7:03poo": {
-      "fantrax_id": "03poo",
-      "player_name": "Peter Lambert",
+    "aqfyadu2mj90wrl7:03yxh": {
+      "fantrax_id": "03yxh",
+      "player_name": "Cal Quantrill",
       "primary_position": "SP",
       "roster_position": "P",
       "roster_status": "ACTIVE",
@@ -3382,11 +3383,29 @@
       "team_id": "f3myl5ugmj90wrl7",
       "team_name": "The Hot and Steamy Boys"
     },
+    "f3myl5ugmj90wrl7:02n4s": {
+      "fantrax_id": "02n4s",
+      "player_name": "Matthew Boyd",
+      "primary_position": "SP",
+      "roster_position": "P",
+      "roster_status": "ACTIVE",
+      "team_id": "f3myl5ugmj90wrl7",
+      "team_name": "The Hot and Steamy Boys"
+    },
     "f3myl5ugmj90wrl7:03120": {
       "fantrax_id": "03120",
       "player_name": "Cody Bellinger",
       "primary_position": "LF",
       "roster_position": "OF",
+      "roster_status": "ACTIVE",
+      "team_id": "f3myl5ugmj90wrl7",
+      "team_name": "The Hot and Steamy Boys"
+    },
+    "f3myl5ugmj90wrl7:0316j": {
+      "fantrax_id": "0316j",
+      "player_name": "Nick Pivetta",
+      "primary_position": "SP",
+      "roster_position": "P",
       "roster_status": "ACTIVE",
       "team_id": "f3myl5ugmj90wrl7",
       "team_name": "The Hot and Steamy Boys"
@@ -3553,15 +3572,6 @@
       "team_id": "f3myl5ugmj90wrl7",
       "team_name": "The Hot and Steamy Boys"
     },
-    "f3myl5ugmj90wrl7:04pq4": {
-      "fantrax_id": "04pq4",
-      "player_name": "Kyle Bradish",
-      "primary_position": "SP",
-      "roster_position": "P",
-      "roster_status": "ACTIVE",
-      "team_id": "f3myl5ugmj90wrl7",
-      "team_name": "The Hot and Steamy Boys"
-    },
     "f3myl5ugmj90wrl7:04pst": {
       "fantrax_id": "04pst",
       "player_name": "Jarren Duran",
@@ -3594,15 +3604,6 @@
       "player_name": "Dillon Dingler",
       "primary_position": "C",
       "roster_position": "C",
-      "roster_status": "ACTIVE",
-      "team_id": "f3myl5ugmj90wrl7",
-      "team_name": "The Hot and Steamy Boys"
-    },
-    "f3myl5ugmj90wrl7:05joq": {
-      "fantrax_id": "05joq",
-      "player_name": "Connor Prielipp",
-      "primary_position": "SP",
-      "roster_position": "P",
       "roster_status": "ACTIVE",
       "team_id": "f3myl5ugmj90wrl7",
       "team_name": "The Hot and Steamy Boys"
