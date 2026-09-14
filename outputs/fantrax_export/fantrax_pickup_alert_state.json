@@ -1097,7 +1097,7 @@
       "player_name": "Chase DeLauter",
       "team_id": "f3myl5ugmj90wrl7",
       "team_name": "The Hot and Steamy Boys",
-      "violation_alert_sent": false,
+      "violation_alert_sent": true,
       "window_start": "2026-09-05"
     },
     "f3myl5ugmj90wrl7:05xod": {
@@ -1107,7 +1107,7 @@
       "player_name": "Sean Burke",
       "team_id": "f3myl5ugmj90wrl7",
       "team_name": "The Hot and Steamy Boys",
-      "violation_alert_sent": false,
+      "violation_alert_sent": true,
       "window_start": "2026-09-13"
     },
     "f3myl5ugmj90wrl7:05xu1": {
@@ -1122,13 +1122,13 @@
     },
     "f3myl5ugmj90wrl7:05y2l": {
       "demotion_alert_sent": true,
-      "eligible_date": "2026-08-25",
+      "eligible_date": "2026-10-04",
       "fantrax_id": "05y2l",
       "player_name": "Emmet Sheehan",
       "team_id": "f3myl5ugmj90wrl7",
       "team_name": "The Hot and Steamy Boys",
       "violation_alert_sent": false,
-      "window_start": "2026-08-03"
+      "window_start": "2026-09-13"
     },
     "f3myl5ugmj90wrl7:05ybr": {
       "demotion_alert_sent": true,
@@ -1152,13 +1152,13 @@
     },
     "f3myl5ugmj90wrl7:064zm": {
       "demotion_alert_sent": true,
-      "eligible_date": "2026-08-31",
+      "eligible_date": "2026-10-04",
       "fantrax_id": "064zm",
       "player_name": "Didier Fuentes",
       "team_id": "f3myl5ugmj90wrl7",
       "team_name": "The Hot and Steamy Boys",
       "violation_alert_sent": false,
-      "window_start": "2026-08-09"
+      "window_start": "2026-09-13"
     },
     "f3myl5ugmj90wrl7:066l0": {
       "demotion_alert_sent": false,
@@ -1192,13 +1192,13 @@
     },
     "f3myl5ugmj90wrl7:06plc": {
       "demotion_alert_sent": true,
-      "eligible_date": "2026-09-03",
+      "eligible_date": "2026-10-04",
       "fantrax_id": "06plc",
       "player_name": "Sam Antonacci",
       "team_id": "f3myl5ugmj90wrl7",
       "team_name": "The Hot and Steamy Boys",
       "violation_alert_sent": false,
-      "window_start": "2026-08-12"
+      "window_start": "2026-09-13"
     },
     "f3myl5ugmj90wrl7:06qxu": {
       "demotion_alert_sent": false,
@@ -1824,6 +1824,15 @@
       "primary_position": "3B",
       "roster_position": "UT",
       "roster_status": "ACTIVE",
+      "team_id": "6tnz8jgemj90wrl7",
+      "team_name": "Bobby and the NitWitts"
+    },
+    "6tnz8jgemj90wrl7:02xic": {
+      "fantrax_id": "02xic",
+      "player_name": "Teoscar Hernandez",
+      "primary_position": "RF",
+      "roster_position": "OF",
+      "roster_status": "RESERVE",
       "team_id": "6tnz8jgemj90wrl7",
       "team_name": "Bobby and the NitWitts"
     },
@@ -3366,29 +3375,11 @@
       "team_id": "f3myl5ugmj90wrl7",
       "team_name": "The Hot and Steamy Boys"
     },
-    "f3myl5ugmj90wrl7:02n4s": {
-      "fantrax_id": "02n4s",
-      "player_name": "Matthew Boyd",
-      "primary_position": "SP",
-      "roster_position": "P",
-      "roster_status": "ACTIVE",
-      "team_id": "f3myl5ugmj90wrl7",
-      "team_name": "The Hot and Steamy Boys"
-    },
     "f3myl5ugmj90wrl7:03120": {
       "fantrax_id": "03120",
       "player_name": "Cody Bellinger",
       "primary_position": "LF",
       "roster_position": "OF",
-      "roster_status": "ACTIVE",
-      "team_id": "f3myl5ugmj90wrl7",
-      "team_name": "The Hot and Steamy Boys"
-    },
-    "f3myl5ugmj90wrl7:0316j": {
-      "fantrax_id": "0316j",
-      "player_name": "Nick Pivetta",
-      "primary_position": "SP",
-      "roster_position": "P",
       "roster_status": "ACTIVE",
       "team_id": "f3myl5ugmj90wrl7",
       "team_name": "The Hot and Steamy Boys"
@@ -3573,15 +3564,6 @@
       "team_id": "f3myl5ugmj90wrl7",
       "team_name": "The Hot and Steamy Boys"
     },
-    "f3myl5ugmj90wrl7:05161": {
-      "fantrax_id": "05161",
-      "player_name": "Dominic Canzone",
-      "primary_position": "RF",
-      "roster_position": "OF",
-      "roster_status": "ACTIVE",
-      "team_id": "f3myl5ugmj90wrl7",
-      "team_name": "The Hot and Steamy Boys"
-    },
     "f3myl5ugmj90wrl7:05gx4": {
       "fantrax_id": "05gx4",
       "player_name": "Dillon Dingler",
@@ -3640,8 +3622,8 @@
       "fantrax_id": "05uei",
       "player_name": "Chase DeLauter",
       "primary_position": "CF",
-      "roster_position": "OF",
-      "roster_status": "MINORS",
+      "roster_position": "UT",
+      "roster_status": "ACTIVE",
       "team_id": "f3myl5ugmj90wrl7",
       "team_name": "The Hot and Steamy Boys"
     },
@@ -3650,7 +3632,7 @@
       "player_name": "Sean Burke",
       "primary_position": "SP",
       "roster_position": "P",
-      "roster_status": "MINORS",
+      "roster_status": "ACTIVE",
       "team_id": "f3myl5ugmj90wrl7",
       "team_name": "The Hot and Steamy Boys"
     },
@@ -3668,7 +3650,7 @@
       "player_name": "Emmet Sheehan",
       "primary_position": "SP",
       "roster_position": "P",
-      "roster_status": "ACTIVE",
+      "roster_status": "MINORS",
       "team_id": "f3myl5ugmj90wrl7",
       "team_name": "The Hot and Steamy Boys"
     },
@@ -3722,7 +3704,7 @@
       "player_name": "Didier Fuentes",
       "primary_position": "SP",
       "roster_position": "P",
-      "roster_status": "ACTIVE",
+      "roster_status": "MINORS",
       "team_id": "f3myl5ugmj90wrl7",
       "team_name": "The Hot and Steamy Boys"
     },
@@ -3794,7 +3776,7 @@
       "player_name": "Sam Antonacci",
       "primary_position": "2B",
       "roster_position": "UT",
-      "roster_status": "ACTIVE",
+      "roster_status": "MINORS",
       "team_id": "f3myl5ugmj90wrl7",
       "team_name": "The Hot and Steamy Boys"
     },
