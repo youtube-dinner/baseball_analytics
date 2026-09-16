@@ -1354,7 +1354,7 @@ fantrax_id,name,mlb_team,primary_position,eligible_positions,league_status,stats
 06rl5,"Caicuto, Luis",PHI,C,"C,UT",FA,,,
 072cv,"Cain, Brandon",PIT,RP,P,FA,,,
 06pg0,"Cain, Tegan",PHI,RP,P,FA,,,
-0513m,"Cairo, Christian",PHI,3B,"OF,2B,UT,3B,SS,CI,MI",FA,,16132,708e8f11-df9a-4a1a-bc0a-6aea99d024ea
+0513m,"Cairo, Christian",NYM,3B,"OF,2B,UT,3B,SS,CI,MI",FA,,16132,708e8f11-df9a-4a1a-bc0a-6aea99d024ea
 06z9a,"Cairone, Frank",MIL,SP,P,FA,,20354,
 05jsg,"Caissie, Owen",MIA,RF,"OF,UT",T,,16779,0a6bc8f3-2006-4c4d-bd26-170840a54748
 05js2,"Calabrese, David",TOR,LF,"OF,UT",FA,,16739,
@@ -2987,6 +2987,7 @@ fantrax_id,name,mlb_team,primary_position,eligible_positions,league_status,stats
 06hhe,"Fenlong, Connor",DET,SP,P,FA,,,
 064n4,"Fergus, Cade",(N/A),CF,"OF,UT",FA,,,
 043r7,"Ferguson, Caleb",STL,RP,P,FA,11036,15217,d5c0ed32-abeb-4907-8bbf-5e96ef35592b
+079zt,"Ferguson, George",(N/A),3B,"UT,3B,P,CI",WW,,,
 05uaf,"Ferguson, Max",BOS,2B,"OF,2B,UT,MI",FA,,17432,8c4963cb-3f36-4b11-aa75-0aee6695baf8
 03qlm,"Ferguson, Tyler",CHC,RP,P,FA,,19462,bafd2cd8-d9e5-41f4-a2eb-05ad23e78dba
 072p5,"Fermin, Albert",HOU,SS,"UT,SS,MI",T,,20608,
@@ -3802,7 +3803,7 @@ fantrax_id,name,mlb_team,primary_position,eligible_positions,league_status,stats
 04n8x,"Groshans, Jordan",ATL,3B,"UT,3B,CI",FA,11405,15425,f330022b-0b8a-4da2-bbd3-68e0d0396b77
 01seb,"Grossman, Robbie",(N/A),RF,"OF,UT",FA,9378,10503,962bf98a-22a3-4958-b296-f569bfd7407f
 06gul,"Grosz, Josh",ARI,SP,P,FA,,20427,
-04pmk,"Grove, Michael",TB,RP,P,FA,11332,15507,71030153-fc1d-4d95-97c9-bad577a41b6c
+04pmk,"Grove, Michael",ATL,RP,P,FA,11332,15507,71030153-fc1d-4d95-97c9-bad577a41b6c
 077nb,"Grulkowski, Tyson",ATL,SP,P,FA,,,
 02c0c,"Gsellman, Robert",(N/A),RP,P,FA,10199,13784,a95d91c3-2351-4a3a-8d74-c8e34da329dd
 06rr9,"Gu Lin, Ruei Yang",(N/A),SP,P,FA,,20750,
