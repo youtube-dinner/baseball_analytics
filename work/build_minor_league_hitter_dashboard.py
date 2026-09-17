@@ -556,7 +556,11 @@ def add_projection_fields(df):
         ]
     ].drop_duplicates(["PlayerId", "Projection level"])
     out = out.merge(projections, how="left", on="PlayerId")
-    is_anchor = out["Level"].eq(out["Projection level"])
+    # The raw Fangraphs level uses DSL/VSL while the dashboard's normalized
+    # League Level uses R. Match against the normalized field so international
+    # rookie projections are not silently dropped.
+    dashboard_level = out["League Level"] if "League Level" in out.columns else out["Level"]
+    is_anchor = dashboard_level.eq(out["Projection level"])
     out["Projection MLB %"] = out["History: made MLB"].where(is_anchor) * 100
     out["Projection MLB percentile"] = out["Made MLB percentile"].where(is_anchor)
     out["Projection All-Star %"] = out["History: top-20 age 27-30"].where(is_anchor) * 100
