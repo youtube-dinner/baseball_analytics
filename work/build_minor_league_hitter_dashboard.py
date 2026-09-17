@@ -439,6 +439,105 @@ def add_player_history_fields(df, role):
     return out.drop(columns=["MLB Debut Year"], errors="ignore")
 
 
+def weighted_mean(values, weights):
+    values = pd.to_numeric(values, errors="coerce")
+    weights = pd.to_numeric(weights, errors="coerce")
+    valid = values.notna() & weights.notna() & weights.gt(0)
+    if not valid.any():
+        return values.mean()
+    return (values[valid] * weights[valid]).sum() / weights[valid].sum()
+
+
+def consolidate_hitter_same_level(df):
+    """Combine traded/multi-league hitter stints occurring at the same level."""
+    if not {"PlayerId", "League Level"}.issubset(df.columns):
+        return df
+    sum_cols = {
+        "G", "AB", "PA", "H", "1B", "2B", "3B", "HR", "R", "RBI", "BB", "IBB",
+        "SO", "HBP", "SF", "SH", "GDP", "SB", "CS", "PA_advanced", "wSB", "wRC",
+        "wRAA", "PA_batted", "Balls", "Strikes", "Pitches", "FGPts_est", "Estimated BIP",
+        "Estimated FB",
+    }
+    non_metric = {
+        "Player Name", "PlayerId", "Team", "Level", "Highest League", "Age", "Source Report",
+        "Source League ID", "Level_advanced", "Source Report_advanced", "Level_batted",
+        "Source Report_batted", "League Name", "League Level", "Fantasy Points Formula",
+        "Baseline Source Year", "Baseline Scope",
+    }
+    rows = []
+    for _, group in df.groupby(["PlayerId", "League Level"], sort=False, dropna=False):
+        if len(group) == 1:
+            rows.append(group.iloc[0].copy())
+            continue
+        workload = pd.to_numeric(group.get("PA"), errors="coerce").fillna(0)
+        row = group.loc[workload.idxmax()].copy()
+        for col in sum_cols.intersection(group.columns):
+            row[col] = pd.to_numeric(group[col], errors="coerce").sum(min_count=1)
+        for col in group.select_dtypes(include="number").columns:
+            if col in sum_cols or col in non_metric:
+                continue
+            weights = workload
+            if col in {"LD%", "GB%", "FB%", "BABIP_batted", "Pull%", "Cent%", "Oppo%"}:
+                weights = pd.to_numeric(group.get("PA_batted"), errors="coerce").fillna(0)
+            elif col in {"IFFB%", "HR/FB%", "HR_FB_pct"}:
+                weights = pd.to_numeric(group.get("Estimated FB"), errors="coerce").fillna(0)
+            elif col == "SwStr%":
+                weights = pd.to_numeric(group.get("Pitches"), errors="coerce").fillna(0)
+            row[col] = weighted_mean(group[col], weights)
+        for col in ["Team", "League Name"]:
+            if col in group:
+                values = [str(value) for value in group[col].dropna().unique() if str(value)]
+                row[col] = " / ".join(values)
+        if "Highest League" in group:
+            row["Highest League"] = "Yes" if group["Highest League"].astype(str).eq("Yes").any() else "No"
+        ab, pa, games = (float(row.get(col, 0) or 0) for col in ["AB", "PA", "G"])
+        hits = float(row.get("H", 0) or 0)
+        walks = float(row.get("BB", 0) or 0)
+        strikeouts = float(row.get("SO", 0) or 0)
+        hbp = float(row.get("HBP", 0) or 0)
+        sf = float(row.get("SF", 0) or 0)
+        singles = float(row.get("1B", 0) or 0)
+        doubles = float(row.get("2B", 0) or 0)
+        triples = float(row.get("3B", 0) or 0)
+        homers = float(row.get("HR", 0) or 0)
+        avg = hits / ab if ab else math.nan
+        slg = (singles + 2 * doubles + 3 * triples + 4 * homers) / ab if ab else math.nan
+        obp_den = ab + walks + hbp + sf
+        obp = (hits + walks + hbp) / obp_den if obp_den else math.nan
+        for col in ["AVG", "AVG_advanced", "BA"]:
+            if col in group:
+                row[col] = avg
+        if "OBP_advanced" in group:
+            row["OBP_advanced"] = obp
+        if "OBP" in group:
+            row["OBP"] = obp
+        for col in ["SLG", "SLP"]:
+            if col in group:
+                row[col] = slg
+        for col in ["OPS_advanced", "OPS"]:
+            if col in group:
+                row[col] = obp + slg
+        if "ISO" in group:
+            row["ISO"] = slg - avg
+        for col in ["BB%", "BB_pct"]:
+            if col in group:
+                row[col] = walks / pa if pa else math.nan
+        for col in ["K%", "K_pct"]:
+            if col in group:
+                row[col] = strikeouts / pa if pa else math.nan
+        for col in ["BB/K", "BB_K_ratio"]:
+            if col in group:
+                row[col] = walks / strikeouts if strikeouts else math.nan
+        if "FGPts_per_game" in group:
+            row["FGPts_per_game"] = float(row.get("FGPts_est", 0) or 0) / games if games else math.nan
+        if "AB_per_game" in group:
+            row["AB_per_game"] = ab / games if games else math.nan
+        if {"GB%", "FB%"}.issubset(group.columns) and pd.notna(row.get("FB%")):
+            row["GB/FB"] = row["GB%"] / row["FB%"] if row["FB%"] else math.nan
+        rows.append(row)
+    return pd.DataFrame(rows).reindex(columns=df.columns)
+
+
 def clean_number(value, decimals=None):
     if pd.isna(value):
         return ""
@@ -583,6 +682,7 @@ def add_projection_fields(df):
 def load_dashboard_data():
     df = pd.read_csv(SOURCE)
     df = add_fantasy_roster_column(df)
+    df = consolidate_hitter_same_level(df)
     df = add_player_history_fields(df, "Hitter")
     df = add_projection_fields(df)
     overall = format_dashboard_frame(df, OVERALL_COLUMN_MAP, ["5 Tool+", "wRC+", "FG/G+"])
