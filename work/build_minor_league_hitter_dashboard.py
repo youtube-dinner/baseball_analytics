@@ -16,6 +16,7 @@ PITCHER_DATA_DIR = ROOT / "outputs" / "minor_league_pitcher_stars" / "2026"
 PITCHER_SOURCE = PITCHER_DATA_DIR / "minor_league_pitchers_2026_plus_vs_combined_baseline.csv"
 PITCHER_DASHBOARD_CSV = PITCHER_DATA_DIR / "minor_league_pitcher_analytics_dashboard.csv"
 OUT = ROOT / "outputs" / "Minor_League_Hitter_Analytics.html"
+PROJECTION_LEADERBOARD = ROOT / "outputs" / "mlb_projection_modeling" / "prospect_history_v1" / "hitter_current_leaderboard.csv"
 FANTRAX_PLAYERS = ROOT / "outputs" / "fantrax_export" / "fantrax_players_latest.csv"
 FANTRAX_ROSTERS = ROOT / "outputs" / "fantrax_export" / "fantrax_rosters_latest.csv"
 MY_FANTASY_TEAM = "Bobby and the NitWitts"
@@ -43,6 +44,10 @@ BASE_COLUMN_MAP = {
     "Draft Class": "Draft Class",
     "G": "G",
     "FGPts_per_game": "FP/G",
+    "Projection MLB %": "MLB Projection %",
+    "Projection MLB percentile": "MLB Projection Percentile",
+    "Projection All-Star %": "All-Star Projection %",
+    "Projection All-Star percentile": "All-Star Projection Percentile",
     "AB_per_game": "AB/G",
     "Age_Plus": "Age+",
     "FGPts_per_game_Plus": "FG/G+",
@@ -259,6 +264,12 @@ RATE_COLUMNS = [
     "Weak Contact",
 ]
 ONE_DECIMAL_COLUMNS = HEAT_COLUMNS + PITCHER_HEAT_COLUMNS + ["FP/G", "AB/G", "IP/G", "Est FB", "IP"]
+ONE_DECIMAL_COLUMNS += [
+    "MLB Projection %",
+    "MLB Projection Percentile",
+    "All-Star Projection %",
+    "All-Star Projection Percentile",
+]
 ZERO_DECIMAL_COLUMNS = [
     "Age",
     "G",
@@ -509,10 +520,64 @@ def format_dashboard_frame(df, column_map, sort_cols):
     return out
 
 
+def add_projection_fields(df):
+    """Attach canonical history-model scores to the player's highest qualifying 2026 level row."""
+    out = df.copy()
+    for col in [
+        "Projection MLB %",
+        "Projection MLB percentile",
+        "Projection All-Star %",
+        "Projection All-Star percentile",
+    ]:
+        out[col] = pd.NA
+    if not PROJECTION_LEADERBOARD.exists() or "PlayerId" not in out.columns:
+        return out
+    projections = pd.read_csv(PROJECTION_LEADERBOARD, low_memory=False)
+    projections = projections.rename(columns={"playerid": "PlayerId"})
+    projections["PlayerId"] = projections["PlayerId"].astype("string")
+    out["PlayerId"] = out["PlayerId"].astype("string")
+    level_map = {
+        "International Rookie": "R",
+        "Complex": "CPX",
+        "A": "A",
+        "A+": "A+",
+        "AA": "AA",
+        "AAA": "AAA",
+    }
+    projections["Projection level"] = projections["Highest level"].map(level_map)
+    projections = projections[
+        [
+            "PlayerId",
+            "Projection level",
+            "History: made MLB",
+            "Made MLB percentile",
+            "History: top-20 age 27-30",
+            "Top-20 percentile",
+        ]
+    ].drop_duplicates(["PlayerId", "Projection level"])
+    out = out.merge(projections, how="left", on="PlayerId")
+    is_anchor = out["Level"].eq(out["Projection level"])
+    out["Projection MLB %"] = out["History: made MLB"].where(is_anchor) * 100
+    out["Projection MLB percentile"] = out["Made MLB percentile"].where(is_anchor)
+    out["Projection All-Star %"] = out["History: top-20 age 27-30"].where(is_anchor) * 100
+    out["Projection All-Star percentile"] = out["Top-20 percentile"].where(is_anchor)
+    return out.drop(
+        columns=[
+            "Projection level",
+            "History: made MLB",
+            "Made MLB percentile",
+            "History: top-20 age 27-30",
+            "Top-20 percentile",
+        ],
+        errors="ignore",
+    )
+
+
 def load_dashboard_data():
     df = pd.read_csv(SOURCE)
     df = add_fantasy_roster_column(df)
     df = add_recent_draft_class(df)
+    df = add_projection_fields(df)
     overall = format_dashboard_frame(df, OVERALL_COLUMN_MAP, ["5 Tool+", "wRC+", "FG/G+"])
     promotion_players = build_promotion_tracker(df)
     promotion_column_map = {}
@@ -795,6 +860,7 @@ def main():
 <body>
   <header>
     <h1>Minor League Analytics</h1>
+    <div class="muted">Projection % = modeled probability of the outcome; percentile = historical score rank for the player's current level.</div>
     <nav class="tabs" id="tabs"></nav>
   </header>
   <main>
