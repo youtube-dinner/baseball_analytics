@@ -17,21 +17,12 @@ PITCHER_SOURCE = PITCHER_DATA_DIR / "minor_league_pitchers_2026_plus_vs_combined
 PITCHER_DASHBOARD_CSV = PITCHER_DATA_DIR / "minor_league_pitcher_analytics_dashboard.csv"
 OUT = ROOT / "outputs" / "Minor_League_Hitter_Analytics.html"
 PROJECTION_LEADERBOARD = ROOT / "outputs" / "mlb_projection_modeling" / "prospect_history_v1" / "hitter_current_level_projections.csv"
+MODEL_DATA_DIR = ROOT / "outputs" / "mlb_projection_modeling" / "model_suite_v1"
+PROJECTION_DATA_DIR = ROOT / "outputs" / "mlb_projection_modeling" / "prospect_history_v1"
 FANTRAX_PLAYERS = ROOT / "outputs" / "fantrax_export" / "fantrax_players_latest.csv"
 FANTRAX_ROSTERS = ROOT / "outputs" / "fantrax_export" / "fantrax_rosters_latest.csv"
 MY_FANTASY_TEAM = "Bobby and the NitWitts"
 LEVEL_ORDER = {"R": 0, "CPX": 1, "A": 2, "A+": 3, "AA": 4, "AAA": 5}
-RECENT_DRAFT_CLASS = 2026
-RECENT_DRAFT_PLAYERS = {
-    "Ace Reese",
-    "Vahn Lackey",
-    "Roch Cholowsky",
-    "Tyler Bell",
-    "Grady Emerson",
-    "Jackson Flora",
-    "Drew Burress",
-    "Derek Curiel",
-}
 
 BASE_COLUMN_MAP = {
     "Player Name": "Player",
@@ -41,7 +32,8 @@ BASE_COLUMN_MAP = {
     "League Level": "Level",
     "Highest League": "Highest League",
     "Age": "Age",
-    "Draft Class": "Draft Class",
+    "Debut Year": "Debut Year",
+    "Reached MLB": "Reached MLB",
     "G": "G",
     "FGPts_per_game": "FP/G",
     "Projection MLB %": "MLB Projection %",
@@ -139,7 +131,8 @@ PITCHER_COLUMN_MAP = {
     "League Level": "Level",
     "Highest League": "Highest League",
     "Age": "Age",
-    "Draft Class": "Draft Class",
+    "Debut Year": "Debut Year",
+    "Reached MLB": "Reached MLB",
     "G": "G",
     "FGPts_per_game": "FP/G",
     "IP_per_game": "IP/G",
@@ -272,6 +265,7 @@ ONE_DECIMAL_COLUMNS += [
 ]
 ZERO_DECIMAL_COLUMNS = [
     "Age",
+    "Debut Year",
     "G",
     "AB",
     "H",
@@ -408,38 +402,41 @@ def add_fantasy_roster_column(df):
     return out
 
 
-def add_recent_draft_class(df):
-    recent_draft_keys = {
-        key
-        for player_name in RECENT_DRAFT_PLAYERS
-        for key in name_keys(player_name)
-    }
+def add_player_history_fields(df, role):
+    """Add first recorded MiLB season and whether the player has reached MLB."""
     out = df.copy()
-    out["Draft Class"] = out["Player Name"].map(
-        lambda player_name: (
-            RECENT_DRAFT_CLASS
-            if any(key in recent_draft_keys for key in name_keys(player_name))
-            else ""
+    metadata_path = PROJECTION_DATA_DIR / f"{role.lower()}_player_history_metadata.csv"
+    tier_path = MODEL_DATA_DIR / f"{role.lower()}_tier_model_data.pkl"
+    if tier_path.exists():
+        tier = pd.read_pickle(tier_path)
+        tier["season"] = pd.to_numeric(tier["season"], errors="coerce")
+        first_mlb_col = next(
+            (c for c in ["first_mlb_season", "first_mlb_season_y", "first_mlb_season_x"] if c in tier),
+            None,
         )
-    )
-    return out
-
-
-def add_recent_draft_class(df):
-    recent_draft_keys = {
-        key
-        for player_name in RECENT_DRAFT_PLAYERS
-        for key in name_keys(player_name)
-    }
-    out = df.copy()
-    out["Draft Class"] = out["Player Name"].map(
-        lambda player_name: (
-            RECENT_DRAFT_CLASS
-            if any(key in recent_draft_keys for key in name_keys(player_name))
-            else ""
-        )
-    )
-    return out
+        grouped = tier.groupby("playerid", as_index=False).agg(**{"Debut Year": ("season", "min")})
+        if first_mlb_col:
+            mlb = tier.groupby("playerid", as_index=False)[first_mlb_col].min().rename(
+                columns={first_mlb_col: "MLB Debut Year"}
+            )
+            grouped = grouped.merge(mlb, on="playerid", how="left")
+        else:
+            grouped["MLB Debut Year"] = pd.NA
+        grouped = grouped.rename(columns={"playerid": "PlayerId"})
+        metadata_path.parent.mkdir(parents=True, exist_ok=True)
+        grouped.to_csv(metadata_path, index=False)
+    elif metadata_path.exists():
+        grouped = pd.read_csv(metadata_path, low_memory=False)
+    else:
+        grouped = pd.DataFrame(columns=["PlayerId", "Debut Year", "MLB Debut Year"])
+    grouped["PlayerId"] = grouped["PlayerId"].astype("string")
+    out["PlayerId"] = out["PlayerId"].astype("string")
+    out = out.merge(grouped, on="PlayerId", how="left")
+    # A current player absent from the historical model tables first appears
+    # in the 2026 dashboard source, so 2026 is the earliest record we have.
+    out["Debut Year"] = pd.to_numeric(out["Debut Year"], errors="coerce").fillna(2026)
+    out["Reached MLB"] = out["MLB Debut Year"].notna().map({True: "Yes", False: "No"})
+    return out.drop(columns=["MLB Debut Year"], errors="ignore")
 
 
 def clean_number(value, decimals=None):
@@ -586,7 +583,7 @@ def add_projection_fields(df):
 def load_dashboard_data():
     df = pd.read_csv(SOURCE)
     df = add_fantasy_roster_column(df)
-    df = add_recent_draft_class(df)
+    df = add_player_history_fields(df, "Hitter")
     df = add_projection_fields(df)
     overall = format_dashboard_frame(df, OVERALL_COLUMN_MAP, ["5 Tool+", "wRC+", "FG/G+"])
     promotion_players = build_promotion_tracker(df)
@@ -611,7 +608,7 @@ def load_dashboard_data():
             "columns": list(overall.columns),
             "rows": overall.to_dict(orient="records"),
             "defaultSort": {"column": "5 Tool+", "dir": "desc"},
-            "defaultFilters": [{"column": "AB", "op": ">=", "value": "50", "includeRecentDraft": True}],
+            "defaultFilters": [{"column": "AB", "op": ">=", "value": "50"}],
         },
         "Batter Promotion Tracker": {
             "columns": list(promotion_view.columns),
@@ -632,7 +629,7 @@ def load_dashboard_data():
     if PITCHER_SOURCE.exists():
         pitchers = pd.read_csv(PITCHER_SOURCE)
         pitchers = add_fantasy_roster_column(pitchers)
-        pitchers = add_recent_draft_class(pitchers)
+        pitchers = add_player_history_fields(pitchers, "Pitcher")
         pitcher_column_map = existing_column_map(pitchers, PITCHER_COLUMN_MAP)
         pitcher_overall = format_dashboard_frame(
             pitchers,
@@ -877,8 +874,12 @@ def main():
     <div class="toolbar">
       <input id="search" placeholder="Filter players or values">
       <label class="toggle-control">
-        <input id="exclude-recent-draft" type="checkbox" checked>
-        Exclude 2026 Draft Class
+        <input id="exclude-mlb" type="checkbox" checked>
+        Exclude players who reached MLB
+      </label>
+      <label class="toggle-control">
+        <input id="highest-level-only" type="checkbox" checked>
+        Highest level only
       </label>
       <span class="muted" id="count"></span>
     </div>
@@ -892,7 +893,8 @@ def main():
     const tabs = document.getElementById("tabs");
     const tableHost = document.getElementById("table");
     const search = document.getElementById("search");
-    const excludeRecentDraft = document.getElementById("exclude-recent-draft");
+    const excludeMlb = document.getElementById("exclude-mlb");
+    const highestLevelOnly = document.getElementById("highest-level-only");
     const count = document.getElementById("count");
     const filtersHost = document.getElementById("filters");
     const addFilterButton = document.getElementById("add-filter");
@@ -1004,7 +1006,6 @@ def main():
     function matchesColumnFilters(row) {{
       return columnFilters.every(filter => {{
         if (!filter.column || filter.value === "") return true;
-        if (filter.includeRecentDraft && String(row["Draft Class"] ?? "") === "{RECENT_DRAFT_CLASS}") return true;
         const raw = row[filter.column];
         const op = filter.op;
         if (["=", "!="].includes(op)) {{
@@ -1028,8 +1029,11 @@ def main():
       let out = filter
         ? rows.filter(row => Object.values(row).some(value => String(value).toLowerCase().includes(filter)))
         : [...rows];
-      if (excludeRecentDraft.checked) {{
-        out = out.filter(row => String(row["Draft Class"] ?? "") !== "{RECENT_DRAFT_CLASS}");
+      if (excludeMlb.checked) {{
+        out = out.filter(row => String(row["Reached MLB"] ?? "No") !== "Yes");
+      }}
+      if (highestLevelOnly.checked) {{
+        out = out.filter(row => String(row["Highest League"] ?? "") === "Yes");
       }}
       out = out.filter(matchesColumnFilters);
       if (!sort.column) return out;
@@ -1138,7 +1142,8 @@ def main():
     }}
 
     search.addEventListener("input", render);
-    excludeRecentDraft.addEventListener("change", render);
+    excludeMlb.addEventListener("change", render);
+    highestLevelOnly.addEventListener("change", render);
     addFilterButton.addEventListener("click", () => {{
       columnFilters.push({{ column: "", op: ">=", value: "" }});
       render();
