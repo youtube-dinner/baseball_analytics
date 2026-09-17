@@ -16,7 +16,7 @@ PITCHER_DATA_DIR = ROOT / "outputs" / "minor_league_pitcher_stars" / "2026"
 PITCHER_SOURCE = PITCHER_DATA_DIR / "minor_league_pitchers_2026_plus_vs_combined_baseline.csv"
 PITCHER_DASHBOARD_CSV = PITCHER_DATA_DIR / "minor_league_pitcher_analytics_dashboard.csv"
 OUT = ROOT / "outputs" / "Minor_League_Hitter_Analytics.html"
-PROJECTION_LEADERBOARD = ROOT / "outputs" / "mlb_projection_modeling" / "prospect_history_v1" / "hitter_current_leaderboard.csv"
+PROJECTION_LEADERBOARD = ROOT / "outputs" / "mlb_projection_modeling" / "prospect_history_v1" / "hitter_current_level_projections.csv"
 FANTRAX_PLAYERS = ROOT / "outputs" / "fantrax_export" / "fantrax_players_latest.csv"
 FANTRAX_ROSTERS = ROOT / "outputs" / "fantrax_export" / "fantrax_rosters_latest.csv"
 MY_FANTASY_TEAM = "Bobby and the NitWitts"
@@ -521,7 +521,7 @@ def format_dashboard_frame(df, column_map, sort_cols):
 
 
 def add_projection_fields(df):
-    """Attach canonical history-model scores to the player's highest qualifying 2026 level row."""
+    """Attach canonical history-model scores to every qualifying 2026 level row."""
     out = df.copy()
     for col in [
         "Projection MLB %",
@@ -544,30 +544,36 @@ def add_projection_fields(df):
         "AA": "AA",
         "AAA": "AAA",
     }
-    projections["Projection level"] = projections["Highest level"].map(level_map)
+    projection_level_col = "Projection level" if "Projection level" in projections.columns else "Highest level"
+    projections["Dashboard projection level"] = projections[projection_level_col].map(level_map)
     projections = projections[
         [
             "PlayerId",
-            "Projection level",
+            "Dashboard projection level",
             "History: made MLB",
             "Made MLB percentile",
             "History: top-20 age 27-30",
             "Top-20 percentile",
         ]
-    ].drop_duplicates(["PlayerId", "Projection level"])
-    out = out.merge(projections, how="left", on="PlayerId")
+    ].drop_duplicates(["PlayerId", "Dashboard projection level"])
     # The raw Fangraphs level uses DSL/VSL while the dashboard's normalized
     # League Level uses R. Match against the normalized field so international
     # rookie projections are not silently dropped.
-    dashboard_level = out["League Level"] if "League Level" in out.columns else out["Level"]
-    is_anchor = dashboard_level.eq(out["Projection level"])
-    out["Projection MLB %"] = out["History: made MLB"].where(is_anchor) * 100
-    out["Projection MLB percentile"] = out["Made MLB percentile"].where(is_anchor)
-    out["Projection All-Star %"] = out["History: top-20 age 27-30"].where(is_anchor) * 100
-    out["Projection All-Star percentile"] = out["Top-20 percentile"].where(is_anchor)
+    out["Dashboard projection level"] = (
+        out["League Level"] if "League Level" in out.columns else out["Level"]
+    )
+    out = out.merge(
+        projections,
+        how="left",
+        on=["PlayerId", "Dashboard projection level"],
+    )
+    out["Projection MLB %"] = out["History: made MLB"] * 100
+    out["Projection MLB percentile"] = out["Made MLB percentile"]
+    out["Projection All-Star %"] = out["History: top-20 age 27-30"] * 100
+    out["Projection All-Star percentile"] = out["Top-20 percentile"]
     return out.drop(
         columns=[
-            "Projection level",
+            "Dashboard projection level",
             "History: made MLB",
             "Made MLB percentile",
             "History: top-20 age 27-30",
