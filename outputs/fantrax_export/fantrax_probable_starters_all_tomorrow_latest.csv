@@ -1,7 +1,7 @@
 probable_date,game_time_utc,home_away,probable_team,opponent,mlb_player_id,probable_name,fantrax_id,name,mlb_team,primary_position,eligible_positions,league_status,is_rostered,stats_inc_id,rotowire_id,sport_radar_id,game_pk
 2026-09-19,,,ATL,@HOU Sat 6:10PM,,Grant Holmes,03d6p,"Holmes, Grant",ATL,SP,P,FA,False,10549,13374,5a6101eb-bc40-47af-824a-0f9d1dbe2e0d,
-2026-09-19,,,COL,SEA Sat 7:10PM,,Tomoyuki Sugano,04b01,"Sugano, Tomoyuki",COL,SP,P,FA,False,,14712,b34ad145-1a14-4fd6-9dc4-27483ad14418,
 2026-09-19,,,TEX,TOR Sat 6:05PM,,Cal Quantrill,03yxh,"Quantrill, Cal",TEX,SP,P,FA,False,10573,14251,e8abdf47-b38a-44e6-8c6e-4b0bfbd482b0,
 2026-09-19,,,CHC,@CIN Sat 5:40PM,,Matthew Boyd,02n4s,"Boyd, Matthew",CHC,SP,P,FA,False,10011,13007,c3e45b7f-c631-472c-ac33-5377df84302d,
 2026-09-19,,,WSH,@STL Sat 6:15PM,,Andrew Alvarez,060u3,"Alvarez, Andrew",WSH,SP,P,FA,False,,19439,e6a98e62-8cf1-4b27-bfc7-19f4b094d845,
 2026-09-19,,,MIL,@BAL Sat 3:05PM,,Robert Gasser,05u6r,"Gasser, Robert",MIL,SP,P,FA,False,,17376,9eba9dc1-2787-4f16-92f9-2e3eda145d66,
+2026-09-19,,,COL,SEA Sat 7:10PM,,Jose Quintana,025kd,"Quintana, Jose",COL,SP,P,FA,False,9176,12329,b1e3b804-0022-40bc-8f53-8c82ee4eb1b9,
