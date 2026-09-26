@@ -1,14 +1,14 @@
 {
-  "run_id": "20260926T060042Z",
+  "run_id": "20260926T173920Z",
   "status": "success",
   "exit_code": 0,
   "message": "Outputs rebuilt successfully. If publish is requested, commit/push happens after this status is written.",
-  "started_at_local": "2026-09-26T01:00:42-0500",
-  "ended_at_local": "2026-09-26T01:07:10-0500",
+  "started_at_local": "2026-09-26T12:39:20-0500",
+  "ended_at_local": "2026-09-26T12:45:48-0500",
   "probable_date_mode": "auto",
-  "fantrax_probable_date": "2026-09-26",
+  "fantrax_probable_date": "2026-09-27",
   "publish_requested": true,
   "log_file": "outputs/refresh_logs/latest_refresh.log",
-  "git_head_start": "88dd981",
-  "git_head_end": "88dd981"
+  "git_head_start": "284797d",
+  "git_head_end": "284797d"
 }
