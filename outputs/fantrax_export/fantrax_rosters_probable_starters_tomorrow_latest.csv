@@ -1,7 +1,6 @@
 probable_date,game_time_utc,home_away,probable_team,opponent,mlb_player_id,probable_name,period,team_id,team_name,fantrax_id,name,mlb_team,primary_position,roster_position,roster_status,salary,contract,game_pk
-2026-09-29,2026-09-29T18:00:00Z,away,Philadelphia Phillies,Atlanta Braves,666200,Jesús Luzardo,180,aqfyadu2mj90wrl7,Ben the Hen,041r1,"Luzardo, Jesus",PHI,SP,P,ACTIVE,,,849845
-2026-09-29,2026-09-29T21:00:00Z,away,Chicago White Sox,Houston Astros,696146,Hagen Smith,180,6tnz8jgemj90wrl7,Bobby and the NitWitts,05zd4,"Smith, Hagen",CHW,SP,P,MINORS,,,849849
-2026-09-29,2026-09-29T18:00:00Z,home,Atlanta Braves,Philadelphia Phillies,519242,Chris Sale,180,jk36oo1hmj90wrl7,Daddy Yankee,01uca,"Sale, Chris",ATL,SP,P,ACTIVE,,,849845
-2026-09-29,2026-09-30T00:00:00Z,home,New York Yankees,Boston Red Sox,693645,Cam Schlittler,180,jk36oo1hmj90wrl7,Daddy Yankee,05u6q,"Schlittler, Cam",NYY,SP,P,ACTIVE,,,849851
-2026-09-29,2026-09-30T02:00:00Z,home,San Diego Padres,Chicago Cubs,650633,Michael King,180,qatqhh61mj90wrl7,Je suis Charlie Morton,041wv,"King, Michael",SD,SP,P,ACTIVE,,,849843
-2026-09-29,2026-09-30T00:00:00Z,away,Boston Red Sox,New York Yankees,801139,Payton Tolle,180,f3myl5ugmj90wrl7,The Hot and Steamy Boys,06gwk,"Tolle, Payton",BOS,RP,P,ACTIVE,,,849851
+2026-09-30,2026-09-30T18:00:00Z,home,Atlanta Braves,Philadelphia Phillies,641816,Tyler Mahle,180,6tnz8jgemj90wrl7,Bobby and the NitWitts,0312g,"Mahle, Tyler",ATL,SP,P,ACTIVE,,,849841
+2026-09-30,2026-09-30T18:00:00Z,away,Philadelphia Phillies,Atlanta Braves,650911,Cristopher Sánchez,180,jk36oo1hmj90wrl7,Daddy Yankee,052c8,"Sanchez, Cristopher",PHI,SP,P,ACTIVE,,,849841
+2026-09-30,2026-10-01T00:00:00Z,away,Boston Red Sox,New York Yankees,543243,Sonny Gray,180,k7c57nf4mj90wrl8,Hand Foot Mouth Disease Guys,0260v,"Gray, Sonny",BOS,SP,P,ACTIVE,,,849848
+2026-09-30,2026-09-30T21:00:00Z,home,Houston Astros,Chicago White Sox,686613,Hunter Brown,180,qatqhh61mj90wrl7,Je suis Charlie Morton,05144,"Brown, Hunter",HOU,SP,P,ACTIVE,,,849846
+2026-09-30,2026-10-01T00:00:00Z,home,New York Yankees,Boston Red Sox,608331,Max Fried,180,hd9hwe4mmj90wrl7,Third Degree Burnes,02i2j,"Fried, Max",NYY,SP,P,ACTIVE,,,849848

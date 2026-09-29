@@ -1,9 +1,6 @@
 probable_date,game_time_utc,home_away,probable_team,opponent,mlb_player_id,probable_name,fantrax_id,name,mlb_team,primary_position,eligible_positions,league_status,is_rostered,stats_inc_id,rotowire_id,sport_radar_id,game_pk
-2026-09-29,2026-09-29T18:00:00Z,away,Philadelphia Phillies,Atlanta Braves,666200,Jesús Luzardo,041r1,"Luzardo, Jesus",PHI,SP,P,T,True,10627,14304,9df8c4a7-8b6b-4478-8fd2-310bbd5e9d0d,849845
-2026-09-29,2026-09-29T18:00:00Z,home,Atlanta Braves,Philadelphia Phillies,519242,Chris Sale,01uca,"Sale, Chris",ATL,SP,P,T,True,8780,11438,66c43b7f-760a-446c-9f50-671915570227,849845
-2026-09-29,2026-09-29T21:00:00Z,home,Houston Astros,Chicago White Sox,805123,AJ Blubaugh,0649e,"Blubaugh, A.J.",HOU,RP,P,FA,False,,19336,68e8b052-f70d-42a6-a535-7fc3ec9d8bec,849849
-2026-09-29,2026-09-29T21:00:00Z,away,Chicago White Sox,Houston Astros,696146,Hagen Smith,05zd4,"Smith, Hagen",CHW,SP,P,T,True,,17402,d30e81e2-5f01-480a-a2e2-3faaf97c1c78,849849
-2026-09-29,2026-09-30T00:00:00Z,home,New York Yankees,Boston Red Sox,693645,Cam Schlittler,05u6q,"Schlittler, Cam",NYY,SP,P,T,True,,19844,4321832e-2d52-462a-b3ca-412c01c0cf61,849851
-2026-09-29,2026-09-30T00:00:00Z,away,Boston Red Sox,New York Yankees,801139,Payton Tolle,06gwk,"Tolle, Payton",BOS,RP,P,T,True,,19566,74e3224f-de47-4e4b-84ed-ca0f4f6e289b,849851
-2026-09-29,2026-09-30T02:00:00Z,away,Chicago Cubs,San Diego Padres,571510,Matthew Boyd,02n4s,"Boyd, Matthew",CHC,SP,P,FA,False,10011,13007,c3e45b7f-c631-472c-ac33-5377df84302d,849843
-2026-09-29,2026-09-30T02:00:00Z,home,San Diego Padres,Chicago Cubs,650633,Michael King,041wv,"King, Michael",SD,SP,P,T,True,11661,15255,8adff54a-cb4b-4692-b18c-e9aaa9a8e076,849843
+2026-09-30,2026-09-30T18:00:00Z,home,Atlanta Braves,Philadelphia Phillies,641816,Tyler Mahle,0312g,"Mahle, Tyler",ATL,SP,P,T,True,10455,14058,122f24b5-913e-4abd-90ca-62b1d7519665,849841
+2026-09-30,2026-09-30T18:00:00Z,away,Philadelphia Phillies,Atlanta Braves,650911,Cristopher Sánchez,052c8,"Sanchez, Cristopher",PHI,SP,P,T,True,11706,16500,224f1f61-6abd-4662-8887-bd812df4357b,849841
+2026-09-30,2026-09-30T21:00:00Z,home,Houston Astros,Chicago White Sox,686613,Hunter Brown,05144,"Brown, Hunter",HOU,SP,P,T,True,,16123,7ba58155-1133-4f26-be65-9ce443e3fedc,849846
+2026-09-30,2026-10-01T00:00:00Z,home,New York Yankees,Boston Red Sox,608331,Max Fried,02i2j,"Fried, Max",NYY,SP,P,T,True,9620,12453,1e6d6727-0aec-48da-b880-d38a8178c5db,849848
+2026-09-30,2026-10-01T00:00:00Z,away,Boston Red Sox,New York Yankees,543243,Sonny Gray,0260v,"Gray, Sonny",BOS,SP,P,T,True,9459,12129,b004cc6c-f00c-4b5d-917a-ee1abf92179d,849848
