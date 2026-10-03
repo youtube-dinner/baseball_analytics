@@ -1,8 +1,4 @@
 probable_date,game_time_utc,home_away,probable_team,opponent,mlb_player_id,probable_name,fantrax_id,name,mlb_team,primary_position,eligible_positions,league_status,is_rostered,stats_inc_id,rotowire_id,sport_radar_id,game_pk
-2026-10-03,2026-10-03T17:00:00Z,home,Cleveland Guardians,Chicago White Sox,800048,Parker Messick,05tzn,"Messick, Parker",CLE,SP,P,T,True,,17968,65aeecb6-0a79-43d2-b20c-7d6313951004,849829
-2026-10-03,2026-10-03T17:00:00Z,away,Chicago White Sox,Cleveland Guardians,696146,Hagen Smith,05zd4,"Smith, Hagen",CHW,SP,P,T,True,,17402,d30e81e2-5f01-480a-a2e2-3faaf97c1c78,849829
-2026-10-03,2026-10-03T20:00:00Z,home,Los Angeles Dodgers,Atlanta Braves,669373,Tarik Skubal,04ptt,"Skubal, Tarik",LAD,SP,P,T,True,11763,16006,22187b04-0bc4-4351-a0f6-d41013673cb6,849828
-2026-10-03,2026-10-03T22:30:00Z,away,New York Yankees,Tampa Bay Rays,543037,Gerrit Cole,01spo,"Cole, Gerrit",NYY,SP,P,T,True,9121,10510,eebc991a-23ea-4f1c-ba3b-37ff21ee1603,849835
-2026-10-03,2026-10-03T22:30:00Z,home,Tampa Bay Rays,New York Yankees,656876,Drew Rasmussen,04eee,"Rasmussen, Drew",TB,SP,P,T,True,11789,14877,373944de-5264-4bea-b863-ff24b7381a64,849835
-2026-10-03,2026-10-04T00:30:00Z,home,Milwaukee Brewers,San Diego Padres,694819,Jacob Misiorowski,061yu,"Misiorowski, Jacob",MIL,SP,P,T,True,,16834,f5716c16-fdef-4c08-8423-986e543997a9,849830
-2026-10-03,2026-10-04T00:30:00Z,away,San Diego Padres,Milwaukee Brewers,592662,Robbie Ray,025j1,"Ray, Robbie",SD,SP,P,T,True,9691,11599,9deda06b-1928-4c58-acf0-717538f576f4,849830
+2026-10-04,2026-10-04T20:00:00Z,home,Milwaukee Brewers,San Diego Padres,701656,Logan Henderson,05uo2,"Henderson, Logan",MIL,SP,P,T,True,,17517,803149cd-8335-40c1-90ff-fb3103c0e7dd,849825
+2026-10-04,2026-10-04T20:00:00Z,away,San Diego Padres,Milwaukee Brewers,650633,Michael King,041wv,"King, Michael",SD,SP,P,T,True,11661,15255,8adff54a-cb4b-4692-b18c-e9aaa9a8e076,849825
+2026-10-04,2026-10-05T00:00:00Z,home,Los Angeles Dodgers,Atlanta Braves,605483,Blake Snell,02bqr,"Snell, Blake",LAD,SP,P,T,True,10148,12189,1a191c8a-25d8-4c89-8f54-5817cc666a64,849823

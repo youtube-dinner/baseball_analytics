@@ -1,8 +1,4 @@
 probable_date,game_time_utc,home_away,probable_team,opponent,mlb_player_id,probable_name,period,team_id,team_name,fantrax_id,name,mlb_team,primary_position,roster_position,roster_status,salary,contract,game_pk
-2026-10-03,2026-10-04T00:30:00Z,home,Milwaukee Brewers,San Diego Padres,694819,Jacob Misiorowski,180,aqfyadu2mj90wrl7,Ben the Hen,061yu,"Misiorowski, Jacob",MIL,SP,P,ACTIVE,,,849830
-2026-10-03,2026-10-03T20:00:00Z,home,Los Angeles Dodgers,Atlanta Braves,669373,Tarik Skubal,180,aqfyadu2mj90wrl7,Ben the Hen,04ptt,"Skubal, Tarik",LAD,SP,P,ACTIVE,,,849828
-2026-10-03,2026-10-03T17:00:00Z,away,Chicago White Sox,Cleveland Guardians,696146,Hagen Smith,180,6tnz8jgemj90wrl7,Bobby and the NitWitts,05zd4,"Smith, Hagen",CHW,SP,P,MINORS,,,849829
-2026-10-03,2026-10-04T00:30:00Z,away,San Diego Padres,Milwaukee Brewers,592662,Robbie Ray,180,k7c57nf4mj90wrl8,Hand Foot Mouth Disease Guys,025j1,"Ray, Robbie",SD,SP,P,ACTIVE,,,849830
-2026-10-03,2026-10-03T22:30:00Z,away,New York Yankees,Tampa Bay Rays,543037,Gerrit Cole,180,qatqhh61mj90wrl7,Je suis Charlie Morton,01spo,"Cole, Gerrit",NYY,SP,P,ACTIVE,,,849835
-2026-10-03,2026-10-03T17:00:00Z,home,Cleveland Guardians,Chicago White Sox,800048,Parker Messick,180,f3myl5ugmj90wrl7,The Hot and Steamy Boys,05tzn,"Messick, Parker",CLE,SP,P,ACTIVE,,,849829
-2026-10-03,2026-10-03T22:30:00Z,home,Tampa Bay Rays,New York Yankees,656876,Drew Rasmussen,180,f3myl5ugmj90wrl7,The Hot and Steamy Boys,04eee,"Rasmussen, Drew",TB,SP,P,ACTIVE,,,849835
+2026-10-04,2026-10-05T00:00:00Z,home,Los Angeles Dodgers,Atlanta Braves,605483,Blake Snell,180,aqfyadu2mj90wrl7,Ben the Hen,02bqr,"Snell, Blake",LAD,SP,P,ACTIVE,,,849823
+2026-10-04,2026-10-04T20:00:00Z,home,Milwaukee Brewers,San Diego Padres,701656,Logan Henderson,180,bw696uo5mj90wrl7,Cant Park Here,05uo2,"Henderson, Logan",MIL,SP,P,ACTIVE,,,849825
+2026-10-04,2026-10-04T20:00:00Z,away,San Diego Padres,Milwaukee Brewers,650633,Michael King,180,qatqhh61mj90wrl7,Je suis Charlie Morton,041wv,"King, Michael",SD,SP,P,ACTIVE,,,849825
