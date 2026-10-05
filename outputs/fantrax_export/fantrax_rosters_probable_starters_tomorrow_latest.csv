@@ -1,5 +1,3 @@
 probable_date,game_time_utc,home_away,probable_team,opponent,mlb_player_id,probable_name,period,team_id,team_name,fantrax_id,name,mlb_team,primary_position,roster_position,roster_status,salary,contract,game_pk
-2026-10-05,2026-10-06T00:00:00Z,away,New York Yankees,Tampa Bay Rays,693645,Cam Schlittler,180,jk36oo1hmj90wrl7,Daddy Yankee,05u6q,"Schlittler, Cam",NYY,SP,P,ACTIVE,,,849839
-2026-10-05,2026-10-05T21:00:00Z,away,Chicago White Sox,Cleveland Guardians,641743,Anthony Kay,180,o4jvg6q3mj90wrl7,Skrrt vs The World,041mb,"Kay, Anthony",CHW,SP,P,ACTIVE,,,849834
-2026-10-05,2026-10-06T00:00:00Z,home,Tampa Bay Rays,New York Yankees,642547,Freddy Peralta,180,o4jvg6q3mj90wrl7,Skrrt vs The World,03dc4,"Peralta, Freddy",TB,SP,P,ACTIVE,,,849839
-2026-10-05,2026-10-05T21:00:00Z,home,Cleveland Guardians,Chicago White Sox,668909,Gavin Williams,180,hd9hwe4mmj90wrl7,Third Degree Burnes,05jp7,"Williams, Gavin",CLE,SP,P,ACTIVE,,,849834
+2026-10-06,2026-10-06T22:00:00Z,home,Atlanta Braves,Los Angeles Dodgers,519242,Chris Sale,180,jk36oo1hmj90wrl7,Daddy Yankee,01uca,"Sale, Chris",ATL,SP,P,ACTIVE,,,849819
+2026-10-06,2026-10-06T22:00:00Z,away,Los Angeles Dodgers,Atlanta Braves,808967,Yoshinobu Yamamoto,180,k7c57nf4mj90wrl8,Hand Foot Mouth Disease Guys,05r8n,"Yamamoto, Yoshinobu",LAD,SP,P,ACTIVE,,,849819

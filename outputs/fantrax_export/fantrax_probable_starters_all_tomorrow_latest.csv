@@ -1,5 +1,5 @@
 probable_date,game_time_utc,home_away,probable_team,opponent,mlb_player_id,probable_name,fantrax_id,name,mlb_team,primary_position,eligible_positions,league_status,is_rostered,stats_inc_id,rotowire_id,sport_radar_id,game_pk
-2026-10-05,2026-10-05T21:00:00Z,away,Chicago White Sox,Cleveland Guardians,641743,Anthony Kay,041mb,"Kay, Anthony",CHW,SP,P,T,True,10538,14269,6de93a68-31cd-4278-b933-e43cbcee5d98,849834
-2026-10-05,2026-10-05T21:00:00Z,home,Cleveland Guardians,Chicago White Sox,668909,Gavin Williams,05jp7,"Williams, Gavin",CLE,SP,P,T,True,,14876,59085c2a-d957-4bb4-8d7e-295419b7254d,849834
-2026-10-05,2026-10-06T00:00:00Z,home,Tampa Bay Rays,New York Yankees,642547,Freddy Peralta,03dc4,"Peralta, Freddy",TB,SP,P,T,True,11014,14194,e28344cd-b08e-43ec-adcb-f6693203cf82,849839
-2026-10-05,2026-10-06T00:00:00Z,away,New York Yankees,Tampa Bay Rays,693645,Cam Schlittler,05u6q,"Schlittler, Cam",NYY,SP,P,T,True,,19844,4321832e-2d52-462a-b3ca-412c01c0cf61,849839
+2026-10-06,2026-10-06T22:00:00Z,home,Atlanta Braves,Los Angeles Dodgers,519242,Chris Sale,01uca,"Sale, Chris",ATL,SP,P,T,True,8780,11438,66c43b7f-760a-446c-9f50-671915570227,849819
+2026-10-06,2026-10-06T22:00:00Z,away,Los Angeles Dodgers,Atlanta Braves,808967,Yoshinobu Yamamoto,05r8n,"Yamamoto, Yoshinobu",LAD,SP,P,T,True,,17163,f00b0920-f76d-4733-aa15-1d98779746c0,849819
+2026-10-06,2026-10-07T01:30:00Z,away,Milwaukee Brewers,San Diego Padres,669160,Dustin May,041r5,"May, Dustin",MIL,SP,P,FA,False,10898,14331,8c6572ee-d35f-4542-946a-1611e68395fe,849826
+2026-10-06,2026-10-07T01:30:00Z,home,San Diego Padres,Milwaukee Brewers,601713,Nick Pivetta,0316j,"Pivetta, Nick",SD,SP,P,FA,False,10683,14014,d49a253f-518e-4a86-9dcf-c91497c29d92,849826
