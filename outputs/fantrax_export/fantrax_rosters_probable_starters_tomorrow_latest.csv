@@ -1,3 +1,6 @@
 probable_date,game_time_utc,home_away,probable_team,opponent,mlb_player_id,probable_name,period,team_id,team_name,fantrax_id,name,mlb_team,primary_position,roster_position,roster_status,salary,contract,game_pk
-2026-10-06,2026-10-06T22:00:00Z,home,Atlanta Braves,Los Angeles Dodgers,519242,Chris Sale,180,jk36oo1hmj90wrl7,Daddy Yankee,01uca,"Sale, Chris",ATL,SP,P,ACTIVE,,,849819
-2026-10-06,2026-10-06T22:00:00Z,away,Los Angeles Dodgers,Atlanta Braves,808967,Yoshinobu Yamamoto,180,k7c57nf4mj90wrl8,Hand Foot Mouth Disease Guys,05r8n,"Yamamoto, Yoshinobu",LAD,SP,P,ACTIVE,,,849819
+2026-10-07,2026-10-07T22:00:00Z,away,Los Angeles Dodgers,Atlanta Braves,607192,Tyler Glasnow,180,aqfyadu2mj90wrl7,Ben the Hen,02btx,"Glasnow, Tyler",LAD,SP,P,ACTIVE,,,849822
+2026-10-07,2026-10-07T22:00:00Z,home,Atlanta Braves,Los Angeles Dodgers,641816,Tyler Mahle,180,6tnz8jgemj90wrl7,Bobby and the NitWitts,0312g,"Mahle, Tyler",ATL,SP,P,ACTIVE,,,849822
+2026-10-07,2026-10-08T00:00:00Z,away,Tampa Bay Rays,New York Yankees,607259,Nick Martinez,180,bw696uo5mj90wrl7,Cant Park Here,02c4q,"Martinez, Nick",TB,SP,P,ACTIVE,,,849838
+2026-10-07,2026-10-07T20:00:00Z,away,Cleveland Guardians,Chicago White Sox,682982,Daniel Espino,180,f3myl5ugmj90wrl7,The Hot and Steamy Boys,04ya2,"Espino, Daniel",CLE,SP,P,MINORS,,,849833
+2026-10-07,2026-10-08T00:00:00Z,home,New York Yankees,Tampa Bay Rays,608331,Max Fried,180,hd9hwe4mmj90wrl7,Third Degree Burnes,02i2j,"Fried, Max",NYY,SP,P,ACTIVE,,,849838
