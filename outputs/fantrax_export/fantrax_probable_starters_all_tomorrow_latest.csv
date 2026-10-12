@@ -1,3 +1,5 @@
 probable_date,game_time_utc,home_away,probable_team,opponent,mlb_player_id,probable_name,fantrax_id,name,mlb_team,primary_position,eligible_positions,league_status,is_rostered,stats_inc_id,rotowire_id,sport_radar_id,game_pk
-2026-10-11,2026-10-12T00:00:00Z,home,Milwaukee Brewers,Los Angeles Dodgers,694819,Jacob Misiorowski,061yu,"Misiorowski, Jacob",MIL,SP,P,T,True,,16834,f5716c16-fdef-4c08-8423-986e543997a9,849809
-2026-10-11,2026-10-12T00:00:00Z,away,Los Angeles Dodgers,Milwaukee Brewers,669373,Tarik Skubal,04ptt,"Skubal, Tarik",LAD,SP,P,T,True,11763,16006,22187b04-0bc4-4351-a0f6-d41013673cb6,849809
+2026-10-12,2026-10-12T21:00:00Z,home,Milwaukee Brewers,Los Angeles Dodgers,701656,Logan Henderson,05uo2,"Henderson, Logan",MIL,SP,P,T,True,,17517,803149cd-8335-40c1-90ff-fb3103c0e7dd,849812
+2026-10-12,2026-10-12T21:00:00Z,away,Los Angeles Dodgers,Milwaukee Brewers,808967,Yoshinobu Yamamoto,05r8n,"Yamamoto, Yoshinobu",LAD,SP,P,T,True,,17163,f00b0920-f76d-4733-aa15-1d98779746c0,849812
+2026-10-12,2026-10-13T00:00:00Z,away,Cleveland Guardians,Tampa Bay Rays,656492,Foster Griffin,03caf,"Griffin, Foster",CLE,SP,P,T,True,10489,13391,084cc7a3-3cd1-493c-a030-4af52f1f6cdd,849820
+2026-10-12,2026-10-13T00:00:00Z,home,Tampa Bay Rays,Cleveland Guardians,656876,Drew Rasmussen,04eee,"Rasmussen, Drew",TB,SP,P,T,True,11789,14877,373944de-5264-4bea-b863-ff24b7381a64,849820
