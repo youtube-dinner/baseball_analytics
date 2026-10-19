@@ -1,3 +1,2 @@
 probable_date,game_time_utc,home_away,probable_team,opponent,mlb_player_id,probable_name,fantrax_id,name,mlb_team,primary_position,eligible_positions,league_status,is_rostered,stats_inc_id,rotowire_id,sport_radar_id,game_pk
-2026-10-18,2026-10-18T21:08:00Z,home,Cleveland Guardians,Tampa Bay Rays,800048,Parker Messick,05tzn,"Messick, Parker",CLE,SP,P,T,True,,17968,65aeecb6-0a79-43d2-b20c-7d6313951004,849817
-2026-10-18,2026-10-18T21:08:00Z,away,Tampa Bay Rays,Cleveland Guardians,656876,Drew Rasmussen,04eee,"Rasmussen, Drew",TB,SP,P,T,True,11789,14877,373944de-5264-4bea-b863-ff24b7381a64,849817
+2026-10-19,2026-10-20T00:08:00Z,home,Tampa Bay Rays,Cleveland Guardians,642547,Freddy Peralta,03dc4,"Peralta, Freddy",TB,SP,P,T,True,11014,14194,e28344cd-b08e-43ec-adcb-f6693203cf82,849815
